@@ -5,7 +5,8 @@
 
 
 ### MODIFIER
-
+ THE_SUW_Loyalty_of_social_classes_country_modiffier: "阶层的忠心"
+ THE_SUW_A_belief_country_modiffier: "一种信仰"
 ### MODIFIER_END
 
 
@@ -15,7 +16,8 @@
 
 
 ### DECISION
-
+ THE_SUW_country_release_decision_title: "一封来自青蛙的信"
+ THE_SUW_country_release_decision_desc: "这是一个决议描述"
 ### DECISION_END
 
 
@@ -25,7 +27,13 @@
 
 
 ### GOVERNMENT
-
+ THE_SUW_SUW_and_KAN_reform: "诹访神奈"
+ THE_SUW_SUW_and_KAN_reform_desc: "这是一个政府改革描述"
+ THE_SUW_suw: "诹访子派系"
+ THE_SUW_kan: "神奈子派系"
+ THE_SUW_suw_MECHANIC_TOOLTIP: "诹访子派系"
+ THE_SUW_kan_MECHANIC_TOOLTIP: "神奈子派系"
+ mechanic_THE_SUW_enable_diplomatic_change_religion_custom_attributes_yes: "启用「§Y邀请改教§!」外交行动"
 ### GOVERNMENT_END
 
 

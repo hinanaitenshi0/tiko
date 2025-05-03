@@ -1,0 +1,47 @@
+﻿l_english:
+### TOOLTIP
+
+### TOOLTIP_END
+
+
+### MODIFIER
+ THE_SUW_Loyalty_of_social_classes_country_modiffier: "6–BS„vàVÃV"
+ THE_SUW_A_belief_country_modiffier: "NÍyáOðN"
+### MODIFIER_END
+
+
+### EVENT
+
+### EVENT_END
+
+
+### DECISION
+ THE_SUW_country_release_decision_title: "NSegêR—Ù†„váO"
+ THE_SUW_country_release_decision_desc: "Ù=fN*N³Q®‹Ïcð"
+### DECISION_END
+
+
+### VARIABLE
+
+### VARIABLE_END
+
+
+### GOVERNMENT
+ THE_SUW_SUW_and_KAN_reform: "ù‹¿‹^yHY"
+ THE_SUW_SUW_and_KAN_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
+ THE_SUW_suw: "ù‹¿‹PR>mû|"
+ THE_SUW_kan: "^yHYPR>mû|"
+ THE_SUW_suw_MECHANIC_TOOLTIP: "ù‹¿‹PR>mû|"
+ THE_SUW_kan_MECHANIC_TOOLTIP: "^yHYPR>mû|"
+ mechanic_THE_SUW_enable_diplomatic_change_religion_custom_attributes_yes: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
+### GOVERNMENT_END
+
+
+### ESTATE
+
+### ESTATE_END
+
+
+### DIPLOMATIC
+
+### DIPLOMATIC_END
