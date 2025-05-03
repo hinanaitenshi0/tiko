@@ -78,11 +78,12 @@ THE_SUW_stage_1_branch_2 = {
 	THE_SUW_2_1 = {
 		icon = mission_unknown_mission
 		position = 1
-		provinces_to_highlight = {  } 
 
-		trigger = { dip_power = 100 } 
+		trigger = { monthly_dip = 9 } 
 
-		effect = { dip_power = -100 } 
+		effect = {  
+			THE_SUW_enable_diplomatic_change_religion_custom_attributes = yes
+		}
 	}
 
 	THE_SUW_2_2 = {

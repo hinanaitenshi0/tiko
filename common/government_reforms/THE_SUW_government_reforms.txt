@@ -34,7 +34,6 @@ THE_SUW_SUW_and_KAN_reform = {
 		enables_aristocratic_idea_group = no
 		enables_divine_idea_group = yes
 		THE_can_use_kami_ideas_government_attribute = yes
-		THE_SUW_enable_diplomatic_change_religion_custom_attributes = yes
 	}
 
 	modifiers = {

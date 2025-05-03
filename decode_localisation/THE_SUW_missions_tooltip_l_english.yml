@@ -3,9 +3,18 @@
 
 ### TOOLTIP_END
 
+### dynasty
+ Moriya: "洩矢"
+ Suwako: "诹访子"
+ Yasaka: "八坂"
+ Kanako: "神奈子"
+### dynasty_END
 
 ### MODIFIER
- THE_SUW_Loyalty_of_social_classes_country_modiffier: "阶层的忠心"
+ THE_SUW_Gain_respect_province_modiffier: "收获尊重"
+ THE_SUW_The_ancient_Suwa_Daisha_province_modiffier: "古旧的诹访大社"
+ THE_SUW_Loyalty_of_social_classes_country_modiffier: "忠心的阶层"
+ THE_SUW_Eternal_loyalty_country_modiffier: "永远的忠诚"
  THE_SUW_A_belief_country_modiffier: "一种信仰"
 ### MODIFIER_END
 
@@ -27,13 +36,13 @@
 
 
 ### GOVERNMENT
- THE_SUW_SUW_and_KAN_reform: "诹访神奈"
+ THE_SUW_SUW_and_KAN_reform: "诹访祀，神奈祭"
  THE_SUW_SUW_and_KAN_reform_desc: "这是一个政府改革描述"
- THE_SUW_suw: "诹访子派系"
- THE_SUW_kan: "神奈子派系"
+ THE_SUW_suw: "坤于厚德载物"
+ THE_SUW_kan: "乾以刚健不息"
  THE_SUW_suw_MECHANIC_TOOLTIP: "诹访子派系"
  THE_SUW_kan_MECHANIC_TOOLTIP: "神奈子派系"
- mechanic_THE_SUW_enable_diplomatic_change_religion_custom_attributes_yes: "启用「§Y邀请改教§!」外交行动"
+ THE_SUW_enable_diplomatic_change_religion_custom_attributes: "启用「§Y邀请改教§!」外交行动"
 ### GOVERNMENT_END
 
 

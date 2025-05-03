@@ -3,9 +3,18 @@
 
 ### TOOLTIP_END
 
+### dynasty
+ Moriya: ")mâw"
+ Suwako: "ù‹¿‹PR"
+ Yasaka: "kQBW"
+ Kanako: "^yHYPR"
+### dynasty_END
 
 ### MODIFIER
- THE_SUW_Loyalty_of_social_classes_country_modiffier: "6–BS„vàVÃV"
+ THE_SUW_Gain_respect_province_modiffier: "6e·ƒSÍ‘"
+ THE_SUW_The_ancient_Suwa_Daisha_province_modiffier: "äSçe„vù‹¿‹'Y>y"
+ THE_SUW_Loyalty_of_social_classes_country_modiffier: "àVÃV„v6–BS"
+ THE_SUW_Eternal_loyalty_country_modiffier: "8lÜ„vàVÚ‹"
  THE_SUW_A_belief_country_modiffier: "NÍyáOðN"
 ### MODIFIER_END
 
@@ -27,13 +36,13 @@
 
 
 ### GOVERNMENT
- THE_SUW_SUW_and_KAN_reform: "ù‹¿‹^yHY"
+ THE_SUW_SUW_and_KAN_reform: "ù‹¿‹Nyÿ^yHYmy"
  THE_SUW_SUW_and_KAN_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
- THE_SUW_suw: "ù‹¿‹PR>mû|"
- THE_SUW_kan: "^yHYPR>mû|"
+ THE_SUW_suw: "dWŽNšS·V‹ir"
+ THE_SUW_kan: "ŒNåNRePNo`"
  THE_SUW_suw_MECHANIC_TOOLTIP: "ù‹¿‹PR>mû|"
  THE_SUW_kan_MECHANIC_TOOLTIP: "^yHYPR>mû|"
- mechanic_THE_SUW_enable_diplomatic_change_religion_custom_attributes_yes: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
+ THE_SUW_enable_diplomatic_change_religion_custom_attributes: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
 ### GOVERNMENT_END
 
 
