@@ -60,7 +60,7 @@ country_event = {
 			SUW = {
 				change_government = monarchy
 				add_government_reform = Gensokyan_monarchy 
-				change_primary_culture = ROOT
+				change_primary_culture = Gensokyo_human
 				change_religion = th_moriyashinto
 				remove_country_modifier = conversion_zeal
 				define_ruler = {
@@ -71,9 +71,10 @@ country_event = {
 					dip = 6
 					mil = 5
 					female = yes
-					culture = ROOT
+					culture = Gensokyo_human
 					religion = th_moriyashinto
 				}
+				add_ruler_personality = immortal_personality
 				add_ruler_personality = charismatic_negotiator_personality
 				define_consort = {
 					name = "kanako"
@@ -83,14 +84,13 @@ country_event = {
 					dip = 5
 					mil = 6
 					female = yes
-					culture = ROOT
-					religion = th_moriyashinto				
+					culture = Gensokyo_human
+					religion = th_moriyashinto
 				}
-				add_consort_personality = strict_personality
+				add_queen_personality = immortal_personality
 				set_ruler_flag = touhou_character_ruler
 				set_ruler_flag = touhou_original_ruler
 				set_ruler_flag = th_original_suwa
-				add_ruler_personality = immortal_personality
 				add_accepted_culture = togoku
 				add_accepted_culture = japanese
 				add_accepted_culture = kyushuan
@@ -127,7 +127,6 @@ country_event = {
 				add_base_tax = 2
 				add_base_manpower = 2
 				add_base_production = 2
-				change_culture = ROOT
 			}
 		}
 		ai_chance = {
