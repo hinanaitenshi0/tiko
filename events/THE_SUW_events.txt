@@ -1,0 +1,199 @@
+namespace = THE_SUW_events
+
+country_event = {
+	id = THE_SUW_events.1
+	title = "THE_SUW_events.1.title"
+	desc = "THE_SUW_events.1.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = THE_SUW_events_1_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.1.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = THE_SUW_events.1.b
+		highlight = yes
+		trigger = {
+			NOT = {
+				has_ruler_flag = th_original_suwa
+			}
+		}
+		hidden_effect = {
+			OGS = {
+				every_owned_province = {
+					kill_units = {
+						who = owner
+					}
+				}
+			}
+			inherit = OGS
+			japan_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = SUW
+				remove_core = ROOT
+				remove_core = OGS
+			}
+		}
+		release = SUW
+		if = {
+			limit = {
+				has_heir_flag = th_original_suwa
+			}
+			hidden_effect = {
+				remove_heir = {
+					allow_new_heir = no
+				}
+			}
+		}
+		switch_tag = SUW
+		hidden_effect = {
+			SUW = {
+				change_government = monarchy
+				add_government_reform = Gensokyan_monarchy 
+				change_primary_culture = ROOT
+				change_religion = th_moriyashinto
+				remove_country_modifier = conversion_zeal
+				define_ruler = {
+					name = "Suwako"
+					dynasty = "Moriya"
+					age = "2300"
+					adm = 3
+					dip = 6
+					mil = 5
+					female = yes
+					culture = ROOT
+					religion = th_moriyashinto
+				}
+				add_ruler_personality = charismatic_negotiator_personality
+				define_consort = {
+					name = "kanako"
+					dynasty = "Yasaka"
+					age = "2000"
+					adm = 3
+					dip = 5
+					mil = 6
+					female = yes
+					culture = ROOT
+					religion = th_moriyashinto				
+				}
+				add_consort_personality = strict_personality
+				set_ruler_flag = touhou_character_ruler
+				set_ruler_flag = touhou_original_ruler
+				set_ruler_flag = th_original_suwa
+				add_ruler_personality = immortal_personality
+				add_accepted_culture = togoku
+				add_accepted_culture = japanese
+				add_accepted_culture = kyushuan
+				add_adm_power = 84
+				add_dip_power = 126
+				add_mil_power = 112
+				add_manpower = 5
+				add_sailors = 100
+				add_prestige = 100
+				set_capital = 4188
+				change_estate_land_share = {
+					estate = estate_church
+					share = 20
+				}
+				change_estate_land_share = {
+					estate = estate_burghers
+					share = 20
+				}
+				change_estate_land_share = {
+					estate = estate_nobles
+					share = 29
+				}
+				country_event = {
+					id = th_religion_events.4
+					days = 7
+				}
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.9
+					}
+				}
+			}
+			4188 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+				add_base_production = 2
+				change_culture = ROOT
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	after = {
+		hidden_effect = {
+			SUW = {
+				country_event = {
+					id = THE_SUW_events.2
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = THE_SUW_events.2
+	title = "THE_SUW_events.2.title"
+	desc = "THE_SUW_events.2.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		any_country = {
+			has_reform = shogunate
+		}
+	}
+	option = {
+		random_country = {
+			limit = {
+				has_reform = shogunate
+			}
+			create_subject = {
+				who = ROOT
+				subject_type = daimyo_vassal
+			}
+		}
+		if = {
+			limit = { NOT = { government = monarchy } }
+			change_government = monarchy
+		}
+		add_government_reform = daimyo	
+		add_country_modifier = {
+			name = "THE_SUW_Eternal_loyalty_country_modiffier"
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = THE_SUW_events.3
+	title = "THE_SUW_events.3.title"
+	desc = "THE_SUW_events.3.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	#幕府将军？他有几个信徒？
+	option = {
+		add_prestige_or_monarch_power = { amount = 75 }
+		
+	}
+	#越俎代庖，实为不妥
+	option = {
+		add_treasury = -100
+		add_stability = 1
+	}
+}

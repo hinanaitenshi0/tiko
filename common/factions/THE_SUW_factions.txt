@@ -1,0 +1,13 @@
+#诹访子
+THE_SUW_SUW_factions = {
+	improve_relation_modifier = 0.2
+	development_cost_modifier = -0.1
+	stability_cost_modifier = -0.3
+}
+
+#神奈子
+THE_SUW_KAN_factions = {
+	siege_ability = 0.2
+	movement_speed = 0.1
+	discipline = 0.1
+}

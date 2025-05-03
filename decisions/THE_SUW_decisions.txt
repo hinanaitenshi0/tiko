@@ -1,0 +1,23 @@
+country_decisions = {
+	#释放决议
+	THE_SUW_country_release_decision = {
+		potential = {	
+			tag = MRY
+			NOT = { exists = SUW }
+			NOT = { has_country_flag = heard_THE_SUW_country_release_decision }
+			NOT = { is_year = 1445 }
+		}
+		allow = { NOT = { is_year = 1445 } }
+		effect = {
+			country_event = { 
+				id = THE_SUW_events.1
+			}
+		}
+		major = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+

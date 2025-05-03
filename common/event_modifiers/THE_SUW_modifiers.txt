@@ -1,0 +1,35 @@
+#收获尊重
+THE_SUW_Gain_respect_province_modiffier = {
+	local_missionary_strength = 0.1
+	local_unrest = -10
+}
+#诹访大社
+THE_SUW_Suwa_Daisha_province_modiffier = {
+	local_missionary_strength = -0.1
+	local_unrest = -20
+	local_manpower_modifier = 0.2
+	local_tax_modifier = 0.2
+	trade_goods_size = 2
+	province_trade_power_modifier = 0.2
+}
+#阶层的忠心
+THE_SUW_Loyalty_of_social_classes_country_modiffier = {
+	all_estate_loyalty_equilibrium = 0.1
+	reform_progress_growth = 0.25
+}
+#永远的忠诚	
+THE_SUW_Eternal_loyalty_country_modiffier = {
+	liberty_desire = 50
+}
+#一种信仰
+THE_SUW_A_belief_country_modiffier = {
+	tolerance_own = 1
+	trade_efficiency = 0.1
+	global_prosperity_growth = 0.1
+}
+#踊跃参军
+#每传完一个地块增加1000人力
+THE_SUW_Actively_participate_country_modiffier = {
+	
+	add_manpower = 1
+}
