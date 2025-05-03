@@ -82,7 +82,7 @@ THE_SUW_stage_1_branch_2 = {
 
 		trigger = { dip_power = 100 } 
 
-		effect = {  } 
+		effect = { dip_power = -100 } 
 	}
 
 	THE_SUW_2_2 = {
