@@ -1,6 +1,6 @@
 ﻿l_english:
 ### TOOLTIP
-
+ THE_SUW_enable_diplomatic_change_religion_tt: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
 ### TOOLTIP_END
 
 ### dynasty
@@ -42,10 +42,6 @@
  THE_SUW_kan: "ŒNåNRePNo`"
  THE_SUW_suw_MECHANIC_TOOLTIP: "ù‹¿‹PR"
  THE_SUW_kan_MECHANIC_TOOLTIP: "^yHYPR"
- THE_SUW_enable_diplomatic_change_religion_custom_attributes: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
- THE_SUW_ask_for_change_religions_to_moriyashinto_title: "Ž÷‹9eYe"
- THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "Ž÷‹9eYe"
- THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "ybkTR—Ù†ÿ"
 ### GOVERNMENT_END
 
 
@@ -55,5 +51,7 @@
 
 
 ### DIPLOMATIC
-
+ THE_SUW_ask_for_change_religions_to_moriyashinto_title: "Ž÷‹9eYe"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "Ž÷‹9eYe"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "ybkTR—Ù†ÿ"
 ### DIPLOMATIC_END
