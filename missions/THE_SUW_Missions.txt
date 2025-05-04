@@ -91,12 +91,24 @@ THE_SUW_stage_1_branch_2 = {
 		icon = mission_unknown_mission
 		position = 2
 		required_missions = { THE_SUW_2_1 } 
-		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = { 
+			num_of_allies = 3
+			num_of_royal_marriages = 3
+		} 
 
-		effect = {  } 
-	}
+		effect = {  
+			diplomatic_reputation = 1
+			every_allay = {
+				ROOT = {
+					add_favors = {
+						who = PREV
+						amount = 10
+					}
+				}
+			}
+		}
+	} 
 
 	THE_SUW_2_3 = {
 		icon = mission_unknown_mission
@@ -281,22 +293,35 @@ THE_SUW_stage_1_branch_5 = {
 	THE_SUW_5_1 = {
 		icon = mission_unknown_mission
 		position = 1
-		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			Not = {
+				current_income_balance = 0
+			}
+			has_ruler_flag = The_SUW_suw_flag
+		} 
 
-		effect = {  } 
+		effect = {  
+			add_country_modifier = {
+				name = "THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier"
+				duration = 7300
+			}
+		} 
 	}
 
 	THE_SUW_5_3 = {
 		icon = mission_unknown_mission
 		position = 3
 		required_missions = { THE_SUW_5_1 } 
-		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = { monthly_income = 1 } 
 
-		effect = {  } 
+		effect = { 
+			add_years_of_income = 5
+			country_event = {
+				id = THE_SUW_events.4
+			}
+		} 
 	}
 }
 THE_SUW_stage_2_branch_lock_2 = {

@@ -16,10 +16,18 @@
  THE_SUW_Loyalty_of_social_classes_country_modiffier: "忠心的阶层"
  THE_SUW_Eternal_loyalty_country_modiffier: "永远的忠诚"
  THE_SUW_A_belief_country_modiffier: "一种信仰"
+ THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier: "开源节流"
 ### MODIFIER_END
 
 
 ### EVENT
+THE_SUW_events.1.title: "一封来自青蛙的信"
+THE_SUW_events.1.desc: "早苗，我们想回家看看，这段时间，神社就交给你啦，不用担心，我们会留个分身帮助你的"
+THE_SUW_events.1.a: "诹访子大人，神奈子大人，那我呢？"
+THE_SUW_events.1.b: "记得吃饭哦！"
+THE_SUW_events.4.title: "来自信徒的请求"
+THE_SUW_events.4.desc: "1"
+THE_SUW_events.4.name: "是时候重拾旧业了"
 
 ### EVENT_END
 

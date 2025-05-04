@@ -63,6 +63,7 @@ country_event = {
 				change_primary_culture = Gensokyo_human
 				change_religion = th_moriyashinto
 				remove_country_modifier = conversion_zeal
+				set_ruler_flag = The_SUW_suw_flag
 				define_ruler = {
 					name = "Suwako"
 					dynasty = "Moriya"
@@ -194,5 +195,18 @@ country_event = {
 	option = {
 		add_treasury = -100
 		add_stability = 1
+	}
+}
+country_event = {
+	id = THE_SUW_events.4
+	title = "THE_SUW_events.4.title"
+	desc = "THE_SUW_events.4.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.4.name
+		4188 = { change_trade_goods = paper }
 	}
 }

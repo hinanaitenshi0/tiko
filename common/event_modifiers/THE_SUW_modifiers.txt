@@ -30,6 +30,15 @@ THE_SUW_A_belief_country_modiffier = {
 #踊跃参军
 #每传完一个地块增加1000人力
 THE_SUW_Actively_participate_country_modiffier = {
-	
+	on_province_religion_converted = {
+		on_province_religion_converted_estate_privileges_effect = yes
+		on_province_religion_converted = th_moriyashinto
+	}
 	add_manpower = 1
+}
+#开源节流
+THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier = {
+	prestige_decay = 0.02
+	global_trade_goods_size = 1
+	land_maintenance_modifier = -0.33
 }
