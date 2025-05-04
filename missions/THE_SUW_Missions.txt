@@ -81,9 +81,12 @@ THE_SUW_stage_1_branch_2 = {
 
 		trigger = { monthly_dip = 9 } 
 
-		effect = {  
-			set_country_flag = "THE_SUW_enable_diplomatic_change_religion_custom_attributes_flag" 
-			custom_tooltip = "THE_SUW_enable_diplomatic_change_religion_custom_attributes"
+		effect = { 
+			# 只有人名需要加引号
+			# custom_attributes是政府机制后缀，此处使用flag和tt后缀
+			# custom_tooltip的本地化键值分类至tooltip（工具提示）
+			set_country_flag = THE_SUW_enable_diplomatic_change_religion_flag
+			custom_tooltip = THE_SUW_enable_diplomatic_change_religion_tt
 		}
 	}
 

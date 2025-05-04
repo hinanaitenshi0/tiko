@@ -1,6 +1,6 @@
 ﻿l_english:
 ### TOOLTIP
-
+ THE_SUW_enable_diplomatic_change_religion_tt: "启用「§Y邀请改教§!」外交行动"
 ### TOOLTIP_END
 
 ### dynasty
@@ -50,10 +50,6 @@ THE_SUW_events.4.name: "是时候重拾旧业了"
  THE_SUW_kan: "乾以刚健不息"
  THE_SUW_suw_MECHANIC_TOOLTIP: "诹访子"
  THE_SUW_kan_MECHANIC_TOOLTIP: "神奈子"
- THE_SUW_enable_diplomatic_change_religion_custom_attributes: "启用「§Y邀请改教§!」外交行动"
- THE_SUW_ask_for_change_religions_to_moriyashinto_title: "邀请改教"
- THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "邀请改教"
- THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "禁止吃青蛙！"
 ### GOVERNMENT_END
 
 
@@ -63,5 +59,7 @@ THE_SUW_events.4.name: "是时候重拾旧业了"
 
 
 ### DIPLOMATIC
-
+ THE_SUW_ask_for_change_religions_to_moriyashinto_title: "邀请改教"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "邀请改教"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "禁止吃青蛙！"
 ### DIPLOMATIC_END
