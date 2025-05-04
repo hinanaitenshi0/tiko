@@ -40,9 +40,12 @@
  THE_SUW_SUW_and_KAN_reform_desc: "这是一个政府改革描述"
  THE_SUW_suw: "坤于厚德载物"
  THE_SUW_kan: "乾以刚健不息"
- THE_SUW_suw_MECHANIC_TOOLTIP: "诹访子派系"
- THE_SUW_kan_MECHANIC_TOOLTIP: "神奈子派系"
+ THE_SUW_suw_MECHANIC_TOOLTIP: "诹访子"
+ THE_SUW_kan_MECHANIC_TOOLTIP: "神奈子"
  THE_SUW_enable_diplomatic_change_religion_custom_attributes: "启用「§Y邀请改教§!」外交行动"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_title: "邀请改教"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "邀请改教"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "禁止吃青蛙！"
 ### GOVERNMENT_END
 
 

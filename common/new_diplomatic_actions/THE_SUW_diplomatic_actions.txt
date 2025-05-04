@@ -3,7 +3,7 @@ THE_SUW_ask_for_change_religions_to_moriyashinto = {
     require_acceptance = yes
     is_visible = {
         religion = th_moriyashinto
-        has_government_attribute = THE_SUW_enable_diplomatic_change_religion_custom_attributes
+        has_country_flag = "THE_SUW_enable_diplomatic_change_religion_custom_attributes_flag"
     }
     is_allowed = {
         FROM = {

@@ -40,9 +40,12 @@
  THE_SUW_SUW_and_KAN_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
  THE_SUW_suw: "dWŽNšS·V‹ir"
  THE_SUW_kan: "ŒNåNRePNo`"
- THE_SUW_suw_MECHANIC_TOOLTIP: "ù‹¿‹PR>mû|"
- THE_SUW_kan_MECHANIC_TOOLTIP: "^yHYPR>mû|"
+ THE_SUW_suw_MECHANIC_TOOLTIP: "ù‹¿‹PR"
+ THE_SUW_kan_MECHANIC_TOOLTIP: "^yHYPR"
  THE_SUW_enable_diplomatic_change_religion_custom_attributes: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_title: "Ž÷‹9eYe"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "Ž÷‹9eYe"
+ THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "ybkTR—Ù†ÿ"
 ### GOVERNMENT_END
 
 
