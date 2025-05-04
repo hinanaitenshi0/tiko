@@ -101,12 +101,18 @@ THE_SUW_stage_1_branch_2 = {
 		} 
 
 		effect = {  
-			diplomatic_reputation = 1
-			every_allay = {
-				ROOT = {
-					add_favors = {
-						who = PREV
-						amount = 10
+			# 使用国家修正增加外交声誉
+			# diplomatic_reputation = 1
+
+			# 改为hidden_effect，添加一个自定义工具提示
+			custom_tooltip = <tooltip>
+			hidden_effect = {
+				every_allay = {
+					ROOT = {
+						add_favors = {
+							who = PREV
+							amount = 10
+						}
 					}
 				}
 			}
@@ -298,10 +304,14 @@ THE_SUW_stage_1_branch_5 = {
 		position = 1
 
 		trigger = {  
-			Not = {
+			NOT = {
 				current_income_balance = 0
 			}
-			has_ruler_flag = The_SUW_suw_flag
+			# 对于检测flag的条件，使用custom_trigger_tooltip，其中<tooltip>是本地化键值
+			custom_trigger_tooltip = {
+				tooltip = <tooltip>
+				has_ruler_flag = The_SUW_suw_flag
+			}
 		} 
 
 		effect = {  
