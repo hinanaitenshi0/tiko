@@ -1,0 +1,20 @@
+##################################################
+### on_actions scripted effect 
+##################################################
+
+# ROOT = location(province)
+THE_SUW_on_province_religion_converted_scripted_effects = {
+	# 在任务效果中set所需的flag
+	if = {
+		limit = { owner = { has_country_flag = THE_SUW_converte_province_religion_add_1_manpower_flag } }
+		owner = { add_manpower = 1 }
+	}
+}
+
+
+
+
+
+##################################################
+### not on_actions scripted effect 
+##################################################
