@@ -6,7 +6,17 @@
 THE_SUW_on_province_religion_converted_scripted_effects = {
 	# 在任务效果中set所需的flag
 	if = {
-		limit = { owner = { has_country_flag = THE_SUW_converte_province_religion_add_1_manpower_flag } }
+		limit = { 
+			owner = {  
+				has_country_flag = THE_SUW_converte_province_religion_add_1_manpower_flag
+				NOT = {
+					had_country_flag = {
+						flag = THE_SUW_converte_province_religion_add_1_manpower_flag
+						days = 10950
+					}
+				}
+			} 
+		}
 		owner = { add_manpower = 1 }
 	}
 }

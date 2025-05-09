@@ -103,7 +103,10 @@ THE_SUW_stage_1_branch_2 = {
 		effect = {  
 			# 使用国家修正增加外交声誉
 			# diplomatic_reputation = 1
-
+			add_country_modifier = {
+				name = "THE_SUW_befriend_a_distant_state_country_modiffier"
+				duration = -1
+			}
 			# 改为hidden_effect，添加一个自定义工具提示
 			custom_tooltip = THE_SUW_obtain_favors_tt
 			hidden_effect = {
@@ -238,11 +241,17 @@ THE_SUW_stage_1_branch_4 = {
 	THE_SUW_4_1 = {
 		icon = mission_unknown_mission
 		position = 1
-		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+				
+		}
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = THE_SUW_converte_province_religion_add_1_manpower_tt
+			hidden_effect = {  
+				set_country_flag = THE_SUW_converte_province_religion_add_1_manpower_flag
+			} 
+		}
 	}
 
 	THE_SUW_4_2 = {

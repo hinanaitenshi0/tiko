@@ -1,7 +1,8 @@
 ﻿l_english:
 ### TOOLTIP
  THE_SUW_enable_diplomatic_change_religion_tt: "启用「§Y邀请改教§!」外交行动"
- THE_SUW_obtain_favors_tt: "从每个盟友处获得10点人情"
+ THE_SUW_obtain_favors_tt: "§V从每个盟友处获得10点人情§"
+ THE_SUW_converte_province_religion_add_1_manpower_tt: "每有一个拥有的省份皈依正信，增加1000名信徒"
 ### TOOLTIP_END
 
 ### dynasty
