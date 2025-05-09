@@ -48,3 +48,4 @@ THE_SUW_befriend_a_distant_state_country_modiffier = {
 	diplomatic_reputation = 1
 	monthly_favor_modifier = 0.2
 }
+#近攻
