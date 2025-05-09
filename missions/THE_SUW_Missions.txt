@@ -105,7 +105,7 @@ THE_SUW_stage_1_branch_2 = {
 			# diplomatic_reputation = 1
 
 			# 改为hidden_effect，添加一个自定义工具提示
-			custom_tooltip = <tooltip>
+			custom_tooltip = THE_SUW_obtain_favors_tt
 			hidden_effect = {
 				every_allay = {
 					ROOT = {
