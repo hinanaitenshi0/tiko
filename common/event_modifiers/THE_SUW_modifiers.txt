@@ -5,6 +5,16 @@ THE_SUW_Gain_respect_province_modiffier = {
 }
 #古旧的诹访大社
 THE_SUW_The_ancient_Suwa_Daisha_province_modiffier = {
+	local_build_cost = 0.1
+	local_build_time = 0.1
+	local_development_cost = -0.05
+#复苏的诹访大社
+#兴盛的诹访大社
+#    的诹访大社
+
+}
+#守矢神道
+THE_SUW_Moriya_Shinto_province_modiffier = {
 	local_missionary_strength = -0.1
 	local_unrest = -20
 	local_manpower_modifier = 0.2
@@ -49,3 +59,6 @@ THE_SUW_befriend_a_distant_state_country_modiffier = {
 	monthly_favor_modifier = 0.2
 }
 #近攻
+THE_SUW_attacking_a_nearby_country_modiffier = {
+	reserves_organisation = 0.1
+}
