@@ -27,7 +27,6 @@ country_decisions = {
 		potential = {	
 			tag = SUW
 			has_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag 
-			NOT = { has_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag }
 		}
 		trigger = {
 			4188 = {
@@ -38,7 +37,7 @@ country_decisions = {
 			country_event = { 
 				id = THE_SUW_events.5
 			}
-			set_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag
+			clr_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag
 		}
 		major = yes
 		
