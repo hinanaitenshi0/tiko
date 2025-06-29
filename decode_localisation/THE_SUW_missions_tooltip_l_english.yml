@@ -15,6 +15,9 @@
 ### MODIFIER
  THE_SUW_Gain_respect_province_modiffier: "收获尊重"
  THE_SUW_The_ancient_Suwa_Daisha_province_modiffier: "古旧的诹访大社"
+ THE_SUW_The_revived_Suwa_Daisha_province_modiffier："复苏的诹访大社"
+ THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier："兴盛的诹访大社"
+ THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier："神眷的诹访大社"
  THE_SUW_Moriya_Shinto_province_modiffier: "守矢神道"
  THE_SUW_Loyalty_of_social_classes_country_modiffier: "忠心的阶层"
  THE_SUW_Eternal_loyalty_country_modiffier: "永远的忠诚"
@@ -33,13 +36,17 @@ THE_SUW_events.1.b: "记得吃饭哦！"
 THE_SUW_events.4.title: "来自信徒的请求"
 THE_SUW_events.4.desc: "1"
 THE_SUW_events.4.name: "是时候重拾旧业了"
-
+THE_SUW_events.5.title:"往日荣光，犹在眼前"
+THE_SUW_events.5.desc:"1"
+THE_SUW_events.5.name:"撸起袖子加油干！"
 ### EVENT_END
 
 
 ### DECISION
  THE_SUW_country_release_decision_title: "一封来自青蛙的信"
  THE_SUW_country_release_decision_desc: "这是一个决议描述"
+ THE_SUW_Strengthening_Suwa_Daisha_one_decision_title: "发展我们的家"
+ THE_SUW_Strengthening_Suwa_Daisha_one_decision_desc: "这是一个决议描述"
 ### DECISION_END
 
 

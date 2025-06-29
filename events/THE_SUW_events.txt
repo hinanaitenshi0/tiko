@@ -1,5 +1,6 @@
 namespace = THE_SUW_events
 
+#释放事件
 country_event = {
 	id = THE_SUW_events.1
 	title = "THE_SUW_events.1.title"
@@ -144,6 +145,7 @@ country_event = {
 		}
 	}
 }
+#永远的忠诚
 country_event = {
 	id = THE_SUW_events.2
 	title = "THE_SUW_events.2.title"
@@ -178,6 +180,7 @@ country_event = {
 		}
 	}
 }
+#信徒的请求
 country_event = {
 	id = THE_SUW_events.3
 	title = "THE_SUW_events.3.title"
@@ -208,5 +211,24 @@ country_event = {
 	option = {
 		name = THE_SUW_events.4.name
 		4188 = { change_trade_goods = paper }
+	}
+}
+country_event = {
+	id = THE_SUW_events.5
+	title = "THE_SUW_events.5.title"
+	desc = "THE_SUW_events.5.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	#撸起袖子加油干！
+	option = {
+		4188 = {
+				remove_province_modifier = THE_SUW_The_ancient_Suwa_Daisha_province_modiffier
+				add_province_modifier = {
+					name = "THE_SUW_The_revived_Suwa_Daisha_province_modiffier"
+					duration = -1
+				}
+		}
 	}
 }

@@ -21,3 +21,31 @@ country_decisions = {
 	}
 }
 
+country_decisions = {
+	#强化诹访大社决议1
+	THE_SUW_Strengthening_Suwa_Daisha_one_decision = {
+		potential = {	
+			tag = SUW
+			has_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag 
+			NOT = { has_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag }
+		}
+		trigger = {
+			4188 = {
+				num_of_times_improved = 5
+			}
+		}
+		effect = {
+			country_event = { 
+				id = THE_SUW_events.5
+			}
+			set_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag
+		}
+		major = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+

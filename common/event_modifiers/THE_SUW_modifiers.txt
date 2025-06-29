@@ -8,10 +8,31 @@ THE_SUW_The_ancient_Suwa_Daisha_province_modiffier = {
 	local_build_cost = 0.1
 	local_build_time = 0.1
 	local_development_cost = -0.05
+}
 #复苏的诹访大社
+THE_SUW_The_revived_Suwa_Daisha_province_modiffier = {
+	local_build_cost = -0.1
+	local_build_time = -0.1
+	local_development_cost = -0.1
+	institution_growth = 1
+}
 #兴盛的诹访大社
-#    的诹访大社
-
+THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier = {
+	local_build_cost = -0.2
+	local_build_time = -0.2
+	local_development_cost = -0.15
+	institution_growth = 2 
+	allowed_num_of_manufactories = 1
+}
+#神眷的诹访大社
+THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier = {
+	local_build_cost = -0.3 #当地建筑花费
+	local_build_time = -0.3 #当地建筑时间
+	local_development_cost = -0.2 #当地提升发展度花费
+	institution_growth = 3 #按指定值修正一个省中所有思潮的增长
+	allowed_num_of_manufactories = 2 #当地可建造的工厂建筑数量
+	local_great_project_upgrade_cost = -0.4 #当地伟大工程升级花费
+	local_great_project_upgrade_time = -0.4 #当地伟大工程升级的时间
 }
 #守矢神道
 THE_SUW_Moriya_Shinto_province_modiffier = {
