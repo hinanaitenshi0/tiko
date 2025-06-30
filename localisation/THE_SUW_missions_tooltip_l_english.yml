@@ -3,6 +3,8 @@
  THE_SUW_enable_diplomatic_change_religion_tt: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
  THE_SUW_obtain_favors_tt: "§VÎNÏk*NßvËSY·ƒ—V10¹pºNÅ`§"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "Ïk	gN*Nåb	g„vwýNˆvOckáOÿžX R1000TáO’V"
+ THE_SUW_Strengthening_Suwa_Daisha_tt: "=T(u³Q®‹ÿAQ¸‹ú^¾‹bìN„v^y>y"
+ THE_SUW_Concentrated_development_Suwa_Daisha_tt: "AQ¸‹àemcwÆ–-NÑSUS¦^" 
 ### TOOLTIP_END
 
 ### dynasty
@@ -15,9 +17,9 @@
 ### MODIFIER
  THE_SUW_Gain_respect_province_modiffier: "6e·ƒSÍ‘"
  THE_SUW_The_ancient_Suwa_Daisha_province_modiffier: "äSçe„vù‹¿‹'Y>y"
- THE_SUW_The_revived_Suwa_Daisha_province_modiffierÿ"YÏ‚„vù‹¿‹'Y>y"
- THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffierÿ"tQÛv„vù‹¿‹'Y>y"
- THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffierÿ"^y7w„vù‹¿‹'Y>y"
+ THE_SUW_The_revived_Suwa_Daisha_province_modiffier: "YÏ‚„vù‹¿‹'Y>y"
+ THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier: "tQÛv„vù‹¿‹'Y>y"
+ THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier: "^y7w„vù‹¿‹'Y>y"
  THE_SUW_Moriya_Shinto_province_modiffier: "ˆRâw^yS"
  THE_SUW_Loyalty_of_social_classes_country_modiffier: "àVÃV„v6–BS"
  THE_SUW_Eternal_loyalty_country_modiffier: "8lÜ„vàVÚ‹"
@@ -36,17 +38,27 @@ THE_SUW_events.1.b: "°‹—VTm™æTÿ"
 THE_SUW_events.4.title: "egêáO’V„v÷‹Bl"
 THE_SUW_events.4.desc: "1"
 THE_SUW_events.4.name: "=föePÍ‘þbçeN†N"
-THE_SUW_events.5.title:"ŽVåecƒIQÿ¹r(W<wMR"
-THE_SUW_events.5.desc:"1"
-THE_SUW_events.5.name:"¸dw–ˆPR R¹lr^ÿ"
+THE_SUW_events.5.title: "ŽVåecƒIQÿ¹r(W<wMR"
+THE_SUW_events.5.desc: "1"
+THE_SUW_events.5.name: "¸dw–ˆPR R¹lr^ÿ"
+THE_SUW_events.6.title: "AuNS?aofÿ<O¦h^—¦h"
+THE_SUW_events.6.desc: "1"
+THE_SUW_events.6.name: "NNàe¾–‹NÿêS`	gÃVºNÿ"
+THE_SUW_events.7.title: "ºN^yqQPNÿ*gSNïS"
+THE_SUW_events.7.desc: "1"
+THE_SUW_events.7.name: "ù‹¿‹'Y>yÿ`O„v^yfÞVeg†Nÿ"
 ### EVENT_END
 
 
 ### DECISION
  THE_SUW_country_release_decision_title: "NSegêR—Ù†„váO"
  THE_SUW_country_release_decision_desc: "Ù=fN*N³Q®‹Ïcð"
- THE_SUW_Strengthening_Suwa_Daisha_one_decision_title: "ÑSUSbìN„v¶R"
+ THE_SUW_Strengthening_Suwa_Daisha_one_decision_title: "Í‘ú^bìN„v¶R"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_desc: "Ù=fN*N³Q®‹Ïcð"
+ THE_SUW_Strengthening_Suwa_Daisha_two_decision_title: "ÑSUSbìN„v¶R"
+ THE_SUW_Strengthening_Suwa_Daisha_two_decision_desc: "Ù=fN*N³Q®‹Ïcð"
+ THE_SUW_Strengthening_Suwa_Daisha_three_decision_title: "šbxdbìN„v¶R"
+ THE_SUW_Strengthening_Suwa_Daisha_three_decision_desc: "Ù=fN*N³Q®‹Ïcð"
 ### DECISION_END
 
 

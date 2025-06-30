@@ -1,0 +1,133 @@
+
+ SUW_great_project_1 = {
+ 	start = 4188
+ 	date = 1443.01.09
+ 	time = { months = 0	}
+ 	build_cost = 0
+ 	can_be_moved = no
+ 	move_days_per_unit_distance = 10
+ 	starting_tier = 1
+ 	type = monument
+	
+ 	build_trigger = {
+ 	}
+	
+ 	on_built = {
+ 	}
+	
+ 	on_destroyed = {
+ 	}
+	
+ 	can_use_modifiers_trigger = {
+ 		owner = {
+			OR = {
+ 				tag = SUW
+ 				was_tag = SUW
+ 			}
+		}
+ 	}
+	
+ 	can_upgrade_trigger = {
+		owner = {
+		has_country_flag = THE_SUW_Suwa_Shrine_of_the_Divine_Family_flag
+		}
+ 		owner = {
+			OR = {
+ 				tag = SUW
+ 				was_tag = SUW
+ 			}
+		}
+ 	}
+	
+ 	keep_trigger = {
+ 	}
+	
+ 	tier_0 = {
+ 		upgrade_time = {
+ 			months = 0
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 0
+ 		}
+ 		province_modifiers = {
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+	
+ 	tier_1 = {
+ 		upgrade_time = {
+ 			months = 120
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 1000
+ 		}
+ 		province_modifiers = {
+			global_tax_income = 12
+ 		}
+ 		area_modifier = {
+			state_governing_cost = -0.1
+ 		}
+		country_modifiers = {
+			development_cost_modifier = -0.025
+		} 
+ 		on_upgraded = {
+			free_concentrate_development = yes
+			custom_tooltip = THE_SUW_Concentrated_development_Suwa_Daisha_tt
+ 		}
+ 	}
+	
+ 	tier_2 = {
+ 		upgrade_time = {
+ 			months = 240
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 2500
+ 		}
+ 		province_modifiers = {
+			global_tax_income = 18
+ 		}
+ 		area_modifier = {
+			state_governing_cost = -0.15
+ 		}
+ 		region_modifier = {
+ 		}
+ 		country_modifiers = {
+			development_cost_modifier = -0.05
+		} 
+ 		on_upgraded = {
+			free_concentrate_development = yes
+			custom_tooltip = THE_SUW_Concentrated_development_Suwa_Daisha_tt
+ 		}
+ 	}
+	
+ 	tier_3 = {
+ 		upgrade_time = {
+ 			months = 480
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 5000
+ 		}
+ 		province_modifiers = {
+			global_tax_income = 24
+ 		}
+ 		area_modifier = {
+			state_governing_cost = -0.2
+ 		}
+ 		region_modifier = { 
+ 		}
+		country_modifiers = {
+			development_cost_modifier = -0.1
+			administrative_efficiency = 0.05
+		} 
+ 		on_upgraded = {
+			free_concentrate_development = yes
+			custom_tooltip = THE_SUW_Concentrated_development_Suwa_Daisha_tt
+			reset_golden_age = yes
+ 		}
+ 	}
+ }

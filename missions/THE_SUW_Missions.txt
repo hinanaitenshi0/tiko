@@ -335,6 +335,7 @@ THE_SUW_stage_1_branch_5 = {
 				}
 			}
 			set_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag
+			custom_tooltip = THE_SUW_Strengthening_Suwa_Daisha_tt
 		} 
 	}
 

@@ -1,7 +1,7 @@
 namespace = THE_SUW_events
 
-#释放事件
 country_event = {
+	#释放事件
 	id = THE_SUW_events.1
 	title = "THE_SUW_events.1.title"
 	desc = "THE_SUW_events.1.desc"
@@ -145,8 +145,9 @@ country_event = {
 		}
 	}
 }
-#永远的忠诚
+
 country_event = {
+	#永远的忠诚
 	id = THE_SUW_events.2
 	title = "THE_SUW_events.2.title"
 	desc = "THE_SUW_events.2.desc"
@@ -178,10 +179,15 @@ country_event = {
 			name = "THE_SUW_Eternal_loyalty_country_modiffier"
 			duration = -1
 		}
+		add_historical_friend = MRY
+		MRY = {
+			add_historical_friend = SUW
+		}
 	}
 }
-#信徒的请求
+
 country_event = {
+	#信徒的请求
 	id = THE_SUW_events.3
 	title = "THE_SUW_events.3.title"
 	desc = "THE_SUW_events.3.desc"
@@ -200,7 +206,9 @@ country_event = {
 		add_stability = 1
 	}
 }
+
 country_event = {
+	#改变信浓贸易品
 	id = THE_SUW_events.4
 	title = "THE_SUW_events.4.title"
 	desc = "THE_SUW_events.4.desc"
@@ -213,7 +221,9 @@ country_event = {
 		4188 = { change_trade_goods = paper }
 	}
 }
+
 country_event = {
+	#强化诹访大社1
 	id = THE_SUW_events.5
 	title = "THE_SUW_events.5.title"
 	desc = "THE_SUW_events.5.desc"
@@ -227,6 +237,48 @@ country_event = {
 				remove_province_modifier = THE_SUW_The_ancient_Suwa_Daisha_province_modiffier
 				add_province_modifier = {
 					name = "THE_SUW_The_revived_Suwa_Daisha_province_modiffier"
+					duration = -1
+				}
+		}
+	}
+}
+
+country_event = {
+	#强化诹访大社2
+	id = THE_SUW_events.6
+	title = "THE_SUW_events.6.title"
+	desc = "THE_SUW_events.6.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	#世上无难事，只怕有心人！ 
+	option = {
+		4188 = {
+				remove_province_modifier = THE_SUW_The_revived_Suwa_Daisha_province_modiffier
+				add_province_modifier = {
+					name = "THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier"
+					duration = -1
+				}
+		}
+	}
+}
+
+country_event = {
+	#强化诹访大社3
+	id = THE_SUW_events.7
+	title = "THE_SUW_events.7.title"
+	desc = "THE_SUW_events.7.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	#诹访大社，你的神明回来了！
+	option = {
+		4188 = {
+				remove_province_modifier = THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier
+				add_province_modifier = {
+					name = "THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier"
 					duration = -1
 				}
 		}
