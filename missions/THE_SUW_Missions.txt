@@ -207,8 +207,6 @@ THE_SUW_stage_1_branch_3 = {
 				}
 				center_of_trade = 1
 			}
-			change_government = theocracy
-			add_government_reform = THE_SUW_SUW_and_KAN_reform
 			country_event = {
 				id = THE_SUW_events.3
 				days = 30
@@ -228,7 +226,10 @@ THE_SUW_stage_1_branch_3 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			change_government = theocracy
+			add_government_reform = THE_SUW_SUW_and_KAN_reform
+		} 
 	}
 }
 THE_SUW_stage_1_branch_4 = {
