@@ -2,6 +2,8 @@
 ### TOOLTIP
  THE_SUW_enable_diplomatic_change_religion_tt: "启用「§Y邀请改教§!」外交行动"
  THE_SUW_obtain_favors_tt: "§V从每个盟友处获得10点人情§"
+ THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§Y我们会向幕府将军发起挑战，其盟友及其他大名会关注着这场对决，如若获胜，所有信仰守矢神道的大名将转投我们的麾下§"
+ THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y厉兵秣马，暂避锋芒，等准备好再动手呱（决议）§"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "每有一个拥有的省份皈依正信，增加1000名信徒"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "启用决议，允许建设我们的神社"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "允许无损耗集中发展度" 
@@ -27,6 +29,8 @@
  THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier: "开源节流"
  THE_SUW_befriend_a_distant_state_country_modiffier: "远交"
  THE_SUW_attacking_a_nearby_country_modiffier: "近攻"
+ THE_SUW_there_is_divine_assistance_modifier: "如有神助"
+ THE_SUW_meet_a_challenge_modifier: "迎接挑战！"
 ### MODIFIER_END
 
 
@@ -36,21 +40,21 @@ THE_SUW_events.1.desc: "早苗，我们想回家看看，这段时间，神社�
 THE_SUW_events.1.a: "诹访子大人，神奈子大人，那我呢？"
 THE_SUW_events.1.b: "记得吃饭哦！"
 THE_SUW_events.3.title: "通使幕府"
-THE_SUW_events.3.desc: "1"
-THE_SUW_events.3.a: "幕府将军？他有几个信徒？"
+THE_SUW_events.3.desc: "我们掌控信浓的消息很快传到了幕府将军的耳中，其似乎并没有表现出太过吃惊，只当我们又是这乱世中崛起的新一股势力，如对待其他大名无二，其要求我们“缴纳年俸”"
+THE_SUW_events.3.a: "幕府将军？他有几个信徒？就算是他老祖宗见了吾都要毕恭毕敬的"
 THE_SUW_events.3.b: "越俎代庖，实为不妥"
 THE_SUW_events.4.title: "来自信徒的请求"
 THE_SUW_events.4.desc: "1"
 THE_SUW_events.4.name: "是时候重拾旧业了"
 THE_SUW_events.5.title: "往日荣光，犹在眼前"
 THE_SUW_events.5.desc: "1"
-THE_SUW_events.5.name: "撸起袖子加油干"
+THE_SUW_events.5.name: "撸起袖子加油干！"
 THE_SUW_events.6.title: "繁华愿景，似梦非梦"
 THE_SUW_events.6.desc: "1"
-THE_SUW_events.6.name: "世上无难事，只怕有心人"
+THE_SUW_events.6.name: "世上无难事，只怕有心人！"
 THE_SUW_events.7.title: "人神共乐，未尝不可"
 THE_SUW_events.7.desc: "1"
-THE_SUW_events.7.name: "诹访大社，你的神明回来了"
+THE_SUW_events.7.name: "诹访大社，你的神明回来了！"
 ### EVENT_END
 
 

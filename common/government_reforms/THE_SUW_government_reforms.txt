@@ -44,5 +44,6 @@ THE_SUW_SUW_and_KAN_reform = {
 		global_trade_power = 0.15
 		development_cost_modifier = -0.1
 		global_missionary_strength = 0.03
+		cb_on_religious_enemies = yes
 	}
 }

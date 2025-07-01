@@ -22,6 +22,41 @@ country_decisions = {
 }
 
 country_decisions = {
+	#准备好后宣战
+	THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision = {
+		potential = {	
+			tag = SUW
+			has_country_flag = THE_SUW_Everything_is_ready_except_for_the_divine_wind_flag 
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					has_reform = shogunate
+				}
+				ROOT = {
+					is_subject_of_type = {
+						daimyo_vassal
+					}
+				}
+				declare_war_with_cb = {
+    				who = PREV 
+   					casus_belli = cb_defender_of_the_faith
+					days = 30
+				}
+			}
+			clr_country_flag = THE_SUW_Everything_is_ready_except_for_the_divine_wind_flag
+		}
+		major = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {
 	#强化诹访大社决议1
 	THE_SUW_Strengthening_Suwa_Daisha_one_decision = {
 		potential = {	

@@ -195,17 +195,40 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	#幕府将军？他有几个信徒？
+	#幕府将军？他有几个信徒？就算是他老祖宗见了吾都要毕恭毕敬的
 	option = {
 		name = THE_SUW_events.3.a
 		add_prestige_or_monarch_power = { amount = 75 }
-		
+		4188 = {
+			add_province_modifier = {
+				name = "THE_SUW_meet_a_challenge_modifier"
+				duration = 1825
+			}
+		}
+		random_country = {
+			limit = {
+				has_reform = shogunate
+			}
+			ROOT = {
+				is_subject_of_type = {
+					daimyo_vassal
+				}
+			}
+			declare_war_with_cb = {
+    			who = PREV 
+   				casus_belli = cb_defender_of_the_faith
+				days = 30
+			}
+		}
+		custom_tooltip = THE_SUW_Challenge_the_authority_of_the_shogunate_tt
 	}
 	#越俎代庖，实为不妥
 	option = {
 		name = THE_SUW_events.3.b
 		add_treasury = -100
 		add_stability = 1
+		custom_tooltip = THE_SUW_Temporarily_avoid_sharp_edges_tt
+		set_country_flag = THE_SUW_Everything_is_ready_except_for_the_divine_wind_flag
 	}
 }
 
@@ -237,11 +260,11 @@ country_event = {
 	option = {
 		name = THE_SUW_events.5.name
 		4188 = {
-				remove_province_modifier = THE_SUW_The_ancient_Suwa_Daisha_province_modiffier
-				add_province_modifier = {
-					name = "THE_SUW_The_revived_Suwa_Daisha_province_modiffier"
-					duration = -1
-				}
+			remove_province_modifier = THE_SUW_The_ancient_Suwa_Daisha_province_modiffier
+			add_province_modifier = {
+				name = "THE_SUW_The_revived_Suwa_Daisha_province_modiffier"
+				duration = -1
+			}
 		}
 	}
 }
@@ -259,11 +282,11 @@ country_event = {
 	option = {
 		name = THE_SUW_events.6.name
 		4188 = {
-				remove_province_modifier = THE_SUW_The_revived_Suwa_Daisha_province_modiffier
-				add_province_modifier = {
-					name = "THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier"
-					duration = -1
-				}
+			remove_province_modifier = THE_SUW_The_revived_Suwa_Daisha_province_modiffier
+			add_province_modifier = {
+				name = "THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier"
+				duration = -1
+			}
 		}
 	}
 }
@@ -281,11 +304,11 @@ country_event = {
 	option = {
 		name = THE_SUW_events.7.name
 		4188 = {
-				remove_province_modifier = THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier
-				add_province_modifier = {
-					name = "THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier"
-					duration = -1
-				}
+			remove_province_modifier = THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier
+			add_province_modifier = {
+				name = "THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier"
+				duration = -1
+			}
 		}
 	}
 }

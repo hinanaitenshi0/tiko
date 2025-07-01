@@ -40,8 +40,17 @@ THE_SUW_Moriya_Shinto_province_modiffier = {
 	local_unrest = -20
 	local_manpower_modifier = 0.2
 	local_tax_modifier = 0.2
-	trade_goods_size = 2
 	province_trade_power_modifier = 0.2
+}
+#如有神助
+THE_SUW_there_is_divine_assistance_modifier = {
+	land_morale = 0.15
+	land_forcelimit = 10
+}
+#迎接挑战！
+THE_SUW_meet_a_challenge_modifier = {
+	fort_level = 2
+	garrison_size = 0.33
 }
 #忠心的阶层
 THE_SUW_Loyalty_of_social_classes_country_modiffier = {

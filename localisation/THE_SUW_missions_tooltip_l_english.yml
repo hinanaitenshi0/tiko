@@ -2,6 +2,8 @@
 ### TOOLTIP
  THE_SUW_enable_diplomatic_change_religion_tt: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
  THE_SUW_obtain_favors_tt: "§VÎNÏk*NßvËSY·ƒ—V10¹pºNÅ`§"
+ THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§YbìNOTU^œ^S›QÑSwcbÿvQßvËSÊSvQÖN'YTOsQèlNwÙ:WùR³Qÿ‚Yå‚·ƒÜwÿNb	gáOðNˆRâw^yS„v'YTSl•bbìN„v¾žN§"
+ THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y‰SuQãylšÿ‚f•’‚ÿIrÆQY‹YQ¨RKbqTÿ³Q®‹	ÿ§"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "Ïk	gN*Nåb	g„vwýNˆvOckáOÿžX R1000TáO’V"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "=T(u³Q®‹ÿAQ¸‹ú^¾‹bìN„v^y>y"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "AQ¸‹àemcwÆ–-NÑSUS¦^" 
@@ -27,6 +29,8 @@
  THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier: "Vn‚‚Am"
  THE_SUW_befriend_a_distant_state_country_modiffier: "Ü²N"
  THE_SUW_attacking_a_nearby_country_modiffier: "ÑIe"
+ THE_SUW_there_is_divine_assistance_modifier: "‚Y	g^y©R"
+ THE_SUW_meet_a_challenge_modifier: "Î¥ccbÿ"
 ### MODIFIER_END
 
 
@@ -36,21 +40,21 @@ THE_SUW_events.1.desc: "ée×‚ÿbìNó`ÞV¶RwwÿÙµköe
 THE_SUW_events.1.a: "ù‹¿‹PR'YºNÿ^yHYPR'YºNÿ±bbTÿ"
 THE_SUW_events.1.b: "°‹—VTm™æTÿ"
 THE_SUW_events.3.title: "OU^œ^"
-THE_SUW_events.3.desc: "1"
-THE_SUW_events.3.a: "U^œ^S›QÿÖN	gàQ*NáO’Vÿ"
+THE_SUW_events.3.desc: "bìNŒcµcáOSm„vˆmo`ˆVëV.O0R†NU^œ^S›Q„v3w-NÿvQ<ONNv^¡l	ghˆ°súQ*YÇTÊ`ÿêSSVbìNÈS=fÙqNN-NTw„v°eN¡w¿R›Rÿ‚YùR…VvQÖN'YTàeŒNÿvQ‰BlbìN4³ut^øO"
+THE_SUW_events.3.a: "U^œ^S›QÿÖN	gàQ*NáO’Vÿ1S—r=fÖNwVy—RÁ‰†N>Tý‰Õkm`Õkle„v"
 THE_SUW_events.3.b: "ŠÎOãN–^ÿžR:NN¥Y"
 THE_SUW_events.4.title: "egêáO’V„v÷‹Bl"
 THE_SUW_events.4.desc: "1"
 THE_SUW_events.4.name: "=föePÍ‘þbçeN†N"
 THE_SUW_events.5.title: "ŽVåecƒIQÿ¹r(W<wMR"
 THE_SUW_events.5.desc: "1"
-THE_SUW_events.5.name: "¸dw–ˆPR R¹lr^"
+THE_SUW_events.5.name: "¸dw–ˆPR R¹lr^ÿ"
 THE_SUW_events.6.title: "AuNS?aofÿ<O¦h^—¦h"
 THE_SUW_events.6.desc: "1"
-THE_SUW_events.6.name: "NNàe¾–‹NÿêS`	gÃVºN"
+THE_SUW_events.6.name: "NNàe¾–‹NÿêS`	gÃVºNÿ"
 THE_SUW_events.7.title: "ºN^yqQPNÿ*gSNïS"
 THE_SUW_events.7.desc: "1"
-THE_SUW_events.7.name: "ù‹¿‹'Y>yÿ`O„v^yfÞVeg†N"
+THE_SUW_events.7.name: "ù‹¿‹'Y>yÿ`O„v^yfÞVeg†Nÿ"
 ### EVENT_END
 
 
