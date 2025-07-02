@@ -2,7 +2,7 @@
 ### TOOLTIP
  THE_SUW_enable_diplomatic_change_religion_tt: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
  THE_SUW_obtain_favors_tt: "§VÎNÏk*NßvËSY·ƒ—V10¹pºNÅ`§"
- THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§YbìNOTU^œ^S›QÑSwcbÿvQßvËSÊSvQÖN'YTOsQèlNwÙ:WùR³Qÿ‚Yå‚·ƒÜwÿNb	gáOðNˆRâw^yS„v'YTSl•bbìN„v¾žN§"
+ THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§YbìNO(WN*NgTTU^œ^S›QÑSwcbÿvQßvËSÊSvQÖN'YTOsQèlNwÙ:WùR³Qÿ‚Yå‚·ƒÜwÿNb	gáOðNˆRâw^yS„v'YTSl•bbìN„v¾žN§"
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y‰SuQãylšÿ‚f•’‚ÿIrÆQY‹YQ¨RKbqTÿ³Q®‹	ÿ§"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "Ïk	gN*Nåb	g„vwýNˆvOckáOÿžX R1000TáO’V"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "=T(u³Q®‹ÿAQ¸‹ú^¾‹bìN„v^y>y"
@@ -31,6 +31,7 @@
  THE_SUW_attacking_a_nearby_country_modiffier: "ÑIe"
  THE_SUW_there_is_divine_assistance_modifier: "‚Y	g^y©R"
  THE_SUW_meet_a_challenge_modifier: "Î¥ccbÿ"
+ THE_SUW_Recruit_manpower_country_modiffier: "ÛbÆ–ºNKb"
 ### MODIFIER_END
 
 
@@ -61,6 +62,8 @@ THE_SUW_events.7.name: "ù‹¿‹'Y>yÿ`O„v^yfÞVeg†Nÿ"
 ### DECISION
  THE_SUW_country_release_decision_title: "NSegêR—Ù†„váO"
  THE_SUW_country_release_decision_desc: "Ù=fN*N³Q®‹Ïcð"
+ THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision_title: "N‹NñOYÿêS.k^yÎ˜"
+ THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision_desc: "b=f`—ÀNHNû•T„vÿmNå‹©‹`OìNÁ‰Æ‹NN†N"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_title: "Í‘ú^bìN„v¶R"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_Strengthening_Suwa_Daisha_two_decision_title: "ÑSUSbìN„v¶R"

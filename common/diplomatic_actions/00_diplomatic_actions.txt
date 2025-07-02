@@ -1444,9 +1444,7 @@ callaction = {
 		potential = { 
 			has_reform = shogunate
 			any_country = {
-				owned_province = {
-					has_province_modifier = THE_SUW_meet_a_challenge_modifier
-				}
+				has_country_flag = THE_SUW_3_3_flag
 				war_with = ROOT
 			}
 		}

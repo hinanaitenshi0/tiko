@@ -200,23 +200,19 @@ country_event = {
 		name = THE_SUW_events.3.a
 		add_prestige_or_monarch_power = { amount = 75 }
 		4188 = {
+			add_building_construction = {
+			    building = fort_15th
+   				speed = 0.01
+  	 			cost = 0.1
+			}
 			add_province_modifier = {
 				name = "THE_SUW_meet_a_challenge_modifier"
 				duration = 1825
 			}
 		}
-		random_country = {
-			limit = {
-				has_reform = shogunate
-			}
-			ROOT = {
-				is_subject_of_type = {
-					daimyo_vassal
-				}
-			}
-			declare_war_with_cb = {
-    			who = PREV 
-   				casus_belli = cb_defender_of_the_faith
+		hidden_effect = {
+			country_event = { 
+				id = THE_SUW_events.8
 				days = 30
 			}
 		}
@@ -227,6 +223,10 @@ country_event = {
 		name = THE_SUW_events.3.b
 		add_treasury = -100
 		add_stability = 1
+		add_country_modifier = {
+			name = THE_SUW_Recruit_manpower_country_modiffier
+			duration = 3650
+		}
 		custom_tooltip = THE_SUW_Temporarily_avoid_sharp_edges_tt
 		set_country_flag = THE_SUW_Everything_is_ready_except_for_the_divine_wind_flag
 	}
@@ -310,5 +310,53 @@ country_event = {
 				duration = -1
 			}
 		}
+	}
+}
+
+country_event = {
+	#隐藏事件触发和幕府的战争
+	id = THE_SUW_events.8
+	title = "THE_SUW_events.8.title"
+	desc = "THE_SUW_events.8.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = THE_SUW_events.8.name
+		random_country = {
+			limit = {
+				has_reform = shogunate
+			}
+			ROOT = {
+				declare_war_with_cb = {
+    				who = PREV 
+   					casus_belli = cb_world_crusade
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = { 
+				id = THE_SUW_events.9
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	#隐藏事件消除允许单挑的flag
+	id = THE_SUW_events.9
+	title = "THE_SUW_events.9.title"
+	desc = "THE_SUW_events.9.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = THE_SUW_events.9.name
+		clr_country_flag = THE_SUW_3_3_flag
 	}
 }

@@ -36,18 +36,21 @@ country_decisions = {
 					has_reform = shogunate
 				}
 				ROOT = {
-					is_subject_of_type = {
-						daimyo_vassal
+					declare_war_with_cb = {
+    					who = PREV 
+   						casus_belli = cb_world_crusade
 					}
-				}
-				declare_war_with_cb = {
-    				who = PREV 
-   					casus_belli = cb_defender_of_the_faith
-					days = 30
 				}
 			}
 			clr_country_flag = THE_SUW_Everything_is_ready_except_for_the_divine_wind_flag
 		}
+		hidden_effect = {
+			country_event = { 
+				id = THE_SUW_events.9
+				days = 30
+			}
+		}
+
 		major = yes
 		
 		ai_will_do = {

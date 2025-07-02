@@ -2,7 +2,7 @@
 ### TOOLTIP
  THE_SUW_enable_diplomatic_change_religion_tt: "启用「§Y邀请改教§!」外交行动"
  THE_SUW_obtain_favors_tt: "§V从每个盟友处获得10点人情§"
- THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§Y我们会向幕府将军发起挑战，其盟友及其他大名会关注着这场对决，如若获胜，所有信仰守矢神道的大名将转投我们的麾下§"
+ THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§Y我们会在一个月后向幕府将军发起挑战，其盟友及其他大名会关注着这场对决，如若获胜，所有信仰守矢神道的大名将转投我们的麾下§"
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y厉兵秣马，暂避锋芒，等准备好再动手呱（决议）§"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "每有一个拥有的省份皈依正信，增加1000名信徒"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "启用决议，允许建设我们的神社"
@@ -31,6 +31,7 @@
  THE_SUW_attacking_a_nearby_country_modiffier: "近攻"
  THE_SUW_there_is_divine_assistance_modifier: "如有神助"
  THE_SUW_meet_a_challenge_modifier: "迎接挑战！"
+ THE_SUW_Recruit_manpower_country_modiffier: "招集人手"
 ### MODIFIER_END
 
 
@@ -61,6 +62,8 @@ THE_SUW_events.7.name: "诹访大社，你的神明回来了！"
 ### DECISION
  THE_SUW_country_release_decision_title: "一封来自青蛙的信"
  THE_SUW_country_release_decision_desc: "这是一个决议描述"
+ THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision_title: "万事俱备，只欠神风"
+ THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision_desc: "我是靠什么闻名的，也该让你们见识一下了"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_title: "重建我们的家"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_desc: "这是一个决议描述"
  THE_SUW_Strengthening_Suwa_Daisha_two_decision_title: "发展我们的家"

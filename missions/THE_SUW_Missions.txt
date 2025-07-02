@@ -201,7 +201,7 @@ THE_SUW_stage_1_branch_3 = {
 			add_mil_power = 150
 			add_country_modifier = {
 				name = THE_SUW_there_is_divine_assistance_modifier
-				duration = 3650
+				duration = 5475
 			}
 			4188 = {
 				remove_province_modifier = THE_SUW_Gain_respect_province_modiffier
@@ -216,6 +216,7 @@ THE_SUW_stage_1_branch_3 = {
 				days = 30
 				random = 10
 			}
+			set_country_flag = THE_SUW_3_3_flag
 		}
 	}
 

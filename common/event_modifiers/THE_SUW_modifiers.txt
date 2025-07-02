@@ -46,11 +46,20 @@ THE_SUW_Moriya_Shinto_province_modiffier = {
 THE_SUW_there_is_divine_assistance_modifier = {
 	land_morale = 0.15
 	land_forcelimit = 10
+	cb_on_religious_enemies = yes
 }
 #迎接挑战！
 THE_SUW_meet_a_challenge_modifier = {
-	fort_level = 2
 	garrison_size = 0.33
+	global_garrison_growth = 0.33
+	ignore_coring_distance = yes
+}
+#招集人手
+THE_SUW_Recruit_manpower_country_modiffier = {
+	diplomats = 1
+	improve_relation_modifier = 0.2
+	advisor_cost = -0.25
+	mercenary_cost = -0.2
 }
 #忠心的阶层
 THE_SUW_Loyalty_of_social_classes_country_modiffier = {
