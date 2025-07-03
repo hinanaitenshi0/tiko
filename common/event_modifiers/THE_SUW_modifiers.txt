@@ -38,9 +38,10 @@ THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier = {
 THE_SUW_Moriya_Shinto_province_modiffier = {
 	local_missionary_strength = -0.1
 	local_unrest = -20
-	local_manpower_modifier = 0.2
-	local_tax_modifier = 0.2
-	province_trade_power_modifier = 0.2
+	local_manpower_modifier = 0.15
+	local_tax_modifier = 0.15
+	local_production_efficiency = 0.15
+	province_trade_power_modifier = 0.15
 }
 #如有神助
 THE_SUW_there_is_divine_assistance_modifier = {

@@ -369,7 +369,7 @@ country_event = {
 
 	option = {
 		name = THE_SUW_events.10.name
-		capital_scope = {
+		4188 = {
 			artillery = ROOT
 			artillery = ROOT
 			artillery = ROOT
