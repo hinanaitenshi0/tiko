@@ -378,7 +378,6 @@ country_event = {
 			name = THE_SUW_The_Beginning_of_Holy_War_one_modifier
 			duration = -1
 		}
-		clr_country_flag = THE_SUW_The_Beginning_of_Holy_War_flag
 		clr_country_flag = THE_SUW_The_Beginning_of_Holy_War_one_flag
 	}
 }
@@ -398,7 +397,6 @@ country_event = {
 			name = THE_SUW_The_Beginning_of_Holy_War_two_modifier
 			duration = -1
 		}
-		clr_country_flag = THE_SUW_The_Beginning_of_Holy_War_flag
 		clr_country_flag = THE_SUW_The_Beginning_of_Holy_War_two_flag
 	}
 }
