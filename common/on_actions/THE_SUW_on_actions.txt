@@ -2,3 +2,36 @@
 on_province_religion_converted = {
 	THE_SUW_on_province_religion_converted_scripted_effects = yes
 }
+
+on_war_won = {
+	if = {
+		limit ={
+			tag = SUW
+			has_country_flag = THE_SUW_The_Beginning_of_Holy_War_one_flag 
+			from = {
+				has_reform = shogunate
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = THE_SUW_events.10
+				days = 30
+			}
+		}
+	}
+	if = {
+		limit ={
+			tag = SUW
+			has_country_flag = THE_SUW_The_Beginning_of_Holy_War_two_flag 
+			from = {
+				has_reform = shogunate
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = THE_SUW_events.11
+				days = 30
+			}
+		}
+	}
+}

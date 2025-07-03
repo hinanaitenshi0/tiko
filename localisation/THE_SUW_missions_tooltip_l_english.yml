@@ -31,6 +31,8 @@
  THE_SUW_attacking_a_nearby_country_modiffier: "ÑIe"
  THE_SUW_there_is_divine_assistance_modifier: "‚Y	g^y©R"
  THE_SUW_meet_a_challenge_modifier: "Î¥ccbÿ"
+ THE_SUW_The_Beginning_of_Holy_War_one_modifier: "1WbKNËY"
+ THE_SUW_The_Beginning_of_Holy_War_two_modifier: "1WbKNËY"
  THE_SUW_Recruit_manpower_country_modiffier: "ÛbÆ–ºNKb"
 ### MODIFIER_END
 
@@ -56,6 +58,12 @@ THE_SUW_events.6.name: "NNàe¾–‹NÿêS`	gÃVºNÿ"
 THE_SUW_events.7.title: "ºN^yqQPNÿ*gSNïS"
 THE_SUW_events.7.desc: "1"
 THE_SUW_events.7.name: "ù‹¿‹'Y>yÿ`O„v^yfÞVeg†Nÿ"
+THE_SUW_events.10.title: "Í‘„géy^"
+THE_SUW_events.10.desc: "1"
+THE_SUW_events.10.name: "ÿRÆ‰KNÿÿRû•KNÿÿRŠKN"
+THE_SUW_events.11.title: "Í‘„géy^"
+THE_SUW_events.11.desc: "1"
+THE_SUW_events.11.name: "ÿRÆ‰KNÿÿRû•KNÿÿRŠKN"
 ### EVENT_END
 
 
@@ -63,7 +71,7 @@ THE_SUW_events.7.name: "ù‹¿‹'Y>yÿ`O„v^yfÞVeg†Nÿ"
  THE_SUW_country_release_decision_title: "NSegêR—Ù†„váO"
  THE_SUW_country_release_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision_title: "N‹NñOYÿêS.k^yÎ˜"
- THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision_desc: "b=f`—ÀNHNû•T„vÿmNå‹©‹`OìNÁ‰Æ‹NN†N"
+ THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision_desc: ">T=f`—ÀNHNû•T„vÿmNå‹©‹`OìNÁ‰Æ‹NN†N"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_title: "Í‘ú^bìN„v¶R"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_Strengthening_Suwa_Daisha_two_decision_title: "ÑSUSbìN„v¶R"

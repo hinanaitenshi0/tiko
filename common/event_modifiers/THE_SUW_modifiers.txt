@@ -54,6 +54,16 @@ THE_SUW_meet_a_challenge_modifier = {
 	global_garrison_growth = 0.33
 	ignore_coring_distance = yes
 }
+#圣战之始(神奈子)
+THE_SUW_The_Beginning_of_Holy_War_one_modifier = {
+	core_creation = -0.1
+	stability_cost_modifier = -0.2
+}
+#圣战之始(诹访子)
+THE_SUW_The_Beginning_of_Holy_War_two_modifier = {
+	technology_cost = -0.05
+	reduced_liberty_desire = 15
+}
 #招集人手
 THE_SUW_Recruit_manpower_country_modiffier = {
 	diplomats = 1
