@@ -336,17 +336,12 @@ country_event = {
 				}
 			}
 		}
-		hidden_effect = {
-			country_event = { 
-				id = THE_SUW_events.9
-				days = 30
-			}
-		}
 	}
 }
 
 country_event = {
 	#隐藏事件消除允许单挑的flag
+	#暂时弃用
 	id = THE_SUW_events.9
 	title = "THE_SUW_events.9.title"
 	desc = "THE_SUW_events.9.desc"

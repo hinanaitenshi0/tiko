@@ -44,12 +44,6 @@ country_decisions = {
 			}
 			clr_country_flag = THE_SUW_Everything_is_ready_except_for_the_divine_wind_flag
 		}
-		hidden_effect = {
-			country_event = { 
-				id = THE_SUW_events.9
-				days = 30
-			}
-		}
 
 		major = yes
 		

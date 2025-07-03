@@ -213,7 +213,7 @@ THE_SUW_stage_1_branch_3 = {
 			}
 			country_event = {
 				id = THE_SUW_events.3
-				days = 30
+				days = 180
 				random = 10
 			}
 			set_country_flag = THE_SUW_3_3_flag
