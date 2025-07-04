@@ -4,7 +4,8 @@
  THE_SUW_obtain_favors_tt: "§V从每个盟友处获得10点人情§"
  THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§Y我们会在一个月后向幕府将军发起挑战，其盟友及其他大名会关注着这场对决，如若获胜，所有信仰守矢神道的大名将转投我们的麾下§"
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y厉兵秣马，暂避锋芒，等准备好再动手呱（决议）§"
- THE_SUW_converte_province_religion_add_1_manpower_tt: "每有一个拥有的省份皈依正信，增加1000名信徒"
+ THE_SUW_converte_province_religion_add_1_manpower_tt: "§Y每有一个拥有的省份皈依正信，增加1000名信徒§!"
+ THE_SUW_heaven_and_earth_tt: "当知晓诹访子的智慧和领略神奈子的手段之后，即可掌握乾坤之力"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "启用决议，允许建设我们的神社"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "允许无损耗集中发展度" 
 ### TOOLTIP_END
@@ -23,12 +24,13 @@
  THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier: "兴盛的诹访大社"
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier: "神眷的诹访大社"
  THE_SUW_Moriya_Shinto_province_modiffier: "守矢神道"
+ THE_SUW_Lake_Suwa_province_modiffier: "诹访湖"
  THE_SUW_Loyalty_of_social_classes_country_modiffier: "忠心的阶层"
  THE_SUW_Eternal_loyalty_country_modiffier: "永远的忠诚"
  THE_SUW_A_belief_country_modiffier: "一种信仰"
  THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier: "开源节流"
- THE_SUW_befriend_a_distant_state_country_modiffier: "远交"
- THE_SUW_attacking_a_nearby_country_modiffier: "近攻"
+ THE_SUW_self_controlled_country_modiffier: "进退有度"
+ THE_SUW_well_trained_country_modiffier: "训练有素"
  THE_SUW_there_is_divine_assistance_modifier: "如有神助"
  THE_SUW_meet_a_challenge_modifier: "迎接挑战！"
  THE_SUW_The_Beginning_of_Holy_War_one_modifier: "圣战之始"
@@ -36,6 +38,9 @@
  THE_SUW_Recruit_manpower_country_modiffier: "招集人手"
 ### MODIFIER_END
 
+###OPINION_MODIFIER
+ THE_SUW_participate_in_the_festival_opinion_modifier: "参与祭典"
+###OPINION_MODIFIER_END
 
 ### EVENT
 THE_SUW_events.1.title: "一封来自青蛙的信"
@@ -64,6 +69,11 @@ THE_SUW_events.10.name: "勿视之，勿闻之，勿言之"
 THE_SUW_events.11.title: "重构秩序"
 THE_SUW_events.11.desc: "1"
 THE_SUW_events.11.name: "勿视之，勿闻之，勿言之"
+THE_SUW_events.12.title: "御柱祭"
+THE_SUW_events.12.desc: "1"
+THE_SUW_events.12.a.name: "去凑凑热闹也未尝不可"
+THE_SUW_events.12.b.name: "没什么空啊，就随份礼吧"
+THE_SUW_events.12.c.name: "谁会专门去看青蛙和蛇啊"
 ### EVENT_END
 
 

@@ -4,7 +4,8 @@
  THE_SUW_obtain_favors_tt: "§VÎNÏk*NßvËSY·ƒ—V10¹pºNÅ`§"
  THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§YbìNO(WN*NgTTU^œ^S›QÑSwcbÿvQßvËSÊSvQÖN'YTOsQèlNwÙ:WùR³Qÿ‚Yå‚·ƒÜwÿNb	gáOðNˆRâw^yS„v'YTSl•bbìN„v¾žN§"
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y‰SuQãylšÿ‚f•’‚ÿIrÆQY‹YQ¨RKbqTÿ³Q®‹	ÿ§"
- THE_SUW_converte_province_religion_add_1_manpower_tt: "Ïk	gN*Nåb	g„vwýNˆvOckáOÿžX R1000TáO’V"
+ THE_SUW_converte_province_religion_add_1_manpower_tt: "§YÏk	gN*Nåb	g„vwýNˆvOckáOÿžX R1000TáO’V§!"
+ THE_SUW_heaven_and_earth_tt: "SVåwSfù‹¿‹PR„vzfgaŒT†˜eu^yHYPR„vKbµkKNTÿsSïSŒcácŒNdWKN›R"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "=T(u³Q®‹ÿAQ¸‹ú^¾‹bìN„v^y>y"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "AQ¸‹àemcwÆ–-NÑSUS¦^" 
 ### TOOLTIP_END
@@ -23,12 +24,13 @@
  THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier: "tQÛv„vù‹¿‹'Y>y"
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier: "^y7w„vù‹¿‹'Y>y"
  THE_SUW_Moriya_Shinto_province_modiffier: "ˆRâw^yS"
+ THE_SUW_Lake_Suwa_province_modiffier: "ù‹¿‹Vn"
  THE_SUW_Loyalty_of_social_classes_country_modiffier: "àVÃV„v6–BS"
  THE_SUW_Eternal_loyalty_country_modiffier: "8lÜ„vàVÚ‹"
  THE_SUW_A_belief_country_modiffier: "NÍyáOðN"
  THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier: "Vn‚‚Am"
- THE_SUW_befriend_a_distant_state_country_modiffier: "Ü²N"
- THE_SUW_attacking_a_nearby_country_modiffier: "ÑIe"
+ THE_SUW_self_controlled_country_modiffier: "Û	g¦^"
+ THE_SUW_well_trained_country_modiffier: "­‹Ãu	g.t"
  THE_SUW_there_is_divine_assistance_modifier: "‚Y	g^y©R"
  THE_SUW_meet_a_challenge_modifier: "Î¥ccbÿ"
  THE_SUW_The_Beginning_of_Holy_War_one_modifier: "1WbKNËY"
@@ -36,6 +38,9 @@
  THE_SUW_Recruit_manpower_country_modiffier: "ÛbÆ–ºNKb"
 ### MODIFIER_END
 
+###OPINION_MODIFIER
+ THE_SUW_participate_in_the_festival_opinion_modifier: "ÂSNmyxQ"
+###OPINION_MODIFIER_END
 
 ### EVENT
 THE_SUW_events.1.title: "NSegêR—Ù†„váO"
@@ -64,6 +69,11 @@ THE_SUW_events.10.name: "ÿRÆ‰KNÿÿRû•KNÿÿRŠKN"
 THE_SUW_events.11.title: "Í‘„géy^"
 THE_SUW_events.11.desc: "1"
 THE_SUW_events.11.name: "ÿRÆ‰KNÿÿRû•KNÿÿRŠKN"
+THE_SUW_events.12.title: "¡Vñgmy"
+THE_SUW_events.12.desc: "1"
+THE_SUW_events.12.a.name: "»SÑQÑQípù•mN*gSNïS"
+THE_SUW_events.12.b.name: "¡lÀNHNzzJUÿ1S–ýN<y'T"
+THE_SUW_events.12.c.name: "ŒONè•»SwR—Ù†ŒTÇ†JU"
 ### EVENT_END
 
 

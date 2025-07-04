@@ -88,8 +88,10 @@ THE_SUW_stage_1_branch_2 = {
 			# 只有人名需要加引号
 			# custom_attributes是政府机制后缀，此处使用flag和tt后缀
 			# custom_tooltip的本地化键值分类至tooltip（工具提示）
-			set_country_flag = THE_SUW_enable_diplomatic_change_religion_flag
 			custom_tooltip = THE_SUW_enable_diplomatic_change_religion_tt
+			custom_tooltip = THE_SUW_heaven_and_earth_tt
+			set_country_flag = THE_SUW_earth_flag
+			set_country_flag = THE_SUW_enable_diplomatic_change_religion_flag
 		}
 	}
 
@@ -107,7 +109,7 @@ THE_SUW_stage_1_branch_2 = {
 			# 使用国家修正增加外交声誉
 			# diplomatic_reputation = 1
 			add_country_modifier = {
-				name = "THE_SUW_befriend_a_distant_state_country_modiffier"
+				name = "THE_SUW_self_controlled_country_modiffier"
 				duration = -1
 			}
 			# 改为hidden_effect，添加一个自定义工具提示
@@ -131,9 +133,27 @@ THE_SUW_stage_1_branch_2 = {
 		required_missions = { THE_SUW_2_2 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			treasury = 200
+			current_income_balance = 0
+			4188 = {
+				has_building = temple
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			every_country = {
+				limit = {
+					not = { tag = SUW }
+					capital_scope = { region = japan_region }
+				}
+				country_event = {
+					id = THE_SUW_events.12
+					days = 1
+					random = 29
+				}
+			}
+		} 
 	}
 
 	THE_SUW_2_4 = {
@@ -253,11 +273,16 @@ THE_SUW_stage_1_branch_4 = {
 
 		trigger = {  
 			monthly_mil = 9
-			base_production = 7
+			4188 = {
+				base_production = 7
+			}
 		}
 
 		effect = {
 			custom_tooltip = THE_SUW_converte_province_religion_add_1_manpower_tt
+
+			custom_tooltip = THE_SUW_heaven_and_earth_tt
+			set_country_flag = THE_SUW_heaven_flag
 			hidden_effect = {  
 				set_country_flag = THE_SUW_converte_province_religion_add_1_manpower_flag
 			} 
@@ -270,9 +295,17 @@ THE_SUW_stage_1_branch_4 = {
 		required_missions = { THE_SUW_4_1 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = { 
+			army_size = 15
+			land_morale = 3
+		} 
 
-		effect = {  } 
+		effect = { 
+			add_country_modifier = {
+				name = THE_SUW_well_trained_country_modiffier
+				duration = -1
+			}
+		} 
 	}
 
 	THE_SUW_4_3 = {

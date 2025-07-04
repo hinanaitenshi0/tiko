@@ -369,10 +369,10 @@ country_event = {
 
 	option = {
 		name = THE_SUW_events.10.name
-		4188 = {
-			artillery = ROOT
-			artillery = ROOT
-			artillery = ROOT
+		capital_scope = {
+    		large_cast_bronze_mortar = ROOT
+			large_cast_bronze_mortar = ROOT
+			large_cast_bronze_mortar = ROOT
 		}
 		add_country_modifier = {
 			name = THE_SUW_The_Beginning_of_Holy_War_one_modifier
@@ -398,5 +398,47 @@ country_event = {
 			duration = -1
 		}
 		clr_country_flag = THE_SUW_The_Beginning_of_Holy_War_two_flag
+	}
+}
+
+country_event = {
+	#御柱祭的请帖
+	id = THE_SUW_events.12
+	title = "THE_SUW_events.12.title"
+	desc = "THE_SUW_events.12.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.12.a.name
+		reverse_add_opinion = {
+    		who = SUW
+   			modifier = THE_SUW_participate_in_the_festival_opinion_modifier
+		}
+		SUW = {
+			reverse_add_opinion = {
+    			who = ROOT
+   				modifier = THE_SUW_participate_in_the_festival_opinion_modifier
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = THE_SUW_events.12.b.name
+		SUW = {
+			add_treasury = 20
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = THE_SUW_events.12.c.name
+		add_prestige_or_monarch_power = { amount = 25 }
+		ai_chance = {
+			factor = 0
+		}
 	}
 }

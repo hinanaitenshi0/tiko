@@ -97,18 +97,25 @@ THE_SUW_A_belief_country_modiffier = {
 # 	}
 # 	add_manpower = 1
 # }
+#诹访湖
+THE_SUW_Lake_Suwa_province_modiffier = {
+	local_development_cost = -0.30
+	local_attacker_dice_roll_bonus = -1
+	local_defensiveness = 0.15
+}
 #开源节流
 THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier = {
 	prestige_decay = 0.02
 	global_trade_goods_size = 1
 	land_maintenance_modifier = -0.33
 }
-#远交
-THE_SUW_befriend_a_distant_state_country_modiffier = {
+#进退有度
+THE_SUW_self_controlled_country_modiffier = {
 	diplomatic_reputation = 1
 	monthly_favor_modifier = 0.2
 }
-#近攻
-THE_SUW_attacking_a_nearby_country_modiffier = {
-	reserves_organisation = 0.1
+#训练有素
+THE_SUW_well_trained_country_modiffier = {
+	discipline = 0.05
+	global_regiment_recruit_speed = -0.15
 }

@@ -54,6 +54,35 @@ country_decisions = {
 }
 
 country_decisions = {
+	#添加诹访湖修正
+	THE_SUW_heaven_and_earth_decision = {
+		potential = {
+			tag = SUW
+			has_country_flag = THE_SUW_earth_flag
+			has_country_flag = THE_SUW_heaven_flag
+		}
+		allow = {
+		}
+		effect = {
+			4188 = {
+				add_province_modifier = {
+					name = THE_SUW_Lake_Suwa_province_modiffier 
+					duration = -1
+				}
+			}
+			clr_country_flag = THE_SUW_earth_flag
+			clr_country_flag = THE_SUW_heaven_flag
+		}
+		major = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+country_decisions = {
 	#强化诹访大社决议1
 	THE_SUW_Strengthening_Suwa_Daisha_one_decision = {
 		potential = {	

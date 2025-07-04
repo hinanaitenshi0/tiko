@@ -1,0 +1,5 @@
+#参与祭典
+THE_SUW_participate_in_the_festival_opinion_modifier = {
+	opinion = 50
+	yearly_decay = 5
+}
