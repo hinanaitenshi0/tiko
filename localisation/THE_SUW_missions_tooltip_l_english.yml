@@ -6,6 +6,7 @@
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y‰SuQãylšÿ‚f•’‚ÿIrÆQY‹YQ¨RKbqTÿ³Q®‹	ÿ§"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "§YÏk	gN*Nåb	g„vwýNˆvOckáOÿžX R1000TáO’V§!"
  THE_SUW_heaven_and_earth_tt: "SVåwSfù‹¿‹PR„vzfgaŒT†˜eu^yHYPR„vKbµkKNTÿsSïSŒcácŒNdWKN›R"
+ THE_SUW_Eastern_country_claims_tt: "§YSUW§!·ƒ—V†NNb	g§YNýV§!‡eSwýN„v8lEN'`±Rðy0"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "=T(u³Q®‹ÿAQ¸‹ú^¾‹bìN„v^y>y"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "AQ¸‹àemcwÆ–-NÑSUS¦^" 
 ### TOOLTIP_END
@@ -84,6 +85,8 @@ THE_SUW_events.12.c.name: "ŒONè•»SwR—Ù†ŒTÇ†JU"
  THE_SUW_country_release_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision_title: "N‹NñOYÿêS.k^yÎ˜"
  THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision_desc: ">T=f`—ÀNHNû•T„vÿmNå‹©‹`OìNÁ‰Æ‹NN†N"
+ THE_SUW_heaven_and_earth_decision_title: "ËeUSŒNdWKN›R"
+ THE_SUW_heaven_and_earth_decision_desc: "ÙÌ‘	g¹pîw†Nÿ±Ì‘	g¹pEm†NÿÙÌ‘.R¹pÎ˜'Tÿ±Ì‘M–¹pè–'T"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_title: "Í‘ú^bìN„v¶R"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_Strengthening_Suwa_Daisha_two_decision_title: "ÑSUSbìN„v¶R"

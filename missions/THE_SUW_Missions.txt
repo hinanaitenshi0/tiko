@@ -305,18 +305,109 @@ THE_SUW_stage_1_branch_4 = {
 				name = THE_SUW_well_trained_country_modiffier
 				duration = -1
 			}
-		} 
+			custom_tooltip = THE_SUW_Eastern_country_claims_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						1835 = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+					}
+					add_permanent_claim = 1835
+				}
+				if = {
+					limit = {
+						1030 = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+					}
+					add_permanent_claim = 1030
+				}
+				if = {
+					limit = {
+						1837 = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+					}
+					add_permanent_claim = 1837
+				}
+				if = {
+					limit = {
+						1024 = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+					}
+					add_permanent_claim = 1024
+				}
+				if = {
+					limit = {
+						4193 = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+					}
+					add_permanent_claim = 4193
+				}
+				eastern_chubu_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				kanto_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				eastern_kanto_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				thohoku_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
 	}
 
 	THE_SUW_4_3 = {
 		icon = mission_unknown_mission
 		position = 3
 		required_missions = { THE_SUW_4_2 } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			region = japan_region
+			culture = togoku
+		} 
 
-		trigger = {  } 
+		trigger = {  
+			num_of_owned_provinces_with = {
+				value = 15
+				culture = togoku 
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			every_owned_province = {
+				limit = {
+					culture = togoku
+				}
+				add_nationalism = -10
+			}  
+		} 
 	}
 
 	THE_SUW_4_4 = {
