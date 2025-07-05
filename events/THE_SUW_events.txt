@@ -422,23 +422,44 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 0
+			factor = 45
 		}
 	}
 	option = {
 		name = THE_SUW_events.12.b.name
+		add_treasury = -20
 		SUW = {
 			add_treasury = 20
 		}
+		reverse_add_opinion = {
+    		who = SUW
+   			modifier = THE_SUW_Friendliness_opinion_modifier
+		}
+		SUW = {
+			reverse_add_opinion = {
+    			who = ROOT
+   				modifier = THE_SUW_Friendliness_opinion_modifier
+			}
+		}
 		ai_chance = {
-			factor = 100
+			factor = 35
 		}
 	}
 	option = {
 		name = THE_SUW_events.12.c.name
 		add_prestige_or_monarch_power = { amount = 25 }
+		reverse_add_opinion = {
+    		who = SUW
+   			modifier = THE_SUW_Low_emotional_intelligence_opinion_modifier
+		}
+		SUW = {
+			reverse_add_opinion = {
+    			who = ROOT
+   				modifier = THE_SUW_Low_emotional_intelligence_opinion_modifier
+			}
+		}
 		ai_chance = {
-			factor = 0
+			factor = 20
 		}
 	}
 }

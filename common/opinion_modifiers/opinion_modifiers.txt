@@ -3,3 +3,13 @@ THE_SUW_participate_in_the_festival_opinion_modifier = {
 	opinion = 50
 	yearly_decay = 5
 }
+#友善态度
+THE_SUW_Friendliness_opinion_modifier = {
+	opinion = 25
+	yearly_decay = 5
+}
+#低情商
+THE_SUW_Low_emotional_intelligence_opinion_modifier = {
+	opinion = -75
+	yearly_decay = 5
+}
