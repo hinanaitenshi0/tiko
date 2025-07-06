@@ -463,3 +463,18 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	#北条早云事件
+	id = THE_SUW_events.13
+	title = "THE_SUW_events.13.title"
+	desc = "THE_SUW_events.13.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		THE_SUW_define_the_general_hojousouun_effect = yes
+	}
+
+}
