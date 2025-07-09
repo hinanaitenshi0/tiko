@@ -37,6 +37,7 @@
  THE_SUW_The_Beginning_of_Holy_War_one_modifier: "圣战之始"
  THE_SUW_The_Beginning_of_Holy_War_two_modifier: "圣战之始"
  THE_SUW_Recruit_manpower_country_modiffier: "招集人手"
+ THE_SUW_Heart_of_Struggle_country_modiffier: "斗争之心"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -77,6 +78,11 @@ THE_SUW_events.12.desc: "1"
 THE_SUW_events.12.a.name: "去凑凑热闹也未尝不可"
 THE_SUW_events.12.b.name: "没什么空啊，就随份礼吧"
 THE_SUW_events.12.c.name: "谁会专门去看青蛙和蛇啊"
+THE_SUW_events.13.title: "大名求见"
+THE_SUW_events.13.desc: "1"
+THE_SUW_events.13.a.name: "或可一用"
+THE_SUW_events.13.b.name: "是金子，在哪都会发光"
+THE_SUW_events.13.c.name: "你可以为我们的统治形式提供更好的建议"
 ### EVENT_END
 
 

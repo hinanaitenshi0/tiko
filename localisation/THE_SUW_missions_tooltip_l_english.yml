@@ -37,6 +37,7 @@
  THE_SUW_The_Beginning_of_Holy_War_one_modifier: "1WbKNËY"
  THE_SUW_The_Beginning_of_Holy_War_two_modifier: "1WbKNËY"
  THE_SUW_Recruit_manpower_country_modiffier: "ÛbÆ–ºNKb"
+ THE_SUW_Heart_of_Struggle_country_modiffier: "—e‰NKNÃV"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -77,6 +78,11 @@ THE_SUW_events.12.desc: "1"
 THE_SUW_events.12.a.name: "»SÑQÑQípù•mN*gSNïS"
 THE_SUW_events.12.b.name: "¡lÀNHNzzJUÿ1S–ýN<y'T"
 THE_SUW_events.12.c.name: "ŒONè•»SwR—Ù†ŒTÇ†JU"
+THE_SUW_events.13.title: "'YTBlÁ‰"
+THE_SUW_events.13.desc: "1"
+THE_SUW_events.13.a.name: "bïSN(u"
+THE_SUW_events.13.b.name: "=fÑ‘PRÿ(WêTýOÑSIQ"
+THE_SUW_events.13.c.name: "`OïSåN:NbìN„vßu»lbVVÐc›Oôf‹Y„vú^®‹"
 ### EVENT_END
 
 

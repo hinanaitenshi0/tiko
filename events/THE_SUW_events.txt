@@ -474,7 +474,18 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		name = THE_SUW_events.13.a.name
 		THE_SUW_define_the_general_hojousouun_effect = yes
 	}
-
+	option = {
+		name = THE_SUW_events.13.b.name
+		add_country_modifier = {
+			name = THE_SUW_Heart_of_Struggle_country_modiffier
+			duration = -1
+		}
+	}
+	option = {
+		name = THE_SUW_events.13.c.name
+		change_government_reform_progress = 50
+	}
 }

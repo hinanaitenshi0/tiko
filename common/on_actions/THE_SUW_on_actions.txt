@@ -35,3 +35,27 @@ on_war_won = {
 		}
 	}
 }
+
+
+
+on_province_owner_change = {
+	if = {
+		limit = {
+			province_id = 1839
+			owned_by = SUW
+			owner = {
+				not = { has_country_flag = THE_SUW_hojousouun_flag }
+			}
+		}
+		owner = {
+			country_event = {
+				id = THE_SUW_events.13
+				days = 30
+				random = 150
+			}
+			set_country_flag = {
+				THE_SUW_hojousouun_flag
+			}
+		}
+	}
+}

@@ -119,3 +119,8 @@ THE_SUW_well_trained_country_modiffier = {
 	discipline = 0.05
 	global_regiment_recruit_speed = -0.15
 }
+#斗争之心
+THE_SUW_Heart_of_Struggle_country_modiffier = {
+	army_tradition = 0.5
+	movement_speed = 0.1
+}

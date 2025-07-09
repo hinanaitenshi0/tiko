@@ -1,3 +1,4 @@
+#??????
 THE_SUW_define_the_general_hojousouun_effect = {
 	define_general = {
 		fire = 2
