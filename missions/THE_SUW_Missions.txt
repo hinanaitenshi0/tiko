@@ -153,6 +153,9 @@ THE_SUW_stage_1_branch_2 = {
 					random = 29
 				}
 			}
+			4188 = {
+				center_of_trade = 1
+			}
 		} 
 	}
 
@@ -232,7 +235,6 @@ THE_SUW_stage_1_branch_3 = {
 					name = "THE_SUW_Moriya_Shinto_province_modiffier"
 					duration = -1
 				}
-				center_of_trade = 1
 			}
 			country_event = {
 				id = THE_SUW_events.3
@@ -252,7 +254,17 @@ THE_SUW_stage_1_branch_3 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			not = {
+				any_country = {
+					has_reform = shogunate
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 43
+				region = japan_region
+			}
+		} 
 
 		effect = {  
 			change_government = theocracy
@@ -300,7 +312,11 @@ THE_SUW_stage_1_branch_4 = {
 			land_morale = 3
 		} 
 
-		effect = { 
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection 
+				amount = 10 
+			} 
 			add_country_modifier = {
 				name = THE_SUW_well_trained_country_modiffier
 				duration = -1
@@ -405,7 +421,7 @@ THE_SUW_stage_1_branch_4 = {
 				limit = {
 					culture = togoku
 				}
-				add_nationalism = -10
+				add_nationalism = -15
 			}  
 		} 
 	}

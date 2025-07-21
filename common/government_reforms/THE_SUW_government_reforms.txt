@@ -37,13 +37,11 @@ THE_SUW_SUW_and_KAN_reform = {
 	}
 
 	modifiers = {
-		governing_capacity = 250
 		tolerance_own = 2
-		global_unrest = -2
-		global_tax_modifier = 0.15
-		global_trade_power = 0.15
+		global_tax_modifier = 0.1
+		trade_efficiency = 0.1
 		development_cost_modifier = -0.1
-		global_missionary_strength = 0.03
+		global_missionary_strength = 0.02
 		cb_on_religious_enemies = yes
 	}
 }
