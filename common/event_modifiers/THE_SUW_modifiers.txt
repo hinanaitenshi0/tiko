@@ -106,8 +106,8 @@ THE_SUW_Lake_Suwa_province_modiffier = {
 #开源节流
 THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier = {
 	prestige_decay = 0.02
-	global_trade_goods_size = 1
-	land_maintenance_modifier = -0.33
+	global_trade_goods_size = 0.5
+	land_maintenance_modifier = -0.25
 }
 #进退有度
 THE_SUW_self_controlled_country_modiffier = {

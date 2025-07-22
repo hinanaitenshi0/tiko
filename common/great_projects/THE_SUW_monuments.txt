@@ -1,5 +1,5 @@
 
- SUW_great_project_1 = {
+ suwataisya = {
  	start = 4188
  	date = 1443.01.09
  	time = { months = 0	}

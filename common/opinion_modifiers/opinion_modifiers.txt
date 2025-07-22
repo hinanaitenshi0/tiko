@@ -13,3 +13,7 @@ THE_SUW_Low_emotional_intelligence_opinion_modifier = {
 	opinion = -75
 	yearly_decay = 5
 }
+#宗教守护
+THE_SUW_Religious_Protection_opinion_modifier = {
+	opinion = 60
+}

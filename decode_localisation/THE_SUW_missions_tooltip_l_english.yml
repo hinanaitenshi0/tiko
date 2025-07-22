@@ -2,14 +2,20 @@
 ### TOOLTIP
  THE_SUW_enable_diplomatic_change_religion_tt: "启用「§Y邀请改教§!」外交行动"
  THE_SUW_obtain_favors_tt: "§V从每个盟友处获得10点人情§"
+ THE_SUW_2_4: "§Y日本§!地区的所有§Y守矢神道§!国家将成为我们的§M宗教守护§!"
  THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§Y我们会在一个月后向幕府将军发起挑战，其盟友及其他大名会关注着这场对决，如若获胜，所有信仰守矢神道的大名将转投我们的麾下§"
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y厉兵秣马，暂避锋芒，等准备好再动手呱（决议）§"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "§Y每有一个拥有的省份皈依正信，增加1000名信徒§!"
  THE_SUW_heaven_and_earth_tt: "当知晓诹访子的智慧和领略神奈子的手段之后，即可掌握乾坤之力"
  THE_SUW_Eastern_country_claims_tt: "§YSUW§!获得了所有§Y东国§!文化省份的永久性宣称。"
+ THE_SUW_4_3_tt: "所有拥有的§Y东国§!文化省份减少§Y15§!年分离主义"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "启用决议，允许建设我们的神社"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "允许无损耗集中发展度" 
 ### TOOLTIP_END
+
+### trigger_tooltip
+ #THE_SUW_There_are_few_enemies_tt: "至少§Y20§!个拥有的省份信仰§Y守矢神道§!"
+### trigger_tooltip_END
 
 ### dynasty
  Moriya: "洩矢"
@@ -101,6 +107,13 @@ THE_SUW_events.13.c.name: "你可以为我们的统治形式提供更好的建�
  THE_SUW_Strengthening_Suwa_Daisha_three_decision_desc: "这是一个决议描述"
 ### DECISION_END
 
+###SUBJECT_TYPE
+ THE_SUW_Religious_Protection: "§M宗教守护§!"
+ THE_SUW_Religious_Protection_title: "§M宗教守护§!"
+ THE_SUW_Religious_Protection_title_plural: "§M宗教守护§!"
+ THE_SUW_Religious_Protection_long_desc: "§M宗教守护§!是一类特殊的附属国，仅能通过政府机制或任务建立，不占用外交关系并向宗主国强制转移贸易竞争力。\n属于一种超越大名的附庸类型。"
+ THE_SUW_Religious_Protection_is_our: "§Y$NAME$§!是我们的§M宗教守护§!"
+###SUBJECT_TYPE_END
 
 ### VARIABLE
 
@@ -116,6 +129,9 @@ THE_SUW_events.13.c.name: "你可以为我们的统治形式提供更好的建�
  THE_SUW_kan_MECHANIC_TOOLTIP: "神奈子"
 ### GOVERNMENT_END
 
+### Great_projects
+ suwataisya: "诹访大社"
+### Great_projects_END
 
 ### ESTATE
 

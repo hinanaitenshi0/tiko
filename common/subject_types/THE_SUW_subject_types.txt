@@ -1,0 +1,70 @@
+THE_SUW_Religious_Protection = { }
+THE_SUW_Religious_Protection = {
+	copy_from = default
+	can_have_great_projects_moved_by_overlord = no
+
+	# Triggers:
+	is_potential_overlord = {
+	}
+	
+	# Properties:
+	can_be_annexed = yes
+	#forms_trade_companies = no
+	can_fight_independence_war = no
+	joins_overlords_wars = yes
+	joins_colonial_wars = no
+	#opinion_on_subject_integration = 0 #Determines how much opinion they actually lose when a fellow subject gets integrated.
+	overlord_can_attack = no
+	takes_diplo_slot = no
+	base_liberty_desire = -50
+	relative_power_class = 1
+	#should_quit_wars_on_activation = yes
+	uses_military_focus = yes
+	overlord_protects_external = yes
+	counts_for_borders = yes
+	#counts_as_overlord_holding = yes
+	can_use_claims = yes
+	share_rebel_popup = yes
+	can_transfer_in_peace = yes
+	can_set_mil_focus = yes
+	can_send_missionary_to_subject = yes
+	#can_concentrate_development = yes
+	transfer_trade_power = yes
+	transfer_trade_if_merchant_republic = yes
+	#extend_trading_range = yes
+	#can_gain_favors = yes
+	
+	liberty_desire_development_ratio = 0.1
+	trust_on_start = 50
+	
+	overlord_opinion_modifier = is_trade_protectorate
+	subject_opinion_modifier = is_trade_protectorate
+
+	# Subject Interactions:
+	# (immediate)
+	block_settlement_growth = yes
+	allow_settlement_growth = yes
+	divert_trade = yes
+	placate_rulers = yes
+	enforce_religion = yes
+	grant_province = yes
+	siphon_income = yes
+	fortify_march = yes
+	seize_territory = yes
+	grant_core_claim = yes
+	bestow_gifts = yes
+	takeondebt = yes
+	demand_artifacts = yes
+	demand_additional_tribute = yes
+	force_seppuku = yes
+	knowledge_sharing = yes
+	sword_hunt = yes
+	sankin_kotai = yes
+	expel_ronin = yes
+	#(enable)
+	support_loyalists = yes
+	scutage = yes
+	# Modifiers:
+	modifier_subject = clear # Trade Protectorate don't get the ordinary subject_nation penalty 
+	modifier_overlord = clear
+}

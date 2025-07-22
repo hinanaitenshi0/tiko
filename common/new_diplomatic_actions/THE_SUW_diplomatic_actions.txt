@@ -20,15 +20,15 @@ THE_SUW_ask_for_change_religions_to_moriyashinto = {
     on_decline = {
     }
     ai_acceptance = {
-        #基础-30
+        #基础-50
         add_entry = {
             name = TH_DIPENDENCE
             export_to_variable = {
                 variable_name = ai_value
-                value = -30
+                value = -50
             }
         }
-        #外交关系+0.3*value
+        #外交关系+0.15*value
         add_entry = {
             name = TH_DIPLO_OPPINION
             export_to_variable = {
@@ -39,9 +39,36 @@ THE_SUW_ask_for_change_religions_to_moriyashinto = {
             }
             multiply_variable = {
                 which = ai_value 
-                value = 0.3
+                value = 0.15
             }
         }
+        #友好+10
+		add_entry = {
+			name = TH_DIPLO_FRI
+			limit = {
+				FROM = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+		}
+        #同盟+15
+		add_entry = {
+			name = TH_DIPLO_ALLIENCE
+			limit = {
+				alliance_with = FROM
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 15
+			}
+		}
         #宿敌或敌意-50
         add_entry = {
             name = TH_DIPLO_ENERMY
@@ -64,7 +91,7 @@ THE_SUW_ask_for_change_religions_to_moriyashinto = {
                 value = -50
             }
         }
-        #外交声誉+2*value
+        #外交声誉+2.5*value
         add_entry = {
             name = TH_DIPLO_REPULATION
             export_to_variable = {
@@ -74,7 +101,7 @@ THE_SUW_ask_for_change_religions_to_moriyashinto = {
             }
             multiply_variable = {
                 which = ai_value 
-                value = 2
+                value = 2.5
             }
         }
     }

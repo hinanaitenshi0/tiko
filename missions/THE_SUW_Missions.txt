@@ -102,7 +102,6 @@ THE_SUW_stage_1_branch_2 = {
 
 		trigger = { 
 			num_of_allies = 3
-			num_of_royal_marriages = 3
 		} 
 
 		effect = {  
@@ -115,8 +114,8 @@ THE_SUW_stage_1_branch_2 = {
 			# 改为hidden_effect，添加一个自定义工具提示
 			custom_tooltip = THE_SUW_obtain_favors_tt
 			hidden_effect = {
-				every_allay = {
-					ROOT = {
+				every_ally = {
+					root = {
 						add_favors = {
 							who = PREV
 							amount = 10
@@ -168,9 +167,34 @@ THE_SUW_stage_1_branch_2 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			calc_true_if = {
+				all_country = {
+					capital_scope = { region = japan_region }
+					religion = th_moriyashinto
+				}
+				amount = 5
+			}	
+		}
 
-		effect = {  } 
+		effect = { 
+			hidden_effect = {
+				every_country = {
+					limit = { 
+						capital_scope = { region = japan_region }
+						religion = th_moriyashinto
+					}
+					ROOT = {
+						create_subject = {
+    						subject_type = THE_SUW_Religious_Protection
+    						subject = PREV
+						}
+					}
+				}
+			}
+			custom_tooltip = THE_SUW_2_4
+			complete_mission = THE_SUW_4_4
+		} 
 	}
 
 	THE_SUW_2_5 = {
@@ -181,7 +205,9 @@ THE_SUW_stage_1_branch_2 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			complete_mission = THE_SUW_4_5
+		} 
 	}
 }
 THE_SUW_stage_1_branch_3 = {
@@ -417,12 +443,15 @@ THE_SUW_stage_1_branch_4 = {
 		} 
 
 		effect = {
-			every_owned_province = {
-				limit = {
-					culture = togoku
-				}
-				add_nationalism = -15
-			}  
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = togoku
+					}
+					add_nationalism = -15
+				}  
+			}
+			custom_tooltip = THE_SUW_4_3_tt
 		} 
 	}
 
@@ -435,9 +464,19 @@ THE_SUW_stage_1_branch_4 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			hidden_trigger = {
+				num_of_religion = {
+					religion = th_moriyashinto
+					value = 15
+				}
+			}
+			#custom_trigger_tooltip = THE_SUW_There_are_few_enemies_tt
+		} 
 
-		effect = {  } 
+		effect = {  
+			complete_mission = THE_SUW_2_4
+		} 
 	}
 
 	THE_SUW_4_5 = {
@@ -448,7 +487,9 @@ THE_SUW_stage_1_branch_4 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			complete_mission = THE_SUW_2_5
+		} 
 	}
 }
 THE_SUW_stage_1_branch_5 = {
