@@ -1,4 +1,9 @@
 ﻿l_english:
+### tag
+SUW:0 "诹访"
+SUW_ADJ:0 "诹访"
+### tag_END
+
 ### TOOLTIP
  THE_SUW_enable_diplomatic_change_religion_tt: "启用「§Y邀请改教§!」外交行动"
  THE_SUW_obtain_favors_tt: "§V从每个盟友处获得10点人情§"
@@ -23,6 +28,19 @@
  Yasaka: "八坂"
  Kanako: "神奈子"
 ### dynasty_END
+
+### ideas
+THE_SUW_Original_ideas: "诹访理念"
+THE_SUW_Original_ideas_start: "诹访传统"
+THE_SUW_Original_ideas_bonus: "诹访野心"
+THE_SUW_idea_1: "诹访大战"
+THE_SUW_idea_2: "小小青蛙，不负风雨"
+THE_SUW_idea_3: "风神之神德"
+THE_SUW_idea_4: "信仰云集"
+THE_SUW_idea_5: "呱！"
+THE_SUW_idea_6: "山坡与湖水"
+THE_SUW_idea_7: "永远的挚友"
+### ideas_END
 
 ### MODIFIER
  THE_SUW_Gain_respect_province_modiffier: "收获尊重"
@@ -127,6 +145,8 @@ THE_SUW_events.13.c.name: "你可以为我们的统治形式提供更好的建�
  THE_SUW_kan: "乾以刚健不息"
  THE_SUW_suw_MECHANIC_TOOLTIP: "诹访子"
  THE_SUW_kan_MECHANIC_TOOLTIP: "神奈子"
+ THE_SUW_RULER: "赤口大人"
+ THE_SUW_QUEEN: "建御名方"
 ### GOVERNMENT_END
 
 ### Great_projects

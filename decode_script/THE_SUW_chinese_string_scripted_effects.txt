@@ -7,3 +7,33 @@ THE_SUW_define_the_general_hojousouun_effect = {
 		name = "北条早云"
 	}
 }
+THE_SUW_define_suwako_and_kanako_effect = {
+	define_ruler = {
+		name = "诹访子"
+		dynasty = "洩矢"
+		age = "1442"
+		adm = 3
+		dip = 6
+		mil = 5
+		female = yes
+		culture = Gensokyo_human
+		religion = th_moriyashinto
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = charismatic_negotiator_personality
+	define_consort = {
+		name = "神奈子"
+		dynasty = "八坂"
+		age = "1442"
+		adm = 3
+		dip = 5
+		mil = 6
+		female = yes
+		culture = Gensokyo_human
+		religion = th_moriyashinto
+	}
+	add_queen_personality = immortal_personality
+	set_ruler_flag = touhou_character_ruler
+	set_ruler_flag = touhou_original_ruler
+	set_ruler_flag = th_original_suwa
+}

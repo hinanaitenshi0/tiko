@@ -1,0 +1,47 @@
+THE_SUW_government_names = {
+	trigger = {
+		tag = SUW
+	}
+	
+	rank = {
+		1 = TOUHOU_DOMAIN
+		2 = TOUHOU_REALM
+		3 = TOUHOU_EMPIRE
+	}
+	
+	ruler_male = {
+		3 = TOUHOU_EXECUTOR
+		2 = TOUHOU_EXECUTOR
+		1 = TOUHOU_EXECUTOR
+	}
+	
+	ruler_female = {
+		3 = THE_SUW_RULER
+		2 = THE_SUW_RULER
+		1 = THE_SUW_RULER
+	}
+
+	consort_male = {
+		3 = TOUHOU_EXECUTOR
+		2 = TOUHOU_EXECUTOR
+		1 = TOUHOU_EXECUTOR
+    }
+    
+    consort_female = {
+        3 = THE_SUW_QUEEN
+		2 = THE_SUW_QUEEN
+		1 = THE_SUW_QUEEN
+    }
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+}

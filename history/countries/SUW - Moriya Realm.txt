@@ -1,23 +1,43 @@
 government = monarchy
 add_government_reform = Gensokyan_monarchy
 government_rank = 1
-primary_culture = "Heavenish"
-religion = th_taoist
+primary_culture = "Gensokyo_human"
+religion = th_moriyashinto
 technology_group = tech_gensokyan
-capital = 5032
+capital = 4188
 th_discover_default = yes
 1443.1.1 = {
   monarch = {
-    name = "cï¿½ï¿½s"  # iqu
-    monarch = "8lml"
-    dynasty = "8lml"  
+    name = "ù‹¿‹PR"  
+    monarch = ")mâw"
+    dynasty = ")mâw"  
     birth_date = 2.1.1
-    adm = 4
+    adm = 3
     dip = 6
     mil = 5
     female = yes
   }
   add_ruler_personality = immortal_personality
+  add_ruler_personality = charismatic_negotiator_personality
   set_ruler_flag = touhou_character_ruler
   set_ruler_flag = touhou_original_ruler
+  set_ruler_flag = th_original_suwa
+}
+1443.1.1 = {
+  queen = {
+    name = "^yHYPR"  
+    dynasty = "kQBW"  
+    birth_date = 2.1.1
+    adm = 3
+    dip = 5
+    mil = 6
+    female = yes
+    country_of_origin = SUW
+    religion = th_moriyashinto
+    culture = Gensokyo_human
+  }
+  add_queen_personality = immortal_personality
+  set_ruler_flag = touhou_character_ruler
+  set_ruler_flag = touhou_original_ruler
+  set_ruler_flag = th_original_suwa
 }

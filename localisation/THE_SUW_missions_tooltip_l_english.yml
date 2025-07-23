@@ -1,4 +1,9 @@
 ﻿l_english:
+### tag
+SUW:0 "ù‹¿‹"
+SUW_ADJ:0 "ù‹¿‹"
+### tag_END
+
 ### TOOLTIP
  THE_SUW_enable_diplomatic_change_religion_tt: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
  THE_SUW_obtain_favors_tt: "§VÎNÏk*NßvËSY·ƒ—V10¹pºNÅ`§"
@@ -23,6 +28,19 @@
  Yasaka: "kQBW"
  Kanako: "^yHYPR"
 ### dynasty_END
+
+### ideas
+THE_SUW_Original_ideas: "ù‹¿‹tõV"
+THE_SUW_Original_ideas_start: "ù‹¿‹.Oßu"
+THE_SUW_Original_ideas_bonus: "ù‹¿‹Î‘ÃV"
+THE_SUW_idea_1: "ù‹¿‹'Yb"
+THE_SUW_idea_2: "SSR—Ù†ÿNÎ˜è–"
+THE_SUW_idea_3: "Î˜^yKN^y·V"
+THE_SUW_idea_4: "áOðN‘NÆ–"
+THE_SUW_idea_5: "qTÿ"
+THE_SUW_idea_6: "qSaWNVn4l"
+THE_SUW_idea_7: "8lÜ„vcËS"
+### ideas_END
 
 ### MODIFIER
  THE_SUW_Gain_respect_province_modiffier: "6e·ƒSÍ‘"
@@ -127,6 +145,8 @@ THE_SUW_events.13.c.name: "`OïSåN:NbìN„vßu»lbVVÐc›Oôf
  THE_SUW_kan: "ŒNåNRePNo`"
  THE_SUW_suw_MECHANIC_TOOLTIP: "ù‹¿‹PR"
  THE_SUW_kan_MECHANIC_TOOLTIP: "^yHYPR"
+ THE_SUW_RULER: "dãS'YºN"
+ THE_SUW_QUEEN: "ú^¡VT¹e"
 ### GOVERNMENT_END
 
 ### Great_projects
