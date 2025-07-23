@@ -475,6 +475,93 @@ THE_SUW_stage_1_branch_4 = {
 		} 
 
 		effect = {  
+			japan_region = {
+				limit = { owned_by = ROOT }
+				add_local_autonomy = -15
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = japan_region
+							value = 45
+						}
+					}
+					add_adm_power = 900
+				}
+				else_if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = japan_region
+							value = 40
+						}
+					}
+					add_adm_power = 800
+				}
+				else_if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = japan_region
+							value = 35
+						}
+					}
+					add_adm_power = 700
+				}
+				else_if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = japan_region
+							value = 30
+						}
+					}
+					add_adm_power = 600
+				}
+				else_if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = japan_region
+							value = 25
+						}
+					}
+					add_adm_power = 500
+				}
+				else_if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = japan_region
+							value = 20
+						}
+					}
+					add_adm_power = 400
+				}
+				else_if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = japan_region
+							value = 15
+						}
+					}
+					add_adm_power = 300
+				}
+				else_if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = japan_region
+							value = 10
+						}
+					}
+					add_adm_power = 200
+				}
+				else_if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = japan_region
+							value = 5
+						}
+					}
+					add_adm_power = 100
+				}
+			}
 			complete_mission = THE_SUW_2_4
 		} 
 	}
