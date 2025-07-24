@@ -465,11 +465,10 @@ THE_SUW_stage_1_branch_4 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {  
-			hidden_trigger = {
-				num_of_religion = {
-					religion = th_moriyashinto
-					value = 15
-				}
+			num_of_owned_provinces_with = {
+				religion = th_moriyashinto
+				region = japan_region
+				value = 15
 			}
 			#custom_trigger_tooltip = THE_SUW_There_are_few_enemies_tt
 		} 
@@ -479,10 +478,12 @@ THE_SUW_stage_1_branch_4 = {
 				limit = { owned_by = ROOT }
 				add_local_autonomy = -15
 			}
+			custom_tooltip = THE_SUW_4_4_tt
 			hidden_effect = {
 				if = {
 					limit = {
 						num_of_owned_provinces_with = {
+							religion = th_moriyashinto
 							region = japan_region
 							value = 45
 						}
@@ -492,6 +493,7 @@ THE_SUW_stage_1_branch_4 = {
 				else_if = {
 					limit = {
 						num_of_owned_provinces_with = {
+							religion = th_moriyashinto
 							region = japan_region
 							value = 40
 						}
@@ -501,6 +503,7 @@ THE_SUW_stage_1_branch_4 = {
 				else_if = {
 					limit = {
 						num_of_owned_provinces_with = {
+							religion = th_moriyashinto
 							region = japan_region
 							value = 35
 						}
@@ -510,6 +513,7 @@ THE_SUW_stage_1_branch_4 = {
 				else_if = {
 					limit = {
 						num_of_owned_provinces_with = {
+							religion = th_moriyashinto
 							region = japan_region
 							value = 30
 						}
@@ -519,6 +523,7 @@ THE_SUW_stage_1_branch_4 = {
 				else_if = {
 					limit = {
 						num_of_owned_provinces_with = {
+							religion = th_moriyashinto
 							region = japan_region
 							value = 25
 						}
@@ -528,6 +533,7 @@ THE_SUW_stage_1_branch_4 = {
 				else_if = {
 					limit = {
 						num_of_owned_provinces_with = {
+							religion = th_moriyashinto
 							region = japan_region
 							value = 20
 						}
@@ -537,29 +543,12 @@ THE_SUW_stage_1_branch_4 = {
 				else_if = {
 					limit = {
 						num_of_owned_provinces_with = {
+							religion = th_moriyashinto
 							region = japan_region
 							value = 15
 						}
 					}
 					add_adm_power = 300
-				}
-				else_if = {
-					limit = {
-						num_of_owned_provinces_with = {
-							region = japan_region
-							value = 10
-						}
-					}
-					add_adm_power = 200
-				}
-				else_if = {
-					limit = {
-						num_of_owned_provinces_with = {
-							region = japan_region
-							value = 5
-						}
-					}
-					add_adm_power = 100
 				}
 			}
 			complete_mission = THE_SUW_2_4
