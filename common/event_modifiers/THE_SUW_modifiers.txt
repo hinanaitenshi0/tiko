@@ -58,7 +58,7 @@ THE_SUW_meet_a_challenge_modifier = {
 #圣战之始(神奈子)
 THE_SUW_The_Beginning_of_Holy_War_one_modifier = {
 	core_creation = -0.1
-	stability_cost_modifier = -0.2
+	stability_cost_modifier = -0.1
 }
 #圣战之始(诹访子)
 THE_SUW_The_Beginning_of_Holy_War_two_modifier = {
@@ -67,10 +67,9 @@ THE_SUW_The_Beginning_of_Holy_War_two_modifier = {
 }
 #招集人手
 THE_SUW_Recruit_manpower_country_modiffier = {
-	diplomats = 1
-	improve_relation_modifier = 0.2
-	advisor_cost = -0.25
-	mercenary_cost = -0.2
+	improve_relation_modifier = 0.1
+	advisor_cost = -0.1
+	mercenary_cost = -0.1
 }
 #忠心的阶层
 THE_SUW_Loyalty_of_social_classes_country_modiffier = {

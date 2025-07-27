@@ -64,7 +64,6 @@ country_event = {
 				change_primary_culture = Gensokyo_human
 				change_religion = th_moriyashinto
 				remove_country_modifier = conversion_zeal
-				set_ruler_flag = The_SUW_suw_flag
 				THE_SUW_define_suwako_and_kanako_effect = yes
 				add_accepted_culture = togoku
 				add_accepted_culture = japanese
@@ -351,6 +350,21 @@ country_event = {
 			name = THE_SUW_The_Beginning_of_Holy_War_one_modifier
 			duration = -1
 		}
+		hidden_effect = {
+			every_country = {
+				limit = { 
+					capital_scope = { region = japan_region }
+					religion = th_moriyashinto
+				}
+				grant_independence = yes
+				ROOT = {
+					create_subject = {
+    					subject_type = THE_SUW_Religious_Protection
+    					subject = PREV
+					}
+				}
+			}
+		}
 		clr_country_flag = THE_SUW_The_Beginning_of_Holy_War_one_flag
 	}
 }
@@ -366,6 +380,11 @@ country_event = {
 
 	option = {
 		name = THE_SUW_events.11.name
+		remove_country_modifier = THE_SUW_Recruit_manpower_country_modiffier
+		add_country_modifier = {
+			name = THE_SUW_Recruit_manpower_country_modiffier
+			duration = -1
+		}
 		add_country_modifier = {
 			name = THE_SUW_The_Beginning_of_Holy_War_two_modifier
 			duration = -1
@@ -454,7 +473,7 @@ country_event = {
 		name = THE_SUW_events.13.b.name
 		add_country_modifier = {
 			name = THE_SUW_Heart_of_Struggle_country_modiffier
-			duration = -1
+			duration = 36500
 		}
 	}
 	option = {

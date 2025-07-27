@@ -184,6 +184,7 @@ THE_SUW_stage_1_branch_2 = {
 						capital_scope = { region = japan_region }
 						religion = th_moriyashinto
 					}
+					grant_independence = yes
 					ROOT = {
 						create_subject = {
     						subject_type = THE_SUW_Religious_Protection
@@ -203,7 +204,19 @@ THE_SUW_stage_1_branch_2 = {
 		required_missions = { THE_SUW_2_4 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			legitimacy = 100
+			diplomatic_reputation = 5
+			all_subject_country = {
+				capital_scope = { region = japan_region }
+				religion = th_moriyashinto
+				NOT = { liberty_desire = 50 }
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+		} 
 
 		effect = {  
 			complete_mission = THE_SUW_4_5
@@ -264,10 +277,10 @@ THE_SUW_stage_1_branch_3 = {
 			}
 			country_event = {
 				id = THE_SUW_events.3
-				days = 180
-				random = 10
+				days = 365
 			}
 			set_country_flag = THE_SUW_3_3_flag
+			custom_tooltip = THE_SUW_3_3_tt
 		}
 	}
 
@@ -585,7 +598,7 @@ THE_SUW_stage_1_branch_5 = {
 			}
 			# 对于检测flag的条件，使用custom_trigger_tooltip，其中<tooltip>是本地化键值
 			custom_trigger_tooltip = {
-				tooltip = <tooltip>
+				tooltip = The_SUW_5_1_tt
 				has_ruler_flag = The_SUW_suw_flag
 			}
 		} 
