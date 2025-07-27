@@ -17,7 +17,8 @@ SUW_ADJ:0 "ù‹¿‹"
  THE_SUW_4_3_tt: "Nb	gåb	g„v§YNýV§!‡eSwýNÏQS§Y15§!t^R»yININ"
  THE_SUW_4_4_tt: "Ïkåb	g§Y5§!WWMOŽN§Yåe,g§!0W:SÿáOðN§YˆRâw^yS§!„vW0Wÿ·ƒ—V§M100§!¹pLˆ?e¹ppe"
  The_SUW_5_1_tt: "=fù‹¿‹"
- THE_SUW_Strengthening_Suwa_Daisha_tt: "=T(u³Q®‹ÿAQ¸‹ú^¾‹bìN„v^y>y"
+ THE_SUW_Strengthening_Suwa_Daisha_tt: "§V=T(u³Q®‹ÿAQ¸‹ú^¾‹bìN„v^y>yÿuóŽN......§!§TGYÂ‰§!"
+ THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "§T¡V^yKN!n§!"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "AQ¸‹àemcwÆ–-NÑSUS¦^" 
 ### TOOLTIP_END
 
@@ -42,7 +43,8 @@ THE_SUW_idea_3: "Î˜^yKN^y·V"
 THE_SUW_idea_4: "áOðN‘NÆ–"
 THE_SUW_idea_5: "qTÿ"
 THE_SUW_idea_6: "qSaWNVn4l"
-THE_SUW_idea_7: "8lÜ„vcËS"
+#"8lÜ„vcËS"
+THE_SUW_idea_7: "???"
 ### ideas_END
 
 ### MODIFIER
@@ -71,6 +73,7 @@ THE_SUW_idea_7: "8lÜ„vcËS"
  THE_SUW_participate_in_the_festival_opinion_modifier: "ÂSNmyxQ"
  THE_SUW_Friendliness_opinion_modifier: "ËS„U`¦^"
  THE_SUW_Low_emotional_intelligence_opinion_modifier: "NOÅ`FU"
+ THE_SUW_Religious_Protection_opinion_modifier: "—RYeˆR²b"
 ###OPINION_MODIFIER_END
 
 ### EVENT

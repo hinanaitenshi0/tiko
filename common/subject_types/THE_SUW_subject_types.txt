@@ -41,9 +41,10 @@ THE_SUW_Religious_Protection = {
 	
 	liberty_desire_development_ratio = 0.1
 	trust_on_start = 50
+	pays_overlord = 0.2
 	
-	overlord_opinion_modifier = is_trade_protectorate
-	subject_opinion_modifier = is_trade_protectorate
+	overlord_opinion_modifier = THE_SUW_Religious_Protection_opinion_modifier
+	subject_opinion_modifier = THE_SUW_Religious_Protection_opinion_modifier
 
 	# Subject Interactions:
 	# (immediate)

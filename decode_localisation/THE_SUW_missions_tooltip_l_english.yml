@@ -17,7 +17,8 @@ SUW_ADJ:0 "诹访"
  THE_SUW_4_3_tt: "所有拥有的§Y东国§!文化省份减少§Y15§!年分离主义"
  THE_SUW_4_4_tt: "每拥有§Y5§!块位于§Y日本§!地区，信仰§Y守矢神道§!的土地，获得§M100§!点行政点数"
  The_SUW_5_1_tt: "是诹访"
- THE_SUW_Strengthening_Suwa_Daisha_tt: "启用决议，允许建设我们的神社"
+ THE_SUW_Strengthening_Suwa_Daisha_tt: "§V启用决议，允许建设我们的神社，甚至于......§!§T奇观§!"
+ THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "§T御神之渡§!"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "允许无损耗集中发展度" 
 ### TOOLTIP_END
 
@@ -42,7 +43,8 @@ THE_SUW_idea_3: "风神之神德"
 THE_SUW_idea_4: "信仰云集"
 THE_SUW_idea_5: "呱！"
 THE_SUW_idea_6: "山坡与湖水"
-THE_SUW_idea_7: "永远的挚友"
+#"永远的挚友"
+THE_SUW_idea_7: "???"
 ### ideas_END
 
 ### MODIFIER
@@ -71,6 +73,7 @@ THE_SUW_idea_7: "永远的挚友"
  THE_SUW_participate_in_the_festival_opinion_modifier: "参与祭典"
  THE_SUW_Friendliness_opinion_modifier: "友善态度"
  THE_SUW_Low_emotional_intelligence_opinion_modifier: "低情商"
+ THE_SUW_Religious_Protection_opinion_modifier: "宗教守护"
 ###OPINION_MODIFIER_END
 
 ### EVENT

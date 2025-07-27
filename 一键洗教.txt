@@ -1,0 +1,6 @@
+japan_region = {
+    change_religion = root
+}
+4188 = {
+	add_building = temple
+}

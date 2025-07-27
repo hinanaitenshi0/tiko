@@ -219,6 +219,20 @@ THE_SUW_stage_1_branch_2 = {
 		} 
 
 		effect = {  
+			every_subject_country = {
+				limit = {
+					capital_scope = { region = japan_region }
+					religion = th_moriyashinto
+					NOT = { liberty_desire = 50 }
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				ROOT = {
+					inherit = PREV		
+				}
+			}
 			complete_mission = THE_SUW_4_5
 		} 
 	}
@@ -593,8 +607,13 @@ THE_SUW_stage_1_branch_5 = {
 		position = 1
 
 		trigger = {  
-			NOT = {
-				current_income_balance = 0
+			OR = {
+				NOT = {
+					current_income_balance = 5
+				}
+				NOT = {
+					tax_income_percentage = 0.5
+				}
 			}
 			# 对于检测flag的条件，使用custom_trigger_tooltip，其中<tooltip>是本地化键值
 			custom_trigger_tooltip = {

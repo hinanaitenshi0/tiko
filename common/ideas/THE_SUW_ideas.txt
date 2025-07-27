@@ -48,8 +48,8 @@ THE_SUW_Original_ideas = {
 		military_tactics = 0.1
 	}
 	
-	THE_SUW_idea_7= {
-		administrative_efficiency = 0.05
-		governing_capacity_modifier = 0.20
+	THE_SUW_idea_7 = {
+		#administrative_efficiency = 0.05
+		#governing_capacity_modifier = 0.20
 	}
 }

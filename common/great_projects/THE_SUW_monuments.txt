@@ -29,7 +29,10 @@
 	
  	can_upgrade_trigger = {
 		owner = {
-		has_country_flag = THE_SUW_Suwa_Shrine_of_the_Divine_Family_flag
+			custom_trigger_tooltip = {
+				tooltip = THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt
+				has_country_flag = THE_SUW_Suwa_Shrine_of_the_Divine_Family_flag
+			}
 		}
  		owner = {
 			OR = {

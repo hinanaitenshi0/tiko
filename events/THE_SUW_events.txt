@@ -284,6 +284,8 @@ country_event = {
 				duration = -1
 			}
 		}
+		set_country_flag = THE_SUW_Suwa_Shrine_of_the_Divine_Family_flag
+		custom_tooltip = THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt
 	}
 }
 
