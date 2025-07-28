@@ -483,3 +483,140 @@ country_event = {
 		change_government_reform_progress = 50
 	}
 }
+
+country_event = {
+	#兼并剩余大名事件
+	id = THE_SUW_events.14
+	title = "THE_SUW_events.14.title"
+	desc = "THE_SUW_events.14.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = THE_SUW_events.14.a.name
+		SUW = {
+			inherit = ROOT
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = THE_SUW_events.14.b.name
+		add_prestige_or_monarch_power = { amount = 50 }
+		SUW = {
+			add_casus_belli = {
+    			target = ROOT
+   				type = cb_defender_of_the_faith
+    			month = 120
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	#琉球事件
+	id = THE_SUW_events.15
+	title = "THE_SUW_events.15.title"
+	desc = "THE_SUW_events.15.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.15.a.name
+		grant_independence = yes
+		SUW = {
+			create_subject = {
+    			subject_type = THE_SUW_Religious_Protection
+    			subject = ROOT
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = THE_SUW_events.15.b.name
+		add_prestige_or_monarch_power = { amount = 50 }
+		SUW = {
+			add_casus_belli = {
+    			target = ROOT
+   				type = cb_force_tributary
+    			month = 120
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	#阿伊努事件
+	id = THE_SUW_events.16
+	title = "THE_SUW_events.16.title"
+	desc = "THE_SUW_events.16.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.16.a.name
+		grant_independence = yes
+		1031 = {
+ 			cede_province = SUW
+		}
+		1847 = {
+			cede_province = SUW
+		}
+		1852 = {
+			cede_province = SUW
+		}
+		1031 = {
+ 			add_core = SUW
+		}
+		1847 = {
+			add_core = SUW
+		}
+		1852 = {
+			add_core = SUW
+		}
+		1031 = {
+ 			remove_core = ROOT
+		}
+		1847 = {
+			remove_core = ROOT
+		}
+		1852 = {
+			remove_core = ROOT
+		}
+		SUW = {
+			create_subject = {
+    			subject_type = THE_SUW_Religious_Protection
+    			subject = ROOT
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = THE_SUW_events.16.b.name
+		add_prestige_or_monarch_power = { amount = 50 }
+		SUW = {
+			add_casus_belli = {
+    			target = ROOT
+   				type = cb_force_tributary
+    			month = 120
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

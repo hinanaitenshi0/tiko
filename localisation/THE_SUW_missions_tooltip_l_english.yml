@@ -7,7 +7,8 @@ SUW_ADJ:0 "ù‹¿‹"
 ### TOOLTIP
  THE_SUW_enable_diplomatic_change_religion_tt: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
  THE_SUW_obtain_favors_tt: "§VÎNÏk*NßvËSY·ƒ—V10¹pºNÅ`§!"
- THE_SUW_2_4: "§Yåe,g§!0W:S„vNb	g§YˆRâw^yS§!ýV¶RSb:NbìN„v§M—RYeˆR²b§!"
+ THE_SUW_2_4_tt: "§Yåe,g§!0W:S„vNb	g§YˆRâw^yS§!ýV¶RSb:NbìN„v§M—RYeˆR²b§!"
+ THE_SUW_2_5_tt: "Tv^Nb	g§M—RYeˆR²b§!"
  THE_SUW_3_3_tt: "‹NöNAQ¸‹bìNôv¥cÈuÓuU^œ^„vßu»lÿSV6qÿ=fú^Ëz(W§RÜw)R§!„vMRÐcN......§VÿNT	éb·ƒ—V„vVY±RmNNT	ÿ§!"
  THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§YbìNO(WN*NgTTU^œ^S›QÑSwcbÿvQßvËSÊSvQÖN'YTOsQèlNwÙ:WùR³Qÿ‚Yå‚·ƒÜwÿNb	gáOðNˆRâw^yS„v'YTSb:NbìN„v§!§M—RYeˆR²b§!"
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y‰SuQãylšÿ‚f•’‚ÿIrÆQY‹YQ¨RKbqTÿ³Q®‹	ÿ§!"
@@ -16,6 +17,7 @@ SUW_ADJ:0 "ù‹¿‹"
  THE_SUW_Eastern_country_claims_tt: "§YSUW§!·ƒ—V†NNb	g§YNýV§!‡eSwýN„v8lEN'`±Rðy0"
  THE_SUW_4_3_tt: "Nb	gåb	g„v§YNýV§!‡eSwýNÏQS§Y15§!t^R»yININ"
  THE_SUW_4_4_tt: "Ïkåb	g§Y5§!WWMOŽN§Yåe,g§!0W:SÿáOðN§YˆRâw^yS§!„vW0Wÿ·ƒ—V§M100§!¹pLˆ?e¹ppe"
+ THE_SUW_4_5_tt: "|Qv^Nb	g§Y'YT§!ÿßuTSwmSÿv^S	ttN?–OªRnŽNg!"
  The_SUW_5_1_tt: "=fù‹¿‹"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "§V=T(u³Q®‹ÿAQ¸‹ú^¾‹bìN„v^y>yÿuóŽN......§!§TGYÂ‰§!"
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "§T¡V^yKN!n§!"
@@ -113,6 +115,18 @@ THE_SUW_events.13.desc: "1"
 THE_SUW_events.13.a.name: "bïSN(u"
 THE_SUW_events.13.b.name: "=fÑ‘PRÿ(WêTýOÑSIQ"
 THE_SUW_events.13.c.name: "`OïSåN:NbìN„vßu»lbVVÐc›Oôf‹Y„vú^®‹"
+THE_SUW_events.14.title: "'YŒTNßu"
+THE_SUW_events.14.desc: "1"
+THE_SUW_events.14.a.name: "^yf(WN......"
+THE_SUW_events.14.b.name: "ôuÃV„Yó`ÿ"
+THE_SUW_events.15.title: "Ž÷‹"
+THE_SUW_events.15.desc: "1"
+THE_SUW_events.15.a.name: "ÙùRbìN¡lÀNHNOWY"
+THE_SUW_events.15.b.name: "'YfôfýwÝO²bbìN"
+THE_SUW_events.16.title: "î•â‹"
+THE_SUW_events.16.desc: "1"
+THE_SUW_events.16.a.name: "mN¸‹bìNáO„v=fTNMO^yupÿ"
+THE_SUW_events.16.b.name: "	gÙŸR+YN‚Y»SSbSbn"
 ### EVENT_END
 
 

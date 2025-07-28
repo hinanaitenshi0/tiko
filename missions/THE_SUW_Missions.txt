@@ -56,8 +56,10 @@ THE_SUW_stage_1_branch_1 = {
 				loyalty = 70
 			}
 			all_owned_province = { religion = ROOT } 
-			all_core_province = { devastation = 0 } 
-			ROOT = { stability = 1 } 
+			all_core_province = { 
+				devastation = 0 
+			} 
+			stability = 1  
 		}
 
 		effect = {
@@ -169,12 +171,13 @@ THE_SUW_stage_1_branch_2 = {
 
 		trigger = {  
 			calc_true_if = {
-				all_country = {
+				any_country = {
 					capital_scope = { region = japan_region }
 					religion = th_moriyashinto
 				}
 				amount = 5
 			}	
+			is_free_or_tributary_trigger= yes
 		}
 
 		effect = { 
@@ -193,7 +196,7 @@ THE_SUW_stage_1_branch_2 = {
 					}
 				}
 			}
-			custom_tooltip = THE_SUW_2_4
+			custom_tooltip = THE_SUW_2_4_tt
 			complete_mission = THE_SUW_4_4
 		} 
 	}
@@ -219,20 +222,23 @@ THE_SUW_stage_1_branch_2 = {
 		} 
 
 		effect = {  
-			every_subject_country = {
-				limit = {
-					capital_scope = { region = japan_region }
-					religion = th_moriyashinto
-					NOT = { liberty_desire = 50 }
-					has_opinion = {
-						who = ROOT
-						value = 100
+			hidden_effect = {
+				every_subject_country = {
+					limit = {
+						capital_scope = { region = japan_region }
+						religion = th_moriyashinto
+						NOT = { liberty_desire = 50 }
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					ROOT = {
+						inherit = PREV		
 					}
 				}
-				ROOT = {
-					inherit = PREV		
-				}
 			}
+			custom_tooltip = THE_SUW_2_5_tt
 			complete_mission = THE_SUW_4_5
 		} 
 	}
@@ -497,7 +503,18 @@ THE_SUW_stage_1_branch_4 = {
 				region = japan_region
 				value = 15
 			}
-			#custom_trigger_tooltip = THE_SUW_There_are_few_enemies_tt
+			is_free_or_tributary_trigger= yes
+			#any_country = {
+			#	AND = {
+			#		has_reform = shogunate
+			#	}
+			#	ROOT = {
+			#		has_won_war_against = { 
+			#			max_years_since = 50
+			#			who =  PREV
+			#		}
+			#	}
+			#}
 		} 
 
 		effect = {  
@@ -588,9 +605,55 @@ THE_SUW_stage_1_branch_4 = {
 		required_missions = { THE_SUW_4_4 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			num_of_owned_provinces_with = {
+				region = japan_region
+				value = 24
+			}
+			all_country = {
+				AND = { 
+					capital_scope = { region = japan_region }
+					NOT = {
+						army_size = ROOT
+					}	
+				}
+			}
+		} 
 
-		effect = {  
+		effect = {
+			custom_tooltip = THE_SUW_4_5_tt
+			hidden_effect = {  
+				every_country = {
+					limit = {
+						capital_scope = { region = japan_region }
+						NOT = {
+							tag = RYU
+						}
+						NOT = {
+							tag = ANU
+						}
+					}
+					country_event = {
+						id = THE_SUW_events.14
+						days = 1
+						random = 29
+					}
+				}
+				RYU = {
+					country_event = {
+						id = THE_SUW_events.15
+						days = 1
+						random = 29
+					}
+				}
+				ANU = {
+					country_event = {
+						id = THE_SUW_events.16
+						days = 1
+						random = 29
+					}
+				}
+			}
 			complete_mission = THE_SUW_2_5
 		} 
 	}
