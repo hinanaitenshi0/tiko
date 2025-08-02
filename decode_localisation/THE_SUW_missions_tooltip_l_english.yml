@@ -29,12 +29,13 @@
  THE_SUW_4_1_case_tt_no: "£no£如果任务「§Y诹访子的智慧§!」已完成:"
  THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!获得了所有§Y东国§!文化省份的永久性宣称。"
  THE_SUW_4_3_tt: "治下所有§Y东国§!文化的省份减少§G15§!年分离主义"
- THE_SUW_4_4_tt: "每拥有§Y5§!块位于§Y日本§!地区，信仰§Y守矢神道§!的土地，获得§G100§!点£adm£行政点数"
- THE_SUW_4_5_tt: "兼并所有§Y大名§!，统合北海道，并将琉球与阿伊努置于朝贡"
+ THE_SUW_4_4_tt: "从治下每个位于§Y日本§!地区且宗教是§Y[Root.Religion.GetName]§!的省份获得§G20§!£adm£行政点数"
+ THE_SUW_4_5_tt: "@RYU§Y[RYU.GetName]§!和@ANU§Y[ANU.GetName]§!以外的所有§Y日本§!地区且省份数量少于§Y3§!国家:"
  The_SUW_5_1_tt: "是诹访"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "启用决议「§Y重建我们的家§!」"
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "§T御神之渡§!"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "允许无损耗集中发展度" 
+ THE_SUW_4_5_tt_2: "如果同意，@RYU§Y[RYU.GetName]§!和@ANU§Y[ANU.GetName]§!将成为我们的朝贡国，其他§Y日本§!地区国家则会被我们继承"
 ### TOOLTIP_END
 
 ### dynasty

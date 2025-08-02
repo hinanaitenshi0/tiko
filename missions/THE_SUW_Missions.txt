@@ -231,12 +231,16 @@ THE_SUW_stage_1_branch_2 = {
 			legitimacy = 100
 			diplomatic_reputation = 5
 			all_subject_country = {
-				capital_scope = { region = japan_region }
-				religion = th_moriyashinto
-				NOT = { liberty_desire = 50 }
-				has_opinion = {
-					who = ROOT
-					value = 100
+				OR = {
+					NOT = { capital_scope = { region = japan_region } }
+					AND = {
+						religion = th_moriyashinto
+						NOT = { liberty_desire = 50 }
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
 				}
 			}
 		} 
@@ -254,7 +258,7 @@ THE_SUW_stage_1_branch_2 = {
 						}
 					}
 					ROOT = {
-						inherit = PREV		
+						inherit = PREV	
 					}
 				}
 			}
@@ -334,7 +338,7 @@ THE_SUW_stage_1_branch_3 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {  
-			not = {
+			NOT = {
 				any_country = {
 					has_reform = shogunate
 				}
@@ -406,7 +410,7 @@ THE_SUW_stage_1_branch_4 = {
 
 		trigger = { 
 			army_size = 15
-			land_morale = 3
+			land_morale = 4
 		} 
 
 		effect = {
@@ -489,81 +493,14 @@ THE_SUW_stage_1_branch_4 = {
 		} 
 
 		effect = {  
-			japan_region = {
-				limit = { owned_by = ROOT }
-				add_local_autonomy = -15
-			}
 			custom_tooltip = THE_SUW_4_4_tt
 			hidden_effect = {
-				if = {
+				every_owned_province = {
 					limit = {
-						num_of_owned_provinces_with = {
-							religion = th_moriyashinto
-							region = japan_region
-							value = 45
-						}
+						region = japan_region
+						religion = ROOT
 					}
-					add_adm_power = 900
-				}
-				else_if = {
-					limit = {
-						num_of_owned_provinces_with = {
-							religion = th_moriyashinto
-							region = japan_region
-							value = 40
-						}
-					}
-					add_adm_power = 800
-				}
-				else_if = {
-					limit = {
-						num_of_owned_provinces_with = {
-							religion = th_moriyashinto
-							region = japan_region
-							value = 35
-						}
-					}
-					add_adm_power = 700
-				}
-				else_if = {
-					limit = {
-						num_of_owned_provinces_with = {
-							religion = th_moriyashinto
-							region = japan_region
-							value = 30
-						}
-					}
-					add_adm_power = 600
-				}
-				else_if = {
-					limit = {
-						num_of_owned_provinces_with = {
-							religion = th_moriyashinto
-							region = japan_region
-							value = 25
-						}
-					}
-					add_adm_power = 500
-				}
-				else_if = {
-					limit = {
-						num_of_owned_provinces_with = {
-							religion = th_moriyashinto
-							region = japan_region
-							value = 20
-						}
-					}
-					add_adm_power = 400
-				}
-				else_if = {
-					limit = {
-						num_of_owned_provinces_with = {
-							religion = th_moriyashinto
-							region = japan_region
-							value = 15
-						}
-					}
-					add_adm_power = 300
+					ROOT = { add_adm_power = 20 }
 				}
 			}
 			complete_mission = THE_SUW_2_4
@@ -592,7 +529,27 @@ THE_SUW_stage_1_branch_4 = {
 		} 
 
 		effect = {
+			RYU = {
+				country_event = {
+					id = THE_SUW_events.15
+					days = 15
+				}
+			}
+			ANU = {
+				country_event = {
+					id = THE_SUW_events.16
+					days = 15
+				}
+			}
 			custom_tooltip = THE_SUW_4_5_tt
+			tooltip = {
+				country_event = {
+					id = THE_SUW_events.14
+					days = 15
+				}
+			}
+			custom_tooltip = empty_line_tt
+			custom_tooltip = THE_SUW_4_5_tt_2
 			hidden_effect = {  
 				every_country = {
 					limit = {
@@ -603,27 +560,14 @@ THE_SUW_stage_1_branch_4 = {
 						NOT = {
 							tag = ANU
 						}
+						NOT = { num_of_cities = 3 }
 					}
 					country_event = {
 						id = THE_SUW_events.14
 						days = 1
-						random = 29
 					}
 				}
-				RYU = {
-					country_event = {
-						id = THE_SUW_events.15
-						days = 1
-						random = 29
-					}
-				}
-				ANU = {
-					country_event = {
-						id = THE_SUW_events.16
-						days = 1
-						random = 29
-					}
-				}
+
 			}
 			complete_mission = THE_SUW_2_5
 		} 
