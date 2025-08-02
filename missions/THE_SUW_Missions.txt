@@ -479,17 +479,6 @@ THE_SUW_stage_1_branch_4 = {
 				value = 15
 			}
 			is_free_or_tributary_trigger= yes
-			#any_country = {
-			#	AND = {
-			#		has_reform = shogunate
-			#	}
-			#	ROOT = {
-			#		has_won_war_against = { 
-			#			max_years_since = 50
-			#			who =  PREV
-			#		}
-			#	}
-			#}
 		} 
 
 		effect = {  
