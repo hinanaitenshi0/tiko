@@ -37,14 +37,14 @@ country_decisions = {
 				}
 				ROOT = {
 					declare_war_with_cb = {
-    					who = PREV 
-   						casus_belli = cb_world_crusade
+						who = PREV 
+						casus_belli = cb_world_crusade
 					}
 				}
 			}
 			clr_country_flag = THE_SUW_Everything_is_ready_except_for_the_divine_wind_flag
 		}
-
+		
 		major = yes
 		
 		ai_will_do = {
@@ -53,129 +53,108 @@ country_decisions = {
 	}
 }
 
-country_decisions = {
-	#添加诹访湖修正
-	THE_SUW_heaven_and_earth_decision = {
-		potential = {
-			tag = SUW
-			has_country_flag = THE_SUW_earth_flag
-			has_country_flag = THE_SUW_heaven_flag
-		}
-		allow = {
-		}
-		effect = {
-			4188 = {
-				add_province_modifier = {
-					name = THE_SUW_Lake_Suwa_province_modiffier 
-					duration = -1
-				}
-			}
-			clr_country_flag = THE_SUW_earth_flag
-			clr_country_flag = THE_SUW_heaven_flag
-		}
-		major = yes
+# country_decisions = {
+# 	#添加诹访湖修正
+# 	THE_SUW_heaven_and_earth_decision = {
+# 		potential = {
+# 			tag = SUW
+# 			has_country_flag = THE_SUW_earth_flag
+# 			has_country_flag = THE_SUW_heaven_flag
+# 		}
+# 		allow = {
+# 		}
+# 		effect = {
+# 			4188 = {
+# 				add_province_modifier = {
+# 					name = THE_SUW_Lake_Suwa_province_modiffier 
+# 					duration = -1
+# 				}
+# 			}
+# 			clr_country_flag = THE_SUW_earth_flag
+# 			clr_country_flag = THE_SUW_heaven_flag
+# 		}
+# 		major = yes
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-}
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 	}
+# }
 
 
 country_decisions = {
-	#强化诹访大社决议1
+	#强化诹访大社决议
 	THE_SUW_Strengthening_Suwa_Daisha_one_decision = {
 		potential = {	
 			tag = SUW
-			has_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag 
+			mission_completed = THE_SUW_5_1
+			NOT = { has_country_flag = THE_SUW_Suwa_Shrine_of_the_Divine_Family_flag }
 		}
 		allow = {
-			has_global_modifier_value = {
-				which = tolerance_own 
-				value = 2
+			if = {
+				limit = { has_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag }
+				has_global_modifier_value = {
+					which = tolerance_own 
+					value = 3
 				}
-			4188 = {
-				development = 20
-				num_of_buildings_in_province = 1
+				4188 = {
+					development = 20
+					num_of_buildings_in_province = 2
+				}
+			}
+			if = {
+				limit = { has_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag }
+				has_global_modifier_value = {
+					which = tolerance_own 
+					value = 6
+				}
+				4188 = {
+					development = 35
+					num_of_buildings_in_province = 5
+				}
+			}
+			if = {
+				limit = { has_country_flag = THE_SUW_The_Prosperous_Suwa_Daisha_flag }
+				has_global_modifier_value = {
+					which = tolerance_own 
+					value = 12
+				}
+				4188 = {
+					development = 50
+					num_of_buildings_in_province = 10
+				}
 			}
 		}
 		effect = {
-			country_event = { 
-				id = THE_SUW_events.5
+			if = {
+				limit = { has_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag }
+				country_event = { 
+					id = THE_SUW_events.5
+				}
+				clr_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag
+				set_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag
 			}
-			clr_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag
-			set_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag
+			if = {
+				limit = { has_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag }
+				country_event = { 
+					id = THE_SUW_events.6
+				}
+				clr_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag
+				set_country_flag = THE_SUW_The_Prosperous_Suwa_Daisha_flag
+			}
+			if = {
+				limit = { has_country_flag = THE_SUW_The_Prosperous_Suwa_Daisha_flag }
+				country_event = { 
+					id = THE_SUW_events.7
+				}
+				clr_country_flag = THE_SUW_The_Prosperous_Suwa_Daisha_flag
+				set_country_flag = THE_SUW_Suwa_Shrine_of_the_Divine_Family_flag
+			}
 		}
-		major = yes
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
 }
-
-country_decisions = {
-	#强化诹访大社决议2
-	THE_SUW_Strengthening_Suwa_Daisha_two_decision = {
-		potential = {	
-			tag = SUW
-			has_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag 
-		}
-		allow = {
-			has_global_modifier_value = {
-				which = tolerance_own 
-				value = 4
-				}
-			4188 = {
-				development = 35
-				num_of_buildings_in_province = 2
-			}
-		}
-		effect = {
-			country_event = { 
-				id = THE_SUW_events.6
-			}
-			clr_country_flag = THE_SUW_The_revived_Suwa_Daisha_flag
-			set_country_flag = THE_SUW_The_Prosperous_Suwa_Daisha_flag
-		}
-		major = yes
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-}
-
-country_decisions = {
-	#强化诹访大社决议3
-	THE_SUW_Strengthening_Suwa_Daisha_three_decision = {
-		potential = {	
-			tag = SUW
-			has_country_flag = THE_SUW_The_Prosperous_Suwa_Daisha_flag 
-		}
-		allow = {
-			has_global_modifier_value = {
-				which = tolerance_own 
-				value = 6
-				}
-			4188 = {
-				development = 50
-				num_of_buildings_in_province = 3
-			}
-		}
-		effect = {
-			country_event = { 
-				id = THE_SUW_events.7
-			}
-			clr_country_flag = THE_SUW_The_Prosperous_Suwa_Daisha_flag
-			set_country_flag = THE_SUW_Suwa_Shrine_of_the_Divine_Family_flag
-		}
-		major = yes
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-}
-
 

@@ -83,8 +83,8 @@ THE_SUW_Eternal_loyalty_country_modiffier = {
 #一种信仰
 THE_SUW_A_belief_country_modiffier = {
 	tolerance_own = 1
-	yearly_army_professionalism = 0.01
-	global_prosperity_growth = 1
+	yearly_army_professionalism = 0.005
+	global_monthly_devastation = -0.5
 }
 #踊跃参军
 #每传完一个地块增加1000人力
@@ -111,11 +111,12 @@ THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier = {
 #进退有度
 THE_SUW_self_controlled_country_modiffier = {
 	diplomatic_reputation = 1
-	monthly_favor_modifier = 0.2
+	improve_relation_modifier = 0.2
+	diplomatic_upkeep = 2
 }
 #训练有素
 THE_SUW_well_trained_country_modiffier = {
-	discipline = 0.05
+	shock_damage_received = -0.05
 	global_regiment_recruit_speed = -0.15
 }
 #斗争之心

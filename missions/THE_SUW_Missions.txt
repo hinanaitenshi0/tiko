@@ -24,7 +24,6 @@ THE_SUW_stage_1_branch_1 = {
 				loyalty = 50
 			}
 			government_reform_progress = 20
-			adm_power = 60
 		}
 
 		effect = {
@@ -32,7 +31,6 @@ THE_SUW_stage_1_branch_1 = {
 				name = "THE_SUW_Loyalty_of_social_classes_country_modiffier"
 				duration = 7300
 			}
-			add_adm_power = -60
 		}
 	}
 
@@ -56,10 +54,11 @@ THE_SUW_stage_1_branch_1 = {
 				loyalty = 70
 			}
 			all_owned_province = { religion = ROOT } 
-			all_core_province = { 
-				devastation = 0 
-			} 
-			stability = 1  
+			num_of_owned_provinces_with = {
+				value = 30
+				is_prosperous = yes
+			}
+			stability = 3
 		}
 
 		effect = {
@@ -82,7 +81,8 @@ THE_SUW_stage_1_branch_2 = {
 		position = 1
 
 		trigger = { 
-			monthly_dip = 9
+			owns = 4188
+			monthly_dip = 10
 			land_maintenance = 1
 		} 
 
@@ -91,8 +91,28 @@ THE_SUW_stage_1_branch_2 = {
 			# custom_attributes是政府机制后缀，此处使用flag和tt后缀
 			# custom_tooltip的本地化键值分类至tooltip（工具提示）
 			custom_tooltip = THE_SUW_enable_diplomatic_change_religion_tt
-			custom_tooltip = THE_SUW_heaven_and_earth_tt
-			set_country_flag = THE_SUW_earth_flag
+			custom_tooltip = empty_line_tt
+			if = {
+				limit = { mission_completed = THE_SUW_4_1 }
+				custom_tooltip = THE_SUW_2_1_case_tt_yes
+				4188 = {
+					add_province_modifier = {
+						name = THE_SUW_Lake_Suwa_province_modiffier 
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = THE_SUW_2_1_case_tt_no
+				tooltip = {
+					4188 = {
+						add_province_modifier = {
+							name = THE_SUW_Lake_Suwa_province_modiffier 
+							duration = -1
+						}
+					}
+				}
+			}
 			set_country_flag = THE_SUW_enable_diplomatic_change_religion_flag
 		}
 	}
@@ -117,7 +137,7 @@ THE_SUW_stage_1_branch_2 = {
 			custom_tooltip = THE_SUW_obtain_favors_tt
 			hidden_effect = {
 				every_ally = {
-					root = {
+					ROOT = {
 						add_favors = {
 							who = PREV
 							amount = 10
@@ -343,6 +363,7 @@ THE_SUW_stage_1_branch_4 = {
 		position = 1
 
 		trigger = {  
+			owns = 4188
 			monthly_mil = 9
 			4188 = {
 				base_production = 7
@@ -351,12 +372,29 @@ THE_SUW_stage_1_branch_4 = {
 
 		effect = {
 			custom_tooltip = THE_SUW_converte_province_religion_add_1_manpower_tt
-
-			custom_tooltip = THE_SUW_heaven_and_earth_tt
-			set_country_flag = THE_SUW_heaven_flag
-			hidden_effect = {  
-				set_country_flag = THE_SUW_converte_province_religion_add_1_manpower_flag
-			} 
+			custom_tooltip = empty_line_tt
+			if = {
+				limit = { mission_completed = THE_SUW_2_1 }
+				custom_tooltip = THE_SUW_4_1_case_tt_yes
+				4188 = {
+					add_province_modifier = {
+						name = THE_SUW_Lake_Suwa_province_modiffier 
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = THE_SUW_4_1_case_tt_no
+				tooltip = {
+					4188 = {
+						add_province_modifier = {
+							name = THE_SUW_Lake_Suwa_province_modiffier 
+							duration = -1
+						}
+					}
+				}
+			}
+			set_country_flag = THE_SUW_converte_province_religion_add_1_manpower_flag
 		}
 	}
 
@@ -374,7 +412,7 @@ THE_SUW_stage_1_branch_4 = {
 		effect = {
 			add_power_projection = {
 				type = mission_rewards_power_projection 
-				amount = 10 
+				amount = 25
 			} 
 			add_country_modifier = {
 				name = THE_SUW_well_trained_country_modiffier
@@ -382,76 +420,9 @@ THE_SUW_stage_1_branch_4 = {
 			}
 			custom_tooltip = THE_SUW_Eastern_country_claims_tt
 			hidden_effect = {
-				if = {
+				every_province = {
 					limit = {
-						1835 = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-					}
-					add_permanent_claim = 1835
-				}
-				if = {
-					limit = {
-						1030 = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-					}
-					add_permanent_claim = 1030
-				}
-				if = {
-					limit = {
-						1837 = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-					}
-					add_permanent_claim = 1837
-				}
-				if = {
-					limit = {
-						1024 = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-					}
-					add_permanent_claim = 1024
-				}
-				if = {
-					limit = {
-						4193 = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-					}
-					add_permanent_claim = 4193
-				}
-				eastern_chubu_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				kanto_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				eastern_kanto_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				thohoku_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						culture = togoku
 					}
 					add_permanent_claim = ROOT
 				}

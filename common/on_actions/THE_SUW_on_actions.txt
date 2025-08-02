@@ -4,58 +4,9 @@ on_province_religion_converted = {
 }
 
 on_war_won = {
-	if = {
-		limit ={
-			tag = SUW
-			has_country_flag = THE_SUW_The_Beginning_of_Holy_War_one_flag 
-			from = {
-				has_reform = shogunate
-			}
-		}
-		ROOT = {
-			country_event = {
-				id = THE_SUW_events.10
-				days = 30
-			}
-		}
-	}
-	if = {
-		limit ={
-			tag = SUW
-			has_country_flag = THE_SUW_The_Beginning_of_Holy_War_two_flag 
-			from = {
-				has_reform = shogunate
-			}
-		}
-		ROOT = {
-			country_event = {
-				id = THE_SUW_events.11
-				days = 30
-			}
-		}
-	}
+	THE_SUW_on_war_won_scripted_effects = yes	
 }
 
-
-
 on_province_owner_change = {
-	if = {
-		limit = {
-			province_id = 1839
-			owned_by = SUW
-			owner = {
-				not = { has_country_flag = THE_SUW_hojousouun_flag }
-			}
-		}
-		owner = {
-			country_event = {
-				id = THE_SUW_events.13
-				days = 30
-				random = 150
-			}
-			set_country_flag = {
-				THE_SUW_hojousouun_flag
-			}
-		}
-	}
+	THE_SUW_on_province_owner_change_scripted_effects = yes
 }

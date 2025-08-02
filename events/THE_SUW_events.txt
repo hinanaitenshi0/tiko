@@ -568,33 +568,33 @@ country_event = {
 	option = {
 		name = THE_SUW_events.16.a.name
 		grant_independence = yes
-		1031 = {
- 			cede_province = SUW
-		}
-		1847 = {
-			cede_province = SUW
-		}
-		1852 = {
-			cede_province = SUW
-		}
-		1031 = {
- 			add_core = SUW
-		}
-		1847 = {
-			add_core = SUW
-		}
-		1852 = {
-			add_core = SUW
-		}
-		1031 = {
- 			remove_core = ROOT
-		}
-		1847 = {
-			remove_core = ROOT
-		}
-		1852 = {
-			remove_core = ROOT
-		}
+		# 1031 = {
+ 		# 	cede_province = SUW
+		# }
+		# 1847 = {
+		# 	cede_province = SUW
+		# }
+		# 1852 = {
+		# 	cede_province = SUW
+		# }
+		# 1031 = {
+ 		# 	add_core = SUW
+		# }
+		# 1847 = {
+		# 	add_core = SUW
+		# }
+		# 1852 = {
+		# 	add_core = SUW
+		# }
+		# 1031 = {
+ 		# 	remove_core = ROOT
+		# }
+		# 1847 = {
+		# 	remove_core = ROOT
+		# }
+		# 1852 = {
+		# 	remove_core = ROOT
+		# }
 		SUW = {
 			create_subject = {
     			subject_type = THE_SUW_Religious_Protection
