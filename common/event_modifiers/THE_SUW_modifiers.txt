@@ -110,9 +110,9 @@ THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier = {
 }
 #进退有度
 THE_SUW_self_controlled_country_modiffier = {
-	diplomatic_reputation = 1
-	improve_relation_modifier = 0.2
-	diplomatic_upkeep = 2
+	#diplomatic_reputation = 1
+	improve_relation_modifier = 0.05
+	#diplomatic_upkeep = 2
 }
 #训练有素
 THE_SUW_well_trained_country_modiffier = {
