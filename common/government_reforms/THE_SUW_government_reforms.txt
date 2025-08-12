@@ -10,6 +10,9 @@ THE_SUW_SUW_and_KAN_reform = {
 		}
 	}
 
+	religion = yes
+	#has_term_election = yes
+	#duration = 4
 	queen = yes
 	heir = no
 	valid_for_new_country = no
