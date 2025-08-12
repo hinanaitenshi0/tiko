@@ -516,7 +516,8 @@ country_event = {
 			add_casus_belli = {
     			target = ROOT
    				type = cb_defender_of_the_faith
-    			month = 120
+    			#month = 120
+				days = 3650
 			}
 		}
 		ai_chance = {
@@ -561,7 +562,8 @@ country_event = {
 			add_casus_belli = {
     			target = ROOT
    				type = cb_force_tributary
-    			month = 120
+    			#month = 120
+				days = 3650
 			}
 		}
 		ai_chance = {
@@ -633,7 +635,8 @@ country_event = {
 			add_casus_belli = {
     			target = ROOT
    				type = cb_force_tributary
-    			month = 120
+    			#month = 120
+				days = 3650
 			}
 		}
 		ai_chance = {
@@ -659,9 +662,33 @@ country_event = {
 	}
 
 	option = {
-		name = THE_SUW_events.17.a.name
+		name = THE_SUW_events.17.name
+		country_event = {
+			id = THE_SUW_events.18
+			days = 1
+			random = 364
+		}
 	}
+}
+
+country_event = {
+	#双神决裂事件
+	id = THE_SUW_events.18
+	title = "THE_SUW_events.18.title"
+	desc = "THE_SUW_events.18.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+	}
+
 	option = {
-		name = THE_SUW_events.17.b.name
+		name = THE_SUW_events.18.name
+
 	}
 }

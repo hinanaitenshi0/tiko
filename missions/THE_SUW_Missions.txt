@@ -382,7 +382,7 @@ THE_SUW_stage_1_branch_3 = {
 		} 
 
 		effect = {  
-			change_government = theocracy
+			#change_government = theocracy
 			add_government_reform = THE_SUW_SUW_and_KAN_reform
 			country_event = {
 				id = THE_SUW_events.17
