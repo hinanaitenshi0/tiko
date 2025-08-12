@@ -79,6 +79,9 @@ THE_SUW_stage_1_branch_2 = {
 	THE_SUW_2_1 = {
 		icon = mission_unknown_mission
 		position = 1
+		provinces_to_highlight = {
+			province_id = 4188
+		}
 
 		trigger = { 
 			owns = 4188
@@ -152,7 +155,9 @@ THE_SUW_stage_1_branch_2 = {
 		icon = mission_unknown_mission
 		position = 3
 		required_missions = { THE_SUW_2_2 } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			province_id = 4188
+		} 
 
 		trigger = {  
 			treasury = 200
@@ -187,16 +192,26 @@ THE_SUW_stage_1_branch_2 = {
 			THE_SUW_2_3
 			THE_SUW_3_3
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = japan_region
+			NOT = { religion = th_moriyashinto }
+		} 
 
 		trigger = {  
-			calc_true_if = {
-				any_country = {
-					capital_scope = { region = japan_region }
+			mission_completed = THE_SUW_4_3
+			OR = {
+				calc_true_if = {
+					any_country = {
+						capital_scope = { region = japan_region }
+						religion = th_moriyashinto
+					}
+					amount = 5
+				}
+				japan_region = {
+					type = all
 					religion = th_moriyashinto
 				}
-				amount = 5
-			}	
+			}
 			is_free_or_tributary_trigger= yes
 		}
 
@@ -225,7 +240,23 @@ THE_SUW_stage_1_branch_2 = {
 		icon = mission_unknown_mission
 		position = 5
 		required_missions = { THE_SUW_2_4 } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = japan_region
+			is_capital = yes
+			owner = {
+				is_subject_of = ROOT
+				OR = {
+					NOT = { religion = th_moriyashinto }
+					liberty_desire = 50
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				}
+			}
+		} 
 
 		trigger = {  
 			legitimacy = 100
@@ -246,6 +277,7 @@ THE_SUW_stage_1_branch_2 = {
 		} 
 
 		effect = {  
+			custom_tooltip = THE_SUW_2_5_tt
 			hidden_effect = {
 				every_subject_country = {
 					limit = {
@@ -258,12 +290,12 @@ THE_SUW_stage_1_branch_2 = {
 						}
 					}
 					ROOT = {
-						inherit = PREV	
+						inherit = PREV
 					}
 				}
+				complete_mission = THE_SUW_4_4
+				complete_mission = THE_SUW_4_5
 			}
-			custom_tooltip = THE_SUW_2_5_tt
-			complete_mission = THE_SUW_4_5
 		} 
 	}
 }
@@ -482,6 +514,18 @@ THE_SUW_stage_1_branch_4 = {
 				value = 15
 			}
 			is_free_or_tributary_trigger= yes
+			mission_completed = THE_SUW_2_3
+			#any_country = {
+			#	AND = {
+			#		has_reform = shogunate
+			#	}
+			#	ROOT = {
+			#		has_won_war_against = { 
+			#			max_years_since = 50
+			#			who =  PREV
+			#		}
+			#	}
+			#}
 		} 
 
 		effect = {  
@@ -495,7 +539,6 @@ THE_SUW_stage_1_branch_4 = {
 					ROOT = { add_adm_power = 20 }
 				}
 			}
-			complete_mission = THE_SUW_2_4
 		} 
 	}
 
@@ -559,9 +602,9 @@ THE_SUW_stage_1_branch_4 = {
 						days = 1
 					}
 				}
-
+				complete_mission = THE_SUW_2_4
+				complete_mission = THE_SUW_2_5
 			}
-			complete_mission = THE_SUW_2_5
 		} 
 	}
 }

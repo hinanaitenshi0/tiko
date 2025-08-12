@@ -1,0 +1,149 @@
+namespace = THE_SKC_sf_events
+
+#Outlook Events
+
+country_event = {
+	id = THE_SKC_sf_events.1
+	title = THE_SKC_sf_events.1.title
+	desc = THE_SKC_sf_events.1.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.1.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.2
+	title = THE_SKC_sf_events.2.title
+	desc = THE_SKC_sf_events.2.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.2.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.3
+	title = THE_SKC_sf_events.3.title
+	desc = THE_SKC_sf_events.3.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.3.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.4
+	title = THE_SKC_sf_events.4.title
+	desc = THE_SKC_sf_events.4.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.4.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.5
+	title = THE_SKC_sf_events.5.title
+	desc = THE_SKC_sf_events.5.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.5.a
+	}
+}
+
+#SF Events
+
+country_event = {
+	id = THE_SKC_sf_events.6
+	title = THE_SKC_sf_events.6.title
+	desc = THE_SKC_sf_events.6.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.6.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.7
+	title = THE_SKC_sf_events.7.title
+	desc = THE_SKC_sf_events.7.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.7.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.8
+	title = THE_SKC_sf_events.8.title
+	desc = THE_SKC_sf_events.8.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.8.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.9
+	title = THE_SKC_sf_events.9.title
+	desc = THE_SKC_sf_events.9.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.9.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.10
+	title = THE_SKC_sf_events.10.title
+	desc = THE_SKC_sf_events.10.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.10.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.11
+	title = THE_SKC_sf_events.11.title
+	desc = THE_SKC_sf_events.11.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.11.a
+	}
+}
+
+country_event = {
+	id = THE_SKC_sf_events.12
+	title = THE_SKC_sf_events.12.title
+	desc = THE_SKC_sf_events.12.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SKC_sf_events.12.a
+	}
+}
