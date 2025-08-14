@@ -10,3 +10,7 @@ on_war_won = {
 on_province_owner_change = {
 	THE_SUW_on_province_owner_change_scripted_effects = yes
 }
+
+on_four_year_pulse = {
+	THE_SUW_on_four_year_pulse_scripted_effects = yes
+}
