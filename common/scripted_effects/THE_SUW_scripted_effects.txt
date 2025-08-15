@@ -73,6 +73,21 @@ THE_SUW_on_province_owner_change_scripted_effects = {
 	}
 }
 
+THE_SUW_on_four_year_pulse_scripted_effects = {
+	random_event = {
+		100 = THE_SUW_events.19
+		100 = THE_SUW_events.20
+		100 = THE_SUW_events.21
+		100 = THE_SUW_events.22
+		100 = THE_SUW_events.23
+		100 = THE_SUW_events.24
+		100 = THE_SUW_events.25
+		100 = THE_SUW_events.26
+		100 = THE_SUW_events.27
+		100 = THE_SUW_events.28
+	}
+}
+
 ##################################################
 ### not on_actions scripted effect 
 ##################################################

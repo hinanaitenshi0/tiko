@@ -1,0 +1,37 @@
+THE_SUW_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 10
+	available = {
+		always = yes
+	}
+	powers = {
+		THE_SUW_mechanic_power = {
+			gui = THE_AKI_harvest_autumn_mechanic_gui
+			show_before_interactions = yes
+			min = -100
+			max = 100
+			base_monthly_growth = 0
+			increases_with_global = no
+			scaled_modifier = {
+				modifier = { 
+					improve_relation_modifier = 0.2
+					development_cost_modifier = -0.1
+					stability_cost_modifier = -0.3
+					monthly_THE_SUW_mechanic_power = 1
+				}
+				start_value = 0
+				end_value = 100
+			}
+			reverse_scaled_modifier = {
+				modifier = { 
+					siege_ability = 0.2
+					movement_speed = 0.1
+					discipline = 0.1
+					monthly_THE_SUW_mechanic_power = -1
+				}
+				start_value = 0
+				end_value = -100
+			}
+		}
+	}
+}
