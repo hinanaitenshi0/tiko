@@ -18,7 +18,7 @@
  THE_SUW_enable_diplomatic_change_religion_tt: "=T(u0§YŽ÷‹9eYe§!0Y²NLˆ¨R"
  THE_SUW_obtain_favors_tt: "Nb	gßvËSžX R§G10§!¹pºNÅ`"
  THE_SUW_2_4_tt: "§Yåe,g§!0W:S„vNb	g§YˆRâw^yS§!ýV¶RSb:NbìN„v§M—RYeˆR²b§!"
- THE_SUW_2_5_tt: "Tv^Nb	g§Y—RYeˆR²b§!"
+ THE_SUW_2_5_tt: "çubNb	g§Y—RYeˆR²b§!"
  THE_SUW_3_3_tt: "‹NöNAQ¸‹bìNôv¥cÈuÓuU^œ^„vßu»lÿSV6qÿ=fú^Ëz(W§RÜw)R§!„vMRÐcN......§VÿNT	éb·ƒ—V„vVY±RmNNT	ÿ§!"
  THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§YbìNO(WN*NgTTU^œ^S›QÑSwcbÿvQßvËSÊSvQÖN'YTOsQèlNwÙ:WùR³Qÿ‚Yå‚·ƒÜwÿNb	gáOðNˆRâw^yS„v'YTSb:NbìN„v§!§M—RYeˆR²b§!"
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y‰SuQãylšÿ‚f•’‚ÿIrÆQY‹YQ¨RKbqTÿ³Q®‹	ÿ§!"
@@ -30,7 +30,7 @@
  THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!·ƒ—V†NNb	g§YNýV§!‡eSwýN„v8lEN'`±Rðy0"
  THE_SUW_4_3_tt: "»lNNb	g§YNýV§!‡eS„vwýNÏQS§G15§!t^R»yININ"
  THE_SUW_4_4_tt: "ÎN»lNÏk*NMOŽN§Yåe,g§!0W:SN—RYe=f§Y[Root.Religion.GetName]§!„vwýN·ƒ—V§G20§!£adm£Lˆ?e¹ppe"
- THE_SUW_4_5_tt: "@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!åNY„vNb	g§Yåe,g§!0W:SNwýNpeÏ‘SŽN§Y3§!ýV¶R:"
+ THE_SUW_4_5_tt: "(@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!åNY„vNb	g§Yåe,g§!0W:SNwýNpeÏ‘SŽN§Y3§!„výV¶R):"
  The_SUW_5_1_tt: "=fù‹¿‹"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "=T(u³Q®‹0§YÍ‘ú^bìN„v¶R§!0"
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "§T¡V^yKN!n§!"
@@ -171,6 +171,7 @@
 ### GOVERNMENT
  THE_SUW_SUW_and_KAN_reform: "ù‹¿‹Nyÿ^yHYmy"
  THE_SUW_SUW_and_KAN_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
+ THE_SUW_mechanic_power_desc: "\n(WgS<P§Y-100§!öeÿ^yHYPRSÑSZÿåb	gåNNHeœg:\n­‹Ãu¦^: §G+10.0%§!\nôVÎWýw›R: §G+20.0%§!\nûy¨R¦^: §G+10.0%§!\n\n(Wg'Y<P§Y100§!öeÿù‹¿‹PRS>fupÿåb	gåNNHeœg:\n3zšR¦^±‚9îOck: §G-30.0%§!\n9e„UsQû|: §G+20.0%§!\nÑSUSb,gîOck: §G-10.0%§!"
  THE_SUW_suw: "dWŽNšS·V‹ir"
  THE_SUW_kan: "ŒNåNRePNo`"
  THE_SUW_suw_MECHANIC_TOOLTIP: "ù‹¿‹PR"

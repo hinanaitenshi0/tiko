@@ -692,3 +692,30 @@ country_event = {
 
 	}
 }
+
+country_event = {
+	#四年换君主事件
+	id = THE_SUW_events.19
+	title = "THE_SUW_events.19.title"
+	desc = "THE_SUW_events.19.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = no
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+		has_reform = THE_SUW_SUW_and_KAN_reform
+	}
+
+	option = {
+		name = THE_SUW_events.19.a.name
+		THE_SUW_define_suwako_and_kanako_effect = yes
+	}
+	option = {
+		name = THE_SUW_events.19.b.name
+		THE_SUW_define_kanako_and_suwako_effect = yes
+	}
+}

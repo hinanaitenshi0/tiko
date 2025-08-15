@@ -29,8 +29,18 @@ THE_SUW_mechanic = {
 					discipline = 0.1
 					monthly_THE_SUW_mechanic_power = -1
 				}
-				start_value = 0
-				end_value = -100
+				start_value = -100
+				end_value = 0
+			}
+			on_max_reached = {
+				country_event = {
+					id = THE_SUW_events.30
+				}
+			}
+			on_min_reached = {
+				country_event = {
+					id = THE_SUW_events.31
+				}
 			}
 		}
 	}

@@ -1,1 +1,7 @@
 add_government_reform = THE_SUW_SUW_and_KAN_reform
+#add_government_reform = THE_AKI_harvest_and_autumn_reform
+add_government_power = {
+	mechanic_type = THE_SUW_mechanic
+	power_type = THE_SUW_mechanic_power
+	#value = -50.5
+}

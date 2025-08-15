@@ -171,6 +171,7 @@
 ### GOVERNMENT
  THE_SUW_SUW_and_KAN_reform: "诹访祀，神奈祭"
  THE_SUW_SUW_and_KAN_reform_desc: "这是一个政府改革描述"
+ THE_SUW_mechanic_power_desc: "\n在最小值§Y-100§!时，神奈子将发威，拥有以下效果:\n训练度: §G+10.0%§!\n围城能力: §G+20.0%§!\n移动速度: §G+10.0%§!\n\n在最大值§Y100§!时，诹访子将显灵，拥有以下效果:\n稳定度花费修正: §G-30.0%§!\n改善关系: §G+20.0%§!\n发展成本修正: §G-10.0%§!"
  THE_SUW_suw: "坤于厚德载物"
  THE_SUW_kan: "乾以刚健不息"
  THE_SUW_suw_MECHANIC_TOOLTIP: "诹访子"

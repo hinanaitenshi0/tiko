@@ -14,3 +14,7 @@ on_province_owner_change = {
 on_four_year_pulse = {
 	THE_SUW_on_four_year_pulse_scripted_effects = yes
 }
+
+on_four_year_pulse_2 = {
+	THE_SUW_on_four_year_pulse_scripted_effects_2 = yes
+}

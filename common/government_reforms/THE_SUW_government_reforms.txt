@@ -20,18 +20,18 @@ THE_SUW_SUW_and_KAN_reform = {
 	rulers_can_be_generals = no
 	can_change_primary_culture = no
 	
-	states_general_mechanic = {
-		THE_SUW_suw = {
-			improve_relation_modifier = 0.2
-			development_cost_modifier = -0.1
-			stability_cost_modifier = -0.3
-		}
-		THE_SUW_kan = {
-			siege_ability = 0.2
-			movement_speed = 0.1
-			discipline = 0.1
-		}
-	}
+#	states_general_mechanic = {
+#		THE_SUW_suw = {
+#			improve_relation_modifier = 0.2
+#			development_cost_modifier = -0.1
+#			stability_cost_modifier = -0.3
+#		}
+#		THE_SUW_kan = {
+#			siege_ability = 0.2
+#			movement_speed = 0.1
+#			discipline = 0.1
+#		}
+#	}
 		
 	custom_attributes = {
 		enables_aristocratic_idea_group = no
@@ -46,5 +46,8 @@ THE_SUW_SUW_and_KAN_reform = {
 		development_cost_modifier = -0.1
 		global_missionary_strength = 0.02
 		cb_on_religious_enemies = yes
+	}
+	government_abilities = {
+		THE_SUW_mechanic
 	}
 }
