@@ -713,9 +713,19 @@ country_event = {
 	option = {
 		name = THE_SUW_events.19.a.name
 		THE_SUW_define_suwako_and_kanako_effect = yes
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = 20
+		}
 	}
 	option = {
 		name = THE_SUW_events.19.b.name
 		THE_SUW_define_kanako_and_suwako_effect = yes
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = -20
+		}
 	}
 }
