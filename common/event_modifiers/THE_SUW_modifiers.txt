@@ -124,3 +124,7 @@ THE_SUW_Heart_of_Struggle_country_modiffier = {
 	army_tradition = 0.5
 	movement_speed = 0.1
 }
+#分歧
+THE_SUW_divergence_of_views_country_modifier = {
+	stability_cost_modifier = 0.2
+}

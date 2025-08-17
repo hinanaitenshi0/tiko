@@ -79,6 +79,7 @@
  THE_SUW_The_Beginning_of_Holy_War_two_modifier: "圣战之始"
  THE_SUW_Recruit_manpower_country_modiffier: "招集人手"
  THE_SUW_Heart_of_Struggle_country_modiffier: "斗争之心"
+ THE_SUW_divergence_of_views_country_modifier: "分歧"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -137,6 +138,14 @@
  THE_SUW_events.16.desc: "1"
  THE_SUW_events.16.a.name: "也许我们信的是同一位神灵？"
  THE_SUW_events.16.b.name: "有这功夫不如去打打渔"
+ THE_SUW_events.17.title: "发生什么事了？"
+ THE_SUW_events.17.desc: "1"
+ THE_SUW_events.17.a.name: "我赞同诹访子大人"
+ THE_SUW_events.17.b.name: "神奈子大人是对的"
+ THE_SUW_events.20.title: ""
+ THE_SUW_events.20.desc: ""
+ THE_SUW_events.20.a.name: ""
+ THE_SUW_events.20.b.name: ""
 ### EVENT_END
 
 
