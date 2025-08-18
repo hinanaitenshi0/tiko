@@ -80,6 +80,20 @@
  THE_SUW_Recruit_manpower_country_modiffier: "招集人手"
  THE_SUW_Heart_of_Struggle_country_modiffier: "斗争之心"
  THE_SUW_divergence_of_views_country_modifier: "分歧"
+ THE_SUW_divergence_of_views_economy_country_modifier: "分歧-经济-贸易"
+ THE_SUW_divergence_of_views_taxation_country_modifier: "分歧-经济-税收"
+ THE_SUW_divergence_of_views_pluralistic_country_modifier: "分歧-文化-多元"
+ THE_SUW_divergence_of_views_single_country_modifier: "分歧-文化-单一"
+ THE_SUW_divergence_of_views_Mythology_country_modifier: "分歧-宗教-万神"
+ THE_SUW_divergence_of_views_One_God_country_modifier: "分歧-宗教-一神"
+ THE_SUW_divergence_of_views_comprehensive_country_modifier: "分歧-宫廷-全面"
+ THE_SUW_divergence_of_views_loyalty_country_modifier: "分歧-宫廷-忠诚"
+ THE_SUW_divergence_of_views_religious_guardianship_country_modifier: "分歧-军事-宗教守护"
+ THE_SUW_divergence_of_views_Wind_Forest_Fire_Mountain_country_modifier: "分歧-军事-风林火山"
+ THE_SUW_divergence_of_views_High_guests_are_seated_in_full_country_modifier: "分歧-外交-高朋满座"
+ THE_SUW_divergence_of_views_Far_alliance_near_attack_country_modifier: "分歧-外交-远交近攻"
+ THE_SUW_divergence_of_views_decentralization_country_modifier: "分歧-阶级-分权"
+ THE_SUW_divergence_of_views_centralization_country_modifier: "分歧-阶级-集权"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
