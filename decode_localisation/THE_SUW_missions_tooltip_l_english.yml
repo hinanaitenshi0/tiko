@@ -142,10 +142,34 @@
  THE_SUW_events.17.desc: "1"
  THE_SUW_events.17.a.name: "我赞同诹访子大人"
  THE_SUW_events.17.b.name: "神奈子大人是对的"
- THE_SUW_events.20.title: ""
- THE_SUW_events.20.desc: ""
- THE_SUW_events.20.a.name: ""
- THE_SUW_events.20.b.name: ""
+ THE_SUW_events.20.title: "经济"
+ THE_SUW_events.20.desc: "1"
+ THE_SUW_events.20.a.name: "与他国的贸易才是关键"#加贸易效率
+ THE_SUW_events.20.b.name: "信徒的供奉是我们的根本"#加税收效率
+ THE_SUW_events.21.title: "文化"
+ THE_SUW_events.21.desc: "1"
+ THE_SUW_events.21.a.name: "大国者，当海纳百川"#可容忍文化增加
+ THE_SUW_events.21.b.name: "传统文化的传承是重中之重"#主流文化发展成本减少
+ THE_SUW_events.22.title: "宗教"
+ THE_SUW_events.22.desc: "1"
+ THE_SUW_events.22.a.name: "人力有极时，神明亦如是"#万神殿
+ THE_SUW_events.22.b.name: "天无三日，需树立神之尊严"#一神教
+ THE_SUW_events.23.title: "宫廷"
+ THE_SUW_events.23.desc: "1"
+ THE_SUW_events.23.a.name: "天天看同一种蛇吐信子也会感到无聊吧"#加1顾问槽
+ THE_SUW_events.23.b.name: "忠诚不绝对，就是绝对不忠诚"#减同信仰顾问花费，加通用顾问花费
+ THE_SUW_events.24.title: "军事"
+ THE_SUW_events.24.desc: "1"
+ THE_SUW_events.24.a.name: "只要宗教守护发起进攻，一切都会好起来的"#靠小弟打架
+ THE_SUW_events.24.b.name: "风，林，火，山"#自己来
+ THE_SUW_events.25.title: "外交"
+ THE_SUW_events.25.desc: "1"
+ THE_SUW_events.25.a.name: "为什么不能坐下来谈谈呢"#加改善关系
+ THE_SUW_events.25.b.name: "远交近攻，实为上策"#减侵扩
+ THE_SUW_events.26.title: "阶级"
+ THE_SUW_events.26.desc: "1"
+ THE_SUW_events.26.a.name: "人人有事做，挺好的"#阶层互动的冷却时间，加忠诚均衡点，加影响力，加阶级特权槽位
+ THE_SUW_events.26.b.name: "统一的政令是必须的"#允许无视阶级的忠诚度和影响力取消阶级特权，取消阶层特权导致的忠诚度损失减少
 ### EVENT_END
 
 

@@ -128,3 +128,28 @@ THE_SUW_Heart_of_Struggle_country_modiffier = {
 THE_SUW_divergence_of_views_country_modifier = {
 	stability_cost_modifier = 0.2
 }
+#分歧-经济-贸易
+THE_SUW_divergence_of_views_economy_country_modifier = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.1
+}
+#分歧-经济-税收
+THE_SUW_divergence_of_views_taxation_country_modifier = {
+	global_tax_income = 24
+	global_tax_modifier = 0.1
+}
+#分歧-文化-多元
+THE_SUW_divergence_of_views_pluralistic_country_modifier = {
+	num_accepted_cultures = 2
+	promote_culture_cost = -0.2
+}
+#分歧-文化-单一
+THE_SUW_divergence_of_views_single_country_modifier = {
+	culture_conversion_cost = -0.2
+	development_cost_in_primary_culture = -0.1
+}
+#分歧-文化-单一
+THE_SUW_divergence_of_views_single_country_modifier = {
+	culture_conversion_cost = -0.2
+	development_cost_in_primary_culture = -0.1
+}
