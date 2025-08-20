@@ -79,7 +79,7 @@ THE_SUW_on_four_year_pulse_scripted_effects = {
 	}
 }
 
-THE_SUW_on_four_year_pulse_scripted_effects_2 = {
+THE_SUW_on_bi_yearly_pulse_scripted_effects = {
 	random_event = {
 		100 = THE_SUW_events.20
 		100 = THE_SUW_events.21
@@ -88,9 +88,6 @@ THE_SUW_on_four_year_pulse_scripted_effects_2 = {
 		100 = THE_SUW_events.24
 		100 = THE_SUW_events.25
 		100 = THE_SUW_events.26
-		100 = THE_SUW_events.27
-		100 = THE_SUW_events.28
-		100 = THE_SUW_events.29
 	}
 }
 

@@ -15,6 +15,6 @@ on_four_year_pulse = {
 	THE_SUW_on_four_year_pulse_scripted_effects = yes
 }
 
-on_four_year_pulse_2 = {
-	THE_SUW_on_four_year_pulse_scripted_effects_2 = yes
+on_bi_yearly_pulse = {
+	THE_SUW_on_bi_yearly_pulse_scripted_effects = yes
 }

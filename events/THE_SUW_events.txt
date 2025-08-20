@@ -771,6 +771,10 @@ country_event = {
 			power_type = THE_SUW_mechanic_power
 			value = 10
 		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_economy_country_modifier
+			duration = -1
+		}
 	}
 	option = {
 		name = THE_SUW_events.20.b.name
@@ -778,6 +782,268 @@ country_event = {
 			mechanic_type = THE_SUW_mechanic
 			power_type = THE_SUW_mechanic_power
 			value = -10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_taxation_country_modifier
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	#一次灾难文化事件
+	id = THE_SUW_events.21
+	title = "THE_SUW_events.21.title"
+	desc = "THE_SUW_events.21.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+		has_reform = THE_SUW_SUW_and_KAN_reform
+	}
+
+	option = {
+		name = THE_SUW_events.21.a.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = 10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_pluralistic_country_modifier
+			duration = -1
+		}
+	}
+	option = {
+		name = THE_SUW_events.21.b.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = -10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_single_country_modifier
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	#一次灾难宗教事件
+	id = THE_SUW_events.22
+	title = "THE_SUW_events.22.title"
+	desc = "THE_SUW_events.22.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+		has_reform = THE_SUW_SUW_and_KAN_reform
+	}
+
+	option = {
+		name = THE_SUW_events.22.a.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = 10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_Mythology_country_modifier
+			duration = -1
+		}
+	}
+	option = {
+		name = THE_SUW_events.22.b.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = -10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_One_God_country_modifier
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	#一次灾难宫廷事件
+	id = THE_SUW_events.23
+	title = "THE_SUW_events.23.title"
+	desc = "THE_SUW_events.23.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+		has_reform = THE_SUW_SUW_and_KAN_reform
+	}
+
+	option = {
+		name = THE_SUW_events.23.a.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = 10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_comprehensive_country_modifier
+			duration = -1
+		}
+	}
+	option = {
+		name = THE_SUW_events.23.b.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = -10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_loyalty_country_modifier
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	#一次灾难军事事件
+	id = THE_SUW_events.24
+	title = "THE_SUW_events.24.title"
+	desc = "THE_SUW_events.24.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+		has_reform = THE_SUW_SUW_and_KAN_reform
+	}
+
+	option = {
+		name = THE_SUW_events.24.a.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = 10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_religious_guardianship_country_modifier
+			duration = -1
+		}
+	}
+	option = {
+		name = THE_SUW_events.24.b.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = -10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_Wind_Forest_Fire_Mountain_country_modifier
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	#一次灾难外交事件
+	id = THE_SUW_events.25
+	title = "THE_SUW_events.25.title"
+	desc = "THE_SUW_events.25.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+		has_reform = THE_SUW_SUW_and_KAN_reform
+	}
+
+	option = {
+		name = THE_SUW_events.25.a.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = 10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_High_guests_are_seated_in_full_country_modifier
+			duration = -1
+		}
+	}
+	option = {
+		name = THE_SUW_events.25.b.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = -10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_Far_alliance_near_attack_country_modifier
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	#一次灾难阶级事件
+	id = THE_SUW_events.26
+	title = "THE_SUW_events.26.title"
+	desc = "THE_SUW_events.26.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+		has_reform = THE_SUW_SUW_and_KAN_reform
+	}
+
+	option = {
+		name = THE_SUW_events.26.a.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = 10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_decentralization_country_modifier
+			duration = -1
+		}
+	}
+	option = {
+		name = THE_SUW_events.26.b.name
+		add_government_power = {
+			mechanic_type = THE_SUW_mechanic
+			power_type = THE_SUW_mechanic_power
+			value = -10
+		}
+		add_country_modifier = {
+			name = THE_SUW_divergence_of_views_centralization_country_modifier
+			duration = -1
 		}
 	}
 }
