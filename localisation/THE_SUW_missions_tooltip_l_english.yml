@@ -79,6 +79,21 @@
  THE_SUW_The_Beginning_of_Holy_War_two_modifier: "1WbKNËY"
  THE_SUW_Recruit_manpower_country_modiffier: "ÛbÆ–ºNKb"
  THE_SUW_Heart_of_Struggle_country_modiffier: "—e‰NKNÃV"
+ THE_SUW_divergence_of_views_country_modifier: "Rgk"
+ THE_SUW_divergence_of_views_economy_country_modifier: "Rgk-ÏuNm-8f"
+ THE_SUW_divergence_of_views_taxation_country_modifier: "Rgk-ÏuNm-z6e"
+ THE_SUW_divergence_of_views_pluralistic_country_modifier: "Rgk-‡eS-YCQ"
+ THE_SUW_divergence_of_views_single_country_modifier: "Rgk-‡eS-USN"
+ THE_SUW_divergence_of_views_Mythology_country_modifier: "Rgk-—RYe-N^y"
+ THE_SUW_divergence_of_views_One_God_country_modifier: "Rgk-—RYe-N^y"
+ THE_SUW_divergence_of_views_comprehensive_country_modifier: "Rgk-«R÷^-hQb—"
+ THE_SUW_divergence_of_views_loyalty_country_modifier: "Rgk-«R÷^-àVÚ‹"
+ THE_SUW_divergence_of_views_religious_guardianship_country_modifier: "Rgk-›Q‹N-—RYeˆR²b"
+ THE_SUW_divergence_of_views_Wind_Forest_Fire_Mountain_country_modifier: "Rgk-›Q‹N-Î˜—gkpqS"
+ THE_SUW_divergence_of_views_High_guests_are_seated_in_full_country_modifier: "Rgk-Y²N-Øšgánµ^"
+ THE_SUW_divergence_of_views_Far_alliance_near_attack_country_modifier: "Rgk-Y²N-Ü²NÑIe"
+ THE_SUW_divergence_of_views_decentralization_country_modifier: "Rgk-6–µu-RCg"
+ THE_SUW_divergence_of_views_centralization_country_modifier: "Rgk-6–µu-Æ–Cg"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -137,6 +152,48 @@
  THE_SUW_events.16.desc: "1"
  THE_SUW_events.16.a.name: "mN¸‹bìNáO„v=fTNMO^yupÿ"
  THE_SUW_events.16.b.name: "	gÙŸR+YN‚Y»SSbSbn"
+ THE_SUW_events.17.title: "ÑSuÀNHN‹N†Nÿ"
+ THE_SUW_events.17.desc: "1"
+ THE_SUW_events.17.a.name: "b^Tù‹¿‹PR'YºN"
+ THE_SUW_events.17.b.name: "^yHYPR'YºN=fùR„v"
+ THE_SUW_events.19.title: "öeô•0R†N"
+ THE_SUW_events.19.desc: "1"
+ THE_SUW_events.19.a.name: ")mâwù‹¿‹PR'YºN"
+ THE_SUW_events.19.b.name: "kQBW^yHYPR'YºN"
+ THE_SUW_events.20.title: "ÏuNm"
+ THE_SUW_events.20.desc: "1"
+ THE_SUW_events.20.a.name: "NÖNýV„v8fMb=fsQ.•"# R8fHe‡s
+ THE_SUW_events.20.b.name: "áO’V„v›OIY=fbìN„v9h,g"# Rz6eHe‡s
+ THE_SUW_events.21.title: "‡eS"
+ THE_SUW_events.21.desc: "1"
+ THE_SUW_events.21.a.name: "'YýVwÿSVwm³uŒvÝT"#ïS¹RÍV‡eSžX R
+ THE_SUW_events.21.b.name: ".Oßu‡eS„v.Ob=fÍ‘-NKNÍ‘"#INAm‡eSÑSUSb,gÏQS
+ THE_SUW_events.22.title: "—RYe"
+ THE_SUW_events.22.desc: "1"
+ THE_SUW_events.22.a.name: "ºN›R	ggöeÿ^yf¦N‚Y=f"#N^y¿k
+ THE_SUW_events.22.b.name: ")Yàe	Nåeÿ—hËz^yKNS%N"#N^yYe
+ THE_SUW_events.23.title: "«R÷^"
+ THE_SUW_events.23.desc: "1"
+ THE_SUW_events.23.a.name: ")Y)YwTNÍyÇ†TáOPRmNOa0RàeJw'T"# R1Œ˜î•ýi
+ THE_SUW_events.23.b.name: "àVÚ‹NÝuùRÿ1S=fÝuùRNàVÚ‹"#ÏQTáOðNŒ˜î•±‚9ÿ R(uŒ˜î•±‚9
+ THE_SUW_events.24.title: "›Q‹N"
+ THE_SUW_events.24.desc: "1"
+ THE_SUW_events.24.a.name: "êS‰—RYeˆR²bÑSwÛIeÿNRýO‹Yweg„v"#`—SVSb¶g
+ THE_SUW_events.24.b.name: "Î˜ÿ—gÿkpÿqS"#êñTeg
+ THE_SUW_events.25.title: "Y²N"
+ THE_SUW_events.25.desc: "1"
+ THE_SUW_events.25.a.name: ":NÀNHNNýwPWNegŒŒbT"# R9e„UsQû|
+ THE_SUW_events.25.b.name: "Ü²NÑIeÿžR:NNVr"#ÏQµOib
+ THE_SUW_events.26.title: "6–µu"
+ THE_SUW_events.26.desc: "1"
+ THE_SUW_events.26.a.name: "ºNºN	g‹NZPÿ:c‹Y„v"#6–BS’N¨R„v·QtSöeô•ÿ RàVÚ‹GWaˆ¹pÿ RqVÍT›Rÿ R6–µuyrCgýiMO
+ THE_SUW_events.26.b.name: "ßuN„v?eäN=fÅV‰˜„v"#AQ¸‹àeÆ‰6–µu„vàVÚ‹¦^ŒTqVÍT›RÖSˆm6–µuyrCgÿÖSˆm6–BSyrCgüRô„vàVÚ‹¦^mc1YÏQS
+ THE_SUW_events.27.title: "`O‚Ydk..."
+ THE_SUW_events.27.desc: "1"
+ THE_SUW_events.27.name: "óSbìNØ	gù‹¿‹PR'YºNÿ"
+ THE_SUW_events.28.title: "àeïSHYUO..."
+ THE_SUW_events.28.desc: "1"
+ THE_SUW_events.28.name: "óSbìNØ	g^yHYPR'YºNÿ"
 ### EVENT_END
 
 

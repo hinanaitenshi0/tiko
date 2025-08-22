@@ -688,27 +688,27 @@ country_event = {
 	}
 }
 
-country_event = {
-	#双神决裂事件
-	id = THE_SUW_events.18
-	title = "THE_SUW_events.18.title"
-	desc = "THE_SUW_events.18.desc"
-	picture = YUKARI2_eventPicture
-	fire_only_once = yes
-	is_triggered_only = yes
-	major = yes
-	major_trigger = {
-		OR = {
-			tag = SUW
-			was_tag = SUW
-		}
-	}
-
-	option = {
-		name = THE_SUW_events.18.name
-
-	}
-}
+#country_event = {
+#	#双神决裂事件
+#	id = THE_SUW_events.18
+#	title = "THE_SUW_events.18.title"
+#	desc = "THE_SUW_events.18.desc"
+#	picture = YUKARI2_eventPicture
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	major = yes
+#	major_trigger = {
+#		OR = {
+#			tag = SUW
+#			was_tag = SUW
+#		}
+#	}
+#
+#	option = {
+#		name = THE_SUW_events.18.name
+#
+#	}
+#}
 
 country_event = {
 	#四年换君主事件
@@ -1045,5 +1045,55 @@ country_event = {
 			name = THE_SUW_divergence_of_views_centralization_country_modifier
 			duration = -1
 		}
+	}
+}
+
+country_event = {
+	#双神决裂事件-诹访子
+	id = THE_SUW_events.27
+	title = "THE_SUW_events.27.title"
+	desc = "THE_SUW_events.27.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+	}
+
+	option = {
+		name = THE_SUW_events.27.name
+		hidden_effect = {
+			set_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
+		}
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	#双神决裂事件-神奈子
+	id = THE_SUW_events.28
+	title = "THE_SUW_events.28.title"
+	desc = "THE_SUW_events.28.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+	}
+
+	option = {
+		name = THE_SUW_events.28.name
+		hidden_effect = {
+			set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
+		}
+		swap_non_generic_missions = yes
 	}
 }

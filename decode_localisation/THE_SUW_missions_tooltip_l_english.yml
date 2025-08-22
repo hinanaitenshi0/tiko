@@ -156,6 +156,10 @@
  THE_SUW_events.17.desc: "1"
  THE_SUW_events.17.a.name: "我赞同诹访子大人"
  THE_SUW_events.17.b.name: "神奈子大人是对的"
+ THE_SUW_events.19.title: "时间到了"
+ THE_SUW_events.19.desc: "1"
+ THE_SUW_events.19.a.name: "洩矢诹访子大人"
+ THE_SUW_events.19.b.name: "八坂神奈子大人"
  THE_SUW_events.20.title: "经济"
  THE_SUW_events.20.desc: "1"
  THE_SUW_events.20.a.name: "与他国的贸易才是关键"#加贸易效率
@@ -184,6 +188,12 @@
  THE_SUW_events.26.desc: "1"
  THE_SUW_events.26.a.name: "人人有事做，挺好的"#阶层互动的冷却时间，加忠诚均衡点，加影响力，加阶级特权槽位
  THE_SUW_events.26.b.name: "统一的政令是必须的"#允许无视阶级的忠诚度和影响力取消阶级特权，取消阶层特权导致的忠诚度损失减少
+ THE_SUW_events.27.title: "怎会如此..."
+ THE_SUW_events.27.desc: "1"
+ THE_SUW_events.27.name: "至少我们还有诹访子大人！"
+ THE_SUW_events.28.title: "无可奈何..."
+ THE_SUW_events.28.desc: "1"
+ THE_SUW_events.28.name: "至少我们还有神奈子大人！"
 ### EVENT_END
 
 

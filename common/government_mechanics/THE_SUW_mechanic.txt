@@ -34,12 +34,12 @@ THE_SUW_mechanic = {
 			}
 			on_max_reached = {
 				country_event = {
-					id = THE_SUW_events.30
+					id = THE_SUW_events.27
 				}
 			}
 			on_min_reached = {
 				country_event = {
-					id = THE_SUW_events.31
+					id = THE_SUW_events.28
 				}
 			}
 		}
