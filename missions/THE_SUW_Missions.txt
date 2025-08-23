@@ -683,7 +683,9 @@ THE_SUW_stage_2_branch_lock_2 = {
 		required_missions = { THE_SUW_3_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  	
+			
+		} 
 
 		effect = {  } 
 	}
@@ -832,9 +834,35 @@ THE_SUW_stage_2_branch_suw_2 = {
 		required_missions = { THE_SUW_3_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			ROOT = {
+				trading_policy_in_node = {
+					node = 730
+					policy = establish_communities
+				}
+			}
+			any_country = {
+				capital_scope = {
+					region = manchuria_region
+				}
+				has_opinion = {
+					who = PREV
+					value = 120
+				}
+				guaranteed_by = PREV
+				has_opinion_modifier = {
+					who = PREV
+					modifier = sent_gift
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+				leader_land_manuever = 1
+				max_general_maneuver = 1
+				cav_to_inf_ratio = 0.1#骑兵比例
+				cavalry_flanking = 0.1#骑兵侧翼攻击能力
+		} 
 	}
 
 	THE_SUW_suw_2_8 = {
