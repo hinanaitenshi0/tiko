@@ -858,10 +858,33 @@ THE_SUW_stage_2_branch_suw_2 = {
 		} 
 
 		effect = {  
-				leader_land_manuever = 1
-				max_general_maneuver = 1
-				cav_to_inf_ratio = 0.1#骑兵比例
-				cavalry_flanking = 0.1#骑兵侧翼攻击能力
+			every_country = {
+				limit = {
+					capital_scope = {
+						region = manchuria_region
+					}
+					has_opinion = {
+						who = PREV
+						value = 120
+					}
+					guaranteed_by = PREV
+					has_opinion_modifier = {
+						who = PREV
+						modifier = sent_gift
+					}
+				}
+				every_owned_province = {
+    				cede_province = MCH
+				}
+			}
+			ROOT = {
+				create_subject = {
+    				subject_type = THE_SUW_Religious_Protection
+    				subject = MCH
+				}
+			}
+				#cav_to_inf_ratio = 0.1#骑兵比例
+				#cavalry_flanking = 0.1#骑兵侧翼攻击能力
 		} 
 	}
 
