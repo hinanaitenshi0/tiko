@@ -4,28 +4,22 @@ japan_region = {
 4188 = {
 	add_building = temple
 }
-every_country = {
-	limit = {
-		capital_scope = {
-			region = manchuria_region
-		}
-		#has_opinion = {
-		#	who = PREV
-		#	value = 120
-		#}
-		#guaranteed_by = PREV
-		#has_opinion_modifier = {
-		#	who = PREV
-		#	modifier = sent_gift
-		#}
-	}
-	every_owned_province = {
-		cede_province = MCH
+
+ROOT = {
+	create_subject = {
+  	  subject_type = THE_SUW_Religious_Protection
+    	subject = MCH
 	}
 }
 ROOT = {
 	create_subject = {
   	  subject_type = THE_SUW_Religious_Protection
-    	subject = MCH
+    	subject = MJZ
+	}
+}
+ROOT = {
+	create_subject = {
+  	  subject_type = THE_SUW_Religious_Protection
+    	subject = KOR
 	}
 }

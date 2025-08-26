@@ -883,8 +883,7 @@ THE_SUW_stage_2_branch_suw_2 = {
     				subject = MCH
 				}
 			}
-				#cav_to_inf_ratio = 0.1#骑兵比例
-				#cavalry_flanking = 0.1#骑兵侧翼攻击能力
+				
 		} 
 	}
 

@@ -203,3 +203,18 @@ THE_SUW_The_support_of_Manchus_country_modifier = {
 	leader_land_manuever = 1
 	max_general_maneuver = 1
 }
+#纵情驰骋
+THE_SUW_Gallop_freely_country_modifier = {
+	cav_to_inf_ratio = 0.25#骑兵比例
+	cavalry_flanking = 0.3#骑兵侧翼攻击能力
+}
+#八旗
+THE_SUW_Eight_Banners_country_modifier = {
+	has_banners = yes
+	amount_of_banners = 0.25
+}
+#朝鲜buff
+THE_SUW_1_country_modifier = {
+	development_cost = -0.1
+	build_cost = -0.1
+}
