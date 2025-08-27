@@ -73,7 +73,9 @@ THE_SUW_MCH_mission_branch_3 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			
+		} 
 	}
 
 	THE_SUW_MCH_mission_3_3 = {
