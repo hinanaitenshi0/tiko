@@ -213,8 +213,18 @@ THE_SUW_Eight_Banners_country_modifier = {
 	has_banners = yes
 	amount_of_banners = 0.25
 }
-#朝鲜buff
-THE_SUW_1_country_modifier = {
-	development_cost = -0.1
-	build_cost = -0.1
+#朝鲜的交流
+THE_SUW_Interaction_with_Korea_country_modifier = {
+	development_cost = -0.05
+	build_cost = -0.05
+}
+#修身立命
+THE_SUW_Cultivating_Virtue_and_Establishing_Ones_Life_country_modifier = {
+	global_institution_spread = 0.5
+	global_allowed_num_of_buildings = 1
+}
+#谚文
+THE_SUW_Hangul_country_modifier = {
+	yearly_innovativeness = 0.25
+	monthly_splendor = 2
 }
