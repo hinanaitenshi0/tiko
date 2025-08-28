@@ -789,7 +789,32 @@ THE_SUW_stage_2_branch_suw_2 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			
+			if = {
+				limit = { 
+					is_rival = KOR
+					KOR = {
+						has_opinion = {
+							who = PREV
+							value = 0
+						}
+						has_opinion_modifier = {
+							who = PREV
+							modifier = sent_gift
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					army_size = KOR
+					KOR = {
+						has_opinion = {
+							who = PREV
+							value = 50
+						}
+					}
+				}
+			}
 		}
 
 		effect = {
@@ -933,7 +958,7 @@ THE_SUW_stage_2_branch_suw_4 = {
 					transport = ROOT
 				}
 				for = {
-					amount = 3
+					amount = 5
 					effect = "
 						random_owned_province = {
 							add_base_production = 1
@@ -974,7 +999,42 @@ THE_SUW_stage_2_branch_suw_4 = {
 			}
 		} 
 
-		effect = {  } 
+		effect = {  
+			every_country = {
+				limit = {
+					capital_scope = { region = manchuria_region } 
+					has_opinion = {
+						who = PREV
+						value = 100
+					}
+					OR = {
+						guaranteed_by = PREV
+						has_opinion_modifier = {
+							who = PREV
+							modifier = sent_gift
+						}
+					}
+					trust = { who = SUW value = 55 }
+				}
+				add_years_of_owned_provinces_production_income = {
+  					years = 3
+				}
+				ROOT = {
+					add_years_of_owned_provinces_production_income = {
+  						years = 1.5
+					}
+				}
+				ROOT = {
+					create_subject = {
+						subject_type = tributary_state
+						subject = PREV
+					}
+				}
+			}
+			730 = {
+				add_trade_node_income = 10
+			}
+		}
 	}
 
 	THE_SUW_suw_4_9 = {
