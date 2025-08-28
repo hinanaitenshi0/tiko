@@ -198,6 +198,10 @@ THE_SUW_divergence_of_views_centralization_country_modifier = {
 	allow_free_estate_privilege_revocation = yes
 	loyalty_change_on_revoked = -0.1
 }
+#小弟自治度
+THE_SUW_vassal_country_modifier = {
+	global_autonomy = -0.1
+}
 #满人的支持
 THE_SUW_The_support_of_Manchus_country_modifier = {
 	leader_land_manuever = 1

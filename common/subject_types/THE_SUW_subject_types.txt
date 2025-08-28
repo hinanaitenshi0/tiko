@@ -72,36 +72,7 @@ THE_SUW_Religious_Protection = {
 	scutage = yes
 	# Modifiers:
 	modifier_subject = {
-		modifier = THE_SUW_Gallop_freely_country_modifier
-		trigger = {
-			ROOT = {
-				tag = MJZ
-			}
-		}
-	}
-	modifier_subject = {
-		modifier = THE_SUW_Cultivating_Virtue_and_Establishing_Ones_Life_country_modifier
-		trigger = {
-			ROOT = {
-				tag = KOR
-			}
-		}
+		modifier = THE_SUW_vassal_country_modifier
 	}
 	# Trade Protectorate don't get the ordinary subject_nation penalty 
-	modifier_overlord = {
-		modifier = THE_SUW_Eight_Banners_country_modifier
-		trigger = {
-			ROOT = {
-				mission_completed = qng_eight_banners
-			}
-		}
-	}
-	modifier_overlord = {
-		modifier = THE_SUW_Hangul_country_modifier
-		trigger = {
-			ROOT = {
-				mission_completed = qng_eight_banners
-			}
-		}
-	}
 }
