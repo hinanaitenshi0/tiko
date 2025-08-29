@@ -1100,9 +1100,9 @@ country_event = {
 
 country_event = {
 	#朝鲜遣使事件
-	id = THE_SUW_events.28
-	title = "THE_SUW_events.28.title"
-	desc = "THE_SUW_events.28.desc"
+	id = THE_SUW_events.29
+	title = "THE_SUW_events.29.title"
+	desc = "THE_SUW_events.29.desc"
 	picture = YUKARI2_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1115,10 +1115,106 @@ country_event = {
 	}
 
 	option = {
-		name = THE_SUW_events.28.name
-		hidden_effect = {
-			set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
+		name = THE_SUW_events.29.name
+		define_advisor = {
+	   	 	type = theologian
+	   	 	skill = 2
+			cost_multiplier = 0.25
+	 		culture = korean
+	    	religion = confucianism
 		}
-		swap_non_generic_missions = yes
+		hidden_effect = {
+			country_event = {
+				id = THE_SUW_events.30
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	#朝鲜归使事件
+	id = THE_SUW_events.30
+	title = "THE_SUW_events.30.title"
+	desc = "THE_SUW_events.30.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+	}
+
+	option = {
+		name = THE_SUW_events.30.name
+		hidden_effect = {
+			country_event = {
+				id = THE_SUW_events.31
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	#朝鲜使者遇险事件
+	id = THE_SUW_events.31
+	title = "THE_SUW_events.31.title"
+	desc = "THE_SUW_events.31.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+	}
+
+	option = {
+		name = THE_SUW_events.31.name
+		add_trust = {
+		    who = KOR
+		    value = 20
+		    mutual = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = THE_SUW_events.32
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	#朝鲜谢礼与继承事件
+	id = THE_SUW_events.32
+	title = "THE_SUW_events.32.title"
+	desc = "THE_SUW_events.32.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = SUW
+			was_tag = SUW
+		}
+	}
+
+	option = {
+		name = THE_SUW_events.32.name
+		2741 = {
+		    cede_province = ROOT
+			add_core = ROOT
+			remove_core = KOR
+		}
+		hidden_effect = {
+		}
 	}
 }

@@ -844,7 +844,7 @@ THE_SUW_stage_2_branch_suw_2 = {
 						}
 					}
 					add_trust = {
-    					who = FRA
+    					who = KOR
     					value = 20
     					mutual = yes
 					}
@@ -875,7 +875,7 @@ THE_SUW_stage_2_branch_suw_2 = {
 						}
 					}
 					add_trust = {
-    					who = FRA
+    					who = KOR
     					value = 20
     					mutual = yes
 					}

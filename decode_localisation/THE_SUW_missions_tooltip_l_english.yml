@@ -36,7 +36,7 @@
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "§T御神之渡§!"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "允许无损耗集中发展度" 
  THE_SUW_4_5_tt_2: "如果同意，@RYU§Y[RYU.GetName]§!和@ANU§Y[ANU.GetName]§!将成为我们的朝贡国，其他§Y日本§!地区国家则会被我们继承"
- THE_SUW_KOR_development: "信浓的发展度:[Root.suwdevelopment.GetValue]高于汉城的发展度:[Root.kordevelopment.GetValue]"
+ THE_SUW_KOR_development: "信浓的发展度: §Y[ROOT.suwdevelopment.GetValue]§! §G不小于§!汉城的发展度: §Y[ROOT.kordevelopment.GetValue]§! "
 ### TOOLTIP_END
 
 ### dynasty
@@ -195,6 +195,8 @@
  THE_SUW_events.28.title: "无可奈何..."
  THE_SUW_events.28.desc: "1"
  THE_SUW_events.28.name: "至少我们还有神奈子大人！"
+ THE_SUW_events.29.title: "朝鲜遣使"
+ THE_SUW_events.29.name: "礼之用，和为贵"
 ### EVENT_END
 
 
