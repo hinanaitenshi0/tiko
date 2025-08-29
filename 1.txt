@@ -23,4 +23,6 @@ ROOT = {
     	subject = KOR
 	}
 }
-create_guarantee = MNG
+4188 = {
+	add_base_tax = 20
+}

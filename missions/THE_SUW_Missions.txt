@@ -894,19 +894,20 @@ THE_SUW_stage_2_branch_suw_2 = {
 		trigger = {  
 			variable_arithmetic_trigger = {
 				export_to_variable = {
-     			   variable_name = SUW_development
-    			    value = trigger_value:states_development
+     			   variable_name = suwdevelopment
+    			    value = development
 					who = 4188
 			    }
   				export_to_variable = {
-   			    	variable_name = KOR_development
-    			    value = trigger_value:states_development
+   			    	variable_name = kordevelopment
+    			    value = development
     			    who = 735
 			    }
 				check_variable = {
-       				which = SUW_development
-       				which = KOR_development
+       				which = suwdevelopment
+       				which = kordevelopment
    				}
+				custom_tooltip = THE_SUW_KOR_development
 			}
 
 		} 
