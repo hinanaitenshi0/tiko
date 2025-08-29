@@ -818,7 +818,70 @@ THE_SUW_stage_2_branch_suw_2 = {
 		}
 
 		effect = {
-			
+			if = {
+				limit = { 
+					is_rival = KOR
+					KOR = {
+						has_opinion = {
+							who = PREV
+							value = 0
+						}
+						has_opinion_modifier = {
+							who = PREV
+							modifier = sent_gift
+						}
+					}
+				}
+				KOR = {
+					remove_rival = SUW
+					create_alliance = SUW
+				}
+				add_prestige_or_monarch_power = { amount = 25 }
+				if = {
+					limit = { 
+						KOR = {
+							is_rival = PREV
+						}
+					}
+					add_trust = {
+    					who = FRA
+    					value = 20
+    					mutual = yes
+					}
+					remove_rival = KOR
+				}
+			}
+			else_if = {
+				limit = { 
+					army_size = KOR
+					KOR = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = sent_gift
+						}
+					}
+				}
+				KOR = {
+					create_alliance = SUW
+				}
+				add_power_projection = {
+					type = mission_rewards_power_projection 
+					amount = 25 
+				}
+				if = {
+					limit = { 
+						KOR = {
+							is_rival = PREV
+						}
+					}
+					add_trust = {
+    					who = FRA
+    					value = 20
+    					mutual = yes
+					}
+					remove_rival = KOR
+				}
+			}
 		}
 	}
 
@@ -828,7 +891,25 @@ THE_SUW_stage_2_branch_suw_2 = {
 		required_missions = { THE_SUW_suw_2_7 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+     			   variable_name = SUW_development
+    			    value = trigger_value:states_development
+					who = 4188
+			    }
+  				export_to_variable = {
+   			    	variable_name = KOR_development
+    			    value = trigger_value:states_development
+    			    who = 735
+			    }
+				check_variable = {
+       				which = SUW_development
+       				which = KOR_development
+   				}
+			}
+
+		} 
 
 		effect = {  } 
 	}
