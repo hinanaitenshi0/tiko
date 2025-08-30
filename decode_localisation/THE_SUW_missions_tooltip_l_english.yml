@@ -19,9 +19,9 @@
  THE_SUW_obtain_favors_tt: "所有盟友增加§G10§!点人情"
  THE_SUW_2_4_tt: "§Y日本§!地区的所有§Y守矢神道§!国家将成为我们的§M宗教守护§!"
  THE_SUW_2_5_tt: "继承所有§Y宗教守护§!"
- THE_SUW_3_3_tt: "事件允许我们直接终结幕府的统治，当然，是建立在§R胜利§!的前提下......§V（不同选择获得的奖励也不同）§!"
+ THE_SUW_3_3_tt: "事件允许我们直接终结幕府的统治，当然，是建立在§R胜利§!的前提下......§V(不同选择获得的奖励也不同)§!"
  THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§Y我们会在一个月后向幕府将军发起挑战，其盟友及其他大名会关注着这场对决，如若获胜，所有信仰守矢神道的大名将成为我们的§!§M宗教守护§!"
- THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y厉兵秣马，暂避锋芒，等准备好再动手呱（决议）§!"
+ THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y厉兵秣马，暂避锋芒，等准备好再动手呱(决议)§!"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "省份宗教转变为§Y[Root.Religion.GetName]§!将获得§G1000§!£icon_manpower£人力，持续§Y30§!年"
  THE_SUW_2_1_case_tt_yes: "£yes£如果任务「§Y神奈子的手段§!」已完成:"
  THE_SUW_2_1_case_tt_no: "£no£如果任务「§Y神奈子的手段§!」已完成:"
@@ -37,6 +37,9 @@
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "允许无损耗集中发展度" 
  THE_SUW_4_5_tt_2: "如果同意，@RYU§Y[RYU.GetName]§!和@ANU§Y[ANU.GetName]§!将成为我们的朝贡国，其他§Y日本§!地区国家则会被我们继承"
  THE_SUW_KOR_development: "信浓的发展度: §Y[ROOT.suwdevelopment.GetValue]§! §G不小于§!汉城的发展度: §Y[ROOT.kordevelopment.GetValue]§! "
+ THE_SUW_event_32_tt: "获得济州作为两国通商口岸，以及一个§G承诺§!，若其即位，则朝鲜将内附于我国"
+ THE_SUW_event_33_tt: "提示:获取朝鲜军通，帮助朝鲜平叛"
+ THE_SUW_suw_2_8_tt: "已将朝鲜收作宗教守护"
 ### TOOLTIP_END
 
 ### dynasty
@@ -197,6 +200,16 @@
  THE_SUW_events.28.name: "至少我们还有神奈子大人！"
  THE_SUW_events.29.title: "朝鲜遣使"
  THE_SUW_events.29.name: "礼之用，和为贵"
+ THE_SUW_events.30.title: "朝鲜归使"
+ THE_SUW_events.30.name: "归去来兮"
+ THE_SUW_events.31.title: "不详之兆"
+ THE_SUW_events.31.name: "土著神"宝永四年的赤蛙"!"
+ THE_SUW_events.32.title: "意外之喜？"
+ THE_SUW_events.32.name: "所谓善者有善报"
+ THE_SUW_events.33.title: "失魂落魄的信使"
+ THE_SUW_events.33.name: "唉，终归是我害了他啊......"
+ THE_SUW_events.34.title: "朝鲜归附"
+ THE_SUW_events.34.name: "既然如此......"
 ### EVENT_END
 
 

@@ -198,6 +198,14 @@ THE_SUW_divergence_of_views_centralization_country_modifier = {
 	allow_free_estate_privilege_revocation = yes
 	loyalty_change_on_revoked = -0.1
 }
+#朝鲜人的认可
+THE_SUW_Recognition_of_the_North_Koreans_country_modifier = {
+	diplomatic_annexation_cost = -0.2
+}
+#宗教融合buff
+THE_SUW_moriyaseikyou = {
+	technology_cost = -0.1
+}
 #小弟自治度
 THE_SUW_vassal_country_modifier = {
 	global_autonomy = -0.1

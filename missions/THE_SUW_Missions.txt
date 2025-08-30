@@ -882,6 +882,10 @@ THE_SUW_stage_2_branch_suw_2 = {
 					remove_rival = KOR
 				}
 			}
+			country_event = {
+				id = THE_SUW_events.29
+				days = 30
+			}
 		}
 	}
 
@@ -889,6 +893,30 @@ THE_SUW_stage_2_branch_suw_2 = {
 		icon = mission_unknown_mission
 		position = 8
 		required_missions = { THE_SUW_suw_2_7 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  
+			custom_trigger_tooltip = {
+				tooltip = THE_SUW_suw_2_8_tt
+				has_country_flag = THE_SUW_events_34_flag
+			}
+		} 
+
+		effect = {  
+			add_historical_friend = KOR
+			KOR = {
+				add_historical_friend = PREV
+			}
+			hidden_effect = {
+				clr_country_flag = THE_SUW_events_34_flag
+			}
+		} 
+	}
+
+	THE_SUW_suw_2_9 = {
+		icon = mission_unknown_mission
+		position = 9
+		required_missions = { THE_SUW_suw_2_8 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  
@@ -909,21 +937,15 @@ THE_SUW_stage_2_branch_suw_2 = {
    				}
 				custom_tooltip = THE_SUW_KOR_development
 			}
-
 		} 
 
-		effect = {  } 
-	}
-
-	THE_SUW_suw_2_9 = {
-		icon = mission_unknown_mission
-		position = 9
-		required_missions = { THE_SUW_suw_2_8 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
+		effect = {  
+			add_accepted_culture = korean
+			add_country_modifier = {
+				name = THE_SUW_Recognition_of_the_North_Koreans_country_modifier
+				duration = 10950
+			} 
+		} 
 	}
 }
 THE_SUW_stage_2_branch_suw_3 = {

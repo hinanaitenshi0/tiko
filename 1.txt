@@ -26,3 +26,4 @@ ROOT = {
 4188 = {
 	add_base_tax = 20
 }
+change_religion = THE_moriyaseikyou
