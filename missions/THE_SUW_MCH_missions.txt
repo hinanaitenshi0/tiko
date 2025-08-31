@@ -11,9 +11,29 @@ THE_SUW_MCH_mission_branch_1 = {
 		required_missions = { THE_SUW_MCH_mission_3_1 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_forcelimit_building_trigger = yes
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			set_country_flag = THE_SUW_MCH_unlock_banner_decision_flag
+			custom_tooltip = THE_SUW_MCH_unlock_banner_decision_tt
+			if = {
+				limit = {
+					is_subject = yes
+					overlord = {
+						OR = {
+							tag = SUW
+							was_tag = SUW
+						}
+					}
+				}
+				custom_tooltip = THE_SUW_MCH_unlock_banner_decision_overlord_tt
+			}
+		} 
 	}
 
 	THE_SUW_MCH_mission_1_3 = {

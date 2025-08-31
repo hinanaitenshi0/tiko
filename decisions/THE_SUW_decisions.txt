@@ -158,3 +158,30 @@ country_decisions = {
 	}
 }
 
+
+
+
+#############################################
+
+##### decisions for SUW's subjects
+
+#############################################
+
+country_decisions = {
+	THE_SUW_MCH_expand_banner_decision = {
+		potential = {
+			ai = yes
+			has_country_flag = THE_SUW_MCH_unlock_banner_decision_flag
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = THE_cd_type_decision_10_years_ttt
+				THE_cd_type_decision_scripted_trigger = {
+					flag = THE_SUW_MCH_expand_banner_decision_cd_flag
+					days = 3650
+				}
+			}
+		}
+	}
+}
