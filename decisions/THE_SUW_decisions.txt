@@ -158,3 +158,72 @@ country_decisions = {
 	}
 }
 
+
+
+
+#############################################
+
+##### decisions for SUW's subjects
+
+#############################################
+
+country_decisions = {
+	THE_SUW_MCH_expand_banner_decision = {
+		potential = {
+			ai = yes
+			has_country_flag = THE_SUW_MCH_unlock_banner_decision_flag
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = THE_cd_type_decision_10_years_ttt
+				THE_cd_type_decision_scripted_trigger = {
+					flag = THE_SUW_MCH_expand_banner_decision_cd_flag
+					days = 3650
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = THE_SUW_MCH_expand_banner_decision_effect_tt
+			THE_create_special_unit_scripted_effect = {
+				special_unit_category = banner
+				type = infantry
+				amount = 15
+			}
+			THE_create_special_unit_scripted_effect = {
+				special_unit_category = banner
+				type = cavalry
+				amount = 5
+			}
+			if = {
+				limit = {
+					is_subject = yes
+					overlord = {
+						OR = {
+							tag = SUW
+							was_tag = SUW
+						}
+					}
+				}
+				overlord = {
+					custom_tooltip = THE_SUW_MCH_expand_banner_decision_overlord_effect_tt
+					THE_create_special_unit_scripted_effect = {
+						special_unit_category = banner
+						type = cavalry
+						amount = 5
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = the_suw_mch_banner_var
+						value = 5
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
