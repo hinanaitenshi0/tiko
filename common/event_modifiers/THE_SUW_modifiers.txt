@@ -240,3 +240,51 @@ THE_SUW_Hangul_country_modifier = {
 	yearly_innovativeness = 0.25
 	monthly_splendor = 2
 }
+
+
+#############################################
+
+##### modifiers for SUW's subjects
+
+#############################################
+THE_SUW_MCH_ironwood_modifier = {
+	global_regiment_cost = -0.1
+	naval_forcelimit_modifier = 0.33
+}
+
+THE_SUW_MCH_modern_banner_modifier = {
+	reinforce_speed = 1.0
+	fire_damage = 0.2
+	is_banner_modifier = yes
+}
+
+THE_SUW_MCH_ten_banner_modifier = {
+	shock_damage = 0.05
+	morale_damage_received = -0.05
+	is_banner_modifier = yes
+}
+
+THE_SUW_MCH_cloudword_modifier = {
+	global_autonomy = -0.2
+	same_culture_advisor_cost = -0.5
+}
+
+THE_SUW_MCH_sacrifice_modifier = {
+	liberty_desire = -100
+	imperial_mandate = -100
+}
+
+THE_SUW_MCH_admire_modifier = {
+	global_missionary_strength = 0.03
+	religion = yes
+}
+
+THE_SUW_MCH_shine_modifier = {
+	prestige = 0.5
+}
+
+THE_SUW_MCH_perfect_dynasty_modifier = {
+	eunuchs_loyalty_modifier = 0.2
+	great_project_upgrade_cost = -0.25
+	global_prosperity_growth = 0.5
+}

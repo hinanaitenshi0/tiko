@@ -4,9 +4,25 @@ l_english:
  THE_SUW_MCH_unlock_banner_decision_overlord_tt: "\n如果@SUW§Y[SUW.GetName]§!是我们的§M宗主国§!，也会在@SUW§Y[SUW.GetName]§!的首都生成§G5§!队八旗骑兵"
  THE_SUW_MCH_expand_banner_decision_effect_tt: "在首都生成§G15§!队八步兵和§G5§!队八旗骑兵"
  THE_SUW_MCH_expand_banner_decision_overlord_effect_tt: "在首都生成§G5§!队八旗骑兵"
+ THE_SUE_MCH_mission_2_3_case1_ttt: "完成任务「§Y八旗军营§!」后解锁任务条件"
+ THE_SUE_MCH_mission_2_3_case2_ttt: "通过「§Y扩编八旗§!」决议为宗主国训练§Y40§!队八旗骑兵（§Y[Root.the_suw_mch_banner_var.GetValue]§!/§Y40§!）"
+ THE_SUW_MCH_mission_5_2_ttt: "§Y[Root.Get教士Name]§!阶层的忠诚度越高，任务所需的省份数量越少"
+ THE_SUW_MCH_mission_5_2_case1_tt: "治下满洲地区每个拥有税收建筑的省份失去§R1§!基础税收，宗主国将获得失去基础税收总量§G50§!倍的¤"
+ THE_SUW_MCH_mission_5_2_case2_tt: "治下满洲地区每个拥有税收建筑的省份获得§R1§!基础税收"
 # TOOLTIP_END
 
 # DECISION
  THE_SUW_MCH_expand_banner_decision_title: "扩编八旗"
  THE_SUW_MCH_expand_banner_decision_desc: "旗军是女真各部组建的精锐作战军团，分为八旗。作为对抗中华的前线，有必要对八旗进行扩编，同时也为我们的宗主训练最精锐的八旗部队"
 # DECISION_END
+
+# MODIFIER
+ THE_SUW_MCH_ironwood_modifier: "堆场"
+ THE_SUW_MCH_modern_banner_modifier: "现代化旗军"
+ THE_SUW_MCH_ten_banner_modifier: "『十旗』"
+ THE_SUW_MCH_cloudword_modifier: "云辞"
+ THE_SUW_MCH_sacrifice_modifier: "牺牲"
+ THE_SUW_MCH_admire_modifier: "仰止"
+ THE_SUW_MCH_shine_modifier: "乾坤交辉"
+ THE_SUW_MCH_perfect_dynasty_modifier: "缺憾之世"
+# MODIFIER_END

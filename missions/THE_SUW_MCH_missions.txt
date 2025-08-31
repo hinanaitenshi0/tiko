@@ -33,6 +33,12 @@ THE_SUW_MCH_mission_branch_1 = {
 				}
 				custom_tooltip = THE_SUW_MCH_unlock_banner_decision_overlord_tt
 			}
+			hidden_effect = {
+				set_variable = {
+					which = the_suw_mch_banner_var
+					value = 0
+				}
+			}
 		} 
 	}
 
@@ -42,9 +48,18 @@ THE_SUW_MCH_mission_branch_1 = {
 		required_missions = { THE_SUW_MCH_mission_1_2 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			land_forcelimit = 100
+			army_size_percentage = 0.8
+		} 
 
-		effect = {  } 
+		effect = {
+			overlord = {
+				south_china_region = {
+					add_permanent_claim = PREV
+				}
+			}
+		} 
 	}
 }
 THE_SUW_MCH_mission_branch_2 = {
@@ -58,11 +73,42 @@ THE_SUW_MCH_mission_branch_2 = {
 		icon = mission_unknown_mission
 		position = 2
 		required_missions = { THE_SUW_MCH_mission_3_1 } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			owned_by = ROOT
+			region = manchuria_region 
+			OR = {
+				AND = {
+					trade_goods = iron
+					NOT = { base_production = 7 }
+				}
+				AND = {
+					trade_goods = naval_supplies
+					NOT = { base_production = 3 }
+				}
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 2
+				region = manchuria_region 
+				trade_goods = iron
+				base_production = 7
+			}
+			num_of_owned_provinces_with = {
+				value = 7
+				region = manchuria_region 
+				trade_goods = naval_supplies
+				base_production = 3
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = THE_SUW_MCH_ironwood_modifier
+				duration = 18250
+			}
+		} 
 	}
 
 	THE_SUW_MCH_mission_2_3 = {
@@ -74,9 +120,37 @@ THE_SUW_MCH_mission_branch_2 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			if = {
+				limit = { NOT = { mission_completed = THE_SUW_MCH_mission_1_2 } }
+				custom_trigger_tooltip = {
+					tooltip = THE_SUE_MCH_mission_2_3_case1_ttt
+					always = no
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = THE_SUE_MCH_mission_2_3_case2_ttt
+					check_variable = {
+						which = the_suw_mch_banner_var
+						value = 10
+					}
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = THE_SUW_MCH_modern_banner_modifier
+				duration = -1
+			}
+			overlord = {
+				add_country_modifier = {
+					name = THE_SUW_MCH_ten_banner_modifier
+					duration = -1
+				}
+			}
+		} 
 	}
 }
 THE_SUW_MCH_mission_branch_3 = {
@@ -113,11 +187,24 @@ THE_SUW_MCH_mission_branch_3 = {
 			THE_SUW_MCH_mission_3_1
 			THE_SUW_MCH_mission_4_2
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = manchuria_region
+			NOT = { owned_by = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			manchuria_region = {
+				type = all
+				owned_by = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = THE_SUW_MCH_perfect_dynasty_modifier
+				duration = -1
+			}
+		} 
 	}
 }
 THE_SUW_MCH_mission_branch_4 = {
@@ -133,9 +220,22 @@ THE_SUW_MCH_mission_branch_4 = {
 		required_missions = { THE_SUW_MCH_mission_3_1 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				adm_tech = 10
+				adm = 6
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = THE_SUW_MCH_cloudword_modifier
+				duration = 18250
+			}
+			manchuria_region = {
+				add_permanent_claim = ROOT
+			}
+		} 
 	}
 
 	THE_SUW_MCH_mission_4_3 = {
@@ -144,9 +244,17 @@ THE_SUW_MCH_mission_branch_4 = {
 		required_missions = { THE_SUW_MCH_mission_4_2 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			subsidised_percent_amount = 0.5
+		} 
 
-		effect = {  } 
+		effect = {
+			THE_add_historical_friend_and_reverse_scripted_effect = { tag = overlord }
+			add_country_modifier = {
+				name = THE_SUW_MCH_sacrifice_modifier
+				duration = -1
+			}
+		} 
 	}
 }
 THE_SUW_MCH_mission_branch_5 = {
@@ -160,21 +268,100 @@ THE_SUW_MCH_mission_branch_5 = {
 		icon = mission_unknown_mission
 		position = 2
 		required_missions = { THE_SUW_MCH_mission_3_1 } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = manchuria_region
+			owned_by = ROOT
+			NOT = { has_tax_building_trigger = yes }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			if = {
+				limit = { estate_loyalty = { estate = estate_church loyalty = 50 } }
+				num_of_owned_provinces_with = { region = manchuria_region has_tax_building_trigger = yes value = 10 }
+			}
+			else_if = {
+				limit = { estate_loyalty = { estate = estate_church loyalty = 40 } }
+				num_of_owned_provinces_with = { region = manchuria_region has_tax_building_trigger = yes value = 20 }
+			}
+			else_if = {
+				limit = { estate_loyalty = { estate = estate_church loyalty = 30 } }
+				num_of_owned_provinces_with = { region = manchuria_region has_tax_building_trigger = yes value = 30 }
+			}
+			else = {
+				num_of_owned_provinces_with = { region = manchuria_region has_tax_building_trigger = yes value = 40 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = THE_SUW_MCH_mission_5_2_ttt
+				always = yes
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			if = {
+				limit = { is_subject = yes }
+				custom_tooltip = THE_SUW_MCH_mission_5_2_case1_tt
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							region = manchuria_region
+							has_tax_building_trigger = yes
+							base_tax = 2
+						}
+						add_base_tax = -1
+						ROOT = {
+							overlord = {
+								add_treasury = 50
+							}
+						}
+					}
+				}
+			}
+			else = {
+				custom_tooltip = THE_SUW_MCH_mission_5_2_case2_tt
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							region = manchuria_region
+							has_tax_building_trigger = yes
+						}
+						add_base_tax = 1
+					}
+				}
+			}
+		} 
 	}
 
 	THE_SUW_MCH_mission_5_3 = {
 		icon = mission_unknown_mission
 		position = 3
 		required_missions = { THE_SUW_MCH_mission_5_2 } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2111
+				province_id = 5201
+				province_id = 4653
+				province_id = 2108
+			}
+			NOT = { religion = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			religion = overlord
+			2111 = { owned_by = ROOT religion = ROOT }
+			5201 = { owned_by = ROOT religion = ROOT }
+			4653 = { owned_by = ROOT religion = ROOT }
+			2108 = { owned_by = ROOT religion = ROOT }
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = THE_SUW_MCH_admire_modifier
+				duration = -1
+			}
+			overlord = {
+				name = THE_SUW_MCH_shine_modifier
+				duration = -1
+			}
+		} 
 	}
 }

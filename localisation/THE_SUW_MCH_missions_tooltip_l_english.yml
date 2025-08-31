@@ -1,0 +1,28 @@
+﻿l_english:
+# TOOLTIP
+ THE_SUW_MCH_unlock_banner_decision_tt: "=T(u³Q®‹0§YibkQ×e§!0\ngbLˆdk³Q®‹S(W–™ýub§G15§!–kQekuQŒT§G5§!–kQ×e‘šuQ"
+ THE_SUW_MCH_unlock_banner_decision_overlord_tt: "\n‚Yœg@SUW§Y[SUW.GetName]§!=fbìN„v§M—RINýV§!ÿmNO(W@SUW§Y[SUW.GetName]§!„v–™ýub§G5§!–kQ×e‘šuQ"
+ THE_SUW_MCH_expand_banner_decision_effect_tt: "(W–™ýub§G15§!–kQekuQŒT§G5§!–kQ×e‘šuQ"
+ THE_SUW_MCH_expand_banner_decision_overlord_effect_tt: "(W–™ýub§G5§!–kQ×e‘šuQ"
+ THE_SUE_MCH_mission_2_3_case1_ttt: "ŒRbûN¡R0§YkQ×e›Q%„§!0Tã‰•ûN¡RagöN"
+ THE_SUE_MCH_mission_2_3_case2_ttt: "Ç0§YibkQ×e§!0³Q®‹:N—RINýV­‹Ãu§Y40§!–kQ×e‘šuQÿ§Y[Root.the_suw_mch_banner_var.GetValue]§!/§Y40§!	ÿ"
+ THE_SUW_MCH_mission_5_2_ttt: "§Y[Root.GetYeëXName]§!6–BS„vàVÚ‹¦^ŠØšÿûN¡RNb—„vwýNpeÏ‘ŠS"
+ THE_SUW_MCH_mission_5_2_case1_tt: "»lNán2m0W:SÏk*Nåb	gz6eú^Qr„vwýN1Y»S§R1§!úWNxz6eÿ—RINýVS·ƒ—V1Y»SúWNxz6eI`Ï‘§G50§!P„v¤"
+ THE_SUW_MCH_mission_5_2_case2_tt: "»lNán2m0W:SÏk*Nåb	gz6eú^Qr„vwýN·ƒ—V§R1§!úWNxz6e"
+# TOOLTIP_END
+
+# DECISION
+ THE_SUW_MCH_expand_banner_decision_title: "ibkQ×e"
+ THE_SUW_MCH_expand_banner_decision_desc: "×e›Q=fsYwTèÄuú^„v¾|•jOb›QâVÿR:NkQ×e0jO:NùR—b-NNS„vMR¿uÿ	gÅV‰ùRkQ×eÛLˆibÿTöemN:NbìN„v—RIN­‹Ãug¾|•„vkQ×eè–"
+# DECISION_END
+
+# MODIFIER
+ THE_SUW_MCH_ironwood_modifier: "X:W"
+ THE_SUW_MCH_modern_banner_modifier: "°sãNS×e›Q"
+ THE_SUW_MCH_ten_banner_modifier: "0AS×e0"
+ THE_SUW_MCH_cloudword_modifier: "‘Nž"
+ THE_SUW_MCH_sacrifice_modifier: "zrrr"
+ THE_SUW_MCH_admire_modifier: "ðNbk"
+ THE_SUW_MCH_shine_modifier: "ŒNdW²N‰"
+ THE_SUW_MCH_perfect_dynasty_modifier: ":¾aKNN"
+# MODIFIER_END
