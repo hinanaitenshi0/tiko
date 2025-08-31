@@ -71,10 +71,18 @@ THE_SUW_MCH_mission_branch_3 = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			is_subject = yes
+			overlord = {
+				OR = {
+					tag = SUW
+					was_tag = SUW
+				}
+			}
+		} 
 
 		effect = {  
-			
+			add_liberty_desire = -25
 		} 
 	}
 
