@@ -214,7 +214,16 @@ country_decisions = {
 						amount = 5
 					}
 				}
+				hidden_effect = {
+					change_variable = {
+						which = the_suw_mch_banner_var
+						value = 5
+					}
+				}
 			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }
