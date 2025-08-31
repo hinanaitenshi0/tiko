@@ -1,5 +1,5 @@
 Touhou = {
-	THE_moriyaseikyou = {
+	THE_moriyaseikyou_religion = {
 		color = { 255 78 30 }
 		heretic = { th_heretic_lunar th_heretic_anime th_heretic_manga_elitists }
 		icon = 33
@@ -39,6 +39,50 @@ Touhou = {
 		}
 
 		uses_judaism_power = yes
+		aspects_name = God_acts
+
+		aspects = {
+			THE_SUW_1_1_aspect
+			THE_SUW_1_2_aspect
+			THE_SUW_1_3_aspect
+			THE_SUW_2_1_aspect
+			THE_SUW_2_2_aspect
+			THE_SUW_2_3_aspect
+			THE_SUW_3_1_aspect
+			THE_SUW_3_2_aspect
+			THE_SUW_3_3_aspect
+		}
+
+		celebrate = {
+			cost = 100
+			potential = {
+			}
+			allow = {
+				custom_trigger_tooltip = {
+					tooltip = th_occult_can_cast_spell_tt
+					OR = {
+						has_church_aspect = THE_SUW_1_1_aspect
+						has_church_aspect = THE_SUW_1_2_aspect
+						has_church_aspect = THE_SUW_1_3_aspect
+						has_church_aspect = THE_SUW_2_1_aspect
+						has_church_aspect = THE_SUW_2_2_aspect
+						has_church_aspect = THE_SUW_2_3_aspect
+						has_church_aspect = THE_SUW_3_1_aspect
+						has_church_aspect = THE_SUW_3_2_aspect
+						has_church_aspect = THE_SUW_3_3_aspect
+					}
+				}
+			}
+			effect = {
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+
 		harmonized_modifier = THE_SUW_moriyaseikyou
+
+		crusade_name = The_cycle_of_heaven_and_earth
+		
 	}
 }

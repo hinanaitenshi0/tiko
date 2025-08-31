@@ -206,6 +206,10 @@ THE_SUW_Recognition_of_the_North_Koreans_country_modifier = {
 THE_SUW_moriyaseikyou = {
 	technology_cost = -0.1
 }
+#火
+THE_SUW_fire_country_modifier = {
+	artillery_levels_available_vs_fort = 2
+}
 #小弟自治度
 THE_SUW_vassal_country_modifier = {
 	global_autonomy = -0.1

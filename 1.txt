@@ -26,4 +26,10 @@ ROOT = {
 4188 = {
 	add_base_tax = 20
 }
-change_religion = THE_moriyaseikyou
+#change_religion = THE_moriyaseikyou_religion
+859 = {
+	cede_province = ROOT
+	add_core = ROOT
+}
+create_conquistador = 50
+add_army_tradition = 10

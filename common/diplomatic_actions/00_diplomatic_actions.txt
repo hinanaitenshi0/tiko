@@ -312,6 +312,15 @@ declarewar = {
 				duration = 7300
 			}
 		}
+		if = {
+			limit = {
+				has_church_aspect = THE_SUW_3_2_aspect
+			}
+			add_country_modifier = {
+				name = THE_SUW_fire_country_modifier
+				duration = -1
+			}
+		}
 	}
 }
 support_independence_action = {

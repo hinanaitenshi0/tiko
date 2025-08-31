@@ -91,6 +91,159 @@ THE_SUW_on_bi_yearly_pulse_scripted_effects = {
 	}
 }
 
+THE_SUW_on_war_won_religion_scripted_effects = {
+	if = {
+		limit ={
+			has_church_aspect = THE_SUW_3_1_aspect 
+		}
+		export_to_variable = {
+     		which  = moneyAvailable
+    		value = treasury
+			who = FROM
+		}
+		multiply_variable  = {            
+    		which = moneyAvailable
+    		value = 0.2
+		}
+		while = {
+			limit = { 
+				check_variable = {
+					which = moneyAvailable
+					value = 1000
+				}
+			}
+			subtract_variable = {
+				which = moneyAvailable
+				value = 1000
+			}
+			add_treasury = 1000
+		}
+		while = {
+			limit = { 
+				check_variable = {
+					which = moneyAvailable
+					value = 100
+				}
+			}
+			subtract_variable = {
+				which = moneyAvailable
+				value = 100
+			}
+			add_treasury = 100
+		}
+		while = {
+			limit = { 
+				check_variable = {
+					which = moneyAvailable
+					value = 10
+				}
+			}
+			subtract_variable = {
+				which = moneyAvailable
+				value = 10
+			}
+			add_treasury = 10
+		}
+		while = {
+			limit = { 
+				check_variable = {
+					which = moneyAvailable
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = moneyAvailable
+				value = 1
+			}
+			add_treasury = 1
+		}
+	}
+}
+
+THE_SUW_on_war_ended_religion_scripted_effects = {
+	if = {
+		limit = { 
+			has_church_aspect = THE_SUW_3_2_aspect
+		}
+		remove_country_modifier = THE_SUW_fire_country_modifier
+	}
+}
+
+THE_SUW_on_battle_unit_religion_scripted_effects = {
+	if = {
+		limit = {
+			has_church_aspect = THE_SUW_3_3_aspect
+		}
+		ROOT = {
+			set_variable = {
+				which = land_units_killed_var
+				which = land_units_killed
+			}
+			multiply_variable = {
+				which = land_units_killed_var
+				value = 0.2
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = land_units_killed_var
+						value = 1000
+					}
+				}
+				subtract_variable = {
+					which = land_units_killed_var
+					value = 1000
+				}
+				add_manpower = 1
+			}
+			multiply_variable = {
+				which = land_units_killed_var
+				value = 1000
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = land_units_killed_var
+						value = 1000
+					}
+				}
+				subtract_variable = {
+					which = land_units_killed_var
+					value = 1000
+				}
+				add_manpower = 0.001
+			}
+		}
+	}
+}
+
+THE_SUW_on_conquistador_empty_1_religion_scripted_effects = {
+	if = {
+		limit = { 
+			has_church_aspect = THE_SUW_2_1_aspect
+			has_country_flag = sce_action01_flag
+			NOT = {
+				AND = {
+					has_country_flag = sce_end_eldorado_flag
+					has_country_flag = sce_end_fountainofyouth_flag
+					has_country_flag = sce_end_cibola_flag
+					has_country_flag = sce_end_cityofcaesars_flag
+					has_country_flag = sce_end_sierradelaplata_flag
+					has_country_flag = sce_end_norumbega_flag
+					has_country_flag = sce_end_saguenay_flag
+					has_country_flag = sce_end_quivira_flag
+				}
+			}
+			NOT = {
+				has_country_flag = sce_eventchain_flag
+			}
+		}
+		country_event = {
+			id = THE_SUW_events.35
+		}
+	}
+}
+
 ##################################################
 ### not on_actions scripted effect 
 ##################################################

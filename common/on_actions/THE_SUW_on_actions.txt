@@ -18,3 +18,31 @@ on_four_year_pulse = {
 on_bi_yearly_pulse = {
 	THE_SUW_on_bi_yearly_pulse_scripted_effects = yes
 }
+
+on_harmonized_THE_moriyaseikyou_religion = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		THE_harmony_events.4
+	}
+}
+
+on_war_won = {
+	THE_SUW_on_war_won_religion_scripted_effects = yes
+}
+
+on_war_ended = {
+	THE_SUW_on_war_ended_religion_scripted_effects = yes
+}
+
+on_battle_won_unit = {
+	THE_SUW_on_battle_unit_religion_scripted_effects = yes
+}
+
+on_battle_lost_unit = {
+	THE_SUW_on_battle_unit_religion_scripted_effects = yes
+}
+
+on_conquistador_empty = {
+	THE_SUW_on_conquistador_empty_1_religion_scripted_effects = yes
+}

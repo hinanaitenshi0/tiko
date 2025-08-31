@@ -40,6 +40,8 @@
  THE_SUW_event_32_tt: "获得济州作为两国通商口岸，以及一个§G承诺§!，若其即位，则朝鲜将内附于我国"
  THE_SUW_event_33_tt: "提示:获取朝鲜军通，帮助朝鲜平叛"
  THE_SUW_suw_2_8_tt: "已将朝鲜收作宗教守护"
+ God_acts: "神明行事"
+ The_cycle_of_heaven_and_earth: "乾坤流转"
 ### TOOLTIP_END
 
 ### dynasty
@@ -98,6 +100,7 @@
  THE_SUW_divergence_of_views_Far_alliance_near_attack_country_modifier: "分歧-外交-远交近攻"
  THE_SUW_divergence_of_views_decentralization_country_modifier: "分歧-阶级-分权"
  THE_SUW_divergence_of_views_centralization_country_modifier: "分歧-阶级-集权"
+ THE_SUW_fire_country_modifier: "火"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER

@@ -1295,3 +1295,170 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	#黄金七城征服者继任事件
+	id = THE_SUW_events.35
+	title = "THE_SUW_events.35.title"
+	desc = "THE_SUW_events.35.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_church_aspect = THE_SUW_2_1_aspect
+	}
+
+	option = {
+		name = THE_SUW_events.35.name
+		create_conquistador = 50
+		add_army_tradition = 10
+		hidden_effect = {
+			set_country_flag = sce_eventchain_flag
+			if = {
+				had_country_modifier = { sce_search_eldorado }
+				NOT = { had_country_flag = sce_end_eldorado_flag }
+			}
+		}
+	}
+}
+
+country_event = {
+	#黄金七城神明引领事件
+	id = THE_SUW_events.36
+	title = "THE_SUW_events.36.title"
+	desc = "THE_SUW_events.36.desc"
+	picture = YUKARI2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_church_aspect = THE_SUW_2_1_aspect
+	}
+
+	option = {
+		name = THE_SUW_events.35.name
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = sce_end_eldorado_flag }
+				random_list = {
+					60 = {  
+						province_event = {
+							id = seven_cities_events.201
+						}
+					}
+					40 = {  
+						province_event = {
+							id = seven_cities_events.202
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = sce_end_fountainofyouth_flag }
+				random_list = {
+					60 = {  
+						province_event = {
+							id = seven_cities_events.204
+						}
+					}
+					40 = {  
+						province_event = {
+							id = seven_cities_events.205
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = sce_end_cibola_flag }
+				random_list = {
+					60 = {  
+						province_event = {
+							id = seven_cities_events.207
+						}
+					}
+					40 = {  
+						province_event = {
+							id = seven_cities_events.208
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = sce_end_cityofcaesars_flag }
+				random_list = {
+					60 = {  
+						province_event = {
+							id = seven_cities_events.210
+						}
+					}
+					40 = {  
+						province_event = {
+							id = seven_cities_events.211
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = sce_end_sierradelaplata_flag }
+				random_list = {
+					60 = {  
+						province_event = {
+							id = seven_cities_events.213
+						}
+					}
+					40 = {  
+						province_event = {
+							id = seven_cities_events.214
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = sce_end_norumbega_flag }
+				random_list = {
+					60 = {  
+						province_event = {
+							id = seven_cities_events.216
+						}
+					}
+					40 = {  
+						province_event = {
+							id = seven_cities_events.217
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = sce_end_saguenay_flag }
+				random_list = {
+					60 = {  
+						province_event = {
+							id = seven_cities_events.219
+						}
+					}
+					40 = {  
+						province_event = {
+							id = seven_cities_events.220
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = sce_end_quivira_flag }
+				random_list = {
+					60 = {  
+						province_event = {
+							id = seven_cities_events.222
+						}
+					}
+					40 = {  
+						province_event = {
+							id = seven_cities_events.223
+						}
+					}
+				}
+			}
+		}
+	}
+}

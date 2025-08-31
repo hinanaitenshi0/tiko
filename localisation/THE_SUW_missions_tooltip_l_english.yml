@@ -37,7 +37,11 @@
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "AQ¸‹àemcwÆ–-NÑSUS¦^" 
  THE_SUW_4_5_tt_2: "‚YœgTaÿ@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!Sb:NbìN„vg!ýVÿvQÖN§Yåe,g§!0W:SýV¶RRO«ˆbìNçub"
  THE_SUW_KOR_development: "áOSm„vÑSUS¦^: §Y[ROOT.suwdevelopment.GetValue]§! §GNSŽN§!IlÎW„vÑSUS¦^: §Y[ROOT.kordevelopment.GetValue]§! "
- THE_SUW_event_32_tt: "·ƒ—VNmÞTjO:N2NýVFUãS¸SÿåNÊSvQÖN„vN›N§GÞV¥b§!......"
+ THE_SUW_event_32_tt: "·ƒ—VNmÞTjO:N2NýVFUãS¸SÿåNÊSN*N§Gbú‹§!ÿå‚vQsSMOÿRgœœS…QD–ŽNbýV"
+ THE_SUW_event_33_tt: "Ðc:y:·ƒÖSgœœ›Qÿ.^©Rgœœs^ÛS"
+ THE_SUW_suw_2_8_tt: "òTSgœœ6ejO—RYeˆR²b"
+ God_acts: "^yfLˆ‹N"
+ The_cycle_of_heaven_and_earth: "ŒNdWAml"
 ### TOOLTIP_END
 
 ### dynasty
@@ -204,6 +208,10 @@
  THE_SUW_events.31.name: "WW„^y"R8lÛVt^„vdÙ†"!"
  THE_SUW_events.32.title: "aYKNœUÿ"
  THE_SUW_events.32.name: "NbŒ„Uw	g„U¥b"
+ THE_SUW_events.33.title: "1YB›K„D›„váOO"
+ THE_SUW_events.33.name: "	UÿÈuRV=fb³R†NÖNJU......"
+ THE_SUW_events.34.title: "gœœRVD–"
+ THE_SUW_events.34.name: "âe6q‚Ydk......"
 ### EVENT_END
 
 
