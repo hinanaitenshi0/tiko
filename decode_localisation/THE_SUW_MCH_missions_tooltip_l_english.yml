@@ -1,3 +1,12 @@
 l_english:
+# TOOLTIP
  THE_SUW_MCH_unlock_banner_decision_tt: "启用决议「§Y扩编八旗§!」\n执行此决议将在首都生成§G15§!队八步兵和§G5§!队八旗骑兵"
  THE_SUW_MCH_unlock_banner_decision_overlord_tt: "\n如果@SUW§Y[SUW.GetName]§!是我们的§M宗主国§!，也会在@SUW§Y[SUW.GetName]§!的首都生成§G5§!队八旗骑兵"
+ THE_SUW_MCH_expand_banner_decision_effect_tt: "在首都生成§G15§!队八步兵和§G5§!队八旗骑兵"
+ THE_SUW_MCH_expand_banner_decision_overlord_effect_tt: "在首都生成§G5§!队八旗骑兵"
+# TOOLTIP_END
+
+# DECISION
+ THE_SUW_MCH_expand_banner_decision_title: "扩编八旗"
+ THE_SUW_MCH_expand_banner_decision_desc: "旗军是女真各部组建的精锐作战军团，分为八旗。作为对抗中华的前线，有必要对八旗进行扩编，同时也为我们的宗主训练最精锐的八旗部队"
+# DECISION_END

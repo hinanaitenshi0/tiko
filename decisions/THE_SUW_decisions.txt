@@ -183,5 +183,38 @@ country_decisions = {
 				}
 			}
 		}
+
+		effect = {
+			custom_tooltip = THE_SUW_MCH_expand_banner_decision_effect_tt
+			THE_create_special_unit_scripted_effect = {
+				special_unit_category = banner
+				type = infantry
+				amount = 15
+			}
+			THE_create_special_unit_scripted_effect = {
+				special_unit_category = banner
+				type = cavalry
+				amount = 5
+			}
+			if = {
+				limit = {
+					is_subject = yes
+					overlord = {
+						OR = {
+							tag = SUW
+							was_tag = SUW
+						}
+					}
+				}
+				overlord = {
+					custom_tooltip = THE_SUW_MCH_expand_banner_decision_overlord_effect_tt
+					THE_create_special_unit_scripted_effect = {
+						special_unit_category = banner
+						type = cavalry
+						amount = 5
+					}
+				}
+			}
+		}
 	}
 }
