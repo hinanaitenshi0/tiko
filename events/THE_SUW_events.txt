@@ -1297,168 +1297,792 @@ country_event = {
 }
 
 country_event = {
-	#黄金七城征服者继任事件
+	#东方顾问事件
 	id = THE_SUW_events.35
 	title = "THE_SUW_events.35.title"
 	desc = "THE_SUW_events.35.desc"
 	picture = YUKARI2_eventPicture
-	fire_only_once = yes
 	is_triggered_only = yes
 
-	trigger = {
-		has_church_aspect = THE_SUW_2_1_aspect
-	}
-
 	option = {
-		name = THE_SUW_events.35.name
-		create_conquistador = 50
-		add_army_tradition = 10
-		hidden_effect = {
-			set_country_flag = sce_eventchain_flag
-			if = {
-				had_country_modifier = { sce_search_eldorado }
-				NOT = { had_country_flag = sce_end_eldorado_flag }
+		name = THE_SUW_events.35.1.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_flandre } }
+				OR = {
+					any_country ={  
+						owns = 5075
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5075 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_flandre
+				name = "Flandre Scarlet"
+				female = yes
+				skill = 2
+				location = 5075
+				religion = root
+				culture = Scarlet
+				cost_multiplier = 0.75
 			}
 		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.2.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_eirin } }
+				OR = {
+					any_country ={  
+						owns = 5112
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5112 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_eirin
+				name = "Eirin Yagokoro"
+				skill = 2
+				location = 5112
+				cost_multiplier = 0.75
+				female = yes
+				culture = Eientei
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.3.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_keine } }
+				OR = {
+					any_country ={  
+						owns = 4979
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					4979 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_keine
+				name = "Keine Kamishirasawa"
+				skill = 2
+				location = 4979
+				cost_multiplier = 0.75
+				female = yes
+				culture = Gensokyo_human
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.4.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_youmu } }
+				OR = {
+					any_country ={  
+						owns = 5111
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5111 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_youmu
+				name = "Youmu Konpaku"
+				skill = 2
+				location = 5111
+				cost_multiplier = 0.75
+				female = yes
+				culture = Netherlandish
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.5.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_alice } }
+				OR = {
+					any_country ={  
+						owns = 5093
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5093 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_alice
+				name = "Alice Margatroid"
+				skill = 2
+				location = 5093
+				cost_multiplier = 0.75
+				female = yes
+				culture = Magician
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.6.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_patchouli } }
+				OR = {
+					any_country ={  
+						owns = 5072
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5072 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_patchouli
+				name = "Patchouli Knowledge"
+				skill = 2
+				location = 5072
+				cost_multiplier = 0.75
+				female = yes
+				culture = Scarlett
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.7.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_daiyousei } }
+				OR = {
+					any_country ={  
+						owns = 4996
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					4996 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_daiyousei
+				name = "Daiyousei"
+				skill = 2
+				location = 4996
+				cost_multiplier = 0.75
+				female = yes
+				culture = Fairy
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.8.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_sakuya } }
+				OR = {
+					any_country ={  
+						owns = 5074
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5074 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_sakuya
+				name = "Sakuya Izayoi"
+				skill = 2
+				location = 5074
+				cost_multiplier = 0.75
+				female = yes
+				culture = Scarlett
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.9.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_chen } }
+				OR = {
+					any_country ={  
+						owns = 5066
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5066 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_chen
+				name = "Chen"
+				skill = 2
+				location = 5066
+				cost_multiplier = 0.75
+				female = yes
+				culture = Youkai
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.10.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_hecatia } }
+				OR = {
+					any_country ={  
+						owns = 5053
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5053 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_hecatia
+				name = "Hecatia Lapislazuli"
+				skill = 2
+				location = 5053
+				cost_multiplier = 0.75
+				female = yes
+				culture = Higanean
+				religion = th_hakureishinto
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.11.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_komachi } }
+				OR = {
+					any_country ={  
+						owns = 4969
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					4969 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_komachi
+				name = "Komachi Onozuka"
+				skill = 2
+				location = 4969
+				cost_multiplier = 0.75
+				female = yes
+				culture = Higanean
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.12.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_sagume } }
+				OR = {
+					any_country ={  
+						owns = 5320
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5320 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_sagume
+				name = "Sagume Kishin"
+				skill = 2
+				location = 5320
+				cost_multiplier = 0.75
+				female = yes
+				culture = Lunarian_culture
+				religion = th_lunarian_religion
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.13.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_doremy } }
+				OR = {
+					any_country ={  
+						owns = 5318
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5318 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_doremy
+				name = "Doremy Sweet"
+				skill = 2
+				location = 5318
+				cost_multiplier = 0.75
+				female = yes
+				culture = Lunarian_culture
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.14.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_hina } }
+				OR = {
+					any_country ={  
+						owns = 5187
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5187 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_hina
+				name = "Hina Kagiyama"
+				skill = 2
+				location = 5187
+				cost_multiplier = 0.75
+				female = yes
+				culture = Youkai
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.15.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_reisen } }
+				OR = {
+					any_country ={  
+						owns = 5117
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5117 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_reisen
+				name = "Reisen Udongein Inaba"
+				skill = 2
+				location = 5117
+				cost_multiplier = 0.75
+				female = yes
+				culture = Eientei
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.16.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_kaguya } }
+				OR = {
+					any_country ={  
+						owns = 4991
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					4991 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_kaguya
+				name = "Kaguya Houraisan"
+				skill = 2
+				location = 4991
+				cost_multiplier = 0.75
+				female = yes
+				culture = Eientei
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.17.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_aya } }
+				OR = {
+					any_country ={  
+						owns = 4971
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					4971 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_aya
+				name = "Aya Shameimaru"
+				skill = 2
+				location = 4971
+				cost_multiplier = 0.75
+				female = yes
+				culture = Tengu
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.18.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_momiji } }
+				OR = {
+					any_country ={  
+						owns = 5198
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5198 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_momiji
+				name = "Momiji Inubashiri"
+				skill = 2
+				location = 5198
+				cost_multiplier = 0.75
+				female = yes
+				culture = Tengu
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.19.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_hatate } }
+				OR = {
+					any_country ={  
+						owns = 4970
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					4970 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_hatate
+				name = "Hatate Himekaidou"
+				skill = 2
+				location = 4970
+				cost_multiplier = 0.75
+				female = yes
+				culture = Tengu
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.20.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_megumu } }
+				OR = {
+					any_country ={  
+						owns = 4964
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					4964 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_megumu
+				name = "Megumu Iizunamaru"
+				skill = 2
+				location = 4964
+				cost_multiplier = 0.75
+				female = yes
+				culture = Tengu
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.21.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_mima } }
+				OR = {
+					any_country ={  
+						owns = 5033
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5033 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_mima
+				name = "Mima"
+				skill = 2
+				location = 5033
+				cost_multiplier = 0.75
+				female = yes
+				culture = Higanean
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.22.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_yorihime } }
+				OR = {
+					any_country ={  
+						owns = 5320
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5320 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_yorihime
+				name = "Watatsuki no Yorihime"
+				skill = 2
+				location = 5320
+				cost_multiplier = 0.75
+				female = yes
+				culture = Lunarian_culture
+				religion = th_lunarian_religion
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.23.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_iku } }
+				OR = {
+					any_country ={  
+						owns = 5312
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5312 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_iku
+				name = "Iku Nagae"
+				skill = 2
+				location = 5312
+				cost_multiplier = 0.75
+				female = yes
+				culture = Heavenish
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.24.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_star } }
+				OR = {
+					any_country ={  
+						owns = 4975
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					4975 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_star
+				name = "Star Sapphire"
+				skill = 2
+				location = 4975
+				cost_multiplier = 0.75
+				female = yes
+				culture = Fairy
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.25.name
+		if = {
+			limit = {  
+				NOT = { employed_advisor = { type = th_advisor_clownpiece } }
+				OR = {
+					any_country ={  
+						owns = 5334
+						has_opinion = {
+							who = PREV
+							value = 160
+						}
+					}
+					5334 = { owned_by = ROOT  is_core = ROOT }
+				}
+			}
+			define_advisor = {
+				type = th_advisor_clownpiece
+				name = "Clownpiece"
+				skill = 2
+				location = 5334
+				cost_multiplier = 0.75
+				female = yes
+				culture = Fairy
+				religion = ROOT
+			}
+		}
+		hidden_effect = {
+			set_country_flag = THE_SUW_touhou_advisor_flag
+		}
+	}
+	option = {
+		name = THE_SUW_events.35.26.name
+		add_church_power = 75
+		extend_golden_age = 12
 	}
 }
 
-country_event = {
-	#黄金七城神明引领事件
-	id = THE_SUW_events.36
-	title = "THE_SUW_events.36.title"
-	desc = "THE_SUW_events.36.desc"
-	picture = YUKARI2_eventPicture
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	trigger = {
-		has_church_aspect = THE_SUW_2_1_aspect
-	}
-
-	option = {
-		name = THE_SUW_events.35.name
-		hidden_effect = {
-			if = {
-				limit = { has_country_flag = sce_end_eldorado_flag }
-				random_list = {
-					60 = {  
-						province_event = {
-							id = seven_cities_events.201
-						}
-					}
-					40 = {  
-						province_event = {
-							id = seven_cities_events.202
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = { has_country_flag = sce_end_fountainofyouth_flag }
-				random_list = {
-					60 = {  
-						province_event = {
-							id = seven_cities_events.204
-						}
-					}
-					40 = {  
-						province_event = {
-							id = seven_cities_events.205
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = { has_country_flag = sce_end_cibola_flag }
-				random_list = {
-					60 = {  
-						province_event = {
-							id = seven_cities_events.207
-						}
-					}
-					40 = {  
-						province_event = {
-							id = seven_cities_events.208
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = { has_country_flag = sce_end_cityofcaesars_flag }
-				random_list = {
-					60 = {  
-						province_event = {
-							id = seven_cities_events.210
-						}
-					}
-					40 = {  
-						province_event = {
-							id = seven_cities_events.211
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = { has_country_flag = sce_end_sierradelaplata_flag }
-				random_list = {
-					60 = {  
-						province_event = {
-							id = seven_cities_events.213
-						}
-					}
-					40 = {  
-						province_event = {
-							id = seven_cities_events.214
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = { has_country_flag = sce_end_norumbega_flag }
-				random_list = {
-					60 = {  
-						province_event = {
-							id = seven_cities_events.216
-						}
-					}
-					40 = {  
-						province_event = {
-							id = seven_cities_events.217
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = { has_country_flag = sce_end_saguenay_flag }
-				random_list = {
-					60 = {  
-						province_event = {
-							id = seven_cities_events.219
-						}
-					}
-					40 = {  
-						province_event = {
-							id = seven_cities_events.220
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = { has_country_flag = sce_end_quivira_flag }
-				random_list = {
-					60 = {  
-						province_event = {
-							id = seven_cities_events.222
-						}
-					}
-					40 = {  
-						province_event = {
-							id = seven_cities_events.223
-						}
-					}
-				}
-			}
-		}
-	}
-}

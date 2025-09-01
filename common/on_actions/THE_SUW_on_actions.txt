@@ -43,6 +43,4 @@ on_battle_lost_unit = {
 	THE_SUW_on_battle_unit_religion_scripted_effects = yes
 }
 
-on_conquistador_empty = {
-	THE_SUW_on_conquistador_empty_1_religion_scripted_effects = yes
-}
+

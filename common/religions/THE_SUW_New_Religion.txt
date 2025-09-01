@@ -54,7 +54,7 @@ Touhou = {
 		}
 
 		celebrate = {
-			cost = 100
+			cost = 150
 			potential = {
 			}
 			allow = {
@@ -64,16 +64,175 @@ Touhou = {
 						has_church_aspect = THE_SUW_1_1_aspect
 						has_church_aspect = THE_SUW_1_2_aspect
 						has_church_aspect = THE_SUW_1_3_aspect
-						has_church_aspect = THE_SUW_2_1_aspect
-						has_church_aspect = THE_SUW_2_2_aspect
-						has_church_aspect = THE_SUW_2_3_aspect
-						has_church_aspect = THE_SUW_3_1_aspect
-						has_church_aspect = THE_SUW_3_2_aspect
-						has_church_aspect = THE_SUW_3_3_aspect
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = THE_SUW_1_1_aspect
+					} 
+					OR = {
+						NOT = { has_country_flag = THE_SUW_touhou_advisor_flag }
+						had_country_flag = {
+							flag = THE_SUW_touhou_advisor_flag
+							days = 3650
+						} 
 					}
 				}
 			}
 			effect = {
+				if = {
+					limit = {
+						has_church_aspect = THE_SUW_1_1_aspect
+					}
+					country_event = {
+						id = THE_SUW_events.35
+					}
+					hidden_effect = {
+						clr_country_flag = THE_SUW_touhou_advisor_flag
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = THE_SUW_1_2_aspect
+					} 
+					every_owned_province = {
+						add_prosperity = 30
+					}	
+				}
+				if = {
+					limit = {
+						has_church_aspect = THE_SUW_1_3_aspect
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_church
+    								loyalty = 30
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_church
+    									loyalty = 50
+									}
+								}
+							}
+						}
+						add_adm_power = 50
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_church
+    								loyalty = 50
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_church
+    									loyalty = 70
+									}
+								}
+							}
+						}
+						add_adm_power = 100
+					}
+					if = {
+						limit = {
+							estate_loyalty = {
+    							estate = estate_church
+    							loyalty = 70
+							}
+						}
+						add_adm_power = 150
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_nobles
+    								loyalty = 30
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_nobles
+    									loyalty = 50
+									}
+								}
+							}
+						}
+						add_dip_power = 50
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_nobles
+    								loyalty = 50
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_nobles
+    									loyalty = 70
+									}
+								}
+							}
+						}
+						add_dip_power = 100
+					}
+					if = {
+						limit = {
+							estate_loyalty = {
+    							estate = estate_nobles
+    							loyalty = 70
+							}
+						}
+						add_dip_power = 150
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_burghers
+    								loyalty = 30
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_burghers
+    									loyalty = 50
+									}
+								}
+							}
+						}
+						add_mil_power = 50
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_burghers
+    								loyalty = 50
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_burghers
+    									loyalty = 70
+									}
+								}
+							}
+						}
+						add_mil_power = 100
+					}
+					if = {
+						limit = {
+							estate_loyalty = {
+    							estate = estate_burghers
+    							loyalty = 70
+							}
+						}
+						add_mil_power = 150
+					}
+				}
 			}
 			ai_will_do = {
 				factor = 15

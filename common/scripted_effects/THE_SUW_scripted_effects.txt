@@ -161,12 +161,7 @@ THE_SUW_on_war_won_religion_scripted_effects = {
 }
 
 THE_SUW_on_war_ended_religion_scripted_effects = {
-	if = {
-		limit = { 
-			has_church_aspect = THE_SUW_3_2_aspect
-		}
-		remove_country_modifier = THE_SUW_fire_country_modifier
-	}
+	remove_country_modifier = THE_SUW_fire_country_modifier
 }
 
 THE_SUW_on_battle_unit_religion_scripted_effects = {
@@ -217,32 +212,7 @@ THE_SUW_on_battle_unit_religion_scripted_effects = {
 	}
 }
 
-THE_SUW_on_conquistador_empty_1_religion_scripted_effects = {
-	if = {
-		limit = { 
-			has_church_aspect = THE_SUW_2_1_aspect
-			has_country_flag = sce_action01_flag
-			NOT = {
-				AND = {
-					has_country_flag = sce_end_eldorado_flag
-					has_country_flag = sce_end_fountainofyouth_flag
-					has_country_flag = sce_end_cibola_flag
-					has_country_flag = sce_end_cityofcaesars_flag
-					has_country_flag = sce_end_sierradelaplata_flag
-					has_country_flag = sce_end_norumbega_flag
-					has_country_flag = sce_end_saguenay_flag
-					has_country_flag = sce_end_quivira_flag
-				}
-			}
-			NOT = {
-				has_country_flag = sce_eventchain_flag
-			}
-		}
-		country_event = {
-			id = THE_SUW_events.35
-		}
-	}
-}
+
 
 ##################################################
 ### not on_actions scripted effect 

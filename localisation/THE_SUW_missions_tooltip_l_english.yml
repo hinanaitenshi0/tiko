@@ -100,6 +100,7 @@
  THE_SUW_divergence_of_views_Far_alliance_near_attack_country_modifier: "Rgk-Y²N-Ü²NÑIe"
  THE_SUW_divergence_of_views_decentralization_country_modifier: "Rgk-6–µu-RCg"
  THE_SUW_divergence_of_views_centralization_country_modifier: "Rgk-6–µu-Æ–Cg"
+ THE_SUW_fire_country_modifier: "kp"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -201,17 +202,51 @@
  THE_SUW_events.28.desc: "1"
  THE_SUW_events.28.name: "óSbìNØ	g^yHYPR'YºNÿ"
  THE_SUW_events.29.title: "gœœcO"
+ THE_SUW_events.29.desc: "1"
  THE_SUW_events.29.name: "<yKN(uÿŒT:N5"
  THE_SUW_events.30.title: "gœœRVO"
+ THE_SUW_events.30.desc: "1"
  THE_SUW_events.30.name: "RV»SegnQ"
  THE_SUW_events.31.title: "Næ‹KNFQ"
+ THE_SUW_events.31.desc: "1"
  THE_SUW_events.31.name: "WW„^y"R8lÛVt^„vdÙ†"!"
  THE_SUW_events.32.title: "aYKNœUÿ"
+ THE_SUW_events.32.desc: "1"
  THE_SUW_events.32.name: "NbŒ„Uw	g„U¥b"
  THE_SUW_events.33.title: "1YB›K„D›„váOO"
+ THE_SUW_events.33.desc: "1"
  THE_SUW_events.33.name: "	UÿÈuRV=fb³R†NÖNJU......"
  THE_SUW_events.34.title: "gœœRVD–"
+ THE_SUW_events.34.desc: "1"
  THE_SUW_events.34.name: "âe6q‚Ydk......"
+ THE_SUW_events.35.title: "myxQ!"
+ THE_SUW_events.35.desc: "1"
+ THE_SUW_events.35.1.name: "Ý„Ý„ï!Ý„Ý„ï!"
+ THE_SUW_events.35.2.name: ".^.^b,8l3t!"
+ THE_SUW_events.35.3.name: "kp­r4YÌi!"
+ THE_SUW_events.35.4.name: "¡l	g©eN­e„v......±.^bR*NÜƒ'T!"
+ THE_SUW_events.35.5.name: "ŸSeg=f1rKNNJU!"
+ THE_SUW_events.35.6.name: "ÆYQ!"
+ THE_SUW_events.35.7.name: "*t2—ú‹	gNwegT?"
+ THE_SUW_events.35.8.name: "sYÆNKNÃV!"
+ THE_SUW_events.35.9.name: "kQ‘N......Yj!"
+ THE_SUW_events.35.10.name: "±ÍycˆgN‰JU!"
+ THE_SUW_events.35.11.name: "=f,.fìY'YºN!"
+ THE_SUW_events.35.12.name: "......"
+ THE_SUW_events.35.13.name: "bó`Tu¹p!"
+ THE_SUW_events.35.14.name: "ll!"
+ THE_SUW_events.35.15.name: "gbwuQ,úQR!"
+ THE_SUW_events.35.16.name: "8l3t,8l3t,b„vXRch(WêTÌ‘!"
+ THE_SUW_events.35.17.name: "ayaya!"
+ THE_SUW_events.35.18.name: "(g±‚i!"
+ THE_SUW_events.35.19.name: "ww`O„vgqGr!"
+ THE_SUW_events.35.20.name: "m™²u8N™Ÿ'Y´fp!"
+ THE_SUW_events.35.21.name: "=fbó`„v±*NE›T›T?"
+ THE_SUW_events.35.22.name: "0NìY:NÀNHNN&^`O©s?"
+ THE_SUW_events.35.23.name: "ÊN)Y)Yl`HN7h?"
+ THE_SUW_events.35.24.name: ">PÄl„vfIQ!"
+ THE_SUW_events.35.25.name: "ŽýV–Y¾|!IrOÿŽýV=fÀNHN?"
+ THE_SUW_events.35.26.name: "¡ryYbT,egUNog'T!"
 ### EVENT_END
 
 

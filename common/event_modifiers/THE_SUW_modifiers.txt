@@ -210,6 +210,12 @@ THE_SUW_moriyaseikyou = {
 THE_SUW_fire_country_modifier = {
 	artillery_levels_available_vs_fort = 2
 }
+THE_SUW_Peace_under_the_miko_province_modifier = {
+	local_manpower_modifier = 0.1
+	local_build_cost = -0.1
+	local_production_efficiency = 0.1
+	local_state_maintenance_modifier = -0.1
+}
 #小弟自治度
 THE_SUW_vassal_country_modifier = {
 	global_autonomy = -0.1

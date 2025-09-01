@@ -41,7 +41,8 @@ THE_SUW_2_1_aspect = {	#DIP aspect
 THE_SUW_2_2_aspect = {	#DIP aspect
 	cost = 100
 	modifier = {
-		relation_with_other_culture = 15
+		reverse_relation_with_heretic_religion = 15
+		reverse_relation_with_heathen_religion = 15
 	}
 	monarch_power = dip
 	ai_will_do = {
@@ -52,6 +53,19 @@ THE_SUW_2_3_aspect = {	#DIP aspect
 	cost = 100
 	modifier = {
 		missionaries = 1 
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion = ROOT
+				}
+				add_province_modifier = {
+					name = THE_SUW_Peace_under_the_miko_province_modifier
+   					duration = -1  
+				}
+			}
+		}
 	}
 	monarch_power = dip
 	ai_will_do = {
