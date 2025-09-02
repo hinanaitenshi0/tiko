@@ -19,7 +19,7 @@ on_bi_yearly_pulse = {
 	THE_SUW_on_bi_yearly_pulse_scripted_effects = yes
 }
 
-on_harmonized_THE_moriyaseikyou_religion = {
+on_harmonized_THE_moriyaseikyou_religion = { #融合守矢正教
 	on_harmonized_effect = yes
 	on_harmonized_religion_estate_privileges_effect = yes
 	events = {

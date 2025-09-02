@@ -42,6 +42,7 @@
  THE_SUW_suw_2_8_tt: "已将朝鲜收作宗教守护"
  God_acts: "神明行事"
  The_cycle_of_heaven_and_earth: "乾坤流转"
+ THE_root_country_development: "当前国家发展度: §Y[ROOT.root_country_development.GetValue]§! "
 ### TOOLTIP_END
 
 ### dynasty
@@ -101,6 +102,12 @@
  THE_SUW_divergence_of_views_decentralization_country_modifier: "分歧-阶级-分权"
  THE_SUW_divergence_of_views_centralization_country_modifier: "分歧-阶级-集权"
  THE_SUW_fire_country_modifier: "火"
+ THE_SUW_Peace_under_the_miko_province_modifier: "巫女治下的和平"
+ THE_moriya_scholar_modifier: "诹访的游历者"
+ THE_kanako_scholar_modifier: "神奈的虔信者"
+ THE_yuuitsu_scholar_modifier: "唯一的推崇者"
+ THE_kamigami_scholar_modifier: "乾坤的调和者"
+ THE_sanae_scholar_modifier: "奇迹的追寻者"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -298,6 +305,18 @@
 
 ### ESTATE_END
 
+###SCHOOL
+moriya_teachings: "洩矢"
+moriya_desc: "1"
+kanako_teachings: "八坂"
+kanako_desc: "1"
+yuuitsu_teachings: "唯一"
+yuuitsu_desc: "1"
+kamigami_teachings: "乾坤"
+kamigami_desc: "1"
+sanae_teachings: "奇迹"
+sanae_desc: "1"
+###SCHOOL_END
 
 ### DIPLOMATIC
  THE_SUW_ask_for_change_religions_to_moriyashinto_title: "邀请改教"

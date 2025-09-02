@@ -42,6 +42,7 @@
  THE_SUW_suw_2_8_tt: "òTSgœœ6ejO—RYeˆR²b"
  God_acts: "^yfLˆ‹N"
  The_cycle_of_heaven_and_earth: "ŒNdWAml"
+ THE_root_country_development: "SVMRýV¶RÑSUS¦^: §Y[ROOT.root_country_development.GetValue]§! "
 ### TOOLTIP_END
 
 ### dynasty
@@ -101,6 +102,12 @@
  THE_SUW_divergence_of_views_decentralization_country_modifier: "Rgk-6–µu-RCg"
  THE_SUW_divergence_of_views_centralization_country_modifier: "Rgk-6–µu-Æ–Cg"
  THE_SUW_fire_country_modifier: "kp"
+ THE_SUW_Peace_under_the_miko_province_modifier: "ëTsY»lN„vŒTs^"
+ THE_moriya_scholar_modifier: "ù‹¿‹„v8n†Sw"
+ THE_kanako_scholar_modifier: "^yHY„vT†áOw"
+ THE_yuuitsu_scholar_modifier: "=UN„v¨cTw"
+ THE_kamigami_scholar_modifier: "ŒNdW„vŒŒTw"
+ THE_sanae_scholar_modifier: "GYù„výûRw"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -298,6 +305,18 @@
 
 ### ESTATE_END
 
+###SCHOOL
+moriya_teachings: ")mâw"
+moriya_desc: "1"
+kanako_teachings: "kQBW"
+kanako_desc: "1"
+yuuitsu_teachings: "=UN"
+yuuitsu_desc: "1"
+kamigami_teachings: "ŒNdW"
+kamigami_desc: "1"
+sanae_teachings: "GYù"
+sanae_desc: "1"
+###SCHOOL_END
 
 ### DIPLOMATIC
  THE_SUW_ask_for_change_religions_to_moriyashinto_title: "Ž÷‹9eYe"

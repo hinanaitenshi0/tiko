@@ -312,7 +312,7 @@ declarewar = {
 				duration = 7300
 			}
 		}
-		if = {
+		if = {   #THE_SUW战争信条buff
 			limit = {
 				has_church_aspect = THE_SUW_3_2_aspect
 			}

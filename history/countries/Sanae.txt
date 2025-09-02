@@ -1,0 +1,6 @@
+government = monarchy
+primary_culture = Gensokyo_human
+religion = THE_moriyaseikyou_religion
+technology_group = tech_gensokyan
+capital = 4188
+religious_school = sanae_teachings

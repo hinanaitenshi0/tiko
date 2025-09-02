@@ -212,7 +212,22 @@ THE_SUW_on_battle_unit_religion_scripted_effects = {
 	}
 }
 
+clr_THE_moriyaseikyou_religion_aspects_buffs = {
+	if = {
+		limit = { NOT = { has_church_aspect = THE_SUW_2_3_aspect } }
+		every_owned_province = {
+			remove_province_modifier = THE_SUW_Peace_under_the_miko_province_modifier
+		}
+	}
+}
 
+THE_clear_religious_scholar_modifiers_effect = {
+  remove_country_modifier = THE_moriya_scholar_modifier
+  remove_country_modifier = THE_kanako_scholar_modifier
+  remove_country_modifier = THE_yuuitsu_scholar_modifier
+  remove_country_modifier = THE_kamigami_scholar_modifier
+  remove_country_modifier = THE_sanae_scholar_modifier
+}
 
 ##################################################
 ### not on_actions scripted effect 
