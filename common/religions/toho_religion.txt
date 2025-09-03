@@ -1502,9 +1502,12 @@ Touhou = {
 			THE_SUW_2_1_aspect
 			THE_SUW_2_2_aspect
 			THE_SUW_2_3_aspect
+			THE_SUW_2_4_aspect
 			THE_SUW_3_1_aspect
 			THE_SUW_3_2_aspect
 			THE_SUW_3_3_aspect
+			THE_SUW_3_4_aspect
+			THE_SUW_3_5_aspect
 		}
 
 		celebrate = {

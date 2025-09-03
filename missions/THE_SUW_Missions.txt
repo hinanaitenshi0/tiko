@@ -743,7 +743,9 @@ THE_SUW_stage_2_branch_suw_1 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			set_country_flag = THE_SUW_suw_1_8_flag
+		} 
 	}
 
 	THE_SUW_suw_1_9 = {
@@ -1303,7 +1305,9 @@ THE_SUW_stage_2_branch_kan_1 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			set_country_flag = THE_SUW_kan_1_8_flag
+		} 
 	}
 
 	THE_SUW_kan_1_9 = {

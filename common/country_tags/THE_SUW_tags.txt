@@ -1,1 +1,6 @@
 SUW = "countries/THE_SUW.txt"
+SU1 = "countries/Moriya.txt"
+SU2 = "countries/Kanako.txt"
+SU3 = "countries/Yuuitsu.txt"
+SU4 = "countries/Kamigami.txt"
+SU5 = "countries/Sanae.txt"

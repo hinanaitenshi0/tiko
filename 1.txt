@@ -23,6 +23,12 @@ ROOT = {
     	subject = KOR
 	}
 }
+ROOT = {
+	create_subject = {
+  	  subject_type = THE_SUW_Religious_Protection
+    	subject = MNG
+	}
+}
 4188 = {
 	add_base_tax = 20
 }
@@ -37,3 +43,5 @@ change_religion = THE_moriyaseikyou_religion
 }
 add_splendor = 600
 add_church_power = 100
+#clr_country_flag = THE_SUW_kan_1_8_flag
+#set_country_flag = THE_SUW_kan_1_8_flag

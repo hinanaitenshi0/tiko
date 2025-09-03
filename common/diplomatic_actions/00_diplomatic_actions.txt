@@ -321,6 +321,15 @@ declarewar = {
 				duration = -1
 			}
 		}
+		if = {   #THE_SUW外交信条buff
+			limit = { 
+				has_church_aspect = THE_SUW_2_4_aspect
+			}
+			add_country_modifier = {
+				name = THE_SUW_Difficult_to_know_like_yin_country_modifier
+				duration = -1
+			}
+		}
 	}
 }
 support_independence_action = {

@@ -60,6 +60,12 @@ THE_SUW_2_1_aspect = {	#DIP aspect
 }
 THE_SUW_2_2_aspect = {	#DIP aspect
 	cost = 100
+	potential = {
+		has_country_flag = THE_SUW_suw_1_8_flag
+	}
+	trigger = {
+		has_country_flag = THE_SUW_suw_1_8_flag
+	}
 	modifier = {
 		reverse_relation_with_heretic_religion = 15
 		reverse_relation_with_heathen_religion = 15
@@ -91,6 +97,27 @@ THE_SUW_2_3_aspect = {	#DIP aspect
    					duration = -1  
 				}
 			}
+		}
+	}
+	monarch_power = dip
+	ai_will_do = {
+		factor = 15
+	}
+}
+THE_SUW_2_4_aspect = {	#DIP aspect
+	cost = 100
+	potential = {
+		has_country_flag = THE_SUW_kan_1_8_flag
+	}
+	trigger = {
+		has_country_flag = THE_SUW_kan_1_8_flag
+	}
+	modifier = {
+		warscore_cost_vs_other_religion = -0.15
+	}
+	effect = {
+		hidden_effect = {
+			clr_THE_moriyaseikyou_religion_aspects_buffs = yes
 		}
 	}
 	monarch_power = dip
@@ -133,6 +160,49 @@ THE_SUW_3_3_aspect = {	#MIL aspect
 	cost = 100
 	modifier = {
 		global_manpower_modifier = 0.15
+	}
+	effect = {
+		hidden_effect = {
+			clr_THE_moriyaseikyou_religion_aspects_buffs = yes
+		}
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 15
+	}
+}
+THE_SUW_3_4_aspect = {	#MIL aspect
+	cost = 100
+	potential = {
+		num_of_subjects = 3
+	}
+	trigger = {
+		num_of_subjects = 3
+	}
+	modifier = {
+		possible_condottieri = 1
+	}
+	effect = {
+		hidden_effect = {
+			clr_THE_moriyaseikyou_religion_aspects_buffs = yes
+			mercs_do_not_cost_army_professionalism = yes
+		}
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 15
+	}
+}
+THE_SUW_3_5_aspect = {	#MIL aspect
+	cost = 100
+	potential = {
+		num_of_cavalry = 20
+	}
+	trigger = {
+		num_of_cavalry = 20
+	}
+	modifier = {
+		enable_forced_march = yes
 	}
 	effect = {
 		hidden_effect = {
