@@ -230,7 +230,7 @@ THE_clear_religious_scholar_modifiers_effect = {
   remove_country_modifier = THE_sanae_scholar_modifier
 }
 
-on_mercenary_recruited_effect = {
+on_mercenary_recruited_effect = { #暂时无效的佣兵职业度
 	if = {
         limit = {
             FROM = { 
@@ -269,6 +269,18 @@ on_mercenary_recruited_effect = {
 		}
 	}
 }
+
+THE_SUW_change_religion_scripted_effects = {
+	every_country = {
+		limit = {
+			dominant_religion = THE_moriyaseikyou_religion
+		}
+		country_event = {
+			id = THE_SUW_events.36
+		}
+	}
+}
+
 
 ##################################################
 ### not on_actions scripted effect 

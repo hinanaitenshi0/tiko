@@ -1,0 +1,251 @@
+Touhou = {
+
+	THE_moriyaseikyou_religion = {
+		color = { 60 234 103 }
+		heretic = { th_heretic_lunar th_heretic_anime th_heretic_manga_elitists }
+		icon = 41
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			tolerance_own = 2
+			church_power_modifier = 0.25
+		}
+
+		province = {
+			local_missionary_strength = -0.01
+		}
+
+		#Center of religions are always for the religion group as a whole
+		#center_of_religion = 4998
+
+		allowed_center_conversion = {
+			th_hakureishinto
+			th_taoist
+			th_buddhist
+			th_oldhakurei
+			th_shinkism
+			th_scientistic
+			THE_kagiyama_religion
+			THE_minoriko_religion
+			THE_keiki_religion
+			THE_Seija_religion
+		}
+
+		country_as_secondary = {
+			global_missionary_strength = 0.01
+			global_trade_goods_size_modifier = 0.1
+		}
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			always = yes
+		}
+
+		uses_judaism_power = yes
+		aspects_name = God_acts
+
+		aspects = {
+			THE_SUW_1_1_aspect
+			THE_SUW_1_2_aspect
+			THE_SUW_1_3_aspect
+			THE_SUW_2_1_aspect
+			THE_SUW_2_2_aspect
+			THE_SUW_2_3_aspect
+			THE_SUW_2_4_aspect
+			THE_SUW_3_1_aspect
+			THE_SUW_3_2_aspect
+			THE_SUW_3_3_aspect
+			THE_SUW_3_4_aspect
+			THE_SUW_3_5_aspect
+		}
+
+		celebrate = {
+			cost = 200
+			potential = {
+			}
+			allow = {
+				custom_trigger_tooltip = {
+					tooltip = th_occult_can_cast_spell_tt
+					OR = {
+						has_church_aspect = THE_SUW_1_1_aspect
+						has_church_aspect = THE_SUW_1_2_aspect
+						has_church_aspect = THE_SUW_1_3_aspect
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = THE_SUW_1_1_aspect
+					} 
+					OR = {
+						NOT = { has_country_flag = THE_SUW_touhou_advisor_flag }
+						had_country_flag = {
+							flag = THE_SUW_touhou_advisor_flag
+							days = 3650
+						} 
+					}
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						has_church_aspect = THE_SUW_1_1_aspect
+					}
+					country_event = {
+						id = THE_SUW_events.35
+					}
+					hidden_effect = {
+						clr_country_flag = THE_SUW_touhou_advisor_flag
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = THE_SUW_1_2_aspect
+					} 
+					every_owned_province = {
+						add_prosperity = 30
+					}	
+				}
+				if = {
+					limit = {
+						has_church_aspect = THE_SUW_1_3_aspect
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_church
+    								loyalty = 30
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_church
+    									loyalty = 50
+									}
+								}
+							}
+						}
+						add_adm_power = 50
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_church
+    								loyalty = 50
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_church
+    									loyalty = 70
+									}
+								}
+							}
+						}
+						add_adm_power = 100
+					}
+					if = {
+						limit = {
+							estate_loyalty = {
+    							estate = estate_church
+    							loyalty = 70
+							}
+						}
+						add_adm_power = 150
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_nobles
+    								loyalty = 30
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_nobles
+    									loyalty = 50
+									}
+								}
+							}
+						}
+						add_dip_power = 50
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_nobles
+    								loyalty = 50
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_nobles
+    									loyalty = 70
+									}
+								}
+							}
+						}
+						add_dip_power = 100
+					}
+					if = {
+						limit = {
+							estate_loyalty = {
+    							estate = estate_nobles
+    							loyalty = 70
+							}
+						}
+						add_dip_power = 150
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_burghers
+    								loyalty = 30
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_burghers
+    									loyalty = 50
+									}
+								}
+							}
+						}
+						add_mil_power = 50
+					}
+					if = {
+						limit = {
+							AND = {
+								estate_loyalty = {
+    								estate = estate_burghers
+    								loyalty = 50
+								}
+								NOT = {
+									estate_loyalty = {
+    									estate = estate_burghers
+    									loyalty = 70
+									}
+								}
+							}
+						}
+						add_mil_power = 100
+					}
+					if = {
+						limit = {
+							estate_loyalty = {
+    							estate = estate_burghers
+    							loyalty = 70
+							}
+						}
+						add_mil_power = 150
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+
+		harmonized_modifier = THE_SUW_moriyaseikyou
+
+		crusade_name = The_cycle_of_heaven_and_earth
+		
+	}
+}

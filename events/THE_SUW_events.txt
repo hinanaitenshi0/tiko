@@ -2086,3 +2086,31 @@ country_event = {
 	}
 }
 
+country_event = {
+	#主流转教事件
+	id = THE_SUW_events.36
+	title = "THE_SUW_events.36.title"
+	desc = "THE_SUW_events.36.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.36.a.name
+		change_religion = THE_moriyaseikyou_religion
+		add_prestige = -50
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+	option = {
+		name = THE_SUW_events.36.b.name
+		add_stability = -1
+		ai_chance = {
+			factor = 30
+		}
+	}
+}

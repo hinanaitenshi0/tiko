@@ -52,6 +52,11 @@
  Kanako: "神奈子"
 ### dynasty_END
 
+### Religion
+ THE_moriyaseikyou_religion: "守矢正教"
+ THE_moriyaseikyou_religion_religion_desc: "1"
+### Religionend
+
 ### ideas
  THE_SUW_Original_ideas: "诹访理念"
  THE_SUW_Original_ideas_start: "诹访传统"

@@ -1,0 +1,41 @@
+#诹访的游历者
+THE_moriya_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	improve_relation_modifier = 0.2
+	religion = yes
+}
+#八坂的虔信者
+THE_kanako_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	yearly_army_professionalism = 0.01
+	religion = yes
+
+}
+#唯一的推崇者
+THE_yuuitsu_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	max_absolutism = 20
+	religion = yes
+}
+#乾坤的调和者
+THE_kamigami_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	allow_client_states = yes
+	religion = yes
+}
+#奇迹的追寻者
+THE_sanae_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	monthly_church_power = 0.03
+	religion = yes
+}
