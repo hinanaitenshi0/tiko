@@ -36,13 +36,16 @@
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "§T¡V^yKN!n§!"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "AQ¸‹àemcwÆ–-NÑSUS¦^" 
  THE_SUW_4_5_tt_2: "‚YœgTaÿ@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!Sb:NbìN„vg!ýVÿvQÖN§Yåe,g§!0W:SýV¶RRO«ˆbìNçub"
- THE_SUW_KOR_development: "áOSm„vÑSUS¦^: §Y[ROOT.suwdevelopment.GetValue]§! §GNSŽN§!IlÎW„vÑSUS¦^: §Y[ROOT.kordevelopment.GetValue]§! "
+ THE_SUW_KOR_development_tt: "áOSm„vÑSUS¦^: §Y[ROOT.suwdevelopment.GetValue]§! §GNSŽN§!IlÎW„vÑSUS¦^: §Y[ROOT.kordevelopment.GetValue]§! "
  THE_SUW_event_32_tt: "·ƒ—VNmÞTjO:N2NýVFUãS¸SÿåNÊSN*N§Gbú‹§!ÿå‚vQsSMOÿRgœœS…QD–ŽNbýV"
  THE_SUW_event_33_tt: "Ðc:y:·ƒÖSgœœ›Qÿ.^©Rgœœs^ÛS"
  THE_SUW_suw_2_8_tt: "òTSgœœ6ejO—RYeˆR²b"
  God_acts: "^yfLˆ‹N"
  The_cycle_of_heaven_and_earth: "ŒNdWAml"
- THE_root_country_development: "SVMRýV¶RÑSUS¦^: §Y[ROOT.root_country_development.GetValue]§! "
+# THE_root_country_development_tt: "SVMRýV¶RÑSUS¦^: §Y[ROOT.root_country_development.GetValue]§! "
+ THE_SUW_suw_1_6_tt: ":VSëTsY§YT†Ú‹„vY²N˜R§!yrCg"
+ THE_SUW_kan_1_6_tt: ":VSëTsY§Yib.VÂríp§!yrCgÿv^ˆmd–vQb—Heœg"
+ THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰NO§YVYe§!ýV¶RˆvO(TíuïS:VS)"
 ### TOOLTIP_END
 
 ### dynasty
@@ -114,6 +117,7 @@
  THE_yuuitsu_scholar_modifier: "=UN„v¨cTw"
  THE_kamigami_scholar_modifier: "ŒNdW„vŒŒTw"
  THE_sanae_scholar_modifier: "GYù„výûRw"
+ THE_SUW_bottom_up_country_modifier: "êNwN"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -329,3 +333,10 @@ sanae_desc: "1"
  THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "Ž÷‹9eYe"
  THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "ybkTR—Ù†ÿ"
 ### DIPLOMATIC_END
+
+###
+ THE_SUW_force_religion: "ckMO"
+ THE_SUW_force_religion_desc: "1"
+ PEACE_THE_SUW_force_religion: "ckMO"
+ CB_ALLOWED_THE_SUW_force_religion: "‰BlckMO"
+###

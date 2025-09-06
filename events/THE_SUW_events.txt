@@ -2086,7 +2086,7 @@ country_event = {
 	}
 }
 
-country_event = {
+#country_event = {
 	#主流转教事件
 	id = THE_SUW_events.36
 	title = "THE_SUW_events.36.title"
@@ -2113,4 +2113,4 @@ country_event = {
 			factor = 30
 		}
 	}
-}
+#}

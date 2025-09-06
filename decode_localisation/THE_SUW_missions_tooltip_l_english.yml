@@ -36,13 +36,16 @@
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "§T御神之渡§!"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "允许无损耗集中发展度" 
  THE_SUW_4_5_tt_2: "如果同意，@RYU§Y[RYU.GetName]§!和@ANU§Y[ANU.GetName]§!将成为我们的朝贡国，其他§Y日本§!地区国家则会被我们继承"
- THE_SUW_KOR_development: "信浓的发展度: §Y[ROOT.suwdevelopment.GetValue]§! §G不小于§!汉城的发展度: §Y[ROOT.kordevelopment.GetValue]§! "
+ THE_SUW_KOR_development_tt: "信浓的发展度: §Y[ROOT.suwdevelopment.GetValue]§! §G不小于§!汉城的发展度: §Y[ROOT.kordevelopment.GetValue]§! "
  THE_SUW_event_32_tt: "获得济州作为两国通商口岸，以及一个§G承诺§!，若其即位，则朝鲜将内附于我国"
  THE_SUW_event_33_tt: "提示:获取朝鲜军通，帮助朝鲜平叛"
  THE_SUW_suw_2_8_tt: "已将朝鲜收作宗教守护"
  God_acts: "神明行事"
  The_cycle_of_heaven_and_earth: "乾坤流转"
- THE_root_country_development: "当前国家发展度: §Y[ROOT.root_country_development.GetValue]§! "
+# THE_root_country_development_tt: "当前国家发展度: §Y[ROOT.root_country_development.GetValue]§! "
+ THE_SUW_suw_1_6_tt: "强化巫女§Y虔诚的外交官§!特权"
+ THE_SUW_kan_1_6_tt: "强化巫女§Y扩张狂热§!特权，并消除其负面效果"
+ THE_SUW_kan_1_7_tt: "允许通过战争条约§Y(正位)§!使§Y异教§!国家皈依"
 ### TOOLTIP_END
 
 ### dynasty
@@ -114,6 +117,7 @@
  THE_yuuitsu_scholar_modifier: "唯一的推崇者"
  THE_kamigami_scholar_modifier: "乾坤的调和者"
  THE_sanae_scholar_modifier: "奇迹的追寻者"
+ THE_SUW_bottom_up_country_modifier: "自下而上"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -329,3 +333,10 @@ sanae_desc: "1"
  THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "邀请改教"
  THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "禁止吃青蛙！"
 ### DIPLOMATIC_END
+
+###CB
+ THE_SUW_force_religion: "正位"
+ THE_SUW_force_religion_desc: "对方将信仰我们的宗教"
+ PEACE_THE_SUW_force_religion: "要求正位"
+ CB_ALLOWED_THE_SUW_force_religion: "要求正位"
+###CB_END

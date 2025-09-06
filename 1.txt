@@ -42,6 +42,7 @@ change_religion = THE_moriyaseikyou_religion
 	add_core = ROOT
 }
 add_splendor = 600
-add_church_power = 100
-#clr_country_flag = THE_SUW_kan_1_8_flag
-#set_country_flag = THE_SUW_kan_1_8_flag
+add_church_power = 200
+#clr_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
+set_country_flag = THE_SUW_kan_1_7_flag
+swap_non_generic_missions = yes

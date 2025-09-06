@@ -43,8 +43,10 @@ THE_SUW_SUW_and_KAN_reform = {
 		tolerance_own = 2
 		global_tax_modifier = 0.1
 		trade_efficiency = 0.1
-		development_cost_modifier = -0.1
+		development_cost_modifier = -0.05
 		global_missionary_strength = 0.02
+		church_loyalty_modifier = 0.5
+		estate_church_influence_modifier = 0.1
 		cb_on_religious_enemies = yes
 	}
 	government_abilities = {

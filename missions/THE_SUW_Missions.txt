@@ -719,9 +719,21 @@ THE_SUW_stage_2_branch_suw_1 = {
 		position = 6
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			estate_loyalty = {
+    			estate = estate_church
+    			loyalty = 100
+			}
+			estate_influence = {
+    			estate = estate_church 
+    			influence = 70
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			custom_tooltip = THE_SUW_suw_1_6_tt
+			set_country_flag = THE_SUW_suw_1_6_flag
+		} 
 	}
 
 	THE_SUW_suw_1_7 = {
@@ -730,9 +742,16 @@ THE_SUW_stage_2_branch_suw_1 = {
 		required_missions = { THE_SUW_suw_1_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			full_idea_group = humanist_ideas
+		} 
 
-		effect = {  } 
+		effect = {  
+			add_country_modifier = {
+				name = THE_SUW_bottom_up_country_modifier
+				duration = -1
+			}
+		} 
 	}
 
 	THE_SUW_suw_1_8 = {
@@ -937,7 +956,7 @@ THE_SUW_stage_2_branch_suw_2 = {
        				which = suwdevelopment
        				which = kordevelopment
    				}
-				custom_tooltip = THE_SUW_KOR_development
+				custom_tooltip = THE_SUW_KOR_development_tt
 			}
 		} 
 
@@ -1281,9 +1300,21 @@ THE_SUW_stage_2_branch_kan_1 = {
 		position = 6
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			estate_loyalty = {
+    			estate = estate_church
+    			loyalty = 100
+			}
+			estate_influence = {
+    			estate = estate_church 
+    			influence = 70
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			custom_tooltip = THE_SUW_kan_1_6_tt
+			set_country_flag = THE_SUW_kan_1_6_flag
+		} 
 	}
 
 	THE_SUW_kan_1_7 = {
@@ -1292,9 +1323,14 @@ THE_SUW_stage_2_branch_kan_1 = {
 		required_missions = { THE_SUW_kan_1_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			full_idea_group = religious_ideas
+		} 
 
-		effect = {  } 
+		effect = {  
+			custom_tooltip = THE_SUW_kan_1_7_tt
+			set_country_flag = THE_SUW_kan_1_7_flag
+		} 
 	}
 
 	THE_SUW_kan_1_8 = {

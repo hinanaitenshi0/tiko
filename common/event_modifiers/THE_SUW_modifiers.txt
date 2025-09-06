@@ -221,10 +221,14 @@ THE_SUW_Peace_under_the_miko_province_modifier = {
 	local_production_efficiency = 0.1
 	local_state_maintenance_modifier = -0.1
 }
-#小弟自治度
-THE_SUW_vassal_country_modifier = {
-	global_autonomy = -0.1
+#自下而上
+THE_SUW_bottom_up_country_modifier = {
+	global_foreign_trade_power = 0.33
 }
+#小弟自治度
+#THE_SUW_vassal_country_modifier = {
+#	global_autonomy = -0.1
+#}
 #满人的支持
 THE_SUW_The_support_of_Manchus_country_modifier = {
 	leader_land_manuever = 1

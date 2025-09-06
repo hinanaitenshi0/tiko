@@ -71,8 +71,8 @@ THE_SUW_Religious_Protection = {
 	support_loyalists = yes
 	scutage = yes
 	# Modifiers:
-	modifier_subject = {
-		modifier = THE_SUW_vassal_country_modifier
-	}
+	#modifier_subject = {
+	#	modifier = THE_SUW_vassal_country_modifier
+	#}
 	# Trade Protectorate don't get the ordinary subject_nation penalty 
 }
