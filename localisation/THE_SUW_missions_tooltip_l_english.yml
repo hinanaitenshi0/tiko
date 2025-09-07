@@ -43,9 +43,11 @@
  God_acts: "^yfLˆ‹N"
  The_cycle_of_heaven_and_earth: "ŒNdWAml"
 # THE_root_country_development_tt: "SVMRýV¶RÑSUS¦^: §Y[ROOT.root_country_development.GetValue]§! "
- THE_SUW_suw_1_6_tt: ":VSëTsY§YT†Ú‹„vY²N˜R§!yrCg"
- THE_SUW_kan_1_6_tt: ":VSëTsY§Yib.VÂríp§!yrCgÿv^ˆmd–vQb—Heœg"
- THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰NO§YVYe§!ýV¶RˆvO(TíuïS:VS)"
+ THE_SUW_suw_1_6_tt: "VËYekÛLˆ—RYe9ei—ÿ:VSëTsY§YT†Ú‹„vY²N˜R§!yrCg"
+ THE_SUW_kan_1_6_tt: "VËYekÛLˆ—RYe9ei—ÿ:VSëTsY§Yib.VÂríp§!yrCgÿv^ˆmd–vQb—Heœg"
+ THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰Nag¦u§Y(ckMO)§!O§YVYe§!ýV¶RˆvO"
+ THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—Vù‹¿‹PRN^SY²NáOag"
+ THE_SUW_kan_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V^yHYPRN^SY²NáOag"
 ### TOOLTIP_END
 
 ### dynasty
@@ -334,9 +336,9 @@ sanae_desc: "1"
  THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "ybkTR—Ù†ÿ"
 ### DIPLOMATIC_END
 
-###
+###CB
  THE_SUW_force_religion: "ckMO"
- THE_SUW_force_religion_desc: "1"
- PEACE_THE_SUW_force_religion: "ckMO"
+ THE_SUW_force_religion_desc: "ùR¹eSáOðNbìN„v—RYe"
+ PEACE_THE_SUW_force_religion: "‰BlckMO"
  CB_ALLOWED_THE_SUW_force_religion: "‰BlckMO"
-###
+###CB_END

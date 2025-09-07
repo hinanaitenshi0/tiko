@@ -758,11 +758,35 @@ THE_SUW_stage_2_branch_suw_1 = {
 		icon = mission_unknown_mission
 		position = 8
 		required_missions = { THE_SUW_suw_1_7 } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			region = japan_region
+			NOT = { religion = th_moriyashinto } 
+		} 
 
-		trigger = {  } 
+		trigger = {  
+			japan_region = {
+				type = all
+				religion = th_moriyashinto
+				owned_by = ROOT
+			}
+			calc_true_if = {
+				any_country = {
+					NOT = { capital_scope = { region = japan_region } }
+					NOT = { religion = th_moriyashinto }
+					NOT = { vassal_of = PREV }
+					ai_attitude = {
+						who = PREV
+						attitude = attitude_friendly
+					}
+					num_of_cities = 5
+				}
+				amount = 6
+			}
+			has_ruler_flag = The_SUW_suw_flag
+		} 
 
 		effect = {  
+			custom_tooltip = THE_SUW_suw_1_8_tt
 			set_country_flag = THE_SUW_suw_1_8_flag
 		} 
 	}
@@ -774,11 +798,18 @@ THE_SUW_stage_2_branch_suw_1 = {
 			THE_SUW_suw_1_8
 			THE_SUW_suw_2_8
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { province_id = 735 } 
 
-		trigger = {  } 
+		trigger = {  
+			735 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = th_moriyashinto
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			
+		} 
 	}
 
 	THE_SUW_suw_1_10 = {
@@ -1337,11 +1368,27 @@ THE_SUW_stage_2_branch_kan_1 = {
 		icon = mission_unknown_mission
 		position = 8
 		required_missions = { THE_SUW_kan_1_7 } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			region = japan_region
+			NOT = { religion = th_moriyashinto } 
+		} 
 
-		trigger = {  } 
+		trigger = {  
+			japan_region = {
+				type = all
+				religion = th_moriyashinto
+				owned_by = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 30
+				is_overseas = no
+				NOT = { region = japan_region }
+			}
+			has_ruler_flag = The_SUW_kan_flag
+		} 
 
 		effect = {  
+			custom_tooltip = THE_SUW_kan_1_8_tt
 			set_country_flag = THE_SUW_kan_1_8_flag
 		} 
 	}
@@ -1390,7 +1437,11 @@ THE_SUW_stage_2_branch_kan_2 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			korea_region = {
+				add_permanent_claim = ROOT
+			}
+		} 
 	}
 
 	THE_SUW_kan_2_8 = {
@@ -1491,7 +1542,11 @@ THE_SUW_stage_2_branch_kan_4 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			japan_region = {
+    			add_permanent_claim = ROOT
+			}
+		} 
 	}
 
 	THE_SUW_kan_4_8 = {

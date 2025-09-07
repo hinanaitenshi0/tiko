@@ -185,9 +185,9 @@ THE_SUW_3_4_aspect = {	#MIL aspect
 	effect = {
 		hidden_effect = {
 			clr_THE_moriyaseikyou_religion_aspects_buffs = yes
-			mercs_do_not_cost_army_professionalism = yes
-			has_not_free_mercs_trait = yes
-			is_not_free_merc_company = yes
+			#mercs_do_not_cost_army_professionalism = yes
+			#has_not_free_mercs_trait = yes
+			#is_not_free_merc_company = yes
 		}
 	}
 	monarch_power = mil
