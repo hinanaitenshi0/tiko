@@ -41,8 +41,14 @@ change_religion = THE_moriyaseikyou_religion
 	cede_province = ROOT
 	add_core = ROOT
 }
+735 = {
+	cede_province = ROOT
+	add_core = ROOT
+}
 add_splendor = 600
 add_church_power = 200
-clr_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
-set_country_flag = THE_SUW_kan_1_7_flag
+set_country_flag = enable_korean_palace_flag
+clr_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
+set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
 swap_non_generic_missions = yes
+set_country_flag = enables_estate_dhimmi_flag

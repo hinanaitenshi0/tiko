@@ -48,6 +48,7 @@
  THE_SUW_kan_1_7_tt: "允许通过战争条约§Y(正位)§!使§Y异教§!国家皈依"
  THE_SUW_suw_1_8_tt: "完成宗教改革后，将获得§G诹访子专属§!外交信条"
  THE_SUW_kan_1_8_tt: "完成宗教改革后，将获得§G神奈子专属§!外交信条"
+ THE_SUW_kan_1_9_tt: "允许启用§G景福宫§!奇观"
 ### TOOLTIP_END
 
 ### dynasty
@@ -314,7 +315,9 @@
 ### Great_projects_END
 
 ### ESTATE
-
+ THE_SUW_noble_name: "守护"
+ THE_SUW_burghers_name: "予取"
+ THE_SUW_dhimmi_name: "迷子"
 ### ESTATE_END
 
 ###SCHOOL

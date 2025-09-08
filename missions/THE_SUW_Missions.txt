@@ -801,14 +801,27 @@ THE_SUW_stage_2_branch_suw_1 = {
 		provinces_to_highlight = { province_id = 735 } 
 
 		trigger = {  
-			735 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				religion = th_moriyashinto
-			}
+			#u735 = {
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#	religion = th_moriyashinto
+			#}
 		} 
 
 		effect = {  
-			
+			unlock_estate = {
+				estate = estate_dhimmi
+			}
+			set_country_flag = enables_estate_dhimmi_flag
+			735 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			4188 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
 		} 
 	}
 
@@ -1404,7 +1417,10 @@ THE_SUW_stage_2_branch_kan_1 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			custom_tooltip = THE_SUW_kan_1_9_tt
+			set_country_flag = enable_korean_palace_flag
+		} 
 	}
 
 	THE_SUW_kan_1_10 = {

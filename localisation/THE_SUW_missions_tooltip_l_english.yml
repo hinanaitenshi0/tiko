@@ -46,8 +46,9 @@
  THE_SUW_suw_1_6_tt: "VËYekÛLˆ—RYe9ei—ÿ:VSëTsY§YT†Ú‹„vY²N˜R§!yrCg"
  THE_SUW_kan_1_6_tt: "VËYekÛLˆ—RYe9ei—ÿ:VSëTsY§Yib.VÂríp§!yrCgÿv^ˆmd–vQb—Heœg"
  THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰Nag¦u§Y(ckMO)§!O§YVYe§!ýV¶RˆvO"
- THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—Vù‹¿‹PRN^SY²NáOag"
- THE_SUW_kan_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V^yHYPRN^SY²NáOag"
+ THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§Gù‹¿‹PRN^S§!Y²NáOag"
+ THE_SUW_kan_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§G^yHYPRN^S§!Y²NáOag"
+ THE_SUW_kan_1_9_tt: "AQ¸‹=T(u§Gofy«R§!GYÂ‰"
 ### TOOLTIP_END
 
 ### dynasty
@@ -314,7 +315,9 @@
 ### Great_projects_END
 
 ### ESTATE
-
+ THE_SUW_noble_name: "ˆR²b"
+ THE_SUW_burghers_name: "ˆNÖS"
+ THE_SUW_dhimmi_name: "÷PR"
 ### ESTATE_END
 
 ###SCHOOL

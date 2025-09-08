@@ -1,0 +1,43 @@
+estate_nobles = {
+	custom_name = {
+		desc = THE_SUW_noble_name
+		trigger = {
+			OR = {
+				tag = SUW
+				was_tag = SUW
+			}
+		}
+	}
+	privileges = {
+	}
+}
+
+estate_burghers = {
+	custom_name = {
+		desc = THE_SUW_burghers_name
+		trigger = {
+			OR = {
+				tag = SUW
+				was_tag = SUW
+			}
+		 }
+	}
+	
+	privileges = {
+	}
+}
+
+estate_dhimmi = {
+	custom_name = {
+		desc = THE_SUW_dhimmi_name
+		trigger = {
+			OR = {
+				tag = SUW
+				was_tag = SUW
+			}
+		 }
+	}
+	
+	privileges = {
+	}
+}
