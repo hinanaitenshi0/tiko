@@ -112,3 +112,57 @@ THE_SUW_define_kanako_and_suwako_effect = {
 	set_ruler_flag = touhou_original_ruler
 	set_ruler_flag = th_original_kana
 }
+THE_SUW_change_name_scripted_effects = {
+	735 = {
+		change_province_name = "天原"
+		rename_capital = "天原"
+	}
+	2744 = {
+		change_province_name = "缘和"
+		rename_capital = "缘和"
+	}
+	4232 = {
+		change_province_name = "流形"
+		rename_capital = "流形"
+	}
+	2743 = {
+		change_province_name = "柏岳"
+		rename_capital = "柏岳"
+	}
+	2742 = {
+		change_province_name = "源渡"
+		rename_capital = "源渡"
+	}
+	1845 = {
+		change_province_name = "旧金山"
+		rename_capital = "旧金山"
+	}
+	732 = {
+		change_province_name = "云涯"
+		rename_capital = "云涯"
+	}
+	733 = {
+		change_province_name = "靡滨"
+		rename_capital = "靡滨"
+	}
+	4231 = {
+		change_province_name = "始芒"
+		rename_capital = "始芒"
+	}
+	734 = {
+		change_province_name = "间途"
+		rename_capital = "间途"
+	}
+	4230 = {
+		change_province_name = "潮冲"
+		rename_capital = "潮冲"
+	}
+	4230 = {
+		change_province_name = "终厄"
+		rename_capital = "终厄"
+	}
+	2694 = {
+		change_province_name = "浮涛"
+		rename_capital = "浮涛"
+	}
+}

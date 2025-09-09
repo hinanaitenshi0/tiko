@@ -48,6 +48,7 @@
  THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰Nag¦u§Y(ckMO)§!O§YVYe§!ýV¶RˆvO"
  THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§Gù‹¿‹PRN^S§!Y²NáOag"
  THE_SUW_kan_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§G^yHYPRN^S§!Y²NáOag"
+ THE_SUW_suw_1_9_tt: "PˆN§Ygœœ§!hQƒX°e„v0WT"
  THE_SUW_kan_1_9_tt: "AQ¸‹=T(u§Gofy«R§!GYÂ‰"
 ### TOOLTIP_END
 
@@ -75,6 +76,10 @@
  THE_SUW_idea_6: "qSaWNVn4l"
  #"8lÜ„vcËS"
  THE_SUW_idea_7: "???"
+ THE_SUW_suw_ideas: "dW‚tõV"
+ THE_SUW_suw_idea_6: "è–KNnÉl"
+ THE_SUW_kan_ideas: "ŒNyztõV"
+ THE_SUW_kan_idea_5: "Ù†åNãS1žÿ¹eôÇ†xy"
 ### ideas_END
 
 ### MODIFIER
@@ -345,3 +350,8 @@ sanae_desc: "1"
  PEACE_THE_SUW_force_religion: "‰BlckMO"
  CB_ALLOWED_THE_SUW_force_religion: "‰BlckMO"
 ###CB_END
+
+###province_name
+ tengen:0 ")YŸS"
+ enwa:0 "ŒT"
+###province_name_END

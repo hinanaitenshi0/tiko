@@ -12,6 +12,8 @@ THE_SUW_Original_ideas = {
 		OR = {
 			tag = SUW
 		}
+		NOT = { has_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag }
+		NOT = { has_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag }
 	}
 	free = yes
 	
@@ -41,6 +43,120 @@ THE_SUW_Original_ideas = {
 		global_trade_goods_size_modifier = 0.1
 		diplomatic_annexation_cost = -0.15
 		land_maintenance_modifier = -0.1
+	}
+	
+	THE_SUW_idea_6 = {
+		army_tradition_decay = -0.01
+		military_tactics = 0.1
+	}
+	
+	THE_SUW_idea_7 = {
+		#administrative_efficiency = 0.05
+		#governing_capacity_modifier = 0.20
+	}
+}
+
+THE_SUW_suw_ideas = {
+	start = {
+		diplomats = 1
+		ae_impact = -0.1
+	}
+
+	bonus = {
+		warscore_cost_vs_other_religion = -0.20
+	}
+
+	trigger = {
+		OR = {
+			tag = SUW
+		}
+		has_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
+	}
+	free = yes
+	
+	THE_SUW_idea_1 = {
+		technology_cost = -0.075
+		idea_cost = -0.075
+	}
+
+	THE_SUW_idea_2 = {
+		morale_damage = 0.15
+		ship_durability = 0.05
+	}
+	
+	THE_SUW_idea_3 = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+		diplomatic_upkeep = 1
+		max_absolutism = 10
+	}
+	
+	THE_SUW_idea_4 = {
+		manpower_in_true_faith_provinces = 0.2
+		all_estate_loyalty_equilibrium = 0.1
+	}
+	
+	THE_SUW_idea_5 = {
+		global_trade_goods_size_modifier = 0.1
+		diplomatic_annexation_cost = -0.15
+		land_maintenance_modifier = -0.1
+	}
+	
+	THE_SUW_suw_idea_6 = {
+		liberty_desire_from_subject_development = -0.33
+		accept_vassalization_reasons = 15
+		reduced_stab_impacts = yes
+	}
+	
+	THE_SUW_idea_7 = {
+		#administrative_efficiency = 0.05
+		#governing_capacity_modifier = 0.20
+	}
+}
+
+THE_SUW_kan_ideas = {
+	start = {
+		diplomats = 1
+		ae_impact = -0.1
+	}
+
+	bonus = {
+		warscore_cost_vs_other_religion = -0.20
+	}
+
+	trigger = {
+		OR = {
+			tag = SUW
+		}
+		has_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
+	}
+	free = yes
+	
+	THE_SUW_idea_1 = {
+		technology_cost = -0.075
+		idea_cost = -0.075
+	}
+
+	THE_SUW_idea_2 = {
+		morale_damage = 0.15
+		ship_durability = 0.05
+	}
+	
+	THE_SUW_idea_3 = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+		diplomatic_upkeep = 1
+		max_absolutism = 10
+	}
+	
+	THE_SUW_idea_4 = {
+		manpower_in_true_faith_provinces = 0.2
+		all_estate_loyalty_equilibrium = 0.1
+	}
+	
+	THE_SUW_kan_idea_5 = {
+		core_creation = -0.2
+		yearly_army_professionalism = 0.01
 	}
 	
 	THE_SUW_idea_6 = {

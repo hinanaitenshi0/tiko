@@ -1070,6 +1070,7 @@ country_event = {
 			set_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
 		}
 		swap_non_generic_missions = yes
+		swap_free_idea_group = yes
 	}
 }
 
@@ -1095,6 +1096,7 @@ country_event = {
 			set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
 		}
 		swap_non_generic_missions = yes
+		swap_free_idea_group = yes
 	}
 }
 

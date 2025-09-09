@@ -48,6 +48,7 @@
  THE_SUW_kan_1_7_tt: "允许通过战争条约§Y(正位)§!使§Y异教§!国家皈依"
  THE_SUW_suw_1_8_tt: "完成宗教改革后，将获得§G诹访子专属§!外交信条"
  THE_SUW_kan_1_8_tt: "完成宗教改革后，将获得§G神奈子专属§!外交信条"
+ THE_SUW_suw_1_9_tt: "赐予§Y朝鲜§!全境新的地名"
  THE_SUW_kan_1_9_tt: "允许启用§G景福宫§!奇观"
 ### TOOLTIP_END
 
@@ -75,6 +76,10 @@
  THE_SUW_idea_6: "山坡与湖水"
  #"永远的挚友"
  THE_SUW_idea_7: "???"
+ THE_SUW_suw_ideas: "坤舆理念"
+ THE_SUW_suw_idea_6: "雨之源泉"
+ THE_SUW_kan_ideas: "乾穹理念"
+ THE_SUW_kan_idea_5: "蛙以口鸣，方致蛇祸"
 ### ideas_END
 
 ### MODIFIER
@@ -345,3 +350,8 @@ sanae_desc: "1"
  PEACE_THE_SUW_force_religion: "要求正位"
  CB_ALLOWED_THE_SUW_force_religion: "要求正位"
 ###CB_END
+
+###province_name
+ tengen:0 "天原"
+ enwa:0 "缘和"
+###province_name_END

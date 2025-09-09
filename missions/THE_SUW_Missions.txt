@@ -788,6 +788,7 @@ THE_SUW_stage_2_branch_suw_1 = {
 		effect = {  
 			custom_tooltip = THE_SUW_suw_1_8_tt
 			set_country_flag = THE_SUW_suw_1_8_flag
+			change_adm = 1
 		} 
 	}
 
@@ -811,6 +812,7 @@ THE_SUW_stage_2_branch_suw_1 = {
 			unlock_estate = {
 				estate = estate_dhimmi
 			}
+			custom_tooltip = empty_line_tt
 			set_country_flag = enables_estate_dhimmi_flag
 			735 = {
 				add_base_tax = 2
@@ -822,6 +824,11 @@ THE_SUW_stage_2_branch_suw_1 = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
+			custom_tooltip = empty_line_tt
+			custom_tooltip = THE_SUW_suw_1_9_tt
+			hidden_effect = {
+				THE_SUW_change_name_scripted_effects = yes
+			}
 		} 
 	}
 
@@ -831,9 +838,38 @@ THE_SUW_stage_2_branch_suw_1 = {
 		required_missions = { THE_SUW_suw_1_9 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			piety = 1
+		} 
 
-		effect = {  } 
+		effect = {  
+			change_religion = THE_moriyaseikyou_religion
+			if = {
+				limit = {  
+					KOR = {
+						is_subject_of = ROOT
+						is_subject_of_type = THE_SUW_Religious_Protection
+					}
+				}
+				KOR = {
+					change_religion = THE_moriyaseikyou_religion
+				}
+			}
+			if = {
+				limit = {  
+					SU0 = {
+						is_subject_of = ROOT
+						is_subject_of_type = THE_SUW_Religious_Protection
+					}
+				}
+				SU0 = {
+					change_religion = THE_moriyaseikyou_religion
+				}
+			}
+			4188 = {
+				add_reform_center = THE_moriyaseikyou_religion
+			}
+		} 
 	}
 }
 THE_SUW_stage_2_branch_suw_2 = {
@@ -1403,6 +1439,7 @@ THE_SUW_stage_2_branch_kan_1 = {
 		effect = {  
 			custom_tooltip = THE_SUW_kan_1_8_tt
 			set_country_flag = THE_SUW_kan_1_8_flag
+			change_adm = 1
 		} 
 	}
 
@@ -1420,6 +1457,15 @@ THE_SUW_stage_2_branch_kan_1 = {
 		effect = {  
 			custom_tooltip = THE_SUW_kan_1_9_tt
 			set_country_flag = enable_korean_palace_flag
+			custom_tooltip = empty_line_tt
+			add_great_project_tier = {
+				type = gyeongbok_palace tier = 1 
+			}
+			custom_tooltip = empty_line_tt
+			custom_tooltip = THE_SUW_suw_1_9_tt
+			hidden_effect = {
+				THE_SUW_change_name_scripted_effects = yes
+			}
 		} 
 	}
 
@@ -1429,9 +1475,20 @@ THE_SUW_stage_2_branch_kan_1 = {
 		required_missions = { THE_SUW_kan_1_9 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			piety = 1
+		} 
 
-		effect = {  } 
+		effect = {  
+			change_religion = THE_moriyaseikyou_religion
+			set_defender_of_the_faith = {
+				who = ROOT  #指定国家
+				religion = THE_moriyaseikyou_religion  #指定宗教
+			}
+			4188 = {
+				add_reform_center = THE_moriyaseikyou_religion
+			}
+		} 
 	}
 }
 THE_SUW_stage_2_branch_kan_2 = {

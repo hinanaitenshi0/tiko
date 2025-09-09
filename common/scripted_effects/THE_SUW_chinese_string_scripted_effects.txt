@@ -42,7 +42,6 @@ THE_SUW_define_suwako_and_kanako_effect = {
   	set_ruler_flag = touhou_original_ruler
   	set_ruler_flag = th_original_suwa
   	set_ruler_flag = The_SUW_suw_flag
-	clr_ruler_flag = The_SUW_kan_flag
 	define_consort = {
 		name = "^yHYPR"
 		dynasty = "kQBW"
@@ -96,7 +95,6 @@ THE_SUW_define_kanako_and_suwako_effect = {
   	set_ruler_flag = touhou_original_ruler
   	set_ruler_flag = th_original_kana
   	set_ruler_flag = The_SUW_kan_flag
-	clr_ruler_flag = The_SUW_suw_flag
 	define_consort = {
 		name = "˘ãøãPR"
 		dynasty = ")m‚w"
@@ -113,4 +111,58 @@ THE_SUW_define_kanako_and_suwako_effect = {
 	set_ruler_flag = touhou_character_ruler
 	set_ruler_flag = touhou_original_ruler
 	set_ruler_flag = th_original_kana
+}
+THE_SUW_change_name_scripted_effects = {
+	735 = {
+		change_province_name = ")YüS"
+		rename_capital = ")YüS"
+	}
+	2744 = {
+		change_province_name = "åT"
+		rename_capital = "åT"
+	}
+	4232 = {
+		change_province_name = "AmbV"
+		rename_capital = "AmbV"
+	}
+	2743 = {
+		change_province_name = "œg≥S"
+		rename_capital = "œg≥S"
+	}
+	2742 = {
+		change_province_name = "ên!n"
+		rename_capital = "ên!n"
+	}
+	1845 = {
+		change_province_name = "Áe—ëqS"
+		rename_capital = "Áe—ëqS"
+	}
+	732 = {
+		change_province_name = "ëNØm"
+		rename_capital = "ëNØm"
+	}
+	733 = {
+		change_province_name = "aóËn"
+		rename_capital = "aóËn"
+	}
+	4231 = {
+		change_province_name = "ÀYíÇ"
+		rename_capital = "ÀYíÇ"
+	}
+	734 = {
+		change_province_name = "Ùïê"
+		rename_capital = "Ùïê"
+	}
+	4230 = {
+		change_province_name = "no≤Q"
+		rename_capital = "no≤Q"
+	}
+	4230 = {
+		change_province_name = "»uÑS"
+		rename_capital = "»uÑS"
+	}
+	2694 = {
+		change_province_name = "nmõm"
+		rename_capital = "nmõm"
+	}
 }
