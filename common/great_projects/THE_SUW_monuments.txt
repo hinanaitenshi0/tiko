@@ -1,15 +1,21 @@
 
  THE_SUW_suwataisya = {
- 	start = 4188
+ 	#start = 4188
  	date = 1443.01.09
  	time = { months = 0	}
  	build_cost = 0
  	can_be_moved = no
  	move_days_per_unit_distance = 10
- 	starting_tier = 1
+ 	starting_tier = 0
  	type = monument
 	
  	build_trigger = {
+		owner = {
+			custom_trigger_tooltip = {
+				tooltip = THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt
+				has_country_flag = THE_SUW_Suwa_Shrine_of_the_Divine_Family_flag
+			}
+		}
  	}
 	
  	on_built = {
@@ -57,6 +63,7 @@
  		area_modifier = {
  		}
  		country_modifiers = {
+			global_missionary_strength = 0.01
  		}
  		on_upgraded = {
  		}
@@ -71,12 +78,12 @@
  		}
  		province_modifiers = {
 			global_tax_income = 12
- 		}
- 		area_modifier = {
 			state_governing_cost = -0.1
  		}
+ 		area_modifier = {
+ 		}
 		country_modifiers = {
-			development_cost_modifier = -0.025
+			global_missionary_strength = 0.02
 		} 
  		on_upgraded = {
 			free_concentrate_development = yes
@@ -100,12 +107,33 @@
  		region_modifier = {
  		}
  		country_modifiers = {
-			development_cost_modifier = -0.05
+			global_missionary_strength = 0.03
+			development_cost_modifier = -0.025
 		} 
  		on_upgraded = {
 			free_concentrate_development = yes
 			custom_tooltip = THE_SUW_Concentrated_development_Suwa_Daisha_tt
  		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					has_country_flag = THE_SUW_great_projects_suw_flag
+				}
+			}
+			modifier = {
+				reverse_relation_with_same_religion = 15
+			}
+		}		
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					has_country_flag = THE_SUW_great_projects_kan_flag
+				}
+			}
+			modifier = {
+				local_religious_unity_contribution = 0.5
+			}
+		}		
  	}
 	
  	tier_3 = {
@@ -119,18 +147,38 @@
 			global_tax_income = 24
  		}
  		area_modifier = {
-			state_governing_cost = -0.2
  		}
  		region_modifier = { 
+			state_governing_cost = -0.2
  		}
 		country_modifiers = {
-			development_cost_modifier = -0.1
-			administrative_efficiency = 0.05
+			global_missionary_strength = 0.05
+			development_cost_modifier = -0.05
 		} 
  		on_upgraded = {
 			free_concentrate_development = yes
 			custom_tooltip = THE_SUW_Concentrated_development_Suwa_Daisha_tt
 			reset_golden_age = yes
  		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					has_country_flag = THE_SUW_great_projects_suw_flag
+				}
+			}
+			modifier = {
+				reverse_relation_with_same_religion = 30
+			}
+		}		
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					has_country_flag = THE_SUW_great_projects_kan_flag
+				}
+			}
+			modifier = {
+				local_religious_unity_contribution = 1
+			}
+		}
  	}
  }

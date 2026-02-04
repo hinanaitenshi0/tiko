@@ -39,3 +39,22 @@ THE_sanae_scholar_modifier = {
 	monthly_church_power = 0.3
 	religion = yes
 }
+#蛇信
+kanako_piety = { #As of 1.23 Legalism
+	movement_speed = 0.1 
+	war_exhaustion = -0.2
+	global_missionary_strength = 0.03
+	yearly_army_professionalism = 0.5
+	church_loyalty_modifier = 0.1
+	piety_dhimmi_loyalty_modifier = -0.1
+}
+#蛙舌
+suwako_piety = { #As of 1.23 Mysticism
+	diplomatic_annexation_cost = -0.1
+	reverse_relation_with_heretic_religion = 20
+	reverse_relation_with_heathen_religion = 20
+	global_trade_power = 0.3
+	yearly_innovativeness = 0.5
+	piety_church_loyalty_modifier = -0.1
+	dhimmi_loyalty_modifier = 0.1
+}

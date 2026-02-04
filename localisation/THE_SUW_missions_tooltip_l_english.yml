@@ -33,14 +33,41 @@
  THE_SUW_4_5_tt: "(@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!åNY„vNb	g§Yåe,g§!0W:SNwýNpeÏ‘SŽN§Y3§!„výV¶R):"
  The_SUW_5_1_tt: "=fù‹¿‹"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "=T(u³Q®‹0§YÍ‘ú^bìN„v¶R§!0"
- THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "§T¡V^yKN!n§!"
+ THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "AQ¸‹=T(uGYÂ‰§T0ù‹¿‹'Y>y0§!"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "AQ¸‹àemcwÆ–-NÑSUS¦^" 
  THE_SUW_4_5_tt_2: "‚YœgTaÿ@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!Sb:NbìN„vg!ýVÿvQÖN§Yåe,g§!0W:SýV¶RRO«ˆbìNçub"
  THE_SUW_KOR_development_tt: "áOSm„vÑSUS¦^: §Y[ROOT.suwdevelopment.GetValue]§! §GNSŽN§!IlÎW„vÑSUS¦^: §Y[ROOT.kordevelopment.GetValue]§! "
  THE_SUW_event_32_tt: "·ƒ—VNmÞTjO:N2NýVFUãS¸SÿåNÊSN*N§Gbú‹§!ÿå‚vQsSMOÿRgœœS…QD–ŽNbýV"
  THE_SUW_event_33_tt: "Ðc:y:·ƒÖSgœœ›Qÿ.^©Rgœœs^ÛS"
  THE_SUW_suw_2_8_tt: "òTSgœœ6ejO—RYeˆR²b"
- God_acts: "^yfLˆ‹N"
+ #God_acts: "^yfLˆ‹N"
+ kanako_piety: "Ç†áO"
+ suwako_piety: "Ù†‚"
+ THE_SUW_aspect_effect_LONG: "Fw,T^yGy„vYeò‹"
+ THE_SUW_1_1_aspect: "—VSY©R 1YSáR©R"
+ THE_SUW_1_2_aspect: "O×VbÎW"
+ THE_SUW_1_3_aspect: "2NêNuÛVaŒ ÛVaŒukQfS"
+ THE_SUW_2_1_aspect: ")YuNir =UºN:N5"
+ THE_SUW_2_2_aspect: "`O b ÖN"
+ THE_SUW_2_3_aspect: "÷åwÍS ^yf=fN"
+ THE_SUW_2_4_aspect: "ÿRŠçT‚‚Y'| FOBlî•ÃVàe'a"
+ THE_SUW_3_1_aspect: "lÃVïS(u l›RïSC`"
+ THE_SUW_3_2_aspect: "ASkQ,‚fkz‚ SVûmN"
+ THE_SUW_3_3_aspect: "áObNbáO LˆbNbLˆ"
+ THE_SUW_3_4_aspect: "LeKNLe =f:NËS"
+ THE_SUW_3_5_aspect: "äNLˆybk"
+ desc_THE_SUW_1_1_aspect: "1"
+ desc_THE_SUW_1_2_aspect: "ÝQZwweg„v›RÏ‘ ÞŒNdWýýw…Š"
+ desc_THE_SUW_1_3_aspect: "wNˆ^yf„vzfga"
+ desc_THE_SUW_2_1_aspect: "1"
+ desc_THE_SUW_2_2_aspect: "ÎN*g	gÀNHNVïzVYe KS=f÷„vR—Ù†b†N"
+ desc_THE_SUW_2_3_aspect: "`O‹Y ‰áOYeTÿ"
+ desc_THE_SUW_2_4_aspect: "Ÿl„vz‚=g"
+ desc_THE_SUW_3_1_aspect: "N=fô‹ïSåNÁ‰0Rÿur‚ëTsYSÐYTÿ"
+ desc_THE_SUW_3_2_aspect: "UONOkp®pÿ"
+ desc_THE_SUW_3_3_aspect: "`Ow ÖNìNÏPñgPRN7h"
+ desc_THE_SUW_3_4_aspect: "b‰N=f?e»l„vö^íu"
+ desc_THE_SUW_3_5_aspect: "1"
  The_cycle_of_heaven_and_earth: "ŒNdWAml"
 # THE_root_country_development_tt: "SVMRýV¶RÑSUS¦^: §Y[ROOT.root_country_development.GetValue]§! "
  THE_SUW_suw_1_6_tt: "VËYekÛLˆ—RYe9ei—ÿ:VSëTsY§YT†Ú‹„vY²N˜R§!yrCg"
@@ -154,7 +181,7 @@
  THE_SUW_events.6.desc: "1"
  THE_SUW_events.6.name: "NNàe¾–‹NÿêS`	gÃVºNÿ"
  THE_SUW_events.7.title: "ºN^yqQPNÿ*gSNïS"
- THE_SUW_events.7.desc: "1"
+ THE_SUW_events.7.desc: "#=T(uGYÂ‰§Y0ù‹¿‹'Y>y0§!"
  THE_SUW_events.7.name: "ù‹¿‹'Y>yÿ`O„v^yfÞVeg†Nÿ"
  THE_SUW_events.10.title: "Í‘„géy^"
  THE_SUW_events.10.desc: "1"

@@ -307,3 +307,10 @@ THE_SUW_MCH_perfect_dynasty_modifier = {
 	great_project_upgrade_cost = -0.25
 	global_prosperity_growth = 0.5
 }
+
+THE_SUW_1_modiffier = {
+	overextension_impact_modifier = -1
+	tolerance_own = 817
+	tolerance_heretic = -817
+	tolerance_heathen = -817
+}

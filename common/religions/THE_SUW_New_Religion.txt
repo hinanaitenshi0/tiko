@@ -39,8 +39,9 @@ Touhou = {
 			always = yes
 		}
 
-		uses_judaism_power = yes
-		aspects_name = God_acts
+		#uses_judaism_power = yes
+		aspects_name = THE_SUW_aspect_effect
+		uses_church_power = yes
 
 		aspects = {
 			THE_SUW_1_1_aspect
@@ -57,7 +58,7 @@ Touhou = {
 			THE_SUW_3_5_aspect
 		}
 
-		celebrate = {
+		#celebrate = {
 			cost = 200
 			potential = {
 			}
@@ -241,7 +242,7 @@ Touhou = {
 			ai_will_do = {
 				factor = 15
 			}
-		}
+		#}
 
 		harmonized_modifier = THE_SUW_moriyaseikyou
 

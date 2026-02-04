@@ -1,0 +1,26 @@
+
+godsticks = {
+	color = { 1.01 0.85 0.20 }
+	modifier = {
+		same_religion_advisor_cost = -0.2
+	}
+	province = {
+		global_tax_modifier = 0.20
+	}
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 500
+			OR = {
+				mission_completed = THE_SUW_suw_5_6
+				mission_completed = THE_SUW_kan_5_6
+			}
+			province = {
+				OR = {
+					religion = th_moriyashinto
+					religion = THE_moriyaseikyou_religion
+				}
+			}
+		}
+	}
+}

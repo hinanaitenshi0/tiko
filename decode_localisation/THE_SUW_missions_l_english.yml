@@ -14,10 +14,10 @@
  THE_SUW_2_3_title:0 "御柱祭"
  THE_SUW_2_3_desc:0 ""
 
- THE_SUW_2_4_title:0 "朋友多多的"
+ THE_SUW_2_4_title:0 "朝日"
  THE_SUW_2_4_desc:0 ""
 
- THE_SUW_2_5_title:0 "可爱才是硬道理"
+ THE_SUW_2_5_title:0 "礼尚往来"
  THE_SUW_2_5_desc:0 ""
 
  THE_SUW_3_1_title:0 "故地重游"
@@ -32,16 +32,16 @@
  THE_SUW_4_1_title:0 "神奈子的手段"
  THE_SUW_4_1_desc:0 ""
 
- THE_SUW_4_2_title:0 "操练军势"
+ THE_SUW_4_2_title:0 "操持军势"
  THE_SUW_4_2_desc:0 ""
 
- THE_SUW_4_3_title:0 "东国攻略"
+ THE_SUW_4_3_title:0 "大和攻略"
  THE_SUW_4_3_desc:0 ""
 
- THE_SUW_4_4_title:0 "敌人少少的"
+ THE_SUW_4_4_title:0 "满金"
  THE_SUW_4_4_desc:0 ""
 
- THE_SUW_4_5_title:0 "强势能使人服软"
+ THE_SUW_4_5_title:0 "成王败寇"
  THE_SUW_4_5_desc:0 ""
 
  THE_SUW_5_1_title:0 "纳贡不足"
@@ -50,193 +50,112 @@
  THE_SUW_5_3_title:0 "收呱贡品"
  THE_SUW_5_3_desc:0 ""
 
- THE_SUW_lock_2_7_title:0 "分支任务"
- THE_SUW_lock_2_7_desc:0 ""
-
- THE_SUW_lock_2_8_title:0 "分支任务"
- THE_SUW_lock_2_8_desc:0 ""
-
- THE_SUW_lock_2_9_title:0 "分支任务"
- THE_SUW_lock_2_9_desc:0 ""
-
- THE_SUW_lock_4_7_title:0 "分支任务"
- THE_SUW_lock_4_7_desc:0 ""
-
- THE_SUW_lock_4_8_title:0 "分支任务"
- THE_SUW_lock_4_8_desc:0 ""
-
- THE_SUW_lock_4_9_title:0 "分支任务"
- THE_SUW_lock_4_9_desc:0 ""
-
- THE_SUW_suw_1_6_title:0 "诹访子-宗教任务"
+ THE_SUW_suw_1_6_title:0 "另辟蹊径"
  THE_SUW_suw_1_6_desc:0 ""
 
- THE_SUW_suw_1_7_title:0 "诹访子-宗教任务"
+ THE_SUW_suw_1_7_title:0 "所求皆如愿"
  THE_SUW_suw_1_7_desc:0 ""
 
- THE_SUW_suw_1_8_title:0 "诹访子-宗教任务"
+ THE_SUW_suw_1_8_title:0 "根深蒂固"
  THE_SUW_suw_1_8_desc:0 ""
 
  THE_SUW_suw_1_9_title:0 "诹访子-宗教任务"
  THE_SUW_suw_1_9_desc:0 ""
 
- THE_SUW_suw_1_10_title:0 "诹访子-宗教任务"
- THE_SUW_suw_1_10_desc:0 ""
-
- THE_SUW_suw_2_7_title:0 "礼尚往来"
+ THE_SUW_suw_2_7_title:0 "饮呱瀚海"
  THE_SUW_suw_2_7_desc:0 ""
 
- THE_SUW_suw_2_8_title:0 "收服朝日鲜明之国"
+ THE_SUW_suw_2_8_title:0 "马弓换炮"
  THE_SUW_suw_2_8_desc:0 ""
 
- THE_SUW_suw_2_9_title:0 "收获尊重"
+ THE_SUW_suw_2_9_title:0 "山里灵活"
  THE_SUW_suw_2_9_desc:0 ""
 
- THE_SUW_suw_3_7_title:0 "回首往昔"
+ THE_SUW_suw_3_7_title:0 "地大物博"
  THE_SUW_suw_3_7_desc:0 ""
 
- THE_SUW_suw_3_8_title:0 "探望神奈子"
+ THE_SUW_suw_3_8_title:0 "天朝上国"
  THE_SUW_suw_3_8_desc:0 ""
 
- THE_SUW_suw_3_9_title:0 "笨蛋！"
+ THE_SUW_suw_3_9_title:0 "白船来航"
  THE_SUW_suw_3_9_desc:0 ""
 
- THE_SUW_suw_3_10_title:0 "日月司晨"
+ THE_SUW_suw_3_10_title:0 "如神所愿"
  THE_SUW_suw_3_10_desc:0 ""
 
- THE_SUW_suw_4_7_title:0 "授人以渔"
+ THE_SUW_suw_4_7_title:0 "早苗的回信"
  THE_SUW_suw_4_7_desc:0 ""
 
- THE_SUW_suw_4_8_title:0 "邀请辽东诸女真"
+ THE_SUW_suw_4_8_title:0 "崭新的幻想"
  THE_SUW_suw_4_8_desc:0 ""
 
- THE_SUW_suw_4_9_title:0 "一合酥"
+ THE_SUW_suw_4_9_title:0 "旧日的残响"
  THE_SUW_suw_4_9_desc:0 ""
 
- THE_SUW_suw_5_6_title:0 "增加神签机制"
+ THE_SUW_suw_5_6_title:0 "散落的虔诚"
  THE_SUW_suw_5_6_desc:0 ""
 
- THE_SUW_suw_5_7_title:0 "诹访子-经济贸易任务"
+ THE_SUW_suw_5_7_title:0 "守矢正教"
  THE_SUW_suw_5_7_desc:0 ""
 
- THE_SUW_suw_5_8_title:0 "诹访子-经济贸易任务"
+ THE_SUW_suw_5_8_title:0 "地势坤"
  THE_SUW_suw_5_8_desc:0 ""
 
  THE_SUW_suw_5_9_title:0 "诹访子-强化邀请改教机制任务"
  THE_SUW_suw_5_9_desc:0 ""
 
- THE_SUW_suw_5_10_title:0 "诹访子-强化邀请改教机制任务"
- THE_SUW_suw_5_10_desc:0 ""
-
- THE_SUW_kan_1_6_title:0 "神奈子-宗教任务"
+ THE_SUW_kan_1_6_title:0 "融会贯通"
  THE_SUW_kan_1_6_desc:0 ""
 
- THE_SUW_kan_1_7_title:0 "神奈子-宗教任务"
+ THE_SUW_kan_1_7_title:0 "守矢正教"
  THE_SUW_kan_1_7_desc:0 ""
 
- THE_SUW_kan_1_8_title:0 "神奈子-宗教任务"
+ THE_SUW_kan_1_8_title:0 "天行健"
  THE_SUW_kan_1_8_desc:0 ""
 
  THE_SUW_kan_1_9_title:0 "神奈子-宗教任务"
  THE_SUW_kan_1_9_desc:0 ""
 
- THE_SUW_kan_1_10_title:0 "神奈子-宗教任务"
- THE_SUW_kan_1_10_desc:0 ""
-
- THE_SUW_kan_2_7_title:0 "擒王"
+ THE_SUW_kan_2_7_title:0 "早苗的回信"
  THE_SUW_kan_2_7_desc:0 ""
 
- THE_SUW_kan_2_8_title:0 "征服朝日鲜明之国"
+ THE_SUW_kan_2_8_title:0 "崭新的幻想"
  THE_SUW_kan_2_8_desc:0 ""
 
- THE_SUW_kan_2_9_title:0 "成王败寇"
+ THE_SUW_kan_2_9_title:0 "旧日的残响"
  THE_SUW_kan_2_9_desc:0 ""
 
- THE_SUW_kan_3_7_title:0 "回首往昔"
+ THE_SUW_kan_3_7_title:0 "日月司晨"
  THE_SUW_kan_3_7_desc:0 ""
 
- THE_SUW_kan_3_8_title:0 "探望诹访子"
+ THE_SUW_kan_3_8_title:0 "大明终始"
  THE_SUW_kan_3_8_desc:0 ""
 
- THE_SUW_kan_3_9_title:0 "笨蛋！"
+ THE_SUW_kan_3_9_title:0 "目光所及"
  THE_SUW_kan_3_9_desc:0 ""
 
- THE_SUW_kan_3_10_title:0 "日月司晨"
+ THE_SUW_kan_3_10_title:0 "如神所愿"
  THE_SUW_kan_3_10_desc:0 ""
 
- THE_SUW_kan_4_7_title:0 "先发制人"
+ THE_SUW_kan_4_7_title:0 "西征蒙古"
  THE_SUW_kan_4_7_desc:0 ""
 
- THE_SUW_kan_4_8_title:0 "要求辽东诸女真"
+ THE_SUW_kan_4_8_title:0 "大哉乾元"
  THE_SUW_kan_4_8_desc:0 ""
 
- THE_SUW_kan_4_9_title:0 "建立满洲文化认同"
+ THE_SUW_kan_4_9_title:0 "登高望远"
  THE_SUW_kan_4_9_desc:0 ""
 
- THE_SUW_kan_5_6_title:0 "增加神签机制"
+ THE_SUW_kan_5_6_title:0 "具实的信仰"
  THE_SUW_kan_5_6_desc:0 ""
 
  THE_SUW_kan_5_7_title:0 "神奈子-经济贸易任务"
  THE_SUW_kan_5_7_desc:0 ""
 
- THE_SUW_kan_5_8_title:0 "神奈子-经济贸易任务"
+ THE_SUW_kan_5_8_title:0 "所行化坦途"
  THE_SUW_kan_5_8_desc:0 ""
 
- THE_SUW_kan_5_9_title:0 "神奈子-军事改革任务"
+ THE_SUW_kan_5_9_title:0 "势如破竹"
  THE_SUW_kan_5_9_desc:0 ""
-
- THE_SUW_kan_5_10_title:0 "神奈子-军事改革任务"
- THE_SUW_kan_5_10_desc:0 ""
-
- THE_SUW_1_12_title:0 "马六甲线"
- THE_SUW_1_12_desc:0 ""
-
- THE_SUW_1_13_title:0 "西藏线"
- THE_SUW_1_13_desc:0 ""
-
- THE_SUW_1_14_title:0 "西藏线"
- THE_SUW_1_14_desc:0 ""
-
- THE_SUW_2_11_title:0 "马六甲线"
- THE_SUW_2_11_desc:0 ""
-
- THE_SUW_2_14_title:0 "文化线"
- THE_SUW_2_14_desc:0 ""
-
- THE_SUW_2_15_title:0 "文化线"
- THE_SUW_2_15_desc:0 ""
-
- THE_SUW_3_11_title:0 "中华大区线"
- THE_SUW_3_11_desc:0 ""
-
- THE_SUW_3_12_title:0 "中华大区线"
- THE_SUW_3_12_desc:0 ""
-
- THE_SUW_3_13_title:0 "中华大区线"
- THE_SUW_3_13_desc:0 ""
-
- THE_SUW_3_14_title:0 "向西传播宗教"
- THE_SUW_3_14_desc:0 ""
-
- THE_SUW_3_15_title:0 "向西传播宗教"
- THE_SUW_3_15_desc:0 ""
-
- THE_SUW_4_11_title:0 "幻想乡扩张"
- THE_SUW_4_11_desc:0 ""
-
- THE_SUW_4_12_title:0 ""
- THE_SUW_4_12_desc:0 ""
-
- THE_SUW_4_15_title:0 "幻想乡扩张"
- THE_SUW_4_15_desc:0 ""
-
- THE_SUW_5_12_title:0 "幻想乡扩张"
- THE_SUW_5_12_desc:0 ""
-
- THE_SUW_5_13_title:0 "幻想乡扩张"
- THE_SUW_5_13_desc:0 ""
-
- THE_SUW_5_14_title:0 "幻想乡扩张"
- THE_SUW_5_14_desc:0 ""
 
 

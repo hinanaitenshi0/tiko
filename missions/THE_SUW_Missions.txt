@@ -615,94 +615,6 @@ THE_SUW_stage_1_branch_5 = {
 		}
 	}
 }
-THE_SUW_stage_2_branch_lock_2 = {
-	slot = 2
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = SUW
-		NOT = { has_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag } 
-		NOT = { has_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag } 
-	}
-
-	THE_SUW_lock_2_7 = {
-		icon = mission_locked_mission
-		position = 7
-		required_missions = { THE_SUW_3_6 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_lock_2_8 = {
-		icon = mission_locked_mission
-		position = 8
-		required_missions = { THE_SUW_lock_2_7 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_lock_2_9 = {
-		icon = mission_locked_mission
-		position = 9
-		required_missions = { THE_SUW_lock_2_8 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-THE_SUW_stage_2_branch_lock_4 = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = SUW
-		NOT = { has_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag } 
-		NOT = { has_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag } 
-	}
-
-	THE_SUW_lock_4_7 = {
-		icon = mission_locked_mission
-		position = 7
-		required_missions = { THE_SUW_3_6 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_lock_4_8 = {
-		icon = mission_locked_mission
-		position = 8
-		required_missions = { THE_SUW_lock_4_7 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_lock_4_9 = {
-		icon = mission_locked_mission
-		position = 9
-		required_missions = { THE_SUW_lock_4_8 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
 THE_SUW_stage_2_branch_suw_1 = {
 	slot = 1
 	generic = no
@@ -717,23 +629,24 @@ THE_SUW_stage_2_branch_suw_1 = {
 	THE_SUW_suw_1_6 = {
 		icon = mission_unknown_mission
 		position = 6
+		required_missions = { THE_SUW_1_1 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			estate_loyalty = {
-    			estate = estate_church
-    			loyalty = 100
+				estate = estate_church
+				loyalty = 100
 			}
 			estate_influence = {
-    			estate = estate_church 
-    			influence = 70
+				estate = estate_church
+				influence = 70
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			custom_tooltip = THE_SUW_suw_1_6_tt
 			set_country_flag = THE_SUW_suw_1_6_flag
-		} 
+		}
 	}
 
 	THE_SUW_suw_1_7 = {
@@ -742,28 +655,26 @@ THE_SUW_stage_2_branch_suw_1 = {
 		required_missions = { THE_SUW_suw_1_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
-			full_idea_group = humanist_ideas
-		} 
+		trigger = { full_idea_group = humanist_ideas } 
 
-		effect = {  
-			add_country_modifier = {
-				name = THE_SUW_bottom_up_country_modifier
-				duration = -1
-			}
-		} 
+		effect = {
+			#add_country_modifier = {
+			#	name = "THE_SUW_bottom_up_country_modifier"
+			#	duration = -1
+			#}
+			set_country_flag = THE_SUW_maikozeikinn_flag
+		}
 	}
 
 	THE_SUW_suw_1_8 = {
 		icon = mission_unknown_mission
 		position = 8
-		required_missions = { THE_SUW_suw_1_7 } 
-		provinces_to_highlight = {  
+		provinces_to_highlight = {
 			region = japan_region
 			NOT = { religion = th_moriyashinto } 
-		} 
+		}
 
-		trigger = {  
+		trigger = {
 			japan_region = {
 				type = all
 				religion = th_moriyashinto
@@ -771,9 +682,9 @@ THE_SUW_stage_2_branch_suw_1 = {
 			}
 			calc_true_if = {
 				any_country = {
-					NOT = { capital_scope = { region = japan_region } }
-					NOT = { religion = th_moriyashinto }
-					NOT = { vassal_of = PREV }
+					NOT = { capital_scope = { region = japan_region }  } 
+					NOT = { religion = th_moriyashinto } 
+					NOT = { vassal_of = PREV } 
 					ai_attitude = {
 						who = PREV
 						attitude = attitude_friendly
@@ -783,13 +694,13 @@ THE_SUW_stage_2_branch_suw_1 = {
 				amount = 6
 			}
 			has_ruler_flag = The_SUW_suw_flag
-		} 
+		}
 
-		effect = {  
+		effect = {
 			custom_tooltip = THE_SUW_suw_1_8_tt
 			set_country_flag = THE_SUW_suw_1_8_flag
 			change_adm = 1
-		} 
+		}
 	}
 
 	THE_SUW_suw_1_9 = {
@@ -801,17 +712,15 @@ THE_SUW_stage_2_branch_suw_1 = {
 		}
 		provinces_to_highlight = { province_id = 735 } 
 
-		trigger = {  
-			#u735 = {
-			#	country_or_non_sovereign_subject_holds = ROOT
-			#	religion = th_moriyashinto
-			#}
-		} 
-
-		effect = {  
-			unlock_estate = {
-				estate = estate_dhimmi
+		trigger = {
+			has_global_modifier_value = {
+				which = tolerance_own
+				value = 3
 			}
+		}
+
+		effect = {
+			unlock_estate = { estate = estate_dhimmi } 
 			custom_tooltip = empty_line_tt
 			set_country_flag = enables_estate_dhimmi_flag
 			735 = {
@@ -826,50 +735,8 @@ THE_SUW_stage_2_branch_suw_1 = {
 			}
 			custom_tooltip = empty_line_tt
 			custom_tooltip = THE_SUW_suw_1_9_tt
-			hidden_effect = {
-				THE_SUW_change_name_scripted_effects = yes
-			}
-		} 
-	}
-
-	THE_SUW_suw_1_10 = {
-		icon = mission_unknown_mission
-		position = 10
-		required_missions = { THE_SUW_suw_1_9 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  
-			piety = 1
-		} 
-
-		effect = {  
-			change_religion = THE_moriyaseikyou_religion
-			if = {
-				limit = {  
-					KOR = {
-						is_subject_of = ROOT
-						is_subject_of_type = THE_SUW_Religious_Protection
-					}
-				}
-				KOR = {
-					change_religion = THE_moriyaseikyou_religion
-				}
-			}
-			if = {
-				limit = {  
-					SU0 = {
-						is_subject_of = ROOT
-						is_subject_of_type = THE_SUW_Religious_Protection
-					}
-				}
-				SU0 = {
-					change_religion = THE_moriyaseikyou_religion
-				}
-			}
-			4188 = {
-				add_reform_center = THE_moriyaseikyou_religion
-			}
-		} 
+			hidden_effect = { THE_SUW_change_name_scripted_effects = "yes" } 
+		}
 	}
 }
 THE_SUW_stage_2_branch_suw_2 = {
@@ -891,7 +758,7 @@ THE_SUW_stage_2_branch_suw_2 = {
 
 		trigger = {
 			if = {
-				limit = { 
+				limit = {
 					is_rival = KOR
 					KOR = {
 						has_opinion = {
@@ -906,7 +773,7 @@ THE_SUW_stage_2_branch_suw_2 = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					army_size = KOR
 					KOR = {
 						has_opinion = {
@@ -920,7 +787,7 @@ THE_SUW_stage_2_branch_suw_2 = {
 
 		effect = {
 			if = {
-				limit = { 
+				limit = {
 					is_rival = KOR
 					KOR = {
 						has_opinion = {
@@ -937,23 +804,19 @@ THE_SUW_stage_2_branch_suw_2 = {
 					remove_rival = SUW
 					create_alliance = SUW
 				}
-				add_prestige_or_monarch_power = { amount = 25 }
+				add_prestige_or_monarch_power = { amount = 25 } 
 				if = {
-					limit = { 
-						KOR = {
-							is_rival = PREV
-						}
-					}
+					limit = { KOR = { is_rival = PREV }  } 
 					add_trust = {
-    					who = KOR
-    					value = 20
-    					mutual = yes
+						who = KOR
+						value = 20
+						mutual = yes
 					}
 					remove_rival = KOR
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					army_size = KOR
 					KOR = {
 						has_opinion_modifier = {
@@ -962,23 +825,17 @@ THE_SUW_stage_2_branch_suw_2 = {
 						}
 					}
 				}
-				KOR = {
-					create_alliance = SUW
-				}
+				KOR = { create_alliance = SUW } 
 				add_power_projection = {
-					type = mission_rewards_power_projection 
-					amount = 25 
+					type = mission_rewards_power_projection
+					amount = 25
 				}
 				if = {
-					limit = { 
-						KOR = {
-							is_rival = PREV
-						}
-					}
+					limit = { KOR = { is_rival = PREV }  } 
 					add_trust = {
-    					who = KOR
-    					value = 20
-    					mutual = yes
+						who = KOR
+						value = 20
+						mutual = yes
 					}
 					remove_rival = KOR
 				}
@@ -993,25 +850,24 @@ THE_SUW_stage_2_branch_suw_2 = {
 	THE_SUW_suw_2_8 = {
 		icon = mission_unknown_mission
 		position = 8
-		required_missions = { THE_SUW_suw_2_7 } 
+		required_missions = {
+			THE_SUW_suw_2_7
+			THE_SUW_suw_1_7
+		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = THE_SUW_suw_2_8_tt
 				has_country_flag = THE_SUW_events_34_flag
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			add_historical_friend = KOR
-			KOR = {
-				add_historical_friend = PREV
-			}
-			hidden_effect = {
-				clr_country_flag = THE_SUW_events_34_flag
-			}
-		} 
+			KOR = { add_historical_friend = PREV } 
+			hidden_effect = { clr_country_flag = THE_SUW_events_34_flag } 
+		}
 	}
 
 	THE_SUW_suw_2_9 = {
@@ -1020,33 +876,33 @@ THE_SUW_stage_2_branch_suw_2 = {
 		required_missions = { THE_SUW_suw_2_8 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			variable_arithmetic_trigger = {
 				export_to_variable = {
-     			   variable_name = suwdevelopment
-    			    value = development
+					variable_name = "suwdevelopment"
+					value = development
 					who = 4188
-			    }
-  				export_to_variable = {
-   			    	variable_name = kordevelopment
-    			    value = development
-    			    who = 735
-			    }
+				}
+				export_to_variable = {
+					variable_name = "kordevelopment"
+					value = development
+					who = 735
+				}
 				check_variable = {
-       				which = suwdevelopment
-       				which = kordevelopment
-   				}
+					which = suwdevelopment
+					which = kordevelopment
+				}
 				custom_tooltip = THE_SUW_KOR_development_tt
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			add_accepted_culture = korean
 			add_country_modifier = {
-				name = THE_SUW_Recognition_of_the_North_Koreans_country_modifier
+				name = "THE_SUW_Recognition_of_the_North_Koreans_country_modifier"
 				duration = 10950
-			} 
-		} 
+			}
+		}
 	}
 }
 THE_SUW_stage_2_branch_suw_3 = {
@@ -1063,6 +919,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 	THE_SUW_suw_3_7 = {
 		icon = mission_unknown_mission
 		position = 7
+		required_missions = { THE_SUW_3_6 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -1098,6 +955,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 		required_missions = {
 			THE_SUW_suw_2_9
 			THE_SUW_suw_4_9
+			THE_SUW_suw_3_9
 		}
 		provinces_to_highlight = {  } 
 
@@ -1123,7 +981,7 @@ THE_SUW_stage_2_branch_suw_4 = {
 		required_missions = { THE_SUW_3_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			any_country = {
 				capital_scope = { region = manchuria_region } 
 				has_opinion = {
@@ -1138,9 +996,9 @@ THE_SUW_stage_2_branch_suw_4 = {
 					}
 				}
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			every_country = {
 				limit = {
 					capital_scope = { region = manchuria_region } 
@@ -1157,8 +1015,8 @@ THE_SUW_stage_2_branch_suw_4 = {
 					}
 				}
 				random_owned_province = {
-   					limit = { has_port = yes }
-				    transport = ROOT
+					limit = { has_port = yes } 
+					transport = ROOT
 					transport = ROOT
 					transport = ROOT
 				}
@@ -1171,16 +1029,19 @@ THE_SUW_stage_2_branch_suw_4 = {
 					"
 				}
 			}
-		} 
+		}
 	}
 
 	THE_SUW_suw_4_8 = {
 		icon = mission_unknown_mission
 		position = 8
-		required_missions = { THE_SUW_suw_4_7 } 
+		required_missions = {
+			THE_SUW_suw_4_7
+			THE_SUW_suw_5_7
+		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			ROOT = {
 				trading_policy_in_node = {
 					node = 730
@@ -1200,11 +1061,14 @@ THE_SUW_stage_2_branch_suw_4 = {
 						modifier = sent_gift
 					}
 				}
-				trust = { who = SUW value = 55 }
+				trust = {
+					who = SUW
+					value = 55
+				}
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			every_country = {
 				limit = {
 					capital_scope = { region = manchuria_region } 
@@ -1219,16 +1083,13 @@ THE_SUW_stage_2_branch_suw_4 = {
 							modifier = sent_gift
 						}
 					}
-					trust = { who = SUW value = 55 }
-				}
-				add_years_of_owned_provinces_production_income = {
-  					years = 3
-				}
-				ROOT = {
-					add_years_of_owned_provinces_production_income = {
-  						years = 1.5
+					trust = {
+						who = SUW
+						value = 55
 					}
 				}
+				add_years_of_owned_provinces_production_income = { years = 3 } 
+				ROOT = { add_years_of_owned_provinces_production_income = { years = 1.5 }  } 
 				ROOT = {
 					create_subject = {
 						subject_type = tributary_state
@@ -1236,9 +1097,7 @@ THE_SUW_stage_2_branch_suw_4 = {
 					}
 				}
 			}
-			730 = {
-				add_trade_node_income = 10
-			}
+			730 = { add_trade_node_income = 10 } 
 		}
 	}
 
@@ -1248,7 +1107,7 @@ THE_SUW_stage_2_branch_suw_4 = {
 		required_missions = { THE_SUW_suw_4_8 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			any_country = {
 				capital_scope = { region = manchuria_region } 
 				has_opinion = {
@@ -1262,12 +1121,15 @@ THE_SUW_stage_2_branch_suw_4 = {
 						modifier = sent_gift
 					}
 				}
-				trust = { who = SUW value = 60 }
+				trust = {
+					who = SUW
+					value = 60
+				}
 			}
 			dip_power = 100
-		} 
+		}
 
-		effect = {  
+		effect = {
 			add_dip_power = -100
 			every_country = {
 				limit = {
@@ -1283,11 +1145,12 @@ THE_SUW_stage_2_branch_suw_4 = {
 							modifier = sent_gift
 						}
 					}
-					trust = { who = SUW value = 60 }
+					trust = {
+						who = SUW
+						value = 60
+					}
 				}
-				SU0 = {
-					inherit = PREV
-				}
+				SU0 = { inherit = PREV } 
 			}
 			ROOT = {
 				create_subject = {
@@ -1295,7 +1158,7 @@ THE_SUW_stage_2_branch_suw_4 = {
 					subject = SU0
 				}
 			}
-		} 
+		}
 	}
 }
 THE_SUW_stage_2_branch_suw_5 = {
@@ -1352,17 +1215,6 @@ THE_SUW_stage_2_branch_suw_5 = {
 
 		effect = {  } 
 	}
-
-	THE_SUW_suw_5_10 = {
-		icon = mission_unknown_mission
-		position = 10
-		required_missions = { THE_SUW_suw_5_9 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
 }
 THE_SUW_stage_2_branch_kan_1 = {
 	slot = 1
@@ -1378,23 +1230,24 @@ THE_SUW_stage_2_branch_kan_1 = {
 	THE_SUW_kan_1_6 = {
 		icon = mission_unknown_mission
 		position = 6
+		required_missions = { THE_SUW_1_3 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			estate_loyalty = {
-    			estate = estate_church
-    			loyalty = 100
+				estate = estate_church
+				loyalty = 100
 			}
 			estate_influence = {
-    			estate = estate_church 
-    			influence = 70
+				estate = estate_church
+				influence = 70
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			custom_tooltip = THE_SUW_kan_1_6_tt
 			set_country_flag = THE_SUW_kan_1_6_flag
-		} 
+		}
 	}
 
 	THE_SUW_kan_1_7 = {
@@ -1403,26 +1256,24 @@ THE_SUW_stage_2_branch_kan_1 = {
 		required_missions = { THE_SUW_kan_1_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
-			full_idea_group = religious_ideas
-		} 
+		trigger = { full_idea_group = religious_ideas } 
 
-		effect = {  
+		effect = {
 			custom_tooltip = THE_SUW_kan_1_7_tt
 			set_country_flag = THE_SUW_kan_1_7_flag
-		} 
+		}
 	}
 
 	THE_SUW_kan_1_8 = {
 		icon = mission_unknown_mission
 		position = 8
 		required_missions = { THE_SUW_kan_1_7 } 
-		provinces_to_highlight = {  
+		provinces_to_highlight = {
 			region = japan_region
 			NOT = { religion = th_moriyashinto } 
-		} 
+		}
 
-		trigger = {  
+		trigger = {
 			japan_region = {
 				type = all
 				religion = th_moriyashinto
@@ -1431,64 +1282,38 @@ THE_SUW_stage_2_branch_kan_1 = {
 			num_of_owned_provinces_with = {
 				value = 30
 				is_overseas = no
-				NOT = { region = japan_region }
+				NOT = { region = japan_region } 
 			}
 			has_ruler_flag = The_SUW_kan_flag
-		} 
+		}
 
-		effect = {  
+		effect = {
 			custom_tooltip = THE_SUW_kan_1_8_tt
 			set_country_flag = THE_SUW_kan_1_8_flag
 			change_adm = 1
-		} 
+		}
 	}
 
 	THE_SUW_kan_1_9 = {
 		icon = mission_unknown_mission
 		position = 9
-		required_missions = {
-			THE_SUW_kan_1_8
-			THE_SUW_kan_2_8
-		}
+		required_missions = { THE_SUW_kan_2_8 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
 
-		effect = {  
+		effect = {
 			custom_tooltip = THE_SUW_kan_1_9_tt
 			set_country_flag = enable_korean_palace_flag
 			custom_tooltip = empty_line_tt
 			add_great_project_tier = {
-				type = gyeongbok_palace tier = 1 
+				type = gyeongbok_palace
+				tier = 1
 			}
 			custom_tooltip = empty_line_tt
 			custom_tooltip = THE_SUW_suw_1_9_tt
-			hidden_effect = {
-				THE_SUW_change_name_scripted_effects = yes
-			}
-		} 
-	}
-
-	THE_SUW_kan_1_10 = {
-		icon = mission_unknown_mission
-		position = 10
-		required_missions = { THE_SUW_kan_1_9 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  
-			piety = 1
-		} 
-
-		effect = {  
-			change_religion = THE_moriyaseikyou_religion
-			set_defender_of_the_faith = {
-				who = ROOT  #指定国家
-				religion = THE_moriyaseikyou_religion  #指定宗教
-			}
-			4188 = {
-				add_reform_center = THE_moriyaseikyou_religion
-			}
-		} 
+			hidden_effect = { THE_SUW_change_name_scripted_effects = "yes" } 
+		}
 	}
 }
 THE_SUW_stage_2_branch_kan_2 = {
@@ -1510,17 +1335,16 @@ THE_SUW_stage_2_branch_kan_2 = {
 
 		trigger = {  } 
 
-		effect = {  
-			korea_region = {
-				add_permanent_claim = ROOT
-			}
-		} 
+		effect = { korea_region = { add_permanent_claim = ROOT }  } 
 	}
 
 	THE_SUW_kan_2_8 = {
 		icon = mission_unknown_mission
 		position = 8
-		required_missions = { THE_SUW_kan_2_7 } 
+		required_missions = {
+			THE_SUW_kan_2_7
+			THE_SUW_kan_1_7
+		}
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -1553,6 +1377,7 @@ THE_SUW_stage_2_branch_kan_3 = {
 	THE_SUW_kan_3_7 = {
 		icon = mission_unknown_mission
 		position = 7
+		required_missions = { THE_SUW_3_6 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -1588,6 +1413,7 @@ THE_SUW_stage_2_branch_kan_3 = {
 		required_missions = {
 			THE_SUW_kan_2_9
 			THE_SUW_kan_4_9
+			THE_SUW_kan_3_9
 		}
 		provinces_to_highlight = {  } 
 
@@ -1615,17 +1441,16 @@ THE_SUW_stage_2_branch_kan_4 = {
 
 		trigger = {  } 
 
-		effect = {  
-			japan_region = {
-    			add_permanent_claim = ROOT
-			}
-		} 
+		effect = { japan_region = { add_permanent_claim = ROOT }  } 
 	}
 
 	THE_SUW_kan_4_8 = {
 		icon = mission_unknown_mission
 		position = 8
-		required_missions = { THE_SUW_kan_4_7 } 
+		required_missions = {
+			THE_SUW_kan_4_7
+			THE_SUW_kan_5_7
+		}
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -1680,7 +1505,6 @@ THE_SUW_stage_2_branch_kan_5 = {
 	THE_SUW_kan_5_8 = {
 		icon = mission_unknown_mission
 		position = 8
-		required_missions = { THE_SUW_kan_5_7 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -1691,261 +1515,10 @@ THE_SUW_stage_2_branch_kan_5 = {
 	THE_SUW_kan_5_9 = {
 		icon = mission_unknown_mission
 		position = 9
-		required_missions = { THE_SUW_kan_4_8 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_kan_5_10 = {
-		icon = mission_unknown_mission
-		position = 10
-		required_missions = { THE_SUW_kan_5_9 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-THE_SUW_stage_3_branch_1 = {
-	slot = 1
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = SUW
-		has_country_flag = THE_SUW_enable_stage_3_mission_branch_flag
-	}
-
-	THE_SUW_1_12 = {
-		icon = mission_unknown_mission
-		position = 12
-		required_missions = { THE_SUW_2_11 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_1_13 = {
-		icon = mission_unknown_mission
-		position = 13
-		required_missions = { THE_SUW_1_12 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_1_14 = {
-		icon = mission_unknown_mission
-		position = 14
-		required_missions = { THE_SUW_1_13 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-THE_SUW_stage_3_branch_2 = {
-	slot = 2
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = SUW
-		has_country_flag = THE_SUW_enable_stage_3_mission_branch_flag
-	}
-
-	THE_SUW_2_11 = {
-		icon = mission_unknown_mission
-		position = 11
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_2_14 = {
-		icon = mission_unknown_mission
-		position = 14
-		required_missions = { THE_SUW_3_13 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_2_15 = {
-		icon = mission_unknown_mission
-		position = 15
 		required_missions = {
-			THE_SUW_1_14
-			THE_SUW_2_14
+			THE_SUW_kan_4_8
+			THE_SUW_kan_5_8
 		}
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-THE_SUW_stage_3_branch_3 = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = SUW
-		has_country_flag = THE_SUW_enable_stage_3_mission_branch_flag
-	}
-
-	THE_SUW_3_11 = {
-		icon = mission_unknown_mission
-		position = 11
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_3_12 = {
-		icon = mission_unknown_mission
-		position = 12
-		required_missions = { THE_SUW_3_11 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_3_13 = {
-		icon = mission_unknown_mission
-		position = 13
-		required_missions = {
-			THE_SUW_3_12
-			THE_SUW_4_12
-		}
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_3_14 = {
-		icon = mission_unknown_mission
-		position = 14
-		required_missions = { THE_SUW_3_13 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_3_15 = {
-		icon = mission_unknown_mission
-		position = 15
-		required_missions = {
-			THE_SUW_3_14
-			THE_SUW_2_14
-		}
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-THE_SUW_stage_3_branch_4 = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = SUW
-		has_country_flag = THE_SUW_enable_stage_3_mission_branch_flag
-	}
-
-	THE_SUW_4_11 = {
-		icon = mission_unknown_mission
-		position = 11
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_4_12 = {
-		icon = mission_unknown_mission
-		position = 12
-		required_missions = { THE_SUW_3_11 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_4_15 = {
-		icon = mission_unknown_mission
-		position = 15
-		required_missions = { THE_SUW_5_14 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-THE_SUW_stage_3_branch_5 = {
-	slot = 5
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = SUW
-		has_country_flag = THE_SUW_enable_stage_3_mission_branch_flag
-	}
-
-	THE_SUW_5_12 = {
-		icon = mission_unknown_mission
-		position = 12
-		required_missions = { THE_SUW_4_11 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_5_13 = {
-		icon = mission_unknown_mission
-		position = 13
-		required_missions = { THE_SUW_5_12 } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	THE_SUW_5_14 = {
-		icon = mission_unknown_mission
-		position = 14
-		required_missions = { THE_SUW_5_13 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 

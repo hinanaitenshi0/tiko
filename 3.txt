@@ -1,0 +1,10 @@
+
+add_country_modifier = {
+	name = "THE_SUW_1_modiffier"
+	duration = -1
+}
+change_religion = THE_moriyaseikyou_religion
+add_church_power = 200
+japan_region = {
+    change_religion = root
+}
