@@ -1,0 +1,44 @@
+######################################
+
+#############################
+mills = {
+	manufactory = {
+		paper
+		gems
+		tropical_wood
+		glass
+		chinaware
+		THE_SUW_godsticks
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1 
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

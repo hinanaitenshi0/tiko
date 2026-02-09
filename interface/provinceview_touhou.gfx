@@ -12,4 +12,25 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		loadType = "INGAME"
 	}	
+	spriteType = {
+		name = "GFX_resource_icon"
+		texturefile = "gfx//interface//resources.dds"
+		noOfFrames = 33 # 在“resources”里的 64x64 图像的数量
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_resource_icon_transparent"
+		texturefile = "gfx//interface//resources.dds"
+		noOfFrames = 33 # 在“resources”里的 64x64 图像的数量
+		loadType = "INGAME"
+
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_resource_icon_small"
+		texturefile = "gfx//interface//resources_small.dds"
+		noOfFrames = 33 # 在“resources_small”里的 28x28 图像的数量
+		loadType = "INGAME"
+	}
 }
+

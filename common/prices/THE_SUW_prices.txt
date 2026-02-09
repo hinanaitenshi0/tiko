@@ -1,0 +1,4 @@
+
+THE_SUW_godsticks = {
+	base_price = 4
+}

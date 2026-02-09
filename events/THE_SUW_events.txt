@@ -217,7 +217,7 @@ country_event = {
 
 	option = {
 		name = THE_SUW_events.4.name
-		4188 = { change_trade_goods = paper }
+		4188 = { change_trade_goods = THE_SUW_godsticks }
 	}
 }
 

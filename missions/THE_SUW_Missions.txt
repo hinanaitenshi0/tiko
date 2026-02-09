@@ -658,11 +658,10 @@ THE_SUW_stage_2_branch_suw_1 = {
 		trigger = { full_idea_group = humanist_ideas } 
 
 		effect = {
-			#add_country_modifier = {
-			#	name = "THE_SUW_bottom_up_country_modifier"
-			#	duration = -1
-			#}
-			set_country_flag = THE_SUW_maikozeikinn_flag
+			add_country_modifier = {
+				name = "THE_SUW_bottom_up_country_modifier"
+				duration = -1
+			}
 		}
 	}
 
