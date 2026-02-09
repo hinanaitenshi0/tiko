@@ -20,15 +20,20 @@
  THE_SUW_2_4_tt: "§Yåe,g§!0W:S„vNb	g§YˆRâw^yS§!ýV¶RSb:NbìN„v§M—RYeˆR²b§!"
  THE_SUW_2_5_tt: "çubNb	g§Y—RYeˆR²b§!"
  THE_SUW_3_3_tt: "‹NöNAQ¸‹bìNôv¥cÈuÓuU^œ^„vßu»lÿSV6qÿ=fú^Ëz(W§RÜw)R§!„vMRÐcN......§V(NT	éb·ƒ—V„vVY±RmNNT)§!"
- THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§YbìNO(WN*NgTTU^œ^S›QÑSwcbÿvQßvËSÊSvQÖN'YTOsQèlNwÙ:WùR³Qÿ‚Yå‚·ƒÜwÿNb	gáOðNˆRâw^yS„v'YTSb:NbìN„v§!§M—RYeˆR²b§!"
+ THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§YbìNO(WN*NgTTU^œ^S›QÑSwcbÿvQßvËSÊSvQÖN'YTOsQèlNwÙ:WùR³Qÿ‚Yå‚·ƒÜwÿNb	gáOðN§YˆRâw^yS§!„v'YTSb:NbìN„v§!§M—RYeˆR²b§!"
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y‰SuQãylšÿ‚f•’‚ÿIrÆQY‹YQ¨RKbqT(³Q®‹)§!"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "wýN—RYelØS:N§Y[Root.Religion.GetName]§!S·ƒ—V§G1000§!£icon_manpower£ºN›Rÿcíu§Y30§!t^"
  THE_SUW_2_1_case_tt_yes: "£yes£‚YœgûN¡R0§Y^yHYPR„vKbµk§!0òTŒRb:"
  THE_SUW_2_1_case_tt_no: "£no£‚YœgûN¡R0§Y^yHYPR„vKbµk§!0òTŒRb:"
+ THE_SUW_2_3_nakamann_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:"
+ THE_SUW_2_3_nakamann_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:"
+ THE_SUW_2_3_tt: "‹NöNAQ¸‹bìN9eØSËS‹YýV¶R„v—RYe:N§YˆRâw^yS§!"
  THE_SUW_4_1_case_tt_yes: "£yes£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
  THE_SUW_4_1_case_tt_no: "£no£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
  THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!·ƒ—V†NNb	g§YNýV§!‡eSwýN„v8lEN'`±Rðy0"
- THE_SUW_4_3_tt: "»lNNb	g§YNýV§!‡eS„vwýNÏQS§G15§!t^R»yININ"
+ THE_SUW_4_3_tt: "»lNNb	g§Yåe,g§!‡eSÄu„vwýNÏQS§G15§!t^R»yININ"
+ THE_SUW_4_3_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
+ THE_SUW_4_3_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
  THE_SUW_4_4_tt: "ÎN»lNÏk*NMOŽN§Yåe,g§!0W:SN—RYe=f§Y[Root.Religion.GetName]§!„vwýN·ƒ—V§G20§!£adm£Lˆ?e¹ppe"
  THE_SUW_4_5_tt: "(@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!åNY„vNb	g§Yåe,g§!0W:SNwýNpeÏ‘SŽN§Y3§!„výV¶R):"
  The_SUW_5_1_tt: "=fù‹¿‹"
@@ -300,6 +305,9 @@
  THE_SUW_events.35.24.name: ">PÄl„vfIQ!"
  THE_SUW_events.35.25.name: "ŽýV–Y¾|!IrOÿŽýV=fÀNHN?"
  THE_SUW_events.35.26.name: "¡ryYbT,egUNog'T!"
+ THE_SUW_events.37.title: "¾–Sô‹?"
+ THE_SUW_events.37.desc: "–Nw¡Vñgmy„vK„U^ÿNS'YTmNVËYÇú^.^y>yeg=ecù‹¿‹PR\n‰Nô‹o‚‹Y„vsQû|1uŸlVËYbT"
+ THE_SUW_events.37.a.name: "a™eKN…Q"
 ### EVENT_END
 
 

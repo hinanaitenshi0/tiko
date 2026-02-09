@@ -167,6 +167,26 @@ THE_SUW_stage_1_branch_2 = {
 				}
 			}
 			4188 = { center_of_trade = 1 } 
+			if = {
+				limit = { mission_completed = THE_SUW_3_3 } 
+				custom_tooltip = THE_SUW_2_3_nakamann_tt_yes			
+				country_event = {
+					id = THE_SUW_events.37
+					days = 30
+					random = 29
+				}
+			}
+			else = {
+				custom_tooltip = THE_SUW_2_3_nakamann_tt_no
+				tooltip = {
+					country_event = {
+						id = THE_SUW_events.37
+						days = 30
+						random = 29
+					}
+				}
+			}
+			custom_tooltip = THE_SUW_2_3_tt
 		}
 	}
 
@@ -454,18 +474,35 @@ THE_SUW_stage_1_branch_4 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 15
-				culture = togoku
+				culture_group = japanese_g
 			}
 		}
 
 		effect = {
 			hidden_effect = {
 				every_owned_province = {
-					limit = { culture = togoku } 
+					limit = { culture_group = japanese_g } 
 					add_nationalism = -15
 				}
 			}
 			custom_tooltip = THE_SUW_4_3_tt
+			if = {
+				limit = { mission_completed = THE_SUW_3_3 } 
+				custom_tooltip = THE_SUW_4_3_tt_yes			
+				hidden_effect = {
+					for = {
+						amount = 8
+						effect = "
+							random_owned_province = {
+								change_religion = ROOT
+							}
+						"
+					}
+				}
+			}
+			else = {
+				custom_tooltip = THE_SUW_4_3_tt_no
+			}			
 		}
 	}
 
