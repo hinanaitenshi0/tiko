@@ -30,7 +30,7 @@
  THE_SUW_2_3_tt: "‹NöNAQ¸‹bìN9eØSËS‹YýV¶R„v—RYe:N§YˆRâw^yS§!"
  THE_SUW_4_1_case_tt_yes: "£yes£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
  THE_SUW_4_1_case_tt_no: "£no£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
- THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!·ƒ—V†NNb	g§YNýV§!‡eSwýN„v8lEN'`±Rðy0"
+ THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!·ƒ—V†NNb	g§Yåe,g§!‡eSÄuwýN„v8lEN'`±Rðy0"
  THE_SUW_4_3_tt: "»lNNb	g§Yåe,g§!‡eSÄu„vwýNÏQS§G15§!t^R»yININ"
  THE_SUW_4_3_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
  THE_SUW_4_3_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
@@ -307,7 +307,7 @@
  THE_SUW_events.35.26.name: "¡ryYbT,egUNog'T!"
  THE_SUW_events.37.title: "¾–Sô‹?"
  THE_SUW_events.37.desc: "–Nw¡Vñgmy„vK„U^ÿNS'YTmNVËYÇú^.^y>yeg=ecù‹¿‹PR\n‰Nô‹o‚‹Y„vsQû|1uŸlVËYbT"
- THE_SUW_events.37.a.name: "a™eKN…Q"
+ THE_SUW_events.37.name: "a™eKN…Q"
 ### EVENT_END
 
 
@@ -320,6 +320,8 @@
  THE_SUW_heaven_and_earth_decision_desc: "ÙÌ‘	g¹pîw†Nÿ±Ì‘	g¹pEm†NÿÙÌ‘.R¹pÎ˜'Tÿ±Ì‘M–¹pè–'T"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_title: "Í‘ú^bìN„v¶R"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_desc: "Ù=fN*N³Q®‹Ïcð"
+ THE_SUW_Strengthening_Suwa_Daisha_one_decision_tt_yes: "£yes£åb	g§G+2§!ckßuáOðN¹RÍV¦^"
+ THE_SUW_Strengthening_Suwa_Daisha_one_decision_tt_no: "£no£åb	g§G+2§!ckßuáOðN¹RÍV¦^"
  THE_SUW_Strengthening_Suwa_Daisha_two_decision_title: "ÑSUSbìN„v¶R"
  THE_SUW_Strengthening_Suwa_Daisha_two_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_Strengthening_Suwa_Daisha_three_decision_title: "šbxdbìN„v¶R"

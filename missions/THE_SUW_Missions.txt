@@ -337,7 +337,12 @@ THE_SUW_stage_1_branch_3 = {
 		required_missions = { THE_SUW_3_1 } 
 		provinces_to_highlight = {  } 
 
-		trigger = { 4188 = { religion = ROOT }  } 
+		trigger = { 
+			4188 = { 
+				religion = ROOT 
+				development = 20
+			}  
+		} 
 
 		effect = {
 			add_adm_power = 100
@@ -455,7 +460,7 @@ THE_SUW_stage_1_branch_4 = {
 			custom_tooltip = THE_SUW_Eastern_country_claims_tt
 			hidden_effect = {
 				every_province = {
-					limit = { culture = togoku } 
+					limit = { culture_group = japanese_g } 
 					add_permanent_claim = ROOT
 				}
 			}

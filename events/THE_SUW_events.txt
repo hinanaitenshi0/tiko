@@ -2119,7 +2119,7 @@ country_event = {
 #}
 
 country_event = {
-	#同伴
+	#难道说？
 	id = THE_SUW_events.37
 	title = "THE_SUW_events.37.title"
 	desc = "THE_SUW_events.37.desc"
@@ -2127,32 +2127,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = THE_SUW_events.37.a.name
-		every_country = {
-			limit = {
-				region = japan_region
-				has_opinion = {
-					who = ROOT
-					value = 60
-				}
-			}
-			prev = {
-				change_religion = ROOT
-			}
-		}
-	}
-}
-
-country_event = {
-	#同伴
-	id = THE_SUW_events.37
-	title = "THE_SUW_events.37.title"
-	desc = "THE_SUW_events.37.desc"
-	picture = YUKARI2_eventPicture
-	is_triggered_only = yes
-
-	option = {
-		name = THE_SUW_events.37.a.name
+		name = THE_SUW_events.37.name
 		every_country = {
 			limit = {
 				capital_scope = { region = japan_region } 

@@ -30,7 +30,7 @@
  THE_SUW_2_3_tt: "事件允许我们改变友好国家的宗教为§Y守矢神道§!"
  THE_SUW_4_1_case_tt_yes: "£yes£如果任务「§Y诹访子的智慧§!」已完成:"
  THE_SUW_4_1_case_tt_no: "£no£如果任务「§Y诹访子的智慧§!」已完成:"
- THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!获得了所有§Y东国§!文化省份的永久性宣称。"
+ THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!获得了所有§Y日本§!文化组省份的永久性宣称。"
  THE_SUW_4_3_tt: "治下所有§Y日本§!文化组的省份减少§G15§!年分离主义"
  THE_SUW_4_3_tt_yes: "£yes£如果任务「§Y重拾信仰§!」已完成:\n随机拥有的8个省份转变宗教为§Y守矢神道§!"
  THE_SUW_4_3_tt_no: "£no£如果任务「§Y重拾信仰§!」已完成:\n随机拥有的8个省份转变宗教为§Y守矢神道§!"
@@ -307,7 +307,7 @@
  THE_SUW_events.35.26.name: "管她呢,来喝一杯吧!"
  THE_SUW_events.37.title: "难道说?"
  THE_SUW_events.37.desc: "随着御柱祭的落幕，不少大名也开始通过建造神社来支持诹访子\n“要不说良好的关系由沟通开始呢”"
- THE_SUW_events.37.a.name: "意料之内"
+ THE_SUW_events.37.name: "意料之内"
 ### EVENT_END
 
 
@@ -320,6 +320,8 @@
  THE_SUW_heaven_and_earth_decision_desc: "这里有点矮了，那里有点浅了，这里刮点风吧，那里降点雨吧"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_title: "重建我们的家"
  THE_SUW_Strengthening_Suwa_Daisha_one_decision_desc: "这是一个决议描述"
+ THE_SUW_Strengthening_Suwa_Daisha_one_decision_tt_yes: "£yes£拥有§G+2§!正统信仰容忍度"
+ THE_SUW_Strengthening_Suwa_Daisha_one_decision_tt_no: "£no£拥有§G+2§!正统信仰容忍度"
  THE_SUW_Strengthening_Suwa_Daisha_two_decision_title: "发展我们的家"
  THE_SUW_Strengthening_Suwa_Daisha_two_decision_desc: "这是一个决议描述"
  THE_SUW_Strengthening_Suwa_Daisha_three_decision_title: "抚摸我们的家"

@@ -93,10 +93,20 @@ country_decisions = {
 		allow = {
 			if = {
 				limit = { has_country_flag = THE_SUW_The_ancient_Suwa_Daisha_flag }
-				has_global_modifier_value = {
-					which = tolerance_own 
-					value = 3
+				
+				if = {
+					limit = { 
+						has_global_modifier_value = {
+							which = tolerance_own 
+							value = 3
+						} 
+					} 
+					custom_tooltip = THE_SUW_Strengthening_Suwa_Daisha_one_decision_tt_yes
 				}
+				else = {
+					custom_tooltip = THE_SUW_Strengthening_Suwa_Daisha_one_decision_tt_no
+				}
+				
 				4188 = {
 					development = 20
 					num_of_buildings_in_province = 2
