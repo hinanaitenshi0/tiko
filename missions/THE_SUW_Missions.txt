@@ -43,16 +43,17 @@ THE_SUW_stage_1_branch_1 = {
 		trigger = {
 			estate_loyalty = {
 				estate = estate_church
-				loyalty = 70
+				loyalty = 60
 			}
 			estate_loyalty = {
 				estate = estate_nobles
-				loyalty = 70
+				loyalty = 60
 			}
 			estate_loyalty = {
 				estate = estate_burghers
-				loyalty = 70
+				loyalty = 60
 			}
+			has_advisor = yes 
 			all_owned_province = { religion = ROOT } 
 			num_of_owned_provinces_with = {
 				value = 30
@@ -62,9 +63,132 @@ THE_SUW_stage_1_branch_1 = {
 		}
 
 		effect = {
-			add_country_modifier = {
-				name = "THE_SUW_A_belief_country_modiffier"
-				duration = -1
+			if = { #神学家
+				limit = { 
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 80
+					}
+					employed_advisor = {
+						statesman = 3
+						type = theologian
+					}
+				}
+				custom_tooltip = THE_SUW_1_3_theologian_tt
+				set_country_flag = THE_SUW_1_3_theologian_flag
+			}
+			else_if = { #审讯官
+				limit = { 
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 80
+					}
+					employed_advisor = {
+						statesman = 3
+						type = inquisitor
+					}
+				}
+				custom_tooltip = THE_SUW_1_3_inquisitor_tt
+				set_country_flag = THE_SUW_1_3_inquisitor_flag
+			}
+			else_if = { #哲学家
+				limit = { 
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 80
+					}
+					employed_advisor = {
+						statesman = 3
+						type = philosopher
+					}
+				}
+				custom_tooltip = THE_SUW_1_3_philosopher_tt
+				set_country_flag = THE_SUW_1_3_philosopher_flag
+			}
+			else_if = { #征兵官
+				limit = { 
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 80
+					}
+					employed_advisor = {
+						statesman = 3
+						type = recruitmaster
+					}
+				}
+				
+				custom_tooltip = THE_SUW_1_3_recruitmaster_tt
+				set_country_flag = THE_SUW_1_3_recruitmaster_flag
+			}
+			else_if = { #要塞工程师
+				limit = { 
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 80
+					}
+					employed_advisor = {
+						statesman = 3
+						type = fortification_expert
+					}
+				}
+				custom_tooltip = THE_SUW_1_3_fortification_expert_tt
+				set_country_flag = THE_SUW_1_3_fortification_expert_flag
+			}
+			else_if = { #教官
+				limit = { 
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 80
+					}
+					employed_advisor = {
+						statesman = 3
+						type = commandant
+					}
+				}
+				custom_tooltip = THE_SUW_1_3_commandant_tt
+				set_country_flag = THE_SUW_1_3_commandant_flag
+			}
+			else_if = { #政治家
+				limit = { 
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 80
+					}
+					employed_advisor = {
+						statesman = 3
+						type = statesman
+					}
+				}
+				custom_tooltip = THE_SUW_1_3_statesman_tt
+				set_country_flag = THE_SUW_1_3_statesman_flag
+			}
+			else_if = { #商人
+				limit = { 
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 80
+					}
+					employed_advisor = {
+						statesman = 3
+						type = trader
+					}
+				}
+				custom_tooltip = THE_SUW_1_3_trader_tt
+				set_country_flag = THE_SUW_1_3_trader_flag
+			}
+			else_if = { #外交官
+				limit = { 
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 80
+					}
+					employed_advisor = {
+						statesman = 3
+						type = diplomat
+					}
+				}
+				custom_tooltip = THE_SUW_1_3_diplomat_tt
+				set_country_flag = THE_SUW_1_3_diplomat_flag
 			}
 		}
 	}

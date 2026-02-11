@@ -75,8 +75,16 @@
  desc_THE_SUW_3_5_aspect: "1"
  The_cycle_of_heaven_and_earth: "ŒNdWAml"
 # THE_root_country_development_tt: "SVMRýV¶RÑSUS¦^: §Y[ROOT.root_country_development.GetValue]§! "
- THE_SUW_suw_1_6_tt: "VËYekÛLˆ—RYe9ei—ÿ:VSëTsY§YT†Ú‹„vY²N˜R§!yrCg"
- THE_SUW_kan_1_6_tt: "VËYekÛLˆ—RYe9ei—ÿ:VSëTsY§Yib.VÂríp§!yrCgÿv^ˆmd–vQb—Heœg"
+ THE_SUW_1_3_theologian_tt: ":VSëTsY§YT†Ú‹„vY²N˜R§!yrCg"
+ THE_SUW_1_3_inquisitor_tt: ":VSëTsY§Yib.VÂríp§!yrCgÿv^ˆmd–vQb—Heœg"
+ THE_SUW_1_3_philosopher_tt: "ã‰•ëTsY§Yù‹¿‹'Y‚§!yrCg"
+ THE_SUW_1_3_recruitmaster_tt: "ÿfbcˆR²b§Yib'YVuQ§!yrCg"
+ THE_SUW_1_3_fortification_expert_tt: ":VSˆR²b§Yibú^2–¡VåT‹N§!yrCg"
+ THE_SUW_estate_nobles_development_of_jinnjya_tt: "»lNNb	gú^	g§Y^y>y§!„vwýN·ƒ—V‚YN Rb:"
+ THE_SUW_1_3_commandant_tt: "ã‰•ˆR²b§YØš'YZfk§!yrCg"
+ THE_SUW_1_3_statesman_tt: ":VSˆNÖS§YNÃVÎN?e§!yrCg"
+ THE_SUW_1_3_trader_tt: ":VSˆNÖS§YŒcµc'^?eVr§!yrCg"
+ THE_SUW_1_3_diplomat_tt: "ã‰•ˆNÖS§Y0i±”±r0Y²N§!yrCg"
  THE_SUW_suw_1_7_tt: "°s(WVËYïSåNÎNYýV„vˆRâwckYe>y:S-N·ƒÖS6eÊv"
  THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰Nag¦u§Y(ckMO)§!O§YVYe§!ýV¶RˆvO"
  THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§Gù‹¿‹PRN^S§!Y²NáOag"
@@ -126,6 +134,7 @@
  THE_SUW_Loyalty_of_social_classes_country_modiffier: "àVÃV„v6–BS"
  THE_SUW_Eternal_loyalty_country_modiffier: "8lÜ„vàVÚ‹"
  THE_SUW_A_belief_country_modiffier: "NÍyáOðN"
+ THE_SUW_estate_nobles_development_of_jinnjya_mod: "žXûm^y>yówîr"
  THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier: "Vn‚‚Am"
  THE_SUW_self_controlled_country_modiffier: "Û	g¦^"
  THE_SUW_well_trained_country_modiffier: "­‹Ãu	g.t"
@@ -361,6 +370,8 @@
  THE_SUW_noble_name: "ˆR²b"
  THE_SUW_burghers_name: "ˆNÖS"
  THE_SUW_dhimmi_name: "÷PR"
+ THE_SUW_estate_nobles_levies: "åNzãNuQ"
+ THE_SUW_estate_nobles_levies_desc: ""
 ### ESTATE_END
 
 ###SCHOOL

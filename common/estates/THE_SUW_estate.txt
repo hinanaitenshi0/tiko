@@ -9,6 +9,7 @@ estate_nobles = {
 		}
 	}
 	privileges = {
+		THE_SUW_estate_nobles_levies
 	}
 }
 

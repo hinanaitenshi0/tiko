@@ -1477,7 +1477,7 @@ estate_church_for_the_faith = {
 			NOT = { has_country_modifier = recently_annexed_other_religion_timer }
 			NOT = { has_country_flag = improved_expansionist_zealotry }
 			NOT = { has_government_attribute = free_expansionist_zealotry }
-			NOT = { has_country_flag = THE_SUW_kan_1_6_flag }
+			NOT = { has_country_flag = THE_SUW_1_3_inquisitor_flag }
 		}
 		modifier = {
 			church_loyalty_modifier = -0.1
@@ -1500,7 +1500,7 @@ estate_church_for_the_faith = {
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
 	conditional_modifier = {
-		trigger = { has_country_flag = THE_SUW_kan_1_6_flag }
+		trigger = { has_country_flag = THE_SUW_1_3_inquisitor_flag }
 		modifier = {  
 			land_morale = 0.05
 			war_exhaustion = -0.05
@@ -1898,7 +1898,7 @@ estate_church_religious_diplomats = {
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
 	conditional_modifier = {
-		trigger = { has_country_flag = THE_SUW_suw_1_6_flag }
+		trigger = { has_country_flag = THE_SUW_1_3_theologian_flag }
 		modifier = {
 			diplomatic_reputation = 1
 			relation_with_same_religion = 10

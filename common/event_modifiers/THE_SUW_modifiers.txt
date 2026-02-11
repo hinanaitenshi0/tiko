@@ -86,6 +86,12 @@ THE_SUW_A_belief_country_modiffier = {
 	yearly_army_professionalism = 0.005
 	global_monthly_devastation = -0.5
 }
+#增添神社石狮
+THE_SUW_estate_nobles_development_of_jinnjya_mod = {
+	local_defensiveness = 0.1
+	local_garrison_size = 0.10
+	local_fort_maintenance_modifier = -0.1
+}
 #踊跃参军
 #每传完一个地块增加1000人力
 # 使用on_action实现此效果，所有东西都写好了，详见仓库中on_action历史的修改内容，任务效果加个flag就行

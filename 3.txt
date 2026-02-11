@@ -27,3 +27,11 @@ for = {
 		}
 	"
 }
+add_splendor = 600
+set_country_flag = THE_SUW_1_3_recruitmaster_flag
+set_country_flag = THE_SUW_1_3_inquisitor_flag
+set_country_flag = THE_SUW_1_3_fortification_expert_flag
+4188 = {
+	add_building = temple
+	add_building = fort_15th
+}
