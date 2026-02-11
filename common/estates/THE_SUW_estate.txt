@@ -1,3 +1,18 @@
+estate_church = {
+	custom_name = {
+		desc = THE_SUW_church_name
+		trigger = {
+			OR = {
+				tag = SUW
+				was_tag = SUW
+			}
+		}
+	}
+	privileges = {
+		THE_SUW_estate_church_kiramekisuwa
+	}
+}
+
 estate_nobles = {
 	custom_name = {
 		desc = THE_SUW_noble_name
@@ -10,6 +25,7 @@ estate_nobles = {
 	}
 	privileges = {
 		THE_SUW_estate_nobles_levies
+		THE_SUW_estate_nobles_takaisamurai
 	}
 }
 

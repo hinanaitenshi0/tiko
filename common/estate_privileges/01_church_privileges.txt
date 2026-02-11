@@ -3513,3 +3513,62 @@ estate_church_MUG_promote_divine_religion = {
 		factor = 0 #AI will not be able to handle this
 	}
 }
+
+THE_SUW_estate_church_kiramekisuwa = {
+	icon = privilege_legitimacy
+	loyalty = 0.1
+	influence = 0.1
+	max_absolutism = 10
+	is_valid = {
+		has_country_flag = THE_SUW_1_3_philosopher_flag
+	}
+	can_select = {
+		has_country_flag = THE_SUW_1_3_philosopher_flag
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			monthly_splendor = -8
+		}
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 30
+			}
+			NOT = {
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+		}
+		modifier = {
+			monthly_splendor = 4
+		}
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+		}
+		modifier = {
+			monthly_splendor = 8
+		}
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 0 #AI will not be able to handle this
+	}
+}
+

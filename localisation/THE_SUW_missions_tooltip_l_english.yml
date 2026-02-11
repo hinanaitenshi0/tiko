@@ -367,11 +367,16 @@
 ### Great_projects_END
 
 ### ESTATE
+ THE_SUW_church_name: "Î˜ky"
  THE_SUW_noble_name: "ˆR²b"
  THE_SUW_burghers_name: "ˆNÖS"
  THE_SUW_dhimmi_name: "÷PR"
+ THE_SUW_estate_church_kiramekisuwa: "ù‹¿‹'Y‚"
+ THE_SUW_estate_church_kiramekisuwa_desc: ""
  THE_SUW_estate_nobles_levies: "åNzãNuQ"
  THE_SUW_estate_nobles_levies_desc: ""
+ THE_SUW_estate_nobles_takaisamurai: "Øš'YZfk"
+ THE_SUW_estate_nobles_takaisamurai_desc: ""
 ### ESTATE_END
 
 ###SCHOOL

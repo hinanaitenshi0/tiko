@@ -5173,3 +5173,35 @@ estate_nobles_austrian_nobility_privileges = {
 		factor = 1
 	}
 }
+
+THE_SUW_estate_nobles_takaisamurai = {
+	icon = privilege_demand_more_troops
+	loyalty = 0.05
+	influence = 0.05
+	max_absolutism = 0
+	
+	is_valid = {
+		has_country_flag = THE_SUW_1_3_commandant_flag
+	}
+	can_select = {
+		has_country_flag = THE_SUW_1_3_commandant_flag
+	}
+	cooldown_years = 100
+	on_granted = {
+		change_price = {
+    		trade_goods = grain
+    		key = grain_shortage
+    		value = 0.2
+   			duration = 36500
+		}
+		change_price = {
+    		trade_goods = livestock
+    		key = grain_shortage
+    		value = 0.2
+   			duration = 36500
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -367,11 +367,16 @@
 ### Great_projects_END
 
 ### ESTATE
+ THE_SUW_church_name: "风祝"
  THE_SUW_noble_name: "守护"
  THE_SUW_burghers_name: "予取"
  THE_SUW_dhimmi_name: "迷子"
+ THE_SUW_estate_church_kiramekisuwa: "诹访大舞"
+ THE_SUW_estate_church_kiramekisuwa_desc: ""
  THE_SUW_estate_nobles_levies: "以税代兵"
  THE_SUW_estate_nobles_levies_desc: ""
+ THE_SUW_estate_nobles_takaisamurai: "高大威武"
+ THE_SUW_estate_nobles_takaisamurai_desc: ""
 ### ESTATE_END
 
 ###SCHOOL
