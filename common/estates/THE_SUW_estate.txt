@@ -41,6 +41,8 @@ estate_burghers = {
 	}
 	
 	privileges = {
+		THE_SUW_estate_burghers_governmental_focus
+		THE_SUW_estate_burghers_saisennbakokouryuu 
 	}
 }
 

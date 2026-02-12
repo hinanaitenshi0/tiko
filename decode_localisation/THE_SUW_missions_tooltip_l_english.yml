@@ -75,17 +75,19 @@
  desc_THE_SUW_3_5_aspect: "1"
  The_cycle_of_heaven_and_earth: "乾坤流转"
 # THE_root_country_development_tt: "当前国家发展度: §Y[ROOT.root_country_development.GetValue]§! "
- THE_SUW_1_3_theologian_tt: "强化巫女§Y虔诚的外交官§!特权"
- THE_SUW_1_3_inquisitor_tt: "强化巫女§Y扩张狂热§!特权，并消除其负面效果"
- THE_SUW_1_3_philosopher_tt: "解锁巫女§Y诹访大舞§!特权"
- THE_SUW_1_3_recruitmaster_tt: "替换守护§Y扩大征兵§!特权"
- THE_SUW_1_3_fortification_expert_tt: "强化守护§Y扩建防御工事§!特权"
+ THE_SUW_1_3_theologian_tt: "如果拥有三级§T神学家§!顾问，则强化风祝§Y虔诚的外交官§!特权"
+ THE_SUW_1_3_inquisitor_tt: "如果拥有三级§T审讯官§!顾问，则强化风祝§Y扩张狂热§!特权，并消除其负面效果"
+ THE_SUW_1_3_philosopher_tt: "如果拥有三级§T哲学家§!顾问，则解锁风祝§Y诹访大舞§!特权"
+ THE_SUW_1_3_recruitmaster_tt: "如果拥有三级§T征兵官§!顾问，则替换守护§Y扩大征兵§!特权"
+ THE_SUW_1_3_fortification_expert_tt: "如果拥有三级§T要塞工程师§!顾问，则强化守护§Y扩建防御工事§!特权"
  THE_SUW_estate_nobles_development_of_jinnjya_tt: "治下所有建有§Y神社§!的省份获得如下加成:"
- THE_SUW_1_3_commandant_tt: "解锁守护§Y高大威武§!特权"
- THE_SUW_1_3_statesman_tt: "强化予取§Y一心从政§!特权"
+ THE_SUW_1_3_commandant_tt: "如果拥有三级§T教官§!顾问，则解锁守护§Y高大威武§!特权"
+ THE_SUW_1_3_statesman_tt: "如果拥有三级§T政治家§!顾问，则强化予取§Y一心从政§!特权，并消除其负面效果"
  THE_SUW_estate_burghers_on_granted_change_government_reform_progress_tt: "授予后，没收领地将根据予取忠诚提供相应§G政府改革点数§!"
- THE_SUW_1_3_trader_tt: "强化予取§Y掌控货币政策§!特权"
- THE_SUW_1_3_diplomat_tt: "解锁予取§Y「赛钱箱」外交§!特权"
+ THE_SUW_1_3_trader_tt: "如果拥有三级§T商人§!顾问，则强化予取§Y掌控货币政策§!特权"
+ THE_SUW_1_3_diplomat_tt: "如果拥有三级§T外交官§!顾问，则解锁予取§Y「塞钱箱」外交§!特权"
+# enable_estate_action_THE_SUW_estate_burgher_action: "启用阶层决议: §Y予取§!: §Y砸塞钱箱§!"
+ THE_SUW_estate_burgher_action_tt: "启用阶层决议: §Y予取§!: §Y砸塞钱箱§!"
  THE_SUW_suw_1_7_tt: "现在开始可以从外国的守矢正教社区中获取收益"
  THE_SUW_kan_1_7_tt: "允许通过战争条约§Y(正位)§!使§Y异教§!国家皈依"
  THE_SUW_suw_1_8_tt: "完成宗教改革后，将获得§G诹访子专属§!外交信条"
@@ -136,7 +138,7 @@
  THE_SUW_Eternal_loyalty_country_modiffier: "永远的忠诚"
  THE_SUW_A_belief_country_modiffier: "一种信仰"
  THE_SUW_estate_nobles_development_of_jinnjya_mod: "增添神社石狮"
- THE_SUW_saisennbakokouryuu_country_modiffier: "「赛钱箱」外交"
+ THE_SUW_saisennbakokouryuu_country_modiffier: "「塞钱箱」外交"
  THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier: "开源节流"
  THE_SUW_self_controlled_country_modiffier: "进退有度"
  THE_SUW_well_trained_country_modiffier: "训练有素"
@@ -337,6 +339,8 @@
  THE_SUW_Strengthening_Suwa_Daisha_two_decision_desc: "这是一个决议描述"
  THE_SUW_Strengthening_Suwa_Daisha_three_decision_title: "抚摸我们的家"
  THE_SUW_Strengthening_Suwa_Daisha_three_decision_desc: "这是一个决议描述"
+ THE_SUW_estate_burghers_action_title: "砸塞钱箱"
+ THE_SUW_estate_burghers_action_desc: ""
 ### DECISION_END
 
 ###SUBJECT_TYPE
@@ -379,6 +383,11 @@
  THE_SUW_estate_nobles_levies_desc: ""
  THE_SUW_estate_nobles_takaisamurai: "高大威武"
  THE_SUW_estate_nobles_takaisamurai_desc: ""
+ THE_SUW_estate_burghers_governmental_focus: "一心从政"
+ THE_SUW_estate_burghers_governmental_focus_desc: ""
+ THE_SUW_estate_burghers_saisennbakokouryuu: "「塞钱箱」外交"
+ THE_SUW_estate_burghers_saisennbakokouryuu_desc: ""
+
 ### ESTATE_END
 
 ###SCHOOL

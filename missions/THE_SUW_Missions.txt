@@ -63,6 +63,13 @@ THE_SUW_stage_1_branch_1 = {
 		}
 
 		effect = {
+		if = {
+			limit = { }
+		}
+		else = {
+			
+		}
+			custom_tooltip = THE_SUW_1_3_theologian_tt
 			if = { #神学家
 				limit = { 
 					estate_loyalty = {
@@ -74,10 +81,11 @@ THE_SUW_stage_1_branch_1 = {
 						type = theologian
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_theologian_tt
+				
 				set_country_flag = THE_SUW_1_3_theologian_flag
 			}
-			else_if = { #审讯官
+			custom_tooltip = THE_SUW_1_3_inquisitor_tt
+			if = { #审讯官
 				limit = { 
 					estate_loyalty = {
 						estate = estate_church
@@ -88,10 +96,11 @@ THE_SUW_stage_1_branch_1 = {
 						type = inquisitor
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_inquisitor_tt
+				
 				set_country_flag = THE_SUW_1_3_inquisitor_flag
 			}
-			else_if = { #哲学家
+			custom_tooltip = THE_SUW_1_3_philosopher_tt
+			if = { #哲学家
 				limit = { 
 					estate_loyalty = {
 						estate = estate_church
@@ -102,10 +111,11 @@ THE_SUW_stage_1_branch_1 = {
 						type = philosopher
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_philosopher_tt
+				
 				set_country_flag = THE_SUW_1_3_philosopher_flag
 			}
-			else_if = { #征兵官
+			custom_tooltip = THE_SUW_1_3_recruitmaster_tt
+			if = { #征兵官
 				limit = { 
 					estate_loyalty = {
 						estate = estate_nobles
@@ -117,10 +127,10 @@ THE_SUW_stage_1_branch_1 = {
 					}
 				}
 				
-				custom_tooltip = THE_SUW_1_3_recruitmaster_tt
 				set_country_flag = THE_SUW_1_3_recruitmaster_flag
 			}
-			else_if = { #要塞工程师
+			custom_tooltip = THE_SUW_1_3_fortification_expert_tt
+			if = { #要塞工程师
 				limit = { 
 					estate_loyalty = {
 						estate = estate_nobles
@@ -131,10 +141,11 @@ THE_SUW_stage_1_branch_1 = {
 						type = fortification_expert
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_fortification_expert_tt
+				
 				set_country_flag = THE_SUW_1_3_fortification_expert_flag
 			}
-			else_if = { #教官
+			custom_tooltip = THE_SUW_1_3_commandant_tt
+			if = { #教官
 				limit = { 
 					estate_loyalty = {
 						estate = estate_nobles
@@ -145,10 +156,11 @@ THE_SUW_stage_1_branch_1 = {
 						type = commandant
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_commandant_tt
+				
 				set_country_flag = THE_SUW_1_3_commandant_flag
 			}
-			else_if = { #政治家
+			custom_tooltip = THE_SUW_1_3_statesman_tt
+			if = { #政治家
 				limit = { 
 					estate_loyalty = {
 						estate = estate_burghers
@@ -159,10 +171,11 @@ THE_SUW_stage_1_branch_1 = {
 						type = statesman
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_statesman_tt
+				
 				set_country_flag = THE_SUW_1_3_statesman_flag
 			}
-			else_if = { #商人
+			custom_tooltip = THE_SUW_1_3_trader_tt
+			if = { #商人
 				limit = { 
 					estate_loyalty = {
 						estate = estate_burghers
@@ -173,10 +186,11 @@ THE_SUW_stage_1_branch_1 = {
 						type = trader
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_trader_tt
+				
 				set_country_flag = THE_SUW_1_3_trader_flag
 			}
-			else_if = { #外交官
+			custom_tooltip = THE_SUW_1_3_diplomat_tt
+			if = { #外交官
 				limit = { 
 					estate_loyalty = {
 						estate = estate_burghers
@@ -187,7 +201,7 @@ THE_SUW_stage_1_branch_1 = {
 						type = diplomat
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_diplomat_tt
+				
 				set_country_flag = THE_SUW_1_3_diplomat_flag
 			}
 		}

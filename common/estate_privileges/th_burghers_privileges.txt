@@ -5,19 +5,17 @@ th_estate_burghers_governmental_focus = {
 	influence = 0.15
 	loyalty = 0.0
 	is_valid = {
-		OR = {
-			th_is_touhou_culture_group = yes
-			th_is_touhou_religion = yes
+		AND = {
+			OR = {
+				th_is_touhou_culture_group = yes
+				th_is_touhou_religion = yes
+			}
+			NOT = { has_country_flag = THE_SUW_1_3_statesman_flag }
 		}
 	}
 	can_select = {
 	}
-	#THE_SUW_on_granted
 	on_granted = {
-		if = {
-			limit = { has_country_flag = THE_SUW_1_3_statesman_flag }
-			custom_tooltip = THE_SUW_estate_burghers_on_granted_change_government_reform_progress_tt
-		}	
 	}
 	on_revoked = {
 	}
@@ -26,23 +24,6 @@ th_estate_burghers_governmental_focus = {
 	}
 	benefits = {
 		reform_progress_growth = 0.3
-	}
-	conditional_modifier = {
-		trigger = {
-			has_country_flag = THE_SUW_1_3_statesman_flag 
-		}
-		modifier = {
-			burghers_loyalty_modifier = 0.15
-			stability_cost_modifier = -0.3
-		}
-	}
-	mechanics = {
-		if = {
-			limit = {
-				has_country_flag = THE_SUW_1_3_statesman_flag
-			}
-			exempt_from_seize_land
-		}
 	}
 	ai_will_do = {
 		factor = 0

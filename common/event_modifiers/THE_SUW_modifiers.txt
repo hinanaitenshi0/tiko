@@ -92,7 +92,7 @@ THE_SUW_estate_nobles_development_of_jinnjya_mod = {
 	local_garrison_size = 0.10
 	local_fort_maintenance_modifier = -0.1
 }
-#「赛钱箱」外交
+#「塞钱箱」外交
 THE_SUW_saisennbakokouryuu_country_modiffier = {
 	diplomatic_reputation = 2
 	improve_relation_modifier = 0.2

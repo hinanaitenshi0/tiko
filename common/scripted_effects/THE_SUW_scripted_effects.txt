@@ -295,6 +295,17 @@ THE_SUW_change_government_reform_progress = {
 	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 10 } } change_government_reform_progress = 10 }
 }
 
+#THE_SUW_enable_estate_action = {
+#	custom_tooltip = THE_SUW_estate_burgher_action_tt
+#	custom_tooltip = estate_action_potential_effect
+#	tooltip = {
+#		THE_SUW_estate_burghers_action = yes
+#	}
+#	hidden_effect = {
+#		set_country_flag = THE_SUW_estate_burghers_saisennbakokouryuu_flag
+#	}
+#}
+
 THE_SUW_estate_burghers_action = {
 	add_years_of_income = -0.33
 	add_country_modifier = {
