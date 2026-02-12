@@ -236,6 +236,47 @@ country_decisions = {
 	}
 }
 
+country_decisions = {
+	THE_SUW_estate_burghers_action = {
+		color = { 195 160 20 }
+		potential = {
+			has_enabled_estate_action = {
+				estate_action = THE_SUW_burgher_action
+			}
+			has_estate = estate_burghers
+		}
+		allow = {
+			has_not_any_estate_disaster_active = yes
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_burghers
+				influence = 40
+			}
+			estate_action_off_shared_cooldown = {
+				estate_action = THE_SUW_burgher_action
+				days = 3650
+			}
+		}
+		effect = {
+			set_estate_action_cooldown = {
+				estate_action = THE_SUW_burgher_action
+			}
+			estate_action = {
+				estate_action = THE_SUW_burgher_action
+			}
+			increase_estate_action_counter = {
+				estate = estate_burghers
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
 
 
 #############################################

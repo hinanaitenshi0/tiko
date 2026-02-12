@@ -1394,6 +1394,16 @@ estate_burghers_control_over_monetary_policy = {
 			burghers_influence_modifier = 0.025 
 		}
 	}
+	conditional_modifier = { #THE_SUW
+		trigger = {
+			has_country_flag = THE_SUW_1_3_trader_flag
+		}
+		modifier = {
+			all_power_cost = -0.04
+			inflation_reduction = 0.05
+			max_absolutism = 10
+		}
+	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
@@ -4858,5 +4868,27 @@ estate_burghers_TIM_gulf_toll = {
 	}
 	ai_will_do = {
 		factor = 1
+	}
+}
+
+THE_SUW_estate_burghers_saisennbakokouryuu = {
+	icon = privilege_monopoly
+	max_absolutism = 5
+	influence = 0.0
+	loyalty = 0.05
+	is_valid = {
+		has_country_flag = THE_SUW_1_3_diplomat_flag
+	}
+	can_select = {
+		has_country_flag = THE_SUW_1_3_diplomat_flag
+	}
+	benefits = { global_tax_income = 12 }
+	on_granted = {
+		enable_estate_action = {
+			estate_action = THE_SUW_burgher_action
+		}
+	}
+	ai_will_do = {
+		factor = 0
 	}
 }

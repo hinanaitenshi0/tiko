@@ -281,6 +281,33 @@ THE_SUW_change_religion_scripted_effects = {
 	}
 }
 
+THE_SUW_change_government_reform_progress = {
+	#根据予取好感给改革点
+	if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 100 } } change_government_reform_progress = 100 }
+	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 90 } } change_government_reform_progress = 90 }
+	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 80 } } change_government_reform_progress = 80 }
+	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 70 } } change_government_reform_progress = 70 }
+	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 60 } } change_government_reform_progress = 60 }
+	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 50 } } change_government_reform_progress = 50 }
+	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 40 } } change_government_reform_progress = 40 }
+	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 30 } } change_government_reform_progress = 30 }
+	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 20 } } change_government_reform_progress = 20 }
+	else_if = { limit = { estate_loyalty = { estate = estate_burghers loyalty = 10 } } change_government_reform_progress = 10 }
+}
+
+THE_SUW_estate_burghers_action = {
+	add_years_of_income = -0.33
+	add_country_modifier = {
+		name = "THE_SUW_saisennbakokouryuu_country_modiffier"
+		duration = 3650
+	}
+	#add_estate_influence_modifier = {
+	#	estate = estate_burghers
+	#	desc = EST_VAL_NEW_WORLD_CHARTER
+	#	influence = 15
+	#	duration = 3650
+	#}
+}
 
 ##################################################
 ### not on_actions scripted effect 
