@@ -9,6 +9,8 @@ estate_church = {
 		}
 	}
 	privileges = {
+		THE_SUW_estate_church_kaminitoutatsuhito
+		THE_SUW_estate_church_sennsounetsujyo
 		THE_SUW_estate_church_kiramekisuwa
 	}
 }
@@ -25,6 +27,7 @@ estate_nobles = {
 	}
 	privileges = {
 		THE_SUW_estate_nobles_levies
+		THE_SUW_estate_nobles_jinnjyaisi
 		THE_SUW_estate_nobles_takaisamurai
 	}
 }
@@ -42,6 +45,7 @@ estate_burghers = {
 	
 	privileges = {
 		THE_SUW_estate_burghers_governmental_focus
+		THE_SUW_estate_burghers_keizaiayatsuru
 		THE_SUW_estate_burghers_saisennbakokouryuu 
 	}
 }

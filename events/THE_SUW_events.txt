@@ -2119,7 +2119,7 @@ country_event = {
 #}
 
 country_event = {
-	#难道说？
+	#更进一步
 	id = THE_SUW_events.37
 	title = "THE_SUW_events.37.title"
 	desc = "THE_SUW_events.37.desc"
@@ -2133,10 +2133,12 @@ country_event = {
 				capital_scope = { region = japan_region } 
 				has_opinion = {
 					who = ROOT
-					value = 60
+					value = 100
 				}
 			}
-			change_religion = ROOT
+			ROOT = {
+				inherit = PREV
+			}
 		}
 	}
 }

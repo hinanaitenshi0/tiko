@@ -1,0 +1,307 @@
+#THE_SUW扩张热枕
+THE_SUW_estate_church_sennsounetsujyo = {
+	icon = privilege_recruit_inouisitor
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		OR = {
+			has_dlc = "Emperor"
+			has_dlc = "Lions of the North"
+		}
+		NOT = { religion = confucianism }
+		OR = {
+			has_country_flag = improved_expansionist_zealotry
+			any_known_country = {
+				NOT = { religion = root }
+			}
+			has_country_modifier = recently_force_converted_protagonist_timer
+			has_country_modifier = recently_annexed_other_religion_timer
+		}
+		has_country_flag = THE_SUW_1_3_inquisitor_flag
+	}
+	can_select = {
+		OR = {
+			has_country_flag = improved_expansionist_zealotry
+			any_known_country = {
+				NOT = { religion = root }
+			}
+		}
+		NOT = { has_estate_privilege = estate_church_inwards_perfection }
+		has_country_flag = THE_SUW_1_3_inquisitor_flag
+	}
+	on_granted = {
+		if = {
+			limit = { has_government_attribute = free_expansionist_zealotry }
+			custom_tooltip = estate_church_for_the_faith_effect_tooltip_a
+		}
+		else = {
+			custom_tooltip = estate_church_for_the_faith_effect_tooltip
+		}
+		custom_tooltip = THE_SUW_estate_church_sennsounetsujyo_tt
+	}
+	on_revoked = {
+		if = {
+			limit = { has_government_attribute = free_expansionist_zealotry }
+			custom_tooltip = estate_church_for_the_faith_effect_tooltip_a
+		}
+		else = {
+			custom_tooltip = estate_church_for_the_faith_effect_tooltip
+		}
+		custom_tooltip = THE_SUW_estate_church_sennsounetsujyo_tt
+	}
+	benefits = {
+		war_exhaustion = -0.05
+	}
+	conditional_modifier = {
+		trigger = {
+			any_known_country = {
+				NOT = { religion = root }
+				war_with = root
+			}
+			NOT = { has_country_flag = improved_expansionist_zealotry }
+		}
+		modifier = {
+			church_loyalty_modifier = 0.1
+			land_morale = 0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			any_known_country = {
+				NOT = { religion = root }
+				war_with = root
+			}
+			has_country_flag = improved_expansionist_zealotry
+		}
+		modifier = {
+			church_loyalty_modifier = 0.1
+			land_morale = 0.15
+			war_exhaustion = -0.05
+			max_absolutism = 5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = free_expansionist_zealotry
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	penalties = {
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	conditional_modifier = {
+		trigger = { 
+			any_known_country = {
+				NOT = { religion = root }
+				war_with = root
+			}
+			has_country_flag = THE_SUW_1_3_inquisitor_flag 
+			current_age = age_of_reformation
+		}
+		modifier = {  
+			land_morale = 0.05
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#THE_SUW通达神明之人
+THE_SUW_estate_church_kaminitoutatsuhito = {
+	icon = privilege_religious_diplomats
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_religious_diplomats_flag
+		}
+		modifier = {
+			max_absolutism = 10
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = hun_empower_religious_diplomats
+		}
+		modifier = {
+			relation_with_same_religion = 10
+			reverse_relation_with_same_religion = 10
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_religious_diplomats_flag
+			any_ally = {
+				religion = coptic
+			}
+		}
+		modifier = {
+			tolerance_heretic = 2
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = TIM_religious_diplomats_hanbali
+			has_country_modifier = hanbali_scholar_modifier 
+		}
+		modifier = {
+			tolerance_own = 1 
+		}
+	}
+	influence = 0.1
+	loyalty = 0
+	is_valid = {
+		has_country_flag = THE_SUW_1_3_theologian_flag
+	}
+	can_select = {
+		has_country_flag = THE_SUW_1_3_theologian_flag
+	}
+	on_granted = {
+		#add_increase_same_religion_opinion = yes
+		if = {
+			limit = {
+				has_country_flag = ITA_religious_diplomats_flag
+			}
+			custom_tooltip = ITA_having_a_coptic_ally
+		}
+		if = {
+			limit = {
+				has_country_flag = TIM_religious_diplomats_hanbali 
+			}
+			custom_tooltip = TIM_hanbali_scholar
+		}
+	}
+	on_revoked = {
+		#remove_increase_same_religion_opinion = yes
+	}
+	on_invalid = {
+		#remove_increase_same_religion_opinion = yes
+	}
+	penalties = {
+	}
+	benefits = {
+
+	}
+	conditional_modifier = { #That way the modifiers won't seem duplicated
+		trigger = {
+			NOT = { has_country_flag = orm_religious_diplomats_buff_flag }
+		}
+		modifier = {
+			diplomatic_reputation = 1
+			relation_with_same_religion = 20
+			reverse_relation_with_same_religion = 20
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = orm_religious_diplomats_buff_flag
+		}
+		modifier = {
+			diplomatic_reputation = 2
+			relation_with_same_religion = 20
+			reverse_relation_with_same_religion = 20
+			improve_relation_modifier = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = improved_defender_of_faith
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			max_absolutism = 10
+			church_influence_modifier = -0.15
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_global_flag = free_religious_diplomats_for_all_zoro_countries
+			religion_group = zoroastrian_group
+		}
+		modifier = {
+			max_absolutism = 10
+			church_influence_modifier = -0.1
+			church_privilege_slots = 1
+			church_loyalty_modifier = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	ai_will_do = {
+		factor = 1	#The privilege is a little bit too niche to be really usable for the AI
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { religion_group = zoroastrian_group }
+				NOT = { has_global_flag = free_religious_diplomats_for_all_zoro_countries }
+			}
+		}
+	}
+}
+#THE_SUW诹访大舞
+THE_SUW_estate_church_kiramekisuwa = {
+	icon = privilege_legitimacy
+	loyalty = 0.1
+	influence = 0.1
+	max_absolutism = 10
+	is_valid = {
+		has_country_flag = THE_SUW_1_3_philosopher_flag
+	}
+	can_select = {
+		has_country_flag = THE_SUW_1_3_philosopher_flag
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			monthly_splendor = -8
+		}
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 30
+			}
+			NOT = {
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+		}
+		modifier = {
+			monthly_splendor = 4
+		}
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+		}
+		modifier = {
+			monthly_splendor = 8
+		}
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 1 #AI will not be able to handle this
+	}
+}
+

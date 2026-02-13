@@ -41,3 +41,4 @@ set_country_flag = THE_SUW_1_3_statesman_flag
 	add_building = temple
 	add_building = fort_15th
 }
+

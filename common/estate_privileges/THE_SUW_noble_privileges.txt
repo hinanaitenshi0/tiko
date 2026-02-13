@@ -1,0 +1,283 @@
+#THE_SUW以税代兵
+THE_SUW_estate_nobles_levies = { 
+	icon = privilege_demand_more_troops
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes NOT = { has_government_attribute = free_noble_levies } } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	loyalty = 0.1
+	is_valid = {
+		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
+		NOT = { has_estate = estate_ghulams }
+		has_country_flag = THE_SUW_1_3_recruitmaster_flag
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
+		if = {
+			limit = {
+				has_estate = estate_maratha
+			}
+			NOT = { has_estate_privilege = estate_maratha_levies }
+		}
+		if = {
+			limit = {
+				has_estate = estate_maratha
+			}
+			NOT = { has_estate_privilege = estate_maratha_levies_for_muslims }
+		}
+		has_country_flag = THE_SUW_1_3_recruitmaster_flag 
+	}
+	on_granted = {
+		if = {
+			limit = { has_country_flag = azt_noble_levies_loyalty_buff_flag }
+			custom_tooltip = azt_estate_nobles_levies_scaled_modifier_tt
+		}
+	} 
+	modifier_by_land_ownership = {
+		global_tax_modifier = 0.5
+		global_manpower_modifier = -0.1
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_buff_noble_levies_flag
+		}
+		modifier = {
+			global_regiment_cost = -0.1
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_noble_levies_loyalty_buff_flag
+		}
+		modifier = {
+			global_manpower_modifier = 0.15
+		}
+	}
+	penalties = {
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = free_noble_levies
+		}
+		modifier = {
+			max_absolutism = 5
+			nobles_influence_modifier = -0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.05 }
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.5
+			any_rival_country = {
+				army_strength = {
+					who = root
+					value = 1.5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_idea_group = quantity_ideas
+		}
+		modifier = {
+			factor = 0.5
+			max_manpower = 200
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { current_income_balance = 5 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { current_income_balance = 0 }
+		}
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+	}
+}
+#THE_SUW增添神社石狮
+THE_SUW_estate_nobles_jinnjyaisi = {
+	icon = privilege_fort
+	loyalty = 0.1
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_upgrade_the_expand_the_fortifications_privilege_flag
+		}
+		modifier = {
+			garrison_size = 0.1
+			max_absolutism = 5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = TIM_upgrade_expand_the_fortifications_flag
+		}
+		modifier = {
+			defensiveness = 0.05 
+			fort_maintenance_modifier = -0.05
+		}
+	}
+	is_valid = {
+		has_dlc = "Domination"
+		has_country_flag = THE_SUW_1_3_fortification_expert_flag
+	}
+	can_select = {
+		has_country_flag = THE_SUW_1_3_fortification_expert_flag
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_development_of_castles_gt
+		tooltip = {
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_mod
+				duration = -1
+			}
+		}
+		custom_tooltip = estate_nobles_development_of_castles_at
+		tooltip = {
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_ramparts_mod
+				duration = -1
+			}
+		}
+		custom_tooltip = THE_SUW_estate_nobles_development_of_jinnjya_tt
+		tooltip = {
+			add_province_modifier = {
+				name = THE_SUW_estate_nobles_development_of_jinnjya_modiffier
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nobles_development_of_castles_rt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				has_fort_building_trigger = yes
+			}
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_building = ramparts
+			}
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_ramparts_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_building = temple
+			}
+			add_province_modifier = {
+				name = THE_SUW_estate_nobles_development_of_jinnjya_modiffier
+				duration = -1
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = estate_nobles_development_of_castles_mod }
+			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = { has_province_modifier = estate_nobles_development_of_castles_ramparts_mod }
+			remove_province_modifier = estate_nobles_development_of_castles_ramparts_mod
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = estate_nobles_development_of_castles_mod }
+			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = { has_province_modifier = estate_nobles_development_of_castles_ramparts_mod }
+			remove_province_modifier = estate_nobles_development_of_castles_ramparts_mod
+		}
+	}
+
+	mechanics = {
+		no_estate_crownland_loss_from_developing
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.05 }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+#THE_SUW高大威"武"
+THE_SUW_estate_nobles_takaisamurai = {
+	icon = privilege_demand_more_troops
+	loyalty = 0.05
+	influence = 0.05
+	max_absolutism = 0
+	
+	is_valid = {
+		has_country_flag = THE_SUW_1_3_commandant_flag
+	}
+	can_select = {
+		has_country_flag = THE_SUW_1_3_commandant_flag
+	}
+	cooldown_years = 100
+	on_granted = {
+		change_price = {
+    		trade_goods = grain
+    		key = grain_shortage
+    		value = 0.2
+   			duration = 36500
+		}
+		change_price = {
+    		trade_goods = livestock
+    		key = grain_shortage
+    		value = 0.2
+   			duration = 36500
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

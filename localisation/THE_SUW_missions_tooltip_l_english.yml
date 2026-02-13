@@ -27,11 +27,22 @@
  THE_SUW_2_1_case_tt_no: "£no£‚YœgûN¡R0§Y^yHYPR„vKbµk§!0òTŒRb:"
  THE_SUW_2_3_nakamann_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:"
  THE_SUW_2_3_nakamann_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:"
- THE_SUW_2_3_tt: "‹NöNAQ¸‹bìN9eØSËS‹YýV¶R„v—RYe:N§YˆRâw^yS§!"
+ THE_SUW_2_3_tt: "‹NöNAQ¸‹bìNTv^‹Ya:N§G100§!„v§Yåe,g0W:S§!ýV¶R"
+ THE_SUW_suw_2_4_tt_yes: "£yes£‚YœgÇËS‹Y²NAmŒRbûN¡R:"
+ THE_SUW_suw_2_4_tt_no: "£no£‚YœgÇËS‹Y²NAmŒRbûN¡R:"
+ THE_SUW_kan_2_4_tt_yes: "£yes£‚YœgÇ›Q‹NVgŒRbûN¡R:"
+ THE_SUW_kan_2_4_tt_no: "£no£‚YœgÇ›Q‹NVgŒRbûN¡R:"
+ THE_SUW_suw_2_4_tt: "v^•šRTíuŒRb¹eV"
+ THE_SUW_suw_2_5_tt_yes: "£yes£‚YœgÇËS‹Y²NAmŒRbûN¡R"
+ THE_SUW_suw_2_5_tt_no: "£no£‚YœgÇËS‹Y²NAmŒRbûN¡R:"
+ THE_SUW_kan_2_5_tt_yes: "£yes£‚YœgÇ›Q‹NVgŒRbûN¡R:"
+ THE_SUW_kan_2_5_tt_no: "£no£‚YœgÇ›Q‹NVgŒRbûN¡R:"
+ THE_SUW_2_5_tradenode_tt: "’Nà`qQ)R"
+ THE_SUW_2_5_enable_korean_palace_tt: "AQ¸‹=T(u§Gofy«R§!GYÂ‰"
  THE_SUW_4_1_case_tt_yes: "£yes£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
  THE_SUW_4_1_case_tt_no: "£no£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
  THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!·ƒ—V†NNb	g§Yåe,g§!‡eSÄuwýN„v8lEN'`±Rðy0"
- THE_SUW_4_3_tt: "»lNNb	g§Yåe,g§!‡eSÄu„vwýNÏQS§G15§!t^R»yININ"
+ THE_SUW_4_3_tt: "»lNNb	g§Yåe,g§!‡eSÄu„vwýNÏQS§G15§!t^R»yININ\nv^ÏQS§Yê»l¦^§!ó§G0§!"
  THE_SUW_4_3_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
  THE_SUW_4_3_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
  THE_SUW_4_4_tt: "ÎN»lNÏk*NMOŽN§Yåe,g§!0W:SN—RYe=f§Y[Root.Religion.GetName]§!„vwýN·ƒ—V§G20§!£adm£Lˆ?e¹ppe"
@@ -41,7 +52,7 @@
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "AQ¸‹=T(uGYÂ‰§T0ù‹¿‹'Y>y0§!"
  THE_SUW_Concentrated_development_Suwa_Daisha_tt: "AQ¸‹àemcwÆ–-NÑSUS¦^" 
  THE_SUW_4_5_tt_2: "‚YœgTaÿ@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!Sb:NbìN„vg!ýVÿvQÖN§Yåe,g§!0W:SýV¶RRO«ˆbìNçub"
- THE_SUW_KOR_development_tt: "áOSm„vÑSUS¦^: §Y[ROOT.suwdevelopment.GetValue]§! §GNSŽN§!IlÎW„vÑSUS¦^: §Y[ROOT.kordevelopment.GetValue]§! "
+ THE_SUW_KOR_development_tt: "ù‹¿‹„vÑSUS¦^: §Y[ROOT.suwdevelopment.GetValue]§! §GNSŽN§!gœœ„vÑSUS¦^: §Y[ROOT.kordevelopment.GetValue]§! "
  THE_SUW_event_32_tt: "·ƒ—VNmÞTjO:N2NýVFUãS¸SÿåNÊSN*N§Gbú‹§!ÿå‚vQsSMOÿRgœœS…QD–ŽNbýV"
  THE_SUW_event_33_tt: "Ðc:y:·ƒÖSgœœ›Qÿ.^©Rgœœs^ÛS"
  THE_SUW_suw_2_8_tt: "òTSgœœ6ejO—RYeˆR²b"
@@ -75,25 +86,36 @@
  desc_THE_SUW_3_5_aspect: "1"
  The_cycle_of_heaven_and_earth: "ŒNdWAml"
 # THE_root_country_development_tt: "SVMRýV¶RÑSUS¦^: §Y[ROOT.root_country_development.GetValue]§! "
- THE_SUW_1_3_theologian_tt: "‚Yœgåb	g§T^yfR¶R§!Œ˜î•ÿR:VSÎ˜ky§YT†Ú‹„vY²N˜R§!yrCg"
- THE_SUW_1_3_inquisitor_tt: "‚Yœgåb	g§T¡R¯‹˜R§!Œ˜î•ÿR:VSÎ˜ky§Yib.VÂríp§!yrCgÿv^ˆmd–vQb—Heœg"
- THE_SUW_1_3_philosopher_tt: "‚Yœgåb	g§TòTfR¶R§!Œ˜î•ÿRã‰•Î˜ky§Yù‹¿‹'Y‚§!yrCg"
- THE_SUW_1_3_recruitmaster_tt: "‚Yœgåb	g§TVuQ˜R§!Œ˜î•ÿRÿfbcˆR²b§Yib'YVuQ§!yrCg"
- THE_SUW_1_3_fortification_expert_tt: "‚Yœgåb	g§T‰^XåTz^§!Œ˜î•ÿR:VSˆR²b§Yibú^2–¡VåT‹N§!yrCg"
+ THE_SUW_1_3_theologian_tt_yes: "£yes£‚Yœg§GÎ˜ky§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§T^yfR¶R§!Œ˜î•ÿRã‰•Î˜ky§Y¾^yfKNºN§!yrCg"
+ THE_SUW_1_3_theologian_tt_no: "£no£‚Yœg§GÎ˜ky§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§T^yfR¶R§!Œ˜î•ÿRã‰•Î˜ky§Y¾^yfKNºN§!yrCg"
+ THE_SUW_1_3_inquisitor_tt_yes: "£yes£‚Yœg§GÎ˜ky§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§T¡R¯‹˜R§!Œ˜î•ÿRã‰•Î˜ky§Yib.VípñV§!yrCg"
+ THE_SUW_1_3_inquisitor_tt_no: "£no£‚Yœg§GÎ˜ky§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§T¡R¯‹˜R§!Œ˜î•ÿRã‰•Î˜ky§Yib.VípñV§!yrCg"
+ THE_SUW_estate_church_sennsounetsujyo_tt: "‚Yœg«ŽY§Y—RYe9ei—öeãN§!ÿR˜YÐc›OF–›QëXl§G+5%§!"
+ THE_SUW_1_3_philosopher_tt_yes: "£yes£‚Yœg§GÎ˜ky§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TòTfR¶R§!Œ˜î•ÿRã‰•Î˜ky§Yù‹¿‹'Y‚§!yrCg"
+ THE_SUW_1_3_philosopher_tt_no: "£no£‚Yœg§GÎ˜ky§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TòTfR¶R§!Œ˜î•ÿRã‰•Î˜ky§Yù‹¿‹'Y‚§!yrCg"
+ THE_SUW_1_3_recruitmaster_tt_yes: "£yes£‚Yœg§GˆR²b§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TVuQ˜R§!Œ˜î•ÿRã‰•ˆR²b§YåNzãNuQ§!yrCg"
+ THE_SUW_1_3_recruitmaster_tt_no: "£no£‚Yœg§GˆR²b§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TVuQ˜R§!Œ˜î•ÿRã‰•ˆR²b§YåNzãNuQ§!yrCg"
+ THE_SUW_1_3_fortification_expert_tt_yes: "£yes£‚Yœg§GˆR²b§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§T‰^XåTz^§!Œ˜î•ÿRã‰•ˆR²b§YžXûm^y>yówîr§!yrCg"
+ THE_SUW_1_3_fortification_expert_tt_no: "£no£‚Yœg§GˆR²b§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§T‰^XåTz^§!Œ˜î•ÿRã‰•ˆR²b§YžXûm^y>yówîr§!yrCg"
  THE_SUW_estate_nobles_development_of_jinnjya_tt: "»lNNb	gú^	g§Y^y>y§!„vwýN·ƒ—V‚YN Rb:"
- THE_SUW_1_3_commandant_tt: "‚Yœgåb	g§TYe˜R§!Œ˜î•ÿRã‰•ˆR²b§YØš'YZfk§!yrCg"
- THE_SUW_1_3_statesman_tt: "‚Yœgåb	g§T?e»l¶R§!Œ˜î•ÿR:VSˆNÖS§YNÃVÎN?e§!yrCg"
+ THE_SUW_1_3_commandant_tt_yes: "£yes£‚Yœg§GˆR²b§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TYe˜R§!Œ˜î•ÿRã‰•ˆR²b§YØš'YZ"fk"§!yrCg"
+ THE_SUW_1_3_commandant_tt_no: "£no£‚Yœg§GˆR²b§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TYe˜R§!Œ˜î•ÿRã‰•ˆR²b§YØš'YZ"fk"§!yrCg"
+ THE_SUW_1_3_statesman_tt_yes: "£yes£‚Yœg§GˆNÖS§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§T?e»l¶R§!Œ˜î•ÿRã‰•ˆNÖS§YŒvqT‰N1ž§!yrCg"
+ THE_SUW_1_3_statesman_tt_no: "£no£‚Yœg§GˆNÖS§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§T?e»l¶R§!Œ˜î•ÿRã‰•ˆNÖS§YŒvqT‰N1ž§!yrCg"
  THE_SUW_estate_burghers_on_granted_change_government_reform_progress_tt: "ˆcˆNTÿ¡l6e†˜0WS9hncˆNÖSàVÚ‹Ðc›Oøv”^§G?eœ^9ei—¹ppe§!"
- THE_SUW_1_3_trader_tt: "‚Yœgåb	g§TFUºN§!Œ˜î•ÿR:VSˆNÖS§YŒcµc'^?eVr§!yrCg"
- THE_SUW_1_3_diplomat_tt: "‚Yœgåb	g§TY²N˜R§!Œ˜î•ÿRã‰•ˆNÖS§Y0^X±”±r0Y²N§!yrCg"
+ THE_SUW_1_3_trader_tt_yes: "£yes£‚Yœg§GˆNÖS§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TFUºN§!Œ˜î•ÿRã‰•ˆNÖS§YŒµc'^?eVr§!yrCg"
+ THE_SUW_1_3_trader_tt_no: "£no£‚Yœg§GˆNÖS§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TFUºN§!Œ˜î•ÿRã‰•ˆNÖS§YŒµc'^?eVr§!yrCg"
+ THE_SUW_1_3_diplomat_tt_yes: "£yes£‚Yœg§GˆNÖS§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TY²N˜R§!Œ˜î•ÿRã‰•ˆNÖS§Y0^X±”±r0Y²N§!yrCg"
+ THE_SUW_1_3_diplomat_tt_no: "£no£‚Yœg§GˆNÖS§!6–BSàVÚ‹¦^¾0R§G80§!Nåb	g	Nµu§TY²N˜R§!Œ˜î•ÿRã‰•ˆNÖS§Y0^X±”±r0Y²N§!yrCg"
 # enable_estate_action_THE_SUW_estate_burgher_action: "=T(u6–BS³Q®‹: §YˆNÖS§!: §Y8x^X±”±r§!"
  THE_SUW_estate_burgher_action_tt: "=T(u6–BS³Q®‹: §YˆNÖS§!: §Y8x^X±”±r§!"
+# THE_SUW_1_3_tt: "&TR\n·ƒ—V§G100§!Zg\nNb	g¢núQ„vZgSlSb	N‰|§YTIN¹ppe§!"
  THE_SUW_suw_1_7_tt: "°s(WVËYïSåNÎNYýV„vˆRâwckYe>y:S-N·ƒÖS6eÊv"
  THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰Nag¦u§Y(ckMO)§!O§YVYe§!ýV¶RˆvO"
  THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§Gù‹¿‹PRN^S§!Y²NáOag"
  THE_SUW_kan_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§G^yHYPRN^S§!Y²NáOag"
  THE_SUW_suw_1_9_tt: "PˆN§Ygœœ§!hQƒX°e„v0WT"
- THE_SUW_kan_1_9_tt: "AQ¸‹=T(u§Gofy«R§!GYÂ‰"
+
 ### TOOLTIP_END
 
 ### dynasty
@@ -137,7 +159,7 @@
  THE_SUW_Loyalty_of_social_classes_country_modiffier: "àVÃV„v6–BS"
  THE_SUW_Eternal_loyalty_country_modiffier: "8lÜ„vàVÚ‹"
  THE_SUW_A_belief_country_modiffier: "NÍyáOðN"
- THE_SUW_estate_nobles_development_of_jinnjya_mod: "žXûm^y>yówîr"
+ THE_SUW_estate_nobles_development_of_jinnjya_modiffier: "žXûm^y>yówîr"
  THE_SUW_saisennbakokouryuu_country_modiffier: "0^X±”±r0Y²N"
  THE_SUW_broaden_sources_of_income_and_reduce_expenditure_country_modiffier: "Vn‚‚Am"
  THE_SUW_self_controlled_country_modiffier: "Û	g¦^"
@@ -318,7 +340,7 @@
  THE_SUW_events.35.24.name: ">PÄl„vfIQ!"
  THE_SUW_events.35.25.name: "ŽýV–Y¾|!IrOÿŽýV=fÀNHN?"
  THE_SUW_events.35.26.name: "¡ryYbT,egUNog'T!"
- THE_SUW_events.37.title: "¾–Sô‹?"
+ THE_SUW_events.37.title: "ôfÛNek"
  THE_SUW_events.37.desc: "–Nw¡Vñgmy„vK„U^ÿNS'YTmNVËYÇú^.^y>yeg=ecù‹¿‹PR\n‰Nô‹o‚‹Y„vsQû|1uŸlVËYbT"
  THE_SUW_events.37.name: "a™eKN…Q"
 ### EVENT_END
@@ -377,14 +399,22 @@
  THE_SUW_noble_name: "ˆR²b"
  THE_SUW_burghers_name: "ˆNÖS"
  THE_SUW_dhimmi_name: "÷PR"
+ THE_SUW_estate_church_kaminitoutatsuhito:"¾^yfKNºN"
+ THE_SUW_estate_church_kaminitoutatsuhito_desc: ""
+ THE_SUW_estate_church_sennsounetsujyo: "ib.VípñV"
+ THE_SUW_estate_church_sennsounetsujyo_desc: ""
  THE_SUW_estate_church_kiramekisuwa: "ù‹¿‹'Y‚"
  THE_SUW_estate_church_kiramekisuwa_desc: ""
  THE_SUW_estate_nobles_levies: "åNzãNuQ"
  THE_SUW_estate_nobles_levies_desc: ""
+ THE_SUW_estate_nobles_jinnjyaisi: "žXûm^y>yówîr"
+ THE_SUW_estate_nobles_jinnjyaisi_desc: ""
  THE_SUW_estate_nobles_takaisamurai: "Øš'YZfk"
  THE_SUW_estate_nobles_takaisamurai_desc: ""
- THE_SUW_estate_burghers_governmental_focus: "NÃVÎN?e"
+ THE_SUW_estate_burghers_governmental_focus: "ŒvqT‰N1ž"
  THE_SUW_estate_burghers_governmental_focus_desc: ""
+ THE_SUW_estate_burghers_keizaiayatsuru: "Œµc'^?eVr"
+ THE_SUW_estate_burghers_keizaiayatsuru_desc: ""
  THE_SUW_estate_burghers_saisennbakokouryuu: "0^X±”±r0Y²N"
  THE_SUW_estate_burghers_saisennbakokouryuu_desc: ""
 

@@ -55,21 +55,21 @@ THE_SUW_stage_1_branch_1 = {
 			}
 			has_advisor = yes 
 			all_owned_province = { religion = ROOT } 
-			num_of_owned_provinces_with = {
-				value = 30
-				is_prosperous = yes
-			}
+			#num_of_owned_provinces_with = {
+			#	value = 30
+			#	is_prosperous = yes
+			#}
 			stability = 3
 		}
 
 		effect = {
-		if = {
-			limit = { }
-		}
-		else = {
-			
-		}
-			custom_tooltip = THE_SUW_1_3_theologian_tt
+			add_prestige_or_monarch_power = { amount = 100 }
+			add_legitimacy = 100
+			add_republican_tradition = 100
+			add_devotion = 100
+			add_horde_unity = 100
+			add_meritocracy = 100
+			add_splendor = 100
 			if = { #神学家
 				limit = { 
 					estate_loyalty = {
@@ -81,10 +81,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = theologian
 					}
 				}
-				
+				custom_tooltip = THE_SUW_1_3_theologian_tt_yes
 				set_country_flag = THE_SUW_1_3_theologian_flag
 			}
-			custom_tooltip = THE_SUW_1_3_inquisitor_tt
+			else = {
+				custom_tooltip = THE_SUW_1_3_theologian_tt_no
+			}
 			if = { #审讯官
 				limit = { 
 					estate_loyalty = {
@@ -96,10 +98,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = inquisitor
 					}
 				}
-				
+				custom_tooltip = THE_SUW_1_3_inquisitor_tt_yes	
 				set_country_flag = THE_SUW_1_3_inquisitor_flag
 			}
-			custom_tooltip = THE_SUW_1_3_philosopher_tt
+			else = {
+				custom_tooltip = THE_SUW_1_3_inquisitor_tt_no
+			}
 			if = { #哲学家
 				limit = { 
 					estate_loyalty = {
@@ -111,10 +115,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = philosopher
 					}
 				}
-				
+				custom_tooltip = THE_SUW_1_3_philosopher_tt_yes
 				set_country_flag = THE_SUW_1_3_philosopher_flag
 			}
-			custom_tooltip = THE_SUW_1_3_recruitmaster_tt
+			else = {
+				custom_tooltip = THE_SUW_1_3_philosopher_tt_no
+			}	
 			if = { #征兵官
 				limit = { 
 					estate_loyalty = {
@@ -126,10 +132,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = recruitmaster
 					}
 				}
-				
+				custom_tooltip = THE_SUW_1_3_recruitmaster_tt_yes	
 				set_country_flag = THE_SUW_1_3_recruitmaster_flag
 			}
-			custom_tooltip = THE_SUW_1_3_fortification_expert_tt
+			else = {
+				custom_tooltip = THE_SUW_1_3_recruitmaster_tt_no
+			}	
 			if = { #要塞工程师
 				limit = { 
 					estate_loyalty = {
@@ -141,10 +149,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = fortification_expert
 					}
 				}
-				
+				custom_tooltip = THE_SUW_1_3_fortification_expert_tt_yes
 				set_country_flag = THE_SUW_1_3_fortification_expert_flag
 			}
-			custom_tooltip = THE_SUW_1_3_commandant_tt
+			else = {
+				custom_tooltip = THE_SUW_1_3_fortification_expert_tt_no
+			}
 			if = { #教官
 				limit = { 
 					estate_loyalty = {
@@ -156,10 +166,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = commandant
 					}
 				}
-				
+				custom_tooltip = THE_SUW_1_3_commandant_tt_yes
 				set_country_flag = THE_SUW_1_3_commandant_flag
 			}
-			custom_tooltip = THE_SUW_1_3_statesman_tt
+			else = {
+				custom_tooltip = THE_SUW_1_3_commandant_tt_no
+			}
 			if = { #政治家
 				limit = { 
 					estate_loyalty = {
@@ -171,10 +183,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = statesman
 					}
 				}
-				
+				custom_tooltip = THE_SUW_1_3_statesman_tt_yes
 				set_country_flag = THE_SUW_1_3_statesman_flag
 			}
-			custom_tooltip = THE_SUW_1_3_trader_tt
+			else = {
+				custom_tooltip = THE_SUW_1_3_statesman_tt_no
+			}
 			if = { #商人
 				limit = { 
 					estate_loyalty = {
@@ -186,10 +200,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = trader
 					}
 				}
-				
+				custom_tooltip = THE_SUW_1_3_trader_tt_yes
 				set_country_flag = THE_SUW_1_3_trader_flag
 			}
-			custom_tooltip = THE_SUW_1_3_diplomat_tt
+			else = {
+				custom_tooltip = THE_SUW_1_3_trader_tt_no
+			}
 			if = { #外交官
 				limit = { 
 					estate_loyalty = {
@@ -201,8 +217,11 @@ THE_SUW_stage_1_branch_1 = {
 						type = diplomat
 					}
 				}
-				
+				custom_tooltip = THE_SUW_1_3_diplomat_tt_yes
 				set_country_flag = THE_SUW_1_3_diplomat_flag
+			}
+			else = {
+				custom_tooltip = THE_SUW_1_3_diplomat_tt_no
 			}
 		}
 	}
@@ -325,6 +344,7 @@ THE_SUW_stage_1_branch_2 = {
 				}
 			}
 			custom_tooltip = THE_SUW_2_3_tt
+			change_dip = 1
 		}
 	}
 
@@ -336,46 +356,135 @@ THE_SUW_stage_1_branch_2 = {
 			THE_SUW_3_3
 		}
 		provinces_to_highlight = {
-			region = japan_region
-			NOT = { religion = th_moriyashinto } 
+			AND = {
+				region = japan_region
+				region = korea_region
+			}
 		}
 
 		trigger = {
-			mission_completed = THE_SUW_4_3
 			OR = {
-				calc_true_if = {
-					any_country = {
-						capital_scope = { region = japan_region } 
-						religion = th_moriyashinto
+				AND = {
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							variable_name = "suwdevelopment"
+							value = development
+							who = ROOT
+						}
+						export_to_variable = {
+							variable_name = "kordevelopment"
+							value = development
+							who = KOR
+						}
+						check_variable = {
+							which = suwdevelopment
+							which = kordevelopment
+						}
+						custom_tooltip = THE_SUW_KOR_development_tt
 					}
-					amount = 5
+					KOR = {	
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
 				}
-				japan_region = {
-					type = all
-					religion = th_moriyashinto
-				}
+				AND = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 10
+						region = korea_region
+					}
+					NOT = {
+						KOR = {	
+							has_opinion = {
+								who = ROOT
+								value = 0
+							}
+						}
+					}	
+				}				
 			}
 			is_free_or_tributary_trigger = yes
 		}
 
 		effect = {
-			hidden_effect = {
-				every_country = {
-					limit = {
-						capital_scope = { region = japan_region } 
-						religion = th_moriyashinto
+			if = {
+				limit = { 
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							variable_name = "suwdevelopment"
+							value = total_development
+							who = ROOT
+						}
+						export_to_variable = {
+							variable_name = "kordevelopment"
+							value = total_development
+							who = KOR
+						}
+						check_variable = {
+							which = suwdevelopment
+							which = kordevelopment
+						}
+						custom_tooltip = THE_SUW_KOR_development_tt
 					}
-					grant_independence = yes
-					ROOT = {
-						create_subject = {
-							subject_type = THE_SUW_Religious_Protection
-							subject = PREV
+					KOR = {	
+						has_opinion = {
+							who = ROOT
+							value = 0
 						}
 					}
 				}
+				custom_tooltip = THE_SUW_suw_2_4_tt_yes
+				create_alliance = KOR
+				add_historical_friend = KOR
+				KOR = {
+					add_historical_friend = ROOT
+				}
+				set_country_flag = THE_SUW_suw_2_4_flag
+				custom_tooltip = THE_SUW_suw_2_4_tt
 			}
-			custom_tooltip = THE_SUW_2_4_tt
-			complete_mission = THE_SUW_4_4
+			else = {
+				custom_tooltip = THE_SUW_suw_2_4_tt_no
+				tooltip = {
+					create_alliance = KOR
+					add_historical_friend = KOR
+					KOR = {
+						add_historical_friend = ROOT
+					}
+				}
+				custom_tooltip = THE_SUW_suw_2_4_tt
+			}
+			if = {
+				limit = {  
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 10
+						region = korea_region
+					}
+					NOT = {
+						KOR = {	
+							has_opinion = {
+								who = ROOT
+								value = 0
+							}
+						}
+					}
+				}
+				custom_tooltip = THE_SUW_kan_2_4_tt_yes
+				ROOT = {
+					inherit = KOR
+				}
+				set_country_flag = THE_SUW_kan_2_4_flag
+				custom_tooltip = THE_SUW_suw_2_4_tt
+			}
+			else = {
+				custom_tooltip = THE_SUW_kan_2_4_tt_no
+				tooltip = {
+					ROOT = {
+						inherit = KOR
+					}
+				}
+				custom_tooltip = THE_SUW_suw_2_4_tt
+			}
 		}
 	}
 
@@ -384,59 +493,128 @@ THE_SUW_stage_1_branch_2 = {
 		position = 5
 		required_missions = { THE_SUW_2_4 } 
 		provinces_to_highlight = {
-			region = japan_region
-			is_capital = yes
-			owner = {
-				is_subject_of = ROOT
-				OR = {
-					NOT = { religion = th_moriyashinto } 
-					liberty_desire = 50
-					NOT = {
-						has_opinion = {
-							who = ROOT
-							value = 100
-						}
-					}
-				}
+			AND = {
+				region = japan_region
+				region = korea_region
 			}
 		}
 
 		trigger = {
-			legitimacy = 100
-			diplomatic_reputation = 5
-			all_subject_country = {
-				OR = {
-					NOT = { capital_scope = { region = japan_region }  } 
-					AND = {
-						religion = th_moriyashinto
-						NOT = { liberty_desire = 50 } 
+			OR = {
+				AND = {
+					KOR = {
 						has_opinion = {
 							who = ROOT
-							value = 100
+							value = 200
 						}
+						trust = { who = ROOT value = 100 }
 					}
+					hidden_trigger = {
+						has_country_flag = THE_SUW_suw_2_4_flag
+					}
+					
+				}
+				AND = {
+					owns_all_provinces = {
+						region = korea_region
+						religion = ROOT
+					}
+					hidden_trigger = {
+						has_country_flag = THE_SUW_kan_2_4_flag
+					}
+					
 				}
 			}
 		}
 
 		effect = {
-			custom_tooltip = THE_SUW_2_5_tt
-			hidden_effect = {
-				every_subject_country = {
-					limit = {
-						capital_scope = { region = japan_region } 
-						religion = th_moriyashinto
-						NOT = { liberty_desire = 50 } 
+			if = {
+				limit = { 
+					KOR = {
 						has_opinion = {
 							who = ROOT
-							value = 100
+							value = 200
+						}
+						trust = { who = ROOT value = 100 }
+					}
+				}
+				custom_tooltip = THE_SUW_suw_2_5_tt_yes
+				ROOT = {
+					create_subject = {
+						subject_type = THE_SUW_Religious_Protection
+						subject = KOR
+					}
+				}
+				KOR = {
+					change_religion = ROOT
+				}
+				4188 = {
+					add_trade_modifier = {
+						who = ROOT
+						duration = 18250
+						power = 200
+						key = THE_SUW_2_5_tradenode_tt
+					}
+				}
+				
+			}
+			else = {
+				custom_tooltip = THE_SUW_suw_2_5_tt_no
+				tooltip = {
+					ROOT = {
+						create_subject = {
+							subject_type = THE_SUW_Religious_Protection
+							subject = KOR
 						}
 					}
-					ROOT = { inherit = PREV } 
+					KOR = {
+						change_religion = ROOT
+					}
+					4188 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 18250
+							power = 200
+							key = THE_SUW_2_5_tradenode_tt
+						}
+					}
 				}
-				complete_mission = THE_SUW_4_4
-				complete_mission = THE_SUW_4_5
 			}
+			if = {
+				limit = {  
+					owns_all_provinces = {
+						region = korea_region
+						religion = ROOT
+					}
+				}
+				custom_tooltip = THE_SUW_kan_2_5_tt_yes
+				korea_region = {
+					add_building_construction = {
+						building = temple
+						speed = 1
+						cost = 0
+					}
+				}
+				add_accepted_culture = korean
+				custom_tooltip = THE_SUW_2_5_enable_korean_palace_tt
+				set_country_flag = enable_korean_palace_flag
+			}
+			else = {
+				custom_tooltip = THE_SUW_kan_2_5_tt_no
+				tooltip = {
+					korea_region = {
+						add_building_construction = {
+							building = temple
+							speed = 1
+							cost = 0
+						}
+					}
+					add_accepted_culture = korean
+					custom_tooltip = THE_SUW_2_5_enable_korean_palace_tt
+					set_country_flag = enable_korean_palace_flag
+				}
+			}
+			
 		}
 	}
 }
@@ -611,7 +789,7 @@ THE_SUW_stage_1_branch_4 = {
 		required_missions = { THE_SUW_4_2 } 
 		provinces_to_highlight = {
 			region = japan_region
-			culture = togoku
+			culture_group = japanese_g
 		}
 
 		trigger = {
@@ -626,8 +804,9 @@ THE_SUW_stage_1_branch_4 = {
 				every_owned_province = {
 					limit = { culture_group = japanese_g } 
 					add_nationalism = -15
+					set_local_autonomy = 0
 				}
-			}
+			}	
 			custom_tooltip = THE_SUW_4_3_tt
 			if = {
 				limit = { mission_completed = THE_SUW_3_3 } 
@@ -646,6 +825,7 @@ THE_SUW_stage_1_branch_4 = {
 			else = {
 				custom_tooltip = THE_SUW_4_3_tt_no
 			}			
+			change_consort_mil = 1
 		}
 	}
 
@@ -1482,8 +1662,7 @@ THE_SUW_stage_2_branch_kan_1 = {
 		trigger = {  } 
 
 		effect = {
-			custom_tooltip = THE_SUW_kan_1_9_tt
-			set_country_flag = enable_korean_palace_flag
+			
 			custom_tooltip = empty_line_tt
 			add_great_project_tier = {
 				type = gyeongbok_palace

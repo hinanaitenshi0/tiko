@@ -1,7 +1,17 @@
-add_government_reform = THE_SUW_SUW_and_KAN_reform
+#add_government_reform = THE_SUW_SUW_and_KAN_reform
 #add_government_reform = THE_AKI_harvest_and_autumn_reform
-add_government_power = {
+#add_government_power = {
 	mechanic_type = THE_SUW_mechanic
 	power_type = THE_SUW_mechanic_power
 	#value = -50.5
-}
+#}
+clr_country_flag = THE_SUW_1_3_theologian_flag
+clr_country_flag = THE_SUW_1_3_recruitmaster_flag
+clr_country_flag = THE_SUW_1_3_inquisitor_flag
+clr_country_flag = THE_SUW_1_3_fortification_expert_flag
+clr_country_flag = THE_SUW_1_3_commandant_flag
+clr_country_flag = THE_SUW_1_3_philosopher_flag
+clr_country_flag = THE_SUW_1_3_trader_flag
+clr_country_flag = THE_SUW_1_3_diplomat_flag
+clr_country_flag = THE_SUW_1_3_statesman_flag
+change_government_reform_progress = 100
