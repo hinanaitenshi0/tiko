@@ -12,7 +12,7 @@ THE_SUW_SUW_and_KAN_reform = {
 
 	religion = yes
 	#has_term_election = yes
-	#duration = 4
+	#duration = 10
 	queen = yes
 	heir = no
 	valid_for_new_country = no
@@ -20,18 +20,75 @@ THE_SUW_SUW_and_KAN_reform = {
 	rulers_can_be_generals = no
 	can_change_primary_culture = no
 	
-#	states_general_mechanic = {
-#		THE_SUW_suw = {
-#			improve_relation_modifier = 0.2
-#			development_cost_modifier = -0.1
-#			stability_cost_modifier = -0.3
-#		}
-#		THE_SUW_kan = {
-#			siege_ability = 0.2
-#			movement_speed = 0.1
-#			discipline = 0.1
-#		}
-#	}
+	#states_general_mechanic = {
+	#	THE_SUW_suw = {
+	#		improve_relation_modifier = 0.2
+	#		development_cost_modifier = -0.1
+	#		stability_cost_modifier = -0.3
+	#	}
+	#	THE_SUW_kan = {
+	#		siege_ability = 0.2
+	#		movement_speed = 0.1
+	#		discipline = 0.1
+	#	}
+	#}
+		
+	custom_attributes = {
+		enables_aristocratic_idea_group = no
+		enables_divine_idea_group = yes
+		THE_can_use_kami_ideas_government_attribute = yes
+	}
+
+	modifiers = {
+		#tolerance_own = 2
+		global_tax_modifier = 0.1
+		#trade_efficiency = 0.1
+		#development_cost_modifier = -0.05
+		global_missionary_strength = 0.02
+		church_loyalty_modifier = 0.5
+		#custom_tooltip = THE_SUW_reform_tt
+		church_influence_modifier = 0.1
+		#cb_on_religious_enemies = yes
+	}
+	government_abilities = {
+		THE_SUW_mechanic
+	}
+}
+
+#诹访祀坤
+THE_SUW_suw_reform = {
+	lock_level_when_selected = yes
+	icon = "THE_AKI_government_reform_1"
+	potential = {
+		OR = {
+			ai = no
+			has_reform = THE_SUW_suw_reform
+			have_had_reform = THE_SUW_suw_reform
+		}
+	}
+
+	religion = yes
+	#has_term_election = yes
+	#duration = 10
+	queen = no
+	heir = no
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	rulers_can_be_generals = no
+	can_change_primary_culture = no
+	
+	#states_general_mechanic = {
+	#	THE_SUW_suw = {
+	#		improve_relation_modifier = 0.2
+	#		development_cost_modifier = -0.1
+	#		stability_cost_modifier = -0.3
+	#	}
+	#	THE_SUW_kan = {
+	#		siege_ability = 0.2
+	#		movement_speed = 0.1
+	#		discipline = 0.1
+	#	}
+	#}
 		
 	custom_attributes = {
 		enables_aristocratic_idea_group = no
@@ -41,15 +98,74 @@ THE_SUW_SUW_and_KAN_reform = {
 
 	modifiers = {
 		tolerance_own = 2
-		global_tax_modifier = 0.1
+		#global_tax_modifier = 0.1
 		trade_efficiency = 0.1
-		development_cost_modifier = -0.05
+		#development_cost_modifier = -0.05
 		global_missionary_strength = 0.02
 		church_loyalty_modifier = 0.5
-		estate_church_influence_modifier = 0.1
+		#custom_tooltip = THE_SUW_reform_tt
+		church_influence_modifier = 0.1
+		#cb_on_religious_enemies = yes
+	}
+	government_abilities = {
+		THE_SUW_suw_land_of_the_christian_sun_mechanic
+	}
+}
+
+#神奈祭乾
+THE_SUW_kan_reform = {
+	lock_level_when_selected = yes
+	icon = "government_reform_THE_SUW_kan_government_1_reform"
+	potential = {
+		OR = {
+			ai = no
+			has_reform = THE_SUW_kan_reform
+			have_had_reform = THE_SUW_kan_reform
+		}
+	}
+
+	religion = yes
+	#has_term_election = yes
+	#duration = 10
+	queen = no
+	heir = no
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	rulers_can_be_generals = no
+	can_change_primary_culture = no
+	
+	#states_general_mechanic = {
+	#	THE_SUW_suw = {
+	#		improve_relation_modifier = 0.2
+	#		development_cost_modifier = -0.1
+	#		stability_cost_modifier = -0.3
+	#	}
+	#	THE_SUW_kan = {
+	#		siege_ability = 0.2
+	#		movement_speed = 0.1
+	#		discipline = 0.1
+	#	}
+	#}
+		
+	custom_attributes = {
+		enables_aristocratic_idea_group = no
+		enables_divine_idea_group = yes
+		THE_can_use_kami_ideas_government_attribute = yes
+	}
+
+	modifiers = {
+		#tolerance_own = 2
+		#global_tax_modifier = 0.1
+		#trade_efficiency = 0.1
+		#development_cost_modifier = -0.05
+		warscore_cost_vs_other_religion = -0.10
+		global_missionary_strength = 0.02
+		church_loyalty_modifier = 0.5
+		#custom_tooltip = THE_SUW_reform_tt
+		church_influence_modifier = 0.1
 		cb_on_religious_enemies = yes
 	}
 	government_abilities = {
-		THE_SUW_mechanic
+		THE_SUW_kan_land_of_the_christian_sun_mechanic
 	}
 }

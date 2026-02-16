@@ -135,6 +135,10 @@ THE_SUW_Heart_of_Struggle_country_modiffier = {
 	army_tradition = 0.5
 	movement_speed = 0.1
 }
+#满洲争霸
+THE_SUW_can_not_declare_war_modifier = {
+	can_not_declare_war = yes
+}	
 #分歧
 THE_SUW_divergence_of_views_country_modifier = {
 	stability_cost_modifier = 0.2

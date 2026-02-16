@@ -28,25 +28,45 @@
  THE_SUW_2_3_nakamann_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:"
  THE_SUW_2_3_nakamann_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:"
  THE_SUW_2_3_tt: "‹NöNAQ¸‹bìNTv^‹Ya:N§G100§!„v§Yåe,g0W:S§!ýV¶R"
- THE_SUW_suw_2_4_tt_yes: "£yes£‚YœgÇËS‹Y²NAmŒRbûN¡R:"
- THE_SUW_suw_2_4_tt_no: "£no£‚YœgÇËS‹Y²NAmŒRbûN¡R:"
- THE_SUW_kan_2_4_tt_yes: "£yes£‚YœgÇ›Q‹NVgŒRbûN¡R:"
- THE_SUW_kan_2_4_tt_no: "£no£‚YœgÇ›Q‹NVgŒRbûN¡R:"
- THE_SUW_suw_2_4_tt: "v^•šRTíuŒRb¹eV"
- THE_SUW_suw_2_5_tt_yes: "£yes£‚YœgÇËS‹Y²NAmŒRbûN¡R"
- THE_SUW_suw_2_5_tt_no: "£no£‚YœgÇËS‹Y²NAmŒRbûN¡R:"
- THE_SUW_kan_2_5_tt_yes: "£yes£‚YœgÇ›Q‹NVgŒRbûN¡R:"
- THE_SUW_kan_2_5_tt_no: "£no£‚YœgÇ›Q‹NVgŒRbûN¡R:"
+ THE_SUW_suw_2_4_tt_yes: "£yes£‚YœgÇ§GËS‹Y²NAm§!ŒRbûN¡R:"
+ THE_SUW_suw_2_4_tt_no: "£no£‚YœgÇ§GËS‹Y²NAm§!ŒRbûN¡R:"
+ THE_SUW_kan_2_4_tt_yes: "£yes£‚YœgÇ§G›Q‹NVg§!ŒRbûN¡R:"
+ THE_SUW_kan_2_4_tt_no: "£no£‚YœgÇ§G›Q‹NVg§!ŒRbûN¡R:"
+ THE_SUW_lock_tt: "§Tv^•šRTíuŒRb¹eV§!"
+ THE_SUW_suw_2_5_tt_yes: "£yes£‚YœgÇ§GËS‹Y²NAm§!ŒRbûN¡R:"
+ THE_SUW_suw_2_5_tt_no: "£no£‚YœgÇ§GËS‹Y²NAm§!ŒRbûN¡R:"
+ THE_SUW_kan_2_5_tt_yes: "£yes£‚YœgÇ§G›Q‹NVg§!ŒRbûN¡R:"
+ THE_SUW_kan_2_5_tt_no: "£no£‚YœgÇ§G›Q‹NVg§!ŒRbûN¡R:"
  THE_SUW_2_5_tradenode_tt: "’Nà`qQ)R"
  THE_SUW_2_5_enable_korean_palace_tt: "AQ¸‹=T(u§Gofy«R§!GYÂ‰"
+ THE_SUW_3_6_tt: "9hnc§Tgåe§!N§TánÑ‘§!„vŒRbÅ`µQwØSSå‹ûN¡RVY±R"
+ THE_SUW_suw_and_kan_3_6_tt_yes: "£yes£‚YœgÇ§G›Q‹NVg§!N£yes£Ç§GÐc›OD©R§!ŒRbûN¡R:\n£yes£bw‚YœgÇ§GËS‹Y²NAm§!N£yes£Ç§G›Q‹NZQa§!ŒRbûN¡R,R§TŒNdWòTšR§!:"
+ THE_SUW_suw_and_kan_3_6_tt_no: "£no£‚YœgÇ§G›Q‹NVg§!N£no£Ç§GÐc›OD©R§!ŒRbûN¡R:\n£no£bw‚YœgÇ§GËS‹Y²NAm§!N£no£Ç§G›Q‹NZQa§!ŒRbûN¡R,R§TŒNdWòTšR§!:"
+ THE_SUW_suw_3_6_tt_yes: "£yes£‚YœgÇ§GËS‹Y²NAm§!N£yes£Ç§GÐc›OD©R§!ŒRbûN¡R,R§T0Wwmµm§!:"
+ THE_SUW_suw_3_6_tt_no: "£no£‚YœgÇ§GËS‹Y²NAm§!N£no£Ç§GÐc›OD©R§!ŒRbûN¡R,R§T0Wwmµm§!:"
+ THE_SUW_kan_3_6_tt_yes: "£yes£‚YœgÇ§G›Q‹NVg§!N£yes£Ç§G›Q‹NZQa§!ŒRbûN¡R,R§T)YNNÖS§!:"
+ THE_SUW_kan_3_6_tt_no: "£no£‚YœgÇ§G›Q‹NVg§!N£no£Ç§G›Q‹NZQa§!ŒRbûN¡R,R§T)YNNÖS§!:"
+ THE_SUW_kan_mechanic_1_tt: "§Y–:g10*Nåb	g„vwýN§!·ƒ—V§Y?eœ^ú^Qr§!GSµu0‚YœgSVMR¡l	gú^Qr,Rûm R§YÕlb–§!,‚Yœg	g§Y^?e…S§!,R–:g·ƒ—V§G1§!úWNxz6ebuµNbºN›R"
+ THE_SUW_kan_mechanic_2_tt: "nd–býV§YhQƒX§!„vÛSqN"
+ THE_SUW_kan_mechanic_3_tt: "nd–Nb	g§Y¥cäXýV¶R§!„v§Tb‰N÷þ–§!"
  THE_SUW_4_1_case_tt_yes: "£yes£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
  THE_SUW_4_1_case_tt_no: "£no£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
  THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!·ƒ—V†NNb	g§Yåe,g§!‡eSÄuwýN„v8lEN'`±Rðy0"
  THE_SUW_4_3_tt: "»lNNb	g§Yåe,g§!‡eSÄu„vwýNÏQS§G15§!t^R»yININ\nv^ÏQS§Yê»l¦^§!ó§G0§!"
  THE_SUW_4_3_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
  THE_SUW_4_3_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
- THE_SUW_4_4_tt: "ÎN»lNÏk*NMOŽN§Yåe,g§!0W:SN—RYe=f§Y[Root.Religion.GetName]§!„vwýN·ƒ—V§G20§!£adm£Lˆ?e¹ppe"
- THE_SUW_4_5_tt: "(@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!åNY„vNb	g§Yåe,g§!0W:SNwýNpeÏ‘SŽN§Y3§!„výV¶R):"
+ THE_SUW_suw_4_4_tt_yes: "£yes£‚YœgÇ§GÐc›OD©R§!ŒRbûN¡R:"
+ THE_SUW_suw_4_4_tt_no: "£no£‚YœgÇ§GÐc›OD©R§!ŒRbûN¡R:"
+ THE_SUW_kan_4_4_tt_yes: "£yes£‚YœgÇ§G›Q‹NZQa§!ŒRbûN¡R:"
+ THE_SUW_kan_4_4_tt_no: "£no£‚YœgÇ§G›Q‹NZQa§!ŒRbûN¡R:"
+ THE_SUW_suw_4_5_tt_yes: "£yes£‚YœgÇ§GÐc›OD©R§!ŒRbûN¡R:"
+ THE_SUW_suw_4_5_tt_no: "£no£‚YœgÇ§GÐc›OD©R§!ŒRbûN¡R:\nŠb§YßuNán2m„výV¶R§!ØSb§T—RYeˆR²b§!0\n§YbýV—RYe§!b:Nå‹ýV¶R„výV¶RáOðN0\nßu»lw(b	gçubºN)mNS9eáO0\nå‹ýV¶R·ƒ—V§G1000.00§!Ñ‘^0\nå‹ýV¶R·ƒ—V§G100k§!ºN›R0"
+ THE_SUW_kan_4_5_tt_yes: "£yes£‚YœgÇ§G›Q‹NZQa§!ŒRbûN¡R:"
+ THE_SUW_kan_4_5_tt_no: "£no£‚YœgÇ§G›Q‹NZQa§!ŒRbûN¡R:"
+ THE_SUW_suw_4_5_tt: "ßuN§Yán2m§!w·ƒ—V§T.OGYVgw§!yr(0\nˆmd–§Yán2m0W:S§!„vhQèRƒŸ^"
+ THE_SUW_kan_4_5_tt: "(W§Y–™ýwýN§!ub§G20§!=e§TkQ×e§!"
+# THE_SUW_4_4_tt: "ÎN»lNÏk*NMOŽN§Yåe,g§!0W:SN—RYe=f§Y[Root.Religion.GetName]§!„vwýN·ƒ—V§G20§!£adm£Lˆ?e¹ppe"
+# THE_SUW_4_5_tt: "(@RYU§Y[RYU.GetName]§!ŒT@ANU§Y[ANU.GetName]§!åNY„vNb	g§Yåe,g§!0W:SNwýNpeÏ‘SŽN§Y3§!„výV¶R):"
  The_SUW_5_1_tt: "=fù‹¿‹"
  THE_SUW_Strengthening_Suwa_Daisha_tt: "=T(u³Q®‹0§YÍ‘ú^bìN„v¶R§!0"
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_tt: "AQ¸‹=T(uGYÂ‰§T0ù‹¿‹'Y>y0§!"
@@ -115,7 +135,7 @@
  THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§Gù‹¿‹PRN^S§!Y²NáOag"
  THE_SUW_kan_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§G^yHYPRN^S§!Y²NáOag"
  THE_SUW_suw_1_9_tt: "PˆN§Ygœœ§!hQƒX°e„v0WT"
-
+ THE_SUW_reform_tt: "Î˜kyqVÍTîOck:§Y+10.0%§!"
 ### TOOLTIP_END
 
 ### dynasty
@@ -170,6 +190,7 @@
  THE_SUW_The_Beginning_of_Holy_War_two_modifier: "1WbKNËY"
  THE_SUW_Recruit_manpower_country_modiffier: "ÛbÆ–ºNKb"
  THE_SUW_Heart_of_Struggle_country_modiffier: "—e‰NKNÃV"
+ THE_SUW_can_not_declare_war_modifier: "án2m‰N8—"
  THE_SUW_divergence_of_views_country_modifier: "Rgk"
  THE_SUW_divergence_of_views_economy_country_modifier: "Rgk-ÏuNm-8f"
  THE_SUW_divergence_of_views_taxation_country_modifier: "Rgk-ÏuNm-z6e"
@@ -363,6 +384,8 @@
  THE_SUW_Strengthening_Suwa_Daisha_three_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_estate_burghers_action_title: "8x^X±”±r"
  THE_SUW_estate_burghers_action_desc: ""
+ THE_SUW_odoru_decision_title: "¥cNwOYPN¥cNw‚"
+ THE_SUW_odoru_decision_desc: ""
 ### DECISION_END
 
 ###SUBJECT_TYPE
@@ -388,6 +411,31 @@
  THE_SUW_kan_MECHANIC_TOOLTIP: "^yHYPR"
  THE_SUW_RULER: "dãS'YºN"
  THE_SUW_QUEEN: "ú^¡VT¹e"
+ THE_SUW_suw_reform: "ù‹¿‹NydW"
+ THE_SUW_suw_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
+ THE_SUW_kan_reform: "^yHYmyŒN"
+ THE_SUW_kan_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
+ ability_THE_SUW_mechanic: "§T0Ws^)Yb§!"
+ ability_THE_SUW_mechanic_desc: ""
+ ability_THE_SUW_suw_land_of_the_christian_sun_mechanic: "§T0WKNo`§!"
+ ability_THE_SUW_suw_land_of_the_christian_sun_mechanic_desc: ""
+ ability_THE_SUW_kan_land_of_the_christian_sun_mechanic: "§T)YKN`§!"
+ ability_THE_SUW_kan_land_of_the_christian_sun_mechanic_desc: ""
+ THE_SUW_kan_mechanic_interactions_1:0 "8OúQ`O„vÌSKb!"
+ THE_SUW_kan_mechanic_interactions_1_desc:0 "ú^¾‹`O„v¶RíV!"
+ THE_SUW_kan_mechanic_interactions_2:0 "¬bw`O„v4Y…˜!"
+ THE_SUW_kan_mechanic_interactions_2_desc:0 "ZWšR`O„v…QÃV!"
+ THE_SUW_kan_mechanic_interactions_3:0 ">Nw`O„vfkhV!"
+ THE_SUW_kan_mechanic_interactions_3_desc:0 "ˆR²b`O„váOðN!"
+ THE_SUW_kan_mechanic_1:0 "£adm£ )YåT"
+ monthly_THE_SUW_kan_mechanic_1:0 "Monthly £adm£ )YåT"
+ THE_SUW_kan_mechanic_1_gain_modifier:0 "£adm£ )YåT Gain Modifier"
+ THE_SUW_kan_mechanic_2:0 "£dip£ )YZ"
+ monthly_THE_SUW_kan_mechanic_2:0 "Monthly £dip£ )YZ"
+ THE_SUW_kan_mechanic_2_gain_modifier:0 "£dip£ )YZ Gain Modifier"
+ THE_SUW_kan_mechanic_3:0 "£mil£ )Yéb"
+ monthly_THE_SUW_kan_mechanic_3:0 "Monthly £mil£ )Yéb"
+ THE_SUW_kan_mechanic_3_gain_modifier:0 "£mil£ )Yéb Gain Modifier"
 ### GOVERNMENT_END
 
 ### Great_projects
@@ -455,3 +503,5 @@ sanae_desc: "1"
  THE_SUW_godsticks: "^yŒr"
  THE_SUW_godsticksDESC: "‰˜åw0yxyøvO0"
 ###prices_end
+
+áOðNNo`,b‰NNbk

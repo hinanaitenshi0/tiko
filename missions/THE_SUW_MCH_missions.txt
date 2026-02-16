@@ -245,7 +245,7 @@ THE_SUW_MCH_mission_branch_4 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			subsidised_percent_amount = 0.5
+			
 		} 
 
 		effect = {

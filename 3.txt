@@ -41,4 +41,45 @@ set_country_flag = THE_SUW_1_3_statesman_flag
 	add_building = temple
 	add_building = fort_15th
 }
+declare_war_with_cb = {
+	#who = NVK
+	#who = SOL
+    casus_belli = cb_humiliate
+}
+capital_scope = { ROOT = { infantry = PREV } }
 
+#every_country = {
+#	limit = { 
+#		capital_scope = {
+#			region = manchuria_region
+#		}
+#		guaranteed_by = ROOT
+#	}
+#	remove_fow = 120
+#}
+#mjz = {
+#	guaranteed_by = ROOT
+#}
+add_ruler_personality = legendary_conqueror_personality
+#every_country = {
+#	limit = {
+#		capital_scope = {
+#			region = manchuria_region
+#		}
+#	}
+#	ROOT = {
+#		inherit = PREV
+#	}
+#}
+for = {
+	amount = 10
+	effect = "
+		random_owned_province = {
+			limit = {
+				NOT = { has_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag }
+			}
+			add_or_upgrade_courthouse_building = yes
+			set_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag
+		}
+	"
+}

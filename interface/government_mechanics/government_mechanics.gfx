@@ -1,0 +1,36 @@
+spriteTypes = {
+
+	### THE_SUW_kan改革ui ###
+	#spriteType = {
+	#	name = "THE_SUW_kan_government_reform"
+	#	texturefile = "gfx\\interface\\government_reform_icons\\THE_SUW_kan_government_reform_icon.dds"
+	#	loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
+	spriteType = {
+		name = "government_reform_THE_SUW_kan_government_1_reform"
+		texturefile = "gfx/interface/THE_SUW_government_reform_icons/THE_SUW_kan_government_reform_1.dds"
+	}
+	spriteType = {
+		name = "THE_SUW_government_mechanics_kan_1"
+		texturefile = "gfx/interface/THE_SUW_government_mechanics/THE_SUW_government_mechanics_kan/THE_SUW_government_mechanics_kan_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "THE_SUW_government_mechanics_kan_2"
+		texturefile = "gfx/interface/THE_SUW_government_mechanics/THE_SUW_government_mechanics_kan/THE_SUW_government_mechanics_kan_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "THE_SUW_government_mechanics_kan_3"
+		texturefile = "gfx/interface/THE_SUW_government_mechanics/THE_SUW_government_mechanics_kan/THE_SUW_government_mechanics_kan_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	
+}

@@ -1780,6 +1780,8 @@ theocracy = {
 				###THE
 				THE_TFR_shadow_theocracy_reform
 				THE_SUW_SUW_and_KAN_reform
+				THE_SUW_suw_reform
+				THE_SUW_kan_reform
 			}
 		}
 		internal_vs_external_mission = {

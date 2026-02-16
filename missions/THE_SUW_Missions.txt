@@ -441,7 +441,7 @@ THE_SUW_stage_1_branch_2 = {
 					add_historical_friend = ROOT
 				}
 				set_country_flag = THE_SUW_suw_2_4_flag
-				custom_tooltip = THE_SUW_suw_2_4_tt
+				custom_tooltip = THE_SUW_lock_tt
 			}
 			else = {
 				custom_tooltip = THE_SUW_suw_2_4_tt_no
@@ -452,7 +452,7 @@ THE_SUW_stage_1_branch_2 = {
 						add_historical_friend = ROOT
 					}
 				}
-				custom_tooltip = THE_SUW_suw_2_4_tt
+				custom_tooltip = THE_SUW_lock_tt
 			}
 			if = {
 				limit = {  
@@ -474,7 +474,7 @@ THE_SUW_stage_1_branch_2 = {
 					inherit = KOR
 				}
 				set_country_flag = THE_SUW_kan_2_4_flag
-				custom_tooltip = THE_SUW_suw_2_4_tt
+				custom_tooltip = THE_SUW_lock_tt
 			}
 			else = {
 				custom_tooltip = THE_SUW_kan_2_4_tt_no
@@ -483,7 +483,7 @@ THE_SUW_stage_1_branch_2 = {
 						inherit = KOR
 					}
 				}
-				custom_tooltip = THE_SUW_suw_2_4_tt
+				custom_tooltip = THE_SUW_lock_tt
 			}
 		}
 	}
@@ -515,8 +515,12 @@ THE_SUW_stage_1_branch_2 = {
 					
 				}
 				AND = {
-					owns_all_provinces = {
-						region = korea_region
+					ROOT = {
+						owns_all_provinces = {
+							region = korea_region
+						}
+					}
+					korea_region = {
 						religion = ROOT
 					}
 					hidden_trigger = {
@@ -556,7 +560,14 @@ THE_SUW_stage_1_branch_2 = {
 						key = THE_SUW_2_5_tradenode_tt
 					}
 				}
-				
+				735 = {
+					add_trade_modifier = {
+						who = KOR
+						duration = 18250
+						power = 200
+						key = THE_SUW_2_5_tradenode_tt
+					}
+				}
 			}
 			else = {
 				custom_tooltip = THE_SUW_suw_2_5_tt_no
@@ -578,12 +589,24 @@ THE_SUW_stage_1_branch_2 = {
 							key = THE_SUW_2_5_tradenode_tt
 						}
 					}
+					735 = {
+						add_trade_modifier = {
+							who = KOR
+							duration = 18250
+							power = 200
+							key = THE_SUW_2_5_tradenode_tt
+						}
+					}
 				}
 			}
 			if = {
 				limit = {  
-					owns_all_provinces = {
-						region = korea_region
+					ROOT = {
+						owns_all_provinces = {
+							region = korea_region
+						}
+					}
+					korea_region = {
 						religion = ROOT
 					}
 				}
@@ -691,10 +714,32 @@ THE_SUW_stage_1_branch_3 = {
 			THE_SUW_2_5
 			THE_SUW_4_5
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+
+		} 
 
 		trigger = {
-			NOT = { any_country = { has_reform = shogunate }  } 
+			custom_trigger_tooltip = {
+				tooltip = THE_SUW_3_6_tt
+				OR = {
+					AND = {
+						has_country_flag = THE_SUW_suw_2_4_flag
+						has_country_flag = THE_SUW_suw_4_4_flag
+					}
+					AND = {
+						has_country_flag = THE_SUW_kan_2_4_flag
+						has_country_flag = THE_SUW_kan_4_4_flag
+					}
+					AND = {
+						has_country_flag = THE_SUW_suw_2_4_flag
+						has_country_flag = THE_SUW_kan_4_4_flag
+					}
+					AND = {
+						has_country_flag = THE_SUW_kan_2_4_flag
+						has_country_flag = THE_SUW_suw_4_4_flag
+					}
+				}
+			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 43
 				region = japan_region
@@ -702,8 +747,64 @@ THE_SUW_stage_1_branch_3 = {
 		}
 
 		effect = {
-			add_government_reform = THE_SUW_SUW_and_KAN_reform
-			country_event = { id = THE_SUW_events.17 } 
+			#双神
+			if = {
+				limit = { 
+					OR = {
+						AND = {
+							has_country_flag = THE_SUW_suw_2_4_flag
+							has_country_flag = THE_SUW_kan_4_4_flag
+						}
+						AND = {
+							has_country_flag = THE_SUW_kan_2_4_flag
+							has_country_flag = THE_SUW_suw_4_4_flag
+						}
+					}
+				}
+				custom_tooltip = THE_SUW_suw_and_kan_3_6_tt_yes
+				add_government_reform = THE_SUW_SUW_and_KAN_reform
+			}
+			else = {
+				custom_tooltip = THE_SUW_suw_and_kan_3_6_tt_no
+				tooltip = {
+					add_government_reform = THE_SUW_SUW_and_KAN_reform
+				}
+			}
+			#诹访子
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = THE_SUW_suw_2_4_flag
+						has_country_flag = THE_SUW_suw_4_4_flag
+					}
+				}
+				custom_tooltip = THE_SUW_suw_3_6_tt_yes
+				add_government_reform = THE_SUW_suw_reform
+			}
+			else = {
+				custom_tooltip = THE_SUW_suw_3_6_tt_no
+				tooltip = {
+					add_government_reform = THE_SUW_suw_reform
+				}
+			}
+			#神奈子
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = THE_SUW_kan_2_4_flag
+						has_country_flag = THE_SUW_kan_4_4_flag
+					}
+				}
+				custom_tooltip = THE_SUW_kan_3_6_tt_yes
+				add_government_reform = THE_SUW_kan_reform
+			}
+			else = {
+				custom_tooltip = THE_SUW_kan_3_6_tt_no
+				tooltip = {
+					add_government_reform = THE_SUW_kan_reform
+				}
+			}
+			#country_event = { id = THE_SUW_events.17 } 
 		}
 	}
 }
@@ -836,28 +937,207 @@ THE_SUW_stage_1_branch_4 = {
 			THE_SUW_3_3
 			THE_SUW_4_3
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			region = manchuria_region
+		} 
 
 		trigger = {
-			num_of_owned_provinces_with = {
-				religion = th_moriyashinto
-				region = japan_region
-				value = 15
+			OR = {
+				all_country = {
+					capital_scope = {
+						region = manchuria_region
+					}
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = sent_gift
+					}
+					has_opinion = {
+						who = ROOT
+						value = 60
+					}
+				}
+				all_country = {
+					capital_scope = {
+						region = manchuria_region
+					}
+					NOT = { army_size = ROOT }
+				}
 			}
 			is_free_or_tributary_trigger = yes
-			mission_completed = THE_SUW_2_3
 		}
 
 		effect = {
-			custom_tooltip = THE_SUW_4_4_tt
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						region = japan_region
-						religion = ROOT
+			if = {
+				limit = { 
+					all_country = {
+						capital_scope = {
+							region = manchuria_region
+						}										
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = sent_gift
+						}	
+						has_opinion = {
+							who = ROOT
+							value = 60
+						}
 					}
-					ROOT = { add_adm_power = 20 } 
 				}
+				custom_tooltip = THE_SUW_suw_4_4_tt_yes
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = manchuria_region
+						}
+					}
+					add_country_modifier = {
+						name = THE_SUW_can_not_declare_war_modifier
+						duration = -1
+					}
+					ROOT = {
+						create_guarantee = PREV
+					}
+					every_country = {
+						limit = { 
+							capital_scope = {
+								region = manchuria_region
+							}
+						}
+						declare_war_with_cb = {
+							who = PREV
+							casus_belli = cb_annex
+						}
+					}
+					add_treasury = 200
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { cavalry = PREV } }
+					capital_scope = { ROOT = { cavalry = PREV } }
+				}
+				ROOT = {
+					add_years_of_income = -1
+					add_yearly_manpower = -1
+				}
+				every_country = {
+					limit = { 
+						capital_scope = {
+							region = manchuria_region
+						}
+						guaranteed_by = ROOT
+					}
+					remove_fow = 120
+				}
+				set_country_flag = THE_SUW_suw_4_4_flag
+				custom_tooltip = THE_SUW_lock_tt
+			}
+			else = {
+				custom_tooltip = THE_SUW_suw_4_4_tt_no
+				tooltip = {
+					every_country = {
+						limit = {
+							capital_scope = {
+								region = manchuria_region
+							}
+						}
+						add_country_modifier = {
+							name = THE_SUW_can_not_declare_war_modifier
+							duration = -1
+						}
+						ROOT = {
+							create_guarantee = PREV
+						}
+						every_country = {
+							limit = { 
+								capital_scope = {
+									region = manchuria_region
+								}
+							}
+							declare_war_with_cb = {
+								who = PREV
+								casus_belli = cb_annex
+							}
+						}
+						add_treasury = 200
+						capital_scope = { ROOT = { infantry = PREV } }
+						capital_scope = { ROOT = { infantry = PREV } }
+						capital_scope = { ROOT = { infantry = PREV } }
+						capital_scope = { ROOT = { infantry = PREV } }
+						capital_scope = { ROOT = { infantry = PREV } }
+						capital_scope = { ROOT = { infantry = PREV } }
+						capital_scope = { ROOT = { infantry = PREV } }
+						capital_scope = { ROOT = { infantry = PREV } }
+						capital_scope = { ROOT = { cavalry = PREV } }
+						capital_scope = { ROOT = { cavalry = PREV } }
+					}
+					ROOT = {
+						add_years_of_income = -1
+						add_yearly_manpower = -1
+					}
+					every_country = {
+						limit = { 
+							capital_scope = {
+								region = manchuria_region
+							}
+							guaranteed_by = ROOT
+						}
+						remove_fow = 120
+					}
+				}
+				custom_tooltip = THE_SUW_lock_tt
+			}
+			
+			if = {
+				limit = {  
+					all_country = {
+						capital_scope = {
+							region = manchuria_region
+						}
+						NOT = { army_size = ROOT }
+					}
+				}
+				custom_tooltip = THE_SUW_kan_4_4_tt_yes
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = manchuria_region
+						}
+					}
+					ROOT = {
+						declare_war_with_cb = {
+							who = PREV
+							casus_belli = cb_humiliate
+						}
+					}
+				}
+				
+				set_country_flag = THE_SUW_kan_4_4_flag
+				custom_tooltip = THE_SUW_lock_tt
+			}
+			else = {
+				custom_tooltip = THE_SUW_kan_4_4_tt_no
+				tooltip = {
+					every_country = {
+						limit = {
+							capital_scope = {
+								region = manchuria_region
+							}
+						}
+						ROOT = {
+							declare_war_with_cb = {
+								who = PREV
+								casus_belli = cb_humiliate
+							}
+						}
+					}
+				}
+				
+				custom_tooltip = THE_SUW_lock_tt
 			}
 		}
 	}
@@ -866,59 +1146,278 @@ THE_SUW_stage_1_branch_4 = {
 		icon = mission_unknown_mission
 		position = 5
 		required_missions = { THE_SUW_4_4 } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			region = manchuria_region
+		} 
 
 		trigger = {
-			num_of_owned_provinces_with = {
-				region = japan_region
-				value = 24
-			}
-			all_country = {
+			OR = {
 				AND = {
-					capital_scope = { region = japan_region } 
-					NOT = { army_size = ROOT } 
+					any_country = {
+						capital_scope = {
+							region = manchuria_region
+						}
+						owns_all_provinces = {
+							region = manchuria_region
+							NOT = { province_id = 1033 }
+							NOT = { province_id = 724 }
+							NOT = { area = liaoning_area }
+						}
+						#all_province = {
+						#	region = manchuria_region
+						#	NOT = { province_id = 1033 }
+						#	NOT = { province_id = 724 }
+						#	NOT = { area = liaoning_area }
+						#	country_or_non_sovereign_subject_holds = PREV
+						#}
+					}
+					hidden_trigger = {
+						has_country_flag = THE_SUW_suw_4_4_flag
+					}
+				}
+				AND = {
+					all_country = {
+						capital_scope = {
+							region = manchuria_region
+						}
+						ROOT = {
+							has_won_war_against = { 
+								max_years_since = 20 
+								who = PREV
+							}
+						}
+					}
+					hidden_trigger = {
+						has_country_flag = THE_SUW_kan_4_4_flag
+					}
 				}
 			}
+			
+			
 		}
 
 		effect = {
-			RYU = {
-				country_event = {
-					id = THE_SUW_events.15
-					days = 15
+			if = {
+				limit = {  
+					any_country = {
+						capital_scope = {
+							region = manchuria_region
+						}
+						owns_all_provinces = {
+							region = manchuria_region
+							NOT = { province_id = 1033 }
+							NOT = { province_id = 724 }
+							NOT = { area = liaoning_area }
+						}
+						#all_province = {
+						#	region = manchuria_region
+						#	NOT = { province_id = 1033 }
+						#	NOT = { province_id = 724 }
+						#	NOT = { area = liaoning_area }
+						#	country_or_non_sovereign_subject_holds = ROOT
+						#}
+					}
 				}
-			}
-			ANU = {
-				country_event = {
-					id = THE_SUW_events.16
-					days = 15
-				}
-			}
-			custom_tooltip = THE_SUW_4_5_tt
-			tooltip = {
-				country_event = {
-					id = THE_SUW_events.14
-					days = 15
-				}
-			}
-			custom_tooltip = empty_line_tt
-			custom_tooltip = THE_SUW_4_5_tt_2
-			hidden_effect = {
+				custom_tooltip = THE_SUW_suw_4_5_tt_yes
 				every_country = {
 					limit = {
-						capital_scope = { region = japan_region } 
-						NOT = { tag = RYU } 
-						NOT = { tag = ANU } 
-						NOT = { num_of_cities = 3 } 
+						capital_scope = {
+							region = manchuria_region
+						}
+						owns_all_provinces = {
+							region = manchuria_region
+							NOT = { province_id = 1033 }
+							NOT = { province_id = 724 }
+							NOT = { area = liaoning_area }
+						}
+						#all_province = {
+						#	region = manchuria_region
+						#	NOT = { province_id = 1033 }
+						#	NOT = { province_id = 724 }
+						#	NOT = { area = liaoning_area }
+						#	country_or_non_sovereign_subject_holds = ROOT
+						#}
 					}
-					country_event = {
-						id = THE_SUW_events.14
-						days = 1
+					ROOT = {
+						create_subject = {
+							subject_type = THE_SUW_Religious_Protection
+							subject = PREV
+						}
+					}
+					THIS = {
+						change_religion = ROOT
+						add_treasury = 1000
+						add_manpower = 100
+						add_ruler_personality = legendary_conqueror_personality
+					}
+				} 
+				custom_tooltip = THE_SUW_suw_4_5_tt
+				hidden_effect = {
+					every_province = {
+						limit = {
+							region = manchuria_region
+						}
+						add_devastation = -100
 					}
 				}
-				complete_mission = THE_SUW_2_4
-				complete_mission = THE_SUW_2_5
+				
+					
 			}
+			else = {
+				custom_tooltip = THE_SUW_suw_4_5_tt_no
+				tooltip = {				
+					#every_country = {
+					#	limit = {
+					#		capital_scope = {
+					#			region = manchuria_region
+					#		}
+					#		owns_all_provinces = {
+					#			region = manchuria_region
+					#			NOT = { province_id = 1033 }
+					#			NOT = { province_id = 724 }
+					#			NOT = { area = liaoning_area }
+					#		}
+					#		all_province = {
+					#			region = manchuria_region
+					#			NOT = { province_id = 1033 }
+					#			NOT = { province_id = 724 }
+					#			NOT = { area = liaoning_area }
+					#			country_or_non_sovereign_subject_holds = PREV
+					#		}
+					#	}
+					#	ROOT = {
+					#		create_subject = {
+					#			subject_type = THE_SUW_Religious_Protection
+					#			subject = PREV
+					#		}
+					#	}
+					#	THIS = {
+					#		change_religion = ROOT
+					#		add_treasury = 1000
+					#		add_manpower = 100
+					#		add_ruler_personality = legendary_conqueror_personality
+					#	}
+					#} 
+					custom_tooltip = THE_SUW_suw_4_5_tt
+					hidden_effect = {
+						every_province = {
+							limit = {
+								region = manchuria_region
+							}
+							add_devastation = -100
+						}
+					}
+					
+				}
+			}
+			if = {
+				limit = { 
+					all_country = {
+						capital_scope = {
+							region = manchuria_region
+						}
+						ROOT = {
+							has_won_war_against = { 
+								max_years_since = 20 
+								who = PREV
+							}
+						}
+					}
+				}
+				custom_tooltip = THE_SUW_kan_4_5_tt_yes
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = manchuria_region
+						}
+					}
+					ROOT = {
+						inherit = PREV
+					}
+				}
+				custom_tooltip = THE_SUW_kan_4_5_tt
+				hidden_effect = {
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT }
+				}
+				
+			}
+			else = {
+				custom_tooltip = THE_SUW_kan_4_5_tt_no
+				tooltip = {
+					every_country = {
+						limit = {
+							capital_scope = {
+								region = manchuria_region
+							}
+						}
+						ROOT = {
+							inherit = PREV
+						}
+						
+					}
+					custom_tooltip = THE_SUW_kan_4_5_tt
+					hidden_effect = {
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT }
+					}
+					
+				}
+			}
+			
+			#RYU = {
+			#	country_event = {
+			#		id = THE_SUW_events.15
+			#		days = 15
+			#	}
+			#}
+			#ANU = {
+			#	country_event = {
+			#		id = THE_SUW_events.16
+			#		days = 15
+			#	}
+			#}
+			#custom_tooltip = THE_SUW_4_5_tt
+			
+			#custom_tooltip = empty_line_tt
+			#custom_tooltip = THE_SUW_4_5_tt_2
+			
 		}
 	}
 }

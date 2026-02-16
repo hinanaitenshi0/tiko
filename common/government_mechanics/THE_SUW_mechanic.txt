@@ -45,3 +45,252 @@ THE_SUW_mechanic = {
 		}
 	}
 }
+
+THE_SUW_suw_land_of_the_christian_sun_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 16
+	available = {
+		always = yes
+	}
+	
+	powers = {
+		THE_SUW_kan_mechanic_1 = {
+			max = 150
+			monarch_power = ADM
+			base_monthly_growth = 0.25
+		}
+		THE_SUW_kan_mechanic_2 = {
+			max = 150
+			monarch_power = DIP
+			base_monthly_growth = 0.25
+		}
+		THE_SUW_kan_mechanic_3 = {
+			max = 150
+			monarch_power = MIL
+			base_monthly_growth = 0.25
+		}
+	}
+	
+	interactions = {
+		jap_ability_invite_cardinal = {
+			icon = THE_SUW_government_mechanics_kan_1
+			cost_type = THE_SUW_kan_mechanic_1
+			cost = 100
+			trigger = {
+				OR = {
+					religion = THE_moriyaseikyou_religion 
+					religion = th_moriyashinto
+				} 
+			}
+			effect = {
+				custom_tooltip = THE_SUW_kan_mechanic_1_tt
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								NOT = { has_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag }
+							}
+							add_or_upgrade_courthouse_building = yes
+							set_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag
+						}
+					"
+				}
+				every_owned_province = {
+					limit = {
+						has_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag
+					}
+					clr_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag
+				}
+				add_stability_or_adm_power = yes 
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+			}
+		}
+		jap_ability_military_parade = {
+			icon = GFX_christian_japan_dip_button 
+			cost_type = THE_SUW_kan_mechanic_2
+			cost = 100
+			trigger = { 
+				OR = {
+					religion = THE_moriyaseikyou_religion 
+					religion = th_moriyashinto
+				} 
+			}
+			effect = { 
+				custom_tooltip = THE_SUW_kan_mechanic_2_tt
+				every_owned_province = {
+					change_controller = ROOT
+					clear_rebels = yes
+				}
+				add_army_professionalism = 0.03
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+			}
+		}
+		jap_ability_bolster_morale = {
+			icon = GFX_christian_japan_mil_button
+			cost_type = THE_SUW_kan_mechanic_3
+			cost = 100
+			trigger = {
+				OR = {
+					religion = THE_moriyaseikyou_religion 
+					religion = th_moriyashinto
+				} 
+			}
+			effect = { 
+				custom_tooltip = THE_SUW_kan_mechanic_3_tt
+				every_country = {
+					limit = {
+						border_distance = {
+							who = ROOT
+							NOT= {
+								distance = 1
+							}
+						}
+					}
+					remove_fow = 120
+				}
+				add_country_modifier = {
+					name = jap_bolstered_spirits
+					duration = 1825
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+			}
+		}
+	}
+}
+
+THE_SUW_kan_land_of_the_christian_sun_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 16
+	available = {
+		always = yes
+	}
+	
+	powers = {
+		THE_SUW_kan_mechanic_1 = {
+			max = 150
+			monarch_power = ADM
+			base_monthly_growth = 0.25
+		}
+		THE_SUW_kan_mechanic_2 = {
+			max = 150
+			monarch_power = DIP
+			base_monthly_growth = 0.25
+		}
+		THE_SUW_kan_mechanic_3 = {
+			max = 150
+			monarch_power = MIL
+			base_monthly_growth = 0.25
+		}
+	}
+	
+	interactions = {
+		THE_SUW_kan_mechanic_interactions_1 = {
+			icon = THE_SUW_government_mechanics_kan_1
+			cost_type = THE_SUW_kan_mechanic_1
+			cost = 100
+			trigger = {
+				OR = {
+					religion = THE_moriyaseikyou_religion 
+					religion = th_moriyashinto
+				} 
+			}
+			effect = {
+				custom_tooltip = THE_SUW_kan_mechanic_1_tt
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								NOT = { has_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag }
+							}
+							add_or_upgrade_courthouse_building = yes
+							set_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag
+						}
+					"
+				}
+				every_owned_province = {
+					limit = {
+						has_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag
+					}
+					clr_province_flag = THE_SUW_kan_land_of_the_christian_sun_mechanic_adm_province_flag
+				}
+				add_stability_or_adm_power = yes 
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+			}
+		}
+		THE_SUW_kan_mechanic_interactions_2 = {
+			icon = THE_SUW_government_mechanics_kan_2 
+			cost_type = THE_SUW_kan_mechanic_2
+			cost = 100
+			trigger = { 
+				OR = {
+					religion = THE_moriyaseikyou_religion 
+					religion = th_moriyashinto
+				} 
+			}
+			effect = { 
+				custom_tooltip = THE_SUW_kan_mechanic_2_tt
+				hidden_effect = {
+					every_owned_province = {
+						change_controller = ROOT
+						clear_rebels = yes
+					}
+				}
+				
+				add_army_professionalism = 0.03
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+			}
+		}
+		THE_SUW_kan_mechanic_interactions_3 = {
+			icon = THE_SUW_government_mechanics_kan_3
+			cost_type = THE_SUW_kan_mechanic_3
+			cost = 100
+			trigger = {
+				OR = {
+					religion = THE_moriyaseikyou_religion 
+					religion = th_moriyashinto
+				} 
+			}
+			effect = { 
+				custom_tooltip = THE_SUW_kan_mechanic_3_tt
+				every_country = {
+					limit = {
+						#border_distance = {
+						#	who = ROOT
+						#	NOT= {
+						#		distance = 1
+						#	}
+						#}
+						is_neighbor_of = ROOT
+					}
+					remove_fow = 120
+				}
+				add_country_modifier = {
+					name = jap_bolstered_spirits
+					duration = 1825
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+			}
+		}
+	}
+}
+

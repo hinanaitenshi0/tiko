@@ -173,6 +173,8 @@ country_decisions = {
 		potential = {	
 			tag = SUW
 			mission_completed = THE_SUW_1_7
+		}
+		allow = {
 			THE_cd_type_decision_scripted_trigger = {
 				OR = {
 					NOT = { has_country_flag = THE_SUW_maikozeikinn_flag }
@@ -182,9 +184,6 @@ country_decisions = {
 					}
 				}
 			}
-		}
-		allow = {
-			
 		}
 		effect = {
 			every_province = {
@@ -279,7 +278,75 @@ country_decisions = {
 	}
 }
 
-
+country_decisions = {
+	#接着奏乐接着舞
+	THE_SUW_odoru_decision = {
+		potential = {	
+			tag = SUW
+			has_country_flag = THE_SUW_suw_4_4_flag
+			NOT = {
+				has_country_flag = THE_SUW_suw_4_5_flag
+			}
+		}
+		allow = {
+			all_country = {
+				capital_scope = {
+					region = manchuria_region
+				}
+				is_at_war = no
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { 
+					capital_scope = {
+						region = manchuria_region
+					}
+				}
+				#every_country = {
+				#	limit = { 
+				#		capital_scope = {
+				#			region = manchuria_region
+				#		}
+				#	}
+				#	declare_war_with_cb = {
+				#		who = PREV
+				#		casus_belli = cb_annex
+				#	}
+				#}
+				add_treasury = 200
+				capital_scope = { ROOT = { infantry = PREV } }
+				capital_scope = { ROOT = { infantry = PREV } }
+				capital_scope = { ROOT = { infantry = PREV } }
+				capital_scope = { ROOT = { infantry = PREV } }
+				capital_scope = { ROOT = { infantry = PREV } }
+				capital_scope = { ROOT = { infantry = PREV } }
+				capital_scope = { ROOT = { infantry = PREV } }
+				capital_scope = { ROOT = { infantry = PREV } }
+				capital_scope = { ROOT = { cavalry = PREV } }
+				capital_scope = { ROOT = { cavalry = PREV } }
+			}
+			ROOT = {
+				add_years_of_income = -1
+				add_yearly_manpower = -1
+			}
+			every_country = {
+				limit = { 
+					capital_scope = {
+						region = manchuria_region
+					}
+					guaranteed_by = ROOT
+				}
+				remove_fow = 120
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
 
 #############################################
 

@@ -15,3 +15,43 @@ clr_country_flag = THE_SUW_1_3_trader_flag
 clr_country_flag = THE_SUW_1_3_diplomat_flag
 clr_country_flag = THE_SUW_1_3_statesman_flag
 change_government_reform_progress = 100
+random_country = {
+	limit = {
+		capital_scope = {
+			region = manchuria_region
+		}
+								#all_province = {
+							#	region = manchuria_region
+							#	country_or_non_sovereign_subject_holds = PREV
+							#}
+	}
+	ROOT = {
+		create_subject = {
+			subject_type = THE_SUW_Religious_Protection
+			subject = PREV
+		}
+	}
+}
+set_country_flag = THE_SUW_suw_4_4_flag
+change_government = theocracy
+add_government_reform = THE_SUW_kan_reform
+add_government_power = {
+    government_mechanic = land_of_the_christian_sun_mechanic
+    which = ADM
+    amount = 100
+}
+add_government_power = {
+    government_mechanic = land_of_the_christian_sun_mechanic
+    which = DIP
+    amount = 100
+}
+add_government_power = {
+    government_mechanic = land_of_the_christian_sun_mechanic
+    which = MIL
+    amount = 100
+}
+add_government_power = {
+    government_mechanic = THE_SUW_kan_land_of_the_christian_sun_mechanic
+    which = ADM
+    amount = 100
+}
