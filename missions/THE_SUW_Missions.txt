@@ -53,25 +53,21 @@ THE_SUW_stage_1_branch_1 = {
 				estate = estate_burghers
 				loyalty = 60
 			}
-			has_advisor = yes 
+			has_advisor = yes
 			all_owned_province = { religion = ROOT } 
-			#num_of_owned_provinces_with = {
-			#	value = 30
-			#	is_prosperous = yes
-			#}
 			stability = 3
 		}
 
 		effect = {
-			add_prestige_or_monarch_power = { amount = 100 }
+			add_prestige_or_monarch_power = { amount = 100 } 
 			add_legitimacy = 100
 			add_republican_tradition = 100
 			add_devotion = 100
 			add_horde_unity = 100
 			add_meritocracy = 100
 			add_splendor = 100
-			if = { #神学家
-				limit = { 
+			if = {
+				limit = {
 					estate_loyalty = {
 						estate = estate_church
 						loyalty = 80
@@ -84,11 +80,9 @@ THE_SUW_stage_1_branch_1 = {
 				custom_tooltip = THE_SUW_1_3_theologian_tt_yes
 				set_country_flag = THE_SUW_1_3_theologian_flag
 			}
-			else = {
-				custom_tooltip = THE_SUW_1_3_theologian_tt_no
-			}
-			if = { #审讯官
-				limit = { 
+			else = { custom_tooltip = THE_SUW_1_3_theologian_tt_no } 
+			if = {
+				limit = {
 					estate_loyalty = {
 						estate = estate_church
 						loyalty = 80
@@ -98,14 +92,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = inquisitor
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_inquisitor_tt_yes	
+				custom_tooltip = THE_SUW_1_3_inquisitor_tt_yes
 				set_country_flag = THE_SUW_1_3_inquisitor_flag
 			}
-			else = {
-				custom_tooltip = THE_SUW_1_3_inquisitor_tt_no
-			}
-			if = { #哲学家
-				limit = { 
+			else = { custom_tooltip = THE_SUW_1_3_inquisitor_tt_no } 
+			if = {
+				limit = {
 					estate_loyalty = {
 						estate = estate_church
 						loyalty = 80
@@ -118,11 +110,9 @@ THE_SUW_stage_1_branch_1 = {
 				custom_tooltip = THE_SUW_1_3_philosopher_tt_yes
 				set_country_flag = THE_SUW_1_3_philosopher_flag
 			}
-			else = {
-				custom_tooltip = THE_SUW_1_3_philosopher_tt_no
-			}	
-			if = { #征兵官
-				limit = { 
+			else = { custom_tooltip = THE_SUW_1_3_philosopher_tt_no } 
+			if = {
+				limit = {
 					estate_loyalty = {
 						estate = estate_nobles
 						loyalty = 80
@@ -132,14 +122,12 @@ THE_SUW_stage_1_branch_1 = {
 						type = recruitmaster
 					}
 				}
-				custom_tooltip = THE_SUW_1_3_recruitmaster_tt_yes	
+				custom_tooltip = THE_SUW_1_3_recruitmaster_tt_yes
 				set_country_flag = THE_SUW_1_3_recruitmaster_flag
 			}
-			else = {
-				custom_tooltip = THE_SUW_1_3_recruitmaster_tt_no
-			}	
-			if = { #要塞工程师
-				limit = { 
+			else = { custom_tooltip = THE_SUW_1_3_recruitmaster_tt_no } 
+			if = {
+				limit = {
 					estate_loyalty = {
 						estate = estate_nobles
 						loyalty = 80
@@ -152,11 +140,9 @@ THE_SUW_stage_1_branch_1 = {
 				custom_tooltip = THE_SUW_1_3_fortification_expert_tt_yes
 				set_country_flag = THE_SUW_1_3_fortification_expert_flag
 			}
-			else = {
-				custom_tooltip = THE_SUW_1_3_fortification_expert_tt_no
-			}
-			if = { #教官
-				limit = { 
+			else = { custom_tooltip = THE_SUW_1_3_fortification_expert_tt_no } 
+			if = {
+				limit = {
 					estate_loyalty = {
 						estate = estate_nobles
 						loyalty = 80
@@ -169,11 +155,9 @@ THE_SUW_stage_1_branch_1 = {
 				custom_tooltip = THE_SUW_1_3_commandant_tt_yes
 				set_country_flag = THE_SUW_1_3_commandant_flag
 			}
-			else = {
-				custom_tooltip = THE_SUW_1_3_commandant_tt_no
-			}
-			if = { #政治家
-				limit = { 
+			else = { custom_tooltip = THE_SUW_1_3_commandant_tt_no } 
+			if = {
+				limit = {
 					estate_loyalty = {
 						estate = estate_burghers
 						loyalty = 80
@@ -186,11 +170,9 @@ THE_SUW_stage_1_branch_1 = {
 				custom_tooltip = THE_SUW_1_3_statesman_tt_yes
 				set_country_flag = THE_SUW_1_3_statesman_flag
 			}
-			else = {
-				custom_tooltip = THE_SUW_1_3_statesman_tt_no
-			}
-			if = { #商人
-				limit = { 
+			else = { custom_tooltip = THE_SUW_1_3_statesman_tt_no } 
+			if = {
+				limit = {
 					estate_loyalty = {
 						estate = estate_burghers
 						loyalty = 80
@@ -203,11 +185,9 @@ THE_SUW_stage_1_branch_1 = {
 				custom_tooltip = THE_SUW_1_3_trader_tt_yes
 				set_country_flag = THE_SUW_1_3_trader_flag
 			}
-			else = {
-				custom_tooltip = THE_SUW_1_3_trader_tt_no
-			}
-			if = { #外交官
-				limit = { 
+			else = { custom_tooltip = THE_SUW_1_3_trader_tt_no } 
+			if = {
+				limit = {
 					estate_loyalty = {
 						estate = estate_burghers
 						loyalty = 80
@@ -220,9 +200,7 @@ THE_SUW_stage_1_branch_1 = {
 				custom_tooltip = THE_SUW_1_3_diplomat_tt_yes
 				set_country_flag = THE_SUW_1_3_diplomat_flag
 			}
-			else = {
-				custom_tooltip = THE_SUW_1_3_diplomat_tt_no
-			}
+			else = { custom_tooltip = THE_SUW_1_3_diplomat_tt_no } 
 		}
 	}
 }
@@ -326,7 +304,7 @@ THE_SUW_stage_1_branch_2 = {
 			4188 = { center_of_trade = 1 } 
 			if = {
 				limit = { mission_completed = THE_SUW_3_3 } 
-				custom_tooltip = THE_SUW_2_3_nakamann_tt_yes			
+				custom_tooltip = THE_SUW_2_3_nakamann_tt_yes
 				country_event = {
 					id = THE_SUW_events.37
 					days = 30
@@ -382,7 +360,7 @@ THE_SUW_stage_1_branch_2 = {
 						}
 						custom_tooltip = THE_SUW_KOR_development_tt
 					}
-					KOR = {	
+					KOR = {
 						has_opinion = {
 							who = ROOT
 							value = 0
@@ -395,21 +373,21 @@ THE_SUW_stage_1_branch_2 = {
 						region = korea_region
 					}
 					NOT = {
-						KOR = {	
+						KOR = {
 							has_opinion = {
 								who = ROOT
 								value = 0
 							}
 						}
-					}	
-				}				
+					}
+				}
 			}
 			is_free_or_tributary_trigger = yes
 		}
 
 		effect = {
 			if = {
-				limit = { 
+				limit = {
 					variable_arithmetic_trigger = {
 						export_to_variable = {
 							variable_name = "suwdevelopment"
@@ -427,7 +405,7 @@ THE_SUW_stage_1_branch_2 = {
 						}
 						custom_tooltip = THE_SUW_KOR_development_tt
 					}
-					KOR = {	
+					KOR = {
 						has_opinion = {
 							who = ROOT
 							value = 0
@@ -437,9 +415,7 @@ THE_SUW_stage_1_branch_2 = {
 				custom_tooltip = THE_SUW_suw_2_4_tt_yes
 				create_alliance = KOR
 				add_historical_friend = KOR
-				KOR = {
-					add_historical_friend = ROOT
-				}
+				KOR = { add_historical_friend = ROOT } 
 				set_country_flag = THE_SUW_suw_2_4_flag
 				custom_tooltip = THE_SUW_lock_tt
 			}
@@ -448,20 +424,18 @@ THE_SUW_stage_1_branch_2 = {
 				tooltip = {
 					create_alliance = KOR
 					add_historical_friend = KOR
-					KOR = {
-						add_historical_friend = ROOT
-					}
+					KOR = { add_historical_friend = ROOT } 
 				}
 				custom_tooltip = THE_SUW_lock_tt
 			}
 			if = {
-				limit = {  
+				limit = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 10
 						region = korea_region
 					}
 					NOT = {
-						KOR = {	
+						KOR = {
 							has_opinion = {
 								who = ROOT
 								value = 0
@@ -470,19 +444,13 @@ THE_SUW_stage_1_branch_2 = {
 					}
 				}
 				custom_tooltip = THE_SUW_kan_2_4_tt_yes
-				ROOT = {
-					inherit = KOR
-				}
+				ROOT = { inherit = KOR } 
 				set_country_flag = THE_SUW_kan_2_4_flag
 				custom_tooltip = THE_SUW_lock_tt
 			}
 			else = {
 				custom_tooltip = THE_SUW_kan_2_4_tt_no
-				tooltip = {
-					ROOT = {
-						inherit = KOR
-					}
-				}
+				tooltip = { ROOT = { inherit = KOR }  } 
 				custom_tooltip = THE_SUW_lock_tt
 			}
 		}
@@ -507,39 +475,33 @@ THE_SUW_stage_1_branch_2 = {
 							who = ROOT
 							value = 200
 						}
-						trust = { who = ROOT value = 100 }
-					}
-					hidden_trigger = {
-						has_country_flag = THE_SUW_suw_2_4_flag
-					}
-					
-				}
-				AND = {
-					ROOT = {
-						owns_all_provinces = {
-							region = korea_region
+						trust = {
+							who = ROOT
+							value = 100
 						}
 					}
-					korea_region = {
-						religion = ROOT
-					}
-					hidden_trigger = {
-						has_country_flag = THE_SUW_kan_2_4_flag
-					}
-					
+					hidden_trigger = { has_country_flag = THE_SUW_suw_2_4_flag } 
+				}
+				AND = {
+					ROOT = { owns_all_provinces = { region = korea_region }  } 
+					korea_region = { religion = ROOT } 
+					hidden_trigger = { has_country_flag = THE_SUW_kan_2_4_flag } 
 				}
 			}
 		}
 
 		effect = {
 			if = {
-				limit = { 
+				limit = {
 					KOR = {
 						has_opinion = {
 							who = ROOT
 							value = 200
 						}
-						trust = { who = ROOT value = 100 }
+						trust = {
+							who = ROOT
+							value = 100
+						}
 					}
 				}
 				custom_tooltip = THE_SUW_suw_2_5_tt_yes
@@ -549,9 +511,7 @@ THE_SUW_stage_1_branch_2 = {
 						subject = KOR
 					}
 				}
-				KOR = {
-					change_religion = ROOT
-				}
+				KOR = { change_religion = ROOT } 
 				4188 = {
 					add_trade_modifier = {
 						who = ROOT
@@ -578,9 +538,7 @@ THE_SUW_stage_1_branch_2 = {
 							subject = KOR
 						}
 					}
-					KOR = {
-						change_religion = ROOT
-					}
+					KOR = { change_religion = ROOT } 
 					4188 = {
 						add_trade_modifier = {
 							who = ROOT
@@ -600,15 +558,9 @@ THE_SUW_stage_1_branch_2 = {
 				}
 			}
 			if = {
-				limit = {  
-					ROOT = {
-						owns_all_provinces = {
-							region = korea_region
-						}
-					}
-					korea_region = {
-						religion = ROOT
-					}
+				limit = {
+					ROOT = { owns_all_provinces = { region = korea_region }  } 
+					korea_region = { religion = ROOT } 
 				}
 				custom_tooltip = THE_SUW_kan_2_5_tt_yes
 				korea_region = {
@@ -637,7 +589,6 @@ THE_SUW_stage_1_branch_2 = {
 					set_country_flag = enable_korean_palace_flag
 				}
 			}
-			
 		}
 	}
 }
@@ -676,12 +627,12 @@ THE_SUW_stage_1_branch_3 = {
 		required_missions = { THE_SUW_3_1 } 
 		provinces_to_highlight = {  } 
 
-		trigger = { 
-			4188 = { 
-				religion = ROOT 
+		trigger = {
+			4188 = {
+				religion = ROOT
 				development = 20
-			}  
-		} 
+			}
+		}
 
 		effect = {
 			add_adm_power = 100
@@ -714,9 +665,7 @@ THE_SUW_stage_1_branch_3 = {
 			THE_SUW_2_5
 			THE_SUW_4_5
 		}
-		provinces_to_highlight = {  
-
-		} 
+		provinces_to_highlight = {  } 
 
 		trigger = {
 			custom_trigger_tooltip = {
@@ -747,9 +696,8 @@ THE_SUW_stage_1_branch_3 = {
 		}
 
 		effect = {
-			#双神
 			if = {
-				limit = { 
+				limit = {
 					OR = {
 						AND = {
 							has_country_flag = THE_SUW_suw_2_4_flag
@@ -762,49 +710,54 @@ THE_SUW_stage_1_branch_3 = {
 					}
 				}
 				custom_tooltip = THE_SUW_suw_and_kan_3_6_tt_yes
+				change_government = theocracy
 				add_government_reform = THE_SUW_SUW_and_KAN_reform
 			}
 			else = {
 				custom_tooltip = THE_SUW_suw_and_kan_3_6_tt_no
 				tooltip = {
+					change_government = theocracy
 					add_government_reform = THE_SUW_SUW_and_KAN_reform
 				}
 			}
-			#诹访子
 			if = {
-				limit = { 
+				limit = {
 					AND = {
 						has_country_flag = THE_SUW_suw_2_4_flag
 						has_country_flag = THE_SUW_suw_4_4_flag
 					}
 				}
 				custom_tooltip = THE_SUW_suw_3_6_tt_yes
+				change_government = theocracy
 				add_government_reform = THE_SUW_suw_reform
+				hidden_effect = { set_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag } 
 			}
 			else = {
 				custom_tooltip = THE_SUW_suw_3_6_tt_no
 				tooltip = {
+					change_government = theocracy
 					add_government_reform = THE_SUW_suw_reform
 				}
 			}
-			#神奈子
 			if = {
-				limit = { 
+				limit = {
 					AND = {
 						has_country_flag = THE_SUW_kan_2_4_flag
 						has_country_flag = THE_SUW_kan_4_4_flag
 					}
 				}
 				custom_tooltip = THE_SUW_kan_3_6_tt_yes
+				change_government = theocracy
 				add_government_reform = THE_SUW_kan_reform
+				hidden_effect = { set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag } 
 			}
 			else = {
 				custom_tooltip = THE_SUW_kan_3_6_tt_no
 				tooltip = {
+					change_government = theocracy
 					add_government_reform = THE_SUW_kan_reform
 				}
 			}
-			#country_event = { id = THE_SUW_events.17 } 
 		}
 	}
 }
@@ -907,11 +860,11 @@ THE_SUW_stage_1_branch_4 = {
 					add_nationalism = -15
 					set_local_autonomy = 0
 				}
-			}	
+			}
 			custom_tooltip = THE_SUW_4_3_tt
 			if = {
 				limit = { mission_completed = THE_SUW_3_3 } 
-				custom_tooltip = THE_SUW_4_3_tt_yes			
+				custom_tooltip = THE_SUW_4_3_tt_yes
 				hidden_effect = {
 					for = {
 						amount = 8
@@ -923,9 +876,7 @@ THE_SUW_stage_1_branch_4 = {
 					}
 				}
 			}
-			else = {
-				custom_tooltip = THE_SUW_4_3_tt_no
-			}			
+			else = { custom_tooltip = THE_SUW_4_3_tt_no } 
 			change_consort_mil = 1
 		}
 	}
@@ -937,16 +888,12 @@ THE_SUW_stage_1_branch_4 = {
 			THE_SUW_3_3
 			THE_SUW_4_3
 		}
-		provinces_to_highlight = {  
-			region = manchuria_region
-		} 
+		provinces_to_highlight = { region = manchuria_region } 
 
 		trigger = {
 			OR = {
 				all_country = {
-					capital_scope = {
-						region = manchuria_region
-					}
+					capital_scope = { region = manchuria_region } 
 					has_opinion_modifier = {
 						who = ROOT
 						modifier = sent_gift
@@ -957,10 +904,8 @@ THE_SUW_stage_1_branch_4 = {
 					}
 				}
 				all_country = {
-					capital_scope = {
-						region = manchuria_region
-					}
-					NOT = { army_size = ROOT }
+					capital_scope = { region = manchuria_region } 
+					NOT = { army_size = ROOT } 
 				}
 			}
 			is_free_or_tributary_trigger = yes
@@ -968,15 +913,13 @@ THE_SUW_stage_1_branch_4 = {
 
 		effect = {
 			if = {
-				limit = { 
+				limit = {
 					all_country = {
-						capital_scope = {
-							region = manchuria_region
-						}										
+						capital_scope = { region = manchuria_region } 
 						has_opinion_modifier = {
 							who = ROOT
 							modifier = sent_gift
-						}	
+						}
 						has_opinion = {
 							who = ROOT
 							value = 60
@@ -985,50 +928,38 @@ THE_SUW_stage_1_branch_4 = {
 				}
 				custom_tooltip = THE_SUW_suw_4_4_tt_yes
 				every_country = {
-					limit = {
-						capital_scope = {
-							region = manchuria_region
-						}
-					}
+					limit = { capital_scope = { region = manchuria_region }  } 
 					add_country_modifier = {
-						name = THE_SUW_can_not_declare_war_modifier
+						name = "THE_SUW_can_not_declare_war_modifier"
 						duration = -1
 					}
-					ROOT = {
-						create_guarantee = PREV
-					}
+					ROOT = { create_guarantee = PREV } 
 					every_country = {
-						limit = { 
-							capital_scope = {
-								region = manchuria_region
-							}
-						}
+						limit = { capital_scope = { region = manchuria_region }  } 
 						declare_war_with_cb = {
 							who = PREV
 							casus_belli = cb_annex
 						}
 					}
 					add_treasury = 200
-					capital_scope = { ROOT = { infantry = PREV } }
-					capital_scope = { ROOT = { infantry = PREV } }
-					capital_scope = { ROOT = { infantry = PREV } }
-					capital_scope = { ROOT = { infantry = PREV } }
-					capital_scope = { ROOT = { infantry = PREV } }
-					capital_scope = { ROOT = { infantry = PREV } }
-					capital_scope = { ROOT = { infantry = PREV } }
-					capital_scope = { ROOT = { infantry = PREV } }
-					capital_scope = { ROOT = { cavalry = PREV } }
-					capital_scope = { ROOT = { cavalry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV }  } 
+					capital_scope = { ROOT = { infantry = PREV }  } 
+					capital_scope = { ROOT = { infantry = PREV }  } 
+					capital_scope = { ROOT = { infantry = PREV }  } 
+					capital_scope = { ROOT = { infantry = PREV }  } 
+					capital_scope = { ROOT = { infantry = PREV }  } 
+					capital_scope = { ROOT = { infantry = PREV }  } 
+					capital_scope = { ROOT = { infantry = PREV }  } 
+					capital_scope = { ROOT = { cavalry = PREV }  } 
+					capital_scope = { ROOT = { cavalry = PREV }  } 
 				}
 				ROOT = {
 					add_years_of_income = -1
 					add_yearly_manpower = -1
 				}
 				every_country = {
-					limit = { 
-						capital_scope = {
-							region = manchuria_region
-						}
+					limit = {
+						capital_scope = { region = manchuria_region } 
 						guaranteed_by = ROOT
 					}
 					remove_fow = 120
@@ -1040,50 +971,38 @@ THE_SUW_stage_1_branch_4 = {
 				custom_tooltip = THE_SUW_suw_4_4_tt_no
 				tooltip = {
 					every_country = {
-						limit = {
-							capital_scope = {
-								region = manchuria_region
-							}
-						}
+						limit = { capital_scope = { region = manchuria_region }  } 
 						add_country_modifier = {
-							name = THE_SUW_can_not_declare_war_modifier
+							name = "THE_SUW_can_not_declare_war_modifier"
 							duration = -1
 						}
-						ROOT = {
-							create_guarantee = PREV
-						}
+						ROOT = { create_guarantee = PREV } 
 						every_country = {
-							limit = { 
-								capital_scope = {
-									region = manchuria_region
-								}
-							}
+							limit = { capital_scope = { region = manchuria_region }  } 
 							declare_war_with_cb = {
 								who = PREV
 								casus_belli = cb_annex
 							}
 						}
 						add_treasury = 200
-						capital_scope = { ROOT = { infantry = PREV } }
-						capital_scope = { ROOT = { infantry = PREV } }
-						capital_scope = { ROOT = { infantry = PREV } }
-						capital_scope = { ROOT = { infantry = PREV } }
-						capital_scope = { ROOT = { infantry = PREV } }
-						capital_scope = { ROOT = { infantry = PREV } }
-						capital_scope = { ROOT = { infantry = PREV } }
-						capital_scope = { ROOT = { infantry = PREV } }
-						capital_scope = { ROOT = { cavalry = PREV } }
-						capital_scope = { ROOT = { cavalry = PREV } }
+						capital_scope = { ROOT = { infantry = PREV }  } 
+						capital_scope = { ROOT = { infantry = PREV }  } 
+						capital_scope = { ROOT = { infantry = PREV }  } 
+						capital_scope = { ROOT = { infantry = PREV }  } 
+						capital_scope = { ROOT = { infantry = PREV }  } 
+						capital_scope = { ROOT = { infantry = PREV }  } 
+						capital_scope = { ROOT = { infantry = PREV }  } 
+						capital_scope = { ROOT = { infantry = PREV }  } 
+						capital_scope = { ROOT = { cavalry = PREV }  } 
+						capital_scope = { ROOT = { cavalry = PREV }  } 
 					}
 					ROOT = {
 						add_years_of_income = -1
 						add_yearly_manpower = -1
 					}
 					every_country = {
-						limit = { 
-							capital_scope = {
-								region = manchuria_region
-							}
+						limit = {
+							capital_scope = { region = manchuria_region } 
 							guaranteed_by = ROOT
 						}
 						remove_fow = 120
@@ -1091,23 +1010,16 @@ THE_SUW_stage_1_branch_4 = {
 				}
 				custom_tooltip = THE_SUW_lock_tt
 			}
-			
 			if = {
-				limit = {  
+				limit = {
 					all_country = {
-						capital_scope = {
-							region = manchuria_region
-						}
-						NOT = { army_size = ROOT }
+						capital_scope = { region = manchuria_region } 
+						NOT = { army_size = ROOT } 
 					}
 				}
 				custom_tooltip = THE_SUW_kan_4_4_tt_yes
 				every_country = {
-					limit = {
-						capital_scope = {
-							region = manchuria_region
-						}
-					}
+					limit = { capital_scope = { region = manchuria_region }  } 
 					ROOT = {
 						declare_war_with_cb = {
 							who = PREV
@@ -1115,7 +1027,6 @@ THE_SUW_stage_1_branch_4 = {
 						}
 					}
 				}
-				
 				set_country_flag = THE_SUW_kan_4_4_flag
 				custom_tooltip = THE_SUW_lock_tt
 			}
@@ -1123,11 +1034,7 @@ THE_SUW_stage_1_branch_4 = {
 				custom_tooltip = THE_SUW_kan_4_4_tt_no
 				tooltip = {
 					every_country = {
-						limit = {
-							capital_scope = {
-								region = manchuria_region
-							}
-						}
+						limit = { capital_scope = { region = manchuria_region }  } 
 						ROOT = {
 							declare_war_with_cb = {
 								who = PREV
@@ -1136,7 +1043,6 @@ THE_SUW_stage_1_branch_4 = {
 						}
 					}
 				}
-				
 				custom_tooltip = THE_SUW_lock_tt
 			}
 		}
@@ -1146,97 +1052,60 @@ THE_SUW_stage_1_branch_4 = {
 		icon = mission_unknown_mission
 		position = 5
 		required_missions = { THE_SUW_4_4 } 
-		provinces_to_highlight = { 
-			region = manchuria_region
-		} 
+		provinces_to_highlight = { region = manchuria_region } 
 
 		trigger = {
 			OR = {
 				AND = {
 					any_country = {
-						capital_scope = {
-							region = manchuria_region
-						}
+						capital_scope = { region = manchuria_region } 
 						owns_all_provinces = {
 							region = manchuria_region
-							NOT = { province_id = 1033 }
-							NOT = { province_id = 724 }
-							NOT = { area = liaoning_area }
+							NOT = { province_id = 1033 } 
+							NOT = { province_id = 724 } 
+							NOT = { area = liaoning_area } 
 						}
-						#all_province = {
-						#	region = manchuria_region
-						#	NOT = { province_id = 1033 }
-						#	NOT = { province_id = 724 }
-						#	NOT = { area = liaoning_area }
-						#	country_or_non_sovereign_subject_holds = PREV
-						#}
 					}
-					hidden_trigger = {
-						has_country_flag = THE_SUW_suw_4_4_flag
-					}
+					hidden_trigger = { has_country_flag = THE_SUW_suw_4_4_flag } 
 				}
 				AND = {
 					all_country = {
-						capital_scope = {
-							region = manchuria_region
-						}
+						capital_scope = { region = manchuria_region } 
 						ROOT = {
-							has_won_war_against = { 
-								max_years_since = 20 
+							has_won_war_against = {
+								max_years_since = 20
 								who = PREV
 							}
 						}
 					}
-					hidden_trigger = {
-						has_country_flag = THE_SUW_kan_4_4_flag
-					}
+					hidden_trigger = { has_country_flag = THE_SUW_kan_4_4_flag } 
 				}
 			}
-			
-			
 		}
 
 		effect = {
 			if = {
-				limit = {  
+				limit = {
 					any_country = {
-						capital_scope = {
-							region = manchuria_region
-						}
+						capital_scope = { region = manchuria_region } 
 						owns_all_provinces = {
 							region = manchuria_region
-							NOT = { province_id = 1033 }
-							NOT = { province_id = 724 }
-							NOT = { area = liaoning_area }
+							NOT = { province_id = 1033 } 
+							NOT = { province_id = 724 } 
+							NOT = { area = liaoning_area } 
 						}
-						#all_province = {
-						#	region = manchuria_region
-						#	NOT = { province_id = 1033 }
-						#	NOT = { province_id = 724 }
-						#	NOT = { area = liaoning_area }
-						#	country_or_non_sovereign_subject_holds = ROOT
-						#}
 					}
 				}
 				custom_tooltip = THE_SUW_suw_4_5_tt_yes
 				every_country = {
 					limit = {
-						capital_scope = {
-							region = manchuria_region
-						}
+						capital_scope = { region = manchuria_region } 
 						owns_all_provinces = {
 							region = manchuria_region
-							NOT = { province_id = 1033 }
-							NOT = { province_id = 724 }
-							NOT = { area = liaoning_area }
+							NOT = { province_id = 1033 } 
+							NOT = { province_id = 724 } 
+							NOT = { area = liaoning_area } 
 						}
-						#all_province = {
-						#	region = manchuria_region
-						#	NOT = { province_id = 1033 }
-						#	NOT = { province_id = 724 }
-						#	NOT = { area = liaoning_area }
-						#	country_or_non_sovereign_subject_holds = ROOT
-						#}
 					}
 					ROOT = {
 						create_subject = {
@@ -1250,75 +1119,34 @@ THE_SUW_stage_1_branch_4 = {
 						add_manpower = 100
 						add_ruler_personality = legendary_conqueror_personality
 					}
-				} 
+				}
 				custom_tooltip = THE_SUW_suw_4_5_tt
 				hidden_effect = {
 					every_province = {
-						limit = {
-							region = manchuria_region
-						}
+						limit = { region = manchuria_region } 
 						add_devastation = -100
 					}
 				}
-				
-					
 			}
 			else = {
 				custom_tooltip = THE_SUW_suw_4_5_tt_no
-				tooltip = {				
-					#every_country = {
-					#	limit = {
-					#		capital_scope = {
-					#			region = manchuria_region
-					#		}
-					#		owns_all_provinces = {
-					#			region = manchuria_region
-					#			NOT = { province_id = 1033 }
-					#			NOT = { province_id = 724 }
-					#			NOT = { area = liaoning_area }
-					#		}
-					#		all_province = {
-					#			region = manchuria_region
-					#			NOT = { province_id = 1033 }
-					#			NOT = { province_id = 724 }
-					#			NOT = { area = liaoning_area }
-					#			country_or_non_sovereign_subject_holds = PREV
-					#		}
-					#	}
-					#	ROOT = {
-					#		create_subject = {
-					#			subject_type = THE_SUW_Religious_Protection
-					#			subject = PREV
-					#		}
-					#	}
-					#	THIS = {
-					#		change_religion = ROOT
-					#		add_treasury = 1000
-					#		add_manpower = 100
-					#		add_ruler_personality = legendary_conqueror_personality
-					#	}
-					#} 
+				tooltip = {
 					custom_tooltip = THE_SUW_suw_4_5_tt
 					hidden_effect = {
 						every_province = {
-							limit = {
-								region = manchuria_region
-							}
+							limit = { region = manchuria_region } 
 							add_devastation = -100
 						}
 					}
-					
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					all_country = {
-						capital_scope = {
-							region = manchuria_region
-						}
+						capital_scope = { region = manchuria_region } 
 						ROOT = {
-							has_won_war_against = { 
-								max_years_since = 20 
+							has_won_war_against = {
+								max_years_since = 20
 								who = PREV
 							}
 						}
@@ -1326,98 +1154,65 @@ THE_SUW_stage_1_branch_4 = {
 				}
 				custom_tooltip = THE_SUW_kan_4_5_tt_yes
 				every_country = {
-					limit = {
-						capital_scope = {
-							region = manchuria_region
-						}
-					}
-					ROOT = {
-						inherit = PREV
-					}
+					limit = { capital_scope = { region = manchuria_region }  } 
+					ROOT = { inherit = PREV } 
 				}
 				custom_tooltip = THE_SUW_kan_4_5_tt
 				hidden_effect = {
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
-					capital_scope = { manchu_banner = ROOT }
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
+					capital_scope = { manchu_banner = ROOT } 
 				}
-				
 			}
 			else = {
 				custom_tooltip = THE_SUW_kan_4_5_tt_no
 				tooltip = {
 					every_country = {
-						limit = {
-							capital_scope = {
-								region = manchuria_region
-							}
-						}
-						ROOT = {
-							inherit = PREV
-						}
-						
+						limit = { capital_scope = { region = manchuria_region }  } 
+						ROOT = { inherit = PREV } 
 					}
 					custom_tooltip = THE_SUW_kan_4_5_tt
 					hidden_effect = {
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
-						capital_scope = { polish_winged_hussar = ROOT }
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
+						capital_scope = { polish_winged_hussar = ROOT } 
 					}
-					
 				}
 			}
-			
-			#RYU = {
-			#	country_event = {
-			#		id = THE_SUW_events.15
-			#		days = 15
-			#	}
-			#}
-			#ANU = {
-			#	country_event = {
-			#		id = THE_SUW_events.16
-			#		days = 15
-			#	}
-			#}
-			#custom_tooltip = THE_SUW_4_5_tt
-			
-			#custom_tooltip = empty_line_tt
-			#custom_tooltip = THE_SUW_4_5_tt_2
-			
 		}
 	}
 }
@@ -2161,7 +1956,6 @@ THE_SUW_stage_2_branch_kan_1 = {
 		trigger = {  } 
 
 		effect = {
-			
 			custom_tooltip = empty_line_tt
 			add_great_project_tier = {
 				type = gyeongbok_palace
@@ -2382,4 +2176,134 @@ THE_SUW_stage_2_branch_kan_5 = {
 
 		effect = {  } 
 	}
+}
+THE_SUW_stage_2_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SUW } 
+
+}
+THE_SUW_stage_2_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SUW } 
+
+	THE_SUW_2_7 = {
+		icon = mission_unknown_mission
+		position = 7
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	THE_SUW_2_8 = {
+		icon = mission_unknown_mission
+		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	THE_SUW_2_9 = {
+		icon = mission_unknown_mission
+		position = 9
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+THE_SUW_stage_2_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SUW } 
+
+	THE_SUW_3_7 = {
+		icon = mission_unknown_mission
+		position = 7
+		required_missions = { THE_SUW_3_6 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	THE_SUW_3_8 = {
+		icon = mission_unknown_mission
+		position = 8
+		required_missions = { THE_SUW_3_7 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	THE_SUW_3_9 = {
+		icon = mission_unknown_mission
+		position = 9
+		required_missions = { THE_SUW_3_8 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+THE_SUW_stage_2_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SUW } 
+
+	THE_SUW_4_7 = {
+		icon = mission_unknown_mission
+		position = 7
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	THE_SUW_4_8 = {
+		icon = mission_unknown_mission
+		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	THE_SUW_4_9 = {
+		icon = mission_unknown_mission
+		position = 9
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+THE_SUW_stage_2_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SUW } 
+
 }

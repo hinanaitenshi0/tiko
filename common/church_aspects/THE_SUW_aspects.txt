@@ -61,10 +61,10 @@ THE_SUW_2_1_aspect = {	#DIP aspect
 THE_SUW_2_2_aspect = {	#DIP aspect
 	cost = 100
 	potential = {
-		has_country_flag = THE_SUW_suw_1_8_flag
+		has_country_flag = THE_SUW_suw_dip_aspect_flag
 	}
 	trigger = {
-		has_country_flag = THE_SUW_suw_1_8_flag
+		has_country_flag = THE_SUW_suw_dip_aspect_flag
 	}
 	modifier = {
 		reverse_relation_with_heretic_religion = 15

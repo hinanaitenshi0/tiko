@@ -91,6 +91,11 @@ country_event = {
 					id = th_religion_events.4
 					days = 7
 				}
+				country_event = {
+					id = THE_SUW_events.39
+					days = 3650
+					random = 7300
+				}
 				capital_scope = {
 					build_to_forcelimit = {
 						infantry = 0.9
@@ -2143,3 +2148,65 @@ country_event = {
 	}
 }
 
+country_event = {
+	#风调雨顺
+	id = THE_SUW_events.38
+	title = "THE_SUW_events.38.title"
+	desc = "THE_SUW_events.38.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.38.name
+		every_owned_province = {
+			random_list = {
+				1 = { add_base_production = 1 }
+				1 = { add_base_production = 2 }
+			}
+		}
+	}
+}
+
+country_event = {
+	#早苗的回信
+	id = THE_SUW_events.39
+	title = "THE_SUW_events.39.title"
+	desc = "THE_SUW_events.39.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.39.name
+		add_years_of_income = 3
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		set_country_flag = THE_SUW_events.39_flag
+	}
+}
+
+country_event = {
+	#崭新的守矢?
+	id = THE_SUW_events.40
+	title = "THE_SUW_events.40.title"
+	desc = "THE_SUW_events.40.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.40.a.name
+		change_religion = THE_moriyaseikyou_religion
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = THE_SUW_events.40.b.name
+		add_adm_power = 20
+		add_dip_power = 20
+		add_mil_power = 20
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

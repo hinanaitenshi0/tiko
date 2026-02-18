@@ -1,6 +1,7 @@
 country_decisions = {
 	#释放决议
 	THE_SUW_country_release_decision = {
+		color = { 166  70  211 }
 		potential = {	
 			tag = MRY
 			NOT = { exists = SUW }
@@ -13,7 +14,7 @@ country_decisions = {
 				id = THE_SUW_events.1
 			}
 		}
-		major = yes
+		#major = yes
 		
 		ai_will_do = {
 			factor = 0
@@ -24,6 +25,7 @@ country_decisions = {
 country_decisions = {
 	#准备好后宣战
 	THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision = {
+		color = { 166  70  211 }
 		potential = {	
 			tag = SUW
 			has_country_flag = THE_SUW_Everything_is_ready_except_for_the_divine_wind_flag 
@@ -85,6 +87,7 @@ country_decisions = {
 country_decisions = {
 	#强化诹访大社决议
 	THE_SUW_Strengthening_Suwa_Daisha_one_decision = {
+		color = { 166  70  211 }
 		potential = {	
 			tag = SUW
 			mission_completed = THE_SUW_5_1
@@ -170,17 +173,21 @@ country_decisions = {
 country_decisions = {
 	#迷子税
 	THE_SUW_maikozeikinn_decision = {
+		color = { 166  70  211 }
 		potential = {	
 			tag = SUW
-			mission_completed = THE_SUW_1_7
+			has_country_flag = THE_SUW_maikozeikinn_flag
 		}
 		allow = {
-			THE_cd_type_decision_scripted_trigger = {
-				OR = {
-					NOT = { has_country_flag = THE_SUW_maikozeikinn_flag }
-					had_country_flag = {
-						flag = THE_SUW_maikozeikinn_flag
-						days = 3650
+			custom_trigger_tooltip = {
+				tooltip = THE_SUW_maikozeikinn_decision_tt
+				THE_cd_type_decision_scripted_trigger = {
+					OR = {
+						NOT = { has_country_flag = THE_SUW_maikozeikinn_flag }
+						had_country_flag = {
+							flag = THE_SUW_maikozeikinn_flag
+							days = 3650
+						}
 					}
 				}
 			}
@@ -281,6 +288,7 @@ country_decisions = {
 country_decisions = {
 	#接着奏乐接着舞
 	THE_SUW_odoru_decision = {
+		color = { 166  70  211 }
 		potential = {	
 			tag = SUW
 			has_country_flag = THE_SUW_suw_4_4_flag

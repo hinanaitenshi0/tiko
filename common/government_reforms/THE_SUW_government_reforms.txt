@@ -97,9 +97,10 @@ THE_SUW_suw_reform = {
 	}
 
 	modifiers = {
-		tolerance_own = 2
+		#tolerance_own = 2
 		#global_tax_modifier = 0.1
 		trade_efficiency = 0.1
+		development_cost = -0.1
 		#development_cost_modifier = -0.05
 		global_missionary_strength = 0.02
 		church_loyalty_modifier = 0.5
@@ -115,7 +116,7 @@ THE_SUW_suw_reform = {
 #神奈祭乾
 THE_SUW_kan_reform = {
 	lock_level_when_selected = yes
-	icon = "government_reform_THE_SUW_kan_government_1_reform"
+	icon = "THE_SUW_kan_government_1_reform"
 	potential = {
 		OR = {
 			ai = no

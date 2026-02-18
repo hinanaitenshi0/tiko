@@ -55,3 +55,8 @@ add_government_power = {
     which = ADM
     amount = 100
 }
+clr_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
+set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
+swap_non_generic_missions = yes
+set_country_flag = THE_SUW_maikozeikinn_flag
+change_religion = THE_moriyaseikyou_religion
