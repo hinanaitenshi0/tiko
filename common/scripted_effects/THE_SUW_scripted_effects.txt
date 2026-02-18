@@ -320,6 +320,234 @@ THE_SUW_estate_burghers_action = {
 	#}
 }
 
+#地势坤
+THE_SUW_has_terrain_scripted_effects = {
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = glacier }
+		}
+		custom_tooltip = THE_SUW_has_terrain_glacier
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_glacier_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = farmlands }
+		}
+		custom_tooltip = THE_SUW_has_terrain_farmlands
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_farmlands_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = forest }
+		}
+		custom_tooltip = THE_SUW_has_terrain_forest
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_forest_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = hills }
+		}
+		custom_tooltip = THE_SUW_has_terrain_hills
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_hills_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = woods }
+		}
+		custom_tooltip = THE_SUW_has_terrain_woods
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_woods_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = mountain }
+		}
+		custom_tooltip = THE_SUW_has_terrain_mountain
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_mountain_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = grasslands }
+		}
+		custom_tooltip = THE_SUW_has_terrain_grasslands
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_grasslands_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = jungle }
+		}
+		custom_tooltip = THE_SUW_has_terrain_jungle
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_jungle_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = marsh }
+		}
+		custom_tooltip = THE_SUW_has_terrain_marsh
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_marsh_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = desert }
+		}
+		custom_tooltip = THE_SUW_has_terrain_desert
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_desert_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = coastal_desert }
+		}
+		custom_tooltip = THE_SUW_has_terrain_coastal_desert
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_coastal_desert_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = coastline }
+		}
+		custom_tooltip = THE_SUW_has_terrain_coastline
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_coastline_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = drylands }
+		}
+		custom_tooltip = THE_SUW_has_terrain_drylands
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_drylands_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = highlands }
+		}
+		custom_tooltip = THE_SUW_has_terrain_highlands
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_highlands_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = savannah }
+		}
+		custom_tooltip = THE_SUW_has_terrain_savannah
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_savannah_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_terrain = steppe }
+		}
+		custom_tooltip = THE_SUW_has_terrain_steppe
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_steppe_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+}
+
 ##################################################
 ### not on_actions scripted effect 
 ##################################################

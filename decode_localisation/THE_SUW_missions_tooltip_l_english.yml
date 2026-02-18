@@ -138,7 +138,7 @@
  THE_SUW_kan_1_7_tt: "允许通过战争条约§Y(正位)§!使§Y异教§!国家皈依"
  THE_SUW_suw_1_8_tt: "完成宗教改革后，将获得§G诹访子专属§!外交信条"
  THE_SUW_kan_1_8_tt: "完成宗教改革后，将获得§G神奈子专属§!外交信条"
- THE_SUW_suw_1_9_tt: "赐予§Y朝鲜§!全境新的地名"
+# THE_SUW_suw_1_9_tt: "赐予@KOR§Y朝鲜§!全境新的地名"
  THE_SUW_suw_4_7_tt: "事件§T"早苗的回信"§!已经触发"
  THE_SUW_suw_4_7_tt_exists_yes: "£yes£如果@MRY§Y[MRY.GetName]§!存在且事件§T"早苗的回信"§!已经触发时完成任务:"
  THE_SUW_suw_4_7_tt_exists_no: "£no£如果@MRY§Y[MRY.GetName]§!存在且事件§T"早苗的回信"§!已经触发时完成任务:"
@@ -146,12 +146,36 @@
  THE_SUW_suw_4_7_tt_not_exists_no: "£no£如果@MRY§Y[MRY.GetName]§!不存在时完成任务:"
  THE_SUW_suw_5_7_mission_completed_tt_yes: "£yes£如果任务「§Y守矢正教§!」已完成:"
  THE_SUW_suw_5_7_mission_completed_tt_no: "£no£如果任务「§Y守矢正教§!」已完成:"
- 
+ THE_SUW_suw_4_8_1_tt_yes: "£yes£如果@MRY§Y[MRY.GetName]§!存在，且作为我们的§T宗教守护§!时完成任务:"
+ THE_SUW_suw_4_8_1_tt_no: "£no£如果@MRY§Y[MRY.GetName]§!存在，且作为我们的§T宗教守护§!时完成任务:"
+ THE_SUW_suw_4_8_2_tt_yes: "£yes£如果@MRY§Y[MRY.GetName]§!不存在时完成任务:"
+ THE_SUW_suw_4_8_2_tt_no: "£no£如果@MRY§Y[MRY.GetName]§!不存在时完成任务:"
  THE_SUW_suw_4_8_tt_yes: "£yes£如果当前由§T洩矢 诹访子§!执政，则添加新§G外交§!信条§T“你 我 他”§!"
  THE_SUW_suw_4_8_tt_no: "£no£如果当前由§T洩矢 诹访子§!执政，则添加新§G外交§!信条§T“你 我 他”§!"
+ THE_SUW_4_8_tradenode_1_tt: "陪社"
+ THE_SUW_4_8_tradenode_2_tt: "持之以恒的传教"
  THE_SUW_suw_5_6_tt: "鉴于我们良好的§G声誉§!，现在开始，允许我们§Y收集国外信徒的供奉§!"
+ THE_SUW_suw_5_7_tt: "§Y所有拥有的省份§!转变宗教为§Y守矢正教§!"
+ THE_SUW_suw_5_8_tt: "每拥有一处§T地形§!，则§G-3%§!§Y发展成本§!"
 # THE_SUW_reform_tt: "风祝影响修正:§Y+10.0%§!"
  THE_SUW_maikozeikinn_decision_tt: "每§Y10§!年可以进行一次该行动"
+ THE_SUW_has_terrain_glacier: "已拥有§T冰川§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_farmlands: "已拥有§T农田§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_forest: "已拥有§T森林§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_hills: "已拥有§T丘陵§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_woods: "已拥有§T树林§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_mountain: "已拥有§T山脉§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_grasslands: "已拥有§T草原§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_jungle: "已拥有§T丛林§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_marsh: "已拥有§T沼泽§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_desert: "已拥有§T沙漠§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_coastal_desert: "已拥有§T沿海沙漠§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_coastline: "已拥有§T海岸线§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_drylands: "已拥有§T旱地§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_highlands: "已拥有§T高地§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_savannah: "已拥有§T稀树草原§!:§G-3%§!§Y发展成本§!"
+ THE_SUW_has_terrain_steppe: "已拥有§T大草原§!:§G-3%§!§Y发展成本§!"
+ 
 ### TOOLTIP_END
 
 ### dynasty
@@ -231,6 +255,22 @@
  THE_kamigami_scholar_modifier: "乾坤的调和者"
  THE_sanae_scholar_modifier: "奇迹的追寻者"
  THE_SUW_bottom_up_country_modifier: "自下而上"
+ THE_SUW_defensiveness_glacier_country_modiffier: "§T冰川§!"
+ THE_SUW_defensiveness_farmlands_country_modiffier: "§T农田§!"
+ THE_SUW_defensiveness_forest_country_modiffier: "§T森林§!"
+ THE_SUW_defensiveness_hills_country_modiffier: "§T丘陵§!"
+ THE_SUW_defensiveness_woods_country_modiffier: "§T树林§!"
+ THE_SUW_defensiveness_mountain_country_modiffier: "§T山脉§!"
+ THE_SUW_defensiveness_grasslands_country_modiffier: "§T草原§!"
+ THE_SUW_defensiveness_jungle_country_modiffier: "§T丛林§!"
+ THE_SUW_defensiveness_marsh_country_modiffier: "§T沼泽§!"
+ THE_SUW_defensiveness_desert_country_modiffier: "§T沙漠§!"
+ THE_SUW_defensiveness_coastal_desert_country_modiffier: "§T沿海沙漠§!"
+ THE_SUW_defensiveness_coastline_country_modiffier: "§T海岸线§!"
+ THE_SUW_defensiveness_drylands_country_modiffier: "§T旱地§!"
+ THE_SUW_defensiveness_highlands_country_modiffier: "§T高地§!"
+ THE_SUW_defensiveness_savannah_country_modiffier: "§T稀树草原§!"
+ THE_SUW_defensiveness_steppe_country_modiffier: "§T大草原§!"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -414,6 +454,8 @@
  THE_SUW_odoru_decision_desc: ""
  THE_SUW_maikozeikinn_decision_title: "收集迷子奉"
  THE_SUW_maikozeikinn_decision_desc: ""
+ THE_SUW_kor_new_name_decision_title: "赐予@KOR§Y朝鲜§!全境新的地名"
+ THE_SUW_kor_new_name_decision_desc: ""
 ### DECISION_END
 
 ###SUBJECT_TYPE

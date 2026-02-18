@@ -97,6 +97,56 @@ THE_SUW_saisennbakokouryuu_country_modiffier = {
 	diplomatic_reputation = 2
 	improve_relation_modifier = 0.2
 }
+#地势坤
+THE_SUW_defensiveness_glacier_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_farmlands_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_forest_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_hills_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_woods_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_mountain_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_grasslands_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_jungle_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_marsh_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_desert_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_coastal_desert_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_coastline_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_drylands_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_highlands_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_savannah_country_modiffier = {
+	development_cost = -0.03
+}
+THE_SUW_defensiveness_steppe_country_modiffier = {
+	development_cost = -0.03
+}
+ 
 #踊跃参军
 #每传完一个地块增加1000人力
 # 使用on_action实现此效果，所有东西都写好了，详见仓库中on_action历史的修改内容，任务效果加个flag就行

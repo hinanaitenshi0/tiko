@@ -146,12 +146,36 @@
  THE_SUW_suw_4_7_tt_not_exists_no: "£no£‚Yœg@MRY§Y[MRY.GetName]§!NXR(WöeŒRbûN¡R:"
  THE_SUW_suw_5_7_mission_completed_tt_yes: "£yes£‚YœgûN¡R0§YˆRâwckYe§!0òTŒRb:"
  THE_SUW_suw_5_7_mission_completed_tt_no: "£no£‚YœgûN¡R0§YˆRâwckYe§!0òTŒRb:"
- 
+ THE_SUW_suw_4_8_1_tt_yes: "£yes£‚Yœg@MRY§Y[MRY.GetName]§!XR(WÿNjO:NbìN„v§T—RYeˆR²b§!öeŒRbûN¡R:"
+ THE_SUW_suw_4_8_1_tt_no: "£no£‚Yœg@MRY§Y[MRY.GetName]§!XR(WÿNjO:NbìN„v§T—RYeˆR²b§!öeŒRbûN¡R:"
+ THE_SUW_suw_4_8_2_tt_yes: "£yes£‚Yœg@MRY§Y[MRY.GetName]§!NXR(WöeŒRbûN¡R:"
+ THE_SUW_suw_4_8_2_tt_no: "£no£‚Yœg@MRY§Y[MRY.GetName]§!NXR(WöeŒRbûN¡R:"
  THE_SUW_suw_4_8_tt_yes: "£yes£‚YœgSVMR1u§T)mâw ù‹¿‹PR§!gb?eÿRûm R°e§GY²N§!áOag§T`O b ÖN§!"
  THE_SUW_suw_4_8_tt_no: "£no£‚YœgSVMR1u§T)mâw ù‹¿‹PR§!gb?eÿRûm R°e§GY²N§!áOag§T`O b ÖN§!"
+ THE_SUW_4_8_tradenode_1_tt: "j–>y"
+ THE_SUW_4_8_tradenode_2_tt: "cKNåNR`„v.OYe"
  THE_SUW_suw_5_6_tt: "t’ŽNbìNo‚‹Y„v§GðX‰Š§!ÿ°s(WVËYÿAQ¸‹bìN§Y6eÆ–ýVYáO’V„v›OIY§!"
+ THE_SUW_suw_5_7_tt: "§YNb	gåb	g„vwýN§!lØS—RYe:N§YˆRâwckYe§!"
+ THE_SUW_suw_5_8_tt: "Ïkåb	gNY§T0WbV§!ÿR§G-3%§!§YÑSUSb,g§!"
 # THE_SUW_reform_tt: "Î˜kyqVÍTîOck:§Y+10.0%§!"
  THE_SUW_maikozeikinn_decision_tt: "Ïk§Y10§!t^ïSåNÛLˆN!kå‹Lˆ¨R"
+ THE_SUW_has_terrain_glacier: "òTåb	g§T°QÝT§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_farmlands: "òTåb	g§TœQ0u§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_forest: "òTåb	g§Tîh—g§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_hills: "òTåb	g§TNu–§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_woods: "òTåb	g§Th—g§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_mountain: "òTåb	g§TqS	§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_grasslands: "òTåb	g§TIƒŸS§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_jungle: "òTåb	g§TN—g§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_marsh: "òTåb	g§T¼lýl§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_desert: "òTåb	g§T™l.o§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_coastal_desert: "òTåb	g§T¿lwm™l.o§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_coastline: "òTåb	g§Twm¸S¿u§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_drylands: "òTåb	g§Tñe0W§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_highlands: "òTåb	g§TØš0W§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_savannah: "òTåb	g§TzhIƒŸS§!:§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_has_terrain_steppe: "òTåb	g§T'YIƒŸS§!:§G-3%§!§YÑSUSb,g§!"
+ 
 ### TOOLTIP_END
 
 ### dynasty
@@ -231,6 +255,22 @@
  THE_kamigami_scholar_modifier: "ŒNdW„vŒŒTw"
  THE_sanae_scholar_modifier: "GYù„výûRw"
  THE_SUW_bottom_up_country_modifier: "êNwN"
+ THE_SUW_defensiveness_glacier_country_modiffier: "§T°QÝT§!"
+ THE_SUW_defensiveness_farmlands_country_modiffier: "§TœQ0u§!"
+ THE_SUW_defensiveness_forest_country_modiffier: "§Tîh—g§!"
+ THE_SUW_defensiveness_hills_country_modiffier: "§TNu–§!"
+ THE_SUW_defensiveness_woods_country_modiffier: "§Th—g§!"
+ THE_SUW_defensiveness_mountain_country_modiffier: "§TqS	§!"
+ THE_SUW_defensiveness_grasslands_country_modiffier: "§TIƒŸS§!"
+ THE_SUW_defensiveness_jungle_country_modiffier: "§TN—g§!"
+ THE_SUW_defensiveness_marsh_country_modiffier: "§T¼lýl§!"
+ THE_SUW_defensiveness_desert_country_modiffier: "§T™l.o§!"
+ THE_SUW_defensiveness_coastal_desert_country_modiffier: "§T¿lwm™l.o§!"
+ THE_SUW_defensiveness_coastline_country_modiffier: "§Twm¸S¿u§!"
+ THE_SUW_defensiveness_drylands_country_modiffier: "§Tñe0W§!"
+ THE_SUW_defensiveness_highlands_country_modiffier: "§TØš0W§!"
+ THE_SUW_defensiveness_savannah_country_modiffier: "§TzhIƒŸS§!"
+ THE_SUW_defensiveness_steppe_country_modiffier: "§T'YIƒŸS§!"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER

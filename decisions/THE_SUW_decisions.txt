@@ -176,7 +176,7 @@ country_decisions = {
 		color = { 166  70  211 }
 		potential = {	
 			tag = SUW
-			has_country_flag = THE_SUW_maikozeikinn_flag
+			mission_completed = THE_SUW_suw_5_6
 		}
 		allow = {
 			custom_trigger_tooltip = {
@@ -233,6 +233,7 @@ country_decisions = {
 					}
 				}
 			}
+			clr_country_flag = THE_SUW_maikozeikinn_flag
 			set_country_flag = THE_SUW_maikozeikinn_flag
 		}
 		
@@ -348,6 +349,27 @@ country_decisions = {
 				remove_fow = 120
 			}
 			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {
+	#改朝鲜地名
+	THE_SUW_kor_new_name_decision = {
+		color = { 166  70  211 }
+		potential = {	
+			tag = SUW
+			mission_completed = THE_SUW_2_5
+		}
+		allow = {
+			
+		}
+		effect = {
+			hidden_effect = { THE_SUW_change_name_scripted_effects = "yes" } 
 		}
 		
 		ai_will_do = {
