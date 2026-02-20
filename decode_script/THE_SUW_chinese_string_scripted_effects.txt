@@ -166,3 +166,22 @@ THE_SUW_change_name_scripted_effects = {
 		rename_capital = "浮涛"
 	}
 }
+
+THE_SUW_sanae_ruler_scripted_effects = {
+	define_ruler = {
+      name = "早苗"  # Sanae
+      dynasty = "东风谷"  # Kochiya
+      culture = Gensokyo_human
+      adm = 5
+      dip = 5
+      mil = 5
+      age = 18
+      claim = 100
+      female = yes
+    }
+    hidden_effect = {
+      add_ruler_personality = immortal_personality
+      set_ruler_flag = touhou_character_ruler
+      set_ruler_flag = touhou_original_ruler
+    }
+}

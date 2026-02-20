@@ -78,7 +78,7 @@
  THE_SUW_KOR_development_tt: "诹访的发展度: §Y[ROOT.suwdevelopment.GetValue]§! §G不小于§!朝鲜的发展度: §Y[ROOT.kordevelopment.GetValue]§! "
  THE_SUW_event_32_tt: "获得济州作为两国通商口岸，以及一个§G承诺§!，若其即位，则朝鲜将内附于我国"
  THE_SUW_event_33_tt: "提示:获取朝鲜军通，帮助朝鲜平叛"
- THE_SUW_suw_2_8_tt: "已将朝鲜收作宗教守护"
+
  #God_acts: "神明行事"
  kanako_piety: "蛇信"
  suwako_piety: "蛙舌"
@@ -139,6 +139,10 @@
  THE_SUW_suw_1_8_tt: "完成宗教改革后，将获得§G诹访子专属§!外交信条"
  THE_SUW_kan_1_8_tt: "完成宗教改革后，将获得§G神奈子专属§!外交信条"
 # THE_SUW_suw_1_9_tt: "赐予@KOR§Y朝鲜§!全境新的地名"
+ THE_SUW_suw_1_10_tt: "解锁§T与他国君主进行互动§!的能力"
+ THE_SUW_suw_2_7_tt: "阿勒巴沁:\n在§Y阿勒巴沁§!的骑兵至少有§Y3§!"
+ THE_SUW_suw_2_8_tt: "整合蒙古各部，并创立§Y小蒙古国§!。"
+ THE_SUW_suw_3_10_tt: "§T诹访子§!将不再§Y执政§!"
  THE_SUW_suw_4_7_tt: "事件§T"早苗的回信"§!已经触发"
  THE_SUW_suw_4_7_tt_exists_yes: "£yes£如果@MRY§Y[MRY.GetName]§!存在且事件§T"早苗的回信"§!已经触发时完成任务:"
  THE_SUW_suw_4_7_tt_exists_no: "£no£如果@MRY§Y[MRY.GetName]§!存在且事件§T"早苗的回信"§!已经触发时完成任务:"
@@ -154,9 +158,15 @@
  THE_SUW_suw_4_8_tt_no: "£no£如果当前由§T洩矢 诹访子§!执政，则添加新§G外交§!信条§T“你 我 他”§!"
  THE_SUW_4_8_tradenode_1_tt: "陪社"
  THE_SUW_4_8_tradenode_2_tt: "持之以恒的传教"
+ THE_SUW_suw_4_9_tt: "所有§T加利福尼亚§!贸易节点的可供§Y拓荒§!的地块，§Y建立拓荒区§!"
+ THE_SUW_suw_4_9_no_colony_tt_yes: "£yes£如果完成任务时没有殖民地可供§Y拓荒§!，则向对应国家§Y申请买地§!:"
+ THE_SUW_suw_4_9_no_colony_tt_no: "£no£如果完成任务时没有殖民地可供§Y拓荒§!，则向对应国家§Y申请买地§!:"
+ THE_SUW_suw_4_9_native_policy_trade_tt_yes: "£yes£如果完成任务时拥有至少§G1队§!§Y殖民队§!，且殖民政策为§Y原住民通商政策§!，则:"
+ THE_SUW_suw_4_9_native_policy_trade_tt_no: "£no£如果完成任务时拥有至少§G1队§!§Y殖民队§!，且殖民政策为§Y原住民通商政策§!，则:"
  THE_SUW_suw_5_6_tt: "鉴于我们良好的§G声誉§!，现在开始，允许我们§Y收集国外信徒的供奉§!"
  THE_SUW_suw_5_7_tt: "§Y所有拥有的省份§!转变宗教为§Y守矢正教§!"
  THE_SUW_suw_5_8_tt: "每拥有一处§T地形§!，则§G-3%§!§Y发展成本§!"
+ THE_SUW_suw_5_10_tt: "所有§Y殖民领§!获得§G强化§!:"
 # THE_SUW_reform_tt: "风祝影响修正:§Y+10.0%§!"
  THE_SUW_maikozeikinn_decision_tt: "每§Y10§!年可以进行一次该行动"
  THE_SUW_has_terrain_glacier: "已拥有§T冰川§!:§G-3%§!§Y发展成本§!"
@@ -271,6 +281,9 @@
  THE_SUW_defensiveness_highlands_country_modiffier: "§T高地§!"
  THE_SUW_defensiveness_savannah_country_modiffier: "§T稀树草原§!"
  THE_SUW_defensiveness_steppe_country_modiffier: "§T大草原§!"
+ THE_SUW_suw_4_9_native_policy_trade_modifier: "尽我所能"
+ THE_SUW_suw_5_10_1_country_modiffier: "传播新世界"
+ THE_SUW_suw_5_10_2_country_modiffier: "神明的拼图"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -506,6 +519,8 @@
  THE_SUW_kan_mechanic_3:0 " 天择"
  monthly_THE_SUW_kan_mechanic_3:0 "Monthly  天择"
  THE_SUW_kan_mechanic_3_gain_modifier:0 " 天择 Gain Modifier"
+ THE_SUW_suw_monngoru_reform: "小蒙古国"
+ THE_SUW_suw_monngoru_reform_desc: "这是一个政府改革描述"
 ### GOVERNMENT_END
 
 ### Great_projects

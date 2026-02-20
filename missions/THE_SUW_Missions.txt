@@ -1398,7 +1398,7 @@ THE_SUW_stage_2_branch_suw_1 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = { custom_tooltip = THE_SUW_suw_1_10_tt } 
 	}
 }
 THE_SUW_stage_2_branch_suw_2 = {
@@ -1419,92 +1419,70 @@ THE_SUW_stage_2_branch_suw_2 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			if = {
-				limit = {
-					is_rival = KOR
-					KOR = {
-						has_opinion = {
-							who = PREV
-							value = 0
-						}
-						has_opinion_modifier = {
-							who = PREV
-							modifier = sent_gift
-						}
+			custom_trigger_tooltip = {
+				tooltip = THE_SUW_suw_2_7_tt
+				2102 = {
+					num_of_units_in_province = {
+						who = ROOT
+						type = cavalry
+						amount = 3
 					}
 				}
+			}	
+			
+			#1380 = {
+			#	num_of_units_in_province = {
+			#		who = ROOT
+			#		type = transport
+			#		amount = 10
+			#	}
+			#}
+			1380 = {
+				transports_in_province = 10
 			}
-			else_if = {
-				limit = {
-					army_size = KOR
-					KOR = {
-						has_opinion = {
-							who = PREV
-							value = 50
-						}
-					}
-				}
-			}
+			
 		}
 
 		effect = {
-			if = {
-				limit = {
-					is_rival = KOR
-					KOR = {
-						has_opinion = {
-							who = PREV
-							value = 0
-						}
-						has_opinion_modifier = {
-							who = PREV
-							modifier = sent_gift
-						}
-					}
-				}
-				KOR = {
-					remove_rival = SUW
-					create_alliance = SUW
-				}
-				add_prestige_or_monarch_power = { amount = 25 } 
-				if = {
-					limit = { KOR = { is_rival = PREV }  } 
-					add_trust = {
-						who = KOR
-						value = 20
-						mutual = yes
-					}
-					remove_rival = KOR
+			2446 = {
+				cede_province = ROOT
+				add_core = ROOT
+				random_list = {
+					1 = { change_trade_goods = fish }
+					1 = { change_trade_goods = naval_supplies }
 				}
 			}
-			else_if = {
-				limit = {
-					army_size = KOR
-					KOR = {
-						has_opinion_modifier = {
-							who = PREV
-							modifier = sent_gift
-						}
-					}
-				}
-				KOR = { create_alliance = SUW } 
-				add_power_projection = {
-					type = mission_rewards_power_projection
-					amount = 25
-				}
-				if = {
-					limit = { KOR = { is_rival = PREV }  } 
-					add_trust = {
-						who = KOR
-						value = 20
-						mutual = yes
-					}
-					remove_rival = KOR
+			1056 = {
+				cede_province = ROOT
+				add_core = ROOT
+				random_list = {
+					1 = { change_trade_goods = fish }
+					1 = { change_trade_goods = naval_supplies }
 				}
 			}
-			country_event = {
-				id = THE_SUW_events.29
-				days = 30
+			1055 = {
+				cede_province = ROOT
+				add_core = ROOT
+				random_list = {
+					1 = { change_trade_goods = fish }
+					1 = { change_trade_goods = naval_supplies }
+				}
+			}
+			1060 = {
+				cede_province = ROOT
+				add_core = ROOT
+				random_list = {
+					1 = { change_trade_goods = fish }
+					1 = { change_trade_goods = naval_supplies }
+				}
+			}
+			1057 = {
+				cede_province = ROOT
+				add_core = ROOT
+				random_list = {
+					1 = { change_trade_goods = fish }
+					1 = { change_trade_goods = naval_supplies }
+				}
 			}
 		}
 	}
@@ -1519,16 +1497,34 @@ THE_SUW_stage_2_branch_suw_2 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = THE_SUW_suw_2_8_tt
-				has_country_flag = THE_SUW_events_34_flag
-			}
+			
 		}
 
 		effect = {
-			add_historical_friend = KOR
-			KOR = { add_historical_friend = PREV } 
-			hidden_effect = { clr_country_flag = THE_SUW_events_34_flag } 
+			custom_tooltip = THE_SUW_suw_2_8_tt
+		
+			hidden_effect = {
+				KHA = {
+					inherit = OIR
+					inherit = HMI
+					inherit = KRC
+					set_government_rank = 2
+					change_government = theocracy
+					add_government_reform = THE_SUW_suw_monngoru_reform
+					if = {
+						limit = { mission_completed = THE_SUW_suw_5_7 }
+						change_religion = THE_moriyaseikyou_religion
+					}
+					else = {
+						change_religion = th_moriyashinto
+					}
+					change_unit_type = tech_gensokyan
+				}
+				create_subject = {
+					subject_type = THE_SUW_Religious_Protection
+					subject = ROOT
+				}
+			}
 		}
 	}
 
@@ -1621,9 +1617,34 @@ THE_SUW_stage_2_branch_suw_3 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			calc_true_if = {
+				all_province = {
+					religion = THE_moriyaseikyou_religion
+				}
+				amount = 500
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			custom_tooltip = THE_SUW_suw_3_10_tt
+			define_ruler = {
+				#adm = 3
+				#dip = 3
+				#mil = 3
+				max_random_adm = 6
+				max_random_dip = 6
+				max_random_mil = 6
+				age = 16
+				claim = 100
+				culture = Gensokyo_human
+				religion = THE_moriyaseikyou_religion
+			}
+			#THE_SUW_sanae_ruler_scripted_effects = yes
+		} 
 	}
 }
 THE_SUW_stage_2_branch_suw_4 = {
@@ -1841,12 +1862,146 @@ THE_SUW_stage_2_branch_suw_4 = {
 		required_missions = { THE_SUW_suw_4_8 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {
-			
-		}
+		trigger = {  
+			any_province = {
+				OR = {
+					region = cascadia_region
+					AND = {
+						region = california_region
+						NOT = { area = colorado_plateau_area } 
+						NOT = { area = new_mexico_area } 
+					}
+					area = durango_area
+					area = nayarit_area
+				}
+				has_discovered = ROOT
+			}
+			any_country = {
+				capital_scope = {
+					OR = {
+						region = cascadia_region
+						AND = {
+							region = california_region
+							NOT = { area = colorado_plateau_area } 
+							NOT = { area = new_mexico_area } 
+						}
+						area = durango_area
+						area = nayarit_area
+					}
+				}
+				alliance_with = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 200
+				}
+				trust = { who = ROOT value = 100 }
+			}
+		} 
 
 		effect = {
-			
+			custom_tooltip = THE_SUW_suw_4_9_tt
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							region = cascadia_region
+							AND = {
+								region = california_region
+								NOT = { area = colorado_plateau_area } 
+								NOT = { area = new_mexico_area } 
+							}
+							area = durango_area
+							area = nayarit_area
+						}
+					}
+					add_siberian_construction = 10
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						OR = {
+							region = cascadia_region
+							AND = {
+								region = california_region
+								NOT = { area = colorado_plateau_area } 
+								NOT = { area = new_mexico_area } 
+							}
+							area = durango_area
+							area = nayarit_area
+						}
+						NOT = { is_empty = yes } 
+					}
+				}
+				custom_tooltip = THE_SUW_suw_4_9_no_colony_tt_yes
+				add_years_of_income = -5
+				2022 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+				874 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+				873 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+				4637 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+				862 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			else = {
+				custom_tooltip = THE_SUW_suw_4_9_no_colony_tt_no
+				tooltip = {
+					add_years_of_income = -5
+					2022 = {
+						cede_province = ROOT
+						add_core = ROOT
+					}
+					874 = {
+						cede_province = ROOT
+						add_core = ROOT
+					}
+					873 = {
+						cede_province = ROOT
+						add_core = ROOT
+					}
+					4637 = {
+						cede_province = ROOT
+						add_core = ROOT
+					}
+					862 = {
+						cede_province = ROOT
+						add_core = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					num_of_colonists = 1
+					native_policy = native_policy_trade
+				}
+				custom_tooltip = THE_SUW_suw_4_9_native_policy_trade_tt_yes
+				add_country_modifier = {
+					name = "THE_SUW_suw_4_9_native_policy_trade_modifier"
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = THE_SUW_suw_4_9_native_policy_trade_tt_no
+				tooltip = {
+					add_country_modifier = {
+						name = "THE_SUW_suw_4_9_native_policy_trade_modifier"
+						duration = -1
+					}
+				}
+			}
 		}
 	}
 }
@@ -1904,6 +2059,12 @@ THE_SUW_stage_2_branch_suw_5 = {
 			change_religion = THE_moriyaseikyou_religion
 			custom_tooltip = THE_SUW_suw_5_7_tt
 			hidden_effect = { every_owned_province = { change_religion = THE_moriyaseikyou_religion }  } 
+			every_country = {
+				limit = {
+					is_subject_of_type = THE_SUW_Religious_Protection
+				}
+				change_religion = THE_moriyaseikyou_religion
+			}
 			change_adm = 1
 		}
 	}
@@ -1944,40 +2105,40 @@ THE_SUW_stage_2_branch_suw_5 = {
 	THE_SUW_suw_5_10 = {
 		icon = mission_unknown_mission
 		position = 10
-		required_missions = { THE_SUW_suw_4_9 } 
+		required_missions = {
+			THE_SUW_suw_4_9
+			THE_SUW_suw_5_8
+		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  
-			any_province = {
-				OR = {
-					superregion = enorth_america_superregion
-					superregion = central_america_superregionn
-				}
-				has_discovered = ROOT
-			}
-			native_policy = native_policy_trade
-		} 
+		trigger = {
+			all_province = { has_discovered = ROOT } 
+			colony = 1
+		}
 
-		effect = {  
-			#873 = {
-			#	cede_province = ROOT
-			#	add_core = ROOT
-			#}
-			every_province = {
+		effect = {
+			custom_tooltip = THE_SUW_suw_5_10_tt
+			every_country = {
 				limit = {
-					region = cascadia_region
-					AND = {
-						region = california_region
-						NOT = { area = colorado_plateau_area }
-						NOT = { area = new_mexico_area }
-					area = durango_area 
-					area = nayarit_area 
-					is_colony = yes
+					capital_scope = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = oceania
+						}
 					}
+					is_colonial_nation_of = ROOT
 				}
-				add_siberian_construction = 0
+				add_country_modifier = {
+					name = "THE_SUW_suw_5_10_1_country_modiffier"
+					duration = -1
+				}
 			}
-		} 
+			add_country_modifier = {
+				name = "THE_SUW_suw_5_10_2_country_modiffier"
+				duration = -1
+			}
+		}
 	}
 }
 THE_SUW_stage_2_branch_kan_1 = {

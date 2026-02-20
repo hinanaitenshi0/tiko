@@ -33,8 +33,8 @@ random_country = {
 	}
 }
 set_country_flag = THE_SUW_suw_4_4_flag
-change_government = theocracy
-add_government_reform = THE_SUW_kan_reform
+#change_government = theocracy
+#add_government_reform = THE_SUW_kan_reform
 add_government_power = {
     government_mechanic = land_of_the_christian_sun_mechanic
     which = ADM
@@ -63,4 +63,4 @@ change_religion = THE_moriyaseikyou_religion
 1816 = {
 	change_religion = THE_moriyaseikyou_religion
 }
-set_country_flag = enables_estate_dhimmi_flag
+add_government_reform = great_mongol_state_reform

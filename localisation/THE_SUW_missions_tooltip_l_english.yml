@@ -78,7 +78,7 @@
  THE_SUW_KOR_development_tt: "ù‹¿‹„vÑSUS¦^: §Y[ROOT.suwdevelopment.GetValue]§! §GNSŽN§!gœœ„vÑSUS¦^: §Y[ROOT.kordevelopment.GetValue]§! "
  THE_SUW_event_32_tt: "·ƒ—VNmÞTjO:N2NýVFUãS¸SÿåNÊSN*N§Gbú‹§!ÿå‚vQsSMOÿRgœœS…QD–ŽNbýV"
  THE_SUW_event_33_tt: "Ðc:y:·ƒÖSgœœ›Qÿ.^©Rgœœs^ÛS"
- THE_SUW_suw_2_8_tt: "òTSgœœ6ejO—RYeˆR²b"
+
  #God_acts: "^yfLˆ‹N"
  kanako_piety: "Ç†áO"
  suwako_piety: "Ù†‚"
@@ -138,7 +138,11 @@
  THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰Nag¦u§Y(ckMO)§!O§YVYe§!ýV¶RˆvO"
  THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§Gù‹¿‹PRN^S§!Y²NáOag"
  THE_SUW_kan_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§G^yHYPRN^S§!Y²NáOag"
- THE_SUW_suw_1_9_tt: "PˆN§Ygœœ§!hQƒX°e„v0WT"
+# THE_SUW_suw_1_9_tt: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
+ THE_SUW_suw_1_10_tt: "ã‰•§TNÖNýVTINÛLˆ’N¨R§!„výw›R"
+ THE_SUW_suw_2_7_tt: "?–ÒRôTl:\n(W§Y?–ÒRôTl§!„v‘šuQóS	g§Y3§!"
+ THE_SUW_suw_2_8_tt: "teT™„äSTèÿv^RËz§YS™„äSýV§!0"
+ THE_SUW_suw_3_10_tt: "§Tù‹¿‹PR§!SNQ§Ygb?e§!"
  THE_SUW_suw_4_7_tt: "‹NöN§T"ée×‚„vÞVáO"§!òTÏuæ‰ÑS"
  THE_SUW_suw_4_7_tt_exists_yes: "£yes£‚Yœg@MRY§Y[MRY.GetName]§!XR(WN‹NöN§T"ée×‚„vÞVáO"§!òTÏuæ‰ÑSöeŒRbûN¡R:"
  THE_SUW_suw_4_7_tt_exists_no: "£no£‚Yœg@MRY§Y[MRY.GetName]§!XR(WN‹NöN§T"ée×‚„vÞVáO"§!òTÏuæ‰ÑSöeŒRbûN¡R:"
@@ -154,9 +158,15 @@
  THE_SUW_suw_4_8_tt_no: "£no£‚YœgSVMR1u§T)mâw ù‹¿‹PR§!gb?eÿRûm R°e§GY²N§!áOag§T`O b ÖN§!"
  THE_SUW_4_8_tradenode_1_tt: "j–>y"
  THE_SUW_4_8_tradenode_2_tt: "cKNåNR`„v.OYe"
+ THE_SUW_suw_4_9_tt: "Nb	g§T R)Ry<SšN§!8f‚‚¹p„vïS›O§YÓbRƒ§!„v0WWWÿ§Yú^ËzÓbRƒ:S§!"
+ THE_SUW_suw_4_9_no_colony_tt_yes: "£yes£‚YœgŒRbûN¡Röe¡l	g–kl0WïS›O§YÓbRƒ§!ÿRTùR”^ýV¶R§Y3u÷‹pN0W§!:"
+ THE_SUW_suw_4_9_no_colony_tt_no: "£no£‚YœgŒRbûN¡Röe¡l	g–kl0WïS›O§YÓbRƒ§!ÿRTùR”^ýV¶R§Y3u÷‹pN0W§!:"
+ THE_SUW_suw_4_9_native_policy_trade_tt_yes: "£yes£‚YœgŒRbûN¡Röeåb	góS§G1–§!§Y–kl–§!ÿN–kl?eVr:N§YŸSOOlFU?eVr§!ÿR:"
+ THE_SUW_suw_4_9_native_policy_trade_tt_no: "£no£‚YœgŒRbûN¡Röeåb	góS§G1–§!§Y–kl–§!ÿN–kl?eVr:N§YŸSOOlFU?eVr§!ÿR:"
  THE_SUW_suw_5_6_tt: "t’ŽNbìNo‚‹Y„v§GðX‰Š§!ÿ°s(WVËYÿAQ¸‹bìN§Y6eÆ–ýVYáO’V„v›OIY§!"
  THE_SUW_suw_5_7_tt: "§YNb	gåb	g„vwýN§!lØS—RYe:N§YˆRâwckYe§!"
  THE_SUW_suw_5_8_tt: "Ïkåb	gNY§T0WbV§!ÿR§G-3%§!§YÑSUSb,g§!"
+ THE_SUW_suw_5_10_tt: "Nb	g§Y–kl†˜§!·ƒ—V§G:VS§!:"
 # THE_SUW_reform_tt: "Î˜kyqVÍTîOck:§Y+10.0%§!"
  THE_SUW_maikozeikinn_decision_tt: "Ïk§Y10§!t^ïSåNÛLˆN!kå‹Lˆ¨R"
  THE_SUW_has_terrain_glacier: "òTåb	g§T°QÝT§!:§G-3%§!§YÑSUSb,g§!"
@@ -271,6 +281,9 @@
  THE_SUW_defensiveness_highlands_country_modiffier: "§TØš0W§!"
  THE_SUW_defensiveness_savannah_country_modiffier: "§TzhIƒŸS§!"
  THE_SUW_defensiveness_steppe_country_modiffier: "§T'YIƒŸS§!"
+ THE_SUW_suw_4_9_native_policy_trade_modifier: "KSbNbýw"
+ THE_SUW_suw_5_10_1_country_modiffier: ".O­d°eNLu"
+ THE_SUW_suw_5_10_2_country_modiffier: "^yf„vübþV"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -454,6 +467,8 @@
  THE_SUW_odoru_decision_desc: ""
  THE_SUW_maikozeikinn_decision_title: "6eÆ–÷PRIY"
  THE_SUW_maikozeikinn_decision_desc: ""
+ THE_SUW_kor_new_name_decision_title: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
+ THE_SUW_kor_new_name_decision_desc: ""
 ### DECISION_END
 
 ###SUBJECT_TYPE
@@ -504,6 +519,8 @@
  THE_SUW_kan_mechanic_3:0 " )Yéb"
  monthly_THE_SUW_kan_mechanic_3:0 "Monthly  )Yéb"
  THE_SUW_kan_mechanic_3_gain_modifier:0 " )Yéb Gain Modifier"
+ THE_SUW_suw_monngoru_reform: "S™„äSýV"
+ THE_SUW_suw_monngoru_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
 ### GOVERNMENT_END
 
 ### Great_projects

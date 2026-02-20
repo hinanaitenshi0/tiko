@@ -170,3 +170,58 @@ THE_SUW_kan_reform = {
 		THE_SUW_kan_land_of_the_christian_sun_mechanic
 	}
 }
+
+#小蒙古国
+THE_SUW_suw_monngoru_reform = {
+	lock_level_when_selected = yes
+	icon = "THE_AKI_government_reform_1"
+	potential = {
+		OR = {
+			has_reform = THE_SUW_suw_monngoru_reform
+			have_had_reform = THE_SUW_suw_monngoru_reform
+		}
+	}
+
+	monastic = yes
+	#has_term_election = yes
+	#duration = 10
+	queen = no
+	heir = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	can_change_primary_culture = no
+	has_banners = yes
+	has_parliament = yes
+	
+	#states_general_mechanic = {
+	#	THE_SUW_suw = {
+	#		improve_relation_modifier = 0.2
+	#		development_cost_modifier = -0.1
+	#		stability_cost_modifier = -0.3
+	#	}
+	#	THE_SUW_kan = {
+	#		siege_ability = 0.2
+	#		movement_speed = 0.1
+	#		discipline = 0.1
+	#	}
+	#}
+		
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		THE_can_use_human_ideas_government_attribute = yes
+	}
+
+	modifiers = {
+		may_establish_frontier = yes
+		global_trade_goods_size_modifier = 0.2
+		cavalry_shock = -0.5
+		cavalry_fire = 1
+		movement_speed = 0.1
+		cav_to_inf_ratio = 0.5
+	}
+	government_abilities = {
+		
+	}
+}
