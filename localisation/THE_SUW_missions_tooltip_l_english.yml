@@ -139,9 +139,39 @@
  THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§Gù‹¿‹PRN^S§!Y²NáOag"
  THE_SUW_kan_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§G^yHYPRN^S§!Y²NáOag"
 # THE_SUW_suw_1_9_tt: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
+ THE_SUW_suw_1_9_ttt_no: "NXR(WûNUO§Y—RYeÛS›Q§!NbìNÊSNb	g^—g!^SýVåb	g§G300§!*N§YbýVýVYe§!0WWW"
+ THE_SUW_suw_1_9_ttt_yes: "XR(WûNa§Y—RYeÛS›Q§!N§YckßuáOðN¹RÍV¦^§!SŽN§G8§!"
+ THE_SUW_suw_1_9_1_tt_yes: "£yes£‚YœgÇMQûNUO§Y—RYeÛS›Q§!„vúQ°segŒRbûN¡R"
+ THE_SUW_suw_1_9_1_tt_no: "£no£‚YœgÇMQûNUO§Y—RYeÛS›Q§!„vúQ°segŒRbûN¡R"
+ THE_SUW_suw_1_9_2_tt_yes: "£yes£‚YœgÇØ*gYtŒRûNa§Y—RYeÛS›Q§!„vúQ°segŒRbûN¡R"
+ THE_SUW_suw_1_9_2_tt_no: "£no£‚YœgÇØ*gYtŒRûNa§Y—RYeÛS›Q§!„vúQ°segŒRbûN¡R"
+ THE_SUW_suw_1_10_ttt: "SVMRßu»lw=f§T)mâw ù‹¿‹PR§!"
  THE_SUW_suw_1_10_tt: "ã‰•§TNÖNýVTINÛLˆ’N¨R§!„výw›R"
- THE_SUW_suw_2_7_tt: "?–ÒRôTl:\n(W§Y?–ÒRôTl§!„v‘šuQóS	g§Y3§!"
- THE_SUW_suw_2_8_tt: "teT™„äSTèÿv^RËz§YS™„äSýV§!0"
+ THE_SUW_suw_2_7_tt:0 "?–ÒRôTl:\n(W§Y?–ÒRôTl§!„v‘šuQóS	g§Y3§!"
+ THE_SUW_suw_2_8_tt: "teT™„äSTèÿv^RËz§YS™„äSýV§!ÿ\n‚YœgûN¡R0§YˆRâwckYe§!0òTŒRbÿRlØSvQ—RYe:N§YˆRâwckYe§!ÿ&TRlØSvQ—RYe:N§YˆRâw^yS§!"
+ THE_SUW_suw_2_9_great_power_influence_tt_yes: "£yes£‚Yœg	gûNN–™ý(W‰Ï…0W:S„vìrËzýV¶R×S0RbìN„v§YR:VqVÍT§!öeŒRbûN¡RÿRSNb	gán³agöN„výV¶RØSb§T—RYeˆR²b§!:"
+ THE_SUW_suw_2_9_great_power_influence_tt_no: "£no£‚Yœg	gûNN–™ý(W‰Ï…0W:S„vìrËzýV¶R×S0RbìN„v§YR:VqVÍT§!öeŒRbûN¡RÿRSNb	gán³agöN„výV¶RØSb§T—RYeˆR²b§!:"
+ THE_SUW_suw_2_9_add_permanent_claim_tt_yes: "£yes£‚YœgÇ§Y.OYe§!§YûNapeÏ‘‰Ï…0WWW§!FOv^*gåb	gŒRbûN¡RÿR·ƒ—VvQYOøvTáOðN„v‰Ï…0WWW„v§Y8lEN'`±Rðy§!ÿv^N:"
+ THE_SUW_suw_2_9_add_permanent_claim_tt_no: "£no£‚YœgÇ§Y.OYe§!§YûNapeÏ‘‰Ï…0WWW§!FOv^*gåb	gŒRbûN¡RÿR·ƒ—VvQYOøvTáOðN„v‰Ï…0WWW„v§Y8lEN'`±Rðy§!ÿv^N:"
+ THE_SUW_suw_2_9_all_province_owned_tt_yes: "£yes£‚YœgÇåb	g§YNb	g‰Ï…0WWW§!v^§Y.OYe§!NQàe§YR»yININ§!ŒRbûN¡RÿR:"
+ THE_SUW_suw_2_9_all_province_owned_tt_no: "£no£‚YœgÇåb	g§YNb	g‰Ï…0WWW§!v^§Y.OYe§!NQàe§YR»yININ§!ŒRbûN¡RÿR:"
+ THE_SUW_suw_3_7_emperor_of_china_yes_tt_yes: "£yes£‚Yœg§T-NýV‡v^§!XR(WNbìNÊSNb	g^SýVåb	g§G100§!*N0WWWÿv^åb	g§G3§!Íy§Y8fVY±R§!ÿR:"
+ THE_SUW_suw_3_7_emperor_of_china_yes_tt_no: "£no£‚Yœg§T-NýV‡v^§!XR(WNbìNÊSNb	g^SýVåb	g§G100§!*N0WWWÿv^åb	g§G3§!Íy§Y8fVY±R§!ÿR:"
+ THE_SUW_3_7_tradenode_1_tt: "8fOSšR"
+ THE_SUW_suw_3_7_emperor_of_china_no_tt_yes: "£yes£‚Yœg§T-NýV‡v^§!NXR(WNbìNÊSNb	g^SýVI`qQåb	g§G50§!*N-NýV!k'YF–0WWWÿR(W-NýV!k'YF–åb	g„vèRwýNFUÁT„v§G1§!*N·ƒ—VGSµuÿwQSO‚YN:\n§T7Œir§!l§TR‘‰|§!,\n§Trrju§!l§TŠÛk§!,\n§T|œ‰|§!l§TaŒYr§!,\n§T6ƒöS§!l§T–TaU§!,\n§T^™e§!l§TÓg™e§!,\n§T÷thV§!l§T»sƒt§!,\n§Tq™™§!l§TN™™§!"
+ THE_SUW_suw_3_7_emperor_of_china_no_tt_no: "£no£‚Yœg§T-NýV‡v^§!NXR(WNbìNÊSNb	g^SýVI`qQåb	g§G50§!*N-NýV!k'YF–0WWWÿR(W-NýV!k'YF–åb	g„vèRwýNFUÁT„v§G1§!*N·ƒ—VGSµuÿwQSO‚YN:\n§T7Œir§!l§TR‘‰|§!,\n§Trrju§!l§TŠÛk§!,\n§T|œ‰|§!l§TaŒYr§!,\n§T6ƒöS§!l§T–TaU§!,\n§T^™e§!l§TÓg™e§!,\n§T÷thV§!l§T»sƒt§!,\n§Tq™™§!l§TN™™§!"
+ THE_SUW_suw_1_7_mission_complete_tt_yes: "£yes£‚YœgûN¡R0§YNbBl†v‚Y?a§!0òTŒRbÿR˜YS§G1§!Y(W-NýV!k'YF–åb	g„v§T¸u.V§!GSµu:N§T^yŒr§!:"
+ THE_SUW_suw_1_7_mission_complete_tt_no: "£no£‚YœgûN¡R0§YNbBl†v‚Y?a§!0òTŒRbÿR˜YS§G1§!Y(W-NýV!k'YF–åb	g„v§T¸u.V§!GSµu:N§T^yŒr§!:"
+ THE_SUW_suw_3_8_emperor_of_china_yes_tt_yes: "£yes£‚Yœg§T-NýV‡v^§!XR(WN(W§G5§!*NøvsQ§Y8f‚‚¹p§!åb	g§G10%§!§Y8fÞz‰N›R§!ÿR:"
+ THE_SUW_suw_3_8_emperor_of_china_yes_tt_no: "£no£‚Yœg§T-NýV‡v^§!XR(WN(W§G5§!*NøvsQ§Y8f‚‚¹p§!åb	g§G10%§!§Y8fÞz‰N›R§!ÿR:"
+ THE_SUW_suw_3_8_emperor_of_china_alliance_yes_tt_yes: ": "£yes£‚YœgÓußv§T-NýV‡v^§!ÿRNvQb:N§G†SòSËS¦§!ÿv^:NvQûm R§G100§!§YáOûN§!N§Y8lENg¦^§!§G+1§!§Y)Y‹TîOck§!:"
+ THE_SUW_suw_3_8_emperor_of_china_alliance_yes_tt_no: "£no£‚YœgÓußv§T-NýV‡v^§!ÿRNvQb:N§G†SòSËS¦§!ÿv^:NvQûm R§G100§!§YáOûN§!N§Y8lENg¦^§!§G+1§!§Y)Y‹TîOck§!:"
+ THE_SUW_suw_3_8_emperor_of_china_no_tt_yes: "£yes£‚Yœg§T-NýV‡v^§!NXR(WNåb	gv^.OYe§G5§!*NøvsQ§Y8f‚‚¹p,gàWwýN§!ÿRlØS§G5§!*N§Y8f‚‚¹p§!„vÿ§Y,gàWwýNhTôV§!Nåb	g§Y8f-NÃV§!„vwýN„v—RYe:N§YSVMRýVYe§!:"
+ THE_SUW_suw_3_8_emperor_of_china_no_tt_no: "£no£‚Yœg§T-NýV‡v^§!NXR(WNåb	gv^.OYe§G5§!*NøvsQ§Y8f‚‚¹p,gàWwýN§!ÿRlØS§G5§!*N§Y8f‚‚¹p§!„vÿ§Y,gàWwýNhTôV§!Nåb	g§Y8f-NÃV§!„vwýN„v—RYe:N§YSVMRýVYe§!:"
+ THE_SUW_suw_3_9_1_tt_yes: "£yes£‚YœgÇ§Yåe,g§!jO:N§YgØš8f÷N<P§!„v§Y‚‚¹p§!ŒRbûN¡RÿRbìNN(W§Y¹fW8f‚‚¹p§!-Nåb	g§YgØš8fÞz‰N›R§!„výV¶RqQT·ƒ—VNRîOckôv0RvQNQ=fbìN„v§T—RYeˆR²b§!: "
+ THE_SUW_suw_3_9_1_tt_no: "£no£‚YœgÇ§Yåe,g§!jO:N§YgØš8f÷N<P§!„v§Y‚‚¹p§!ŒRbûN¡RÿRbìNN(W§Y¹fW8f‚‚¹p§!-Nåb	g§YgØš8fÞz‰N›R§!„výV¶RqQT·ƒ—VNRîOckôv0RvQNQ=fbìN„v§T—RYeˆR²b§!: "
+ THE_SUW_suw_3_9_2_tt_yes: "£yes£‚YœgÇ§Y.OYe§!ŒRbûN¡RÿRSNb	gbìN(W§TpS¦^=e±§!N§TlšegšN§!§YÝOìr§!„výV¶RØS:N§T—RYeg!ýV§!ÿv^ùRÙ§G2§!*N0W:S6eÆ–§G1§!!k§Y÷PRz§!: "
+ THE_SUW_suw_3_9_2_tt_no: "£no£‚YœgÇ§Y.OYe§!ŒRbûN¡RÿRSNb	gbìN(W§TpS¦^=e±§!N§TlšegšN§!§YÝOìr§!„výV¶RØS:N§T—RYeg!ýV§!ÿv^ùRÙ§G2§!*N0W:S6eÆ–§G1§!!k§Y÷PRz§!: "
  THE_SUW_suw_3_10_tt: "§Tù‹¿‹PR§!SNQ§Ygb?e§!"
  THE_SUW_suw_4_7_tt: "‹NöN§T"ée×‚„vÞVáO"§!òTÏuæ‰ÑS"
  THE_SUW_suw_4_7_tt_exists_yes: "£yes£‚Yœg@MRY§Y[MRY.GetName]§!XR(WN‹NöN§T"ée×‚„vÞVáO"§!òTÏuæ‰ÑSöeŒRbûN¡R:"
@@ -164,7 +194,7 @@
  THE_SUW_suw_4_9_native_policy_trade_tt_yes: "£yes£‚YœgŒRbûN¡Röeåb	góS§G1–§!§Y–kl–§!ÿN–kl?eVr:N§YŸSOOlFU?eVr§!ÿR:"
  THE_SUW_suw_4_9_native_policy_trade_tt_no: "£no£‚YœgŒRbûN¡Röeåb	góS§G1–§!§Y–kl–§!ÿN–kl?eVr:N§YŸSOOlFU?eVr§!ÿR:"
  THE_SUW_suw_5_6_tt: "t’ŽNbìNo‚‹Y„v§GðX‰Š§!ÿ°s(WVËYÿAQ¸‹bìN§Y6eÆ–ýVYáO’V„v›OIY§!"
- THE_SUW_suw_5_7_tt: "§YNb	gåb	g„vwýN§!lØS—RYe:N§YˆRâwckYe§!"
+ THE_SUW_suw_5_7_tt: "Nb	g§YbìNÊSD–¸^§!åb	g„v§YˆRâw^yS§!wýNlØS—RYe:N§YˆRâwckYe§!"
  THE_SUW_suw_5_8_tt: "Ïkåb	gNY§T0WbV§!ÿR§G-3%§!§YÑSUSb,g§!"
  THE_SUW_suw_5_10_tt: "Nb	g§Y–kl†˜§!·ƒ—V§G:VS§!:"
 # THE_SUW_reform_tt: "Î˜kyqVÍTîOck:§Y+10.0%§!"
@@ -241,6 +271,16 @@
  THE_SUW_Recruit_manpower_country_modiffier: "ÛbÆ–ºNKb"
  THE_SUW_Heart_of_Struggle_country_modiffier: "—e‰NKNÃV"
  THE_SUW_can_not_declare_war_modifier: "án2m‰N8—"
+ THE_SUW_suw_1_9_1_country_modifier: "áOðN„vˆRâw"
+ THE_SUW_suw_1_9_2_country_modifier: "ˆRâw„váOðN"
+ THE_SUW_suw_2_9_trade_modifier: "N8nÝOYu„v8fÞz‰N›R:"
+ THE_SUW_tibet_tabi_country_modifier: "‰Ï…KNLˆ"
+ THE_SUW_sekai_senaka_1_province_modifier: "NLuKN"
+ THE_SUW_sekai_senaka_2_province_modifier: "NLuKN"
+ THE_SUW_sekai_senaka_3_province_modifier: "NLuKN"
+ THE_SUW_suw_3_8_trade_country_modifier: "ÅeLˆR—Ù†"
+ THE_SUW_suw_3_8_emperor_of_china_country_modifier: ")Y‹T(Wb"
+ THE_SUW_suw_3_9_country_modifier: "ŠbµcwmN8f"
  THE_SUW_divergence_of_views_country_modifier: "Rgk"
  THE_SUW_divergence_of_views_economy_country_modifier: "Rgk-ÏuNm-8f"
  THE_SUW_divergence_of_views_taxation_country_modifier: "Rgk-ÏuNm-z6e"
@@ -462,13 +502,14 @@
  THE_SUW_Strengthening_Suwa_Daisha_three_decision_title: "šbxdbìN„v¶R"
  THE_SUW_Strengthening_Suwa_Daisha_three_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_estate_burghers_action_title: "8x^X±”±r"
- THE_SUW_estate_burghers_action_desc: ""
+ THE_SUW_estate_burghers_action_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_odoru_decision_title: "¥cNwOYPN¥cNw‚"
- THE_SUW_odoru_decision_desc: ""
+ THE_SUW_odoru_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_maikozeikinn_decision_title: "6eÆ–÷PRIY"
- THE_SUW_maikozeikinn_decision_desc: ""
+ THE_SUW_maikozeikinn_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_kor_new_name_decision_title: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
- THE_SUW_kor_new_name_decision_desc: ""
+ THE_SUW_kor_new_name_decision_desc: "Ù=fN*N³Q®‹Ïcð"
+ THE_SUW_kor_new_name_decision_tt: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
 ### DECISION_END
 
 ###SUBJECT_TYPE

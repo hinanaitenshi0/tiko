@@ -57,10 +57,77 @@ add_government_power = {
 }
 clr_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
 set_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
-swap_non_generic_missions = yes
-set_country_flag = THE_SUW_maikozeikinn_flag
+set_country_flag = THE_SUW_suw_4_4_flag
+clr_country_flag = THE_SUW_maikozeikinn_flag
 change_religion = THE_moriyaseikyou_religion
 1816 = {
 	change_religion = THE_moriyaseikyou_religion
 }
-add_government_reform = great_mongol_state_reform
+change_government = theocracy
+add_government_reform = THE_SUW_kan_reform
+swap_non_generic_missions = yes
+#kill_ruler = yes
+every_country = {
+				limit = {
+					capital_scope = {
+						region = mongolia_region 
+					}
+				}
+				ROOT = {
+					create_subject = {
+						subject_type = th_religious_tributary
+						subject = PREV
+					}
+				}
+			}
+4188 = {
+	change_religion = THE_moriyaseikyou_religion
+}
+every_province = {
+	change_religion = THE_moriyaseikyou_religion
+}
+create_alliance = BOH
+
+every_province = {
+				if = {
+					limit = {
+						religion = th_moriyashinto
+						NOT = { owned_by = ROOT}
+					}
+					if = {
+						limit = {								
+							NOT = { development = 10 }
+						}
+						ROOT = {
+							add_treasury = 10
+						}
+					}
+					else_if = {
+						limit = { 
+							NOT = { development = 30 }
+						}
+						ROOT = {
+							add_treasury = 20
+						}
+					}
+					else = {
+						ROOT = {
+							add_treasury = 30
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						religion = THE_moriyaseikyou_religion
+						NOT = { owned_by = ROOT}
+					}			
+					ROOT = {
+						random_list = {
+							1 = { add_adm_power = 1 }
+							1 = { add_dip_power = 1 }	
+							1 = { add_mil_power = 1 }	
+						}
+					}
+					
+				}
+			}

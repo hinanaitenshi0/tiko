@@ -97,6 +97,68 @@ THE_SUW_saisennbakokouryuu_country_modiffier = {
 	diplomatic_reputation = 2
 	improve_relation_modifier = 0.2
 }
+#信仰的守矢
+THE_SUW_suw_1_9_1_country_modifier = {
+	missionaries = 1
+	same_religion_advisor_cost = -0.2
+	religious_unity = 1
+	church_loyalty_modifier = 0.5
+	church_influence_modifier = 0.1
+}
+#守矢的信仰
+THE_SUW_suw_1_9_2_country_modifier = {
+	missionaries = 1
+	global_missionary_strength = 0.03
+	missionary_maintenance_cost = -0.5
+	prestige_per_development_from_conversion = 0.5
+	monthly_church_power = 3
+}
+#西藏之行
+THE_SUW_tibet_tabi_country_modifier = {
+	missionaries = 1
+	prestige = 0.5
+	tolerance_own = 1
+}
+#世界之脊
+THE_SUW_sekai_senaka_1_province_modifier = {
+	supply_limit = 6
+	local_development_cost = -0.35
+	local_defensiveness = 1
+	max_attrition = 3
+	local_hostile_attrition = 3
+}
+#世界之脊
+THE_SUW_sekai_senaka_2_province_modifier = {
+	supply_limit = 4
+	local_development_cost = -0.2
+	local_defensiveness = 0.75
+	max_attrition = 2
+	local_hostile_attrition = 2
+}
+#世界之脊
+THE_SUW_sekai_senaka_3_province_modifier = {
+	supply_limit = 8
+	local_development_cost = -0.5
+	local_defensiveness = 1
+	local_hostile_movement_speed = -1
+	max_attrition = 3
+	local_hostile_attrition = 3
+}
+#旅行青蛙
+THE_SUW_suw_3_8_trade_country_modifier = {
+	merchants = 1
+	caravan_power = 0.5
+	trade_steering = 0.33
+}
+#天命在我
+THE_SUW_suw_3_8_emperor_of_china_country_modifier = {
+	imperial_mandate = 1
+}
+#把控海上贸易
+THE_SUW_suw_3_9_country_modifier = {
+	trade_efficiency = 0.1
+	global_ship_trade_power = 0.2
+}
 #地势坤
 THE_SUW_defensiveness_glacier_country_modiffier = {
 	development_cost = -0.03

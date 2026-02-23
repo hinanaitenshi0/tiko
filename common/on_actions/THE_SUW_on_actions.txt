@@ -46,3 +46,7 @@ on_battle_lost_unit = {
 on_new_monarch = {
 	THE_SUW_change_religion_scripted_effects = yes
 }
+
+on_dependency_lost = {
+	THE_SUW_on_dependency_lost_scripted_effects = yes
+}

@@ -543,7 +543,23 @@ THE_SUW_has_terrain_scripted_effects = {
 				duration = -1
 			}
 		}
-		
+	}
+}
+
+THE_SUW_on_dependency_lost_scripted_effects = {
+	if = {
+		limit = { 
+			has_country_flag = THE_SUW_suw_3_9_flag
+			any_country = {
+				has_country_modifier = THE_SUW_suw_3_9_country_modifier
+			}
+		}
+		random_country = {
+			limit = {
+				has_country_modifier = THE_SUW_suw_3_9_country_modifier
+			}
+			remove_country_modifier = THE_SUW_suw_3_9_country_modifier
+		}
 		
 	}
 }

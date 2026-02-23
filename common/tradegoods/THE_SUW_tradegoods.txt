@@ -12,7 +12,7 @@ THE_SUW_godsticks = {
 		modifier = {
 			factor = 500
 			OR = {
-				mission_completed = THE_SUW_suw_5_6
+				mission_completed = THE_SUW_suw_1_7
 				mission_completed = THE_SUW_kan_5_6
 			}
 			province = {
