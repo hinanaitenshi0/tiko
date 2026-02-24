@@ -12,6 +12,7 @@
  SUW_ADJ: "ù‹¿‹"
  THE_SUW_TAG: "[Root.GetTag]"
  THE_SUW_TAG_at: "@[Root.GetTag]"
+ kana: "^yHY"
 ### tag_END
 
 ### TOOLTIP
@@ -215,7 +216,9 @@
  THE_SUW_has_terrain_highlands: "òTåb	g§TØš0W§!:§G-3%§!§YÑSUSb,g§!"
  THE_SUW_has_terrain_savannah: "òTåb	g§TzhIƒŸS§!:§G-3%§!§YÑSUSb,g§!"
  THE_SUW_has_terrain_steppe: "òTåb	g§T'YIƒŸS§!:§G-3%§!§YÑSUSb,g§!"
- 
+ THE_SUW_kan_1_6_tt: "dkTÏk!k§T.OYeŒRb§!ÿS–:gÐc›O§G10§!¹p§T?eœ^ýw›R¹ppe§!"
+ THE_SUW_kan_4_8_tt: "GSµuîOck§Y"'YÉTŒNCQ"§!:N§Y"Í‚yzKN­—"§!ÿNdkT§T`S†˜wýN§!TSôv¥c·ƒ—V§Tå‹wýN§!"
+ THE_SUW_kan_5_6_tt: "dkTNb	g§YVg§!Neg„v§T¸u.V§!wýNÿlØSFUÁT:N§T^yŒr§!"
 ### TOOLTIP_END
 
 ### dynasty
@@ -324,6 +327,10 @@
  THE_SUW_suw_4_9_native_policy_trade_modifier: "KSbNbýw"
  THE_SUW_suw_5_10_1_country_modiffier: ".O­d°eNLu"
  THE_SUW_suw_5_10_2_country_modiffier: "^yf„vübþV"
+ THE_SUW_kan_owaranaibatoru_country_modifier: "àeKS„v1Wb"
+ THE_SUW_kan_sinnkonotabi_country_modifier: "áOðNKNV"
+ THE_SUW_kan_yuan_country_modifier: "'YÉTŒNCQ"
+ THE_SUW_kan_Borjigin_country_modifier: "Í‚yzKN­—"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -483,6 +490,13 @@
  THE_SUW_events.40.desc: "1"
  THE_SUW_events.40.a.name: "ýÛ‰^ó`aN†Nÿw„vNOˆVëV«ˆWØVT?"
  THE_SUW_events.40.b.name: "SVRÅdê'YŒšIQ4N„v=f`OìNÿ°s(WgäNY9e„vmN=f`OìNÿwSVbìN¡l>l?"
+ THE_SUW_events.41.title: "àeKS„v1Wb"
+ THE_SUW_events.41.desc: "1"
+ THE_SUW_events.41.name: "^yô‹ÿ=föeP†N"
+ THE_SUW_events.41_tt: "§TVËYÛLˆ1WbÿdkTSåN§Y.OYe§!ãNÿf§Y8hÃVS§!ŸRýwÿwýN§Y.OYe§!ŒRbsS§Y8hÃVS§!ŒRb0\nSùRNb	g§Y»ýV§!ÑS¨R§Y'Y1Wb§!ÿîvMRÿŒRbSVMRNb	gb‰NT§YŒTs^§!gYcíu§G1§!t^ÿ§G1§!t^gô•ïSÇ³Q®‹çuíuùRNb	g§Y»ýV§!(d–†NbìN„vD–^SýV)ÑS¨R§Y'Y1Wb§!0\n‚Yœg…Ç§G1§!t^*gÑS¨R§Y'Y1Wb§!ÿR1Y»SNb	gøvsQ:g6Rÿ1Y»S§Y"àeKS„v1Wb"§!îOck,v^S§Y"áOðNKNV"§!ÊSKNTNb	gÇûN¡R·ƒ—V„vîOcklØS:Nøv”^§Yb—§!îOck§!"
+ THE_SUW_events.42.title: "1Wb„vÈu	q"
+ THE_SUW_events.42.desc: "1"
+ THE_SUW_events.42.name: "IQ’‚ÿˆm1Y†N......"
 ### EVENT_END
 
 

@@ -50,3 +50,24 @@ on_new_monarch = {
 on_dependency_lost = {
 	THE_SUW_on_dependency_lost_scripted_effects = yes
 }
+
+on_peace_recipient = {
+	if = {
+		limit = { 
+			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+		}
+		set_country_flag = THE_SUW_kan_owarubatoru_flag
+	}
+}
+
+on_war_won = {
+	THE_SUW_kan_5_6_scripted_effects = yes
+}
+
+on_siege_won_country = {
+	THE_SUW_kan_owaranaibatoru_scripted_effects = yes
+}
+
+on_province_religion_converted = {
+	THE_SUW_on_province_religion_converted_estate_privileges_scripted_effect = yes
+}

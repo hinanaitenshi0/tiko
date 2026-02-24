@@ -1,6 +1,6 @@
 
 add_country_modifier = {
-	name = "THE_SUW_1_modiffier"
+	name = THE_SUW_kan_owaranaibatoru_country_modifier
 	duration = -1
 }
 #change_religion = THE_moriyaseikyou_religion

@@ -220,9 +220,34 @@ THE_SUW_suw_5_10_1_country_modiffier = {
 THE_SUW_suw_5_10_2_country_modiffier = {
 	reduced_liberty_desire = 33
 }
-	
-
-	
+#无尽的圣战
+THE_SUW_kan_owaranaibatoru_country_modifier = {
+	overextension_impact_modifier = -1
+	core_creation = 9.99
+	tolerance_own = 817
+	tolerance_heretic = -817
+	tolerance_heathen = -817
+}
+#信仰之征
+THE_SUW_kan_sinnkonotabi_country_modifier = {
+	discipline = 0.05
+	morale_damage = 0.1
+	land_forcelimit_modifier = 0.1
+}
+#大哉乾元
+THE_SUW_kan_yuan_country_modifier = {
+	siege_ability = 0.2
+	leader_siege = 1
+	global_trade_goods_size_modifier = 0.1
+}
+#苍穹之鞭
+THE_SUW_kan_Borjigin_country_modifier = {
+	siege_ability = 0.4
+	leader_siege = 2
+	max_general_siege = 2
+	movement_speed = 0.5
+	global_trade_goods_size_modifier = 0.2
+}
 #踊跃参军
 #每传完一个地块增加1000人力
 # 使用on_action实现此效果，所有东西都写好了，详见仓库中on_action历史的修改内容，任务效果加个flag就行
@@ -447,11 +472,4 @@ THE_SUW_MCH_perfect_dynasty_modifier = {
 	eunuchs_loyalty_modifier = 0.2
 	great_project_upgrade_cost = -0.25
 	global_prosperity_growth = 0.5
-}
-
-THE_SUW_1_modiffier = {
-	overextension_impact_modifier = -1
-	tolerance_own = 817
-	tolerance_heretic = -817
-	tolerance_heathen = -817
 }

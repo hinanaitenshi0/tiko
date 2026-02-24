@@ -564,6 +564,100 @@ THE_SUW_on_dependency_lost_scripted_effects = {
 	}
 }
 
+THE_SUW_kan_sippai_scripted_effects = {
+	if = {
+		limit = { }
+	}
+		add_country_modifier = {
+			name = THE_SUW_kan_owaranaibatoru_country_modifier
+			duration = -1
+		}
+		add_country_modifier = {
+			name = THE_SUW_kan_sinnkonotabi_country_modifier
+			duration = -1
+		}
+
+}
+
+THE_SUW_kan_5_6_scripted_effects = {
+	if = {
+		limit = { 
+			has_country_flag = THE_SUW_kan_5_6_flag
+			any_owned_province = {
+				trade_goods = paper
+				NOT = { is_core = ROOT }
+			}
+		}
+		every_owned_province = {
+			limit = {
+				trade_goods = paper
+				NOT = { is_core = ROOT }
+			}
+			change_trade_goods = THE_SUW_godsticks
+		}
+	}
+}
+
+THE_SUW_kan_owaranaibatoru_scripted_effects = {
+	if = {
+		limit = { 
+			tag = SUW
+			has_country_flag = THE_SUW_kan_4_8_flag
+		}
+		FROM = {
+			cede_province = ROOT
+		}
+	}
+}
+
+THE_SUW_on_province_religion_converted_estate_privileges_scripted_effect = {
+	if = {
+		limit = { 
+			owned_by = SUW
+			owner = {
+				has_country_flag = THE_SUW_kan_owaranaibatoru_flag 
+			}
+			has_owner_religion = yes
+		}
+		add_core = SUW
+	}
+	if = {
+		limit = { 
+			owned_by = SUW
+			owner = {
+				has_country_flag = THE_SUW_kan_1_6_flag 
+			}
+			has_owner_religion = yes
+		}
+		owner = {
+			random_list = {
+				1 = {
+					add_government_power = {
+						government_mechanic = THE_SUW_kan_land_of_the_christian_sun_mechanic
+						which = THE_SUW_kan_mechanic_1
+						amount = 10
+					}
+				}
+				1 = {
+					add_government_power = {
+						government_mechanic = THE_SUW_kan_land_of_the_christian_sun_mechanic
+						which = THE_SUW_kan_mechanic_2
+						amount = 10
+					}
+				}
+				1 = {
+					add_government_power = {
+						government_mechanic = THE_SUW_kan_land_of_the_christian_sun_mechanic
+						which = THE_SUW_kan_mechanic_3
+						amount = 10
+					}
+				}
+			}
+			
+		}
+	}
+}
+
 ##################################################
 ### not on_actions scripted effect 
 ##################################################

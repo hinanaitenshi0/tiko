@@ -12,6 +12,7 @@
  SUW_ADJ: "诹访"
  THE_SUW_TAG: "[Root.GetTag]"
  THE_SUW_TAG_at: "@[Root.GetTag]"
+ kana: "神奈"
 ### tag_END
 
 ### TOOLTIP
@@ -215,7 +216,9 @@
  THE_SUW_has_terrain_highlands: "已拥有§T高地§!:§G-3%§!§Y发展成本§!"
  THE_SUW_has_terrain_savannah: "已拥有§T稀树草原§!:§G-3%§!§Y发展成本§!"
  THE_SUW_has_terrain_steppe: "已拥有§T大草原§!:§G-3%§!§Y发展成本§!"
- 
+ THE_SUW_kan_1_6_tt: "此后每次§T传教完成§!，将随机提供§G10§!点§T政府能力点数§!"
+ THE_SUW_kan_4_8_tt: "升级修正§Y"大哉乾元"§!为§Y"苍穹之鞭"§!，且此后§T占领省份§!后将直接获得§T该省份§!"
+ THE_SUW_kan_5_6_tt: "此后所有§Y征服§!下来的§T纸张§!省份，转变商品为§T神签§!"
 ### TOOLTIP_END
 
 ### dynasty
@@ -324,6 +327,10 @@
  THE_SUW_suw_4_9_native_policy_trade_modifier: "尽我所能"
  THE_SUW_suw_5_10_1_country_modiffier: "传播新世界"
  THE_SUW_suw_5_10_2_country_modiffier: "神明的拼图"
+ THE_SUW_kan_owaranaibatoru_country_modifier: "无尽的圣战"
+ THE_SUW_kan_sinnkonotabi_country_modifier: "信仰之征"
+ THE_SUW_kan_yuan_country_modifier: "大哉乾元"
+ THE_SUW_kan_Borjigin_country_modifier: "苍穹之鞭"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -483,6 +490,13 @@
  THE_SUW_events.40.desc: "1"
  THE_SUW_events.40.a.name: "都进幻想乡了，真的不会很快被遗忘吗?"
  THE_SUW_events.40.b.name: "当初擅自大驾光临的是你们，现在朝令夕改的也是你们，真当我们没脾气?"
+ THE_SUW_events.41.title: "无尽的圣战"
+ THE_SUW_events.41.desc: "1"
+ THE_SUW_events.41.name: "神说，是时候了"
+ THE_SUW_events.41_tt: "§T开始进行圣战，此后将以§Y传教§!代替§Y核心化§!功能，省份§Y传教§!完成即§Y核心化§!完成。\n将对所有§Y邻国§!发动§Y大圣战§!，目前，完成当前所有战争后§Y和平§!最多持续§G1§!年，§G1§!年期间可通过决议继续对所有§Y邻国§!(除了我们的附属国)发动§Y大圣战§!。\n如果超过§G1§!年未发动§Y大圣战§!，则失去所有相关机制，失去§Y"无尽的圣战"§!修正,并将§Y"信仰之征"§!及之后所有通过任务获得的修正转变为相应§Y负面§!修正§!"
+ THE_SUW_events.42.title: "圣战的终焉"
+ THE_SUW_events.42.desc: "1"
+ THE_SUW_events.42.name: "光芒，消失了......"
 ### EVENT_END
 
 

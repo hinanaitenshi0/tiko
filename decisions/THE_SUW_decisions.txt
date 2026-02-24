@@ -383,7 +383,76 @@ country_decisions = {
 	}
 }
 
+country_decisions = {
+	#无尽的圣战
+	THE_SUW_kan_owaranaibatoru_decision = {
+		color = { 67  255  71 }
+		potential = {	
+			tag = SUW
+			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+		}
+		allow = {
+			tag = SUW
+			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+		}
+		effect = {
+			custom_tooltip = THE_SUW_kan_owaranaibatoru_decision_tt
+			every_country = {
+				limit = {
+					is_neighbor_of = ROOT
+					NOT = { is_subject_of = ROOT }
+				}
+				ROOT = {
+					declare_war_with_cb = {
+						who = PREV
+						casus_belli = cb_world_crusade
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
 
+country_decisions = {
+	#无尽的圣战
+	THE_SUW_kan_owaranaibatoru_decision = {
+		color = { 67  255  71 }
+		potential = {	
+			tag = SUW
+			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+		}
+		allow = {
+			tag = SUW
+			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+		}
+		effect = {
+			custom_tooltip = THE_SUW_kan_owaranaibatoru_decision_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_neighbor_of = ROOT
+						NOT = { is_subject_of = ROOT }
+					}
+					ROOT = {
+						declare_war_with_cb = {
+							who = PREV
+							casus_belli = cb_world_crusade
+						}
+					}
+				}
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
 
 #############################################
 

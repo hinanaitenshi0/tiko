@@ -323,7 +323,6 @@ THE_SUW_stage_1_branch_2 = {
 				}
 			}
 			custom_tooltip = THE_SUW_2_3_tt
-			
 		}
 	}
 
@@ -755,8 +754,15 @@ THE_SUW_stage_1_branch_3 = {
 				custom_tooltip = THE_SUW_kan_3_6_tt_yes
 				change_government = theocracy
 				add_government_reform = THE_SUW_kan_reform
-				THE_SUW_define_kanako_and_suwako_effect = yes
-				hidden_effect = { set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag } 
+				hidden_effect = {
+					set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
+					THE_SUW_define_kanako_and_suwako_effect = yes
+					country_event = {
+						id = THE_SUW_events.41
+						days = 30
+					}
+					override_country_name = kana
+				}
 				swap_non_generic_missions = yes
 			}
 			else = {
@@ -764,7 +770,7 @@ THE_SUW_stage_1_branch_3 = {
 				tooltip = {
 					change_government = theocracy
 					add_government_reform = THE_SUW_kan_reform
-					THE_SUW_define_kanako_and_suwako_effect = yes
+					hidden_effect = { THE_SUW_define_kanako_and_suwako_effect = yes } 
 					swap_non_generic_missions = yes
 				}
 			}
@@ -888,7 +894,6 @@ THE_SUW_stage_1_branch_4 = {
 				}
 			}
 			else = { custom_tooltip = THE_SUW_4_3_tt_no } 
-			
 		}
 	}
 
@@ -1371,165 +1376,158 @@ THE_SUW_stage_2_branch_suw_1 = {
 					custom_trigger_tooltip = {
 						tooltip = THE_SUW_suw_1_9_ttt_no
 						AND = {
-							NOT = { is_rebel_type = anglican_rebels }
-							NOT = { is_rebel_type = animism_rebels }
-							NOT = { is_rebel_type = buddhism_rebels }
-							NOT = { is_rebel_type = catholic_rebels }
-							NOT = { is_rebel_type = confucianism_rebels }
-							NOT = { is_rebel_type = coptic_rebels }
-							NOT = { is_rebel_type = dreamtime_rebels }
-							NOT = { is_rebel_type = heretic_rebels }
-							NOT = { is_rebel_type = hinduism_rebels }
-							NOT = { is_rebel_type = hussite_rebels }
-							NOT = { is_rebel_type = ibadi_rebels }
-							NOT = { is_rebel_type = inti_rebels }
-							NOT = { is_rebel_type = jewish_rebels }
-							NOT = { is_rebel_type = lollard_rebels }
-							NOT = { is_rebel_type = mahayana_rebels }
-							NOT = { is_rebel_type = maya_rebels }
-							NOT = { is_rebel_type = nahuatl_rebels }
-							NOT = { is_rebel_type = norse_pagan_reformed_rebels }
-							NOT = { is_rebel_type = orthodox_rebels }
-							NOT = { is_rebel_type = protestant_rebels }
-							NOT = { is_rebel_type = reformed_rebels }
-							NOT = { is_rebel_type = shamanism_rebels }
-							NOT = { is_rebel_type = shiite_rebels }
-							NOT = { is_rebel_type = shinto_rebels }
-							NOT = { is_rebel_type = sikhism_rebels }
-							NOT = { is_rebel_type = sunni_rebels }
-							NOT = { is_rebel_type = tengri_pagan_reformed_rebels }
-							NOT = { is_rebel_type = totemism_rebels }
-							NOT = { is_rebel_type = vajrayana_rebels }
-							NOT = { is_rebel_type = zoroastrian_rebels }
-							NOT = { is_rebel_type = th_alukhuat_rebels }
-							NOT = { is_rebel_type = th_buddhist_rebels }
-							NOT = { is_rebel_type = th_gensokirishitan_rebels }
-							NOT = { is_rebel_type = th_hakureishinto_rebels }
-							NOT = { is_rebel_type = th_occultism_rebels }
-							NOT = { is_rebel_type = th_old_hakurei_rebels }
-							NOT = { is_rebel_type = th_rel_lunarian_rebels }
-							NOT = { is_rebel_type = th_scarlet_christians_rebels }
-							NOT = { is_rebel_type = th_scientistic_rebels }
-							NOT = { is_rebel_type = th_shinkistic_rebels }
-							NOT = { is_rebel_type = th_taoist_rebels }
-							NOT = { is_rebel_type = THE_seija_religion_rebels }
-							
+							NOT = { is_rebel_type = anglican_rebels } 
+							NOT = { is_rebel_type = animism_rebels } 
+							NOT = { is_rebel_type = buddhism_rebels } 
+							NOT = { is_rebel_type = catholic_rebels } 
+							NOT = { is_rebel_type = confucianism_rebels } 
+							NOT = { is_rebel_type = coptic_rebels } 
+							NOT = { is_rebel_type = dreamtime_rebels } 
+							NOT = { is_rebel_type = heretic_rebels } 
+							NOT = { is_rebel_type = hinduism_rebels } 
+							NOT = { is_rebel_type = hussite_rebels } 
+							NOT = { is_rebel_type = ibadi_rebels } 
+							NOT = { is_rebel_type = inti_rebels } 
+							NOT = { is_rebel_type = jewish_rebels } 
+							NOT = { is_rebel_type = lollard_rebels } 
+							NOT = { is_rebel_type = mahayana_rebels } 
+							NOT = { is_rebel_type = maya_rebels } 
+							NOT = { is_rebel_type = nahuatl_rebels } 
+							NOT = { is_rebel_type = norse_pagan_reformed_rebels } 
+							NOT = { is_rebel_type = orthodox_rebels } 
+							NOT = { is_rebel_type = protestant_rebels } 
+							NOT = { is_rebel_type = reformed_rebels } 
+							NOT = { is_rebel_type = shamanism_rebels } 
+							NOT = { is_rebel_type = shiite_rebels } 
+							NOT = { is_rebel_type = shinto_rebels } 
+							NOT = { is_rebel_type = sikhism_rebels } 
+							NOT = { is_rebel_type = sunni_rebels } 
+							NOT = { is_rebel_type = tengri_pagan_reformed_rebels } 
+							NOT = { is_rebel_type = totemism_rebels } 
+							NOT = { is_rebel_type = vajrayana_rebels } 
+							NOT = { is_rebel_type = zoroastrian_rebels } 
+							NOT = { is_rebel_type = th_alukhuat_rebels } 
+							NOT = { is_rebel_type = th_buddhist_rebels } 
+							NOT = { is_rebel_type = th_gensokirishitan_rebels } 
+							NOT = { is_rebel_type = th_hakureishinto_rebels } 
+							NOT = { is_rebel_type = th_occultism_rebels } 
+							NOT = { is_rebel_type = th_old_hakurei_rebels } 
+							NOT = { is_rebel_type = th_rel_lunarian_rebels } 
+							NOT = { is_rebel_type = th_scarlet_christians_rebels } 
+							NOT = { is_rebel_type = th_scientistic_rebels } 
+							NOT = { is_rebel_type = th_shinkistic_rebels } 
+							NOT = { is_rebel_type = th_taoist_rebels } 
+							NOT = { is_rebel_type = THE_seija_religion_rebels } 
 						}
 						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 							value = 300
 							religion = ROOT
 						}
 					}
-					
 				}
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = THE_SUW_suw_1_9_ttt_yes
 						OR = {
-							is_rebel_type = anglican_rebels 
-							is_rebel_type = animism_rebels 
-							is_rebel_type = buddhism_rebels 
-							is_rebel_type = catholic_rebels 
-							is_rebel_type = confucianism_rebels 
-							is_rebel_type = coptic_rebels 
-							is_rebel_type = dreamtime_rebels 
-							is_rebel_type = heretic_rebels 
-							is_rebel_type = hinduism_rebels 
-							is_rebel_type = hussite_rebels 
-							is_rebel_type = ibadi_rebels 
-							is_rebel_type = inti_rebels 
-							is_rebel_type = jewish_rebels 
-							is_rebel_type = lollard_rebels 
-							is_rebel_type = mahayana_rebels 
-							is_rebel_type = maya_rebels 
-							is_rebel_type = nahuatl_rebels 
-							is_rebel_type = norse_pagan_reformed_rebels 
-							is_rebel_type = orthodox_rebels 
-							is_rebel_type = protestant_rebels 
-							is_rebel_type = reformed_rebels 
-							is_rebel_type = shamanism_rebels 
-							is_rebel_type = shiite_rebels 
-							is_rebel_type = shinto_rebels 
-							is_rebel_type = sikhism_rebels 
-							is_rebel_type = sunni_rebels 
-							is_rebel_type = tengri_pagan_reformed_rebels 
-							is_rebel_type = totemism_rebels 
-							is_rebel_type = vajrayana_rebels 
-							is_rebel_type = zoroastrian_rebels 
-							is_rebel_type = th_alukhuat_rebels 
-							is_rebel_type = th_buddhist_rebels 
-							is_rebel_type = th_gensokirishitan_rebels 
-							is_rebel_type = th_hakureishinto_rebels 
-							is_rebel_type = th_occultism_rebels 
-							is_rebel_type = th_old_hakurei_rebels 
-							is_rebel_type = th_rel_lunarian_rebels 
-							is_rebel_type = th_scarlet_christians_rebels 
-							is_rebel_type = th_scientistic_rebels 
-							is_rebel_type = th_shinkistic_rebels 
-							is_rebel_type = th_taoist_rebels 
-							is_rebel_type = THE_seija_religion_rebels 
-								
+							is_rebel_type = anglican_rebels
+							is_rebel_type = animism_rebels
+							is_rebel_type = buddhism_rebels
+							is_rebel_type = catholic_rebels
+							is_rebel_type = confucianism_rebels
+							is_rebel_type = coptic_rebels
+							is_rebel_type = dreamtime_rebels
+							is_rebel_type = heretic_rebels
+							is_rebel_type = hinduism_rebels
+							is_rebel_type = hussite_rebels
+							is_rebel_type = ibadi_rebels
+							is_rebel_type = inti_rebels
+							is_rebel_type = jewish_rebels
+							is_rebel_type = lollard_rebels
+							is_rebel_type = mahayana_rebels
+							is_rebel_type = maya_rebels
+							is_rebel_type = nahuatl_rebels
+							is_rebel_type = norse_pagan_reformed_rebels
+							is_rebel_type = orthodox_rebels
+							is_rebel_type = protestant_rebels
+							is_rebel_type = reformed_rebels
+							is_rebel_type = shamanism_rebels
+							is_rebel_type = shiite_rebels
+							is_rebel_type = shinto_rebels
+							is_rebel_type = sikhism_rebels
+							is_rebel_type = sunni_rebels
+							is_rebel_type = tengri_pagan_reformed_rebels
+							is_rebel_type = totemism_rebels
+							is_rebel_type = vajrayana_rebels
+							is_rebel_type = zoroastrian_rebels
+							is_rebel_type = th_alukhuat_rebels
+							is_rebel_type = th_buddhist_rebels
+							is_rebel_type = th_gensokirishitan_rebels
+							is_rebel_type = th_hakureishinto_rebels
+							is_rebel_type = th_occultism_rebels
+							is_rebel_type = th_old_hakurei_rebels
+							is_rebel_type = th_rel_lunarian_rebels
+							is_rebel_type = th_scarlet_christians_rebels
+							is_rebel_type = th_scientistic_rebels
+							is_rebel_type = th_shinkistic_rebels
+							is_rebel_type = th_taoist_rebels
+							is_rebel_type = THE_seija_religion_rebels
 						}
 						NOT = {
 							has_global_modifier_value = {
-								which = tolerance_own 
+								which = tolerance_own
 								value = 8
 							}
 						}
 					}
 				}
 			}
-			
 		}
-		
+
 		effect = {
-			#unlock_estate = { estate = estate_dhimmi } 
-			#custom_tooltip = empty_line_tt
-			#set_country_flag = enables_estate_dhimmi_flag
 			if = {
-				limit = { 
-					NOT = { is_rebel_type = anglican_rebels }
-					NOT = { is_rebel_type = animism_rebels }
-					NOT = { is_rebel_type = buddhism_rebels }
-					NOT = { is_rebel_type = catholic_rebels }
-					NOT = { is_rebel_type = confucianism_rebels }
-					NOT = { is_rebel_type = coptic_rebels }
-					NOT = { is_rebel_type = dreamtime_rebels }
-					NOT = { is_rebel_type = heretic_rebels }
-					NOT = { is_rebel_type = hinduism_rebels }
-					NOT = { is_rebel_type = hussite_rebels }
-					NOT = { is_rebel_type = ibadi_rebels }
-					NOT = { is_rebel_type = inti_rebels }
-					NOT = { is_rebel_type = jewish_rebels }
-					NOT = { is_rebel_type = lollard_rebels }
-					NOT = { is_rebel_type = mahayana_rebels }
-					NOT = { is_rebel_type = maya_rebels }
-					NOT = { is_rebel_type = nahuatl_rebels }
-					NOT = { is_rebel_type = norse_pagan_reformed_rebels }
-					NOT = { is_rebel_type = orthodox_rebels }
-					NOT = { is_rebel_type = protestant_rebels }
-					NOT = { is_rebel_type = reformed_rebels }
-					NOT = { is_rebel_type = shamanism_rebels }
-					NOT = { is_rebel_type = shiite_rebels }
-					NOT = { is_rebel_type = shinto_rebels }
-					NOT = { is_rebel_type = sikhism_rebels }
-					NOT = { is_rebel_type = sunni_rebels }
-					NOT = { is_rebel_type = tengri_pagan_reformed_rebels }
-					NOT = { is_rebel_type = totemism_rebels }
-					NOT = { is_rebel_type = vajrayana_rebels }
-					NOT = { is_rebel_type = zoroastrian_rebels }
-					NOT = { is_rebel_type = th_alukhuat_rebels }
-					NOT = { is_rebel_type = th_buddhist_rebels }
-					NOT = { is_rebel_type = th_gensokirishitan_rebels }
-					NOT = { is_rebel_type = th_hakureishinto_rebels }
-					NOT = { is_rebel_type = th_occultism_rebels }
-					NOT = { is_rebel_type = th_old_hakurei_rebels }
-					NOT = { is_rebel_type = th_rel_lunarian_rebels }
-					NOT = { is_rebel_type = th_scarlet_christians_rebels }
-					NOT = { is_rebel_type = th_scientistic_rebels }
-					NOT = { is_rebel_type = th_shinkistic_rebels }
-					NOT = { is_rebel_type = th_taoist_rebels }
-					NOT = { is_rebel_type = THE_seija_religion_rebels }
+				limit = {
+					NOT = { is_rebel_type = anglican_rebels } 
+					NOT = { is_rebel_type = animism_rebels } 
+					NOT = { is_rebel_type = buddhism_rebels } 
+					NOT = { is_rebel_type = catholic_rebels } 
+					NOT = { is_rebel_type = confucianism_rebels } 
+					NOT = { is_rebel_type = coptic_rebels } 
+					NOT = { is_rebel_type = dreamtime_rebels } 
+					NOT = { is_rebel_type = heretic_rebels } 
+					NOT = { is_rebel_type = hinduism_rebels } 
+					NOT = { is_rebel_type = hussite_rebels } 
+					NOT = { is_rebel_type = ibadi_rebels } 
+					NOT = { is_rebel_type = inti_rebels } 
+					NOT = { is_rebel_type = jewish_rebels } 
+					NOT = { is_rebel_type = lollard_rebels } 
+					NOT = { is_rebel_type = mahayana_rebels } 
+					NOT = { is_rebel_type = maya_rebels } 
+					NOT = { is_rebel_type = nahuatl_rebels } 
+					NOT = { is_rebel_type = norse_pagan_reformed_rebels } 
+					NOT = { is_rebel_type = orthodox_rebels } 
+					NOT = { is_rebel_type = protestant_rebels } 
+					NOT = { is_rebel_type = reformed_rebels } 
+					NOT = { is_rebel_type = shamanism_rebels } 
+					NOT = { is_rebel_type = shiite_rebels } 
+					NOT = { is_rebel_type = shinto_rebels } 
+					NOT = { is_rebel_type = sikhism_rebels } 
+					NOT = { is_rebel_type = sunni_rebels } 
+					NOT = { is_rebel_type = tengri_pagan_reformed_rebels } 
+					NOT = { is_rebel_type = totemism_rebels } 
+					NOT = { is_rebel_type = vajrayana_rebels } 
+					NOT = { is_rebel_type = zoroastrian_rebels } 
+					NOT = { is_rebel_type = th_alukhuat_rebels } 
+					NOT = { is_rebel_type = th_buddhist_rebels } 
+					NOT = { is_rebel_type = th_gensokirishitan_rebels } 
+					NOT = { is_rebel_type = th_hakureishinto_rebels } 
+					NOT = { is_rebel_type = th_occultism_rebels } 
+					NOT = { is_rebel_type = th_old_hakurei_rebels } 
+					NOT = { is_rebel_type = th_rel_lunarian_rebels } 
+					NOT = { is_rebel_type = th_scarlet_christians_rebels } 
+					NOT = { is_rebel_type = th_scientistic_rebels } 
+					NOT = { is_rebel_type = th_shinkistic_rebels } 
+					NOT = { is_rebel_type = th_taoist_rebels } 
+					NOT = { is_rebel_type = THE_seija_religion_rebels } 
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 300
 						religion = ROOT
@@ -1537,7 +1535,7 @@ THE_SUW_stage_2_branch_suw_1 = {
 				}
 				custom_tooltip = THE_SUW_suw_1_9_1_tt_yes
 				add_country_modifier = {
-					name = THE_SUW_suw_1_9_1_country_modifier
+					name = "THE_SUW_suw_1_9_1_country_modifier"
 					duration = -1
 				}
 			}
@@ -1545,68 +1543,67 @@ THE_SUW_stage_2_branch_suw_1 = {
 				custom_tooltip = THE_SUW_suw_1_9_1_tt_no
 				tooltip = {
 					add_country_modifier = {
-						name = THE_SUW_suw_1_9_1_country_modifier
+						name = "THE_SUW_suw_1_9_1_country_modifier"
 						duration = -1
 					}
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					OR = {
-						is_rebel_type = anglican_rebels 
-						is_rebel_type = animism_rebels 
-						is_rebel_type = buddhism_rebels 
-						is_rebel_type = catholic_rebels 
-						is_rebel_type = confucianism_rebels 
-						is_rebel_type = coptic_rebels 
-						is_rebel_type = dreamtime_rebels 
-						is_rebel_type = heretic_rebels 
-						is_rebel_type = hinduism_rebels 
-						is_rebel_type = hussite_rebels 
-						is_rebel_type = ibadi_rebels 
-						is_rebel_type = inti_rebels 
-						is_rebel_type = jewish_rebels 
-						is_rebel_type = lollard_rebels 
-						is_rebel_type = mahayana_rebels 
-						is_rebel_type = maya_rebels 
-						is_rebel_type = nahuatl_rebels 
-						is_rebel_type = norse_pagan_reformed_rebels 
-						is_rebel_type = orthodox_rebels 
-						is_rebel_type = protestant_rebels 
-						is_rebel_type = reformed_rebels 
-						is_rebel_type = shamanism_rebels 
-						is_rebel_type = shiite_rebels 
-						is_rebel_type = shinto_rebels 
-						is_rebel_type = sikhism_rebels 
-						is_rebel_type = sunni_rebels 
-						is_rebel_type = tengri_pagan_reformed_rebels 
-						is_rebel_type = totemism_rebels 
-						is_rebel_type = vajrayana_rebels 
-						is_rebel_type = zoroastrian_rebels 
-						is_rebel_type = th_alukhuat_rebels 
-						is_rebel_type = th_buddhist_rebels 
-						is_rebel_type = th_gensokirishitan_rebels 
-						is_rebel_type = th_hakureishinto_rebels 
-						is_rebel_type = th_occultism_rebels 
-						is_rebel_type = th_old_hakurei_rebels 
-						is_rebel_type = th_rel_lunarian_rebels 
-						is_rebel_type = th_scarlet_christians_rebels 
-						is_rebel_type = th_scientistic_rebels 
-						is_rebel_type = th_shinkistic_rebels 
-						is_rebel_type = th_taoist_rebels 
-						is_rebel_type = THE_seija_religion_rebels 
-							
+						is_rebel_type = anglican_rebels
+						is_rebel_type = animism_rebels
+						is_rebel_type = buddhism_rebels
+						is_rebel_type = catholic_rebels
+						is_rebel_type = confucianism_rebels
+						is_rebel_type = coptic_rebels
+						is_rebel_type = dreamtime_rebels
+						is_rebel_type = heretic_rebels
+						is_rebel_type = hinduism_rebels
+						is_rebel_type = hussite_rebels
+						is_rebel_type = ibadi_rebels
+						is_rebel_type = inti_rebels
+						is_rebel_type = jewish_rebels
+						is_rebel_type = lollard_rebels
+						is_rebel_type = mahayana_rebels
+						is_rebel_type = maya_rebels
+						is_rebel_type = nahuatl_rebels
+						is_rebel_type = norse_pagan_reformed_rebels
+						is_rebel_type = orthodox_rebels
+						is_rebel_type = protestant_rebels
+						is_rebel_type = reformed_rebels
+						is_rebel_type = shamanism_rebels
+						is_rebel_type = shiite_rebels
+						is_rebel_type = shinto_rebels
+						is_rebel_type = sikhism_rebels
+						is_rebel_type = sunni_rebels
+						is_rebel_type = tengri_pagan_reformed_rebels
+						is_rebel_type = totemism_rebels
+						is_rebel_type = vajrayana_rebels
+						is_rebel_type = zoroastrian_rebels
+						is_rebel_type = th_alukhuat_rebels
+						is_rebel_type = th_buddhist_rebels
+						is_rebel_type = th_gensokirishitan_rebels
+						is_rebel_type = th_hakureishinto_rebels
+						is_rebel_type = th_occultism_rebels
+						is_rebel_type = th_old_hakurei_rebels
+						is_rebel_type = th_rel_lunarian_rebels
+						is_rebel_type = th_scarlet_christians_rebels
+						is_rebel_type = th_scientistic_rebels
+						is_rebel_type = th_shinkistic_rebels
+						is_rebel_type = th_taoist_rebels
+						is_rebel_type = THE_seija_religion_rebels
 					}
 					NOT = {
 						has_global_modifier_value = {
-							which = tolerance_own 
+							which = tolerance_own
 							value = 8
 						}
 					}
 				}
 				custom_tooltip = THE_SUW_suw_1_9_2_tt_yes
 				add_country_modifier = {
-					name = THE_SUW_suw_1_9_2_country_modifier
+					name = "THE_SUW_suw_1_9_2_country_modifier"
 					duration = -1
 				}
 			}
@@ -1614,7 +1611,7 @@ THE_SUW_stage_2_branch_suw_1 = {
 				custom_tooltip = THE_SUW_suw_1_9_2_tt_no
 				tooltip = {
 					add_country_modifier = {
-						name = THE_SUW_suw_1_9_2_country_modifier
+						name = "THE_SUW_suw_1_9_2_country_modifier"
 						duration = -1
 					}
 				}
@@ -1628,14 +1625,14 @@ THE_SUW_stage_2_branch_suw_1 = {
 		required_missions = { THE_SUW_suw_1_9 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			dip = 6
 			custom_trigger_tooltip = {
 				tooltip = THE_SUW_suw_1_10_ttt
 				has_ruler_flag = The_SUW_suw_flag
 			}
 			months_of_ruling = 600
-		} 
+		}
 
 		effect = { custom_tooltip = THE_SUW_suw_1_10_tt } 
 	}
@@ -1734,11 +1731,7 @@ THE_SUW_stage_2_branch_suw_2 = {
 				}
 			}
 			every_country = {
-				limit = {
-					capital_scope = {
-						region = mongolia_region 
-					}
-				}
+				limit = { capital_scope = { region = mongolia_region }  } 
 				ROOT = {
 					create_subject = {
 						subject_type = th_religious_tributary
@@ -1746,7 +1739,6 @@ THE_SUW_stage_2_branch_suw_2 = {
 					}
 				}
 			}
-			
 		}
 	}
 
@@ -1759,47 +1751,22 @@ THE_SUW_stage_2_branch_suw_2 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  
-			#variable_arithmetic_trigger = {
-			#	export_to_variable = {
-			#		variable_name = "suwdevelopment"
-			#		value = development
-			#		who = 4188
-			#	}
-			#	export_to_variable = {
-			#		variable_name = "kordevelopment"
-			#		value = development
-			#		who = 735
-			#	}
-			#	check_variable = {
-			#		which = suwdevelopment
-			#		which = kordevelopment
-			#	}
-			#	custom_tooltip = THE_SUW_KOR_development_tt
-			#}
+		trigger = {
 			all_country = {
-				capital_scope = {
-					region = mongolia_region
-				}
+				capital_scope = { region = mongolia_region } 
 				any_owned_province = {
 					is_capital_of = ROOT
 					num_of_times_improved = 15
 				}
 			}
-		} 
+		}
 
 		effect = {
 			custom_tooltip = THE_SUW_suw_2_8_tt
 			hidden_effect = {
 				every_country = {
-					limit = {
-						capital_scope = {
-							region = mongolia_region 
-						}
-					}
-					KHA = {
-						inherit = PREV
-					}
+					limit = { capital_scope = { region = mongolia_region }  } 
+					KHA = { inherit = PREV } 
 				}
 				KHA = {
 					set_government_rank = 2
@@ -1813,7 +1780,6 @@ THE_SUW_stage_2_branch_suw_2 = {
 					change_unit_type = tech_gensokyan
 				}
 			}
-			
 			tooltip = {
 				KHA = {
 					change_government = theocracy
@@ -1845,9 +1811,7 @@ THE_SUW_stage_2_branch_suw_2 = {
 				AND = {
 					great_power_rank = 1
 					any_country = {
-						capital_scope = {
-							region = tibet_region
-						}				
+						capital_scope = { region = tibet_region } 
 						has_opinion_modifier = {
 							who = ROOT
 							modifier = great_power_influence
@@ -1856,37 +1820,27 @@ THE_SUW_stage_2_branch_suw_2 = {
 					}
 				}
 				AND = {
-					#NOT = {
-					#	any_country = {
-					#		capital_scope = {
-					#			region = tibet_region
-					#		}	
-					#	}
-					#}
 					any_province = {
 						region = tibet_region
 						religion = ROOT
-						NOT = { owned_by = ROOT }	
+						NOT = { owned_by = ROOT } 
 					}
 				}
 				all_province = {
 					region = tibet_region
 					religion = ROOT
 					owned_by = ROOT
-					NOT = {	nationalism = 0 }	
+					NOT = { nationalism = 0 } 
 				}
 			}
-			
 		}
 
 		effect = {
 			if = {
-				limit = {  
+				limit = {
 					great_power_rank = 1
 					any_country = {
-						capital_scope = {
-							region = tibet_region
-						}				
+						capital_scope = { region = tibet_region } 
 						has_opinion_modifier = {
 							who = ROOT
 							modifier = great_power_influence
@@ -1897,9 +1851,7 @@ THE_SUW_stage_2_branch_suw_2 = {
 				custom_tooltip = THE_SUW_suw_2_9_great_power_influence_tt_yes
 				every_country = {
 					limit = {
-						capital_scope = {
-							region = tibet_region
-						}				
+						capital_scope = { region = tibet_region } 
 						has_opinion_modifier = {
 							who = ROOT
 							modifier = great_power_influence
@@ -1919,9 +1871,7 @@ THE_SUW_stage_2_branch_suw_2 = {
 				tooltip = {
 					every_country = {
 						limit = {
-							capital_scope = {
-								region = tibet_region
-							}				
+							capital_scope = { region = tibet_region } 
 							has_opinion_modifier = {
 								who = ROOT
 								modifier = great_power_influence
@@ -1938,11 +1888,11 @@ THE_SUW_stage_2_branch_suw_2 = {
 				}
 			}
 			if = {
-				limit = {  
+				limit = {
 					any_province = {
 						region = tibet_region
 						religion = ROOT
-						NOT = { owned_by = ROOT }	
+						NOT = { owned_by = ROOT } 
 					}
 				}
 				custom_tooltip = THE_SUW_suw_2_9_add_permanent_claim_tt_yes
@@ -1950,12 +1900,9 @@ THE_SUW_stage_2_branch_suw_2 = {
 					limit = {
 						region = tibet_region
 						religion = ROOT
-						NOT = { owned_by = ROOT }
+						NOT = { owned_by = ROOT } 
 					}
-					hidden_effect = {
-						add_permanent_claim = ROOT	
-					}
-								
+					hidden_effect = { add_permanent_claim = ROOT } 
 				}
 				677 = {
 					add_trade_modifier = {
@@ -1973,12 +1920,9 @@ THE_SUW_stage_2_branch_suw_2 = {
 						limit = {
 							region = tibet_region
 							religion = ROOT
-							NOT = { owned_by = ROOT }
+							NOT = { owned_by = ROOT } 
 						}
-						hidden_effect = {
-							add_permanent_claim = ROOT
-						}
-						
+						hidden_effect = { add_permanent_claim = ROOT } 
 					}
 					677 = {
 						add_trade_modifier = {
@@ -1991,97 +1935,96 @@ THE_SUW_stage_2_branch_suw_2 = {
 				}
 			}
 			if = {
-				limit = {  
+				limit = {
 					all_province = {
 						region = tibet_region
 						religion = ROOT
 						owned_by = ROOT
-						NOT = {	nationalism = 0 }
+						NOT = { nationalism = 0 } 
 					}
 				}
 				custom_tooltip = THE_SUW_suw_2_9_all_province_owned_tt_yes
 				add_country_modifier = {
-					name = THE_SUW_tibet_tabi_country_modifier
+					name = "THE_SUW_tibet_tabi_country_modifier"
 					duration = -1
 				}
 				677 = {
 					add_province_modifier = {
-						name = THE_SUW_sekai_senaka_1_province_modifier
+						name = "THE_SUW_sekai_senaka_1_province_modifier"
 						duration = -1
 					}
 				}
 				565 = {
 					add_province_modifier = {
-						name = THE_SUW_sekai_senaka_1_province_modifier
+						name = "THE_SUW_sekai_senaka_1_province_modifier"
 						duration = -1
 					}
 				}
 				4515 = {
 					add_province_modifier = {
-						name = THE_SUW_sekai_senaka_1_province_modifier
+						name = "THE_SUW_sekai_senaka_1_province_modifier"
 						duration = -1
 					}
 				}
 				678 = {
 					add_province_modifier = {
-						name = THE_SUW_sekai_senaka_2_province_modifier
+						name = "THE_SUW_sekai_senaka_2_province_modifier"
 						duration = -1
 					}
 				}
 				2134 = {
 					add_province_modifier = {
-						name = THE_SUW_sekai_senaka_2_province_modifier
+						name = "THE_SUW_sekai_senaka_2_province_modifier"
 						duration = -1
 					}
 				}
 				2128 = {
 					add_province_modifier = {
-						name = THE_SUW_sekai_senaka_3_province_modifier
+						name = "THE_SUW_sekai_senaka_3_province_modifier"
 						duration = -1
 					}
 				}
-				
 			}
 			else = {
 				custom_tooltip = THE_SUW_suw_2_9_all_province_owned_tt_no
 				tooltip = {
 					add_country_modifier = {
-						name = THE_SUW_tibet_tabi_country_modifier
+						name = "THE_SUW_tibet_tabi_country_modifier"
 						duration = -1
 					}
 					677 = {
 						add_province_modifier = {
-							name = THE_SUW_sekai_senaka_1_province_modifier
+							name = "THE_SUW_sekai_senaka_1_province_modifier"
 							duration = -1
 						}
 					}
 					565 = {
 						add_province_modifier = {
-							name = THE_SUW_sekai_senaka_1_province_modifier
+							name = "THE_SUW_sekai_senaka_1_province_modifier"
 							duration = -1
 						}
 					}
 					4515 = {
 						add_province_modifier = {
-							name = THE_SUW_sekai_senaka_1_province_modifier
+							name = "THE_SUW_sekai_senaka_1_province_modifier"
 							duration = -1
 						}
 					}
 					678 = {
 						add_province_modifier = {
-							name = THE_SUW_sekai_senaka_2_province_modifier
+							name = "THE_SUW_sekai_senaka_2_province_modifier"
 							duration = -1
 						}
 					}
 					2134 = {
 						add_province_modifier = {
-							name = THE_SUW_sekai_senaka_2_province_modifier
+							name = "THE_SUW_sekai_senaka_2_province_modifier"
 							duration = -1
 						}
 					}
 					2128 = {
 						add_province_modifier = {
-							name = THE_SUW_sekai_senaka_3_province_modifier
+							name = "THE_SUW_sekai_senaka_3_province_modifier"
 							duration = -1
 						}
 					}
@@ -2107,38 +2050,28 @@ THE_SUW_stage_2_branch_suw_3 = {
 		required_missions = { THE_SUW_3_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			OR = {
 				AND = {
-					any_country = {
-						is_emperor_of_china = yes
-					}
-					num_of_provinces_owned_or_owned_by_subjects_with = {
-						value = 100
-					}
+					any_country = { is_emperor_of_china = yes } 
+					num_of_provinces_owned_or_owned_by_subjects_with = { value = 100 } 
 					num_of_trading_bonuses = 3
 				}
 				AND = {
-					all_country = {
-						is_emperor_of_china = no
-					}
+					all_country = { is_emperor_of_china = no } 
 					num_of_provinces_owned_or_owned_by_subjects_with = {
 						value = 50
 						superregion = china_superregion
 					}
 				}
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			if = {
-				limit = { 
-					any_country = {
-						is_emperor_of_china = yes
-					}
-					num_of_provinces_owned_or_owned_by_subjects_with = {
-						value = 100
-					}
+				limit = {
+					any_country = { is_emperor_of_china = yes } 
+					num_of_provinces_owned_or_owned_by_subjects_with = { value = 100 } 
 					num_of_trading_bonuses = 3
 				}
 				custom_tooltip = THE_SUW_suw_3_7_emperor_of_china_yes_tt_yes
@@ -2229,162 +2162,144 @@ THE_SUW_stage_2_branch_suw_3 = {
 				}
 			}
 			if = {
-				limit = { 
-					all_country = {
-						is_emperor_of_china = no
-					}
+				limit = {
+					all_country = { is_emperor_of_china = no } 
 					num_of_provinces_owned_or_owned_by_subjects_with = {
 						value = 50
 						superregion = china_superregion
 					}
 				}
 				custom_tooltip = THE_SUW_suw_3_7_emperor_of_china_no_tt_yes
-				#hidden_effect = {
-					random_province = {
+				random_province = {
+					limit = {
+						country_or_subject_holds = ROOT
+						superregion = china_superregion
+					}
+					if = {
 						limit = {
-							country_or_subject_holds = ROOT
-							superregion = china_superregion
+							any_province = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = grain
+							}
 						}
-						if = {
-							limit = { 
-								any_province = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = grain
-								}
+						random_province = {
+							limit = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = grain
 							}
-							random_province = {
-								limit = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = grain
-								}
-								change_trade_goods = wine
-							}
-							
+							change_trade_goods = wine
 						}
-						if = {
-							limit = { 
-								any_province = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = livestock
-								}
-							}
-							random_province = {
-								limit = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = livestock
-								}
-								change_trade_goods = wool
-							}
-							
-						}
-						if = {
-							limit = { 
-								any_province = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = fish
-								}
-							}
-							random_province = {
-								limit = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = fish
-								}
-								change_trade_goods = ivory
-							}
-							
-						}
-						if = {
-							limit = { 
-								any_province = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = tea
-								}
-							}
-							random_province = {
-								limit = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = tea
-								}
-								change_trade_goods = coffee
-							}
-					
-						}
-						if = {
-							limit = { 
-								any_province = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = cloth
-								}
-							}
-							random_province = {
-								limit = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = cloth
-								}
-								change_trade_goods = dyes
-							}
-						
-						}
-						if = {
-							limit = { 
-								any_province = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = chinaware
-								}
-							}
-							random_province = {
-								limit = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = chinaware
-								}
-								change_trade_goods = glass
-							}
-							
-						}
-						if = {
-							limit = { 
-								any_province = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = incense
-								}
-							}
-							random_province = {
-								limit = {
-									country_or_subject_holds = ROOT
-									superregion = china_superregion
-									trade_goods = incense
-								}
-								change_trade_goods = cloves
-							}
-				
-						}
-						
-						
 					}
-				#}
-				
+					if = {
+						limit = {
+							any_province = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = livestock
+							}
+						}
+						random_province = {
+							limit = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = livestock
+							}
+							change_trade_goods = wool
+						}
+					}
+					if = {
+						limit = {
+							any_province = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = fish
+							}
+						}
+						random_province = {
+							limit = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = fish
+							}
+							change_trade_goods = ivory
+						}
+					}
+					if = {
+						limit = {
+							any_province = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = tea
+							}
+						}
+						random_province = {
+							limit = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = tea
+							}
+							change_trade_goods = coffee
+						}
+					}
+					if = {
+						limit = {
+							any_province = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = cloth
+							}
+						}
+						random_province = {
+							limit = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = cloth
+							}
+							change_trade_goods = dyes
+						}
+					}
+					if = {
+						limit = {
+							any_province = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = chinaware
+							}
+						}
+						random_province = {
+							limit = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = chinaware
+							}
+							change_trade_goods = glass
+						}
+					}
+					if = {
+						limit = {
+							any_province = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = incense
+							}
+						}
+						random_province = {
+							limit = {
+								country_or_subject_holds = ROOT
+								superregion = china_superregion
+								trade_goods = incense
+							}
+							change_trade_goods = cloves
+						}
+					}
+				}
 			}
-			else = {
-				custom_tooltip = THE_SUW_suw_3_7_emperor_of_china_no_tt_no
-			}
+			else = { custom_tooltip = THE_SUW_suw_3_7_emperor_of_china_no_tt_no } 
 			if = {
-				limit = { 
-					all_country = {
-						is_emperor_of_china = no
-					}
+				limit = {
+					all_country = { is_emperor_of_china = no } 
 					num_of_provinces_owned_or_owned_by_subjects_with = {
 						value = 50
 						superregion = china_superregion
@@ -2419,8 +2334,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 					}
 				}
 			}
-			
-		} 
+		}
 	}
 
 	THE_SUW_suw_3_8 = {
@@ -2429,12 +2343,10 @@ THE_SUW_stage_2_branch_suw_3 = {
 		required_missions = { THE_SUW_suw_3_7 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			OR = {
 				AND = {
-					any_country = {
-						is_emperor_of_china = yes
-					}
+					any_country = { is_emperor_of_china = yes } 
 					4233 = {
 						trade_share = {
 							country = ROOT
@@ -2467,9 +2379,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 					}
 				}
 				AND = {
-					all_country = {
-						is_emperor_of_china = no
-					}
+					all_country = { is_emperor_of_china = no } 
 					1816 = {
 						owned_by = ROOT
 						religion = ROOT
@@ -2491,16 +2401,13 @@ THE_SUW_stage_2_branch_suw_3 = {
 						religion = ROOT
 					}
 				}
-				
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			if = {
-				limit = { 
-					any_country = {
-						is_emperor_of_china = yes
-					}
+				limit = {
+					any_country = { is_emperor_of_china = yes } 
 					4233 = {
 						trade_share = {
 							country = ROOT
@@ -2534,7 +2441,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 				}
 				custom_tooltip = THE_SUW_suw_3_8_emperor_of_china_yes_tt_yes
 				add_country_modifier = {
-					name = THE_SUW_suw_3_8_trade_country_modifier
+					name = "THE_SUW_suw_3_8_trade_country_modifier"
 					duration = -1
 				}
 			}
@@ -2542,13 +2449,13 @@ THE_SUW_stage_2_branch_suw_3 = {
 				custom_tooltip = THE_SUW_suw_3_8_emperor_of_china_yes_tt_no
 				tooltip = {
 					add_country_modifier = {
-						name = THE_SUW_suw_3_8_trade_country_modifier
+						name = "THE_SUW_suw_3_8_trade_country_modifier"
 						duration = -1
 					}
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					any_country = {
 						is_emperor_of_china = yes
 						alliance_with = ROOT
@@ -2561,9 +2468,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 						is_emperor_of_china = yes
 						alliance_with = ROOT
 					}
-					ROOT = {
-						add_historical_friend = PREV
-					}
+					ROOT = { add_historical_friend = PREV } 
 					add_historical_friend = ROOT
 					add_trust = {
 						who = ROOT
@@ -2571,7 +2476,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 						mutual = yes
 					}
 					add_country_modifier = {
-						name = THE_SUW_suw_3_8_emperor_of_china_country_modifier
+						name = "THE_SUW_suw_3_8_emperor_of_china_country_modifier"
 						duration = -1
 					}
 				}
@@ -2585,9 +2490,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 							is_emperor_of_china = yes
 							alliance_with = ROOT
 						}
-						ROOT = {
-							add_historical_friend = PREV
-						}
+						ROOT = { add_historical_friend = PREV } 
 						add_historical_friend = ROOT
 						add_trust = {
 							who = ROOT
@@ -2595,17 +2498,15 @@ THE_SUW_stage_2_branch_suw_3 = {
 							mutual = yes
 						}
 						add_country_modifier = {
-							name = THE_SUW_suw_3_8_emperor_of_china_country_modifier
+							name = "THE_SUW_suw_3_8_emperor_of_china_country_modifier"
 							duration = -1
 						}
 					}
 				}
 			}
 			if = {
-				limit = { 
-					all_country = {
-						is_emperor_of_china = no
-					}
+				limit = {
+					all_country = { is_emperor_of_china = no } 
 					1816 = {
 						owned_by = ROOT
 						religion = ROOT
@@ -2668,64 +2569,15 @@ THE_SUW_stage_2_branch_suw_3 = {
 					every_owned_province = {
 						limit = {
 							superregion = china_superregion
-							NOT = { province_id = 707 }
+							NOT = { province_id = 707 } 
 							province_has_center_of_trade_of_level = 1
 						}
 						change_religion = ROOT
 					}
 				}
-				
 			}
-			else = {
-				custom_tooltip = THE_SUW_suw_3_8_emperor_of_china_no_tt_no
-				#tooltip = {
-				#	every_province = {
-				#		limit = {
-				#			OR = {
-				#				province_id = 703
-				#				province_id = 2136
-				#				province_id = 696
-				#				province_id = 695
-				#				province_id = 4194
-				#				province_id = 1822
-				#				province_id = 2145
-				#				province_id = 1821
-				#				province_id = 2146
-				#				province_id = 2147
-				#				province_id = 2150
-				#				province_id = 2148
-				#				province_id = 2157
-				#				province_id = 2158
-				#				province_id = 665
-				#				province_id = 668
-				#				province_id = 2170
-				#				province_id = 2169
-				#				province_id = 680
-				#				province_id = 4213
-				#				province_id = 4212
-				#				province_id = 2179
-				#				province_id = 694
-				#				province_id = 1836
-				#				province_id = 687
-				#				province_id = 2171
-				#				province_id = 689
-				#				province_id = 4198
-				#				province_id = 2181
-				#			}
-				#		}
-				#		change_religion = ROOT
-				#	}
-				#	every_owned_province = {
-				#		limit = {
-				#			superregion = china_superregion
-				#			NOT = { province_id = 707 }
-				#			province_has_center_of_trade_of_level = 1
-				#		}
-				#		change_religion = ROOT
-				#	}
-				#}
-			}
-		} 
+			else = { custom_tooltip = THE_SUW_suw_3_8_emperor_of_china_no_tt_no } 
+		}
 	}
 
 	THE_SUW_suw_3_9 = {
@@ -2734,12 +2586,10 @@ THE_SUW_stage_2_branch_suw_3 = {
 		required_missions = { THE_SUW_suw_3_8 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			OR = {
 				AND = {
-					1376 = {
-						highest_value_trade_node = yes
-					}
+					1376 = { highest_value_trade_node = yes } 
 					OR = {
 						1365 = {
 							privateer_power = {
@@ -2753,7 +2603,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 								share = 15
 							}
 						}
-					}								
+					}
 				}
 				AND = {
 					calc_true_if = {
@@ -2777,26 +2627,18 @@ THE_SUW_stage_2_branch_suw_3 = {
 					}
 				}
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			if = {
-				limit = { 
-					1376 = {
-						highest_value_trade_node = yes
-					}
-				}
+				limit = { 1376 = { highest_value_trade_node = yes }  } 
 				custom_tooltip = THE_SUW_suw_3_9_1_tt_yes
 				add_country_modifier = {
-					name = THE_SUW_suw_3_9_country_modifier
+					name = "THE_SUW_suw_3_9_country_modifier"
 					duration = -1
 				}
 				random_country = {
-					limit = {
-						1365 = {
-							is_strongest_trade_power = PREV
-						}
-					}
+					limit = { 1365 = { is_strongest_trade_power = PREV }  } 
 					ROOT = {
 						create_subject = {
 							subject_type = THE_SUW_Religious_Protection
@@ -2804,7 +2646,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 						}
 					}
 					add_country_modifier = {
-						name = THE_SUW_suw_3_9_country_modifier
+						name = "THE_SUW_suw_3_9_country_modifier"
 						duration = -1
 					}
 				}
@@ -2814,15 +2656,11 @@ THE_SUW_stage_2_branch_suw_3 = {
 				custom_tooltip = THE_SUW_suw_3_9_1_tt_no
 				tooltip = {
 					add_country_modifier = {
-						name = THE_SUW_suw_3_9_country_modifier
+						name = "THE_SUW_suw_3_9_country_modifier"
 						duration = -1
 					}
 					random_country = {
-						limit = {
-							1365 = {
-								is_strongest_trade_power = PREV
-							}
-						}
+						limit = { 1365 = { is_strongest_trade_power = PREV }  } 
 						ROOT = {
 							create_subject = {
 								subject_type = THE_SUW_Religious_Protection
@@ -2830,14 +2668,14 @@ THE_SUW_stage_2_branch_suw_3 = {
 							}
 						}
 						add_country_modifier = {
-							name = THE_SUW_suw_3_9_country_modifier
+							name = "THE_SUW_suw_3_9_country_modifier"
 							duration = -1
 						}
 					}
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					calc_true_if = {
 						any_province = {
 							OR = {
@@ -2876,29 +2714,17 @@ THE_SUW_stage_2_branch_suw_3 = {
 									region = malaya_region
 								}
 								religion = th_moriyashinto
-								NOT = { owned_by = ROOT}
+								NOT = { owned_by = ROOT } 
 							}
 							if = {
-								limit = {								
-									NOT = { development = 10 }
-								}
-								ROOT = {
-									add_treasury = 10
-								}
+								limit = { NOT = { development = 10 }  } 
+								ROOT = { add_treasury = 10 } 
 							}
 							else_if = {
-								limit = { 
-									NOT = { development = 30 }
-								}
-								ROOT = {
-									add_treasury = 20
-								}
+								limit = { NOT = { development = 30 }  } 
+								ROOT = { add_treasury = 20 } 
 							}
-							else = {
-								ROOT = {
-									add_treasury = 30
-								}
-							}
+							else = { ROOT = { add_treasury = 30 }  } 
 						}
 						else_if = {
 							limit = {
@@ -2907,20 +2733,18 @@ THE_SUW_stage_2_branch_suw_3 = {
 									region = malaya_region
 								}
 								religion = THE_moriyaseikyou_religion
-								NOT = { owned_by = ROOT}
-							}		
+								NOT = { owned_by = ROOT } 
+							}
 							ROOT = {
 								random_list = {
-									1 = { add_adm_power = 1 }
-									1 = { add_dip_power = 1 }	
-									1 = { add_mil_power = 1 }	
+									1 = { add_adm_power = 1 } 
+									1 = { add_dip_power = 1 } 
+									1 = { add_mil_power = 1 } 
 								}
-							}	
-							
+							}
 						}
 					}
 				}
-				
 			}
 			else = {
 				custom_tooltip = THE_SUW_suw_3_9_2_tt_no
@@ -2944,7 +2768,7 @@ THE_SUW_stage_2_branch_suw_3 = {
 					}
 				}
 			}
-		} 
+		}
 	}
 
 	THE_SUW_suw_3_10 = {
@@ -2969,15 +2793,6 @@ THE_SUW_stage_2_branch_suw_3 = {
 			change_dip = 1
 			change_mil = 1
 			custom_tooltip = THE_SUW_suw_3_10_tt
-			#define_ruler = {
-				#max_random_adm = 6
-				#max_random_dip = 6
-				#max_random_mil = 6
-			#	age = 16
-			#	claim = 100
-			#	culture = Gensokyo_human
-			#	religion = THE_moriyaseikyou_religion
-			#}
 		}
 	}
 }
@@ -3394,23 +3209,17 @@ THE_SUW_stage_2_branch_suw_5 = {
 
 		effect = {
 			change_religion = THE_moriyaseikyou_religion
-			hidden_effect = { 
-				every_owned_province = {
-					change_religion = THE_moriyaseikyou_religion 
-				}
-			} 
+			hidden_effect = { every_owned_province = { change_religion = THE_moriyaseikyou_religion }  } 
 			every_country = {
-				limit = { 
-					is_subject_of = ROOT 
+				limit = {
+					is_subject_of = ROOT
 					religion = th_moriyashinto
-				} 
+				}
 				change_religion = THE_moriyaseikyou_religion
 				hidden_effect = {
 					every_owned_province = {
-						limit = {
-							religion = th_moriyashinto
-						}
-						change_religion = THE_moriyaseikyou_religion 
+						limit = { religion = th_moriyashinto } 
+						change_religion = THE_moriyaseikyou_religion
 					}
 				}
 			}
@@ -3509,13 +3318,31 @@ THE_SUW_stage_2_branch_kan_1 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			estate_loyalty = {
-				estate = estate_church
-				loyalty = 100
-			}
-			estate_influence = {
-				estate = estate_church
-				influence = 70
+			AND = {
+				any_country = {
+					religion_group = christian
+					ROOT = {
+						knows_country = PREV
+					}
+				}
+				any_country = {
+					religion_group = muslim
+					ROOT = {
+						knows_country = PREV
+					}
+				}
+				any_country = {
+					religion_group = dharmic
+					ROOT = {
+						knows_country = PREV
+					}
+				}
+				any_country = {
+					religion_group = lunarian_religion_g
+					ROOT = {
+						knows_country = PREV
+					}
+				}
 			}
 		}
 
@@ -3562,10 +3389,13 @@ THE_SUW_stage_2_branch_kan_1 = {
 		effect = { change_adm = 1 } 
 	}
 
-	THE_SUW_kan_1_9 = {
+	THE_SUW_kan_1_10 = {
 		icon = mission_unknown_mission
-		position = 9
-		required_missions = { THE_SUW_kan_2_8 } 
+		position = 10
+		required_missions = {
+			THE_SUW_kan_2_9
+			THE_SUW_kan_1_8
+		}
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -3705,9 +3535,19 @@ THE_SUW_stage_2_branch_kan_4 = {
 		required_missions = { THE_SUW_3_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				region = mongolia_region
+			}
+		}
 
-		effect = { japan_region = { add_permanent_claim = ROOT }  } 
+		effect = {
+			add_country_modifier = {
+				name = "THE_SUW_kan_yuan_country_modifier"
+				duration = -1
+			}
+		}
 	}
 
 	THE_SUW_kan_4_8 = {
@@ -3719,9 +3559,23 @@ THE_SUW_stage_2_branch_kan_4 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			all_province = {
+				region = mongolia_region
+				owned_by = ROOT
+			}
+			all_country = { NOT = { dynasty = Borjigin }  } 
+		}
 
-		effect = {  } 
+		effect = {
+			hidden_effect = { remove_country_modifier = THE_SUW_kan_yuan_country_modifier } 
+			custom_tooltip = THE_SUW_kan_4_8_tt
+			add_country_modifier = {
+				name = "THE_SUW_kan_Borjigin_country_modifier"
+				duration = -1
+			}
+			set_country_flag = THE_SUW_kan_4_8_flag
+		}
 	}
 
 	THE_SUW_kan_4_9 = {
@@ -3752,9 +3606,18 @@ THE_SUW_stage_2_branch_kan_5 = {
 		required_missions = { THE_SUW_5_3 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			development_in_provinces = {
+				value = 1000
+				religion = ROOT
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			4188 = { change_trade_goods = THE_SUW_godsticks } 
+			custom_tooltip = THE_SUW_kan_5_6_tt
+			set_country_flag = THE_SUW_kan_5_6_flag
+		}
 	}
 
 	THE_SUW_kan_5_7 = {
@@ -3768,9 +3631,10 @@ THE_SUW_stage_2_branch_kan_5 = {
 		effect = {  } 
 	}
 
-	THE_SUW_kan_5_8 = {
+	THE_SUW_kan_5_9 = {
 		icon = mission_unknown_mission
-		position = 8
+		position = 9
+		required_missions = { THE_SUW_kan_4_8 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -3778,13 +3642,10 @@ THE_SUW_stage_2_branch_kan_5 = {
 		effect = {  } 
 	}
 
-	THE_SUW_kan_5_9 = {
+	THE_SUW_kan_5_10 = {
 		icon = mission_unknown_mission
-		position = 9
-		required_missions = {
-			THE_SUW_kan_4_8
-			THE_SUW_kan_5_8
-		}
+		position = 10
+		required_missions = { THE_SUW_kan_5_9 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 

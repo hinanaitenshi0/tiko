@@ -2210,3 +2210,74 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	#无尽的圣战
+	id = THE_SUW_events.41
+	title = "THE_SUW_events.41.title"
+	desc = "THE_SUW_events.41.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.41.name
+		add_country_modifier = {
+			name = THE_SUW_kan_owaranaibatoru_country_modifier
+			duration = -1
+		}
+		add_country_modifier = {
+			name = THE_SUW_kan_sinnkonotabi_country_modifier
+			duration = -1
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_neighbor_of = ROOT
+					NOT = { is_subject_of = ROOT }
+				}
+				ROOT = {
+					declare_war_with_cb = {
+						who = PREV
+						casus_belli = cb_world_crusade
+					}
+				}
+			}
+		}
+		
+		custom_tooltip = THE_SUW_events.41_tt
+		set_country_flag = THE_SUW_kan_owaranaibatoru_flag
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	#圣战的终焉
+	id = THE_SUW_events.42
+	title = "THE_SUW_events.42.title"
+	desc = "THE_SUW_events.42.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+		had_country_flag = {
+			flag = THE_SUW_kan_owarubatoru_flag
+			days = 365
+		}
+	}
+
+	option = {
+		name = THE_SUW_events.42.name
+		remove_country_modifier = THE_SUW_kan_owaranaibatoru_country_modifier
+		remove_country_modifier = THE_SUW_kan_sinnkonotabi_country_modifier
+		THE_SUW_kan_sippai_scripted_effects = yes
+		clr_country_flag = THE_SUW_kan_owarubatoru_flag
+		clr_country_flag = THE_SUW_kan_owaranaibatoru_flag
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
