@@ -198,10 +198,10 @@ THE_SUW_3_4_aspect = {	#MIL aspect
 THE_SUW_3_5_aspect = {	#MIL aspect
 	cost = 100
 	potential = {
-		num_of_cavalry = 20
+		has_country_flag = THE_SUW_kan_5_9_flag
 	}
 	trigger = {
-		num_of_cavalry = 20
+		has_country_flag = THE_SUW_kan_5_9_flag
 	}
 	modifier = {
 		enable_forced_march = yes

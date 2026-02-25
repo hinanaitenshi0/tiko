@@ -2281,3 +2281,41 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	#神明的恩惠
+	id = THE_SUW_events.43
+	title = "THE_SUW_events.43.title"
+	desc = "THE_SUW_events.43.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+		mission_completed = THE_SUW_kan_5_7
+		OR = { 
+			is_year = 1450
+			is_year = 1500
+			is_year = 1550
+			is_year = 1600
+			is_year = 1650
+			is_year = 1700
+			is_year = 1750
+		}
+	}
+
+	option = {
+		name = THE_SUW_events.43.name
+		if = { limit = { is_year = 1450} 4188 = { add_institution_embracement = { which = renaissance value = 100 } } }
+		if = { limit = { is_year = 1500} 4188 = { add_institution_embracement = { which = new_world_i value = 100 } } }
+		if = { limit = { is_year = 1550} 4188 = { add_institution_embracement = { which = printing_press value = 100 } } }
+		if = { limit = { is_year = 1600} 4188 = { add_institution_embracement = { which = global_trade value = 100 } } }
+		if = { limit = { is_year = 1650} 4188 = { add_institution_embracement = { which = manufactories value = 100 } } }
+		if = { limit = { is_year = 1700} 4188 = { add_institution_embracement = { which = enlightenment value = 100 } } }
+		if = { limit = { is_year = 1750} 4188 = { add_institution_embracement = { which = industrialization value = 100 } } }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}

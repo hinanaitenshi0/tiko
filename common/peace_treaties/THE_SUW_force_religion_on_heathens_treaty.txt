@@ -24,6 +24,7 @@ THE_SUW_force_religion = {
 	is_visible = {
 		OR = {
 			AND = {
+				has_country_flag = THE_SUW_kan_owaranaibatoru_flag
 				has_country_flag = THE_SUW_kan_1_7_flag
 				NOT = { religion_group = FROM }
 			}
@@ -42,6 +43,53 @@ THE_SUW_force_religion = {
 			capital_scope = {
 				change_religion = ROOT
 			}
+		}
+		custom_tooltip = THE_SUW_kan_development_1000_tt
+		if = {
+			limit = { 
+				variable_arithmetic_trigger = {
+					custom_tooltip = THE_SUW_kan_development_1000_tt
+					export_to_variable = {
+						which = development_1
+						value = total_development
+						who = FROM
+					}
+					set_variable = {
+						which = development_2
+						value = 1000
+					}
+					check_variable = {
+						which = development_1
+						which = development_2
+					}
+				}
+			}
+			add_treasury = 1000
+		}	
+		else_if = {
+			limit = { 
+				variable_arithmetic_trigger = {
+					custom_tooltip = THE_SUW_kan_development_300_tt
+					export_to_variable = {
+						which = development_1
+						value = total_development
+						who = FROM
+					}
+					set_variable = {
+						which = development_2
+						value = 300
+					}
+					check_variable = {
+						which = development_1
+						which = development_2
+					}
+				}
+			}
+			add_treasury = 300
+		}
+		else = {
+			custom_tooltip = THE_SUW_kan_development_100_tt
+			add_treasury = 100
 		}
 	}
 	ai_weight = { # Defaults to always evaluate to 0

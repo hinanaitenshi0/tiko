@@ -224,6 +224,7 @@ THE_SUW_suw_5_10_2_country_modiffier = {
 THE_SUW_kan_owaranaibatoru_country_modifier = {
 	overextension_impact_modifier = -1
 	core_creation = 9.99
+	war_exhaustion = -20
 	tolerance_own = 817
 	tolerance_heretic = -817
 	tolerance_heathen = -817
@@ -233,20 +234,163 @@ THE_SUW_kan_sinnkonotabi_country_modifier = {
 	discipline = 0.05
 	morale_damage = 0.1
 	land_forcelimit_modifier = 0.1
+	global_missionary_strength = 0.01
 }
-#大哉乾元
-THE_SUW_kan_yuan_country_modifier = {
+#天行健
+THE_SUW_defensiveness_nagano_country_modiffier = {
+	movement_speed = 0.05
+}
+THE_SUW_defensiveness_tropical_country_modiffier = {
+	movement_speed = 0.05
+}
+THE_SUW_defensiveness_arid_country_modiffier = {
+	movement_speed = 0.05
+}
+THE_SUW_defensiveness_arctic_country_modiffier = {
+	movement_speed = 0.05
+}
+THE_SUW_defensiveness_mild_winter_country_modiffier = {
+	movement_speed = 0.05
+}
+THE_SUW_defensiveness_normal_winter_country_modiffier = {
+	movement_speed = 0.05
+}
+THE_SUW_defensiveness_severe_winter_country_modiffier = {
+	movement_speed = 0.05
+}
+THE_SUW_defensiveness_mild_monsoon_country_modiffier = {
+	movement_speed = 0.05
+}
+THE_SUW_defensiveness_normal_monsoon_country_modiffier = {
+	movement_speed = 0.05
+}
+THE_SUW_defensiveness_severe_monsoon_country_modiffier = {
+	movement_speed = 0.05
+}
+#注视幻想1
+THE_SUW_kan_2_8_1_country_modifier = {
+	prestige = 1
+	monthly_splendor = 2
+	legitimacy = 1
+	republican_tradition = 0.5
+	devotion = 1
+	horde_unity = 1
+	meritocracy = 1
+}
+#注视幻想2
+THE_SUW_kan_2_8_2_country_modifier = {
+	prestige = 3
+	monthly_splendor = 4
+	legitimacy = 3
+	republican_tradition = 1
+	devotion = 3
+	horde_unity = 3
+	meritocracy = 3
+	yearly_absolutism = 0.02
+	max_absolutism = 20
+}
+#注视幻想3
+THE_SUW_kan_2_8_3_country_modifier = {
+	prestige = 5
+	monthly_splendor = 8
+	legitimacy = 5
+	republican_tradition = 2
+	devotion = 5
+	horde_unity = 5
+	meritocracy = 5
+	yearly_absolutism = 0.03
+	max_absolutism = 30
+	yearly_revolutionary_zeal = 3
+	max_revolutionary_zeal = 30
+}
+#救世神明1
+THE_SUW_kan_2_9_1_country_modifier = {
+	manpower_recovery_speed = 0.33
+	
+}
+#救世神明2
+THE_SUW_kan_2_9_2_country_modifier = {
+	manpower_recovery_speed = 0.5
+	global_manpower_modifier = 0.5
+    
+}
+#救世神明3
+THE_SUW_kan_2_9_3_country_modifier = {
+	manpower_recovery_speed = 1
+	global_manpower_modifier = 1
+    manpower_in_true_faith_provinces = 1
+}
+#谓之中华1
+THE_SUW_kan_3_8_1_country_modifier = {
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+}
+#谓之中华2
+THE_SUW_kan_3_8_2_country_modifier = {
+	fire_damage_received = -0.2
+	shock_damage_received = -0.2
+	morale_damage_received = -0.2
+}
+#谓之中华3
+THE_SUW_kan_3_8_3_country_modifier = {
+	fire_damage_received = -0.33
+	shock_damage_received = -0.33
+	morale_damage_received = -0.33
+	reserves_organisation = 0.33
+}
+#乘风破浪1
+THE_SUW_kan_3_9_1_country_modifier = {
+
+}
+#乘风破浪2
+THE_SUW_kan_3_9_2_country_modifier = {
+
+}
+#乘风破浪3
+THE_SUW_kan_3_9_3_country_modifier = {
+
+}
+#苍穹之鞭1
+THE_SUW_kan_1_Borjigin_country_modifier = {
+	siege_ability = 0.1
+	movement_speed = 0.1
+}
+#苍穹之鞭2
+THE_SUW_kan_2_Borjigin_country_modifier = {
 	siege_ability = 0.2
-	leader_siege = 1
-	global_trade_goods_size_modifier = 0.1
-}
-#苍穹之鞭
-THE_SUW_kan_Borjigin_country_modifier = {
-	siege_ability = 0.4
+	movement_speed = 0.2
 	leader_siege = 2
-	max_general_siege = 2
-	movement_speed = 0.5
-	global_trade_goods_size_modifier = 0.2
+}
+#苍穹之鞭3
+THE_SUW_kan_3_Borjigin_country_modifier = {
+	siege_ability = 0.3
+	movement_speed = 0.3
+	leader_siege = 3
+	artillery_barrage_cost = -1
+}
+#准备万当1
+THE_SUW_kan_4_9_1_country_modifier = {
+	global_regiment_cost = -0.10
+	reinforce_cost_modifier = -0.10
+}
+#准备万当2
+THE_SUW_kan_4_9_2_country_modifier = {
+	global_regiment_cost = -0.20
+	global_regiment_recruit_speed = -0.20
+	reinforce_cost_modifier = -0.20
+	reinforce_speed = 0.20
+}
+#准备万当3
+THE_SUW_kan_4_9_3_country_modifier = {
+	global_regiment_cost = -0.33
+	global_regiment_recruit_speed = -0.33
+	reinforce_cost_modifier = -0.33
+	reinforce_speed = 0.33
+	land_attrition = -0.33
+}
+#随风飘过
+THE_SUW_kan_5_9_country_modifier = {
+	can_bypass_forts = yes	
 }
 #踊跃参军
 #每传完一个地块增加1000人力

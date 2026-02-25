@@ -582,6 +582,7 @@ THE_SUW_kan_sippai_scripted_effects = {
 THE_SUW_kan_5_6_scripted_effects = {
 	if = {
 		limit = { 
+			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
 			has_country_flag = THE_SUW_kan_5_6_flag
 			any_owned_province = {
 				trade_goods = paper
@@ -602,6 +603,7 @@ THE_SUW_kan_owaranaibatoru_scripted_effects = {
 	if = {
 		limit = { 
 			tag = SUW
+			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
 			has_country_flag = THE_SUW_kan_4_8_flag
 		}
 		FROM = {
@@ -625,6 +627,7 @@ THE_SUW_on_province_religion_converted_estate_privileges_scripted_effect = {
 		limit = { 
 			owned_by = SUW
 			owner = {
+				has_country_flag = THE_SUW_kan_owaranaibatoru_flag
 				has_country_flag = THE_SUW_kan_1_6_flag 
 			}
 			has_owner_religion = yes
@@ -655,6 +658,159 @@ THE_SUW_on_province_religion_converted_estate_privileges_scripted_effect = {
 			}
 			
 		}
+	}
+}
+
+#天行健
+THE_SUW_has_climate_scripted_effects = {
+	if = {
+		limit = {  
+			any_owned_province = { has_climate = tropical }
+		}
+		custom_tooltip = THE_SUW_has_climate_tropical
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_tropical_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_climate = arid }
+		}
+		custom_tooltip = THE_SUW_has_climate_arid
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_arid_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_climate = arctic }
+		}
+		custom_tooltip = THE_SUW_has_climate_arctic
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_arctic_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_winter = mild_winter }
+		}
+		custom_tooltip = THE_SUW_has_winter_mild_winter
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_mild_winter_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_winter = normal_winter }
+		}
+		custom_tooltip = THE_SUW_has_winter_normal_winter
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_normal_winter_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_winter = severe_winter }
+		}
+		custom_tooltip = THE_SUW_has_winter_severe_winter
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_severe_winter_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_monsoon = mild_monsoon }
+		}
+		custom_tooltip = THE_SUW_has_monsoon_mild_monsoon
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_mild_monsoon_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_monsoon = normal_monsoon }
+		}
+		custom_tooltip = THE_SUW_has_monsoon_normal_monsoon
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_normal_monsoon_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+	if = {
+		limit = {  
+			any_owned_province = { has_monsoon = severe_monsoon }
+		}
+		custom_tooltip = THE_SUW_has_monsoon_severe_monsoon
+		hidden_effect = {
+			add_country_modifier = {
+				name = THE_SUW_defensiveness_severe_monsoon_country_modiffier
+				duration = -1
+			}
+		}
+		
+		
+	}
+}
+
+THE_SUW_kan_5_10_scripted_effects = {
+	if = {
+		limit = { 
+			any_country = {
+				war_with = FROM
+				has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+				has_country_flag = THE_SUW_kan_5_10_flag
+			}
+		}
+		random_country = {
+			limit = {
+				war_with = FROM
+				has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+				has_country_flag = THE_SUW_kan_5_10_flag
+			}
+			ROOT = {
+				cede_province = PREV
+			}
+		}
+		
 	}
 }
 

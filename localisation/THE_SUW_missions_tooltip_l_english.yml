@@ -13,6 +13,7 @@
  THE_SUW_TAG: "[Root.GetTag]"
  THE_SUW_TAG_at: "@[Root.GetTag]"
  kana: "^yHY"
+ kana_ADJ: "^yHY"
 ### tag_END
 
 ### TOOLTIP
@@ -136,7 +137,7 @@
  THE_SUW_estate_burgher_action_tt: "=T(u6–BS³Q®‹: §YˆNÖS§!: §Y8x^X±”±r§!"
 # THE_SUW_1_3_tt: "&TR\n·ƒ—V§G100§!Zg\nNb	g¢núQ„vZgSlSb	N‰|§YTIN¹ppe§!"
  THE_SUW_suw_1_7_tt: "°s(WVËYïSåNÎNYýV„vˆRâwckYe>y:S-N·ƒÖS6eÊv"
- THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰Nag¦u§Y(ckMO)§!O§YVYe§!ýV¶RˆvO"
+ #THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰Nag¦u§Y(ckMO)§!O§YVYe§!ýV¶RˆvO"
  THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§Gù‹¿‹PRN^S§!Y²NáOag"
  THE_SUW_kan_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§G^yHYPRN^S§!Y²NáOag"
 # THE_SUW_suw_1_9_tt: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
@@ -217,8 +218,32 @@
  THE_SUW_has_terrain_savannah: "òTåb	g§TzhIƒŸS§!:§G-3%§!§YÑSUSb,g§!"
  THE_SUW_has_terrain_steppe: "òTåb	g§T'YIƒŸS§!:§G-3%§!§YÑSUSb,g§!"
  THE_SUW_kan_1_6_tt: "dkTÏk!k§T.OYeŒRb§!ÿS–:gÐc›O§G10§!¹p§T?eœ^ýw›R¹ppe§!"
+ THE_SUW_kan_1_7_tt: "Nb	g§YbìNÊSD–¸^§!åb	g„v§YˆRâw^yS§!wýNlØS—RYe:N§YˆRâwckYe§!,N=T(u§T":V6RˆvO"§!ŒTs^ag¦uÿå‹ag¦uïS˜Y9hnc§Tb%ýV§!?eœ^Irµu·ƒ—Vøv”^§YjgaSyr§!"
+ THE_SUW_kan_1_8_tt: "Ïkåb	gNY§TlP/è–cR/¬QcR§!ÿR§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_has_climate_tropical: "òTåb	g§Típ&^§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_has_climate_arid: "òTåb	g§Tr^ñe§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_has_climate_arctic: "òTåb	g§Tg0W§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_has_winter_mild_winter: "òTåb	g§T–f¬Q§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_has_winter_normal_winter: "òTåb	g§TÒR¬Q§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_has_winter_severe_winter: "òTåb	g§T%N¬Q§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_has_monsoon_mild_monsoon: "òTåb	g§T)nŒTè–cR§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_has_monsoon_normal_monsoon: "òTåb	g§Tck8^è–cR§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_has_monsoon_severe_monsoon: "òTåb	g§T:VÈpè–cR§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_kan_2_7_exists_tt_yes: "£yes£‚Yœg@MRY§Y[MRY.GetName]§!XR(WN‹NöN§T"ée×‚„vÞVáO"§!òTÏuæ‰ÑSöeŒRbûN¡R:"
+ THE_SUW_kan_2_7_exists_tt_no: "£no£‚Yœg@MRY§Y[MRY.GetName]§!XR(WN‹NöN§T"ée×‚„vÞVáO"§!òTÏuæ‰ÑSöeŒRbûN¡R:"
+ THE_SUW_kan_2_7_not_exists_tt_yes: "£yes£‚Yœg@MRY§Y[MRY.GetName]§!NXR(WöeŒRbûN¡R:"
+ THE_SUW_kan_2_7_not_exists_tt_no: "£no£‚Yœg@MRY§Y[MRY.GetName]§!NXR(WöeŒRbûN¡R:"
  THE_SUW_kan_4_8_tt: "GSµuîOck§Y"'YÉTŒNCQ"§!:N§Y"Í‚yzKN­—"§!ÿNdkT§T`S†˜wýN§!TSôv¥c·ƒ—V§Tå‹wýN§!"
+ THE_SUW_kan_4_9_tt: "·ƒ—V§ThQNLu§!„v§TÆ‰Î‘§!"
  THE_SUW_kan_5_6_tt: "dkTNb	g§YVg§!Neg„v§T¸u.V§!wýNÿlØSFUÁT:N§T^yŒr§!"
+# THE_SUW_kan_5_7_ttt: "wýNMOŽN§T^yHY§!ƒX…Q"
+ THE_SUW_kan_5_7_tt: "dkTNb	g§T`no§!S(Wøv”^t^ýN˜YúQ°s(W§TáOSm§!"
+ THE_SUW_kan_5_9_tt_yes: "£yes£‚YœgSVMR1u§TkQBW ^yHYPR§!gb?eÿRûm R°e§GY²N§!áOag§TäNLˆybk§!"
+ THE_SUW_kan_5_9_tt_no: "£no£‚YœgSVMR1u§TkQBW ^yHYPR§!gb?eÿRûm R°e§GY²N§!áOag§TäNLˆybk§!"
+ THE_SUW_kan_5_10_tt: "dkTÏk!k(W§TLeùRýV§!„vwýNN·ƒ—VN!k§Tb—eÜw)R§!ÿRôv¥c·ƒ—V§Tå‹wýN§!"
+ THE_SUW_kan_development_1000_tt: "·ƒ—V§G1000§!§YjgaSyr§!"
+ THE_SUW_kan_development_300_tt: "·ƒ—V§G300§!§YjgaSyr§!"
+ THE_SUW_kan_development_100_tt: "·ƒ—V§G100§!§YjgaSyr§!"
 ### TOOLTIP_END
 
 ### dynasty
@@ -329,8 +354,20 @@
  THE_SUW_suw_5_10_2_country_modiffier: "^yf„vübþV"
  THE_SUW_kan_owaranaibatoru_country_modifier: "àeKS„v1Wb"
  THE_SUW_kan_sinnkonotabi_country_modifier: "áOðNKNV"
- THE_SUW_kan_yuan_country_modifier: "'YÉTŒNCQ"
+ THE_SUW_kan_1_Borjigin_country_modifier: "'YÉTŒNCQ"
  THE_SUW_kan_Borjigin_country_modifier: "Í‚yzKN­—"
+ THE_SUW_defensiveness_nagano_country_modiffier: "§T)n&^§!"
+ THE_SUW_defensiveness_tropical_country_modiffier: "§Típ&^§!"
+ THE_SUW_defensiveness_arid_country_modiffier: "§Tr^ñe§!"
+ THE_SUW_defensiveness_arctic_country_modiffier: "§Tg0W§!"
+ THE_SUW_defensiveness_mild_winter_country_modiffier: "§T–f¬Q§!"
+ THE_SUW_defensiveness_normal_winter_country_modiffier: "§TÒR¬Q§!"
+ THE_SUW_defensiveness_severe_winter_country_modiffier: "§T%N¬Q§!"
+ THE_SUW_defensiveness_mild_monsoon_country_modiffier: "§T)nŒTè–cR§!"
+ THE_SUW_defensiveness_normal_monsoon_country_modiffier: "§Tck8^è–cR§!"
+ THE_SUW_defensiveness_severe_monsoon_country_modiffier: "§T:VÈpè–cR§!"
+ THE_SUW_kan_4_9_country_modifier: "ÆQYNSV"
+ THE_SUW_kan_5_9_country_modifier: "–Î˜Ø˜Ç"
 ### MODIFIER_END
 
 ###OPINION_MODIFIER
@@ -484,8 +521,8 @@
  THE_SUW_events.38.desc: "1"
  THE_SUW_events.38.name: "^yf'YºNÿbìNle1r¨`ãSYr!"
  THE_SUW_events.39.title: "ée×‚„vÞVáO"
- THE_SUW_events.39.desc: "1"
- THE_SUW_events.39.name: "ù‹¿‹PR'YºNÿ^yHYPR'YºNÿ`OìN°s(WÇ—V`HN7hNTÿ	g¡l	g	cöeTm™......(åNNweu800WR)"
+ THE_SUW_events.39.desc: "ù‹¿‹PR'YºNÿ^yHYPR'YºNÿ`OìN°s(WÇ—V`HN7hNTÿ	g¡l	g	cöeTm™......(åNNweu800WR)"
+ THE_SUW_events.39.name: "áO„vóSNÒ‰ÿ‹YÏP^XNwÀNHNN‰"
  THE_SUW_events.40.title: "-T°e„vˆRâw?"
  THE_SUW_events.40.desc: "1"
  THE_SUW_events.40.a.name: "ýÛ‰^ó`aN†Nÿw„vNOˆVëV«ˆWØVT?"
@@ -629,7 +666,7 @@ sanae_desc: "1"
 
 ###CB
  THE_SUW_force_religion: "ckMO"
- THE_SUW_force_religion_desc: "ùR¹eSáOðNbìN„v—RYe"
+ THE_SUW_force_religion_desc: "§Y[From.tag.GetName]§!SáOðNbìN„v—RYe"
  PEACE_THE_SUW_force_religion: "‰BlckMO"
  CB_ALLOWED_THE_SUW_force_religion: "‰BlckMO"
 ###CB_END

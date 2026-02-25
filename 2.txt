@@ -58,6 +58,7 @@ add_government_power = {
 clr_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
 set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
 set_country_flag = THE_SUW_suw_4_4_flag
+set_country_flag = THE_SUW_kan_1_7_flag
 clr_country_flag = THE_SUW_maikozeikinn_flag
 change_religion = THE_moriyaseikyou_religion
 1816 = {
@@ -91,3 +92,8 @@ add_government_power = {
 						which = ADM
 						amount = 10
 					}
+					override_country_name = "kana"
+set_country_flag = THE_SUW_kan_5_9_flag
+every_province = {
+	discover_country = ROOT
+}
