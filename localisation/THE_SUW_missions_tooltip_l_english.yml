@@ -229,11 +229,19 @@
  THE_SUW_has_monsoon_mild_monsoon: "òTåb	g§T)nŒTè–cR§!:§G+5%§!§Yûy¨R¦^§!"
  THE_SUW_has_monsoon_normal_monsoon: "òTåb	g§Tck8^è–cR§!:§G+5%§!§Yûy¨R¦^§!"
  THE_SUW_has_monsoon_severe_monsoon: "òTåb	g§T:VÈpè–cR§!:§G+5%§!§Yûy¨R¦^§!"
+ THE_SUW_kan_1_10_tt: "ùRNb	gMOŽN§T°e'YF–§!åNÊS§T'Ym2m§!„v§YŸSËYýV¶R§!åN§T'Y1Wb§!„v±Rbt1u§Y±Rb§!"
  THE_SUW_kan_2_7_exists_tt_yes: "£yes£‚Yœg@MRY§Y[MRY.GetName]§!XR(WN‹NöN§T"ée×‚„vÞVáO"§!òTÏuæ‰ÑSöeŒRbûN¡R:"
  THE_SUW_kan_2_7_exists_tt_no: "£no£‚Yœg@MRY§Y[MRY.GetName]§!XR(WN‹NöN§T"ée×‚„vÞVáO"§!òTÏuæ‰ÑSöeŒRbûN¡R:"
  THE_SUW_kan_2_7_not_exists_tt_yes: "£yes£‚Yœg@MRY§Y[MRY.GetName]§!NXR(WöeŒRbûN¡R:"
  THE_SUW_kan_2_7_not_exists_tt_no: "£no£‚Yœg@MRY§Y[MRY.GetName]§!NXR(WöeŒRbûN¡R:"
- THE_SUW_kan_4_8_tt: "GSµuîOck§Y"'YÉTŒNCQ"§!:N§Y"Í‚yzKN­—"§!ÿNdkT§T`S†˜wýN§!TSôv¥c·ƒ—V§Tå‹wýN§!"
+ THE_SUW_kan_3_7_emperor_yes_tt_yes: "£yes£‚Yœg§T-NýV‡v^§!XR(WNNbìN(W§Tb‰N-N§!ÿRdkTÏk!kN§T-NýV‡v^§!ÛLˆN!kb—eÿRvQ§Y–:gNYwýN§!ÛLˆN!k§YwIN§!:"
+ THE_SUW_kan_3_7_emperor_yes_tt_no: "£no£‚Yœg§T-NýV‡v^§!XR(WNNbìN(W§Tb‰N-N§!ÿRdkTÏk!kN§T-NýV‡v^§!ÛLˆN!kb—eÿRvQ§Y–:gNYwýN§!ÛLˆN!k§YwIN§!:"
+ THE_SUW_kan_3_7_emperor_no_tt_yes: "£yes£‚Yœg§T-NýV‡v^§!NXR(WÿRùRNb	gåb	gûNa§Y-NýV!k'YF–§!wýN„výV¶RåN§T'Y1Wb§!„v±Rbt1u§Y±Rb§!ÿNNb	gåb	g„v§Y-NýV!k'YF–§!wýNÙuˆNbìN§G50§!jgaSyrN§G1000§!ºN›R:"
+ THE_SUW_kan_3_7_emperor_no_tt_no: "£no£‚Yœg§T-NýV‡v^§!NXR(WÿRùRNb	gåb	gûNa§Y-NýV!k'YF–§!wýN„výV¶RåN§T'Y1Wb§!„v±Rbt1u§Y±Rb§!ÿNNb	gåb	g„v§Y-NýV!k'YF–§!wýNÙuˆNbìN§G50§!jgaSyrN§G1000§!ºN›R:"
+ THE_SUW_kan_3_7_emperor_yes_mng_tt_yes: "£yes£‚Yœg§T-NýV‡v^§!XR(WN:N'YfÿR:"
+ THE_SUW_kan_3_7_emperor_yes_mng_tt_no: "£no£‚Yœg§T-NýV‡v^§!XR(WN:N'YfÿR:"
+ THE_SUW_kan_3_10_tt: "§T^yHYPR§!SNQ§Ygb?e§!"
+ THE_SUW_kan_4_8_tt: "dkT§T`S†˜wýN§!TSôv¥c·ƒ—V§Tå‹wýN§!"
  THE_SUW_kan_4_9_tt: "·ƒ—V§ThQNLu§!„v§TÆ‰Î‘§!"
  THE_SUW_kan_5_6_tt: "dkTNb	g§YVg§!Neg„v§T¸u.V§!wýNÿlØSFUÁT:N§T^yŒr§!"
 # THE_SUW_kan_5_7_ttt: "wýNMOŽN§T^yHY§!ƒX…Q"
@@ -244,6 +252,8 @@
  THE_SUW_kan_development_1000_tt: "·ƒ—V§G1000§!§YjgaSyr§!"
  THE_SUW_kan_development_300_tt: "·ƒ—V§G300§!§YjgaSyr§!"
  THE_SUW_kan_development_100_tt: "·ƒ—V§G100§!§YjgaSyr§!"
+ THE_SUW_kan_buff_up_tt: "dkMR§TûN¡R§!·ƒ—V„vN§T1Wb§!øvsQ„vNb	gîOckÛLˆ§T:VS§!"
+ THE_SUW_kan_mission_wars_tt: "dk!k±RbÆ‰:N§TÛLˆN!k1Wb§!"
 ### TOOLTIP_END
 
 ### dynasty
@@ -353,9 +363,11 @@
  THE_SUW_suw_5_10_1_country_modiffier: ".O­d°eNLu"
  THE_SUW_suw_5_10_2_country_modiffier: "^yf„vübþV"
  THE_SUW_kan_owaranaibatoru_country_modifier: "àeKS„v1Wb"
- THE_SUW_kan_sinnkonotabi_country_modifier: "áOðNKNV"
- THE_SUW_kan_1_Borjigin_country_modifier: "'YÉTŒNCQ"
- THE_SUW_kan_Borjigin_country_modifier: "Í‚yzKN­—"
+ THE_SUW_kan_sinnkonotabi_1_country_modifier: "áOðNKNV"
+ THE_SUW_kan_sinnkonotabi_2_country_modifier: "áOðNKNV"
+ THE_SUW_kan_sinnkonotabi_3_country_modifier: "áOðNKNV"
+ THE_SUW_kan_sinnkonotabi_4_country_modifier: "áOðNKNV"
+ THE_SUW_kan_sinnkonotabi_5_country_modifier: "áOðNKNV"
  THE_SUW_defensiveness_nagano_country_modiffier: "§T)n&^§!"
  THE_SUW_defensiveness_tropical_country_modiffier: "§Típ&^§!"
  THE_SUW_defensiveness_arid_country_modiffier: "§Tr^ñe§!"
@@ -366,7 +378,24 @@
  THE_SUW_defensiveness_mild_monsoon_country_modiffier: "§T)nŒTè–cR§!"
  THE_SUW_defensiveness_normal_monsoon_country_modiffier: "§Tck8^è–cR§!"
  THE_SUW_defensiveness_severe_monsoon_country_modiffier: "§T:VÈpè–cR§!"
- THE_SUW_kan_4_9_country_modifier: "ÆQYNSV"
+ THE_SUW_kan_2_8_1_country_modifier: "èlÆ‰‰^ó`"
+ THE_SUW_kan_2_8_2_country_modifier: "èlÆ‰‰^ó`"
+ THE_SUW_kan_2_8_3_country_modifier: "èlÆ‰‰^ó`"
+ THE_SUW_kan_2_9_1_country_modifier: "QeN^yf"
+ THE_SUW_kan_2_9_2_country_modifier: "QeN^yf"
+ THE_SUW_kan_2_9_3_country_modifier: "QeN^yf"
+ THE_SUW_kan_3_8_1_country_modifier: "ŒKN-NNS"
+ THE_SUW_kan_3_8_2_country_modifier: "ŒKN-NNS"
+ THE_SUW_kan_3_8_3_country_modifier: "ŒKN-NNS"
+ THE_SUW_kan_3_9_1_country_modifier: "XNÎ˜4xjm"
+ THE_SUW_kan_3_9_2_country_modifier: "XNÎ˜4xjm"
+ THE_SUW_kan_3_9_3_country_modifier: "XNÎ˜4xjm"
+ THE_SUW_kan_1_Borjigin_country_modifier: "Í‚yzKN­—"
+ THE_SUW_kan_2_Borjigin_country_modifier: "Í‚yzKN­—"
+ THE_SUW_kan_3_Borjigin_country_modifier: "Í‚yzKN­—"
+ THE_SUW_kan_4_9_1_country_modifier: "ÆQYNSV"
+ THE_SUW_kan_4_9_2_country_modifier: "ÆQYNSV"
+ THE_SUW_kan_4_9_3_country_modifier: "ÆQYNSV"
  THE_SUW_kan_5_9_country_modifier: "–Î˜Ø˜Ç"
 ### MODIFIER_END
 

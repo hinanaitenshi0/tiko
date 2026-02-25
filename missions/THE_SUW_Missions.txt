@@ -2792,6 +2792,9 @@ THE_SUW_stage_2_branch_suw_3 = {
 			change_adm = 1
 			change_dip = 1
 			change_mil = 1
+			hidden_effect = {
+				kill_ruler = yes
+			}
 			custom_tooltip = THE_SUW_suw_3_10_tt
 		}
 	}
@@ -3423,17 +3426,45 @@ THE_SUW_stage_2_branch_kan_1 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			calc_true_if = {
+				all_province = {
+					OR = {
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+					religion = ROOT 
+				}
+				amount = 100
+			}
+		} 
 
 		effect = {
-			custom_tooltip = empty_line_tt
-			add_great_project_tier = {
-				type = gyeongbok_palace
-				tier = 1
+			custom_tooltip = THE_SUW_kan_1_10_tt
+			custom_tooltip = THE_SUW_kan_mission_wars_tt
+			clr_country_flag = THE_SUW_kan_owarubatoru_flag
+			hidden_effect = {
+				every_country = {
+					limit = {
+						capital_scope = {
+							OR = {
+								continent = north_america
+								continent = south_america
+								continent = oceania
+							}
+						}
+						religion_group = pagan
+					}
+					ROOT = {
+						declare_war_with_cb = {
+							who = PREV
+							casus_belli = cb_world_crusade
+						}
+					}
+				}
 			}
-			custom_tooltip = empty_line_tt
-			custom_tooltip = THE_SUW_suw_1_9_tt
-			hidden_effect = { THE_SUW_change_name_scripted_effects = "yes" } 
+			
 		}
 	}
 }
@@ -3501,6 +3532,8 @@ THE_SUW_stage_2_branch_kan_2 = {
 						}
 					}
 				}
+				custom_tooltip = THE_SUW_kan_mission_wars_tt
+				clr_country_flag = THE_SUW_kan_owarubatoru_flag
 			}
 			else = {
 				custom_tooltip = THE_SUW_kan_2_7_not_exists_tt_no
@@ -3518,6 +3551,7 @@ THE_SUW_stage_2_branch_kan_2 = {
 							}
 						}
 					}
+					custom_tooltip = THE_SUW_kan_mission_wars_tt
 				}
 			}
 			if = {
@@ -3553,12 +3587,22 @@ THE_SUW_stage_2_branch_kan_2 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				continent = gensokyo_continent
+				religion = THE_moriyaseikyou_religion
+			}
+		} 
 
 		effect = {  
 			add_country_modifier = {
 				name = THE_SUW_kan_2_8_1_country_modifier
 				duration = -1
+			}
+			custom_tooltip = THE_SUW_kan_buff_up_tt
+			hidden_effect = {
+				THE_SUW_kan_buff_up_scripted_effects = yes
 			}
 		} 
 	}
@@ -3577,16 +3621,16 @@ THE_SUW_stage_2_branch_kan_2 = {
 						continent = south_america
 						continent = oceania
 					}
-					religion_group = christian
+					NOT = { religion_group = pagan }
 				}
 				amount = 100
 			}
 		} 
 
 		effect = {  
-			random_country = {
+			every_country = {
 				limit = {
-					colony = 2
+					is_colonial_nation = yes
 				}
 				ROOT = {
 					declare_war_with_cb = {
@@ -3598,6 +3642,12 @@ THE_SUW_stage_2_branch_kan_2 = {
 			add_country_modifier = {
 				name = THE_SUW_kan_2_9_1_country_modifier
 				duration = -1
+			}
+			custom_tooltip = THE_SUW_kan_mission_wars_tt
+			clr_country_flag = THE_SUW_kan_owarubatoru_flag
+			custom_tooltip = THE_SUW_kan_buff_up_tt
+			hidden_effect = {
+				THE_SUW_kan_buff_up_scripted_effects = yes
 			}
 		} 
 	}
@@ -3619,9 +3669,120 @@ THE_SUW_stage_2_branch_kan_3 = {
 		required_missions = { THE_SUW_3_6 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			OR = {
+				AND = {
+					any_country = {
+						is_emperor_of_china = yes
+						war_with = ROOT
+					}
+				}
+				AND = {
+					all_country = {
+						is_emperor_of_china = no
+					}
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			if = {
+				limit = { 
+					any_country = {
+						is_emperor_of_china = yes
+						war_with = ROOT
+					}
+				}
+				custom_tooltip = THE_SUW_kan_3_7_emperor_yes_tt_yes
+				set_country_flag = THE_SUW_kan_3_7_emperor_yes_flag
+			}
+			else = {
+				custom_tooltip = THE_SUW_kan_3_7_emperor_yes_tt_no
+			}
+			if = {
+				limit = { 
+					all_country = {
+						is_emperor_of_china = no
+					}
+				}
+				custom_tooltip = THE_SUW_kan_3_7_emperor_no_tt_yes
+				every_country = {
+					limit = {
+						any_owned_province = {
+							superregion = china_superregion
+						}
+					}
+					ROOT = {
+						declare_war_with_cb = {
+							who = PREV
+							casus_belli = cb_world_crusade
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						superregion = china_superregion
+					}
+					ROO = {
+						add_treasury = 50
+						add_manpower = 1
+					}
+				}
+				custom_tooltip = THE_SUW_kan_mission_wars_tt
+				clr_country_flag = THE_SUW_kan_owarubatoru_flag
+			}
+			else = {
+				custom_tooltip = THE_SUW_kan_3_7_emperor_no_tt_no
+				tooltip = {
+					every_country = {
+						limit = {
+							any_owned_province = {
+								superregion = china_superregion
+							}
+						}
+						ROOT = {
+							declare_war_with_cb = {
+								who = PREV
+								casus_belli = cb_world_crusade
+							}
+						}
+					}
+					every_owned_province = {
+						limit = {
+							superregion = china_superregion
+						}
+						ROO = {
+							add_treasury = 50
+							add_manpower = 1
+						}
+					}
+				}
+				custom_tooltip = THE_SUW_kan_mission_wars_tt
+			}
+			if = {
+				limit = { 
+					any_country = {
+						is_emperor_of_china = yes
+						tag = MNG
+					}
+					has_won_war_against = { max_years_since = 10 who = MNG }
+				}
+				custom_tooltip = THE_SUW_kan_3_7_emperor_yes_mng_tt_yes
+				add_prestige_or_monarch_power = { amount = 20 }
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+			}
+			else = {
+				custom_tooltip = THE_SUW_kan_3_7_emperor_yes_mng_tt_no
+				tooltip = {
+					add_prestige_or_monarch_power = { amount = 20 }
+					add_adm_power = 100
+					add_dip_power = 100
+					add_mil_power = 100
+				}
+			}
+		} 
 	}
 
 	THE_SUW_kan_3_8 = {
@@ -3630,12 +3791,21 @@ THE_SUW_stage_2_branch_kan_3 = {
 		required_missions = { THE_SUW_kan_3_7 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 100
+				superregion = china_superregion
+			}
+		} 
 
 		effect = {  
 			add_country_modifier = {
 				name = THE_SUW_kan_3_8_1_country_modifier
 				duration = -1
+			}
+			custom_tooltip = THE_SUW_kan_buff_up_tt
+			hidden_effect = {
+				THE_SUW_kan_buff_up_scripted_effects = yes
 			}
 		} 
 	}
@@ -3646,12 +3816,22 @@ THE_SUW_stage_2_branch_kan_3 = {
 		required_missions = { THE_SUW_kan_3_8 } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				superregion = east_indies_superregion
+				has_port = yes
+			}
+		} 
 
 		effect = {  
 			add_country_modifier = {
 				name = THE_SUW_kan_3_9_1_country_modifier
 				duration = -1
+			}
+			custom_tooltip = THE_SUW_kan_buff_up_tt
+			hidden_effect = {
+				THE_SUW_kan_buff_up_scripted_effects = yes
 			}
 		} 
 	}
@@ -3666,9 +3846,22 @@ THE_SUW_stage_2_branch_kan_3 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 500
+				religion = THE_moriyaseikyou_religion
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			hidden_effect = {
+				kill_ruler = yes
+			}
+			custom_tooltip = THE_SUW_kan_3_10_tt
+		} 
 	}
 }
 THE_SUW_stage_2_branch_kan_4 = {
@@ -3690,16 +3883,13 @@ THE_SUW_stage_2_branch_kan_4 = {
 
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 50
+				value = 20
 				region = mongolia_region
 			}
 		}
 
 		effect = {
-			add_country_modifier = {
-				name = "THE_SUW_kan_1_Borjigin_country_modifier"
-				duration = -1
-			}
+			
 		}
 	}
 
@@ -3728,6 +3918,10 @@ THE_SUW_stage_2_branch_kan_4 = {
 				duration = -1
 			}
 			set_country_flag = THE_SUW_kan_4_8_flag
+			custom_tooltip = THE_SUW_kan_buff_up_tt
+			hidden_effect = {
+				THE_SUW_kan_buff_up_scripted_effects = yes
+			}
 		}
 	}
 
@@ -3738,9 +3932,9 @@ THE_SUW_stage_2_branch_kan_4 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {  
-			all_province = {
-				region = tibet_region
-				is_core = SUW
+			tibet_region = {
+				is_core = ROOT
+				type = all
 			}
 		} 
 
@@ -3754,6 +3948,10 @@ THE_SUW_stage_2_branch_kan_4 = {
 			add_country_modifier = {
 				name = THE_SUW_kan_4_9_1_country_modifier
 				duration = -1
+			}
+			custom_tooltip = THE_SUW_kan_buff_up_tt
+			hidden_effect = {
+				THE_SUW_kan_buff_up_scripted_effects = yes
 			}
 		} 
 	}

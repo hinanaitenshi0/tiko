@@ -97,3 +97,6 @@ set_country_flag = THE_SUW_kan_5_9_flag
 every_province = {
 	discover_country = ROOT
 }
+2148 = {
+		create_revolt = 1
+}

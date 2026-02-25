@@ -573,10 +573,29 @@ THE_SUW_kan_sippai_scripted_effects = {
 			duration = -1
 		}
 		add_country_modifier = {
-			name = THE_SUW_kan_sinnkonotabi_country_modifier
+			name = THE_SUW_kan_sinnkonotabi_1_country_modifier
 			duration = -1
 		}
 
+}
+
+THE_SUW_kan_3_7_scripted_effects = {
+	if = {
+		limit = { 
+			FROM = {
+				has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+				has_country_flag = THE_SUW_kan_3_7_emperor_yes_flag
+			}
+			owner = {
+				is_emperor_of_china = yes
+			}
+		}
+		owner = {
+			random_owned_province = {
+				create_revolt = 1
+			}
+		}
+	}
 }
 
 THE_SUW_kan_5_6_scripted_effects = {
@@ -811,6 +830,459 @@ THE_SUW_kan_5_10_scripted_effects = {
 			}
 		}
 		
+	}
+}
+
+THE_SUW_kan_buff_up_scripted_effects = {
+	if = {
+		limit = { 
+			mission_completed = THE_SUW_kan_2_8
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_3_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_4_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_5_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_Borjigin_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_Borjigin_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_3_country_modifier duration = -1 }
+		}
+	}
+	if = {
+		limit = { 
+			mission_completed = THE_SUW_kan_2_9
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_3_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_4_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_5_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_Borjigin_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_Borjigin_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_3_country_modifier duration = -1 }
+		}
+	}
+	if = {
+		limit = { 
+			mission_completed = THE_SUW_kan_3_8
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_3_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_4_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_5_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_Borjigin_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_Borjigin_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_3_country_modifier duration = -1 }
+		}
+	}
+	if = {
+		limit = { 
+			mission_completed = THE_SUW_kan_3_9
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_3_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_4_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_5_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_Borjigin_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_Borjigin_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_3_country_modifier duration = -1 }
+		}
+	}
+	if = {
+		limit = { 
+			mission_completed = THE_SUW_kan_4_8
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_3_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_4_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_5_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_4_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_4_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_4_9_3_country_modifier duration = -1 }
+		}
+	}
+	if = {
+		limit = { 
+			mission_completed = THE_SUW_kan_4_9
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_3_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_4_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier }
+			remove_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_sinnkonotabi_5_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_8_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_8_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_8_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_1_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_1_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_2_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_3_9_2_country_modifier }
+			remove_country_modifier = THE_SUW_kan_3_9_2_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_9_3_country_modifier duration = -1 }
+		}
+		if = {
+			limit = { has_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_2_Borjigin_country_modifier duration = -1 }
+		}
+		else_if = {
+			limit = { has_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier }
+			remove_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier
+			add_country_modifier = { name = THE_SUW_kan_3_Borjigin_country_modifier duration = -1 }
+		}
 	}
 }
 

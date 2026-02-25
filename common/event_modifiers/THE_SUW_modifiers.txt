@@ -229,12 +229,35 @@ THE_SUW_kan_owaranaibatoru_country_modifier = {
 	tolerance_heretic = -817
 	tolerance_heathen = -817
 }
-#信仰之征
-THE_SUW_kan_sinnkonotabi_country_modifier = {
+#信仰之征1
+THE_SUW_kan_sinnkonotabi_1_country_modifier = {
 	discipline = 0.05
-	morale_damage = 0.1
 	land_forcelimit_modifier = 0.1
 	global_missionary_strength = 0.01
+}
+#信仰之征2
+THE_SUW_kan_sinnkonotabi_2_country_modifier = {
+	discipline = 0.1
+	land_forcelimit_modifier = 0.2
+	global_missionary_strength = 0.03
+}
+#信仰之征3
+THE_SUW_kan_sinnkonotabi_3_country_modifier = {
+	discipline = 0.2
+	land_forcelimit_modifier = 0.3
+	global_missionary_strength = 0.05
+}
+#信仰之征4
+THE_SUW_kan_sinnkonotabi_4_country_modifier = {
+	discipline = 0.3
+	land_forcelimit_modifier = 0.4
+	global_missionary_strength = 0.07
+}
+#信仰之征5
+THE_SUW_kan_sinnkonotabi_5_country_modifier = {
+	discipline = 0.5
+	land_forcelimit_modifier = 0.5
+	global_missionary_strength = 0.1
 }
 #天行健
 THE_SUW_defensiveness_nagano_country_modiffier = {
@@ -340,15 +363,21 @@ THE_SUW_kan_3_8_3_country_modifier = {
 }
 #乘风破浪1
 THE_SUW_kan_3_9_1_country_modifier = {
-
+	ship_durability = 0.2
+	movement_speed_onto_off_boat_modifier = 0.2
 }
 #乘风破浪2
 THE_SUW_kan_3_9_2_country_modifier = {
-
+	ship_durability = 0.5
+	movement_speed_onto_off_boat_modifier = 0.5
+	global_naval_engagement_modifier = 0.5
 }
 #乘风破浪3
 THE_SUW_kan_3_9_3_country_modifier = {
-
+	ship_durability = 1
+	movement_speed_onto_off_boat_modifier = 1
+	global_naval_engagement_modifier = 1
+	sea_repair = yes
 }
 #苍穹之鞭1
 THE_SUW_kan_1_Borjigin_country_modifier = {
