@@ -670,8 +670,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.17.a.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = 20
 		}
 		add_country_modifier = {
@@ -682,8 +682,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.17.b.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = -20
 		}
 		add_country_modifier = {
@@ -737,8 +737,8 @@ country_event = {
 		name = THE_SUW_events.19.a.name
 		THE_SUW_define_suwako_and_kanako_effect = yes
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = 20
 		}
 	}
@@ -746,8 +746,8 @@ country_event = {
 		name = THE_SUW_events.19.b.name
 		THE_SUW_define_kanako_and_suwako_effect = yes
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = -20
 		}
 	}
@@ -773,8 +773,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.20.a.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = 10
 		}
 		add_country_modifier = {
@@ -785,8 +785,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.20.b.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = -10
 		}
 		add_country_modifier = {
@@ -816,8 +816,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.21.a.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = 10
 		}
 		add_country_modifier = {
@@ -828,8 +828,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.21.b.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = -10
 		}
 		add_country_modifier = {
@@ -859,8 +859,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.22.a.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = 10
 		}
 		add_country_modifier = {
@@ -871,8 +871,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.22.b.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = -10
 		}
 		add_country_modifier = {
@@ -902,8 +902,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.23.a.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = 10
 		}
 		add_country_modifier = {
@@ -914,8 +914,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.23.b.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = -10
 		}
 		add_country_modifier = {
@@ -945,8 +945,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.24.a.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = 10
 		}
 		add_country_modifier = {
@@ -957,8 +957,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.24.b.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = -10
 		}
 		add_country_modifier = {
@@ -988,8 +988,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.25.a.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = 10
 		}
 		add_country_modifier = {
@@ -1000,8 +1000,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.25.b.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = -10
 		}
 		add_country_modifier = {
@@ -1031,8 +1031,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.26.a.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = 10
 		}
 		add_country_modifier = {
@@ -1043,8 +1043,8 @@ country_event = {
 	option = {
 		name = THE_SUW_events.26.b.name
 		add_government_power = {
-			mechanic_type = THE_SUW_mechanic
-			power_type = THE_SUW_mechanic_power
+			mechanic_type = THE_SUW_suw_and_kan_mechanic
+			power_type = THE_SUW_suw_and_kan_mechanic_power
 			value = -10
 		}
 		add_country_modifier = {

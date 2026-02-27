@@ -7,6 +7,8 @@ spriteTypes = {
 	#	loadType = "INGAME"
 	#	transparencecheck = yes
 	#}
+
+	#kan
 	spriteType = {
 		name = "government_reform_THE_SUW_kan_government_1_reform"
 		texturefile = "gfx/interface/THE_SUW_government_reform_icons/THE_SUW_kan_government_reform_1.dds"
@@ -32,5 +34,30 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 
+	#suw
+	spriteType = {
+		name = "government_reform_THE_SUW_suw_government_1_reform"
+		texturefile = "gfx/interface/THE_SUW_government_reform_icons/THE_SUW_suw_government_reform_1.dds"
+	}
+	spriteType = {
+		name = "THE_SUW_government_mechanics_suw_1"
+		texturefile = "gfx/interface/THE_SUW_government_mechanics/THE_SUW_government_mechanics_suw/THE_SUW_government_mechanics_suw_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "THE_SUW_government_mechanics_suw_2"
+		texturefile = "gfx/interface/THE_SUW_government_mechanics/THE_SUW_government_mechanics_suw/THE_SUW_government_mechanics_suw_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "THE_SUW_government_mechanics_suw_3"
+		texturefile = "gfx/interface/THE_SUW_government_mechanics/THE_SUW_government_mechanics_suw/THE_SUW_government_mechanics_suw_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
 	
 }

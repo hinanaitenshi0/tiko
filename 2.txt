@@ -1,19 +1,19 @@
 #add_government_reform = THE_SUW_SUW_and_KAN_reform
 #add_government_reform = THE_AKI_harvest_and_autumn_reform
 #add_government_power = {
-	mechanic_type = THE_SUW_mechanic
-	power_type = THE_SUW_mechanic_power
+	mechanic_type = THE_SUW_suw_and_kan_mechanic
+	power_type = THE_SUW_suw_and_kan_mechanic_power
 	#value = -50.5
 #}
-clr_country_flag = THE_SUW_1_3_theologian_flag
-clr_country_flag = THE_SUW_1_3_recruitmaster_flag
-clr_country_flag = THE_SUW_1_3_inquisitor_flag
-clr_country_flag = THE_SUW_1_3_fortification_expert_flag
-clr_country_flag = THE_SUW_1_3_commandant_flag
-clr_country_flag = THE_SUW_1_3_philosopher_flag
-clr_country_flag = THE_SUW_1_3_trader_flag
-clr_country_flag = THE_SUW_1_3_diplomat_flag
-clr_country_flag = THE_SUW_1_3_statesman_flag
+set_country_flag = THE_SUW_1_3_theologian_flag
+set_country_flag = THE_SUW_1_3_recruitmaster_flag
+set_country_flag = THE_SUW_1_3_inquisitor_flag
+set_country_flag = THE_SUW_1_3_fortification_expert_flag
+set_country_flag = THE_SUW_1_3_commandant_flag
+set_country_flag = THE_SUW_1_3_philosopher_flag
+set_country_flag = THE_SUW_1_3_trader_flag
+set_country_flag = THE_SUW_1_3_diplomat_flag
+set_country_flag = THE_SUW_1_3_statesman_flag
 change_government_reform_progress = 100
 random_country = {
 	limit = {
@@ -51,12 +51,12 @@ add_government_power = {
     amount = 100
 }
 add_government_power = {
-    government_mechanic = THE_SUW_kan_land_of_the_christian_sun_mechanic
+    government_mechanic = THE_SUW_kan_mechanic
     which = ADM
     amount = 100
 }
-clr_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
-set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
+clr_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
+set_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
 set_country_flag = THE_SUW_suw_4_4_flag
 set_country_flag = THE_SUW_kan_1_7_flag
 clr_country_flag = THE_SUW_maikozeikinn_flag
@@ -65,7 +65,7 @@ change_religion = THE_moriyaseikyou_religion
 	change_religion = THE_moriyaseikyou_religion
 }
 change_government = theocracy
-add_government_reform = THE_SUW_kan_reform
+add_government_reform = THE_SUW_suw_reform
 swap_non_generic_missions = yes
 #kill_ruler = yes
 every_country = {
@@ -88,9 +88,9 @@ every_province = {
 	change_religion = THE_moriyaseikyou_religion
 }
 add_government_power = {
-						government_mechanic = THE_SUW_kan_land_of_the_christian_sun_mechanic
-						which = ADM
-						amount = 10
+						government_mechanic = THE_SUW_suw_mechanic
+						which = THE_SUW_suw_mechanic_power
+						amount = 100
 					}
 					override_country_name = "kana"
 set_country_flag = THE_SUW_kan_5_9_flag

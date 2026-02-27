@@ -362,6 +362,7 @@
  THE_SUW_suw_4_9_native_policy_trade_modifier: "KSbNbýw"
  THE_SUW_suw_5_10_1_country_modiffier: ".O­d°eNLu"
  THE_SUW_suw_5_10_2_country_modiffier: "^yf„vübþV"
+ THE_SUW_suw_mechanic_3_country_modifier: "ò•öe:NœQ"
  THE_SUW_kan_owaranaibatoru_country_modifier: "àeKS„v1Wb"
  THE_SUW_kan_sinnkonotabi_1_country_modifier: "áOðNKNV"
  THE_SUW_kan_sinnkonotabi_2_country_modifier: "áOðNKNV"
@@ -608,7 +609,7 @@
 ### GOVERNMENT
  THE_SUW_SUW_and_KAN_reform: "ù‹¿‹Nyÿ^yHYmy"
  THE_SUW_SUW_and_KAN_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
- THE_SUW_mechanic_power_desc: "\n(WgS<P§Y-100§!öeÿ^yHYPRSÑSZÿåb	gåNNHeœg:\n­‹Ãu¦^: §G+10.0%§!\nôVÎWýw›R: §G+20.0%§!\nûy¨R¦^: §G+10.0%§!\n\n(Wg'Y<P§Y100§!öeÿù‹¿‹PRS>fupÿåb	gåNNHeœg:\n3zšR¦^±‚9îOck: §G-30.0%§!\n9e„UsQû|: §G+20.0%§!\nÑSUSb,gîOck: §G-10.0%§!"
+ THE_SUW_suw_and_kan_mechanic_power_desc: "\n(WgS<P§Y-100§!öeÿ^yHYPRSÑSZÿåb	gåNNHeœg:\n­‹Ãu¦^: §G+10.0%§!\nôVÎWýw›R: §G+20.0%§!\nûy¨R¦^: §G+10.0%§!\n\n(Wg'Y<P§Y100§!öeÿù‹¿‹PRS>fupÿåb	gåNNHeœg:\n3zšR¦^±‚9îOck: §G-30.0%§!\n9e„UsQû|: §G+20.0%§!\nÑSUSb,gîOck: §G-10.0%§!"
  THE_SUW_suw: "dWŽNšS·V‹ir"
  THE_SUW_kan: "ŒNåNRePNo`"
  THE_SUW_suw_MECHANIC_TOOLTIP: "ù‹¿‹PR"
@@ -619,12 +620,16 @@
  THE_SUW_suw_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
  THE_SUW_kan_reform: "^yHYmyŒN"
  THE_SUW_kan_reform_desc: "Ù=fN*N?eœ^9ei—Ïcð"
- ability_THE_SUW_mechanic: "§T0Ws^)Yb§!"
- ability_THE_SUW_mechanic_desc: ""
- ability_THE_SUW_suw_land_of_the_christian_sun_mechanic: "§T0WKNo`§!"
- ability_THE_SUW_suw_land_of_the_christian_sun_mechanic_desc: ""
- ability_THE_SUW_kan_land_of_the_christian_sun_mechanic: "§T)YKN`§!"
- ability_THE_SUW_kan_land_of_the_christian_sun_mechanic_desc: ""
+ ability_THE_SUW_suw_and_kan_mechanic: "§T0Ws^)Yb§!"
+ ability_THE_SUW_suw_and_kan_mechanic_desc: ""
+ ability_THE_SUW_suw_mechanic: "§T0WKNo`§!"
+ ability_THE_SUW_suw_mechanic_desc: ""
+ THE_SUW_suw_mechanic_power: "0WKNo`"
+ THE_SUW_suw_mechanic_1: "0W¾‹"
+ THE_SUW_suw_mechanic_2: "0WCQ"
+ THE_SUW_suw_mechanic_3: "0W¨R"
+ ability_THE_SUW_kan_mechanic: "§T)YKN`§!"
+ ability_THE_SUW_kan_mechanic_desc: ""
  THE_SUW_kan_mechanic_interactions_1:0 "8OúQ`O„vÌSKb!"
  THE_SUW_kan_mechanic_interactions_1_desc:0 "ú^¾‹`O„v¶RíV!"
  THE_SUW_kan_mechanic_interactions_2:0 "¬bw`O„v4Y…˜!"

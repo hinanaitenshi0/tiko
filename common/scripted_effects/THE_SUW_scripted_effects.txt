@@ -655,21 +655,21 @@ THE_SUW_on_province_religion_converted_estate_privileges_scripted_effect = {
 			random_list = {
 				1 = {
 					add_government_power = {
-						government_mechanic = THE_SUW_kan_land_of_the_christian_sun_mechanic
+						government_mechanic = THE_SUW_kan_mechanic
 						which = THE_SUW_kan_mechanic_1
 						amount = 10
 					}
 				}
 				1 = {
 					add_government_power = {
-						government_mechanic = THE_SUW_kan_land_of_the_christian_sun_mechanic
+						government_mechanic = THE_SUW_kan_mechanic
 						which = THE_SUW_kan_mechanic_2
 						amount = 10
 					}
 				}
 				1 = {
 					add_government_power = {
-						government_mechanic = THE_SUW_kan_land_of_the_christian_sun_mechanic
+						government_mechanic = THE_SUW_kan_mechanic
 						which = THE_SUW_kan_mechanic_3
 						amount = 10
 					}

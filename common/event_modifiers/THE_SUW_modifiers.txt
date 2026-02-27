@@ -220,6 +220,11 @@ THE_SUW_suw_5_10_1_country_modiffier = {
 THE_SUW_suw_5_10_2_country_modiffier = {
 	reduced_liberty_desire = 33
 }
+#闲时为农
+THE_SUW_suw_mechanic_3_country_modifier = {
+	may_return_manpower_on_disband = yes
+}
+
 #无尽的圣战
 THE_SUW_kan_owaranaibatoru_country_modifier = {
 	overextension_impact_modifier = -1

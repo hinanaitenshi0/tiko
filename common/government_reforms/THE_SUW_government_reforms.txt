@@ -51,14 +51,14 @@ THE_SUW_SUW_and_KAN_reform = {
 		#cb_on_religious_enemies = yes
 	}
 	government_abilities = {
-		THE_SUW_mechanic
+		THE_SUW_suw_and_kan_mechanic
 	}
 }
 
 #诹访祀坤
 THE_SUW_suw_reform = {
 	lock_level_when_selected = yes
-	icon = "THE_AKI_government_reform_1"
+	icon = "THE_SUW_suw_government_1_reform"
 	potential = {
 		OR = {
 			ai = no
@@ -109,7 +109,7 @@ THE_SUW_suw_reform = {
 		#cb_on_religious_enemies = yes
 	}
 	government_abilities = {
-		THE_SUW_suw_land_of_the_christian_sun_mechanic
+		THE_SUW_suw_mechanic
 	}
 }
 
@@ -167,7 +167,7 @@ THE_SUW_kan_reform = {
 		cb_on_religious_enemies = yes
 	}
 	government_abilities = {
-		THE_SUW_kan_land_of_the_christian_sun_mechanic
+		THE_SUW_kan_mechanic
 	}
 }
 
