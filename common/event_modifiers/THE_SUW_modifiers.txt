@@ -234,6 +234,10 @@ THE_SUW_kan_owaranaibatoru_country_modifier = {
 	tolerance_heretic = -817
 	tolerance_heathen = -817
 }
+#天苍苍，野茫茫，风吹草低见牛羊
+THE_SUW_kan_4_7_province_modifier = {
+	local_friendly_movement_speed = 1
+}
 #信仰之征1
 THE_SUW_kan_sinnkonotabi_1_country_modifier = {
 	discipline = 0.05
@@ -398,18 +402,18 @@ THE_SUW_kan_3_8_3_country_modifier = {
 }
 #乘风破浪1
 THE_SUW_kan_3_9_1_country_modifier = {
-	ship_durability = 0.2
+	ship_durability = 0.1
 	movement_speed_onto_off_boat_modifier = 0.2
 }
 #乘风破浪2
 THE_SUW_kan_3_9_2_country_modifier = {
-	ship_durability = 0.5
+	ship_durability = 0.2
 	movement_speed_onto_off_boat_modifier = 0.5
 	global_naval_engagement_modifier = 0.5
 }
 #乘风破浪3
 THE_SUW_kan_3_9_3_country_modifier = {
-	ship_durability = 1
+	ship_durability = 0.3
 	movement_speed_onto_off_boat_modifier = 1
 	global_naval_engagement_modifier = 1
 	sea_repair = yes
@@ -525,18 +529,18 @@ THE_SUW_kan_3_8_sippai_3_country_modifier = {
 }
 #惊涛骇浪1
 THE_SUW_kan_3_9_sippai_1_country_modifier = {
-	ship_durability = -0.2
+	ship_durability = -0.1
 	movement_speed_onto_off_boat_modifier = -0.2
 }
 #惊涛骇浪2
 THE_SUW_kan_3_9_sippai_2_country_modifier = {
-	ship_durability = -0.5
+	ship_durability = -0.2
 	movement_speed_onto_off_boat_modifier = -0.5
 	global_naval_engagement_modifier = -0.5
 }
 #惊涛骇浪3
 THE_SUW_kan_3_9_sippai_3_country_modifier = {
-	ship_durability = -1
+	ship_durability = -0.3
 	movement_speed_onto_off_boat_modifier = -1
 	global_naval_engagement_modifier = -1
 	#sea_repair = yes

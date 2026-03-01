@@ -67,6 +67,7 @@ change_religion = THE_moriyaseikyou_religion
 change_government = theocracy
 add_government_reform = THE_SUW_suw_reform
 swap_non_generic_missions = yes
+swap_free_idea_group = yes
 #kill_ruler = yes
 every_country = {
 				limit = {
@@ -85,7 +86,16 @@ every_country = {
 	change_religion = THE_moriyaseikyou_religion
 }
 every_province = {
+	limit = {
+		region = mongolia_region
+	}
 	change_religion = THE_moriyaseikyou_religion
+}
+every_province = {
+	limit = {
+		superregion = china_superregion
+	}
+	change_religion = th_moriyashinto
 }
 add_government_power = {
 						government_mechanic = THE_SUW_suw_mechanic
@@ -128,3 +138,5 @@ every_province = {
 				name = THE_SUW_kan_4_9_sippai_3_country_modifier
 				duration = -1
 			}
+set_country_flag = THE_SUW_kan_owaranaibatoru_flag
+set_country_flag = THE_SUW_2_5_flag

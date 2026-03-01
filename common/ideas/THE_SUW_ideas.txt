@@ -5,7 +5,8 @@ THE_SUW_Original_ideas = {
 	}
 
 	bonus = {
-		warscore_cost_vs_other_religion = -0.20
+		#warscore_cost_vs_other_religion = -0.20
+		enforce_religion_cost = -0.5
 	}
 
 	trigger = {
@@ -18,8 +19,8 @@ THE_SUW_Original_ideas = {
 	free = yes
 	
 	THE_SUW_idea_1 = {
-		technology_cost = -0.075
-		idea_cost = -0.075
+		technology_cost = -0.05
+		idea_cost = -0.05
 	}
 
 	THE_SUW_idea_2 = {
@@ -28,10 +29,11 @@ THE_SUW_Original_ideas = {
 	}
 	
 	THE_SUW_idea_3 = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1
-		diplomatic_upkeep = 1
+		#tolerance_heretic = 1
+		#tolerance_heathen = 1
+		#diplomatic_upkeep = 1
 		max_absolutism = 10
+		max_absolutism_effect = 0.2
 	}
 	
 	THE_SUW_idea_4 = {
@@ -40,14 +42,13 @@ THE_SUW_Original_ideas = {
 	}
 	
 	THE_SUW_idea_5 = {
-		global_trade_goods_size_modifier = 0.1
-		diplomatic_annexation_cost = -0.15
-		land_maintenance_modifier = -0.1
+		production_efficiency = 0.15
+		trade_efficiency = 0.15
 	}
 	
 	THE_SUW_idea_6 = {
 		army_tradition_decay = -0.01
-		military_tactics = 0.1
+		military_tactics = 0.2
 	}
 	
 	THE_SUW_idea_7 = {
@@ -63,7 +64,8 @@ THE_SUW_suw_ideas = {
 	}
 
 	bonus = {
-		warscore_cost_vs_other_religion = -0.20
+		#warscore_cost_vs_other_religion = -0.20
+		enforce_religion_cost = -0.5
 	}
 
 	trigger = {
@@ -85,10 +87,11 @@ THE_SUW_suw_ideas = {
 	}
 	
 	THE_SUW_idea_3 = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1
-		diplomatic_upkeep = 1
+		#tolerance_heretic = 1
+		#tolerance_heathen = 1
+		#diplomatic_upkeep = 1
 		max_absolutism = 10
+		max_absolutism_effect = 0.2
 	}
 	
 	THE_SUW_idea_4 = {
@@ -96,15 +99,14 @@ THE_SUW_suw_ideas = {
 		all_estate_loyalty_equilibrium = 0.1
 	}
 	
-	THE_SUW_idea_5 = {
-		global_trade_goods_size_modifier = 0.15
-		diplomatic_annexation_cost = -0.20
-		land_maintenance_modifier = -0.15
+	THE_SUW_suw_idea_5 = {
+		production_efficiency = 0.3
+		trade_efficiency = 0.2
 	}
 	
 	THE_SUW_suw_idea_6 = {
-		global_trade_power = 0.33
-		transfer_trade_power_reasons = 100
+		build_time = -0.33
+		transfer_trade_power_reasons = 200
 	}
 	
 	THE_SUW_idea_7 = {
@@ -120,7 +122,8 @@ THE_SUW_kan_ideas = {
 	}
 
 	bonus = {
-		warscore_cost_vs_other_religion = -0.20
+		#warscore_cost_vs_other_religion = -0.20
+		enforce_religion_cost = -0.5
 	}
 
 	trigger = {
@@ -142,10 +145,11 @@ THE_SUW_kan_ideas = {
 	}
 	
 	THE_SUW_idea_3 = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1
-		diplomatic_upkeep = 1
+		#tolerance_heretic = 1
+		#tolerance_heathen = 1
+		#diplomatic_upkeep = 1
 		max_absolutism = 10
+		max_absolutism_effect = 0.2
 	}
 	
 	THE_SUW_idea_4 = {
@@ -154,14 +158,15 @@ THE_SUW_kan_ideas = {
 	}
 	
 	THE_SUW_kan_idea_5 = {
-		core_creation = -0.2
-		yearly_army_professionalism = 0.01
-		discipline = 0.05
+		#core_creation = -0.2
+		yearly_army_professionalism = 0.02
+		harsh_treatment_cost = -0.33
+		#discipline = 0.05
 	}
 	
-	THE_SUW_idea_6 = {
+	THE_SUW_kan_idea_6 = {
 		army_tradition_decay = -0.015
-		military_tactics = 0.15
+		military_tactics = 0.3
 	}
 	
 	THE_SUW_idea_7 = {
@@ -177,7 +182,8 @@ THE_SUW_suw_finally_ideas = {
 	}
 
 	bonus = {
-		warscore_cost_vs_other_religion = -0.20
+		#warscore_cost_vs_other_religion = -0.20
+		enforce_religion_cost = -0.5
 	}
 
 	trigger = {
@@ -199,10 +205,11 @@ THE_SUW_suw_finally_ideas = {
 	}
 	
 	THE_SUW_idea_3 = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1
-		diplomatic_upkeep = 1
+		#tolerance_heretic = 1
+		#tolerance_heathen = 1
+		#diplomatic_upkeep = 1
 		max_absolutism = 10
+		max_absolutism_effect = 0.2
 	}
 	
 	THE_SUW_idea_4 = {
@@ -210,15 +217,14 @@ THE_SUW_suw_finally_ideas = {
 		all_estate_loyalty_equilibrium = 0.1
 	}
 	
-	THE_SUW_idea_5 = {
-		global_trade_goods_size_modifier = 0.15
-		diplomatic_annexation_cost = -0.20
-		land_maintenance_modifier = -0.15
+	THE_SUW_suw_idea_5 = {
+		production_efficiency = 0.3
+		trade_efficiency = 0.2
 	}
 	
 	THE_SUW_suw_idea_6 = {
-		global_trade_power = 0.33
-		transfer_trade_power_reasons = 100
+		build_time = -0.33
+		transfer_trade_power_reasons = 200
 	}
 	
 	THE_SUW_idea_7 = {
@@ -235,7 +241,8 @@ THE_SUW_kan_finally_ideas = {
 	}
 
 	bonus = {
-		warscore_cost_vs_other_religion = -0.20
+		#warscore_cost_vs_other_religion = -0.20
+		enforce_religion_cost = -0.5
 	}
 
 	trigger = {
@@ -257,10 +264,11 @@ THE_SUW_kan_finally_ideas = {
 	}
 	
 	THE_SUW_idea_3 = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1
-		diplomatic_upkeep = 1
+		#tolerance_heretic = 1
+		#tolerance_heathen = 1
+		#diplomatic_upkeep = 1
 		max_absolutism = 10
+		max_absolutism_effect = 0.2
 	}
 	
 	THE_SUW_idea_4 = {
@@ -269,14 +277,15 @@ THE_SUW_kan_finally_ideas = {
 	}
 	
 	THE_SUW_kan_idea_5 = {
-		core_creation = -0.2
-		yearly_army_professionalism = 0.01
-		discipline = 0.05
+		#core_creation = -0.2
+		yearly_army_professionalism = 0.02
+		harsh_treatment_cost = -0.33
+		#discipline = 0.05
 	}
 	
-	THE_SUW_idea_6 = {
+	THE_SUW_kan_idea_6 = {
 		army_tradition_decay = -0.015
-		military_tactics = 0.15
+		military_tactics = 0.3
 	}
 	
 	THE_SUW_idea_7 = {

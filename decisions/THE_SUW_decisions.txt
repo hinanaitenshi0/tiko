@@ -20,9 +20,7 @@ country_decisions = {
 			factor = 0
 		}
 	}
-}
 
-country_decisions = {
 	#准备好后宣战
 	THE_SUW_Everything_is_ready_except_for_the_divine_wind_decision = {
 		color = { 166  70  211 }
@@ -53,7 +51,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
-}
 
 # country_decisions = {
 # 	#添加诹访湖修正
@@ -83,8 +80,6 @@ country_decisions = {
 # 	}
 # }
 
-
-country_decisions = {
 	#强化诹访大社决议
 	THE_SUW_Strengthening_Suwa_Daisha_one_decision = {
 		color = { 166  70  211 }
@@ -168,9 +163,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-}
 
-country_decisions = {
 	#迷子税
 	THE_SUW_maikozeikinn_decision = {
 		color = { 166  70  211 }
@@ -181,59 +174,60 @@ country_decisions = {
 		allow = {
 			custom_trigger_tooltip = {
 				tooltip = THE_SUW_maikozeikinn_decision_tt
-				THE_cd_type_decision_scripted_trigger = {
-					OR = {
-						NOT = { has_country_flag = THE_SUW_maikozeikinn_flag }
-						had_country_flag = {
-							flag = THE_SUW_maikozeikinn_flag
-							days = 3650
-						}
+				OR = {
+					NOT = { has_country_flag = THE_SUW_maikozeikinn_flag }
+					had_country_flag = {
+						flag = THE_SUW_maikozeikinn_flag
+						days = 3650
 					}
 				}
 			}
 		}
 		effect = {
-			every_province = {
-				if = {
-					limit = {
-						religion = th_moriyashinto
-						NOT = { owned_by = ROOT}
-					}
+			custom_tooltip = THE_SUW_maikozeikinn_decision_tt
+			hidden_effect = {
+				every_province = {
 					if = {
-						limit = {								
-							NOT = { development = 10 }
+						limit = {
+							religion = th_moriyashinto
+							NOT = { owned_by = ROOT}
 						}
-						ROOT = {
-							add_treasury = 10
+						if = {
+							limit = {								
+								NOT = { development = 10 }
+							}
+							ROOT = {
+								add_treasury = 10
+							}
+						}
+						else_if = {
+							limit = { 
+								NOT = { development = 30 }
+							}
+							ROOT = {
+								add_treasury = 20
+							}
+						}
+						else = {
+							ROOT = {
+								add_treasury = 30
+							}
 						}
 					}
 					else_if = {
-						limit = { 
-							NOT = { development = 30 }
+						limit = {
+							religion = THE_moriyaseikyou_religion
+							NOT = { owned_by = ROOT}
 						}
 						ROOT = {
-							add_treasury = 20
-						}
+							random_list = {
+								1 = { add_adm_power = 1 }
+								1 = { add_dip_power = 1 }	
+								1 = { add_mil_power = 1 }	
+							}
+						}			
+						
 					}
-					else = {
-						ROOT = {
-							add_treasury = 30
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						religion = THE_moriyaseikyou_religion
-						NOT = { owned_by = ROOT}
-					}
-					ROOT = {
-						random_list = {
-							1 = { add_adm_power = 1 }
-							1 = { add_dip_power = 1 }	
-							1 = { add_mil_power = 1 }	
-						}
-					}			
-					
 				}
 			}
 			clr_country_flag = THE_SUW_maikozeikinn_flag
@@ -244,18 +238,16 @@ country_decisions = {
 			factor = 1
 		}
 	}
-}
 
-country_decisions = {
 	#接着奏乐接着舞
 	THE_SUW_odoru_decision = {
-		#color = { 166  70  211 }
+		color = { 166  70  211 }
 		potential = {	
 			tag = SUW
 			has_country_flag = THE_SUW_suw_4_4_flag
-			#NOT = {
-			#	has_country_flag = THE_SUW_suw_4_5_flag
-			#}
+			NOT = {
+				has_country_flag = THE_SUW_suw_4_5_flag
+			}
 		}
 		allow = {
 			all_country = {
@@ -266,81 +258,86 @@ country_decisions = {
 			}
 		}
 		effect = {
-			every_country = {
-				limit = { 
-					capital_scope = {
-						region = manchuria_region
-					}
-				}
+			custom_tooltip = THE_SUW_odoru_decision_tt
+			hidden_effect = {
 				every_country = {
 					limit = { 
 						capital_scope = {
 							region = manchuria_region
 						}
 					}
-					declare_war_with_cb = {
-						who = PREV
-						casus_belli = cb_annex
+					every_country = {
+						limit = { 
+							capital_scope = {
+								region = manchuria_region
+							}
+						}
+						declare_war_with_cb = {
+							who = PREV
+							casus_belli = cb_annex
+						}
 					}
+					add_treasury = 200
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { infantry = PREV } }
+					capital_scope = { ROOT = { cavalry = PREV } }
+					capital_scope = { ROOT = { cavalry = PREV } }
 				}
-				add_treasury = 200
-				capital_scope = { ROOT = { infantry = PREV } }
-				capital_scope = { ROOT = { infantry = PREV } }
-				capital_scope = { ROOT = { infantry = PREV } }
-				capital_scope = { ROOT = { infantry = PREV } }
-				capital_scope = { ROOT = { infantry = PREV } }
-				capital_scope = { ROOT = { infantry = PREV } }
-				capital_scope = { ROOT = { infantry = PREV } }
-				capital_scope = { ROOT = { infantry = PREV } }
-				capital_scope = { ROOT = { cavalry = PREV } }
-				capital_scope = { ROOT = { cavalry = PREV } }
+				every_country = {
+					limit = { 
+						capital_scope = {
+							region = manchuria_region
+						}
+						guaranteed_by = ROOT
+					}
+					remove_fow = 120
+				}
 			}
+			
 			ROOT = {
 				add_years_of_income = -1
 				add_yearly_manpower = -1
 			}
-			every_country = {
-				limit = { 
-					capital_scope = {
-						region = manchuria_region
-					}
-					guaranteed_by = ROOT
-				}
-				remove_fow = 120
-			}
-			
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-}
 
-country_decisions = {
 	#改朝鲜地名
 	THE_SUW_kor_new_name_decision = {
 		color = { 166  70  211 }
 		potential = {	
-			#tag = SUW
-			#mission_completed = THE_SUW_2_5
+			tag = SUW
+			hidden_trigger = {
+				has_country_flag = THE_SUW_2_5_flag
+			}
 		}
 		allow = {
-			#tag = SUW
-			#mission_completed = THE_SUW_2_5
+			tag = SUW
+			hidden_trigger = {
+				has_country_flag = THE_SUW_2_5_flag
+			}
 		}
 		effect = {
 			custom_tooltip = THE_SUW_kor_new_name_decision_tt
 			hidden_effect = { THE_SUW_change_name_scripted_effects = yes } 
+			clr_country_flag = THE_SUW_2_5_flag
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-}
 
-country_decisions = {
+	#阶层决议
 	THE_SUW_estate_burghers_action = {
 		color = { 195 160 20 }
 		potential = {
@@ -381,53 +378,21 @@ country_decisions = {
 			factor = 0
 		}
 	}
-}
 
-country_decisions = {
 	#无尽的圣战
 	THE_SUW_kan_owaranaibatoru_decision = {
 		color = { 67  255  71 }
 		potential = {	
 			tag = SUW
-			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
-		}
-		allow = {
-			tag = SUW
-			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
-		}
-		effect = {
-			custom_tooltip = THE_SUW_kan_owaranaibatoru_decision_tt
-			every_country = {
-				limit = {
-					is_neighbor_of = ROOT
-					NOT = { is_subject_of = ROOT }
-				}
-				ROOT = {
-					declare_war_with_cb = {
-						who = PREV
-						casus_belli = cb_world_crusade
-					}
-				}
+			hidden_trigger = {
+				has_country_flag = THE_SUW_kan_owaranaibatoru_flag
 			}
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-}
-
-country_decisions = {
-	#无尽的圣战
-	THE_SUW_kan_owaranaibatoru_decision = {
-		color = { 67  255  71 }
-		potential = {	
-			tag = SUW
-			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
-		}
 		allow = {
 			tag = SUW
-			has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+			hidden_trigger = {
+				has_country_flag = THE_SUW_kan_owaranaibatoru_flag
+			}
 		}
 		effect = {
 			custom_tooltip = THE_SUW_kan_owaranaibatoru_decision_tt

@@ -139,6 +139,7 @@
 # enable_estate_action_THE_SUW_estate_burgher_action: "=T(u6–BS³Q®‹: §YˆNÖS§!: §Y8x^X±”±r§!"
  THE_SUW_estate_burgher_action_tt: "=T(u6–BS³Q®‹: §YˆNÖS§!: §Y8x^X±”±r§!"
 # THE_SUW_1_3_tt: "&TR\n·ƒ—V§G100§!Zg\nNb	g¢núQ„vZgSlSb	N‰|§YTIN¹ppe§!"
+ THE_SUW_suw_1_6_ttt: "§Y[SUW.GetName]§!ã‰•†N§Y8ftõVÄu§!„v§YwmYFUºN§!tõV"
  THE_SUW_suw_1_7_tt: "°s(WVËYïSåNÎNYýV„vˆRâwckYe>y:S-N·ƒÖS6eÊv"
  #THE_SUW_kan_1_7_tt: "AQ¸‹Çb‰Nag¦u§Y(ckMO)§!O§YVYe§!ýV¶RˆvO"
  THE_SUW_suw_1_8_tt: "ŒRb—RYe9ei—TÿS·ƒ—V§Gù‹¿‹PRN^S§!Y²NáOag"
@@ -244,10 +245,12 @@
  THE_SUW_kan_3_7_emperor_yes_mng_tt_yes: "£yes£‚Yœg§T-NýV‡v^§!XR(WN:N'YfÿR:"
  THE_SUW_kan_3_7_emperor_yes_mng_tt_no: "£no£‚Yœg§T-NýV‡v^§!XR(WN:N'YfÿR:"
  THE_SUW_kan_3_10_tt: "§T^yHYPR§!SNQ§Ygb?e§!"
+ THE_SUW_kan_4_7_tt: "Nb	gåb	g„v§T™„äS0W:S§!wýN·ƒ—V§TSV0WËS›Qûy¨R¦^§!§G+100%§!„vwýNîOckÿNb	gåb	g„vFUÁT:N§Trrju§!„v§T™„äS0W:S§!wýN·ƒ—V§G1§!¹puµN"
  THE_SUW_kan_4_8_tt: "dkT§T`S†˜wýN§!TSôv¥c·ƒ—V§Tå‹wýN§!"
  THE_SUW_kan_4_9_tt: "·ƒ—V§ThQNLu§!„v§TÆ‰Î‘§!"
  THE_SUW_kan_5_6_tt: "dkTNb	g§YVg§!Neg„v§T¸u.V§!wýNÿlØSFUÁT:N§T^yŒr§!"
 # THE_SUW_kan_5_7_ttt: "wýNMOŽN§T^yHY§!ƒX…Q"
+ THE_SUW_kan_5_7_ttt: "§Y[SUW.GetName]§!ã‰•†N§Yi—°etõVÄu§!„v§YÑyfRi—‹T§!tõV"
  THE_SUW_kan_5_7_tt: "dkTNb	g§T`no§!S(Wøv”^t^ýN˜YúQ°s(W§TáOSm§!"
  THE_SUW_kan_5_9_tt_yes: "£yes£‚YœgSVMR1u§TkQBW ^yHYPR§!gb?eÿRûm R°e§GY²N§!áOag§TäNLˆybk§!"
  THE_SUW_kan_5_9_tt_no: "£no£‚YœgSVMR1u§TkQBW ^yHYPR§!gb?eÿRûm R°e§GY²N§!áOag§TäNLˆybk§!"
@@ -281,6 +284,8 @@
  THE_SUW_idea_4: "áOðN‘NÆ–"
  THE_SUW_idea_5: "qTÿ"
  THE_SUW_idea_6: "qSaWNVn4l"
+ THE_SUW_suw_idea_5: "qTÿ"
+ THE_SUW_kan_idea_6: "qSaWNVn4l"
  #"8lÜ„vcËS"
  THE_SUW_idea_7: "???"
  THE_SUW_suw_ideas: "dW‚tõV"
@@ -367,6 +372,7 @@
  THE_SUW_suw_5_10_2_country_modiffier: "^yf„vübþV"
  THE_SUW_suw_mechanic_3_country_modifier: "ò•öe:NœQ"
  THE_SUW_kan_owaranaibatoru_country_modifier: "àeKS„v1Wb"
+ THE_SUW_kan_4_7_province_modifier: ")YÍ‚Í‚ÿÎ‘+ƒ+ƒÿÎ˜9TIƒNOÁ‰irŠ"
  THE_SUW_kan_sinnkonotabi_1_country_modifier: "áOðNKNV"
  THE_SUW_kan_sinnkonotabi_2_country_modifier: "áOðNKNV"
  THE_SUW_kan_sinnkonotabi_3_country_modifier: "áOðNKNV"
@@ -563,10 +569,22 @@
  THE_SUW_events.41.title: "àeKS„v1Wb"
  THE_SUW_events.41.desc: "1"
  THE_SUW_events.41.name: "^yô‹ÿ=föeP†N"
- THE_SUW_events.41_tt: "§TVËYÛLˆ1WbÿdkTSåN§Y.OYe§!ãNÿf§Y8hÃVS§!ŸRýwÿwýN§Y.OYe§!ŒRbsS§Y8hÃVS§!ŒRb0\nSùRNb	g§Y»ýV§!ÑS¨R§Y'Y1Wb§!ÿîvMRÿŒRbSVMRNb	gb‰NT§YŒTs^§!gYcíu§G1§!t^ÿ§G1§!t^gô•ïSÇ³Q®‹çuíuùRNb	g§Y»ýV§!(d–†NbìN„vD–^SýV)ÑS¨R§Y'Y1Wb§!0\n‚Yœg…Ç§G1§!t^*gÑS¨R§Y'Y1Wb§!ÿR1Y»SNb	gøvsQ:g6Rÿ1Y»S§Y"àeKS„v1Wb"§!îOck,v^S§Y"áOðNKNV"§!ÊSKNTNb	gÇûN¡R·ƒ—V„vîOcklØS:Nøv”^§Yb—§!îOck§!"
+ THE_SUW_events.41_tt: "§TVËYÛLˆ1WbÿdkTSåN§Y.OYe§!ãNÿf§Y8hÃVS§!ŸRýwÿwýN§Y.OYe§!ŒRbsS§Y8hÃVS§!ŒRb0\nSùRNb	g§Y»ýV§!ÑS¨R§Y'Y1Wb§!ÿîvMRÿŒRbSVMRNb	gb‰NT§YŒTs^§!gYcíu§G1§!t^ÿ§G1§!t^gô•ïSÇ³Q®‹çuíuùRNb	g§Y»ýV§!(d–†NbìN„vD–^SýV)ÑS¨R§Y'Y1Wb§!0\n‚Yœg…Ç§G1§!t^*gÑS¨R§Y'Y1Wb§!ÿR1Y»SNb	gøvsQ:g6Rÿ1Y»S§Y"àeKS„v1Wb"§!îOck,v^S§Y"áOðNKNV"§!ÊSKNTNb	gÇûN¡R·ƒ—V„výV¶RîOcklØS:Nøv”^§Yb—§!îOck§!"
  THE_SUW_events.42.title: "1Wb„vÈu	q"
  THE_SUW_events.42.desc: "1"
  THE_SUW_events.42.name: "IQ’‚ÿˆm1Y†N......"
+ THE_SUW_events.43.title: "^yf„vi`à`"
+ THE_SUW_events.43.desc: "1"
+ THE_SUW_events.43.name: "bìNHQÛ„vˆRâwåb	ggHQÛ„v`ó`"
+ THE_SUW_events.44.title: "ºNô•^S"
+ THE_SUW_events.44.desc: "1"
+ THE_SUW_events.44.name: "^yJU......"
+ THE_SUW_events.45.title: "ºNô•^S"
+ THE_SUW_events.45.desc: "1"
+ THE_SUW_events.45.name: "å‹=fù‹¿‹PR'YºN>fup„vöeP†N"
+ THE_SUW_events.46.title: "ºNô•^S"
+ THE_SUW_events.46.desc: "1"
+ THE_SUW_events.46.name: "å‹=f^yHYPR'YºNÑSZ„vöeP†N"
 ### EVENT_END
 
 
@@ -589,11 +607,15 @@
  THE_SUW_estate_burghers_action_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_odoru_decision_title: "¥cNwOYPN¥cNw‚"
  THE_SUW_odoru_decision_desc: "Ù=fN*N³Q®‹Ïcð"
+ THE_SUW_odoru_decision_tt: "§Tán2miRYOýV¶RçuíuÛLˆ‰N8—ÿôv0RêSiRN*NýV¶R§!"
  THE_SUW_maikozeikinn_decision_title: "6eÆ–÷PRIY"
  THE_SUW_maikozeikinn_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_kor_new_name_decision_title: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
  THE_SUW_kor_new_name_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_kor_new_name_decision_tt: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
+ THE_SUW_kan_owaranaibatoru_decision_title: "àeKS„v1Wb"
+ THE_SUW_kan_owaranaibatoru_decision_desc: "Ù=fN*N³Q®‹Ïcð"
+ THE_SUW_kan_owaranaibatoru_decision_tt: "§TáOðNNo`ÿb‰NNbk§!"
 ### DECISION_END
 
 ###SUBJECT_TYPE
@@ -721,4 +743,3 @@ sanae_desc: "1"
  THE_SUW_godsticksDESC: "‰˜åw0yxyøvO0"
 ###prices_end
 
-áOðNNo`,b‰NNbk

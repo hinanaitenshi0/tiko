@@ -7,6 +7,11 @@ spriteTypes = {
 	#	loadType = "INGAME"
 	#	transparencecheck = yes
 	#}
+	#suw and kan
+	spriteType = {
+		name = "government_reform_THE_SUW_suw_and_kan_government_1_reform"
+		texturefile = "gfx/interface/THE_SUW_government_reform_icons/THE_SUW_suw_and_kan_governoment_reform_1.dds"
+	}
 
 	#kan
 	spriteType = {

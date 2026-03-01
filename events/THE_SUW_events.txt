@@ -2315,3 +2315,66 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	#人间布道-双神
+	id = THE_SUW_events.44
+	title = "THE_SUW_events.44.title"
+	desc = "THE_SUW_events.44.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.44.name
+		#custom_tooltip = THE_SUW_suw_and_kan_3_6_tt_yes
+		change_government = theocracy
+		add_government_reform = THE_SUW_SUW_and_KAN_reform
+		hidden_effect = { set_country_flag = THE_SUW_enable_stage_2_suw_and_kan_mission_branch_flag } 
+		swap_non_generic_missions = yes
+		swap_free_idea_group = yes
+	}
+}
+country_event = {
+	#人间布道-诹访
+	id = THE_SUW_events.45
+	title = "THE_SUW_events.45.title"
+	desc = "THE_SUW_events.45.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.45.name
+		#custom_tooltip = THE_SUW_suw_3_6_tt_yes
+		change_government = theocracy
+		add_government_reform = THE_SUW_suw_reform
+		hidden_effect = { set_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag } 
+		swap_non_generic_missions = yes
+		swap_free_idea_group = yes
+	}
+}
+country_event = {
+	#人间布道-神奈
+	id = THE_SUW_events.46
+	title = "THE_SUW_events.46.title"
+	desc = "THE_SUW_events.46.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.46.name
+		#custom_tooltip = THE_SUW_kan_3_6_tt_yes
+		change_government = theocracy
+		add_government_reform = THE_SUW_kan_reform
+		hidden_effect = {
+			set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
+			THE_SUW_define_kanako_and_suwako_effect = yes
+			country_event = {
+				id = THE_SUW_events.41
+				days = 30
+			}
+			override_country_name = "kana"
+		}
+		swap_non_generic_missions = yes
+		swap_free_idea_group = yes
+	}
+}

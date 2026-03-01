@@ -1,7 +1,7 @@
 #诹访神奈
 THE_SUW_SUW_and_KAN_reform = {
 	lock_level_when_selected = yes
-	icon = "THE_AKI_government_reform_1"
+	icon = "THE_SUW_suw_and_kan_government_1_reform"
 	potential = {
 		OR = {
 			ai = no
@@ -50,9 +50,9 @@ THE_SUW_SUW_and_KAN_reform = {
 		church_influence_modifier = 0.1
 		#cb_on_religious_enemies = yes
 	}
-	government_abilities = {
-		THE_SUW_suw_and_kan_mechanic
-	}
+	#government_abilities = {
+	#	THE_SUW_suw_and_kan_mechanic
+	#}
 }
 
 #诹访祀坤
