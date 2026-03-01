@@ -264,6 +264,36 @@ THE_SUW_kan_sinnkonotabi_5_country_modifier = {
 	land_forcelimit_modifier = 0.5
 	global_missionary_strength = 0.1
 }
+#信仰之殁1
+THE_SUW_kan_sinnkonotabi_sippai_1_country_modifier = {
+	discipline = -0.05
+	land_forcelimit_modifier = -0.1
+	global_missionary_strength = -0.01
+}
+#信仰之殁2
+THE_SUW_kan_sinnkonotabi_sippai_2_country_modifier = {
+	discipline = -0.1
+	land_forcelimit_modifier = -0.2
+	global_missionary_strength = -0.03
+}
+#信仰之殁3
+THE_SUW_kan_sinnkonotabi_sippai_3_country_modifier = {
+	discipline = -0.2
+	land_forcelimit_modifier = -0.3
+	global_missionary_strength = -0.05
+}
+#信仰之殁4
+THE_SUW_kan_sinnkonotabi_sippai_4_country_modifier = {
+	discipline = -0.3
+	land_forcelimit_modifier = -0.4
+	global_missionary_strength = -0.07
+}
+#信仰之殁5
+THE_SUW_kan_sinnkonotabi_sippai_5_country_modifier = {
+	discipline = -0.5
+	land_forcelimit_modifier = -0.5
+	global_missionary_strength = -0.1
+}
 #天行健
 THE_SUW_defensiveness_nagano_country_modiffier = {
 	movement_speed = 0.05
@@ -314,7 +344,7 @@ THE_SUW_kan_2_8_2_country_modifier = {
 	devotion = 3
 	horde_unity = 3
 	meritocracy = 3
-	yearly_absolutism = 0.02
+	yearly_absolutism = 2
 	max_absolutism = 20
 }
 #注视幻想3
@@ -326,7 +356,7 @@ THE_SUW_kan_2_8_3_country_modifier = {
 	devotion = 5
 	horde_unity = 5
 	meritocracy = 5
-	yearly_absolutism = 0.03
+	yearly_absolutism = 3
 	max_absolutism = 30
 	yearly_revolutionary_zeal = 3
 	max_revolutionary_zeal = 30
@@ -402,25 +432,152 @@ THE_SUW_kan_3_Borjigin_country_modifier = {
 	leader_siege = 3
 	artillery_barrage_cost = -1
 }
-#准备万当1
+#蓄势待发1
 THE_SUW_kan_4_9_1_country_modifier = {
 	global_regiment_cost = -0.10
 	reinforce_cost_modifier = -0.10
 }
-#准备万当2
+#蓄势待发2
 THE_SUW_kan_4_9_2_country_modifier = {
 	global_regiment_cost = -0.20
 	global_regiment_recruit_speed = -0.20
 	reinforce_cost_modifier = -0.20
 	reinforce_speed = 0.20
 }
-#准备万当3
+#蓄势待发3
 THE_SUW_kan_4_9_3_country_modifier = {
 	global_regiment_cost = -0.33
 	global_regiment_recruit_speed = -0.33
 	reinforce_cost_modifier = -0.33
 	reinforce_speed = 0.33
 	land_attrition = -0.33
+}
+#破灭幻想1
+THE_SUW_kan_2_8_sippai_1_country_modifier = {
+	prestige = -1
+	monthly_splendor = -2
+	legitimacy = -1
+	republican_tradition = -0.5
+	devotion = -1
+	horde_unity = -1
+	meritocracy = -1
+}
+#破灭幻想2
+THE_SUW_kan_2_8_sippai_2_country_modifier = {
+	prestige = -3
+	monthly_splendor = -4
+	legitimacy = -3
+	republican_tradition = -1
+	devotion = -3
+	horde_unity = -3
+	meritocracy = -3
+	yearly_absolutism = -2
+	max_absolutism = -20
+}
+#破灭幻想3
+THE_SUW_kan_2_8_sippai_3_country_modifier = {
+	prestige = -5
+	monthly_splendor = -8
+	legitimacy = -5
+	republican_tradition = -2
+	devotion = -5
+	horde_unity = -5
+	meritocracy = -5
+	yearly_absolutism = -3
+	max_absolutism = -30
+	yearly_revolutionary_zeal = -3
+	max_revolutionary_zeal = -30
+}
+#虚妄寄托1
+THE_SUW_kan_2_9_sippai_1_country_modifier = {
+	manpower_recovery_speed = -0.33
+	
+}
+#虚妄寄托
+THE_SUW_kan_2_9_sippai_2_country_modifier = {
+	manpower_recovery_speed = -0.5
+	global_manpower_modifier = -0.5
+    
+}
+#虚妄寄托3
+THE_SUW_kan_2_9_sippai_3_country_modifier = {
+	manpower_recovery_speed = -1
+	global_manpower_modifier = -1
+    manpower_in_true_faith_provinces = -1
+}
+#山河飘絮1
+THE_SUW_kan_3_8_sippai_1_country_modifier = {
+	fire_damage_received = 0.1
+	shock_damage_received = 0.1
+}
+#山河飘絮2
+THE_SUW_kan_3_8_sippai_2_country_modifier = {
+	fire_damage_received = 0.2
+	shock_damage_received = 0.2
+	morale_damage_received = 0.2
+}
+#山河飘絮3
+THE_SUW_kan_3_8_sippai_3_country_modifier = {
+	fire_damage_received = 0.33
+	shock_damage_received = 0.33
+	morale_damage_received = 0.33
+	reserves_organisation = -0.33
+}
+#惊涛骇浪1
+THE_SUW_kan_3_9_sippai_1_country_modifier = {
+	ship_durability = -0.2
+	movement_speed_onto_off_boat_modifier = -0.2
+}
+#惊涛骇浪2
+THE_SUW_kan_3_9_sippai_2_country_modifier = {
+	ship_durability = -0.5
+	movement_speed_onto_off_boat_modifier = -0.5
+	global_naval_engagement_modifier = -0.5
+}
+#惊涛骇浪3
+THE_SUW_kan_3_9_sippai_3_country_modifier = {
+	ship_durability = -1
+	movement_speed_onto_off_boat_modifier = -1
+	global_naval_engagement_modifier = -1
+	#sea_repair = yes
+}
+#天下为笼1
+THE_SUW_kan_sippai_1_Borjigin_country_modifier = {
+	siege_ability = -0.1
+	movement_speed = -0.1
+}
+#天下为笼2
+THE_SUW_kan_sippai_2_Borjigin_country_modifier = {
+	siege_ability = -0.2
+	movement_speed = -0.2
+	leader_siege = -2
+}
+#天下为笼3
+THE_SUW_kan_sippai_3_Borjigin_country_modifier = {
+	siege_ability = -0.3
+	movement_speed = -0.3
+	leader_siege = -3
+	artillery_barrage_cost = 1
+}
+#日暮途穷1
+THE_SUW_kan_4_9_sippai_1_country_modifier = {
+	global_regiment_cost = 0.10
+	reinforce_cost_modifier = 0.10
+}
+#日暮途穷2
+THE_SUW_kan_4_9_sippai_2_country_modifier = {
+	global_regiment_cost = 0.20
+	global_regiment_recruit_speed = 0.20
+	reinforce_cost_modifier = 0.20
+	reinforce_speed = -0.20
+}
+#日暮途穷3
+THE_SUW_kan_4_9_sippai_3_country_modifier = {
+	global_regiment_cost = 0.33
+	global_regiment_recruit_speed = 0.33
+	reinforce_cost_modifier = 0.33
+	reinforce_speed = -0.33
+	land_attrition = 0.33
 }
 #随风飘过
 THE_SUW_kan_5_9_country_modifier = {

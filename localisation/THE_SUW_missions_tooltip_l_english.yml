@@ -51,6 +51,9 @@
  THE_SUW_suw_3_6_tt_no: "£no£‚YœgÇ§GËS‹Y²NAm§!N£no£Ç§GÐc›OD©R§!ŒRbûN¡R,R§T0Wwmµm§!:"
  THE_SUW_kan_3_6_tt_yes: "£yes£‚YœgÇ§G›Q‹NVg§!N£yes£Ç§Gb‰NZQa§!ŒRbûN¡R,R§T)YNNÖS§!:"
  THE_SUW_kan_3_6_tt_no: "£no£‚YœgÇ§G›Q‹NVg§!N£no£Ç§Gb‰NZQa§!ŒRbûN¡R,R§T)YNNÖS§!:"
+ THE_SUW_suw_mechanic_1_tt: "–:g·ƒ—V§G1§!*N§G1§!µu§G1§!˜bŒ˜î•"
+ THE_SUW_suw_mechanic_2_tt: "ê¨RŒRb§YÎ˜ky/ˆR²b/ˆNÖS§!6–BS„v®‹zÿ‚Yœg§YÎ˜ky/ˆR²b/ˆNÖS§!ïS(u"
+ THE_SUW_suw_mechanic_3_tt: "·ƒ—VN=eÔk‹O:N§G2/1/2§!ÿ=fSVMR§YF–›QNP–NJS§!„vè–ÿå‹è–NOO§YF–›QÄ‰!j§!…Ç§YSVMRF–›QNP–§!"
  THE_SUW_kan_mechanic_1_tt: "§Y–:g10*Nåb	g„vwýN§!·ƒ—V§Y?eœ^ú^Qr§!GSµu0‚YœgSVMR¡l	gú^Qr,Rûm R§YÕlb–§!,‚Yœg	g§Y^?e…S§!,R–:g·ƒ—V§G1§!úWNxz6ebuµNbºN›R"
  THE_SUW_kan_mechanic_2_tt: "ã‰cebýV§YhQƒX§!„vÛS›Q\nb`YbýV§YhQƒX§!„vÛSqNwýN„vµc6RCg"
  THE_SUW_kan_mechanic_3_tt: "nd–Nb	g§Y¥cäXýV¶R§!„v§Tb‰N÷þ–§!"
@@ -394,9 +397,9 @@
  THE_SUW_kan_1_Borjigin_country_modifier: "Í‚yzKN­—"
  THE_SUW_kan_2_Borjigin_country_modifier: "Í‚yzKN­—"
  THE_SUW_kan_3_Borjigin_country_modifier: "Í‚yzKN­—"
- THE_SUW_kan_4_9_1_country_modifier: "ÆQYNSV"
- THE_SUW_kan_4_9_2_country_modifier: "ÆQYNSV"
- THE_SUW_kan_4_9_3_country_modifier: "ÆQYNSV"
+ THE_SUW_kan_4_9_1_country_modifier: "Ä„¿R…VÑS"
+ THE_SUW_kan_4_9_2_country_modifier: "Ä„¿R…VÑS"
+ THE_SUW_kan_4_9_3_country_modifier: "Ä„¿R…VÑS"
  THE_SUW_kan_5_9_country_modifier: "–Î˜Ø˜Ç"
 ### MODIFIER_END
 
@@ -626,8 +629,11 @@
  ability_THE_SUW_suw_mechanic_desc: ""
  THE_SUW_suw_mechanic_power: "0WKNo`"
  THE_SUW_suw_mechanic_1: "0W¾‹"
+ THE_SUW_suw_mechanic_1_desc: ""
  THE_SUW_suw_mechanic_2: "0WCQ"
+ THE_SUW_suw_mechanic_2_desc: ""
  THE_SUW_suw_mechanic_3: "0W¨R"
+ THE_SUW_suw_mechanic_3_desc: ""
  ability_THE_SUW_kan_mechanic: "§T)YKN`§!"
  ability_THE_SUW_kan_mechanic_desc: ""
  THE_SUW_kan_mechanic_interactions_1:0 "8OúQ`O„vÌSKb!"

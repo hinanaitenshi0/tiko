@@ -55,8 +55,8 @@ add_government_power = {
     which = ADM
     amount = 100
 }
-clr_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
-set_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
+clr_country_flag = THE_SUW_enable_stage_2_suw_mission_branch_flag
+set_country_flag = THE_SUW_enable_stage_2_kan_mission_branch_flag
 set_country_flag = THE_SUW_suw_4_4_flag
 set_country_flag = THE_SUW_kan_1_7_flag
 clr_country_flag = THE_SUW_maikozeikinn_flag
@@ -100,3 +100,31 @@ every_province = {
 2148 = {
 		create_revolt = 1
 }
+			add_country_modifier = {
+				name = THE_SUW_kan_sinnkonotabi_sippai_5_country_modifier
+				duration = -1
+			}
+			add_country_modifier = {
+				name = THE_SUW_kan_2_8_sippai_3_country_modifier
+				duration = -1
+			}
+			add_country_modifier = {
+				name = THE_SUW_kan_2_9_sippai_3_country_modifier
+				duration = -1
+			}
+			add_country_modifier = {
+				name = THE_SUW_kan_3_8_sippai_3_country_modifier
+				duration = -1
+			}
+			add_country_modifier = {
+				name = THE_SUW_kan_3_9_sippai_3_country_modifier
+				duration = -1
+			}
+			add_country_modifier = {
+				name = THE_SUW_kan_sippai_3_Borjigin_country_modifier
+				duration = -1
+			}
+			add_country_modifier = {
+				name = THE_SUW_kan_4_9_sippai_3_country_modifier
+				duration = -1
+			}

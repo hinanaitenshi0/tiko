@@ -565,18 +565,246 @@ THE_SUW_on_dependency_lost_scripted_effects = {
 }
 
 THE_SUW_kan_sippai_scripted_effects = {
+	remove_country_modifier = THE_SUW_kan_5_9_country_modifier
+	clr_country_flag = THE_SUW_kan_owarubatoru_flag
+	clr_country_flag = THE_SUW_kan_owaranaibatoru_flag
+	#信仰之殁
 	if = {
-		limit = { }
+		limit = { 
+			has_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_sinnkonotabi_sippai_1_country_modifier
+			duration = -1
+		}
 	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_sinnkonotabi_2_country_modifier
 		add_country_modifier = {
-			name = THE_SUW_kan_owaranaibatoru_country_modifier
+			name = THE_SUW_kan_sinnkonotabi_sippai_2_country_modifier
 			duration = -1
 		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_sinnkonotabi_3_country_modifier
 		add_country_modifier = {
-			name = THE_SUW_kan_sinnkonotabi_1_country_modifier
+			name = THE_SUW_kan_sinnkonotabi_sippai_3_country_modifier
 			duration = -1
 		}
-
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_sinnkonotabi_4_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_sinnkonotabi_sippai_4_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_sinnkonotabi_5_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_sinnkonotabi_5_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_sinnkonotabi_sippai_5_country_modifier
+			duration = -1
+		}
+	}
+	#破灭幻想
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_2_8_1_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_2_8_1_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_2_8_sippai_1_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_2_8_2_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_2_8_2_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_2_8_sippai_2_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_2_8_3_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_2_8_3_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_2_8_sippai_3_country_modifier
+			duration = -1
+		}
+	}
+	#虚妄寄托
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_2_9_1_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_2_9_1_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_2_9_sippai_1_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_2_9_2_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_2_9_2_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_2_9_sippai_2_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_2_9_3_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_2_9_3_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_2_9_sippai_3_country_modifier
+			duration = -1
+		}
+	}
+	#山河飘絮
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_3_8_1_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_3_8_1_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_3_8_sippai_1_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_3_8_2_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_3_8_2_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_3_8_sippai_2_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_3_8_3_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_3_8_3_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_3_8_sippai_3_country_modifier
+			duration = -1
+		}
+	}
+	#惊涛骇浪
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_3_9_1_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_3_9_1_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_3_9_sippai_1_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_3_9_2_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_3_9_2_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_3_9_sippai_2_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_3_9_3_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_3_9_3_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_3_9_sippai_3_country_modifier
+			duration = -1
+		}
+	}
+	#天下为笼
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_1_Borjigin_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_sippai_1_Borjigin_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_2_Borjigin_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_sippai_2_Borjigin_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_3_Borjigin_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_3_Borjigin_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_sippai_3_Borjigin_country_modifier
+			duration = -1
+		}
+	}
+	#日暮途穷
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_4_9_1_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_4_9_1_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_4_9_sippai_1_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_4_9_2_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_4_9_2_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_4_9_sippai_2_country_modifier
+			duration = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_country_modifier = THE_SUW_kan_4_9_3_country_modifier
+		}
+		remove_country_modifier = THE_SUW_kan_4_9_3_country_modifier
+		add_country_modifier = {
+			name = THE_SUW_kan_4_9_sippai_3_country_modifier
+			duration = -1
+		}
+	}
 }
 
 THE_SUW_kan_3_7_scripted_effects = {

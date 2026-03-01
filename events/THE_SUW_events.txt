@@ -2270,11 +2270,7 @@ country_event = {
 
 	option = {
 		name = THE_SUW_events.42.name
-		remove_country_modifier = THE_SUW_kan_owaranaibatoru_country_modifier
-		remove_country_modifier = THE_SUW_kan_sinnkonotabi_1_country_modifier
 		THE_SUW_kan_sippai_scripted_effects = yes
-		clr_country_flag = THE_SUW_kan_owarubatoru_flag
-		clr_country_flag = THE_SUW_kan_owaranaibatoru_flag
 		ai_chance = {
 			factor = 100
 		}
