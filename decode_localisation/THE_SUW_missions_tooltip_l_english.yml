@@ -725,6 +725,9 @@ sanae_desc: "1"
  THE_SUW_ask_for_change_religions_to_moriyashinto_title: "邀请改教"
  THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "邀请改教"
  THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "禁止吃青蛙！"
+ THE_SUW_suw_kouryuu_title: "开始交流"
+ THE_SUW_suw_kouryuu_desc: "开始交流"
+ THE_SUW_suw_kouryuu_tooltip: "这是第一步"
 ### DIPLOMATIC_END
 
 ###CB

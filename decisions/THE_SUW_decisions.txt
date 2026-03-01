@@ -311,6 +311,89 @@ country_decisions = {
 		}
 	}
 
+	#诹访子交流能力
+	THE_SUW_suw_kouryuu_decision = {
+		color = { 67  255  71 }
+		potential = {	
+			hidden_trigger = {
+				tag = SUW
+				any_country = {
+					has_country_flag = THE_SUW_suw_kouryuu_flag
+				}
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = THE_cd_type_decision_10_years_ttt
+				any_country = {
+					THE_cd_type_decision_scripted_trigger = {
+						flag = THE_SUW_suw_kouryuu_flag
+						days = 365
+					}
+				}
+				
+			}
+			hidden_trigger = {
+				tag = SUW
+			}
+		}
+		effect = {
+			custom_tooltip = THE_SUW_suw_kouryuu_decision_tt
+			hidden_effect = {  
+				random_list = {
+					1 = {
+						country_event = {
+							id = THE_SUW_events.47
+							days = 1
+							random = 29
+						}
+					}
+					1 = {
+						country_event = {
+							id = THE_SUW_events.48
+							days = 1
+							random = 29
+						}
+					}
+					1 = {
+						country_event = {
+							id = THE_SUW_events.49
+							days = 1
+							random = 29
+						}
+					}
+					1 = {
+						country_event = {
+							id = THE_SUW_events.50
+							days = 1
+							random = 29
+						}
+					}
+					1 = {
+						country_event = {
+							id = THE_SUW_events.51
+							days = 1
+							random = 29
+						}
+					}
+				}
+				
+			} 
+			random_country = {
+				limit = {
+					has_country_flag = THE_SUW_suw_kouryuu_flag
+				}
+				clr_country_flag = THE_SUW_suw_kouryuu_flag
+				set_country_flag = THE_SUW_suw_kouryuu_flag
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#改朝鲜地名
 	THE_SUW_kor_new_name_decision = {
 		color = { 166  70  211 }

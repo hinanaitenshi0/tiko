@@ -350,3 +350,28 @@ heathen_royal_marriage = { #THE_SUW仿照版异教徒王室联姻
 		}
 	}
 }
+
+THE_SUW_suw_kouryuu = {
+    category = th_diplo_action
+    require_acceptance = no
+    is_visible = {
+        tag = SUW
+		has_ruler_flag = The_SUW_suw_flag
+        has_country_flag = THE_SUW_suw_1_10_flag
+		all_country = {
+			NOT = {
+				has_country_flag = THE_SUW_suw_kouryuu_flag
+			}
+		}
+    }
+    is_allowed = {
+        tag = SUW
+		has_ruler_flag = The_SUW_suw_flag
+        has_country_flag = THE_SUW_suw_1_10_flag
+    }
+    on_accept = {
+        FROM = {
+            set_country_flag = THE_SUW_suw_kouryuu_flag
+        }
+    }
+}

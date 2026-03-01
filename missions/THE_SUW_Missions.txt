@@ -1659,7 +1659,10 @@ THE_SUW_stage_2_branch_suw_1 = {
 			months_of_ruling = 600
 		}
 
-		effect = { custom_tooltip = THE_SUW_suw_1_10_tt } 
+		effect = { 
+			custom_tooltip = THE_SUW_suw_1_10_tt 
+			set_country_flag = THE_SUW_suw_1_10_flag
+		} 
 	}
 }
 THE_SUW_stage_2_branch_suw_2 = {
