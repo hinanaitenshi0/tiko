@@ -2378,3 +2378,215 @@ country_event = {
 		swap_free_idea_group = yes
 	}
 }
+
+country_event = {
+	#初次见面
+	id = THE_SUW_events.47
+	title = "THE_SUW_events.47.title"
+	desc = "THE_SUW_events.47.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.47.name
+		random_country = {
+			limit = {
+				has_country_flag = THE_SUW_suw_kouryuu_flag
+			}
+			ROOT = {
+				add_opinion = {
+					who = PREV
+					modifier = THE_SUW_hajimemasite_opinion_modifier
+				}	
+				add_trust = {
+					who = PREV
+					value = 1
+					mutual = yes
+				}
+			}
+			set_country_flag = THE_SUW_hajimemasite_opinion_modifier_flag
+		}
+		change_variable = {
+			which = koukanndo
+			value = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	#微笑的含义
+	id = THE_SUW_events.48
+	title = "THE_SUW_events.48.title"
+	desc = "THE_SUW_events.48.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.48.name
+		random_country = {
+			limit = {
+				has_country_flag = THE_SUW_suw_kouryuu_flag
+			}
+			ROOT = {
+				add_opinion = {
+					who = PREV
+					modifier = THE_SUW_hohoemunoimi_opinion_modifier
+				}	
+				add_trust = {
+					who = PREV
+					value = 1
+					mutual = yes
+				}
+			}
+		}
+		change_variable = {
+			which = koukanndo
+			value = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	#将心比心（有继承人专属）
+	id = THE_SUW_events.49
+	title = "THE_SUW_events.49.title"
+	desc = "THE_SUW_events.49.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.49.name
+		random_country = {
+			limit = {
+				has_country_flag = THE_SUW_suw_kouryuu_flag
+			}
+			ROOT = {
+				add_opinion = {
+					who = PREV
+					modifier = THE_SUW_kokorotokokoro_opinion_modifier
+				}	
+				add_trust = {
+					who = PREV
+					value = 1
+					mutual = yes
+				}
+			}
+			add_heir_claim = 20
+			random_list = {
+				1 = { change_heir_adm = 1 }
+				1 = { change_heir_dip = 1 }
+				1 = { change_heir_mil = 1 }
+			}
+		}
+		change_variable = {
+			which = koukanndo
+			value = 1
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = THE_SUW_events.49.name
+		random_country = {
+			limit = {
+				has_country_flag = THE_SUW_suw_kouryuu_flag
+			}
+			ROOT = {
+				add_opinion = {
+					who = PREV
+					modifier = THE_SUW_kokorotokokoro_opinion_modifier
+				}	
+				add_trust = {
+					who = PREV
+					value = -1
+					mutual = yes
+				}
+			}
+		}
+		subtract_variable = {
+			which = koukanndo
+			value = 1
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	#一点小摩擦（接壤国家专属）
+	id = THE_SUW_events.50
+	title = "THE_SUW_events.50.title"
+	desc = "THE_SUW_events.50.desc"
+	picture = YUKARI2_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = THE_SUW_events.50.name
+		random_country = {
+			limit = {
+				has_country_flag = THE_SUW_suw_kouryuu_flag
+			}
+			ROOT = {
+				add_opinion = {
+					who = PREV
+					modifier = THE_SUW_no_masatsu_opinion_modifier
+				}
+				add_trust = {
+					who = PREV
+					value = 3
+					mutual = yes
+				}
+				every_owned_province = {
+					remove_claim = PREV
+				}
+			}
+			every_owned_province = {
+				remove_claim = ROOT
+			}
+		}
+		change_variable = {
+			which = koukanndo
+			value = 1
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = THE_SUW_events.50.name
+		random_country = {
+			limit = {
+				has_country_flag = THE_SUW_suw_kouryuu_flag
+			}
+			ROOT = {
+				add_opinion = {
+					who = PREV
+					modifier = THE_SUW_yes_masatsu_opinion_modifier
+				}
+				add_trust = {
+					who = PREV
+					value = -3
+					mutual = yes
+				}
+				add_prestige_or_monarch_power = { amount = 10 }
+				add_power_projection = { type = mission_rewards_power_projection amount = 10 }
+			}
+		}
+		subtract_variable = {
+			which = koukanndo
+			value = 1
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+		
+}

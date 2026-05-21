@@ -331,7 +331,6 @@ country_decisions = {
 						days = 365
 					}
 				}
-				
 			}
 			hidden_trigger = {
 				tag = SUW
@@ -340,44 +339,51 @@ country_decisions = {
 		effect = {
 			custom_tooltip = THE_SUW_suw_kouryuu_decision_tt
 			hidden_effect = {  
-				random_list = {
-					1 = {
-						country_event = {
-							id = THE_SUW_events.47
-							days = 1
-							random = 29
+				if = {
+					limit = { 
+						any_country = {
+							has_country_flag = THE_SUW_suw_kouryuu_flag
+							NOT = {	has_country_flag = THE_SUW_hajimemasite_opinion_modifier_flag }
 						}
 					}
-					1 = {
-						country_event = {
-							id = THE_SUW_events.48
-							days = 1
-							random = 29
-						}
+					country_event = {
+						id = THE_SUW_events.47
+						days = 1
+						random = 29
 					}
-					1 = {
-						country_event = {
-							id = THE_SUW_events.49
-							days = 1
-							random = 29
+				}
+				else = {
+					random_list = {
+						1 = {
+							country_event = {
+								id = THE_SUW_events.48
+								days = 1
+								random = 29
+							}
 						}
-					}
-					1 = {
-						country_event = {
-							id = THE_SUW_events.50
-							days = 1
-							random = 29
+						1 = {
+							country_event = {
+								id = THE_SUW_events.49
+								days = 1
+								random = 29
+							}
 						}
-					}
-					1 = {
-						country_event = {
-							id = THE_SUW_events.51
-							days = 1
-							random = 29
+						1 = {
+							country_event = {
+								id = THE_SUW_events.50
+								days = 1
+								random = 29
+							}
+						}
+						1 = {
+							country_event = {
+								id = THE_SUW_events.51
+								days = 1
+								random = 29
+							}
 						}
 					}
 				}
-				
 			} 
 			random_country = {
 				limit = {

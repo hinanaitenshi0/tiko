@@ -17,3 +17,32 @@ THE_SUW_Low_emotional_intelligence_opinion_modifier = {
 THE_SUW_Religious_Protection_opinion_modifier = {
 	opinion = 60
 }
+#初次见面
+THE_SUW_hajimemasite_opinion_modifier = {
+	opinion = 10
+	yearly_decay = 1
+}
+#笑口常开
+THE_SUW_hohoemunoimi_opinion_modifier = {
+	opinion = 10
+	yearly_decay = 1
+	max = 30
+}
+#将心比心
+THE_SUW_kokorotokokoro_opinion_modifier = {
+	opinion = 10
+	yearly_decay = 1
+	max = 30
+}
+#止戈
+THE_SUW_no_masatsu_opinion_modifier = {
+	opinion = 10
+	yearly_decay = 1
+	max = 30
+}
+#执念
+THE_SUW_yes_masatsu_opinion_modifier = {
+	opinion = -10
+	yearly_decay = 1
+	max = -30
+}
