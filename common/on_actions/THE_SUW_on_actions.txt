@@ -84,3 +84,7 @@ on_battle_won_province = {
 on_battle_lost_province = {
 	THE_SUW_kan_3_7_scripted_effects = yes
 }
+
+on_province_religion_converted = {
+	THE_SUW_3_3_scripted_effects = yes
+}

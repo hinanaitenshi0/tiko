@@ -51,7 +51,20 @@ THE_SUW_on_war_won_scripted_effects = {
 	}
 }
 
-
+THE_SUW_3_3_scripted_effects = {
+	if = {
+        limit = {
+			#可能有小弟的传教作用域问题，出现了再考虑
+            owner = {
+                OR = {
+                    has_country_flag = THE_SUW_religion_replace_core_flag
+                }
+            }
+            NOT = { is_core = owner }
+        }
+        add_core = owner
+    }
+}
 
 THE_SUW_on_province_owner_change_scripted_effects = {
 	if = {

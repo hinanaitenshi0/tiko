@@ -609,6 +609,7 @@ THE_SUW_stage_1_branch_3 = {
 			4188 = {
 				owned_by = ROOT
 				development = 15
+				religion = th_moriyashinto
 			}
 		}
 
@@ -619,6 +620,9 @@ THE_SUW_stage_1_branch_3 = {
 					duration = -1
 				}
 			}
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
 		}
 	}
 
@@ -629,33 +633,82 @@ THE_SUW_stage_1_branch_3 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			4188 = {
-				religion = ROOT
-				development = 20
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 38
+				region = japan_region
+			}
+			japan_region = {
+				type = all
+				religion = th_moriyashinto
 			}
 		}
 
 		effect = {
-			add_adm_power = 100
-			add_dip_power = 100
-			add_mil_power = 100
-			add_country_modifier = {
-				name = "THE_SUW_there_is_divine_assistance_modifier"
-				duration = 5475
-			}
-			4188 = {
-				remove_province_modifier = THE_SUW_Gain_respect_province_modiffier
-				add_province_modifier = {
-					name = "THE_SUW_Moriya_Shinto_province_modiffier"
-					duration = -1
-				}
-			}
-			country_event = {
-				id = THE_SUW_events.3
-				days = 365
-			}
-			set_country_flag = THE_SUW_3_3_flag
+			set_country_flag = THE_SUW_religion_replace_core_flag
 			custom_tooltip = THE_SUW_3_3_tt
+			if = {
+				limit = { mission_completed = THE_SUW_2_3 } 
+				custom_tooltip = THE_SUW_suw_3_3_tt_yes
+				# hidden_effect = {
+				# 	for = {
+				# 		amount = 8
+				# 		effect = "
+				# 			random_owned_province = {
+				# 				change_religion = ROOT
+				# 			}
+				# 		"
+				# 	}
+				# }
+				clr_country_flag = THE_SUW_propagate_religion_flag
+				set_country_flag = THE_SUW_propagate_religion_full_flag
+			}
+			else = { 
+				custom_tooltip = THE_SUW_suw_3_3_tt_no 
+			} 
+			if = {
+				limit = { mission_completed = THE_SUW_4_3 } 
+				custom_tooltip = THE_SUW_kan_3_3_tt_yes
+				# hidden_effect = {
+				# 	for = {
+				# 		amount = 8
+				# 		effect = "
+				# 			random_owned_province = {
+				# 				change_religion = ROOT
+				# 			}
+				# 		"
+				# 	}
+				# }
+				hidden_effect = {
+					remove_country_modifier = { name = "THE_SUW_there_is_divine_assistance_modifier" }
+					add_country_modifier = {
+						name = "THE_SUW_there_is_divine_assistance_full_modifier"
+						duration = -1
+					}
+				}
+				
+			}
+			else = { 
+				custom_tooltip = THE_SUW_kan_3_3_tt_no 
+				# add_country_modifier = {
+				# 	name = "THE_SUW_there_is_divine_assistance_modifier"
+				# 	duration = -1
+				# }
+			} 
+			
+			
+			# 4188 = {
+			# 	remove_province_modifier = THE_SUW_Gain_respect_province_modiffier
+			# 	add_province_modifier = {
+			# 		name = "THE_SUW_Moriya_Shinto_province_modiffier"
+			# 		duration = -1
+			# 	}
+			# }
+			# country_event = {
+			# 	id = THE_SUW_events.3
+			# 	days = 365
+			# }
+			
+			
 		}
 	}
 
@@ -896,11 +949,15 @@ THE_SUW_stage_1_branch_4 = {
 				every_owned_province = {
 					limit = { culture_group = japanese_g } 
 					add_nationalism = -15
-					set_local_autonomy = 0
+					add_local_autonomy = -25
 				}
 			}
 			custom_tooltip = THE_SUW_4_3_tt
 			change_consort_mil = 1
+			add_country_modifier = {
+				name = "THE_SUW_there_is_divine_assistance_modifier"
+				duration = -1
+			}
 			if = {
 				limit = { mission_completed = THE_SUW_3_3 } 
 				custom_tooltip = THE_SUW_4_3_tt_yes
@@ -909,7 +966,7 @@ THE_SUW_stage_1_branch_4 = {
 						amount = 8
 						effect = "
 							random_owned_province = {
-								change_religion = ROOT
+								add_base_manpower = 1
 							}
 						"
 					}

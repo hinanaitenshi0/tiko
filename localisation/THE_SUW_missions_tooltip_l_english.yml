@@ -24,7 +24,7 @@
  THE_SUW_obtain_favors_tt: "Nb	gßvËSžX R§G10§!¹pºNÅ`"
  THE_SUW_2_4_tt: "§Yåe,g§!0W:S„vNb	g§YˆRâw^yS§!ýV¶RSb:NbìN„v§M—RYeˆR²b§!"
  THE_SUW_2_5_tt: "çubNb	g§Y—RYeˆR²b§!"
- THE_SUW_3_3_tt: "‹NöNAQ¸‹bìNôv¥cÈuÓuU^œ^„vßu»lÿSV6qÿ=fú^Ëz(W§RÜw)R§!„vMRÐcN......§V(NT	éb·ƒ—V„vVY±RmNNT)§!"
+ THE_SUW_3_3_tt: "§T=T(uåN§Y.OYe§!ãNÿf§Y8hÃVS§!ŸRýw„výw›R§!"
  THE_SUW_Challenge_the_authority_of_the_shogunate_tt: "§YbìNO(WN*NgTTU^œ^S›QÑSwcbÿvQßvËSÊSvQÖN'YTOsQèlNwÙ:WùR³Qÿ‚Yå‚·ƒÜwÿNb	gáOðN§YˆRâw^yS§!„v'YTSb:NbìN„v§!§M—RYeˆR²b§!"
  THE_SUW_Temporarily_avoid_sharp_edges_tt: "§Y‰SuQãylšÿ‚f•’‚ÿIrÆQY‹YQ¨RKbqT(³Q®‹)§!"
  THE_SUW_converte_province_religion_add_1_manpower_tt: "wýN—RYelØS:N§Y[Root.Religion.GetName]§!S·ƒ—V§G1000§!£icon_manpower£ºN›Rÿcíu§Y30§!t^"
@@ -33,6 +33,10 @@
  THE_SUW_2_3_nakamann_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:"
  THE_SUW_2_3_nakamann_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:"
  THE_SUW_2_3_tt: "‹NöNAQ¸‹bìNTv^‹Ya:N§G100§!„v§Yåe,g0W:S§!ýV¶R"
+ THE_SUW_suw_3_3_tt_yes: "£yes£‚YœgûN¡R0§Y¡Vñgmy§!0òTŒRb:\nR8f?eVr§T0>mcëTsY0§!S˜YÐc›O§G+25%§!§YÏkgºNÅ`žX•îOck§!"
+ THE_SUW_suw_3_3_tt_no: "£no£‚YœgûN¡R0§Y¡Vñgmy§!0òTŒRb:\nR8f?eVr§T0>mcëTsY0§!S˜YÐc›O§G+25%§!§YÏkgºNÅ`žX•îOck§!"
+ THE_SUW_kan_3_3_tt_yes: "£yes£‚YœgûN¡R0§Y'YŒTIeeu§!0òTŒRb:\nR:VS§Y‚Y	g^y©R§!îOckó§Y-100%§!"
+ THE_SUW_kan_3_3_tt_no: "£no£‚YœgûN¡R0§Y'YŒTIeeu§!0òTŒRb:\nR:VS§Y‚Y	g^y©R§!îOckó§Y-100%§!"
  THE_SUW_suw_2_4_tt_yes: "£yes£‚YœgÇ§GËS‹Y²NAm§!ŒRbûN¡R:"
  THE_SUW_suw_2_4_tt_no: "£no£‚YœgÇ§GËS‹Y²NAm§!ŒRbûN¡R:"
  THE_SUW_kan_2_4_tt_yes: "£yes£‚YœgÇ§G›Q‹NVg§!ŒRbûN¡R:"
@@ -60,9 +64,9 @@
  THE_SUW_4_1_case_tt_yes: "£yes£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
  THE_SUW_4_1_case_tt_no: "£no£‚YœgûN¡R0§Yù‹¿‹PR„vzfga§!0òTŒRb:"
  THE_SUW_Eastern_country_claims_tt: "§Y[Root.GetName]§!·ƒ—V†NNb	g§Yåe,g§!‡eSÄuwýN„v8lEN'`±Rðy0"
- THE_SUW_4_3_tt: "»lNNb	g§Yåe,g§!‡eSÄu„vwýNÏQS§G15§!t^R»yININ\nv^ÏQS§Yê»l¦^§!ó§G0§!"
- THE_SUW_4_3_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
- THE_SUW_4_3_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýNlØS—RYe:N§YˆRâw^yS§!"
+ THE_SUW_4_3_tt: "»lNNb	g§Yåe,g§!‡eSÄu„vwýNÏQS§G15§!t^R»yININ\nv^ÏQS§G25§!§Yê»l¦^§!"
+ THE_SUW_4_3_tt_yes: "£yes£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýN·ƒ—V§G1§!¹p§YºN›R§!ÑSUS"
+ THE_SUW_4_3_tt_no: "£no£‚YœgûN¡R0§YÍ‘þbáOðN§!0òTŒRb:\n–:gåb	g„v8*NwýN·ƒ—V§G1§!¹p§YºN›R§!ÑSUS"
  THE_SUW_suw_4_4_tt_yes: "£yes£‚YœgÇ§GÐc›OD©R§!ŒRbûN¡R:"
  THE_SUW_suw_4_4_tt_no: "£no£‚YœgÇ§GÐc›OD©R§!ŒRbûN¡R:"
  THE_SUW_kan_4_4_tt_yes: "£yes£‚YœgÇ§Gb‰NZQa§!ŒRbûN¡R:"
@@ -300,6 +304,8 @@
  THE_SUW_The_revived_Suwa_Daisha_province_modiffier: "YÏ‚„vù‹¿‹'Y>y"
  THE_SUW_The_Prosperous_Suwa_Daisha_province_modiffier: "tQÛv„vù‹¿‹'Y>y"
  THE_SUW_Suwa_Shrine_of_the_Divine_Family_province_modiffier: "^y7w„vù‹¿‹'Y>y"
+ THE_SUW_there_is_divine_assistance_modifier: "‚Y	g^y©R"
+ THE_SUW_there_is_divine_assistance_full_modifier: "‚Y	g^y©R"
  THE_SUW_Moriya_Shinto_province_modiffier: "ˆRâw^yS"
  THE_SUW_Lake_Suwa_province_modiffier: "ù‹¿‹Vn"
  THE_SUW_Loyalty_of_social_classes_country_modiffier: "àVÃV„v6–BS"
@@ -610,6 +616,7 @@
  THE_SUW_odoru_decision_tt: "§Tán2miRYOýV¶RçuíuÛLˆ‰N8—ÿôv0RêSiRN*NýV¶R§!"
  THE_SUW_maikozeikinn_decision_title: "6eÆ–÷PRIY"
  THE_SUW_maikozeikinn_decision_desc: "Ù=fN*N³Q®‹Ïcð"
+ THE_SUW_maikozeikinn_decision_tt: "å‹ýVYwýN:N§TˆRâw^yS§!ÿR§Y9hncÑSUS¦^Ðc›OjgaSyr§!\nå‹ýVYwýN:N§TˆRâwckYe§!ÿR–:gÐc›O§G1§!¹p¹ppe"
  THE_SUW_kor_new_name_decision_title: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
  THE_SUW_kor_new_name_decision_desc: "Ù=fN*N³Q®‹Ïcð"
  THE_SUW_kor_new_name_decision_tt: "PˆN@KOR§Ygœœ§!hQƒX°e„v0WT"
@@ -724,6 +731,9 @@ sanae_desc: "1"
  THE_SUW_ask_for_change_religions_to_moriyashinto_title: "Ž÷‹9eYe"
  THE_SUW_ask_for_change_religions_to_moriyashinto_desc: "Ž÷‹9eYe"
  THE_SUW_ask_for_change_religions_to_moriyashinto_tooltip: "ybkTR—Ù†ÿ"
+ THE_SUW_suw_kouryuu_title: "VËY²NAm"
+ THE_SUW_suw_kouryuu_desc: "VËY²NAm"
+ THE_SUW_suw_kouryuu_tooltip: "Ù=f,rNek"
 ### DIPLOMATIC_END
 
 ###CB

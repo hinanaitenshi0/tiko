@@ -1,7 +1,10 @@
 #收获尊重
 THE_SUW_Gain_respect_province_modiffier = {
-	local_missionary_strength = 0.1
+	# local_missionary_strength = 0.1
 	local_unrest = -10
+	local_manpower_modifier = 0.2
+	local_tax_modifier = 0.2
+	local_production_efficiency = 0.2
 }
 #古旧的诹访大社
 THE_SUW_The_ancient_Suwa_Daisha_province_modiffier = {
@@ -45,9 +48,16 @@ THE_SUW_Moriya_Shinto_province_modiffier = {
 }
 #如有神助
 THE_SUW_there_is_divine_assistance_modifier = {
-	land_morale = 0.15
-	land_forcelimit = 10
-	cb_on_religious_enemies = yes
+	# land_morale = 0.15
+	# land_forcelimit = 10
+	# cb_on_religious_enemies = yes
+	overextension_impact_modifier = -0.5
+}
+THE_SUW_there_is_divine_assistance_full_modifier = {
+	# land_morale = 0.15
+	# land_forcelimit = 10
+	# cb_on_religious_enemies = yes
+	overextension_impact_modifier = -1
 }
 #迎接挑战！
 THE_SUW_meet_a_challenge_modifier = {

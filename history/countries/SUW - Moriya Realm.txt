@@ -23,6 +23,7 @@ th_discover_default = yes
   set_ruler_flag = touhou_original_ruler
   set_ruler_flag = th_original_suwa
   set_ruler_flag = The_SUW_suw_flag
+  set_country_flag = THE_SUW_3_3_flag
 }
 1443.1.1 = {
   queen = {
